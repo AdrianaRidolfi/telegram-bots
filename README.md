@@ -14,10 +14,10 @@ telegram-bots/
 │   ├── bot.py               # codice Python del bot
 │   ├── requirements.txt     # dipendenze Python
 │   ├── Procfile             # comando per il deploy su Render o simili
-├── quizzes/
-│   ├── convert.py           # codice di utility per convertire file .qwz e .txt nei json
-│   ├── diritto.json         # file JSON con domande e risposte
-│   └── altro_quiz.json      # altri quiz in JSON
+│   └──quizzes/
+│     ├── convert.py           # codice di utility per convertire file .qwz e .txt nei json
+│     ├── diritto.json         # file JSON con domande e risposte
+│     └── altro_quiz.json      # altri quiz in JSON
 
 ```
 
