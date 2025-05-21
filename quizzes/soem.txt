@@ -1,0 +1,795 @@
+DOMANDE:
+
+1. Tra i seguenti autori chi è noto per aver sviluppato teorie sull’organizzazione scientifica del lavoro?
+A. Karl Marx
+B. Frederick W. Taylor
+C. Max Weber
+D. Henry Ford
+
+2. I bisogni di apparteneneza secondo Maslow riflettono il bisogno di:
+A. Ottenere riconoscimenti economici e premi di produzione
+B. Essere amati, compresi e sentirsi parte di un gruppo sociale
+C. Raggiungere l’autorealizzazione attraverso risultati individuali 
+D. Soddisfare esigenze fisiologiche primarie come fame e sonno
+
+3. Qual è una caratteristica dell’organizzazione matrice?
+A. L’unicità del comando per garantire chiarezza organizzativa
+B. La necessità di una supervisione multipla per ogni posizione
+C. L'interazione diretta tra ogni dipendente e il vertice aziendale
+D. L'autonomia del comando per garantire chiarezza organizzativa
+
+4. La specializzazione verticale del lavoro si riferisce a:
+A. La distribuzione delle risorse tra diversi settori
+B. La supervisione delle attività in un'unica mansione
+C. La separazione tra progettazione ed esecuzione delle attività
+D. L'assegnazione di compiti semplici a ciascun operatore
+
+5. Qual è la definizione di adattamento reciproco?
+A. Consente agli operatori di risolvere autonomamente i problemi tramite interazione diretta
+B. Richiede una supervisione costante
+C. Evita del tutto la necessità di supervisione diretta
+D. Promuove la standardizzazione delle procedure
+
+6. I bisongi di sicurezza, secondo Maslow, includono la necessità di:
+A. Sentirsi parte di un gruppo sociale o familiare
+B. Autonomia e indipendenza personale
+C. Protezione da pericoli e minacce, conoscenza dell’ambiente
+D. Sviluppo delle capacità individuali
+
+7. Cosa si intende per ampiezza manageriale e strategica?
+A. Il numero di persone che dipendono direttamente da un capo
+B. La capacità di un manager di gestire più progetti contemporaneamente
+C. Il numero di livelli gerarchici nella catena di comando
+D. La varietà di funzioni aziendali
+
+8. I bisogni fisiologici, secondo Maslow, sono legati a:
+A. Lo sviluppo delle proprie potenzialità
+B. Il riconoscimento e lo status sociale
+C. La sopravvivenza, come fame, sete e sonno
+D. La sicurezza dai pericoli e dalle minacce
+
+9. Secondo il principio di unicità del comando di Fayol, ogni individuo e unità organizzativa deve:
+A. Ricevere ordini da un solo responsabile gerarchico
+B. Poter delegare ordini a più responsabili gerarchici
+C. Ottenere indicazioni da responsabili multipli
+D. Operare senza alcuna supervizione diretta
+
+10. Secondo la prospettiva politica, le organizzazioni aiutano a:
+A. Raggiungere obiettivi personali
+B. Sviluppare risorse tecniche
+C. Canalizzare i conflitti e consentire l’esercizio del potere
+D. Favorire la crescita individuale
+
+11. Il raggruppamento su base geografica è utilizzato per organizzare le attività:
+A. In base alla tipologia di cliente
+B. Svolte in un’unica area geografica tra quelle in cui l’azienda opera
+C. Per la produzione e distribuzione di ciascun prodotto
+D. Secondo la struttura funzionale dell’azienda
+
+12. I processi di supporto operativo si distinguono dai processi di governo perché:
+A. Richiedono una supervisione costante
+B. Sono rivolti principalmente alla produzione e distribuzione
+C. Hanno come clienti altre funzioni aziendali di livello medio-basso
+D. Sono esclusivamente dedicati alla gestione delle risorse umane
+
+13. Qual è la mansione della figura di collegamento?
+A. Facilitare il coordinamento orizzontale tra due unità organizzative
+B. Gestire le risorse finanziarie
+C. Supervisionare le attività di produzione
+D. Controllare la qualità dei prodotti
+
+14. Cosa si intende per progettazione microstrutturale?
+A. Un insieme di attività intrinsecamente collegate e inscindibili in relazione al lavoro dell’uomo e alle caratteristiche della tecnologia
+B. La definizione delle politiche aziendali
+C. La creazione di un piano strategico a lungo termine
+D. La gestione delle risorse umane
+
+15. I sistemi informativi aziendali facilitano l'integrazione tra unità organizzative attraverso:
+A. L'automazione totale dei processi produttivi
+B. La supervisione diretta su tutte le attività operative
+C. La raccolta, lo scambio e la circolazione delle informazioni
+D. La riduzione delle competenze individuali necessarie
+
+16. Quando criteri funzionali e divisionali hanno uguale peso nel determinare il raggruppamento delleattività, in alcuni casi si rinuncia ad attribuire in maniera unica le posizioni alle unità organizzative e sicrea:
+A. La presenza di una pluralità di linee gerarchiche, che rispondono a criteri di raggruppamento multipli come funzione e area geografica
+B. Un unico criterio di raggruppamento delle attività, per mantenere la linearità dei processi
+C. Un forte coordinamento centrale
+D. Una totale indipendenza delle unità locali
+
+17. Le imprese globali di caratterizzano per:
+A. Un basso livello di controllo centrale
+B. Un’elevata autonomia delle divisioni di area
+C. Un forte coordinamento centrale per massimizzare le economie di scala
+D. Una totale indipendenza delle unità locali dalle direttive centrali
+
+18. La gestione orientata ai processi è utile per:
+A. Creare processi standardizzati che influenzano la capacità di adattamento ai cambiamenti di mercato
+B. Riconoscere e focalizzare le risorse sulle attività che aggiungono effettivo valore al cliente
+C. Centralizzare tutte le decisioni e incrementare la flessibilità operativa
+D. Mantenere elevate le attività non produttive per garantire una copertura dei costi
+
+19. Le interdipendenze tra attività possono essere di natura:
+A. Sequenziale, reciproca, legata a spazio/tempo o alle risorse
+B. Soltanto sequenziali, reciproche e legate alle risorse
+C. Soltanto reciproche, di spazio/tempo e legate alle risorse
+D. Soltanto legate alle risorse
+
+20. La dimensione verticale di un'organizzazione si riferisce a:
+A. Il numero di livelli gerarchici e la catena di comando
+B. La varietà di mensioni all'interno di un reparto
+C. Il numero di persone che dipendono direttamente da un capo
+D. La quantità di posizioni simili in un'unità organizzativa
+
+21. La standardizzazione dei processi diventa inefficace quando:
+A. L'ambiente esterno è caratterizzato da turbolenza e imprevedibilità
+B. I processi aziendali sono consolidati e senza variazioni
+C. Le condizioni operative di lavoro sono prevedibili e stabili
+D. L'attività non richiede innovazione o sviluppo di nuovi prodotti
+
+22. La struttura divisionale è stata adottata inizialmente per rispondere a:
+A. La difficoltà di coordinamento e controllo nei business diversificati
+B. La riduzione dei costi operativi
+C. La necessità di centralizzare le decisioni operative
+D. Le strategie di specializzazione produttiva
+
+23. Quando un supervisore ha molte posizioni, l’unità organizzativa avrà:
+A. Un’ampia ampiezza manageriale e controllo limitato
+B. Una ristretta ampiezza di controllo e forte accentramento decisionale
+C. Un’ampia ampiezza di controllo ma scarsa capacità manageriale 
+D. Una gerarchia verticale con numerosi livelli intermedi
+
+24. Un esempio di unità organizzativa direttiva è rappresentato da:
+A. Il front office di un'azienda di servizi
+B. Il reparto produttivo di un'azienda manifatturiera
+C. Il comitato esecutivo o il comitato di direzione
+D. L'ufficio vendite di un'azienda di distribuzione
+
+25. Qual è la corretta distinzione tra efficienza ed efficacia in un processo organizzativo?
+A. L’efficienza si riferisce alla soddisfazione del cliente, l’efficacia alla riduzione dei costi
+B.  L’efficienza misura la qualità del prodotto, mentre l’efficacia misura la quantità prodotta
+C. L’efficienza riguarda l’ottimizzazione delle risorse, mentre l’efficacia si riferisce al raggiungimento degli obiettivi del processo
+D. L’efficienza riguarda il rispetto delle normative, mentre l’efficacia si riferisce alla velocità di esecuzione
+
+26. Il ruolo, nella progettazione microstrutturale, rappresenta:
+A. La descrizione delle competenze richieste per ogni mansione assegnata
+B. Un elenco di attività tecniche attribuite alle posizioni operative
+C. L’insieme delle aspettative di comportamento che l’organizzazione si attende da una persona in una certa posizione
+D. Un insieme di compiti e procedure formalizzate per ciascuna posizione aziendale
+
+27. La capacità, nella progettazione microstrutturale, è definita come:
+A. L'insieme delle attività organizzative richieste per svolgere un compito con successo
+B. Un sistema di regole e norme che guida il comportamento degli individui nell'organizzazione
+C. Un processo di adattamento delle competenze a nuove posizioni all'interno dell'azienda
+D. Una caratteristica intrinseca individuale alla base di una prestazione efficace o superiore in una specifica attività o mansion
+
+28. Gli organi di staff hanno il compito di:
+A. Prendere decisioni strategiche per i reparti di produzione
+B.  Supportare gli organi di linea senza partecipare direttamente al core business
+C. Dirigere le attività operative quotidiane nei reparti funzionali
+D. Supervisionare direttamente il ciclo produttivo e la logistica interna
+
+29. Cosa caratterizza un approccio orientato al marketing?
+A. La centralità del prodotto standardizzato per ottimizzare i costi di produzione
+B. L’importanza di soddisfare le esigenze del cliente e di personalizzare prodotti e servizi
+C. Il controllo rigoroso dei processi interni a scapito della flessibilità verso il mercato
+D. L’obiettivo principale di aumentare la quota di mercato ignorando la customer satisfaction
+
+30. La specializzazione verticale comporta:
+A. La sola progettazione del lavoro
+B. La separazione tra progettazione del lavoro e la sua esecuzione
+C. La sola esecuzione del lavoro
+D. Una mancata separazione tra la progettazione del lavoro e la sua esecuzione
+
+31. La struttura semplice è caratterizzata da:
+A. Accentramento delle decisioni nelle mani dell’imprenditore
+B. Presenza di molteplici livelli gerarchici e forte specializzazione
+C. Decentramento decisionale tra i diversi dipartimenti funzionali
+D. Utilizzo di procedure complesse e formalizzazione elevata dei ruoli
+
+32. Un vantaggio tipico della struttura divisionale è:
+A. Una maggiore rapidità di risposta a problemi specifici di mercato
+B.  Un’elevata autonomia decisionale nelle singole business unit
+C. Un più alto livello di specializzazione delle funzioni
+D. Una forte focalizzazione su mercati e clienti specifici
+
+33. Qual è il compito principale di una figura di collegamento all'interno di un'organizzazione?
+A. Supervisionare direttamente il lavoro operativo dei team di produzione
+B. Definire la strategia aziendale a lungo termine
+C. Facilitare il coordinamento orizzontale tra due unità organizzative
+D. Gestire in autonomia il budget di tutte le funzioni aziendali
+
+34. La scelta del criterio di raggruppamento nelle unità organizzative deve considerare il tipo di interdipendenzeesistenti, che includono:
+A. Interdipendenze gerarchiche, conflittuali, autonome, sinergiche 
+B. Interdipendenze standardizzate, focalizzate, aperte e decentralizzate 
+C. Interdipendenze sequenziali, reciproche, legate alle risorse e spazio-temporali
+D. Interdipendenze operative, tattiche e strategiche
+
+35. Un esempio di team interfunzionale temporaneo è:
+A. Il reparto contabilità che analizza i costi annuali
+B. Un dipartimento di manutenzione che programma le attività settimanali
+C. Un gruppo di lavoro dedicato alla riprogettazione dei processi aziendali in una banca
+D. Una riunione periodica dei direttori di corso in una business school
+
+36. Gli organi di linea in un'organizzazione si occupano principalmente di:
+A. Gestire la comunicazione istituzionale dell'azienda
+B. Fornire supporto tecnico agli organi di staff
+C. Mantenere le strutture e gli impianti aziendali
+D. L'attività centrale dell'azienda, legata al core business
+
+37. Nelle organizzazioni con struttura semplice, il coordinamento tra le unità avviene principalmente attraverso:
+A. Un sistema di pianificazione e controllo molto dettagliato
+B. Il mutuo adattamento e la standardizzazione delle competenze
+C. La creazione di team di lavoro autonomi con poteri decisionali
+D. Un sistema di geriarchia altamente formale
+
+38. Gli elementi che caratterizzano un processo aziendale includono:
+A. input, prestazioni, controlli, risorse, fasi e attività, organizzazioni e funzioni
+B. input, output, prestazioni, competenze, budget, fasi e attività, organizzazioni e funzioni
+C. input, output, prestazioni, controlli, risorse, fasi e attività, interdipendenze e metodi di gestione
+D. input, output, prestazioni, controlli, risorse, fasi e attività, organizzazioni e funzioni
+
+39. La struttura divisionale è caratterizzata dal raggruppamento delle unità organizzative:
+A. In base alla struttura gerarchica aziendale
+B. In base alla funzione svolta
+C. In base agli output come prodotto, cliente o mercato
+D. In base alle competenze dei manager
+
+40. Un esempio di organo di staff centrale in un’azienda è:
+A. La funzione Produzione
+B. La funzione Ricerca e Sviluppo
+C. La funzione Marketing
+D. La funzione Sistemi Informativi
+
+41. I cambiamenti tecnologici e organizzativi complessi sono affrontati con team interfunzionali perché:
+A. Minimizzano la necessità di adattamento reciproco
+B. Riducono i costi di comunicazione interna
+C. Richiedono competenze e responsabilità trasversali
+D. Facilitano il mutuo adattamento delle unità funzionali
+
+42. Un esempio di raggruppamento basato sulle conoscenze e capacità utilizzate è rappresentato da:
+A. I dipartimenti universitari organizzati per discipline di riferimento
+B. Le parti amministrative in base al numero di personale impiegato
+C. Le squadre di progetto create in base a obiettivi a breve termine
+D. Le unità organizzative raggruppate secondo criteri numerici
+
+43. I criteri di raggruppamento nelle unità organizzative includono:
+A. Criteri tecnici, operativi e funzionali
+B. Criteri numerici, orientati agli input e orientati agli output
+C. Criteri strategici, di coordinamento e di sviluppo
+D. Criteri di complessità, di specializzazione e di innovazione
+
+44. Quando una mansione viene assegnata a più posizioni, questo significa che:
+A. Più persone possono svolgere lo stesso insieme di compiti in funzione del volume di attività
+B. Ogni posizione è unica e può essere ricoperta da una sola persona
+C. La mansione viene eliminata se risulta duplicata in più posizioni
+D. Le competenze di ciascuna posizione vengono ampliate per coprire più ruoli
+
+45. I processi primari in un’azienda sono definiti come quelli che:
+A. Generano un valore riconosciuto direttamente dal cliente esterno
+B. Sono orientati unicamente al controllo delle risorse
+C. Creano benefici solo per i clienti interni dell’azienda
+D. Supportano esclusivamente le funzioni aziendali interne
+
+46. La struttura organizzativa ibrida prevede l’utilizzo di criteri di raggruppamento:
+A. Esclusivamente orientati al cliente, con un focus sulle attività operative
+B. Un’organizzazione con criteri divisionali prevalenti, senza riferimento alla gerarchia funzionale
+C. Che variano tra raggruppamenti funzionali e divisionali
+D. Basati esclusivamente sulle economie di scala, interdipendenze dall’area aziendale in cui vengono applicati
+
+47. Secondo il principio dell'unicità del comando di Fayol, ogni individuo e unità organizzativa deve:
+A. poter delegare ordini a più responsabili gerarchici
+B. ricevere ordini da un solo responsabile gerarchico
+C. ottenere indicazioni da responsabili multipli
+D. operare senza alcuna supervisione diretta
+
+48. I bisogni di autorealizzazione sono quelli legati:
+A. Alla sopravvivenza e ai bisogni fisici
+B. Alla protezione dei pericoli e dalle minacce
+C. Alla stima degli altri e al riconoscimento sociale
+D. Allo sviluppo delle proprie potenzialità
+
+49. Le tre prospettive di analisi dell’organizzazione sono:
+A. Economica, sociale e politica
+B. Manageriale, sociologica e politica
+C. Tecnica, economica e umanistica
+D. Strategica, operativa e funzionale
+
+50. Le prestazioni operative di un processo aziendale possono essere generalmente suddivise nelle seguentidimensioni:
+A. Efficienza, produttività, qualità, innovazione
+B. Costo, tempo, qualità, flessibilità
+C. Autonomia, produttività, efficacia, supporto
+D. Costo, efficienza, qualità, produzione
+
+51. Una struttura organizzativa funzionale è più adatta a realtà:
+A. In rapida espansione su più mercati
+B. Orientate alla flessibilità e al cambiamento continuo
+C. Con molti prodotti e mercati diversificati
+D. Caratterizzate da pochi prodotti e mercati limitati
+
+52. I team interfunzionali sono utilizzati per:
+A. Limitare la comunicazione tra i dipartimenti aziendali
+B. Coordinare unità organizzative per risolvere problemi specifici
+C. Integrare informazioni esclusivamente attraverso supervisione diretta
+D. Aumentare la gerarchia all’interno dell’azienda
+
+53. La destinazione tra organi di linea e di staff può risultare complessa quando:
+A. Il vertice strategico si occupa di attività operative quotidiane
+B. All’interno della stessa unità sono presenti sia posizioni di linea che di staff
+C. I comitati esecutivi prendono decisioni per le unità operative
+D. Un’ azienda esternalizza tutte le sue attività operative
+
+54. Nelle strutture divisionali per prodotto, le attività si concentrano:
+A. Per facilitare il coordinamento tra unità funzionali
+B. Sulla coerenza e integrazione delle attività per ogni specifico prodotto
+C. Sulla gestione centralizzata dei clienti
+D. Esclusivamente su funzioni di supporto amministrativo
+
+55. Il criterio di raggruppamento in base al prodotto implica che le unità organizzative siano preposte asvolgere attività dedicate a:
+A. Ciascun prodotto o servizio dell’azienda
+B. Le mansioni amministrative generali
+C. Le richieste specifiche di clienti individuali
+D. La distribuzione geografica delle risorse aziendali
+
+56. La mansione o job, secondo la progettazione microstrutturale, si riferisce a:
+A. Una serie di obiettivi definiti per ogni singola area dell’organizzazione
+B. Un insieme di compiti assegnati a una posizione individuale
+C. Un insieme di attività di supporto svolte a più livelli dell’organizzazione
+D. Un modello di gestione operativa applicabile ai compiti di ogni unità aziendale
+
+57. La lunghezza della catena gerarchica in un’organizzazione è misurata con:
+A. Il numero di posizioni simili gestite da un supervisore
+B. La quantità di unità organizzative presenti
+C. Il numero di livelli gerarchici nella catena di comando più lunga
+D. Il numero di livelli di specializzazione presenti in ogni reparto
+
+58. Uno svantaggio comune delle strutture divisionali:
+A. Una limitata capacità di adattamento ai cambiamenti del mercato
+B. Una minore autonomia decisionale delle business unit
+C. La perdita di economie di scala e specializzazione delle risorse
+D. Un’eccessiva centralizzazione dei processi decisionali
+
+59. Un esempio di risorse immateriali che possono acquisire valore nel tempo è:
+A. Materie prime e prodotti semilavorati
+B. Brevetti e conoscenza tecnologica
+C. Macchinari e attrezzature
+D. Forza lavoro e competenze pratiche
+
+60. Nelle strutture funzionali, il principale meccanismo di coordinamento utilizzato è:
+A. Il controllo decentralizzato
+B. La supervisione diretta
+C. La standardizzazione degli obiettivi
+D. L’autonomia decisionale
+
+61. Le unità organizzative operative si caratterizzano principalmente per:
+A. La gestione diretta delle decisioni aziendali strategiche
+B. Il ruolo nel processo di trasformazione e l’elevata standardizzazione delle mansioni
+C. Il controllo dei flussi finanziari aziendali
+D. L’implementazione di politiche strategiche e di governance
+
+62. La struttura divisionale orientata al mercato permette:
+A. Una risposta specifica e rapida alle richieste di segmenti di clientela diversi
+B. Una standardizzazione rigida delle procedure aziendali
+C. Una minore specializzazione delle unità operative
+D. Un’elevata centralizzazione delle decisioni in tutte le funzioni
+
+63. Le problematiche organizzative si affrontano in modo efficace con:
+A. Il coinvolgimento di consulenti esterni
+B. La supervisione diretta dei capi
+C. Le task force, anche temporanee
+D. I singoli contributi dei membri
+
+64. Il valore attribuito dal cliente all'output di un prodotto o servizio dipende da quali fattori?
+A. Prezzo di acquisizione, qualità, velocità di acquisizione e tempo di acquisizione
+B. Durata del prodotto, reputazione del marchio e risorse utilizzate
+C. Distribuzione geografica, budget di marketing e volume di produzione
+D.  Prezzo di acquisizione, qualità, tempo e flessibilità
+
+65. Un esempio di raggruppamento basato sulle conoscenze e capacità utilizzate è rappresentato da:
+A. I dipartimenti universitari organizzati per discipline di riferimento
+B. I reparti aziendali suddivisi in base alla produzione e alla distribuzione
+C. Le divisioni aziendali create in base alla localizzazione geografica
+D. I gruppi di lavoro formati in base al volume di vendite delle singole aree
+
+66. La struttura organizzativa ibrida prevede l’utilizzo di criteri di raggruppamento che:
+A. Sono esclusivamente basati sul prodotto e sul mercato
+B. Variano tra funzionali e divisionali
+C. Sono centrati solo sulla geolocalizzazione delle unità aziendali
+D. Si basano unicamente sul numero di dipendenti e sul fatturato
+
+67. Nel contesto della gerarchia dei processi aziendali, il microprocesso è:
+A. Un insieme di attività finalizzate alla gestione di clienti esterni
+B. Un processo interfunzionale che collega tutte le divisioni aziendali
+C. Una macro area di attività coincidenti con le funzioni organizzative di alto livello
+D. Un singolo compito eseguito da un'unica persona in un reparto specifico
+
+68. Nelle organizzazioni, la manutenzione degli impianti e dei macchinari è tipicamente compito di:
+A. Un team di alta direzione che gestisce la pianificazione strategica
+B. Un gruppo di esperti che si occupa solo della gestione finanziaria dell’azienda
+C. Un organo di staff a livello gerarchico inferiore dedicato alla produzione
+D. Un reparto di marketing che coordina le attività promozionali per il prodotto
+
+69. L'orientamento del cliente prevede:
+A. Aumentare i margini di profitto senza modificare i prodotti
+B. L’importanza di soddisfare le esigenze del cliente e di personalizzare prodotti e servizi
+C. Focalizzarsi esclusivamente sull'efficienza produttiva a scapito della qualità
+D. Creare prodotti standardizzati per soddisfare la massa di consumatori
+
+70. La progettazione organizzativa nella microstruttura consiste nel:
+A. Creare politiche di gestione delle risorse umane a livello strategico
+B. Stabilire la missione e la visione aziendale per le unità organizzative
+C. Definire il contenuto del lavoro e il ruolo degli individui, formalizzando il comportamento atteso e sviluppando le competenze necessarie
+D. Determinare le tecniche di marketing per ogni prodotto e mercato
+
+71. Nei sistemi di pianificazione e controllo, i meccanismi di standardizzazione degli obiettivi e dei processi a livello di unità organizzative consentono di:
+A. Operare in relativa autonomia con controllo dei risultati
+B. Stabilire obiettivi generali senza preoccuparsi dei risultati intermedi
+C. Delegare la responsabilità solo al top management per l’intero processo
+D. Concentrarsi sulla standardizzazione delle risorse senza misurare i risultati
+
+72. Su cosa si basa la time-based competition del caso COBRA?
+A. Evitare la standardizzazione dei processi e mantenere alta la varietà di risposta
+B. Focalizzarsi esclusivamente sulla riduzione dei costi
+C. Creare un sistema di vendite che minimizza il tempo per la consegna
+D. Ricercare costantemente nuovi modi per rispondere rapidamente ai clienti
+
+73. Ampiezza del controllo è:
+A. La quantità di funzioni gestite da un singolo manager
+B. La capacità di un manager di prendere decisioni autonome
+C.  Il numero di livelli gerarchici in un'organizzazione
+D.  Il numero di persone che dipendono direttamente da un supervisore 
+
+74. In una struttura divisionale le business unit:
+A. Dipendono strettamente dalle decisioni centrali riguardo alle risorse
+B. Sono gestite da un'unica funzione che coordina tutte le operazioni
+C.  Godono di un’elevata autonomia sulle decisioni relative agli output
+D. Hanno una responsabilità limitata ai processi interni, ma non sugli output
+
+75. Le organizzazioni di grandi dimensioni presentano problematiche organizzative maggiori perché:
+A. Necessitano di coordinamento e specializzazione per evitare inefficienze
+B. Sono meno flessibili nel rispondere ai cambiamenti di mercato
+C. Non possono ridurre il numero di dipendenti senza compromettere l'efficienza
+D. Sono più difficili da monitorare e richiedono decisioni centralizzate
+
+76. Struttura per area geografica. Privilegiando la capacità di risposta locale si ottiene?
+A. Una sovrapposizione tra le funzioni di produzione e marketing
+B. Una maggiore efficienza nella gestione delle economie di scala 
+C. La mancanza di coordinamento su prodotti o clienti specifici
+D. Una centralizzazione delle decisioni strategiche
+
+77. Nell’ambito dell’organizzazione, quali dei seguenti concetti è corretto riguardo i gruppi e le organizzazioni meccanicistiche?
+A. I gruppi offrono un contesto formale per favorire il mutuo adattamento
+B. Le organizzazioni meccanicistiche dipendono meno dal coordinamento continuo
+C. I gruppi riducono la complessità delle attività da svolgere 
+D. I gruppi eliminano la necessità di ruoli manageriali intermedi
+
+78. Il processo aziendale può essere definito come:
+A. Una sequenza di decisioni strategiche definite esclusivamente dalla direzione generale
+B. Un insieme di compiti isolati svolti in autonomia dai singoli reparti
+C. Una procedura tecnica per la gestione dei sistemi informativi
+D. Un insieme organizzato di attività e decisioni finalizzato alla creazione di un output di valore per un cliente
+
+79. La prospettiva sociologica esplora ed interpreta:
+A. Le performance finanziarie dell’impresa in relazione al mercato azionario
+B. I modelli computazionali per l’ottimizzazione della logistica
+C. Il comportamento e le motivazioni delle persone nei contesti organizzativi
+D. Le strategie pubblicitarie per incrementare le vendite a breve termine
+
+80. Una delle forze che si oppone alla crescita organizzativa è:
+A.  La volontà di concentrarsi su un solo prodotto 
+B. La paura di perdere la flessibilità e il controllo aziendale 
+C. L’introduzione di nuove tecnologie gestionali 
+D. Il desiderio di espandere la quota di mercato
+
+81. Uno dei limiti principali delle strutture funzionali è:
+A. La riduzione dei livelli gerarchici interni
+B. L’eccessiva concentrazione sulle esigenze dei clienti
+C. La difficoltà di risposta a una domanda diversificata
+D. L’aumento dell’autonomia decisionale nei reparti
+
+82. I manager integratori, come i product manager e i project manager, hanno il compito di:
+A. Coordinare unità organizzative per raggruppare obiettivi specifici
+B. Supervisionare esclusivamente le attività finanziarie dell’organizzazione
+C. Gestire il reclutamento e la formazione del personale tecnico
+D. Eseguire attività operative routinarie nei singoli reparti
+
+83. Per un’impresa crescere è necessario per avere:
+A. L’aumento della burocrazia interna
+B. L’opportunità di accedere a finanziamenti più evoluti
+C. La perdita di controllo sui processi decisionali
+D. La diminuzione della qualità del prodotto 
+
+84. Qual è la base di differenziazione per la struttura delle organizzazioni?
+A.  Il segmento cliente
+B. La funzione comune
+C. L’output prodotto
+D. La localizzazione geografica 
+
+85. Quali elementi definiscono la struttura gerarchica di un'organizzazione? (domanda inventata)
+A. La varietà dei prodotti offerti e la segmentazione di mercato
+B. La quantità di risorse finanziarie disponibili
+C. Il numero dei livelli gerarchici e la catena di comando
+D. Il grado di automazione dei processi produttivi
+
+86. Qual è uno dei principali limiti dei manager integratori all'interno di un'organizzazione? (domanda inventata)
+A. L’assenza di obiettivi di standardizzazione
+B. Il controllo diretto sui processi produttivi
+C. La possibilità di accedere a tutte le risorse aziendali senza restrizioni
+D. La mancanza di autorità formale sulle risorse da coordinare
+
+87. Secondo la teoria dei sistemi, le attività di un'organizzazione devono essere: (domanda inventata)
+A. Interrelate, autonome, stabili e misurabili
+B. Indipendenti, interconnesse e mutevoli
+C. Gerarchiche, flessibili e soggette a continua revisione
+D. Separate, ridondanti e orientate all’improvvisazione
+
+88. In una struttura divisionale, le business unit:
+A. Godono di elevata autonomia sulle decisioni relative agli output
+B.  Dipendono totalmente dalla funzione amministrativa centrale per ogni decisione
+C. Seguono un’unica linea gerarchica comune a tutta l’organizzazione
+D. Hanno come obiettivo principale la riduzione dei costi delle funzioni di supporto
+
+89. I servizi di massa:
+A. Sono posizionabili nella parte centrale e in basso a destra della matrice prodotto-processo
+B.  Sono posizionabili unicamente nella parte centrale della matrice prodotto-processo
+C. Sono posizionabili soltanto in basso a destra della matrice prodotto-processo
+D. Sono posizionabili in basso a sinistra della matrice prodotto-processo
+
+90. In un sistema orientato all’output, cosa viene tipicamente specificato per guidare l’operato delle unità organizzative? (domanda inventata)
+A. Il dettaglio tecnico delle procedure operative da seguire
+B. I vincoli gerarchici e la struttura funzionale di riferimento
+C. Il risultato da produrre in termini di quantità e tipologia, senza indicazioni sul metodo di produzione
+D. La composizione del team e il calendario delle attività giornaliere
+
+91. La capacità, nella progettazione microstrutturale, è definita come:
+A. L'insieme delle attività organizzative richieste per svolgere un compito con successo
+B. Un sistema di regole e norme che guida il comportamente degli individui nell'organizzazione
+C. Un processo di adattamento delle competenze a nuove posizioni all'interno dell'azienda
+D. Una caratteristica intrinseca individuale alla base di una prestazione efficace o superiore in una specifica attività o mansione
+
+92. Secondo la teoria dei bisogni di Maslow, cosa caratterizza i bisogni di stima? (domanda inventata)
+A. Soddisfazione dei bisogni fisiologici e di sicurezza
+B. Stima degli altri e il riconoscimento sociale
+C. Desiderio di appartenenza a un gruppo familiare
+D. Ricerca di esperienze spirituali e trascendentali
+
+93. Quali caratteristiche devono avere i processi aziendali per essere considerati efficienti e adattabili?
+A. Indipendenti, ridondanti e flessibili
+B. Semplici, isolate e temporanee
+C. Interrelabili, autonome e stabili
+D. Gerarchiche, subordinate e non misurabili
+
+94. Qual è la differenza tra capacità e competenze?
+A. La valenza più innata delle capacità rispetto al ruolo dominante di studio e esperienza nelle competenze
+B. Le capacità sono sempre acquisite tramite corsi formali, mentre le competenze sono innate
+C. Le competenze si sviluppano solo sul posto di lavoro, le capacità solo in ambito scolastico
+D. Le capacità si riferiscono solo alle abilità tecniche, mentre le competenze includono anche hobby personali
+
+95. Come si configura tipicamente la struttura organizzativa per area geografica? (domanda inventata)
+A. Un unico centro operativo centralizzato a livello nazionale
+B. Una divisione per linea di prodotto in ogni regione
+C. Un'unità produttiva per ciascuna grande area territoriale di attività
+D. Una rete di piccoli team interfunzionali sparsi casualmente sul territorio
+
+96. I criteri di raggruppamento orientati agli input portano ad accorpare le attività di base a:
+A. Mezzi utilizzati come competenze, tecnologie o metodi di lavoro
+B. Obiettivi strategici e risultati attesi
+C. Preferenze individuali dei lavoratori
+D. Fasce orarie e disponibilità del personale
+
+97. Il principale effetto del raggruppamento consiste nel:
+A. Ridurre il numero complessivo di dipendenti
+B. Eliminare la necessità di supervisione gerarchica
+C. Definire un sistema di coordinamento comune
+D. Aumentare la varietà dei prodotti senza controllo
+
+98. Le prestazioni (o performance) dei processi quantificano:
+A. Il numero di riunioni svolte durante un ciclo produttivo
+B. Il livello di motivazione dei dipendenti indipendentemente dai risultati
+C. Il grado di utilizzo dei macchinari rispetto al tempo disponibile
+D. La capacità degli output di soddisfare le esigenze del cliente e creare valore per l'azienda
+
+99. Nella prospettiva manageriale, l’organizzazione è vista come
+A. Un'entità autonoma che evolve spontaneamente senza guida
+B. Uno strumento plasmato dal potere per raggiungere fini specifici
+C. Un insieme di pratiche culturali da analizzare senza intervento diretto
+D. Un sistema informale di relazioni tra individui indipendenti
+
+RISPOSTE:
+
+1. B
+
+2. B
+
+3. A
+
+4. C
+
+5. A
+
+6. C
+
+7. C
+
+8. C
+
+9. A
+
+10. C
+
+11. B
+
+12. C
+
+13. A
+
+14. A
+
+15. C
+
+16. A
+
+17. C
+
+18. B
+
+19. A
+
+20. A
+
+21. A
+
+22. A
+
+23. C
+
+24. C
+
+25. C
+
+26. C
+
+27. D
+
+28. B
+
+29. B
+
+30. B
+
+31. A
+
+32. C
+
+33. C
+
+34. C
+
+35. D
+
+36. D
+
+37. B
+
+38. C
+
+39. C
+
+40. D
+
+41. C
+
+42. A
+
+43. B
+
+44. A
+
+45. A
+
+46. C
+
+47. B
+
+48. D
+
+49. B
+
+50. B
+
+51. D
+
+52. B
+
+53. B
+
+54. B
+
+55. A
+
+56. B
+
+57. C
+
+58. C
+
+59. B
+
+60. C
+
+61. B
+
+62. A
+
+63. C
+
+64. D
+
+65. A
+
+66. B
+
+67. C
+
+68. C
+
+69. B
+
+70. C
+
+71. A
+
+72. D
+
+73. D
+
+74. C
+
+75. A
+
+76. C
+
+77. A
+
+78. D
+
+79. C
+
+80. B
+
+81. C
+
+82. A
+
+83. B
+
+84. B
+
+85. C
+
+86. D
+
+87. A
+
+88. A
+
+89. A
+
+90. C
+
+91. D
+
+92. B
+
+93. C
+
+94. A
+
+95. C
+
+96. A
+
+97. C
+
+98. D
+
+99. B

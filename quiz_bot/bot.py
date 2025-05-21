@@ -1,0 +1,219 @@
+import os
+import json
+import random
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import (
+    ApplicationBuilder,
+    CommandHandler,
+    CallbackQueryHandler,
+    ContextTypes,
+)
+
+# Stato per ogni utente
+user_states = {}
+
+QUIZ_FOLDER = "quizzes"
+
+
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = update.effective_user.id
+    try:
+        files = [f for f in os.listdir(QUIZ_FOLDER) if f.endswith(".json")]
+    except Exception as e:
+        await context.bot.send_message(chat_id=user_id, text=f"Errore nel leggere la cartella quiz: {e}")
+        return
+
+    if not files:
+        await context.bot.send_message(chat_id=user_id, text="Nessun quiz disponibile.")
+        return
+
+    keyboard = [
+        [InlineKeyboardButton(f.replace("_", " ").replace(".json", ""), callback_data=f)]
+        for f in files
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
+    try:
+        await context.bot.send_message(
+            chat_id=user_id,
+            text="Scegli la materia del quiz:",
+            reply_markup=reply_markup,
+        )
+    except Exception as e:
+        print(f"Errore nell'inviare il messaggio start a {user_id}: {e}")
+
+
+async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    user_id = query.from_user.id
+    filename = query.data
+    quiz_path = os.path.join(QUIZ_FOLDER, filename)
+
+    try:
+        with open(quiz_path, encoding="utf-8") as f:
+            quiz_data = json.load(f)
+    except Exception as e:
+        await context.bot.send_message(chat_id=user_id, text=f"Errore nel caricamento del quiz: {e}")
+        return
+
+    question_order = list(range(len(quiz_data)))
+    random.shuffle(question_order)
+
+    user_states[user_id] = {
+        "quiz": quiz_data,
+        "order": question_order,
+        "index": 0,
+        "score": 0,
+        "total": len(quiz_data),
+    }
+
+    await send_next_question(user_id, context)
+
+
+async def send_next_question(user_id, context):
+    state = user_states.get(user_id)
+
+    if not state:
+        await context.bot.send_message(chat_id=user_id, text="Sessione non trovata. Scrivi /start per iniziare.")
+        return
+
+    if state["index"] >= state["total"]:
+        try:
+            percentage = round((state["score"] / state["total"]) * 100, 2)
+        except Exception:
+            percentage = 0
+        await context.bot.send_message(
+            chat_id=user_id,
+            text=f"Quiz completato! Punteggio: {state['score']} su {state['total']} ({percentage}%)"
+        )
+        user_states.pop(user_id, None)
+        return
+
+    q_index = state["order"][state["index"]]
+    question_data = state["quiz"][q_index]
+
+    question_text = f"{state['index'] + 1}. {question_data.get('question', 'Domanda mancante')}"
+
+    keyboard = [
+        [InlineKeyboardButton(f"{chr(65 + i)}. {opt}", callback_data=f"answer:{i}")]
+        for i, opt in enumerate(question_data.get("answers", []))
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
+    try:
+        await context.bot.send_message(
+            chat_id=user_id,
+            text=question_text,
+            reply_markup=reply_markup
+        )
+    except Exception as e:
+        print(f"Errore nell'inviare domanda a {user_id}: {e}")
+
+
+async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    user_id = query.from_user.id
+    data = query.data
+
+    try:
+        if data.endswith(".json"):
+            await select_quiz(update, context)
+        elif data.startswith("answer:"):
+            selected = int(data.split(":")[1])
+            await handle_answer_callback(user_id, selected, context)
+    except Exception as e:
+        await context.bot.send_message(chat_id=user_id, text=f"Errore nella gestione della risposta: {e}")
+
+
+async def handle_answer_callback(user_id: int, selected: int, context: ContextTypes.DEFAULT_TYPE):
+    state = user_states.get(user_id)
+
+    if not state:
+        await context.bot.send_message(chat_id=user_id, text="Sessione scaduta. Scrivi /start per ripartire.")
+        return
+
+    q_index = state["order"][state["index"]]
+    question_data = state["quiz"][q_index]
+    correct_index = question_data.get("correct_answer_index", None)
+
+    if correct_index is None:
+        try:
+            correct_answer = question_data["correct_answer"]
+            correct_index = question_data["answers"].index(correct_answer)
+        except Exception:
+            correct_index = -1
+
+    try:
+        if selected == correct_index:
+            await context.bot.send_message(chat_id=user_id, text="✅ Corretto!")
+            state["score"] += 1
+        else:
+            correct_letter = chr(65 + correct_index) if correct_index >= 0 else "?"
+            correct_text = question_data["answers"][correct_index] if correct_index >= 0 else "N/A"
+            await context.bot.send_message(
+                chat_id=user_id,
+                text=f"❌ Sbagliato! La risposta corretta era: {correct_letter}. {correct_text}"
+            )
+    except Exception as e:
+        await context.bot.send_message(chat_id=user_id, text=f"Errore nel feedback della risposta: {e}")
+
+    state["index"] += 1
+    await send_next_question(user_id, context)
+
+
+async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = update.effective_user.id
+    state = user_states.pop(user_id, None)
+
+    if state:
+        try:
+            percentage = round((state["score"] / max(state["index"], 1)) * 100, 2)
+            stats_msg = f"Statistiche finali: {state['score']} risposte corrette su {state['index']} ({percentage}%)"
+        except Exception:
+            stats_msg = "Statistiche non disponibili."
+        try:
+            await context.bot.send_message(chat_id=user_id, text="Quiz interrotto.")
+            await context.bot.send_message(chat_id=user_id, text=stats_msg)
+        except Exception as e:
+            print(f"Errore nell'inviare messaggio stop a {user_id}: {e}")
+    else:
+        await context.bot.send_message(chat_id=user_id, text="Nessun quiz attivo. Scrivi /start per iniziare.")
+
+
+async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = update.effective_user.id
+    state = user_states.get(user_id)
+    if not state or state["index"] == 0:
+        await context.bot.send_message(chat_id=user_id, text="Nessuna statistica disponibile.")
+        return
+
+    try:
+        percentage = round((state["score"] / state["index"]) * 100, 2)
+    except Exception:
+        percentage = 0
+    await context.bot.send_message(
+        chat_id=user_id,
+        text=f"Statistiche attuali: {state['score']} risposte corrette su {state['index']} ({percentage}%)"
+    )
+
+
+def main():
+    token = os.getenv("TELEGRAM_TOKEN")
+    if not token:
+        raise RuntimeError("Variabile d'ambiente TELEGRAM_TOKEN non trovata.")
+
+    app = ApplicationBuilder().token(token).build()
+
+    app.add_handler(CommandHandler("start", start))
+    app.add_handler(CommandHandler("stop", stop))
+    app.add_handler(CommandHandler("stats", stats))
+    app.add_handler(CallbackQueryHandler(handle_callback))
+
+    print("Bot avviato. In ascolto...")
+    app.run_polling()
+
+
+if __name__ == "__main__":
+    main()

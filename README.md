@@ -6,15 +6,19 @@ Questo repository contiene bot Telegram per somministrare quiz agli utenti in ch
 
 ## Struttura del repository
 
-Ogni bot ha una propria cartella separata, ad esempio:
 
 ```bash
+```bash
 telegram-bots/
-└── quiz_soem_bot/
-    ├── bot.py          # codice Python del bot
-    ├── quiz.json       # domande e risposte del quiz in formato JSON
-    ├── requirements.txt # dipendenze Python
-    └── Procfile        # comando per avviare il bot su Render
+├── quiz_bot/
+│   ├── bot.py               # codice Python del bot
+│   ├── requirements.txt     # dipendenze Python
+│   ├── Procfile             # comando per il deploy su Render o simili
+├── quizzes/
+│   ├── convert.py           # codice di utility per convertire file .qwz e .txt nei json
+│   ├── diritto.json         # file JSON con domande e risposte
+│   └── altro_quiz.json      # altri quiz in JSON
+
 ```
 
 ## Formato del file `quiz.json`
@@ -24,14 +28,14 @@ Il file `quiz.json` contiene una lista di domande e risposte nel seguente format
 ```json
 [
   {
-    "question": "Tra i seguenti autori chi è noto per aver sviluppato teorie sull’organizzazione scientifica del lavoro?",
-    "options": [
-      "Karl Marx",
-      "Frederick W. Taylor",
-      "Max Weber",
-      "Henry Ford"
+    "question": "Testo della domanda",
+    "answers": [
+      "Risposta 1",
+      "Risposta 2",
+      "Risposta 3",
+      "Risposta 4"
     ],
-    "answer": 1
+    "correct_answer": "Risposta corretta"
   }
 ]
 ```
@@ -40,12 +44,16 @@ Il file `quiz.json` contiene una lista di domande e risposte nel seguente format
 - **options**: lista delle possibili risposte (in ordine)
 - **answer**: indice (zero-based) della risposta corr
 
+## Conversione e preparazione dei file JSON
 
-## Creare un bot Telegram con BotFather
+I file di partenza potrebbero avere formati diversi, per uniformare il formato al JSON sopra, è presente uno script di conversione che per ora gestisce file .qwz e .txt, per utilizzarlo basta salvare il file di partenza nella cartella quiz e modificare i nomi dei file nel codice prima di lanciarlo. Il nome del file json sara' quello che viene visualizzato fra la scelta degli esami sul bot
 
-Apri Telegram e cerca il bot @BotFather.
-Digita /newbot e segui la procedura guidata per creare un nuovo bot.
-Copia il token API che ti viene fornito, servirà per collegare il codice al bot Telegram.
+```code
+# Nome del file da convertire
+input_file = "diritto.qwz"  # Cambia questo con il file da elaborare
+output_json = "diritto.json"
+```
+
 
 ## Comandi del bot
 
@@ -54,6 +62,11 @@ Copia il token API che ti viene fornito, servirà per collegare il codice al bot
 ```
 Avvia la sessione quiz in chat privata con l'utente che ha inviato il comando.
 Il bot inizia a fare le domande una ad una.
+
+```code
+    /stats
+```
+Mostra le statistiche dell'utente.
 
 ```code
     /stop
