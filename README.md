@@ -33,6 +33,7 @@ Il file `quiz.json` contiene una lista di domande e risposte nel seguente format
     ],
     "answer": 1
   }
+]
 ```
 
 - **question**: testo della domanda
@@ -42,9 +43,9 @@ Il file `quiz.json` contiene una lista di domande e risposte nel seguente format
 
 ## Creare un bot Telegram con BotFather
 
-    Apri Telegram e cerca il bot @BotFather.
-    Digita /newbot e segui la procedura guidata per creare un nuovo bot.
-    Copia il token API che ti viene fornito, servirà per collegare il codice al bot Telegram.
+Apri Telegram e cerca il bot @BotFather.
+Digita /newbot e segui la procedura guidata per creare un nuovo bot.
+Copia il token API che ti viene fornito, servirà per collegare il codice al bot Telegram.
 
 ## Comandi del bot
 
