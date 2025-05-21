@@ -3,7 +3,12 @@ import json
 import random
 from fastapi import FastAPI, Request, HTTPException
 from telegram import Bot, Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Dispatcher, CommandHandler, CallbackQueryHandler, ContextTypes
+from telegram.ext import (
+    ApplicationBuilder,
+    CommandHandler,
+    CallbackQueryHandler,
+    ContextTypes,
+)
 import asyncio
 
 app = FastAPI()
@@ -12,13 +17,10 @@ TOKEN = os.getenv("TELEGRAM_TOKEN")
 if not TOKEN:
     raise RuntimeError("Variabile d'ambiente TELEGRAM_TOKEN non trovata.")
 
-bot = Bot(token=TOKEN)
-dispatcher = Dispatcher(bot=bot, update_queue=None, workers=0, use_context=True)
+app_telegram = ApplicationBuilder().token(TOKEN).build()
 
 user_states = {}
 QUIZ_FOLDER = "quizzes"
-
-# --- Handler async ---
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
@@ -95,13 +97,11 @@ async def send_next_question(user_id, context):
     question_data = state["quiz"][q_index]
     question_text = f"{state['index'] + 1}. {question_data.get('question', 'Domanda mancante')}"
 
-    # Bottoni risposte
     keyboard = [
         [InlineKeyboardButton(f"{chr(65 + i)}. {opt}", callback_data=f"answer:{i}")]
         for i, opt in enumerate(question_data.get("answers", []))
     ]
 
-    # Aggiungo Stop e Cambia corso
     keyboard.append([
         InlineKeyboardButton("🛑 Stop", callback_data="stop"),
         InlineKeyboardButton("🔄 Cambia corso", callback_data="change_course")
@@ -200,19 +200,18 @@ async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
 
 
-# Aggiungo handler al dispatcher
-dispatcher.add_handler(CommandHandler("start", start))
-dispatcher.add_handler(CommandHandler("stop", stop))
-dispatcher.add_handler(CommandHandler("stats", stats))
-dispatcher.add_handler(CallbackQueryHandler(handle_callback))
+app_telegram.add_handler(CommandHandler("start", start))
+app_telegram.add_handler(CommandHandler("stop", stop))
+app_telegram.add_handler(CommandHandler("stats", stats))
+app_telegram.add_handler(CallbackQueryHandler(handle_callback))
 
 
 @app.post("/webhook")
 async def telegram_webhook(request: Request):
     try:
         data = await request.json()
-        update = Update.de_json(data, bot)
-        await dispatcher.process_update(update)
+        update = Update.de_json(data, bot=app_telegram.bot)
+        await app_telegram.process_update(update)
     except Exception as e:
         print(f"Errore webhook: {e}")
         raise HTTPException(status_code=400, detail=str(e))
