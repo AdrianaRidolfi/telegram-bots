@@ -1,19 +1,24 @@
 import os
 import json
 import random
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import (
-    ApplicationBuilder,
-    CommandHandler,
-    CallbackQueryHandler,
-    ContextTypes,
-)
+from fastapi import FastAPI, Request, HTTPException
+from telegram import Bot, Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import Dispatcher, CommandHandler, CallbackQueryHandler, ContextTypes
+import asyncio
 
-# Stato per ogni utente
+app = FastAPI()
+
+TOKEN = os.getenv("TELEGRAM_TOKEN")
+if not TOKEN:
+    raise RuntimeError("Variabile d'ambiente TELEGRAM_TOKEN non trovata.")
+
+bot = Bot(token=TOKEN)
+dispatcher = Dispatcher(bot=bot, update_queue=None, workers=0, use_context=True)
+
 user_states = {}
-
 QUIZ_FOLDER = "quizzes"
 
+# --- Handler async ---
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
@@ -33,14 +38,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
-    try:
-        await context.bot.send_message(
-            chat_id=user_id,
-            text="Scegli la materia del quiz:",
-            reply_markup=reply_markup,
-        )
-    except Exception as e:
-        print(f"Errore nell'inviare il messaggio start a {user_id}: {e}")
+    await context.bot.send_message(
+        chat_id=user_id,
+        text="Scegli la materia del quiz:",
+        reply_markup=reply_markup,
+    )
 
 
 async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -73,7 +75,6 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def send_next_question(user_id, context):
     state = user_states.get(user_id)
-
     if not state:
         await context.bot.send_message(chat_id=user_id, text="Sessione non trovata. Scrivi /start per iniziare.")
         return
@@ -92,23 +93,27 @@ async def send_next_question(user_id, context):
 
     q_index = state["order"][state["index"]]
     question_data = state["quiz"][q_index]
-
     question_text = f"{state['index'] + 1}. {question_data.get('question', 'Domanda mancante')}"
 
+    # Bottoni risposte
     keyboard = [
         [InlineKeyboardButton(f"{chr(65 + i)}. {opt}", callback_data=f"answer:{i}")]
         for i, opt in enumerate(question_data.get("answers", []))
     ]
+
+    # Aggiungo Stop e Cambia corso
+    keyboard.append([
+        InlineKeyboardButton("🛑 Stop", callback_data="stop"),
+        InlineKeyboardButton("🔄 Cambia corso", callback_data="change_course")
+    ])
+
     reply_markup = InlineKeyboardMarkup(keyboard)
 
-    try:
-        await context.bot.send_message(
-            chat_id=user_id,
-            text=question_text,
-            reply_markup=reply_markup
-        )
-    except Exception as e:
-        print(f"Errore nell'inviare domanda a {user_id}: {e}")
+    await context.bot.send_message(
+        chat_id=user_id,
+        text=question_text,
+        reply_markup=reply_markup
+    )
 
 
 async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -117,19 +122,21 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = query.from_user.id
     data = query.data
 
-    try:
-        if data.endswith(".json"):
-            await select_quiz(update, context)
-        elif data.startswith("answer:"):
-            selected = int(data.split(":")[1])
-            await handle_answer_callback(user_id, selected, context)
-    except Exception as e:
-        await context.bot.send_message(chat_id=user_id, text=f"Errore nella gestione della risposta: {e}")
+    if data == "stop":
+        await stop(update, context)
+        user_states.pop(user_id, None)
+    elif data == "change_course":
+        user_states.pop(user_id, None)
+        await start(update, context)
+    elif data.endswith(".json"):
+        await select_quiz(update, context)
+    elif data.startswith("answer:"):
+        selected = int(data.split(":")[1])
+        await handle_answer_callback(user_id, selected, context)
 
 
 async def handle_answer_callback(user_id: int, selected: int, context: ContextTypes.DEFAULT_TYPE):
     state = user_states.get(user_id)
-
     if not state:
         await context.bot.send_message(chat_id=user_id, text="Sessione scaduta. Scrivi /start per ripartire.")
         return
@@ -145,19 +152,16 @@ async def handle_answer_callback(user_id: int, selected: int, context: ContextTy
         except Exception:
             correct_index = -1
 
-    try:
-        if selected == correct_index:
-            await context.bot.send_message(chat_id=user_id, text="✅ Corretto!")
-            state["score"] += 1
-        else:
-            correct_letter = chr(65 + correct_index) if correct_index >= 0 else "?"
-            correct_text = question_data["answers"][correct_index] if correct_index >= 0 else "N/A"
-            await context.bot.send_message(
-                chat_id=user_id,
-                text=f"❌ Sbagliato! La risposta corretta era: {correct_letter}. {correct_text}"
-            )
-    except Exception as e:
-        await context.bot.send_message(chat_id=user_id, text=f"Errore nel feedback della risposta: {e}")
+    if selected == correct_index:
+        await context.bot.send_message(chat_id=user_id, text="✅ Corretto!")
+        state["score"] += 1
+    else:
+        correct_letter = chr(65 + correct_index) if correct_index >= 0 else "?"
+        correct_text = question_data["answers"][correct_index] if correct_index >= 0 else "N/A"
+        await context.bot.send_message(
+            chat_id=user_id,
+            text=f"❌ Sbagliato! La risposta corretta era: {correct_letter}. {correct_text}"
+        )
 
     state["index"] += 1
     await send_next_question(user_id, context)
@@ -173,11 +177,8 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
             stats_msg = f"Statistiche finali: {state['score']} risposte corrette su {state['index']} ({percentage}%)"
         except Exception:
             stats_msg = "Statistiche non disponibili."
-        try:
-            await context.bot.send_message(chat_id=user_id, text="Quiz interrotto.")
-            await context.bot.send_message(chat_id=user_id, text=stats_msg)
-        except Exception as e:
-            print(f"Errore nell'inviare messaggio stop a {user_id}: {e}")
+        await context.bot.send_message(chat_id=user_id, text="Quiz interrotto.")
+        await context.bot.send_message(chat_id=user_id, text=stats_msg)
     else:
         await context.bot.send_message(chat_id=user_id, text="Nessun quiz attivo. Scrivi /start per iniziare.")
 
@@ -199,21 +200,26 @@ async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
 
 
-def main():
-    token = os.getenv("TELEGRAM_TOKEN")
-    if not token:
-        raise RuntimeError("Variabile d'ambiente TELEGRAM_TOKEN non trovata.")
+# Aggiungo handler al dispatcher
+dispatcher.add_handler(CommandHandler("start", start))
+dispatcher.add_handler(CommandHandler("stop", stop))
+dispatcher.add_handler(CommandHandler("stats", stats))
+dispatcher.add_handler(CallbackQueryHandler(handle_callback))
 
-    app = ApplicationBuilder().token(token).build()
 
-    app.add_handler(CommandHandler("start", start))
-    app.add_handler(CommandHandler("stop", stop))
-    app.add_handler(CommandHandler("stats", stats))
-    app.add_handler(CallbackQueryHandler(handle_callback))
-
-    print("Bot avviato. In ascolto...")
-    app.run_polling()
+@app.post("/webhook")
+async def telegram_webhook(request: Request):
+    try:
+        data = await request.json()
+        update = Update.de_json(data, bot)
+        await dispatcher.process_update(update)
+    except Exception as e:
+        print(f"Errore webhook: {e}")
+        raise HTTPException(status_code=400, detail=str(e))
+    return {"ok": True}
 
 
 if __name__ == "__main__":
-    main()
+    import uvicorn
+    print("Avvio server webhook...")
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
