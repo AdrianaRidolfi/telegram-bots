@@ -1,4 +1,5 @@
 import json
+import random
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
@@ -7,40 +8,70 @@ with open("quiz.json", encoding="utf-8") as f:
     QUIZ = json.load(f)
 
 # Dizionario per tenere traccia dello stato utente
+# Ogni utente ha: index corrente, score, ordine casuale delle domande (lista di indici)
 user_states = {}
 
 def start(update: Update, context: CallbackContext):
-    user_id = update.effective_user.id
-    context.bot.send_message(chat_id=user_id, text="Benvenuto! Iniziamo il quiz. Scrivi /stop per fermarti.")
-    user_states[user_id] = {"index": 0, "score": 0}
-    send_next_question(update, context)
+    user = update.effective_user
+    chat = update.effective_chat
 
-def send_next_question(update: Update, context: CallbackContext):
-    user_id = update.effective_user.id
-    state = user_states.get(user_id)
+    # Se siamo in gruppo o topic, rispondi in privato
+    if chat.type in ['group', 'supergroup']:
+        context.bot.send_message(chat_id=user.id, text="Ciao! Ti mando il quiz in chat privata.")
+        # Facciamo partire il quiz in privato simulando un messaggio da solo
+        # oppure mandiamo il messaggio di benvenuto
+        context.bot.send_message(chat_id=user.id, text="Benvenuto! Iniziamo il quiz. Scrivi /stop per fermarti.")
+    else:
+        # Siamo già in chat privata
+        context.bot.send_message(chat_id=user.id, text="Benvenuto! Iniziamo il quiz. Scrivi /stop per fermarti.")
 
-    if not state or state["index"] >= len(QUIZ):
-        context.bot.send_message(chat_id=user_id, text=f"Quiz completato! Punteggio: {state['score']} su {len(QUIZ)}")
-        user_states.pop(user_id, None)
-        return
+    # Inizializza stato: ordina casualmente gli indici delle domande
+    question_order = list(range(len(QUIZ)))
+    random.shuffle(question_order)
+    user_states[user.id] = {"index": 0, "score": 0, "order": question_order}
 
-    question_data = QUIZ[state["index"]]
-    question_text = f"{state['index'] + 1}. {question_data['question']}\n"
-    for i, answer in enumerate(question_data["answers"]):
-        question_text += f"{chr(65 + i)}. {answer}\n"
-    
-    context.bot.send_message(chat_id=user_id, text=question_text)
+    # Invia prima domanda in privato
+    send_next_question_private(user.id, context)
 
-def handle_message(update: Update, context: CallbackContext):
-    user_id = update.effective_user.id
+def send_next_question_private(user_id, context: CallbackContext):
     state = user_states.get(user_id)
 
     if not state:
         context.bot.send_message(chat_id=user_id, text="Scrivi /start per iniziare il quiz.")
         return
 
+    if state["index"] >= len(QUIZ):
+        context.bot.send_message(chat_id=user_id, text=f"Quiz completato! Punteggio: {state['score']} su {len(QUIZ)}")
+        user_states.pop(user_id, None)
+        return
+
+    q_idx = state["order"][state["index"]]
+    question_data = QUIZ[q_idx]
+
+    question_text = f"{state['index'] + 1}. {question_data['question']}\n"
+    for i, answer in enumerate(question_data["answers"]):
+        question_text += f"{chr(65 + i)}. {answer}\n"
+
+    context.bot.send_message(chat_id=user_id, text=question_text)
+
+def handle_message(update: Update, context: CallbackContext):
+    user = update.effective_user
+    chat = update.effective_chat
+
+    # Il quiz funziona solo in chat privata
+    if chat.type != 'private':
+        # Ignora messaggi nei gruppi e topic
+        return
+
+    state = user_states.get(user.id)
+
+    if not state:
+        context.bot.send_message(chat_id=user.id, text="Scrivi /start per iniziare il quiz.")
+        return
+
     user_answer = update.message.text.strip().upper()
-    question_data = QUIZ[state["index"]]
+    q_idx = state["order"][state["index"]]
+    question_data = QUIZ[q_idx]
     correct = question_data["correct_answer"].strip().lower()
     all_answers = [a.strip().lower() for a in question_data["answers"]]
 
@@ -53,29 +84,27 @@ def handle_message(update: Update, context: CallbackContext):
             answer = user_answer.lower()
 
         if answer == correct:
-            context.bot.send_message(chat_id=user_id, text="Corretto!")
+            context.bot.send_message(chat_id=user.id, text="✅ Corretto!")
             state["score"] += 1
         else:
-            context.bot.send_message(chat_id=user_id, text=f"Sbagliato! Risposta corretta: {question_data['correct_answer']}")
+            context.bot.send_message(chat_id=user.id, text=f"❌ Sbagliato! Risposta corretta: {question_data['correct_answer']}")
     except:
-        context.bot.send_message(chat_id=user_id, text="Risposta non valida. Riprova.")
+        context.bot.send_message(chat_id=user.id, text="Risposta non valida. Riprova.")
         return
 
     state["index"] += 1
-    send_next_question(update, context)
+    send_next_question_private(user.id, context)
 
 def stop(update: Update, context: CallbackContext):
-    user_id = update.effective_user.id
-    if user_id in user_states:
-        context.bot.send_message(chat_id=user_id, text="Quiz interrotto.")
-        user_states.pop(user_id, None)
+    user = update.effective_user
+    if user.id in user_states:
+        context.bot.send_message(chat_id=user.id, text="Quiz interrotto.")
+        user_states.pop(user.id, None)
     else:
-        context.bot.send_message(chat_id=user_id, text="Nessun quiz attivo. Scrivi /start per iniziare.")
+        context.bot.send_message(chat_id=user.id, text="Nessun quiz attivo. Scrivi /start per iniziare.")
 
 def main():
-    # Sostituisci con il token del tuo bot
     TOKEN = "7781432394:AAEftn4wvo1gXnJ4pekdwY0vnd7NonvR3NQ"
-    
     updater = Updater(token=TOKEN, use_context=True)
     dispatcher = updater.dispatcher
 
