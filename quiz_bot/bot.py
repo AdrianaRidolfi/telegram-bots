@@ -2,25 +2,25 @@ import os
 import json
 import random
 from fastapi import FastAPI, Request, HTTPException
-from telegram import Bot, Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     ApplicationBuilder,
     CommandHandler,
     CallbackQueryHandler,
     ContextTypes,
 )
-import asyncio
+from contextlib import asynccontextmanager
 
-app = FastAPI()
-
-TOKEN = os.getenv("TELEGRAM_TOKEN")
+# Inizializzazione bot Telegram
+TOKEN = os.getenv("TELEGRAM_TOKEN", "YOUR_DEFAULT_TOKEN_HERE")  # Sostituisci se necessario
 if not TOKEN:
     raise RuntimeError("Variabile d'ambiente TELEGRAM_TOKEN non trovata.")
 
-app_telegram = ApplicationBuilder().token(TOKEN).build()
-
+application = ApplicationBuilder().token(TOKEN).build()
 user_states = {}
 QUIZ_FOLDER = "quizzes"
+
+# --- Funzioni handler ---
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
@@ -82,10 +82,7 @@ async def send_next_question(user_id, context):
         return
 
     if state["index"] >= state["total"]:
-        try:
-            percentage = round((state["score"] / state["total"]) * 100, 2)
-        except Exception:
-            percentage = 0
+        percentage = round((state["score"] / state["total"]) * 100, 2)
         await context.bot.send_message(
             chat_id=user_id,
             text=f"Quiz completato! Punteggio: {state['score']} su {state['total']} ({percentage}%)"
@@ -101,12 +98,10 @@ async def send_next_question(user_id, context):
         [InlineKeyboardButton(f"{chr(65 + i)}. {opt}", callback_data=f"answer:{i}")]
         for i, opt in enumerate(question_data.get("answers", []))
     ]
-
     keyboard.append([
         InlineKeyboardButton("🛑 Stop", callback_data="stop"),
         InlineKeyboardButton("🔄 Cambia corso", callback_data="change_course")
     ])
-
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await context.bot.send_message(
@@ -143,7 +138,7 @@ async def handle_answer_callback(user_id: int, selected: int, context: ContextTy
 
     q_index = state["order"][state["index"]]
     question_data = state["quiz"][q_index]
-    correct_index = question_data.get("correct_answer_index", None)
+    correct_index = question_data.get("correct_answer_index")
 
     if correct_index is None:
         try:
@@ -172,11 +167,8 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     state = user_states.pop(user_id, None)
 
     if state:
-        try:
-            percentage = round((state["score"] / max(state["index"], 1)) * 100, 2)
-            stats_msg = f"Statistiche finali: {state['score']} risposte corrette su {state['index']} ({percentage}%)"
-        except Exception:
-            stats_msg = "Statistiche non disponibili."
+        percentage = round((state["score"] / max(state["index"], 1)) * 100, 2)
+        stats_msg = f"Statistiche finali: {state['score']} risposte corrette su {state['index']} ({percentage}%)"
         await context.bot.send_message(chat_id=user_id, text="Quiz interrotto.")
         await context.bot.send_message(chat_id=user_id, text=stats_msg)
     else:
@@ -190,35 +182,42 @@ async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await context.bot.send_message(chat_id=user_id, text="Nessuna statistica disponibile.")
         return
 
-    try:
-        percentage = round((state["score"] / state["index"]) * 100, 2)
-    except Exception:
-        percentage = 0
+    percentage = round((state["score"] / state["index"]) * 100, 2)
     await context.bot.send_message(
         chat_id=user_id,
         text=f"Statistiche attuali: {state['score']} risposte corrette su {state['index']} ({percentage}%)"
     )
 
 
-app_telegram.add_handler(CommandHandler("start", start))
-app_telegram.add_handler(CommandHandler("stop", stop))
-app_telegram.add_handler(CommandHandler("stats", stats))
-app_telegram.add_handler(CallbackQueryHandler(handle_callback))
+# --- Gestione Lifespan FastAPI ---
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    await application.initialize()
+    application.add_handler(CommandHandler("start", start))
+    application.add_handler(CommandHandler("stats", stats))
+    application.add_handler(CallbackQueryHandler(handle_callback))
+    print("✅ Applicazione Telegram inizializzata con successo.")
+    yield
+    # Qui potresti aggiungere cleanup se necessario
 
 
+app = FastAPI(lifespan=lifespan)
+
+
+# --- Webhook endpoint ---
 @app.post("/webhook")
 async def telegram_webhook(request: Request):
     try:
         data = await request.json()
-        update = Update.de_json(data, bot=app_telegram.bot)
-        await app_telegram.process_update(update)
+        update = Update.de_json(data, application.bot)
+        await application.process_update(update)
     except Exception as e:
         print(f"Errore webhook: {e}")
         raise HTTPException(status_code=400, detail=str(e))
     return {"ok": True}
 
 
+# --- Avvio manuale locale ---
 if __name__ == "__main__":
     import uvicorn
-    print("Avvio server webhook...")
-    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
+    uvicorn.run("bot:app", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
