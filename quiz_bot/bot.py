@@ -87,7 +87,7 @@ async def send_next_question(user_id, context):
         user_states.pop(user_id, None)
         return
 
-     q_index = state["order"][state["index"]]
+    q_index = state["order"][state["index"]]
     question_data = state["quiz"][q_index]
 
     original_answers = question_data.get("answers", [])
@@ -153,14 +153,11 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_answer_callback(user_id, selected, context)
 
 
-@dp.callback_query_handler(lambda c: c.data and c.data.startswith("answer:"))
-async def handle_answer_callback(callback_query: CallbackQuery):
-    user_id = callback_query.from_user.id
-    answer_index = int(callback_query.data.split(":")[1])
+async def handle_answer_callback(user_id: int, answer_index: int, context: ContextTypes.DEFAULT_TYPE):
     state = user_states.get(user_id)
 
     if not state:
-        await callback_query.answer("Sessione scaduta. Riavvia il quiz con /start.")
+        await context.bot.send_message(chat_id=user_id, text="Sessione scaduta. Riavvia il quiz con /start.")
         return
 
     q_index = state["order"][state["index"]]
@@ -171,14 +168,17 @@ async def handle_answer_callback(callback_query: CallbackQuery):
 
     if answer_index == correct_index:
         state["score"] += 1
-        await callback_query.answer("✅ Corretto!")
+        await context.bot.send_message(chat_id=user_id, text="✅ Corretto!")
     else:
         correct_letter = chr(65 + correct_index) if correct_index >= 0 else "?"
         correct_text = answers[correct_index] if 0 <= correct_index < len(answers) else "N/A"
-        await callback_query.answer(f"❌ Sbagliato! La risposta corretta era: {correct_letter}. {correct_text}")
+        await context.bot.send_message(
+            chat_id=user_id,
+            text=f"❌ Sbagliato! La risposta corretta era: {correct_letter}. {correct_text}"
+        )
 
     state["index"] += 1
-    await send_next_question(callback_query.message, user_id)
+    await send_next_question(user_id, context)
 
 
 async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
