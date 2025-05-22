@@ -70,9 +70,10 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "order": question_order,
         "index": 0,
         "score": 0,
-        "total": len(quiz_data),
+        "total": len(question_order),
         "subject": filename.replace(".json", "")
     }
+
 
     await send_next_question(user_id, context)
 
@@ -84,7 +85,7 @@ async def send_next_question(user_id, context):
         return
 
     if state["index"] >= state["total"]:
-        await show_final_stats(user_id, context)
+        await show_final_stats(user_id, context,state)
         user_states.pop(user_id, None)
         return
 
@@ -214,8 +215,7 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_states.pop(user_id, None)
 
 
-async def show_final_stats(user_id, context):
-    state = user_states.get(user_id)
+async def show_final_stats(user_id, context, state):
     if not state:
         return
 
