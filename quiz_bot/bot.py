@@ -210,12 +210,21 @@ async def show_final_stats(user_id, context):
     stats[subject]["total"] += total
 
     summary = f"Quiz completato! Punteggio: {score} su {total} ({percentage}%)"
-    summary += "\n\nStatistiche cumulative:\n"
+    summary += "\n\📊 Statistiche:\n"
     for sub, data in stats.items():
         perc = round((data["correct"] / data["total"]) * 100, 2)
         summary += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
 
-    await context.bot.send_message(chat_id=user_id, text=summary)
+    keyboard = [
+        [
+            InlineKeyboardButton("🛑 Stop", callback_data="stop"),
+            InlineKeyboardButton("🔄 Scegli corso", callback_data="change_course"),
+            InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
+        ]
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
+    await context.bot.send_message(chat_id=user_id, text=summary, reply_markup=reply_markup)
 
 
 async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -225,7 +234,7 @@ async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await context.bot.send_message(chat_id=user_id, text="Nessuna statistica disponibile.")
         return
 
-    msg = "📊 Statistiche cumulative:\n"
+    msg = "📊 Statistiche:\n"
     for sub, data in stats.items():
         perc = round((data["correct"] / data["total"]) * 100, 2)
         msg += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
