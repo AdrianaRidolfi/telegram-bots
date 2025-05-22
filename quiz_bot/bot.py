@@ -67,6 +67,7 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     user_states[user_id] = {
         "quiz": quiz_data,
+        "quiz_file": filename,  # AGGIUNTO
         "order": question_order,
         "index": 0,
         "score": 0,
