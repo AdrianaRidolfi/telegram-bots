@@ -67,7 +67,7 @@ def clean_prefixes(text):
     # Rimuove ricorsivamente tutti i prefissi True; o False; da una stringa
     while text.lower().startswith("true;") or text.lower().startswith("false;"):
         text = text[5:].strip()
-    return text
+    return text.replace(";","")
 
 def parse_options(raw_string):
     """
