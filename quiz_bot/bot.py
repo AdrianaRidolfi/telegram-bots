@@ -138,21 +138,30 @@ async def send_next_question(user_id, context):
 
 async def repeat_quiz(user_id: int, context: ContextTypes.DEFAULT_TYPE):
     old_state = user_states.get(user_id)
-    if not old_state:
-        await context.bot.send_message(chat_id=user_id, text="Sessione non trovata. Scrivi /start per iniziare.")
+    if not old_state or "quiz_file" not in old_state:
+        await context.bot.send_message(chat_id=user_id, text="Sessione non valida. Scrivi /start per iniziare.")
         return
 
-    # Crea nuovo stato con stesso quiz
-    quiz_data = old_state["quiz"]
+    quiz_file = old_state["quiz_file"]
+    quiz_path = os.path.join(QUIZ_FOLDER, quiz_file)
+
+    try:
+        with open(quiz_path, encoding="utf-8") as f:
+            quiz_data = json.load(f)
+    except Exception as e:
+        await context.bot.send_message(chat_id=user_id, text=f"Errore nel ricaricare il quiz: {e}")
+        return
+
     question_order = list(range(len(quiz_data)))
     random.shuffle(question_order)
 
     user_states[user_id] = {
         "quiz": quiz_data,
+        "quiz_file": quiz_file,
         "order": question_order,
         "index": 0,
         "score": 0,
-        "total": min(30, len(quiz_data)),  # limita di nuovo a 30 domande
+        "total": min(30, len(quiz_data)),
         "subject": old_state["subject"]
     }
 
