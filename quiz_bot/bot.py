@@ -210,7 +210,7 @@ async def show_final_stats(user_id, context):
     stats[subject]["total"] += total
 
     summary = f"Quiz completato! Punteggio: {score} su {total} ({percentage}%)"
-    summary += "\n\📊 Statistiche:\n"
+    summary += "\n\n📊 Statistiche:\n"
     for sub, data in stats.items():
         perc = round((data["correct"] / data["total"]) * 100, 2)
         summary += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
