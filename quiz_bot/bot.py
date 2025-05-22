@@ -153,30 +153,32 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_answer_callback(user_id, selected, context)
 
 
-async def handle_answer_callback(user_id: int, selected: int, context: ContextTypes.DEFAULT_TYPE):
+@dp.callback_query_handler(lambda c: c.data and c.data.startswith("answer:"))
+async def handle_answer_callback(callback_query: CallbackQuery):
+    user_id = callback_query.from_user.id
+    answer_index = int(callback_query.data.split(":")[1])
     state = user_states.get(user_id)
+
     if not state:
-        await context.bot.send_message(chat_id=user_id, text="Sessione scaduta. Scrivi /start per ripartire.")
+        await callback_query.answer("Sessione scaduta. Riavvia il quiz con /start.")
         return
 
-    correct_index = state.get("current_correct_index", -1)
     q_index = state["order"][state["index"]]
     question_data = state["quiz"][q_index]
-    answers = question_data.get("answers", [])
 
-    if selected == correct_index:
-        await context.bot.send_message(chat_id=user_id, text="✅ Corretto!")
+    correct_index = question_data.get("_correct_index", -1)
+    answers = question_data.get("_shuffled_answers", question_data.get("answers", []))
+
+    if answer_index == correct_index:
         state["score"] += 1
+        await callback_query.answer("✅ Corretto!")
     else:
         correct_letter = chr(65 + correct_index) if correct_index >= 0 else "?"
-        correct_text = answers[question_data.get("correct_answer_index", -1)] if question_data.get("correct_answer_index") is not None else "N/A"
-        await context.bot.send_message(
-            chat_id=user_id,
-            text=f"❌ Sbagliato! La risposta corretta era: {correct_letter}. {correct_text}"
-        )
+        correct_text = answers[correct_index] if 0 <= correct_index < len(answers) else "N/A"
+        await callback_query.answer(f"❌ Sbagliato! La risposta corretta era: {correct_letter}. {correct_text}")
 
     state["index"] += 1
-    await send_next_question(user_id, context)
+    await send_next_question(callback_query.message, user_id)
 
 
 async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
