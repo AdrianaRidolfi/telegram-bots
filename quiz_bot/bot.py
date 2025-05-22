@@ -37,7 +37,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton(f.replace("_", " ").replace(".json", ""), callback_data=f)]
         for f in files
     ]
-    keyboard.append([InlineKeyboardButton("🛑 Stop", callback_data="stop")])
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await context.bot.send_message(
@@ -217,7 +216,6 @@ async def show_final_stats(user_id, context):
 
     keyboard = [
         [
-            InlineKeyboardButton("🔄 Scegli corso", callback_data="change_course"),
             InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
         ]
     ]
