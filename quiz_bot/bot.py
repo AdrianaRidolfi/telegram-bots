@@ -211,7 +211,8 @@ async def handle_answer_callback(user_id: int, answer_index: int, context: Conte
 
 async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
-    await show_final_stats(user_id, context)
+    state = user_states.get(user_id)
+    await show_final_stats(user_id, context, state)
     user_states.pop(user_id, None)
 
 
