@@ -148,6 +148,8 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await start(update, context)
     elif data.endswith(".json"):
         await select_quiz(update, context)
+    elif data == "reset_stats":
+        await reset_stats(update, context)
     elif data.startswith("answer:"):
         selected = int(data.split(":")[1])
         await handle_answer_callback(user_id, selected, context)
@@ -228,8 +230,23 @@ async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
         perc = round((data["correct"] / data["total"]) * 100, 2)
         msg += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
 
-    await context.bot.send_message(chat_id=user_id, text=msg)
+    keyboard = [
+        [InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")]
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
 
+    await context.bot.send_message(chat_id=user_id, text=msg, reply_markup=reply_markup)
+
+
+async def reset_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    user_id = query.from_user.id
+
+    if user_id in user_stats:
+        user_stats.pop(user_id)
+
+    await context.bot.send_message(chat_id=user_id, text="✅ Statistiche azzerate.")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
