@@ -89,15 +89,33 @@ async def send_next_question(user_id, context):
 
     q_index = state["order"][state["index"]]
     question_data = state["quiz"][q_index]
+
     question_text = f"{state['index'] + 1}. {question_data.get('question', 'Domanda mancante')}\n\n"
 
-    for i, opt in enumerate(question_data.get("answers", [])):
+    # Randomizza ordine risposte
+    original_answers = question_data.get("answers", [])
+    shuffled = list(enumerate(original_answers))
+    random.shuffle(shuffled)
+
+    # Trova il nuovo indice della risposta corretta
+    correct_index_original = question_data.get("correct_answer_index")
+    if correct_index_original is None:
+        correct_answer = question_data.get("correct_answer")
+        correct_index_original = original_answers.index(correct_answer)
+
+    correct_answer_text = original_answers[correct_index_original]
+    new_correct_index = next(i for i, (_, ans) in enumerate(shuffled) if ans == correct_answer_text)
+    state["current_correct_index"] = new_correct_index
+
+    # Aggiorna testo domanda
+    for i, (_, opt) in enumerate(shuffled):
         question_text += f"{chr(65+i)}. {opt}\n"
 
-    keyboard = [
-        [InlineKeyboardButton(chr(65 + i), callback_data=f"answer:{i}")]
-        for i in range(len(question_data.get("answers", [])))
-    ]
+    # Pulsanti A B C D su stessa riga
+    keyboard = [[
+        InlineKeyboardButton(chr(65 + i), callback_data=f"answer:{i}")
+        for i in range(len(shuffled))
+    ]]
     keyboard.append([
         InlineKeyboardButton("🛑 Stop", callback_data="stop"),
         InlineKeyboardButton("🔄 Cambia corso", callback_data="change_course")
@@ -136,23 +154,17 @@ async def handle_answer_callback(user_id: int, selected: int, context: ContextTy
         await context.bot.send_message(chat_id=user_id, text="Sessione scaduta. Scrivi /start per ripartire.")
         return
 
+    correct_index = state.get("current_correct_index", -1)
     q_index = state["order"][state["index"]]
     question_data = state["quiz"][q_index]
-    correct_index = question_data.get("correct_answer_index")
-
-    if correct_index is None:
-        try:
-            correct_answer = question_data["correct_answer"]
-            correct_index = question_data["answers"].index(correct_answer)
-        except Exception:
-            correct_index = -1
+    answers = question_data.get("answers", [])
 
     if selected == correct_index:
         await context.bot.send_message(chat_id=user_id, text="✅ Corretto!")
         state["score"] += 1
     else:
         correct_letter = chr(65 + correct_index) if correct_index >= 0 else "?"
-        correct_text = question_data["answers"][correct_index] if correct_index >= 0 else "N/A"
+        correct_text = answers[question_data.get("correct_answer_index", -1)] if question_data.get("correct_answer_index") is not None else "N/A"
         await context.bot.send_message(
             chat_id=user_id,
             text=f"❌ Sbagliato! La risposta corretta era: {correct_letter}. {correct_text}"
