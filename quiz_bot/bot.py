@@ -21,7 +21,7 @@ user_states = {}
 QUIZ_FOLDER = "quizzes"
 user_stats = {}  # Statistiche per utente e per materia
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_text_only=False):
     user_id = update.effective_user.id
     try:
         files = [f for f in os.listdir(QUIZ_FOLDER) if f.endswith(".json")]
@@ -39,12 +39,20 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
+    if not show_intro_text_only:
+        await context.bot.send_message(
+            chat_id=user_id,
+            text="📚 Scegli la materia:",
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("📚 Scegli materia", callback_data="change_course")]
+            ])
+        )
+
     await context.bot.send_message(
         chat_id=user_id,
         text="Scegli la materia del quiz:",
         reply_markup=reply_markup,
     )
-
 
 async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
@@ -180,9 +188,10 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         user_states.pop(user_id, None)
     
     elif data == "change_course":
+        user_id = query.from_user.id
         state = user_states.get(user_id)
-        await show_final_stats(user_id, context, state, from_stop=False)  # NON da stop
-        await start(update, context)  # mostra direttamente le materie
+        await show_final_stats(user_id, context, state, from_change_course=True)
+        await start(update, context, show_intro_text_only=True)
     
     elif data.endswith(".json"):
         await select_quiz(update, context)
@@ -236,7 +245,7 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_states.pop(user_id, None)
 
 
-async def show_final_stats(user_id, context, state, from_stop=False):
+async def show_final_stats(user_id, context, state, from_stop=False, from_change_course=False):
     if not state:
         return
 
@@ -262,9 +271,11 @@ async def show_final_stats(user_id, context, state, from_stop=False):
 
     keyboard = []
 
-    if from_stop:
+    if from_change_course:
+        pass  # Nessun bottone “ripeti quiz” o “scegli materia”
+    elif from_stop:
         keyboard.append([
-            InlineKeyboardButton("📚 Scegli materia", callback_data="__choose_subject__")
+            InlineKeyboardButton("📚 Scegli materia", callback_data="change_course")
         ])
     else:
         keyboard.append([
