@@ -87,35 +87,40 @@ async def send_next_question(user_id, context):
         user_states.pop(user_id, None)
         return
 
-    q_index = state["order"][state["index"]]
+     q_index = state["order"][state["index"]]
     question_data = state["quiz"][q_index]
 
-    question_text = f"{state['index'] + 1}. {question_data.get('question', 'Domanda mancante')}\n\n"
-
-    # Randomizza ordine risposte
     original_answers = question_data.get("answers", [])
-    shuffled = list(enumerate(original_answers))
+    correct_index = question_data.get("correct_answer_index")
+
+    # Se manca l'indice, usiamo il testo
+    if correct_index is None:
+        try:
+            correct_answer = question_data["correct_answer"]
+            correct_index = original_answers.index(correct_answer)
+        except Exception:
+            correct_index = -1
+
+    # Shuffle delle risposte
+    shuffled = list(enumerate(original_answers))  # [(0, "A"), (1, "B"), ...]
     random.shuffle(shuffled)
 
-    # Trova il nuovo indice della risposta corretta
-    correct_index_original = question_data.get("correct_answer_index")
-    if correct_index_original is None:
-        correct_answer = question_data.get("correct_answer")
-        correct_index_original = original_answers.index(correct_answer)
+    # Nuove risposte e nuovo indice della corretta
+    new_answers = [ans for _, ans in shuffled]
+    new_correct_index = next((i for i, (orig_i, _) in enumerate(shuffled) if orig_i == correct_index), -1)
 
-    correct_answer_text = original_answers[correct_index_original]
-    new_correct_index = next(i for i, (_, ans) in enumerate(shuffled) if ans == correct_answer_text)
-    state["current_correct_index"] = new_correct_index
+    # Aggiorna lo stato con le risposte mescolate e la posizione corretta
+    state["quiz"][q_index]["_shuffled_answers"] = new_answers
+    state["quiz"][q_index]["_correct_index"] = new_correct_index
 
-    # Aggiorna testo domanda
-    for i, (_, opt) in enumerate(shuffled):
+    question_text = f"{state['index'] + 1}. {question_data.get('question', 'Domanda mancante')}\n\n"
+    for i, opt in enumerate(new_answers):
         question_text += f"{chr(65+i)}. {opt}\n"
 
-    # Pulsanti A B C D su stessa riga
-    keyboard = [[
-        InlineKeyboardButton(chr(65 + i), callback_data=f"answer:{i}")
-        for i in range(len(shuffled))
-    ]]
+    # Bottoni in riga
+    keyboard = [
+        [InlineKeyboardButton(chr(65 + i), callback_data=f"answer:{i}") for i in range(len(new_answers))]
+    ]
     keyboard.append([
         InlineKeyboardButton("🛑 Stop", callback_data="stop"),
         InlineKeyboardButton("🔄 Cambia corso", callback_data="change_course")
