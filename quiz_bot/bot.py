@@ -217,7 +217,6 @@ async def show_final_stats(user_id, context):
 
     keyboard = [
         [
-            InlineKeyboardButton("🛑 Stop", callback_data="stop"),
             InlineKeyboardButton("🔄 Scegli corso", callback_data="change_course"),
             InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
         ]
