@@ -62,6 +62,8 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     question_order = list(range(len(quiz_data)))
     random.shuffle(question_order)
+    question_order = question_order[:30]  # Prende solo 30 domande
+
 
     user_states[user_id] = {
         "quiz": quiz_data,
@@ -132,6 +134,28 @@ async def send_next_question(user_id, context):
         reply_markup=reply_markup
     )
 
+async def repeat_quiz(user_id: int, context: ContextTypes.DEFAULT_TYPE):
+    old_state = user_states.get(user_id)
+    if not old_state:
+        await context.bot.send_message(chat_id=user_id, text="Sessione non trovata. Scrivi /start per iniziare.")
+        return
+
+    # Crea nuovo stato con stesso quiz
+    quiz_data = old_state["quiz"]
+    question_order = list(range(len(quiz_data)))
+    random.shuffle(question_order)
+
+    user_states[user_id] = {
+        "quiz": quiz_data,
+        "order": question_order,
+        "index": 0,
+        "score": 0,
+        "total": min(30, len(quiz_data)),  # limita di nuovo a 30 domande
+        "subject": old_state["subject"]
+    }
+
+    await send_next_question(user_id, context)
+
 
 async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
@@ -149,6 +173,8 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await select_quiz(update, context)
     elif data == "reset_stats":
         await reset_stats(update, context)
+    elif data == "repeat_quiz":
+        await repeat_quiz(user_id, context)
     elif data.startswith("answer:"):
         selected = int(data.split(":")[1])
         await handle_answer_callback(user_id, selected, context)
@@ -216,9 +242,14 @@ async def show_final_stats(user_id, context):
 
     keyboard = [
         [
+            InlineKeyboardButton("🔁 Ripeti quiz", callback_data="repeat_quiz"),
+            InlineKeyboardButton("📚 Cambia materia", callback_data="change_course")
+        ],
+        [
             InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
         ]
     ]
+
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await context.bot.send_message(chat_id=user_id, text=summary, reply_markup=reply_markup)
