@@ -86,9 +86,10 @@ async def send_next_question(user_id, context):
         return
 
     if state["index"] >= state["total"]:
-        await show_final_stats(user_id, context,state)
-        user_states.pop(user_id, None)
+        await show_final_stats(user_id, context, state)
+        # user_states.pop(user_id, None)  # NON cancellare lo stato!
         return
+
 
     q_index = state["order"][state["index"]]
     question_data = state["quiz"][q_index]
@@ -177,15 +178,24 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if data == "stop":
         await stop(update, context)
         user_states.pop(user_id, None)
+    
     elif data == "change_course":
-        await stop(update, context)
-        await start(update, context)
+        state = user_states.get(user_id)
+        await show_final_stats(user_id, context, state, from_stop=False)  # NON da stop
+        await start(update, context)  # mostra direttamente le materie
+    
     elif data.endswith(".json"):
         await select_quiz(update, context)
+    
     elif data == "reset_stats":
         await reset_stats(update, context)
+    
+    elif data == "__choose_subject__":
+        await start(update, context)  # mostra direttamente le materie
+
     elif data == "repeat_quiz":
         await repeat_quiz(user_id, context)
+    
     elif data.startswith("answer:"):
         selected = int(data.split(":")[1])
         await handle_answer_callback(user_id, selected, context)
@@ -235,7 +245,6 @@ async def show_final_stats(user_id, context, state, from_stop=False):
     total = max(state["index"], 1)
     percentage = round((score / total) * 100, 2)
 
-    # Salvataggio statistiche per materia
     if user_id not in user_stats:
         user_stats[user_id] = {}
     stats = user_stats[user_id]
@@ -253,13 +262,13 @@ async def show_final_stats(user_id, context, state, from_stop=False):
 
     keyboard = []
 
-    if not from_stop:
+    if from_stop:
         keyboard.append([
-            InlineKeyboardButton("🔁 Ripeti quiz", callback_data="repeat_quiz"),
-            InlineKeyboardButton("📚 Cambia materia", callback_data="change_course")
+            InlineKeyboardButton("📚 Scegli materia", callback_data="__choose_subject__")
         ])
     else:
         keyboard.append([
+            InlineKeyboardButton("🔁 Ripeti quiz", callback_data="repeat_quiz"),
             InlineKeyboardButton("📚 Cambia materia", callback_data="change_course")
         ])
 
@@ -268,7 +277,6 @@ async def show_final_stats(user_id, context, state, from_stop=False):
     ])
 
     reply_markup = InlineKeyboardMarkup(keyboard)
-
     await context.bot.send_message(chat_id=user_id, text=summary, reply_markup=reply_markup)
 
 
