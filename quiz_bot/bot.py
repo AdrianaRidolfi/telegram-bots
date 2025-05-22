@@ -222,11 +222,11 @@ async def handle_answer_callback(user_id: int, answer_index: int, context: Conte
 async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
     state = user_states.get(user_id)
-    await show_final_stats(user_id, context, state)
+    await show_final_stats(user_id, context, state, from_stop=True)
     user_states.pop(user_id, None)
 
 
-async def show_final_stats(user_id, context, state):
+async def show_final_stats(user_id, context, state, from_stop=False):
     if not state:
         return
 
@@ -251,15 +251,21 @@ async def show_final_stats(user_id, context, state):
         perc = round((data["correct"] / data["total"]) * 100, 2)
         summary += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
 
-    keyboard = [
-        [
+    keyboard = []
+
+    if not from_stop:
+        keyboard.append([
             InlineKeyboardButton("🔁 Ripeti quiz", callback_data="repeat_quiz"),
             InlineKeyboardButton("📚 Cambia materia", callback_data="change_course")
-        ],
-        [
-            InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
-        ]
-    ]
+        ])
+    else:
+        keyboard.append([
+            InlineKeyboardButton("📚 Cambia materia", callback_data="change_course")
+        ])
+
+    keyboard.append([
+        InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
+    ])
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
