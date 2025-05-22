@@ -12,45 +12,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 input_file = "diritto.qwz"  # Cambia questo con il file da elaborare
 output_json = "diritto.json"
 
-from bs4 import BeautifulSoup
-
-def convert_google_form_html_to_json(html_path, json_path):
-    with open(html_path, "r", encoding="utf-8") as file:
-        soup = BeautifulSoup(file, "html.parser")
-
-    questions = []
-    question_blocks = soup.find_all("div", class_="freebirdFormviewerViewItemsItemItem")
-
-    for q_block in question_blocks:
-        question_text_tag = q_block.find("div", class_="freebirdFormviewerViewItemsItemItemTitle")
-        if not question_text_tag:
-            continue
-        question_text = question_text_tag.get_text().strip()
-
-        options = []
-        correct_answer = None
-
-        for option_tag in q_block.find_all("div", class_="freebirdFormviewerViewItemsRadioChoice"):
-            label = option_tag.get_text(separator=" ", strip=True)
-            style = option_tag.get("style", "")
-            if not label:
-                continue
-            options.append(label)
-            if "border-color: rgb(26, 115, 232)" in style or "background-color: rgb(232, 240, 254)" in style:
-                correct_answer = label
-
-        if question_text and options and correct_answer:
-            questions.append({
-                "question": question_text,
-                "answers": options,
-                "correct_answer": correct_answer
-            })
-
-    with open(json_path, "w", encoding="utf-8") as f:
-        json.dump(questions, f, indent=2, ensure_ascii=False)
-    print(f"✅ HTML Google Form convertito in JSON: {json_path}")
-
-
 def convert_txt_to_json(txt_path, json_path):
     with open(txt_path, "r", encoding="utf-8") as f:
         content = f.read()
@@ -182,8 +143,6 @@ def convert_quiz(input_file, json_file):
         convert_txt_to_json(input_path, json_path)
     elif ext == ".qwz":
         convert_qwz_to_json(input_path, json_path)
-    elif ext == ".htm" or ext == ".html":
-        convert_google_form_html_to_json(input_path, json_path)
     else:
         print(f"Estensione '{ext}' non supportata.")
 
