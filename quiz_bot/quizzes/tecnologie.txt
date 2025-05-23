@@ -1,0 +1,193 @@
+DOMANDE:
+
+1. L’organizzazione d’impresa e i processi decisionali sono legati tra loro in quanto:
+A. Gli aspetti piu visibili dell’organizzazione influenzano fortemente i processi decisionali strategici delle imprese
+
+2. Qual è il valore di default della proprietà 'overflow' in CSS?
+A. hidden
+B. auto
+C. scroll
+D. visible
+
+3. Quale dei seguenti enctype non è predefinito per i moduli HTML?
+A. application/x-www-form-urlencoded
+B. multipart/form-data
+C. text/plain
+D. application/xml
+
+4. Quale affermazione è vera riguardo all'input di tipo password?
+A. Cifra i dati durante la trasmissione
+B. Non ha alcuna protezione sullo schermo
+C. Protegge solo i dati visibili
+D. Non ha implicazioni con la sicurezza del trasferimento dei dati
+
+5. Cosa succede quando si carica la pagina con il codice jQuery fornito?
+A. Il titolo della pagina cambia
+B. Viene visualizzato un errore di sintassi
+C. Il paragrafo con id 'mio_paragrafo' viene modificato
+D. Il jQuery non viene caricato correttamente
+
+6. Qual è l'enctype predefinito per i moduli HTML?
+A. application/x-www-form-urlencoded
+B. application/json
+C. text/plain
+D. multipart/form-data
+
+7. Qual è la funzione principale dell'elemento input con type="password"?
+A. Conservare i dati nei cookies
+B. Proteggere i dati sullo schermo
+C. Cifrare i dati durante la trasmissione
+D. Specificare l'algoritmo di cifratura
+
+8. Cosa succede con la seguente sequenza di istruzioni: let x = 'John Doe'; let x = 0;
+A. è obsoleta
+B. è ammessa
+C. dà errore a compile-time
+D. non è ammessa
+
+9. Cosa indica la seguente immagine riguardo ai cookie?
+A. sono stati settati 2 cookies
+B. c'è chiaramente un problema di gestione dei cookies
+C. è stato settato un solo cookie
+D. è stato settato il cookie ONEID ma poi è stato sovrascritto da TWOID
+
+10. Qual è la sintassi corretta per scrivere un messaggio sulla console in JavaScript?
+A. console(“TESTO DA INSERIRE”);
+B. console.log(“TESTO DA INSERIRE”)
+C. console.log.write(“TESTO DA INSERIRE”);
+D. log(“TESTO DA INSERIRE”)
+
+11. In JavaScript, come vengono passati gli oggetti in una funzione?
+A. come copia degli originali
+B. per riferimento
+C. per valore
+D. come array
+
+12. Quale errore è presente nel seguente JSON: { 'name': 'john', 'surname': 'red', 'cars': [ 'Ferrari', 'Porsche' 1, 'hobbies': [ 'go - kart', 'bicycle' ] }?
+A. Le chiavi non devono essere racchiuse in virgolette
+B. Manca una virgola dopo 'Porsche'
+C. Non è possibile avere due array all'interno
+D. La sezione 'hobbies' è corretta
+
+13. Qual è la caratteristica principale del set-up della sessione TCP?
+A. È a quattro vie
+B. È a una via
+C. È a due vie
+D. È a tre vie
+
+14. Nell'URL http://www.miosito.it/percorso/index.html, cosa rappresenta 'http'?
+A. l'host
+B. il path
+C. lo schema
+D. la porta
+
+15. Quale delle seguenti affermazioni è vera riguardo alla sezione 'hobbies' in un JSON?
+A. Deve essere racchiusa in virgolette
+B. Può contenere più array
+C. Deve essere completata con un punto finale
+D. Non è necessaria
+
+16. Qual è la struttura corretta per un array in JSON?
+A. Deve essere racchiuso tra parentesi tonde
+B. Deve essere racchiuso tra parentesi graffe
+C. Deve essere racchiuso tra parentesi quadre
+D. Non ha bisogno di alcuna parentesi
+
+17. In un ciclo do...while, quando viene eseguito il blocco di codice?
+A. Solo se la condizione è falsa
+B. Solo se la condizione è vera
+C. Almeno una volta, prima di controllare la condizione
+D. Al termine del ciclo, indipendentemente dalla condizione
+
+18. Quale affermazione sui Bearer Token è corretta?
+A. Sono sempre associati a un cookie di sessione
+B. Possono essere utilizzati per accedere a risorse protette senza ulteriori credenziali
+C. Sono utilizzati esclusivamente per l'autenticazione degli utenti
+D. Devono essere sempre trasmessi in chiaro
+
+19. Il seguente JSON: {"name"="john"} è valido?
+A. Non è valido: vanno messi i ':' al posto dell' '='
+B. È valido
+C. Non è valido: occorre che la lettera 'j' sia maiuscola
+D. È valido solo se 'john' è un numero
+
+20. Qual è la principale differenza tra un ciclo do...while e un ciclo while?
+A. Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, indipendentemente dalla verità della condizione
+B. Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, al termine del loop, indipendentemente dalla verità della condizione
+C. Il blocco di codice all'interno del ciclo può essere eseguito se la condizione è verificata
+D. Il blocco di codice all'interno del ciclo viene eseguito almeno due volte, una all'inizio ed una alla fine del ciclo
+
+21. Cosa sono i Bearer Token?
+A. Sono un tipo particolare di Cookie, usato per ottenere l'autorizzazione ad accedere ad una risorsa protetta tramite SSL
+B. Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad una risorsa protetta da un Authorization Server conforme con lo Standard OAuth2
+C. Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad un dominio generico
+D. Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad una risorsa protetta da un Authorization Server non conforme con lo standard OAuth2
+
+22. Nel contesto di un URL, cosa rappresenta il 'path'?
+A. La parte che indica il dominio del sito
+B. La parte che specifica la posizione del file sul server
+C. La parte che identifica il protocollo
+D. La parte che specifica la porta di accesso
+
+23. Cosa indica la risposta del server 'HTTP/1.1 401 Unauthorized'?
+A. Che il client non è autenticato ed è richiesta una generica autenticazione
+B. Che il client non è autenticato ed è richiesta una autenticazione 'basic'
+C. Che il client è autenticato ma non è autorizzato
+D. Che il client non è autenticato ed è richiesta una autenticazione 'digest'
+
+24. Quale delle seguenti modifiche al JSON è corretta per aggiungere un nuovo hobby 'motors' con tre declinazioni?
+A. {"name":"john","surname":"red","cars":["Ferrari","Porsche"],"hobbies":["go-kart","bicycle","f1","f2","f3"]}
+B. {"name":"john","surname":"red","cars":["Ferrari","Porsche"],"hobbies":["go-kart","bicycle",{"motors":["f1","f2","f3"]}]}
+C. {"name":"john","surname":"red","cars":["Ferrari","Porsche"],"hobbies":["go-kart","bicycle",["motors":"f1","f2","f3"]]}
+D. {"name":"john","surname":"red","cars":["Ferrari","Porsche"],"hobbies":["go-kart","bicycle","motors":["f1","f2","f3"]]}
+
+
+RISPOSTE:
+
+1. A
+
+2. D
+
+3. D
+
+4. D
+
+5. C
+
+6. A
+
+7. B
+
+8. C
+
+9. A
+
+10. B
+
+11. B
+
+12. C
+
+13. C
+
+14. C
+
+15. C
+
+16. C
+
+17. C
+
+18. B
+
+19. A
+
+20. A
+
+21. B
+
+22. B
+
+23. B
+
+24. B

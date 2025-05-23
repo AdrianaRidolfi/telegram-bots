@@ -9,8 +9,8 @@ import xml.etree.ElementTree as ET
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Nome del file da convertire
-input_file = "diritto.qwz"  # Cambia questo con il file da elaborare
-output_json = "diritto.json"
+input_file = "tecnologie.txt"  # Cambia questo con il file da elaborare
+output_json = "tecnologie.json"
 
 def convert_txt_to_json(txt_path, json_path):
     with open(txt_path, "r", encoding="utf-8") as f:
