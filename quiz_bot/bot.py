@@ -40,17 +40,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     if not show_intro_text_only:
-        await context.bot.send_message(
-            chat_id=user_id,
-            text="📚 Scegli la materia:",
-            reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("📚 Scegli materia", callback_data="change_course")]
-            ])
-        )
+        pass
 
     await context.bot.send_message(
         chat_id=user_id,
-        text="Scegli la materia del quiz:",
+        text="📚 Scegli la materia del quiz:",
         reply_markup=reply_markup,
     )
 
