@@ -6,15 +6,15 @@ Questo repository contiene bot Telegram per somministrare quiz agli utenti in ch
 
 ## Struttura del repository
 
-
-```bash
 ```bash
 telegram-bots/
 ├── quiz_bot/
 │   ├── bot.py               # codice Python del bot
 │   ├── requirements.txt     # dipendenze Python
 │   ├── Procfile             # comando per il deploy su Render o simili
-│   └──quizzes/
+│   └── quizzes/
+│     ├── images/             # cartella per le imagini
+│     │   └── tec1.jpg
 │     ├── convert.py           # codice di utility per convertire file .qwz e .txt nei json
 │     ├── diritto.json         # file JSON con domande e risposte
 │     └── altro_quiz.json      # altri quiz in JSON
