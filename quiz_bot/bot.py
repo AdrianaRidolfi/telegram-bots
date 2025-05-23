@@ -12,11 +12,15 @@ from handlers import start, handle_callback
 app = FastAPI()
 application = ApplicationBuilder().token(TOKEN).build()
 
-@application.on_startup
-async def setup_bot():
+@app.on_event("startup")
+async def startup_event():
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CallbackQueryHandler(handle_callback))
     print("🤖 Bot avviato correttamente.")
+    # Avvia il polling se vuoi, ma nel tuo caso probabilmente ricevi da webhook
+    # await application.initialize()
+    # await application.start()  # Solo se non usi webhook
+    # await application.updater.start_polling()  # SOLO per polling, non serve con webhook
 
 @app.post("/webhook")
 async def telegram_webhook(request: Request):
@@ -31,4 +35,4 @@ async def telegram_webhook(request: Request):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000)
+    uvicorn.run("bot:app", host="0.0.0.0", port=8000)
