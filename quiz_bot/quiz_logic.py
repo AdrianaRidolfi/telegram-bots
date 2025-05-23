@@ -1,5 +1,4 @@
 import random
-import os
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from state import set_user_state, get_user_state, update_stats
 from config import QUIZ_FOLDER
@@ -10,14 +9,24 @@ async def start_quiz(update, context, filename):
     user_id = update.effective_user.id
     quiz_data = load_quiz_file(filename)
 
-    for q in quiz_data:
-        ca = q.get("correct_answer_index")
-        if ca is None or not (0 <= ca < len(q.get("answers", []))):
-            q["correct_answer_index"] = -1  # O impostalo a 0 per default
-
     order = list(range(len(quiz_data)))
     random.shuffle(order)
-    order = order[:30]
+    order = order[:30]  # Limite a 30 domande
+
+    # SHUFFLE DELLE RISPOSTE UNA SOLA VOLTA QUI
+    # Creiamo una lista con le risposte mescolate per ogni domanda, e salviamo indice corretto coerente
+    for q in quiz_data:
+        answers = q.get("answers", [])
+        correct_index = q.get("correct_answer_index", -1)
+
+        shuffled = list(enumerate(answers))
+        random.shuffle(shuffled)
+
+        new_answers = [a for _, a in shuffled]
+        new_correct_index = next((i for i, (orig_i, _) in enumerate(shuffled) if orig_i == correct_index), -1)
+
+        q["_shuffled_answers"] = new_answers
+        q["_correct_index"] = new_correct_index
 
     state = {
         "quiz": quiz_data,
@@ -44,33 +53,23 @@ async def send_next_question(user_id, context):
 
     q_index = state["order"][state["index"]]
     q_data = state["quiz"][q_index]
-    answers = q_data["answers"]
-    correct_index = q_data.get("correct_answer_index", -1)
-
-    shuffled = list(enumerate(answers))
-    random.shuffle(shuffled)
-    new_answers = [a for _, a in shuffled]
-    new_correct_index = next((i for i, (orig_i, _) in enumerate(shuffled) if orig_i == correct_index), -1)
-
-    state["quiz"][q_index]["_shuffled_answers"] = new_answers
-    state["quiz"][q_index]["_correct_index"] = new_correct_index
 
     img_path = q_data.get("image")
-
     if img_path:
         full_img_path = get_image_path(img_path)
-        if full_img_path and os.path.isfile(full_img_path):
-            with open(full_img_path, "rb") as f:
-                await context.bot.send_photo(chat_id=user_id, photo=f)
-        else:
-            print(f"Immagine non trovata o percorso errato: {full_img_path}")
-
+        if full_img_path:
+            try:
+                with open(full_img_path, "rb") as f:
+                    await context.bot.send_photo(chat_id=user_id, photo=f)
+            except Exception as e:
+                await context.bot.send_message(chat_id=user_id, text=f"Errore caricamento immagine: {e}")
 
     question_text = f"{state['index']+1}. {q_data.get('question')}\n\n"
-    for i, opt in enumerate(new_answers):
+    answers = q_data.get("_shuffled_answers", [])
+    for i, opt in enumerate(answers):
         question_text += f"{chr(65+i)}. {opt}\n"
 
-    keyboard = [[InlineKeyboardButton(chr(65+i), callback_data=f"answer:{i}") for i in range(len(new_answers))]]
+    keyboard = [[InlineKeyboardButton(chr(65+i), callback_data=f"answer:{i}") for i in range(len(answers))]]
     keyboard.append([
         InlineKeyboardButton("🛑 Stop", callback_data=CALLBACK_STOP),
         InlineKeyboardButton("🔄 Cambia corso", callback_data=CALLBACK_CHANGE_COURSE)
@@ -86,11 +85,12 @@ async def handle_answer(user_id, answer_index, context):
 
     q_index = state["order"][state["index"]]
     q_data = state["quiz"][q_index]
+
     correct_index = q_data.get("_correct_index", -1)
     answers = q_data.get("_shuffled_answers", [])
 
-    if correct_index == -1 or correct_index >= len(answers) or correct_index < 0:
-        # Caso errore, non abbiamo indice corretto valido
+    # Controllo sicurezza
+    if correct_index == -1 or correct_index >= len(answers) or not answers:
         await context.bot.send_message(chat_id=user_id, text="Errore interno: indice risposta corretta non valido.")
         return
 
@@ -105,7 +105,6 @@ async def handle_answer(user_id, answer_index, context):
 
     state["index"] += 1
     await send_next_question(user_id, context)
-
 
 async def show_final_stats(user_id, context, state):
     score = state["score"]

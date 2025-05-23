@@ -1,32 +1,22 @@
 from fastapi import FastAPI, Request, HTTPException
-from fastapi import Depends
-from fastapi.responses import JSONResponse
 from telegram import Update
 from telegram.ext import (
     ApplicationBuilder,
     CommandHandler,
     CallbackQueryHandler,
+    ContextTypes,
 )
-from contextlib import asynccontextmanager
-
 from config import TOKEN
 from handlers import start, handle_callback
 
+app = FastAPI()
 application = ApplicationBuilder().token(TOKEN).build()
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    # Startup
+@application.on_startup
+async def setup_bot():
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CallbackQueryHandler(handle_callback))
-    await application.initialize()
-    print("Bot avviato correttamente.")
-    yield
-    # Shutdown
-    await application.shutdown()
-    print("Bot fermato.")
-
-app = FastAPI(lifespan=lifespan)
+    print("🤖 Bot avviato correttamente.")
 
 @app.post("/webhook")
 async def telegram_webhook(request: Request):
