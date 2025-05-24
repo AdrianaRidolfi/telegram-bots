@@ -11,7 +11,7 @@ from telegram.ext import (
 )
 from contextlib import asynccontextmanager
 
-from quiz_bot.pdf_generator import generate_pdf
+from pdf_generator import generate_pdf
 
 # Inizializzazione bot Telegram
 TOKEN = os.getenv("TELEGRAM_TOKEN", "Y7861155385:AAEhLcBpmcGvkq_rlxbnwcNSMHNAFWKgb8s")
