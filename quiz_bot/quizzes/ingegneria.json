@@ -1,6 +1,6 @@
 [
     {
-  "question": "Quale di questi elementi è parte di un diagramma dei casi d’uso?",
+  "question": "Quale di questi elementi è parte di un diagramma dei casi d'uso?",
   "answers": [
     "Attore",
     "Classe",
@@ -20,7 +20,7 @@
   "correct_answer": "Eventi inviati da un oggetto ad un altro"
 },
 {
-  "question": "Che tipo di relazione può esistere tra un attore e un caso d’uso:",
+  "question": "Che tipo di relazione può esistere tra un attore e un caso d'uso:",
   "answers": [
     "Associazione",
     "Ereditarietà",
@@ -71,35 +71,35 @@
 {
   "question": "Cosa indica un rettangolo verticale sotto un oggetto in un diagramma di sequenza?",
   "answers": [
-    "Il periodo di attivazione di una operazione dell’oggetto",
-    "La durata della vita dell’oggetto",
+    "Il periodo di attivazione di una operazione dell'oggetto",
+    "La durata della vita dell'oggetto",
     "Il tempo di risposta del sistema",
-    "La priorità dell’operazione"
+    "La priorità dell'operazione"
   ],
-  "correct_answer": "Il periodo di attivazione di una operazione dell’oggetto"
+  "correct_answer": "Il periodo di attivazione di una operazione dell'oggetto"
 },
 {
   "question": "Cosa indica la linea tratteggiata verticale sotto un oggetto in un diagramma di sequenza?",
   "answers": [
-    "La linea di vita dell’oggetto",
+    "La linea di vita dell'oggetto",
     "Il flusso di controllo tra oggetti",
     "Il messaggio ritardato",
-    "L’attivazione temporanea dell’oggetto"
+    "L'attivazione temporanea dell'oggetto"
   ],
-  "correct_answer": "La linea di vita dell’oggetto"
+  "correct_answer": "La linea di vita dell'oggetto"
 },
 {
   "question": "Gli elementi tipici di un Sequence Diagram sono:",
   "answers": [
     "Gli oggetti ed i messaggi che si scambiano tra di loro",
-    "L’insieme degli artefatti che compongono un sistema",
+    "L'insieme degli artefatti che compongono un sistema",
     "Le evoluzioni temporali degli stati di una classe",
-    "I flussi di lavoro e l’insieme delle attività nel sistema"
+    "I flussi di lavoro e l'insieme delle attività nel sistema"
   ],
   "correct_answer": "Gli oggetti ed i messaggi che si scambiano tra di loro"
 },
 {
-  "question": "Qual è l’output di questo codice? Boolean isJavaFun= true; System.out.println(!isJavaFun);",
+  "question": "Qual è l'output di questo codice? Boolean isJavaFun= true; System.out.println(!isJavaFun);",
   "answers": [
     "False",
     "True",
@@ -129,10 +129,10 @@
   "correct_answer": "Object Constraint Language"
 },
 {
-  "question": "Qual è il ruolo della parola chiave break in un’istruzione switch-case?",
+  "question": "Qual è il ruolo della parola chiave break in un'istruzione switch-case?",
   "answers": [
     "Per terminare il blocco del case",
-    "Per mettere in pausa l’esecuzione",
+    "Per mettere in pausa l'esecuzione",
     "Per passare al case successivo",
     "Per ripetere il blocco del case"
   ],
@@ -151,10 +151,10 @@
 {
   "question": "Qual è lo scopo della parola chiave “super” in Java?",
   "answers": [
-    "Fare riferimento all’oggetto corrente",
+    "Fare riferimento all'oggetto corrente",
     "Accedere ai membri della superclasse",
     "Creare una nuova istanza della classe",
-    "Nascondere dati e metodi all’interno di una classe"
+    "Nascondere dati e metodi all'interno di una classe"
   ],
   "correct_answer": "Accedere ai membri della superclasse"
 },
@@ -169,7 +169,7 @@
   "correct_answer": "e-mail"
 },
 {
-  "question": "Individua l’errore: int counter = 0; while(counter < 5) { counter++; } System.out.print(“contatore: “ + counter);",
+  "question": "Individua l'errore: int counter = 0; while(counter < 5) { counter++; } System.out.print(“contatore: “ + counter);",
   "answers": [
     "nessun errore",
     "il ciclo non termina mai",
@@ -301,12 +301,12 @@
 {
   "question": "Qual è il ruolo del 'Time keeper' in una riunione?",
   "answers": [
-    "gestire la durata dell’incontro",
-    "gestire solo la prima parte dell’incontro",
+    "gestire la durata dell'incontro",
+    "gestire solo la prima parte dell'incontro",
     "programmare la durata del tempo",
     "moderare le discussioni"
   ],
-  "correct_answer": "gestire la durata dell’incontro"
+  "correct_answer": "gestire la durata dell'incontro"
 },
 {
   "question": "Quale tra questi termini è associato al pattern Singleton?",
@@ -322,7 +322,7 @@
   "question": "Qual è il compito principale del 'Minute taker' (segretario) durante una riunione?",
   "answers": [
     "verbalizzare i punti discussi",
-    "scrivere l’ordine del giorno",
+    "scrivere l'ordine del giorno",
     "fissare appuntamento della riunione",
     "moderare la discussione"
   ],
@@ -389,7 +389,7 @@
   "correct_answer": "Il percorso più lungo nel grafo dei task"
 },
 {
-  "question": "Quali diagrammi UML mostrano l’interazione tra oggetti nel tempo?",
+  "question": "Quali diagrammi UML mostrano l'interazione tra oggetti nel tempo?",
   "answers": [
     "diagrammi di sequenza",
     "diagrammi delle attività",
@@ -409,7 +409,7 @@
   "correct_answer": "il focus è sull'attività e non su chi la svolge"
 },
 {
-  "question": "Nei diagrammi di attività UML, come si rappresenta un’azione o uno stato?",
+  "question": "Nei diagrammi di attività UML, come si rappresenta un'azione o uno stato?",
   "answers": [
     "Rettangoli con angoli arrotondati",
     "Rettangoli",
@@ -449,7 +449,7 @@
   "correct_answer": "Un rettangolo con una linguetta a sinistra"
 },
 {
-  "question": "Come si rappresenta un’azione o uno stato nei diagrammi di attività UML?",
+  "question": "Come si rappresenta un'azione o uno stato nei diagrammi di attività UML?",
   "answers": [
     "Un rettangolo arrotondato",
     "Una freccia con tratteggio e punta vuota",
@@ -489,17 +489,17 @@
   "correct_answer": "Il ciclo do-while viene eseguito almeno una volta"
 },
 {
-  "question": "Qual è l’obiettivo principale del pattern State?",
+  "question": "Qual è l'obiettivo principale del pattern State?",
   "answers": [
     "Permettere a un oggetto di cambiare comportamento in base al proprio stato",
-    "Separare l’interfaccia dall’implementazione",
-    "Creare una singola istanza di un oggetto per tutta l’applicazione",
+    "Separare l'interfaccia dall'implementazione",
+    "Creare una singola istanza di un oggetto per tutta l'applicazione",
     "Rimuovere la complessità del ciclo di vita degli oggetti"
   ],
   "correct_answer": "Permettere a un oggetto di cambiare comportamento in base al proprio stato"
 },
 {
-  "question": "Cos’è la sovrascrittura (overriding) in programmazione orientata agli oggetti?",
+  "question": "Cos'è la sovrascrittura (overriding) in programmazione orientata agli oggetti?",
   "answers": [
     "Fornire un'implementazione diversa per un metodo ereditato in una sottoclasse.",
     "Creare più metodi con lo stesso nome ma parametri diversi all'interno della stessa classe.",
@@ -511,19 +511,19 @@
 {
   "question": "Qual è l'output o l'errore del seguente codice Java?\n\nint[] arr = {1, 2, 3};\nSystem.out.println(arr[3]);",
   "answers": [
-    "Indice fuori dai limiti dell’array",
+    "Indice fuori dai limiti dell'array",
     "Nessun errore",
     "Stampa 3",
     "Errore di sintassi"
   ],
-  "correct_answer": "Indice fuori dai limiti dell’array"
+  "correct_answer": "Indice fuori dai limiti dell'array"
 },
 {
   "question": "Qual è lo scopo principale di un diagramma di sequenza?",
   "answers": [
     "Il diagramma di sequenza mostra la struttura dei messaggi che gli oggetti coinvolti si scambiano al fine di realizzare un comportamento.",
     "Il diagramma di sequenza può completare un diagramma della classe mostrandone il comportamento dinamico.",
-    "Il diagramma di sequenza documenta tipicamente il comportamento di un singolo scenario e, tipicamente, si accompagna ad un diagramma di caso d’uso.",
+    "Il diagramma di sequenza documenta tipicamente il comportamento di un singolo scenario e, tipicamente, si accompagna ad un diagramma di caso d'uso.",
     "Il diagramma di sequenza rappresenta la struttura statica delle classi nel sistema."
   ],
   "correct_answer": "Il diagramma di sequenza mostra la struttura dei messaggi che gli oggetti coinvolti si scambiano al fine di realizzare un comportamento."
@@ -539,7 +539,7 @@
   "correct_answer": "Non è facilmente comprensibile ed applicabile"
 },
 {
-  "question": "Qual è l’intervallo del tipo di dato short in Java?",
+  "question": "Qual è l'intervallo del tipo di dato short in Java?",
   "answers": [
     "-32768 a 32767",
     "-128 a 127",
@@ -592,7 +592,7 @@
   "question": "Qual è il vantaggio principale dello stream parallelo in Java?",
   "answers": [
     "Permette di eseguire operazioni parallele sui dati della collezione",
-    "Permette il riutilizzo dell’iterazione su vari tipi di collezione",
+    "Permette il riutilizzo dell'iterazione su vari tipi di collezione",
     "Garantisce l'ordine degli elementi durante l'elaborazione",
     "Semplifica la gestione delle eccezioni durante l'elaborazione"
   ],
@@ -613,7 +613,7 @@
   "answers": [
     "è una classificazione di fenomeni in concetti",
     "è un insieme di regole grafiche o testuali",
-    "è un oggetto nell’universo di dominio cosi come lo percepiamo",
+    "è un oggetto nell'universo di dominio cosi come lo percepiamo",
     "mostra alcuni aspetti selezionati di un modello"
   ],
   "correct_answer": "è una classificazione di fenomeni in concetti"
@@ -639,10 +639,10 @@
   "correct_answer":    "La sovrascrittura fornisce una nuova implementazione, mentre il sovraccarico fornisce più metodi con lo stesso nome"
 },
 {
-  "question": "Quando si usa la parola chiave break in un’istruzione switch-case?",
+  "question": "Quando si usa la parola chiave break in un'istruzione switch-case?",
   "answers": [
     "Per terminare il blocco del case",
-    "Per mettere in pausa l’esecuzione",
+    "Per mettere in pausa l'esecuzione",
     "Per ripetere il blocco del case",
     "Per passare al case successivo"
 ],

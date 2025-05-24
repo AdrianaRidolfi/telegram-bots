@@ -3,7 +3,7 @@
     "question": "Qual è il fondamento giuridico principale individuato per il diritto all'identità personale?",
     "answers": [
       "Si ritrova direttamente nell'articolo 2 della costituzione",
-      "È esclusivamente basato sull’articolo 6 del Codice civile",
+      "È esclusivamente basato sull'articolo 6 del Codice civile",
       "Non ha alcun fondamento legale specifico",
       "Si basa unicamente sulla legge speciale sulla privacy."
     ],
@@ -140,7 +140,7 @@
     "correct_answer": "Cognome del padre"
   },
   {
-    "question": "Cosa riguarda principalmente l’art. 2043 del Codice civile?",
+    "question": "Cosa riguarda principalmente l'art. 2043 del Codice civile?",
     "answers": [
       "Tutela della libertà di movimento",
       "Azione inibitoria contro atti lesivi della persona",
@@ -182,22 +182,22 @@
   {
     "question": "Quali basi giuridiche sono previste dal GDPR per il trattamento dei dati personali?\r\n",
     "answers": [
-      "Solo il contratto con l’interessato",
+      "Solo il contratto con l'interessato",
       "Solo il legittimo interesse del titolare",
-      "Solo il consenso dell’interessato",
-      "Diverse basi giuridiche, tra cui il consenso, il legittimo interesse e l’adempimento di un obbligo legale"
+      "Solo il consenso dell'interessato",
+      "Diverse basi giuridiche, tra cui il consenso, il legittimo interesse e l'adempimento di un obbligo legale"
     ],
-    "correct_answer": "Diverse basi giuridiche, tra cui il consenso, il legittimo interesse e l’adempimento di un obbligo legale"
+    "correct_answer": "Diverse basi giuridiche, tra cui il consenso, il legittimo interesse e l'adempimento di un obbligo legale"
   },
   {
-    "question": "Qual è la natura del diritto all’immagine?\r\n",
+    "question": "Qual è la natura del diritto all'immagine?\r\n",
     "answers": [
-      "Il diritto all’immagine è considerato un diritto esclusivamente patrimoniale",
-      "Il diritto all’immagine è completamente separato da altre componenti della personalità umana",
-      "Esistono varie interpretazioni, alcune lo collegano al diritto alla riservatezza altre all’identità personale",
-      "Il diritto all’immagine è inalienabile e non può essere oggetto di scambio"
+      "Il diritto all'immagine è considerato un diritto esclusivamente patrimoniale",
+      "Il diritto all'immagine è completamente separato da altre componenti della personalità umana",
+      "Esistono varie interpretazioni, alcune lo collegano al diritto alla riservatezza altre all'identità personale",
+      "Il diritto all'immagine è inalienabile e non può essere oggetto di scambio"
     ],
-    "correct_answer": "Esistono varie interpretazioni, alcune lo collegano al diritto alla riservatezza altre all’identità personale"
+    "correct_answer": "Esistono varie interpretazioni, alcune lo collegano al diritto alla riservatezza altre all'identità personale"
   },
   {
     "question": "Qual è la fonte giuridica primaria del diritto alla riservatezza?\r\n",
@@ -230,20 +230,20 @@
     "correct_answer": "Trattato sull'Unione europea"
   },
   {
-    "question": "L’investigatore privato può avvalersi di altri investigatori:\r\n",
+    "question": "L'investigatore privato può avvalersi di altri investigatori:\r\n",
     "answers": [
-      "solo se sono indicati nominalmente nell’atto di incarico",
-      "solo se non sono indicati nominalmente nell’atto di incarico",
-      "solo su richiesta dell’interessato",
+      "solo se sono indicati nominalmente nell'atto di incarico",
+      "solo se non sono indicati nominalmente nell'atto di incarico",
+      "solo su richiesta dell'interessato",
       "solo su richiesta del responsabile"
     ],
-    "correct_answer": "solo se sono indicati nominalmente nell’atto di incarico"
+    "correct_answer": "solo se sono indicati nominalmente nell'atto di incarico"
   },
   {
-    "question": "Base giuridica del trattamento da parte dell’investigatore può essere:\r\n",
+    "question": "Base giuridica del trattamento da parte dell'investigatore può essere:\r\n",
     "answers": [
       "tutela della sicurezza pubblica",
-      "consenso dell’interessato",
+      "consenso dell'interessato",
       "esecuzione di pubblico potere",
       "legittimo interesse del cliente"
     ],
@@ -270,7 +270,7 @@
     "correct_answer": "Dal concepimento"
   },
   {
-    "question": "Qual è il ruolo della corte di giustizia dell’unione europea riguardo ai diritti fondamentali della persona?",
+    "question": "Qual è il ruolo della corte di giustizia dell'unione europea riguardo ai diritti fondamentali della persona?",
     "answers": [
       "Li garantisce come principi generali del diritto comunitario",
       "Li garantisce solo se sono specificamente previsti dalla legislazione europea",
@@ -293,9 +293,9 @@
     "question": "In quale caso l'uso dell'immagine altrui è lecito senza consenso?\r\n",
     "answers": [
       "Quando l'immagine è stata ripresa in occasione di avvenimenti pubblici",
-      "Quando l’immagine viene utilizzata per scopi di intrattenimento pubblico",
-      "Quando l’immagine viene utilizzata per scopi commerciali senza alcun limite",
-      "Quando l’immagine è utilizzata da enti pubblici per finalità istituzionali"
+      "Quando l'immagine viene utilizzata per scopi di intrattenimento pubblico",
+      "Quando l'immagine viene utilizzata per scopi commerciali senza alcun limite",
+      "Quando l'immagine è utilizzata da enti pubblici per finalità istituzionali"
     ],
     "correct_answer": "Quando l'immagine è stata ripresa in occasione di avvenimenti pubblici"
   },
@@ -313,7 +313,7 @@
     "question": "Quali sono gli effetti negativi della digitalizzazione sulla società?",
     "answers": [
       "Creazione di nuovi emarginati digitali",
-      "Miglioramento dell’accesso ai servizi online",
+      "Miglioramento dell'accesso ai servizi online",
       "Aumento della disuguaglianza sociale",
       "Rischio di perdita della privacy"
     ],
@@ -330,12 +330,12 @@
     "correct_answer": "È disciplinato da disposizioni sparse in vari codici e leggi speciali"
   },
   {
-    "question": "Qualora l’interessato pubblichi di sua iniziativa i propri dati:\r",
+    "question": "Qualora l'interessato pubblichi di sua iniziativa i propri dati:\r",
     "answers": [
       "Il diritto alla portabilità può essere esercitato",
-      "Il diritto all’oblio può essere sempre esercitato",
+      "Il diritto all'oblio può essere sempre esercitato",
       "I dati diventano di pubblico dominio",
-      "L’interessato perde ogni diritto sui propri dati"
+      "L'interessato perde ogni diritto sui propri dati"
     ],
     "correct_answer": "Il diritto alla portabilità può essere esercitato"
   },
@@ -350,7 +350,7 @@
     "correct_answer": "principio di solidarietà sociale"
   },
   {
-    "question": "Quali sono le lesioni del diritto al nome secondo l’articolo 7 del Codice civile?\r\n",
+    "question": "Quali sono le lesioni del diritto al nome secondo l'articolo 7 del Codice civile?\r\n",
     "answers": [
       "Contestazione e usurpazione",
       "Violazione della privacy e danno patrimoniale",
@@ -380,7 +380,7 @@
     "correct_answer": "Il Garante per la Privacy"
   },
   {
-    "question": "Quali sono i principali diritti tutelati dall’articolo 595 del Codice penale italiano?",
+    "question": "Quali sono i principali diritti tutelati dall'articolo 595 del Codice penale italiano?",
     "answers": [
       "Onore, decoro e reputazione",
       " Onore, dignità e buon nome",
@@ -390,7 +390,7 @@
     "correct_answer": "Onore, decoro e reputazione"
   },
   {
-    "question": "Quando è stata proclamata la Carta dei diritti fondamentali dell’unione europea?",
+    "question": "Quando è stata proclamata la Carta dei diritti fondamentali dell'unione europea?",
     "answers": [
       "7 dicembre 2000",
       "10 novembre 1999",
@@ -400,7 +400,7 @@
     "correct_answer": "7 dicembre 2000"
   },
   {
-    "question": "Qual è il diritto considerato il primo dei diritti inviolabili dell’uomo della Corte costituzionale italiana?",
+    "question": "Qual è il diritto considerato il primo dei diritti inviolabili dell'uomo della Corte costituzionale italiana?",
     "answers": [
       "Diritto alla vita",
       "Diritto alla libertà personale",
@@ -412,32 +412,32 @@
   {
     "question": "Cosa prevede il principio di necessità del trattamento dei dati nel codice privacy?\r\n",
     "answers": [
-      "L’obbligo di utilizzare dati personali solo quando strettamente necessario",
+      "L'obbligo di utilizzare dati personali solo quando strettamente necessario",
       "Il trattamento dei dati deve essere effettuato solo con il consenso esplicito dell'interessato",
       "I dati devono essere trattati solo per scopi commerciali e pubblicitari",
       "Il trattamento dei dati è permesso senza limiti di tempo, purché avvenga in modo trasparente"
     ],
-    "correct_answer": "L’obbligo di utilizzare dati personali solo quando strettamente necessario"
+    "correct_answer": "L'obbligo di utilizzare dati personali solo quando strettamente necessario"
   },
   {
-    "question": "Qual è una delle cause dell’evoluzione della nozione di privacy?\r\n",
+    "question": "Qual è una delle cause dell'evoluzione della nozione di privacy?\r\n",
     "answers": [
-      "L’evoluzione tecnologica e la diffusione dei contenuti digitali in rete",
+      "L'evoluzione tecnologica e la diffusione dei contenuti digitali in rete",
       "L'adozione di nuove leggi sulla proprietà intellettuale",
-      "L’introduzione di trattamenti dati meno rischiosi per le persone",
+      "L'introduzione di trattamenti dati meno rischiosi per le persone",
       "Il legittimo interesse del titolare nel trattamento dei dati"
     ],
-    "correct_answer": "L’evoluzione tecnologica e la diffusione dei contenuti digitali in rete"
+    "correct_answer": "L'evoluzione tecnologica e la diffusione dei contenuti digitali in rete"
   },
   {
-    "question": "Come si sposta il focus della normativa con l’introduzione del GDPR?\r\n",
+    "question": "Come si sposta il focus della normativa con l'introduzione del GDPR?\r\n",
     "answers": [
-      "Dalla protezione dell’interessato alla responsabilità del titolare e dei responsabili del trattamento",
+      "Dalla protezione dell'interessato alla responsabilità del titolare e dei responsabili del trattamento",
       "Dalla protezione dei dati personali alla libertà di circolazione delle informazioni",
       "Dalla responsabilità del titolare alla protezione dei diritti economici",
       "Dalla protezione dei dati alla promozione della trasparenza nelle comunicazioni"
     ],
-    "correct_answer": "Dalla protezione dell’interessato alla responsabilità del titolare e dei responsabili del trattamento"
+    "correct_answer": "Dalla protezione dell'interessato alla responsabilità del titolare e dei responsabili del trattamento"
   },
   {
     "question": "In base al principio di autodeterminazione, quando possono essere previsti accertamenti e trattamenti sanitari obbligatori?\r\n",
@@ -450,7 +450,7 @@
     "correct_answer": "Solo nel rispetto della dignità della persona e dei diritti civili e politici"
   },
   {
-    "question": "Qual è l’obiettivo principale del GDPR?\r\n",
+    "question": "Qual è l'obiettivo principale del GDPR?\r\n",
     "answers": [
       "Aumentare la fiducia dei cittadini nella società digitale",
       "Favorire la libera circolazione dei dati personali",
@@ -540,14 +540,14 @@
     "correct_answer": "Il principio della tipicità dei diritti della personalità"
   },
   {
-    "question": "Cosa distingue l’incaricato del trattamento dal responsabile del trattamento?\r\n",
+    "question": "Cosa distingue l'incaricato del trattamento dal responsabile del trattamento?\r\n",
     "answers": [
-      "L’incaricato deve operare sotto la diretta autorità del titolare o del responsabile",
-      "L’incaricato ha il potere di prendere decisioni autonome sul trattamento dei dati",
+      "L'incaricato deve operare sotto la diretta autorità del titolare o del responsabile",
+      "L'incaricato ha il potere di prendere decisioni autonome sul trattamento dei dati",
       "Il responsabile del trattamento non è obbligato a firmare un contratto di incarico",
-      "L’incaricato può trattare i dati senza limiti di tempo o di scopo"
+      "L'incaricato può trattare i dati senza limiti di tempo o di scopo"
     ],
-    "correct_answer": "L’incaricato deve operare sotto la diretta autorità del titolare o del responsabile"
+    "correct_answer": "L'incaricato deve operare sotto la diretta autorità del titolare o del responsabile"
   },
   {
     "question": "Quali sono le tre forme di tutela esperibili innanzi al Garante per la protezione dei dati personali? \r\n",
@@ -560,7 +560,7 @@
     "correct_answer": "Il reclamo circostanziato, la segnalazione e il ricorso."
   },
   {
-    "question": "Perché il GDPR non richiede un recepimento da parte degli Stati membri dell’Unione Europea? \r\n",
+    "question": "Perché il GDPR non richiede un recepimento da parte degli Stati membri dell'Unione Europea? \r\n",
     "answers": [
       "Perché Trattandosi di un regolamento, non necessita di recepimento da parte degli Stati - Perché è entrato in vigore automaticamente",
       "Perché il regolamento è vincolante solo per le autorità pubbliche e non per i privati",
@@ -573,8 +573,8 @@
     "question": "Qual è il principio fondamentale per cui una notizia lesiva può essere pubblicata?\r\n",
     "answers": [
       "La verità della notizia",
-      "L’assenso dell’avente diritto",
-      "L’interesse pubblico della notizia",
+      "L'assenso dell'avente diritto",
+      "L'interesse pubblico della notizia",
       "La tutela della libertà di espressione"
     ],
     "correct_answer": "La verità della notizia"
@@ -592,12 +592,12 @@
   {
     "question": "Cosa prevede il diritto all'immagine in relazione al suo utilizzo?",
     "answers": [
-      "Il diritto all’immagine può essere sfruttato anche a titolo oneroso",
-      "Il diritto all’immagine non può mai essere sfruttato a fini economici",
+      "Il diritto all'immagine può essere sfruttato anche a titolo oneroso",
+      "Il diritto all'immagine non può mai essere sfruttato a fini economici",
       "Il diritto all'immagine è esclusivamente un diritto patrimoniale",
       "Il diritto all'immagine è limitato solo alle rappresentazioni in ambito pubblico"
     ],
-    "correct_answer": "Il diritto all’immagine può essere sfruttato anche a titolo oneroso"
+    "correct_answer": "Il diritto all'immagine può essere sfruttato anche a titolo oneroso"
   },
   {
     "question": "Quali sono i principali ordinamenti giuridici che, in relazione al diritto d'autore, si basano sul sistema del \"droit d'auteur\"?",
@@ -620,7 +620,7 @@
     "correct_answer": "Si applica anche ai diritti fondamentali della persona"
   },
   {
-    "question": "Qual è il regolamento europeo che stabilisce le norme per l’identificazione elettronica e i servizi fiduciari per le transazioni elettroniche nel mercato interno?",
+    "question": "Qual è il regolamento europeo che stabilisce le norme per l'identificazione elettronica e i servizi fiduciari per le transazioni elettroniche nel mercato interno?",
     "answers": [
       "Regolamento UE n. 910/2014",
       "Regolamento UE n. 128/2016",
@@ -675,7 +675,7 @@
       " Raccogliere dati in modo da permettere una valutazione economica",
       "Garantire la raccolta illimitata di dati",
       "Raccogliere solo i dati strettamente necessari per il trattamento",
-      "Limitare l’accesso ai dati personali"
+      "Limitare l'accesso ai dati personali"
     ],
     "correct_answer": "Raccogliere solo i dati strettamente necessari per il trattamento"
   },
@@ -690,17 +690,17 @@
     "correct_answer": "Settore sanitario"
   },
   {
-    "question": "Qual è il principale conflitto che può emergere tra il diritto all’immagine e altre normative?",
+    "question": "Qual è il principale conflitto che può emergere tra il diritto all'immagine e altre normative?",
     "answers": [
-      " Il diritto all’immagine è sempre vincolato dal consenso scritto",
-      "Il diritto all’immagine può essere utilizzato solo per scopi educativi",
-      "Il diritto all’immagine può essere sfruttato anche a titolo oneroso ",
-      " Il diritto all’immagine è sempre subordinato al diritto alla privacy"
+      " Il diritto all'immagine è sempre vincolato dal consenso scritto",
+      "Il diritto all'immagine può essere utilizzato solo per scopi educativi",
+      "Il diritto all'immagine può essere sfruttato anche a titolo oneroso ",
+      " Il diritto all'immagine è sempre subordinato al diritto alla privacy"
     ],
-    "correct_answer": "Il diritto all’immagine può essere sfruttato anche a titolo oneroso "
+    "correct_answer": "Il diritto all'immagine può essere sfruttato anche a titolo oneroso "
   },
   {
-    "question": "Qual è l’interpretazione prevalente del concetto di “privacy” nel contesto legale?",
+    "question": "Qual è l'interpretazione prevalente del concetto di “privacy” nel contesto legale?",
     "answers": [
       "Esistono varie interpretazioni, alcune lo collegano al diritto alla riservatezza, altre all'identità personale",
       "È esclusivamente un diritto alla protezione dei dati personali",
@@ -710,7 +710,7 @@
     "correct_answer": "Esistono varie interpretazioni, alcune lo collegano al diritto alla riservatezza, altre all'identità personale"
   },
   {
-    "question": "Qual è l’effetto della revoca del consenso al trattamento dei dati personali?",
+    "question": "Qual è l'effetto della revoca del consenso al trattamento dei dati personali?",
     "answers": [
       "La revoca è efficace solo se comunicata tramite un avviso formale",
       "Il consenso revocato non ha alcuna efficacia legale",
@@ -743,24 +743,24 @@
     "question": "L'atto di incarico deve menzionare in maniera specifica",
     "answers": [
       "il diritto che si intende far valere in sede giudiziaria",
-      "il ruolo privacy dell’investigatore",
+      "il ruolo privacy dell'investigatore",
       "il reato perseguito",
       "il responsabile"
     ],
     "correct_answer": "il diritto che si intende far valere in sede giudiziaria"
   },
   {
-    "question": "L’informativa all’interessato deve essere fornita:",
+    "question": "L'informativa all'interessato deve essere fornita:",
     "answers": [
       "sempre",
       "mai",
-      "salvo che rischi di pregiudicare gravemente l’attività investigativa",
+      "salvo che rischi di pregiudicare gravemente l'attività investigativa",
       "quando serve per le finalità di trattamento"
     ],
-    "correct_answer": "salvo che rischi di pregiudicare gravemente l’attività investigativa"
+    "correct_answer": "salvo che rischi di pregiudicare gravemente l'attività investigativa"
   },
   {
-    "question": "L’investigatore munito di licenza, per incarichi in altre città è:",
+    "question": "L'investigatore munito di licenza, per incarichi in altre città è:",
     "answers": [
       "incaricato",
       "interessato",
@@ -770,7 +770,7 @@
     "correct_answer": "responsabile"
   },
   {
-    "question": "L’investigatore privato con mini-licenza è:",
+    "question": "L'investigatore privato con mini-licenza è:",
     "answers": [
       "incaricato",
       "interessato",
@@ -812,12 +812,12 @@
   {
     "question": "Quale ambito economico entra facilmente in contrasto con il diritto alla privacy?",
     "answers": [
-      "Il conflitto tra il diritto alla riservatezza e il diritto all’informazione",
+      "Il conflitto tra il diritto alla riservatezza e il diritto all'informazione",
       "Il diritto alla proprietà intellettuale",
       "Il diritto alla concorrenza leale",
       "Il diritto alla libertà di espressione"
     ],
-    "correct_answer": "Il conflitto tra il diritto alla riservatezza e il diritto all’informazione"
+    "correct_answer": "Il conflitto tra il diritto alla riservatezza e il diritto all'informazione"
   },
   {
     "question": "Obiettivo della cooperazione è:",

@@ -4,6 +4,7 @@ import json
 from html import escape
 
 QUIZ_FOLDER = "quizzes"
+IMAGES_FOLDER = "quizzes/images"
 
 def generate_pdf_sync(quiz_path: str) -> str:
     with open(quiz_path, encoding="utf-8") as f:
@@ -23,9 +24,16 @@ def generate_pdf_sync(quiz_path: str) -> str:
         question = escape(item["question"])
         answers = item["answers"]
         correct = item.get("correct_answer") or item.get("correct")
+        image_path = item.get("image")
 
         pdf.set_font("Arial", "B", 12)
         pdf.multi_cell(0, 8, f"{i}. {question}")
+
+        if image_path:
+            img_full_path = os.path.join(IMAGES_FOLDER, image_path)
+            if os.path.exists(img_full_path):
+                pdf.image(img_full_path, x=pdf.get_x(), y=pdf.get_y(), w=100)
+                pdf.ln(50)  # Adjust line height after image
 
         for ans in answers:
             if ans == correct:
