@@ -221,6 +221,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         quiz_file = data.split(":", 1)[1]
         await generate_pdf(quiz_file, context.bot, user_id)
 
+
     elif data == "git":
         await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")
 

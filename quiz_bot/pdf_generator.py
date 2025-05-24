@@ -1,10 +1,11 @@
-
-from fpdf import FPDF
 import os
+from fpdf import FPDF
 import json
 from html import escape
 
-def generate_pdf(quiz_path: str) -> str:
+QUIZ_FOLDER = "quizzes"
+
+def generate_pdf_sync(quiz_path: str) -> str:
     with open(quiz_path, encoding="utf-8") as f:
         data = json.load(f)
 
@@ -23,14 +24,12 @@ def generate_pdf(quiz_path: str) -> str:
         answers = item["answers"]
         correct = item.get("correct_answer") or item.get("correct")
 
-        # Domanda in grassetto
         pdf.set_font("Arial", "B", 12)
         pdf.multi_cell(0, 8, f"{i}. {question}")
 
-        # Risposte
         for ans in answers:
             if ans == correct:
-                pdf.set_text_color(0, 128, 0)  # Verde
+                pdf.set_text_color(0, 128, 0)
             else:
                 pdf.set_text_color(0, 0, 0)
             pdf.set_font("Arial", "", 12)
@@ -40,3 +39,16 @@ def generate_pdf(quiz_path: str) -> str:
 
     pdf.output(pdf_path)
     return pdf_path
+
+
+async def generate_pdf(quiz_file, bot, user_id):
+    quiz_path = os.path.join(QUIZ_FOLDER, quiz_file)
+    try:
+        pdf_path = generate_pdf_sync(quiz_path)
+        with open(pdf_path, "rb") as pdf_file:
+            await bot.send_document(chat_id=user_id, document=pdf_file, filename=os.path.basename(pdf_path))
+    except Exception as e:
+        await bot.send_message(chat_id=user_id, text=f"❌ Errore nella generazione o invio del PDF: {e}")
+    finally:
+        if os.path.exists(pdf_path):
+            os.remove(pdf_path)
