@@ -21,7 +21,7 @@ def generate_pdf(quiz_path: str) -> str:
     for i, item in enumerate(data, 1):
         question = escape(item["question"])
         answers = item["answers"]
-        correct = item["correct"]
+        correct = item.get("correct_answer") or item.get("correct")
 
         # Domanda in grassetto
         pdf.set_font("Arial", "B", 12)

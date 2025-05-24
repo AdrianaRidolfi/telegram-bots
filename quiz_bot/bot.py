@@ -91,7 +91,10 @@ async def send_next_question(user_id, context):
 
     if state["index"] >= state["total"]:
         await show_final_stats(user_id, context, state)
+        await show_end_buttons(user_id, context)  
+        user_states.pop(user_id, None) 
         return
+
 
     q_index = state["order"][state["index"]]
     question_data = state["quiz"][q_index]
@@ -229,11 +232,11 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def show_end_buttons(user_id, context):
     keyboard = [
-        [InlineKeyboardButton("📄 Scarica inedite", callback_data="scarica_inedite")],
+        [InlineKeyboardButton("📥 Scarica inedite", callback_data="scarica_inedite")],
         [InlineKeyboardButton("🌐 Git", url="https://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await context.bot.send_message(chat_id=user_id, text="Scegli un'opzione:", reply_markup=reply_markup)
+    await context.bot.send_message(chat_id=user_id, reply_markup=reply_markup)
 
 
 async def handle_answer_callback(user_id: int, answer_index: int, context: ContextTypes.DEFAULT_TYPE):
