@@ -11,6 +11,8 @@ from telegram.ext import (
 )
 from contextlib import asynccontextmanager
 
+from quiz_bot.pdf_generator import generate_pdf
+
 # Inizializzazione bot Telegram
 TOKEN = os.getenv("TELEGRAM_TOKEN", "Y7861155385:AAEhLcBpmcGvkq_rlxbnwcNSMHNAFWKgb8s")
 if not TOKEN:
@@ -190,29 +192,48 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if data == "stop":
         await stop(update, context)
+        await show_end_buttons(user_id, context)
         user_states.pop(user_id, None)
-    
+
     elif data == "change_course":
-        user_id = query.from_user.id
         state = user_states.get(user_id)
         await show_final_stats(user_id, context, state, from_change_course=True)
         await start(update, context, show_intro_text_only=True)
-    
+
     elif data.endswith(".json"):
         await select_quiz(update, context)
-    
+
     elif data == "reset_stats":
         await reset_stats(update, context)
-    
+
     elif data == "__choose_subject__":
         await start(update, context)  # mostra direttamente le materie
 
     elif data == "repeat_quiz":
         await repeat_quiz(user_id, context)
-    
+
     elif data.startswith("answer:"):
         selected = int(data.split(":")[1])
         await handle_answer_callback(user_id, selected, context)
+
+    elif data == "scarica_inedite":
+        state = user_states.get(user_id)
+        if state and "quiz_file" in state:
+            quiz_file = state["quiz_file"]
+            await generate_pdf(quiz_file, context.bot, user_id)
+        else:
+            await context.bot.send_message(chat_id=user_id, text="Errore: impossibile generare il PDF. Riprova a fare il quiz.")
+
+    elif data == "git":
+        await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")
+
+async def show_end_buttons(user_id, context):
+    keyboard = [
+        [InlineKeyboardButton("📄 Scarica inedite", callback_data="scarica_inedite")],
+        [InlineKeyboardButton("🌐 Git", url="https://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")]
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    await context.bot.send_message(chat_id=user_id, text="Scegli un'opzione:", reply_markup=reply_markup)
 
 
 async def handle_answer_callback(user_id: int, answer_index: int, context: ContextTypes.DEFAULT_TYPE):

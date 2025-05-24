@@ -35,7 +35,7 @@ Il file `quiz.json` contiene una lista di domande e risposte nel seguente format
       "Risposta 3",
       "Risposta 4"
     ],
-    "correct_answer": "Risposta corretta"
+    "correct_answer": "Risposta 2"
   }
 ]
 ```
@@ -74,6 +74,46 @@ Mostra le statistiche dell'utente.
 Termina la sessione quiz in corso per quell’utente.
 
 
-## Deploy e sviluppo
-Ogni bot è contenuto in una cartella separata per facilitare la manutenzione e l’aggiunta di nuovi bot. Per aggiungere un nuovo bot, crea una nuova cartella con i file base (bot.py, quiz.json, requirements.txt, Procfile). Configura il deploy su Render o altra piattaforma cloud, impostando la root directory del bot.
+## Come contribuire con nuovi test
+
+Puoi contribuire aggiungendo nuovi quiz in formato `.json`.
+
+### 1. Fai un fork del progetto
+
+Vai su [https://github.com/AdrianaRidolfi/telegram-bots](https://github.com/AdrianaRidolfi/telegram-bots)  
+e clicca su **Fork** in alto a destra per creare una copia nel tuo account.
+
+### 2. Aggiungi il tuo quiz
+
+- Crea un file `.json` nel formato seguente:
+
+```json
+[
+  {
+    "question": "Testo della domanda",
+    "answers": [
+      "Risposta 1",
+      "Risposta 2",
+      "Risposta 3",
+      "Risposta 4"
+    ],
+    "correct_answer": "Risposta 2"
+  }
+]
+```
+
+- Assicurati che:
+  • il file sia un json valido.
+  • correct_answer corrisponda esattamente a una delle risposte elencate in answers.
+
+- Salva il file nella cartella quiz_bot/quizzes/ e dagli un nome descrittivo, ad esempio storia.json.
+
+3. Fai una pull request. Una volta aggiunto il file e fatto il commit sul tuo fork:
+
+  - Vai nella pagina del tuo fork.
+  - Clicca su Pull request.
+  - Seleziona il tuo branch con il quiz.
+  - Clicca su Create pull request e inserisci un messaggio descrittivo.
+
+Una volta approvato, il tuo quiz sarà incluso nel bot!
 
