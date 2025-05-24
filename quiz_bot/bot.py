@@ -14,7 +14,7 @@ from contextlib import asynccontextmanager
 from pdf_generator import generate_pdf
 
 # Inizializzazione bot Telegram
-TOKEN = os.getenv("TELEGRAM_TOKEN", "Y7861155385:AAEhLcBpmcGvkq_rlxbnwcNSMHNAFWKgb8s")
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 if not TOKEN:
     raise RuntimeError("Variabile d'ambiente TELEGRAM_TOKEN non trovata.")
 
