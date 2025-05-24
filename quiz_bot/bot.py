@@ -1,7 +1,6 @@
 import os
 import json
 import random
-import logging
 from fastapi import FastAPI, Request, HTTPException
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
@@ -13,8 +12,6 @@ from telegram.ext import (
 from contextlib import asynccontextmanager
 from pdf_generator import generate_pdf
 
-logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger(__name__)
 
 # Inizializzazione bot Telegram
 TOKEN = os.getenv("TELEGRAM_TOKEN")
@@ -195,6 +192,15 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = query.from_user.id
     data = query.data
 
+    try:
+        callback = json.loads(data)
+        if callback.get("cmd") == "scarica_inedite":
+            quiz_file = callback.get("file")
+            await generate_pdf(quiz_file, context.bot, user_id)
+            return
+    except Exception:
+        pass  
+
     if data == "stop":
         await stop(update, context)
         user_states.pop(user_id, None)
@@ -220,13 +226,6 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         selected = int(data.split(":")[1])
         await handle_answer_callback(user_id, selected, context)
 
-    elif data.startswith("scarica_inedite:"):
-
-        logger.debug(f"DEBUG data: {data}")
-        quiz_file = data.split(":", 1)[1]
-        
-        logger.debug(f"DEBUG quiz_file: {quiz_file}")
-        await generate_pdf(quiz_file, context.bot, user_id)
 
     elif data == "git":
         await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")
@@ -311,11 +310,10 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
     ])
 
     keyboard.append([
-        InlineKeyboardButton("📥 Scarica inedite", callback_data=f"scarica_inedite:{state['quiz_file']}"),
+        InlineKeyboardButton("📥 Scarica inedite", callback_data=json.dumps({"cmd": "scarica_inedite", "file": state['quiz_file']})),
         InlineKeyboardButton("🌐 Git", url="https://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")
     ])
 
-    logger.debug(f"state['quiz_file']: {state['quiz_file']}")
     reply_markup = InlineKeyboardMarkup(keyboard)
     await context.bot.send_message(chat_id=user_id, text=summary, reply_markup=reply_markup)
 
