@@ -91,7 +91,6 @@ async def send_next_question(user_id, context):
 
     if state["index"] >= state["total"]:
         await show_final_stats(user_id, context, state)
-        await show_end_buttons(user_id, context)  
         user_states.pop(user_id, None) 
         return
 
@@ -195,7 +194,6 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if data == "stop":
         await stop(update, context)
-        await show_end_buttons(user_id, context)
         user_states.pop(user_id, None)
 
     elif data == "change_course":
@@ -219,24 +217,12 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         selected = int(data.split(":")[1])
         await handle_answer_callback(user_id, selected, context)
 
-    elif data == "scarica_inedite":
-        state = user_states.get(user_id)
-        if state and "quiz_file" in state:
-            quiz_file = state["quiz_file"]
-            await generate_pdf(quiz_file, context.bot, user_id)
-        else:
-            await context.bot.send_message(chat_id=user_id, text="Errore: impossibile generare il PDF. Riprova a fare il quiz.")
+    elif data.startswith("scarica_inedite:"):
+        quiz_file = data.split(":", 1)[1]
+        await generate_pdf(quiz_file, context.bot, user_id)
 
     elif data == "git":
         await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")
-
-async def show_end_buttons(user_id, context):
-    keyboard = [
-        [InlineKeyboardButton("📥 Scarica inedite", callback_data="scarica_inedite")],
-        [InlineKeyboardButton("🌐 Git", url="https://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await context.bot.send_message(chat_id=user_id, reply_markup=reply_markup)
 
 
 async def handle_answer_callback(user_id: int, answer_index: int, context: ContextTypes.DEFAULT_TYPE):
@@ -275,6 +261,7 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def show_final_stats(user_id, context, state, from_stop=False, from_change_course=False):
+    
     if not state:
         return
 
@@ -314,6 +301,11 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
 
     keyboard.append([
         InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
+    ])
+
+    keyboard.append([
+        InlineKeyboardButton("📥 Scarica inedite", callback_data=f"scarica_inedite:{state['quiz_file']}"),
+        InlineKeyboardButton("🌐 Git", url="https://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")
     ])
 
     reply_markup = InlineKeyboardMarkup(keyboard)
