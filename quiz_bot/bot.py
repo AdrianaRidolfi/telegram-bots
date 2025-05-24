@@ -1,6 +1,7 @@
 import os
 import json
 import random
+import logging
 from fastapi import FastAPI, Request, HTTPException
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
@@ -10,8 +11,10 @@ from telegram.ext import (
     ContextTypes,
 )
 from contextlib import asynccontextmanager
-
 from pdf_generator import generate_pdf
+
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 # Inizializzazione bot Telegram
 TOKEN = os.getenv("TELEGRAM_TOKEN")
@@ -129,7 +132,7 @@ async def send_next_question(user_id, context):
     ])
     reply_markup = InlineKeyboardMarkup(keyboard)
 
-    # ✅ Se c'è un'immagine, la inviamo prima del messaggio
+    # Se c'è un'immagine, la inviamo prima del messaggio
     image_filename = question_data.get("image")
     if image_filename:
         image_path = os.path.join(QUIZ_FOLDER, "images", image_filename)
@@ -218,9 +221,11 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_answer_callback(user_id, selected, context)
 
     elif data.startswith("scarica_inedite:"):
-        print("DEBUG data:", data)
+
+        logger.debug(f"DEBUG data: {data}")
         quiz_file = data.split(":", 1)[1]
-        print("DEBUG quiz_file:", quiz_file)
+        
+        logger.debug(f"DEBUG quiz_file: {quiz_file}")
         await generate_pdf(quiz_file, context.bot, user_id)
 
     elif data == "git":
@@ -310,6 +315,7 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
         InlineKeyboardButton("🌐 Git", url="https://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")
     ])
 
+    logger.debug(f"state['quiz_file']: {state['quiz_file']}")
     reply_markup = InlineKeyboardMarkup(keyboard)
     await context.bot.send_message(chat_id=user_id, text=summary, reply_markup=reply_markup)
 
