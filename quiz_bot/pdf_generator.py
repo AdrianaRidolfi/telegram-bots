@@ -6,6 +6,19 @@ from html import escape
 QUIZ_FOLDER = "quizzes"
 IMAGES_FOLDER = "quizzes/images"
 
+def clean_text(text):
+    replacements = {
+        '\u201c': '"',  # “
+        '\u201d': '"',  # ”
+        '\u2018': "'",  # ‘
+        '\u2019': "'",  # ’
+        '\u2013': '-',  # –
+        '\u2014': '-',  # —
+    }
+    for orig, repl in replacements.items():
+        text = text.replace(orig, repl)
+    return text
+
 def generate_pdf_sync(quiz_path: str) -> str:
     with open(quiz_path, encoding="utf-8") as f:
         data = json.load(f)
@@ -21,33 +34,33 @@ def generate_pdf_sync(quiz_path: str) -> str:
     pdf.set_font("Arial", "", 12)
 
     for i, item in enumerate(data, 1):
-        question = escape(item["question"])
+        question = clean_text(item["question"])
         answers = item["answers"]
         correct = item.get("correct_answer") or item.get("correct")
         image_path = item.get("image")
 
         pdf.set_font("Arial", "B", 12)
-        pdf.multi_cell(0, 8, f"{i}. {question}")
+        pdf.multi_cell(0, 8, f"{i}. {escape(question)}")
 
         if image_path:
             img_full_path = os.path.join(IMAGES_FOLDER, image_path)
             if os.path.exists(img_full_path):
                 pdf.image(img_full_path, x=pdf.get_x(), y=pdf.get_y(), w=100)
-                pdf.ln(50)  # Adjust line height after image
+                pdf.ln(50)  # Spazio dopo immagine
 
         for ans in answers:
+            ans_clean = clean_text(ans)
             if ans == correct:
                 pdf.set_text_color(0, 128, 0)
             else:
                 pdf.set_text_color(0, 0, 0)
             pdf.set_font("Arial", "", 12)
-            pdf.multi_cell(0, 8, f"- {ans}")
+            pdf.multi_cell(0, 8, f"- {escape(ans_clean)}")
 
         pdf.ln(2)
 
     pdf.output(pdf_path)
     return pdf_path
-
 
 async def generate_pdf(quiz_file, bot, user_id):
     quiz_path = os.path.join(QUIZ_FOLDER, quiz_file)
