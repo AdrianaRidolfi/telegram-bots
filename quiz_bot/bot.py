@@ -219,6 +219,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     elif data.startswith("scarica_inedite:"):
         quiz_file = data.split(":", 1)[1]
+        quiz_file = quiz_file.replace("scarica_inedite:", "")
         await generate_pdf(quiz_file, context.bot, user_id)
 
 
