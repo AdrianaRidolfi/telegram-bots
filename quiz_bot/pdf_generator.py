@@ -86,3 +86,16 @@ def generate_pdf_sync(quiz_path: str) -> str:
 
     pdf.output(pdf_path)
     return pdf_path
+
+
+async def generate_pdf(quiz_file, bot, user_id):
+    quiz_path = os.path.join(QUIZ_FOLDER, quiz_file)
+    try:
+        pdf_path = generate_pdf_sync(quiz_path)
+        with open(pdf_path, "rb") as pdf_file:
+            await bot.send_document(chat_id=user_id, document=pdf_file, filename=os.path.basename(pdf_path))
+    except Exception as e:
+        await bot.send_message(chat_id=user_id, text=f"❌ Errore nella generazione o invio del PDF: {e}")
+    finally:
+        if os.path.exists(pdf_path):
+            os.remove(pdf_path)
