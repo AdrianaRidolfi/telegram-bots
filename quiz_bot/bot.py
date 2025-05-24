@@ -2,20 +2,12 @@ import os
 import json
 import random
 from fastapi import FastAPI, Request, HTTPException
-from telegram import (
-    Update,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    ReplyKeyboardMarkup,
-    ReplyKeyboardRemove,
-)
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     ApplicationBuilder,
     CommandHandler,
     CallbackQueryHandler,
     ContextTypes,
-    MessageHandler,
-    filters,
 )
 from contextlib import asynccontextmanager
 from pdf_generator import generate_pdf
@@ -30,16 +22,6 @@ application = ApplicationBuilder().token(TOKEN).build()
 user_states = {}
 QUIZ_FOLDER = "quizzes"
 user_stats = {}  # Statistiche per utente e per materia
-
-
-# --- Funzione per inviare la custom keyboard con comandi rapidi ---
-async def send_custom_keyboard(user_id, context):
-    keyboard = [
-        ["Start", "Stop", "Help"]
-    ]
-    reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=False)
-    await context.bot.send_message(chat_id=user_id, text="Comandi rapidi:", reply_markup=reply_markup)
-
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_text_only=False):
     user_id = update.effective_user.id
@@ -60,15 +42,13 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     if not show_intro_text_only:
-        # Invia la custom keyboard rapida ai comandi
-        await send_custom_keyboard(user_id, context)
+        pass
 
     await context.bot.send_message(
         chat_id=user_id,
         text="Scegli la materia del quiz:",
         reply_markup=reply_markup,
     )
-
 
 async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
@@ -88,6 +68,7 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
     random.shuffle(question_order)
     question_order = question_order[:30]  # Prende solo 30 domande
 
+
     user_states[user_id] = {
         "quiz": quiz_data,
         "quiz_file": filename,  # AGGIUNTO
@@ -97,6 +78,7 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "total": len(question_order),
         "subject": filename.replace(".json", "")
     }
+
 
     await send_next_question(user_id, context)
 
@@ -109,8 +91,9 @@ async def send_next_question(user_id, context):
 
     if state["index"] >= state["total"]:
         await show_final_stats(user_id, context, state)
-        user_states.pop(user_id, None)
+        user_states.pop(user_id, None) 
         return
+
 
     q_index = state["order"][state["index"]]
     question_data = state["quiz"][q_index]
@@ -216,7 +199,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await generate_pdf(quiz_file, context.bot, user_id)
             return
     except Exception:
-        pass
+        pass  
 
     if data == "stop":
         await stop(update, context)
@@ -242,6 +225,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif data.startswith("answer:"):
         selected = int(data.split(":")[1])
         await handle_answer_callback(user_id, selected, context)
+
 
     elif data == "git":
         await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")
@@ -280,12 +264,10 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     state = user_states.get(user_id)
     await show_final_stats(user_id, context, state, from_stop=True)
     user_states.pop(user_id, None)
-    # Invia la custom keyboard dopo stop
-    await send_custom_keyboard(user_id, context)
 
 
 async def show_final_stats(user_id, context, state, from_stop=False, from_change_course=False):
-
+    
     if not state:
         return
 
@@ -336,85 +318,65 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
     await context.bot.send_message(chat_id=user_id, text=summary, reply_markup=reply_markup)
 
 
-async def reset_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_id = update.effective_user.id
-    user_stats[user_id] = {}
-    await context.bot.send_message(chat_id=user_id, text="📊 Statistiche azzerate.")
-
-
 async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
-    stats = user_stats.get(user_id, {})
+    stats = user_stats.get(user_id)
     if not stats:
         await context.bot.send_message(chat_id=user_id, text="Nessuna statistica disponibile.")
         return
 
-    summary = "📊 Le tue statistiche:\n"
+    msg = "📊 Statistiche:\n"
     for sub, data in stats.items():
         perc = round((data["correct"] / data["total"]) * 100, 2)
-        summary += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
+        msg += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
 
-    await context.bot.send_message(chat_id=user_id, text=summary)
+    keyboard = [
+        [InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")]
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
 
-
-# --- Nuovo handler per messaggi testuali: gestione comandi e risposte lettere ---
-async def handle_text_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_id = update.effective_user.id
-    text = update.message.text.strip().lower()
-
-    if text == "start":
-        await start(update, context)
-    elif text == "stop":
-        await stop(update, context)
-    elif text == "help":
-        help_text = (
-            "Usa i comandi:\n"
-            "- Start: per iniziare o scegliere quiz\n"
-            "- Stop: per fermare quiz e vedere statistiche\n"
-            "- Help: per mostrare questo messaggio\n"
-            "Durante il quiz puoi rispondere con lettere (A, B, C, D) oppure usare i bottoni inline."
-        )
-        await context.bot.send_message(chat_id=user_id, text=help_text)
-    elif text in ["a", "b", "c", "d"]:
-        state = user_states.get(user_id)
-        if not state:
-            await context.bot.send_message(chat_id=user_id, text="Nessun quiz attivo. Usa /start per iniziare.")
-            return
-        answer_index = ord(text.upper()) - 65
-        await handle_answer_callback(user_id, answer_index, context)
-    else:
-        await context.bot.send_message(user_id, text="Comando non riconosciuto. Usa /help per assistenza.")
+    await context.bot.send_message(chat_id=user_id, text=msg, reply_markup=reply_markup)
 
 
-# FastAPI app
-app = FastAPI()
+async def reset_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    user_id = query.from_user.id
 
+    if user_id in user_stats:
+        user_stats.pop(user_id)
+
+    await context.bot.send_message(chat_id=user_id, text="✅ Statistiche azzerate.")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    await application.initialize()
+    application.add_handler(CommandHandler("start", start))
+    application.add_handler(CommandHandler("stats", stats))
+    application.add_handler(CallbackQueryHandler(handle_callback))
+    print("✅ Applicazione Telegram inizializzata con successo.")
     yield
 
 
-app.router.lifespan_context = lifespan
+app = FastAPI(lifespan=lifespan)
+
+@app.get("/")
+def read_root():
+    return {"status": "ok"}
 
 
 @app.post("/webhook")
-async def webhook(request: Request):
-    json_update = await request.json()
-    update = Update.de_json(json_update, application.bot)
-    await application.process_update(update)
+async def telegram_webhook(request: Request):
+    try:
+        data = await request.json()
+        update = Update.de_json(data, application.bot)
+        await application.process_update(update)
+    except Exception as e:
+        print(f"Errore webhook: {e}")
+        raise HTTPException(status_code=400, detail=str(e))
     return {"ok": True}
-
-
-# Registra handler
-application.add_handler(CommandHandler("start", start))
-application.add_handler(CommandHandler("stats", stats))
-application.add_handler(CommandHandler("help", handle_text_message))  # Help come comando testuale
-application.add_handler(CallbackQueryHandler(handle_callback))
-application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text_message))
 
 
 if __name__ == "__main__":
     import uvicorn
-
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run("bot:app", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
