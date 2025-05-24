@@ -21,6 +21,18 @@ telegram-bots/
 
 ```
 
+## Dipendenze e installazione
+
+Le dipendenze Python del bot sono elencate nel file [`requirements.txt`](/quiz_bot/requirements.txt). Per installarle localmente puoi usare:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Deploy gratuito su Render
+
+Il bot è attualmente deployato gratuitamente su [Render](https://render.com/). Questo significa che, se non viene utilizzato da un po' di tempo, il server può andare in modalità "sleep" per risparmiare risorse. In tal caso, la prima risposta al comando /start può richiedere fino a 50 secondi. Una volta riattivato, le risposte torneranno rapide.
+
 ## Formato del file `quiz.json`
 
 Il file `quiz.json` contiene una lista di domande e risposte nel seguente formato:
