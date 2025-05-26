@@ -10,8 +10,7 @@ Puoi contribuire aggiungendo nuovi quiz in formato `.json`.
 
 ### 1. Fai un fork del progetto
 
-Vai su [https://github.com/AdrianaRidolfi/telegram-bots](https://github.com/AdrianaRidolfi/telegram-bots)  
-e clicca su **Fork** in alto a destra per creare una copia nel tuo account.
+Clicca su **Fork** in alto a destra per creare una copia nel tuo account.
 
 ### 2. Aggiungi il tuo quiz
 
@@ -35,6 +34,8 @@ e clicca su **Fork** in alto a destra per creare una copia nel tuo account.
 - Assicurati che:
     - il file sia un json valido.
     - correct_answer corrisponda esattamente a una delle risposte elencate in answers.
+
+NB. se vuoi aggiungere un'immagine relativa alla domanda puoi aggiungere il campo image con il nome dell'immagine e salvarla dentro la cartella images. L'immagine DEVE essere in formato jpg.
 
 - Salva il file nella cartella quiz_bot/quizzes/ e dagli un nome descrittivo, ad esempio storia.json.
 
@@ -60,6 +61,7 @@ telegram-bots/
 │     ├── images/             # cartella per le imagini
 │     │   └── tec1.jpg
 │     ├── fonts/               # cartella per i font utilizzati nei pdf
+│     │   └── DejaVu.ttf
 │     ├── convert.py           # codice di utility per convertire file .qwz e .txt nei json
 │     ├── diritto.json         # file JSON con domande e risposte
 │     └── altro_quiz.json      # altri quiz in JSON
@@ -92,7 +94,8 @@ Il file `quiz.json` contiene una lista di domande e risposte nel seguente format
       "Risposta 3",
       "Risposta 4"
     ],
-    "correct_answer": "Risposta 2"
+    "correct_answer": "Risposta 2".
+    "image": "image.jpg"
   }
 ]
 ```
@@ -100,6 +103,7 @@ Il file `quiz.json` contiene una lista di domande e risposte nel seguente format
 - **question**: testo della domanda
 - **options**: lista delle possibili risposte (in ordine)
 - **answer**: indice (zero-based) della risposta corr
+- **image**: eventuale immagine jpg, deve in quel caso essere aggiunta nella cartella images
 
 ## Conversione e preparazione dei file JSON
 
