@@ -25,6 +25,7 @@ class WrongAnswersManager:
         return all_wrong.get(subject, [])
 
     def save_wrong_answer(self, subject: str, question_data: Dict):
+    
         """Aggiunge o aggiorna una domanda sbagliata con counter +3."""
         doc_ref = self.db.collection("wrong_answers").document(self.user_id)
 
@@ -46,19 +47,7 @@ class WrongAnswersManager:
             data[subject] = subject_list
             transaction.set(doc_ref, data)
 
-            def transaction_update(transaction):
-                doc = doc_ref.get(transaction=transaction)
-                data = doc.to_dict()
-                updated = False
-                for item in data.get(subject, []):
-                    if item["question"] == question:
-                        item["counter"] = max(0, item["counter"] - 1)
-                        updated = True
-                        break
-                if updated:
-                    transaction.set(doc_ref, data)
-
-            self.db.run_transaction(transaction_update)
+        self.db.run_transaction(lambda transaction: transaction_update(transaction, doc_ref))
 
 
     def decrement_counter(self, subject: str, question_text: str):
