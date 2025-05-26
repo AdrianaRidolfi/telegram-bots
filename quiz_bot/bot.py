@@ -11,6 +11,7 @@ from telegram.ext import (
 )
 from contextlib import asynccontextmanager
 from pdf_generator import generate_pdf
+from wrong_answers import WrongAnswersManager
 
 
 # Inizializzazione bot Telegram
@@ -40,6 +41,12 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         [InlineKeyboardButton(f.replace("_", " ").replace(JSON, ""), callback_data=f)]
         for f in files
     ]
+
+    #se l'utente ha errori aggiungo il bottone
+    manager = WrongAnswersManager(str(user_id))
+    if manager.has_wrong_answers():
+        keyboard.append([InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors")])
+
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     if not show_intro_text_only:
@@ -214,6 +221,7 @@ async def repeat_quiz(user_id: int, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    
     query = update.callback_query
     await query.answer()
     user_id = query.from_user.id
@@ -221,13 +229,35 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     try:
         callback = json.loads(data)
-        if callback.get("cmd") == "scarica_inedite" or callback.get("cmd") == "download_pdf":
+        if callback.get("cmd") in ("scarica_inedite", "download_pdf"):
             quiz_file = callback.get("file")
             await generate_pdf(quiz_file, context.bot, user_id)
             return
     except Exception:
         pass
 
+    manager = WrongAnswersManager(str(user_id))
+    if data == "review_errors":
+        subjects = list(manager.get_all().keys())
+
+        #se non ci sono materie
+        if not subjects:
+            return await query.answer("Non ci sono errori da ripassare!", show_alert=True)
+        #se c'e' una materia sola
+        elif  len(subjects) == 1:
+            return await start_review_quiz(update, context, subjects[0])
+
+        keyboard = [[
+            InlineKeyboardButton(subj, callback_data=f"review_subject_{subj}")]
+            for subj in subjects
+        ]
+        keyboard.append([InlineKeyboardButton("🔙 Indietro", callback_data="change_course")])
+        return await query.edit_message_text("Scegli la materia da ripassare:", reply_markup=InlineKeyboardMarkup(keyboard))
+
+    if data.startswith("review_subject_"):
+        subject = data.split("review_subject_")[1]
+        return await start_review_quiz(update, context, subject)
+    
     if data == "stop":
         await stop(update, context)
         user_states.pop(user_id, None)
@@ -257,6 +287,38 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif data == "git":
         await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")
 
+async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, subject: str):
+    user_id = update.effective_user.id
+    manager = WrongAnswersManager(str(user_id))
+    wrong_qs = manager.get_for_subject(subject)
+
+    weighted = []
+    for q in wrong_qs:
+        weighted += [q] * q.get("counter", 1)
+
+    selected = []
+    if weighted:
+        selected = random.sample(weighted, min(len(weighted), 30))
+    if len(selected) < 30:
+        base = json.load(open(os.path.join(QUIZ_FOLDER, subject + JSON), encoding="utf-8"))
+        used = {q["question"] for q in selected}
+        extras = [q for q in base if q["question"] not in used]
+        needed = 30 - len(selected)
+        selected += random.sample(extras, min(len(extras), needed))
+    
+    #salvo quiz in user_states
+    user_states[user_id] = {
+        "quiz": selected,
+        "order": list(range(len(selected))),
+        "index": 0,
+        "score": 0,
+        "total": len(selected),
+        "is_review": True
+    }
+
+    random.shuffle(user_states[user_id]["order"])
+    await send_next_question(user_id, context)
+
 
 async def handle_answer_callback(user_id: int, answer_index: int, context: ContextTypes.DEFAULT_TYPE):
     state = user_states.get(user_id)
@@ -268,12 +330,17 @@ async def handle_answer_callback(user_id: int, answer_index: int, context: Conte
     q_index = state["order"][state["index"]]
     question_data = state["quiz"][q_index]
 
-    correct_index = question_data.get("_correct_index", -1)
+    correct_index = question_data.get("_correct_index", None)
+    if(correct_index is None):
+        correct_index = question_data["answers"].index(question_data["correct_answer"])
+
     answers = question_data.get("_shuffled_answers", question_data.get("answers", []))
 
     if answer_index == correct_index:
         state["score"] += 1
         await context.bot.send_message(chat_id=user_id, text="✅ Corretto!")
+        if state.get("is_review"):
+            WrongAnswersManager(str(user_id)).decrement_counter(state["subject"], question_data["question"])
     else:
         correct_letter = chr(65 + correct_index) if correct_index >= 0 else "?"
         correct_text = answers[correct_index] if 0 <= correct_index < len(answers) else "N/A"
@@ -281,6 +348,8 @@ async def handle_answer_callback(user_id: int, answer_index: int, context: Conte
             chat_id=user_id,
             text=f"❌ Sbagliato! La risposta corretta era: {correct_letter}. {correct_text}"
         )
+
+        WrongAnswersManager(str(user_id)).save_wrong_answer(state["subject"], question_data)
 
     state["index"] += 1
     await send_next_question(user_id, context)
@@ -335,6 +404,11 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
     keyboard.append([
         InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
     ])
+
+    manager = WrongAnswersManager(str(user_id))
+    
+    if manager.has_wrong_answers():
+        keyboard.append([InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors")])
 
     keyboard.append([
         InlineKeyboardButton("📥 Scarica inedite", callback_data=json.dumps({"cmd": "scarica_inedite", "file": state['quiz_file']})),
