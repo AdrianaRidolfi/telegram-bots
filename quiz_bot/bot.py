@@ -385,7 +385,12 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
     if not state:
         return
 
-    subject = state["subject"]
+    subject = state.get("subject")
+    if subject is None:
+        # Se non c’è subject, puoi saltare questa parte o mostrare un messaggio generico
+        await context.bot.send_message(chat_id=user_id, text="Nessun corso selezionato.")
+        return
+
     score = state["score"]
     total = max(state["index"], 1)
     percentage = round((score / total) * 100, 2)
