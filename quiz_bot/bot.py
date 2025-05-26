@@ -12,7 +12,24 @@ from telegram.ext import (
 from contextlib import asynccontextmanager
 from pdf_generator import generate_pdf
 from wrong_answers import WrongAnswersManager
+import firebase_admin
+from firebase_admin import credentials, firestore
 
+# Carica la variabile d'ambiente (nome corretto: FIREBASE_CREDENTIALS_JSON)
+firebase_credentials = os.environ.get("FIREBASE_CREDENTIALS_JSON")
+
+if not firebase_credentials:
+    raise ValueError("La variabile d'ambiente FIREBASE_CREDENTIALS_JSON non è stata trovata.")
+
+# Converte la stringa JSON in dizionario Python
+cred_dict = json.loads(firebase_credentials)
+
+# Crea le credenziali e inizializza Firebase
+cred = credentials.Certificate(cred_dict)
+firebase_admin.initialize_app(cred)
+
+# Inizializza Firestore
+db = firestore.client()
 
 # Inizializzazione bot Telegram
 TOKEN = os.getenv("TELEGRAM_TOKEN")
