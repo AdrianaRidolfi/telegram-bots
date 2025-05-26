@@ -144,6 +144,8 @@ async def send_next_question(user_id, context):
     if state["index"] >= state["total"]:
         await show_final_stats(user_id, context, state)
         user_states.pop(user_id, None) 
+        manager = WrongAnswersManager(str(user_id))
+        manager.commit_changes()
         return
 
 
@@ -155,7 +157,7 @@ async def send_next_question(user_id, context):
 
     if correct_index is None:
         try:
-            correct_answer = question_data["correct_answer"]
+            correct_answer = question_data.get("correct_answer")
             correct_index = original_answers.index(correct_answer)
         except Exception:
             correct_index = -1
@@ -278,10 +280,13 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     if data == "stop":
         await stop(update, context)
-        user_states.pop(user_id, None)
 
     elif data == "change_course":
         state = user_states.get(user_id)
+        if state:
+            manager = WrongAnswersManager(str(user_id))
+            manager.commit_changes()
+            
         await show_final_stats(user_id, context, state, from_change_course=True)
         await start(update, context, show_intro_text_only=True)
 
@@ -347,43 +352,50 @@ async def handle_answer_callback(user_id: int, answer_index: int, context: Conte
         await context.bot.send_message(chat_id=user_id, text="Sessione scaduta. Riavvia il quiz con /start.")
         return
 
-    subject = state.get("subject")
-    if not subject:
-        subject = ""
-
+    subject = state.get("subject", "")
     q_index = state["order"][state["index"]]
     question_data = state["quiz"][q_index]
 
-    correct_index = question_data.get("_correct_index", None)
-    if(correct_index is None):
+    correct_index = question_data.get("_correct_index")
+    if correct_index is None:
         correct_index = question_data["answers"].index(question_data["correct_answer"])
 
     answers = question_data.get("_shuffled_answers", question_data.get("answers", []))
+    manager = WrongAnswersManager(str(user_id))
 
     if answer_index == correct_index:
         state["score"] += 1
         await context.bot.send_message(chat_id=user_id, text="✅ Corretto!")
         if state.get("is_review"):
-            WrongAnswersManager(str(user_id)).decrement_counter(state["subject"], question_data["question"])
+            manager.queue_decrement(subject, question_data["question"])
     else:
-        correct_letter = chr(65 + correct_index) if correct_index >= 0 else "?"
-        correct_text = answers[correct_index] if 0 <= correct_index < len(answers) else "N/A"
+        await context.bot.send_message(chat_id=user_id, text="❌ Sbagliato!")
+        correct_letter = chr(65 + correct_index)
+        correct_text = answers[correct_index]
         await context.bot.send_message(
             chat_id=user_id,
-            text=f"❌ Sbagliato! La risposta corretta era: {correct_letter}. {correct_text}"
+            text=f"La risposta corretta era: {correct_letter}. {correct_text}"
         )
-
-        WrongAnswersManager(str(user_id)).save_wrong_answer(state["subject"], question_data)
+        manager.queue_wrong_answer(subject, question_data)
 
     state["index"] += 1
     await send_next_question(user_id, context)
 
 
+
 async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
     state = user_states.get(user_id)
+
+    if not state:
+        await context.bot.send_message(chat_id=user_id, text="Nessuna sessione attiva.")
+        return
+
     await show_final_stats(user_id, context, state, from_stop=True)
+    manager = WrongAnswersManager(str(user_id))
+    manager.commit_changes()
     user_states.pop(user_id, None)
+
 
 
 async def show_final_stats(user_id, context, state, from_stop=False, from_change_course=False):
@@ -398,7 +410,13 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
         return
 
     score = state["score"]
-    total = max(state["index"], 1)
+    total = state["index"]
+    
+    if total == 0:
+        await context.bot.send_message(chat_id=user_id, text="Nessuna risposta data. Quiz interrotto.")
+        return
+
+
     percentage = round((score / total) * 100, 2)
 
     if user_id not in user_stats:

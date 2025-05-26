@@ -2,9 +2,71 @@ from firebase_admin import firestore
 from typing import List, Dict
 
 class WrongAnswersManager:
+    
     def __init__(self, user_id: str):
         self.user_id = user_id
         self.db = firestore.client()
+        self.to_increment = {}  # subject -> [question dict]
+        self.to_decrement = {}  # subject -> [question_text]
+
+    def queue_wrong_answer(self, subject: str, question_data: Dict):
+        self.to_increment.setdefault(subject, []).append(question_data)
+
+    def queue_decrement(self, subject: str, question_text: str):
+        self.to_decrement.setdefault(subject, []).append(question_text)
+
+    def commit_changes(self):
+        doc_ref = self.db.collection("wrong_answers").document(self.user_id)
+        transaction = self.db.transaction()
+
+        @firestore.transactional
+        def update_firestore(transaction, doc_ref):
+            snapshot = doc_ref.get(transaction=transaction)
+            data = snapshot.to_dict() if snapshot.exists else {}
+
+            # Processa incrementi
+            for subject, questions in self.to_increment.items():
+                subject_list = data.get(subject, [])
+                for new_q in questions:
+                    for existing_q in subject_list:
+                        if existing_q["question"] == new_q["question"]:
+                            existing_q["counter"] = existing_q.get("counter", 0) + 3
+                            break
+                    else:
+                        q_copy = new_q.copy()
+                        q_copy["counter"] = 3
+                        subject_list.append(q_copy)
+                data[subject] = subject_list
+
+            # Processa decrementi
+            for subject, question_texts in self.to_decrement.items():
+                if subject not in data:
+                    continue
+                subject_list = data[subject]
+                new_list = []
+                for q in subject_list:
+                    if q["question"] in question_texts:
+                        new_counter = q.get("counter", 1) - 1
+                        if new_counter > 0:
+                            q["counter"] = new_counter
+                            new_list.append(q)
+                        # else: lo rimuoviamo
+                    else:
+                        new_list.append(q)
+                if new_list:
+                    data[subject] = new_list
+                else:
+                    data.pop(subject)
+
+            # Aggiorna o elimina documento
+            if data:
+                transaction.set(doc_ref, data)
+            else:
+                transaction.delete(doc_ref)
+
+        update_firestore(transaction, doc_ref)
+        self.to_increment.clear()
+        self.to_decrement.clear()
 
     def get_all(self) -> Dict[str, List[Dict]]:
         """Ritorna tutte le domande sbagliate dell'utente, per materia."""
