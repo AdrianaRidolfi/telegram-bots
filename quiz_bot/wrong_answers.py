@@ -6,7 +6,6 @@ class WrongAnswersManager:
         self.user_id = user_id
         self.db = firestore.client()
 
-
     def get_all(self) -> Dict[str, List[Dict]]:
         """Ritorna tutte le domande sbagliate dell'utente, per materia."""
         user_doc = self.db.collection("wrong_answers").document(self.user_id).get()
@@ -25,10 +24,11 @@ class WrongAnswersManager:
         return all_wrong.get(subject, [])
 
     def save_wrong_answer(self, subject: str, question_data: Dict):
-    
         """Aggiunge o aggiorna una domanda sbagliata con counter +3."""
         doc_ref = self.db.collection("wrong_answers").document(self.user_id)
+        transaction = self.db.transaction()
 
+        @firestore.transactional
         def transaction_update(transaction, doc_ref):
             snapshot = doc_ref.get(transaction=transaction)
             data = snapshot.to_dict() if snapshot.exists else {}
@@ -47,8 +47,7 @@ class WrongAnswersManager:
             data[subject] = subject_list
             transaction.set(doc_ref, data)
 
-        self.db.run_transaction(lambda transaction: transaction_update(transaction, doc_ref))
-
+        transaction_update(transaction, doc_ref)
 
     def decrement_counter(self, subject: str, question_text: str):
         """
@@ -58,7 +57,9 @@ class WrongAnswersManager:
         Rimuove documento utente se tutto vuoto.
         """
         doc_ref = self.db.collection("wrong_answers").document(self.user_id)
+        transaction = self.db.transaction()
 
+        @firestore.transactional
         def transaction_update(transaction, doc_ref):
             snapshot = doc_ref.get(transaction=transaction)
             if not snapshot.exists:
@@ -89,12 +90,14 @@ class WrongAnswersManager:
             else:
                 transaction.delete(doc_ref)
 
-        self.db.run_transaction(lambda transaction: transaction_update(transaction, doc_ref))
+        transaction_update(transaction, doc_ref)
 
     def remove_subject(self, subject: str):
         """Rimuove completamente una materia dal DB dell'utente."""
         doc_ref = self.db.collection("wrong_answers").document(self.user_id)
+        transaction = self.db.transaction()
 
+        @firestore.transactional
         def transaction_update(transaction, doc_ref):
             snapshot = doc_ref.get(transaction=transaction)
             if not snapshot.exists:
@@ -107,7 +110,7 @@ class WrongAnswersManager:
                 else:
                     transaction.delete(doc_ref)
 
-        self.db.run_transaction(lambda transaction: transaction_update(transaction, doc_ref))
+        transaction_update(transaction, doc_ref)
 
     def has_wrong_answers(self) -> bool:
         """True se l'utente ha almeno una domanda sbagliata."""
