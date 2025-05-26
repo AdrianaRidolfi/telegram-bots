@@ -53,19 +53,22 @@ Una volta approvato, il tuo quiz sarà incluso nel bot!
 
 ```bash
 telegram-bots/
-├── quiz_bot/
-│   ├── bot.py               # codice Python del bot
-│   ├── requirements.txt     # dipendenze Python
-│   ├── Procfile             # comando per il deploy su Render o simili
-│   └── quizzes/
-│     ├── images/             # cartella per le imagini
-│     │   └── tec1.jpg
-│     ├── fonts/               # cartella per i font utilizzati nei pdf
-│     │   └── DejaVu.ttf
-│     ├── convert.py           # codice di utility per convertire file .qwz e .txt nei json
-│     ├── diritto.json         # file JSON con domande e risposte
-│     └── altro_quiz.json      # altri quiz in JSON
-
+├── quiz_bot
+│   ├── bot.py                 # codice Python del bot
+│   ├── pdf_generator.py       # script per generare PDF
+│   ├── Procfile               # comando per il deploy su Render o simili
+│   ├── quizzes
+│   │   ├── diritto.json               # quiz in formato JSON
+│   │   ├── convert.py                 # utility per convertire file .qwz e .txt in JSON
+│   │   ├── fonts                      # cartella per i font usati nei PDF
+│   │   │   └── [file di font vari]
+│   │   ├── images                     # cartella per le immagini usate nei quiz
+│   │   │   └── [immagini .jpg]
+│   │   └── tecnologie.json            # altro quiz in formato JSON
+│   ├── requirements.txt               # dipendenze Python
+│   ├── test_firestore.py              # script di test per Firestore
+│   └── wrong_answers.py               # gestione risposte errate
+└── README.md                         # file di documentazione principale
 ```
 
 ## Dipendenze e installazione
