@@ -4,6 +4,50 @@ Questo repository contiene bot Telegram per somministrare quiz agli utenti in ch
 
 ---
 
+## Come contribuire con nuovi test
+
+Puoi contribuire aggiungendo nuovi quiz in formato `.json`.
+
+### 1. Fai un fork del progetto
+
+Vai su [https://github.com/AdrianaRidolfi/telegram-bots](https://github.com/AdrianaRidolfi/telegram-bots)  
+e clicca su **Fork** in alto a destra per creare una copia nel tuo account.
+
+### 2. Aggiungi il tuo quiz
+
+- Crea un file `.json` nel formato seguente:
+
+```json
+[
+  {
+    "question": "Testo della domanda",
+    "answers": [
+      "Risposta 1",
+      "Risposta 2",
+      "Risposta 3",
+      "Risposta 4"
+    ],
+    "correct_answer": "Risposta 2"
+  }
+]
+```
+
+- Assicurati che:
+    - il file sia un json valido.
+    - correct_answer corrisponda esattamente a una delle risposte elencate in answers.
+
+- Salva il file nella cartella quiz_bot/quizzes/ e dagli un nome descrittivo, ad esempio storia.json.
+
+3. Fai una pull request. Una volta aggiunto il file e fatto il commit sul tuo fork:
+
+  - Vai nella pagina del tuo fork.
+  - Clicca su Pull request.
+  - Seleziona il tuo branch con il quiz.
+  - Clicca su Create pull request e inserisci un messaggio descrittivo.
+
+Una volta approvato, il tuo quiz sarà incluso nel bot!
+
+
 ## Struttura del repository
 
 ```bash
@@ -15,6 +59,7 @@ telegram-bots/
 │   └── quizzes/
 │     ├── images/             # cartella per le imagini
 │     │   └── tec1.jpg
+│     ├── fonts/               # cartella per i font utilizzati nei pdf
 │     ├── convert.py           # codice di utility per convertire file .qwz e .txt nei json
 │     ├── diritto.json         # file JSON con domande e risposte
 │     └── altro_quiz.json      # altri quiz in JSON
@@ -58,7 +103,7 @@ Il file `quiz.json` contiene una lista di domande e risposte nel seguente format
 
 ## Conversione e preparazione dei file JSON
 
-I file di partenza potrebbero avere formati diversi, per uniformare il formato al JSON sopra, è presente uno script di conversione che per ora gestisce file .qwz e .txt, per utilizzarlo basta salvare il file di partenza nella cartella quiz e modificare i nomi dei file nel codice prima di lanciarlo. Il nome del file json sara' quello che viene visualizzato fra la scelta degli esami sul bot
+I file di partenza potrebbero avere formati diversi, per uniformare il formato al JSON sopra, è presente uno script di conversione che per ora gestisce file .qwz e .txt, per utilizzarlo basta salvare il file di partenza nella cartella quizzes e modificare i nomi dei file nel codice prima di lanciarlo. Il nome del file json sara' quello che viene visualizzato fra la scelta degli esami sul bot
 
 ```code
 # Nome del file da convertire
@@ -79,53 +124,3 @@ Il bot inizia a fare le domande una ad una.
     /stats
 ```
 Mostra le statistiche dell'utente.
-
-```code
-    /stop
-```
-Termina la sessione quiz in corso per quell’utente.
-
-
-## Come contribuire con nuovi test
-
-Puoi contribuire aggiungendo nuovi quiz in formato `.json`.
-
-### 1. Fai un fork del progetto
-
-Vai su [https://github.com/AdrianaRidolfi/telegram-bots](https://github.com/AdrianaRidolfi/telegram-bots)  
-e clicca su **Fork** in alto a destra per creare una copia nel tuo account.
-
-### 2. Aggiungi il tuo quiz
-
-- Crea un file `.json` nel formato seguente:
-
-```json
-[
-  {
-    "question": "Testo della domanda",
-    "answers": [
-      "Risposta 1",
-      "Risposta 2",
-      "Risposta 3",
-      "Risposta 4"
-    ],
-    "correct_answer": "Risposta 2"
-  }
-]
-```
-
-- Assicurati che:
-  • il file sia un json valido.
-  • correct_answer corrisponda esattamente a una delle risposte elencate in answers.
-
-- Salva il file nella cartella quiz_bot/quizzes/ e dagli un nome descrittivo, ad esempio storia.json.
-
-3. Fai una pull request. Una volta aggiunto il file e fatto il commit sul tuo fork:
-
-  - Vai nella pagina del tuo fork.
-  - Clicca su Pull request.
-  - Seleziona il tuo branch con il quiz.
-  - Clicca su Create pull request e inserisci un messaggio descrittivo.
-
-Una volta approvato, il tuo quiz sarà incluso nel bot!
-
