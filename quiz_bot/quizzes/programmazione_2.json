@@ -1,0 +1,2612 @@
+[
+  {
+    "question": "Il blocco di codice: a = 6, b = 3, media = a/b:",
+    "answers": [
+      "un meccanismo dell'OOP che consente la riscrittura di un metodo ereditato dalla classe base per ottenere un  comportamento diverso negli oggetti della classe derivata",
+      "Un errore logico",
+      "Un errore di sintassi",
+      "non presenta errori"
+    ],
+    "correct_answer": "Un errore logico"
+  },
+  {
+    "question": "Se in un grafo sono presenti archi paralleli, è possibile dedurre che:",
+    "answers": [
+      "Il grafo è diretto",
+      "ll grafo è bipartito",
+      "Il grafo è completo",
+      "Il grafo è un multigrafo"
+    ],
+    "correct_answer": "Il grafo è un multigrafo"
+  },
+  {
+    "question": "In uno script per estrarre i dati da un database la sequenza corretta delle operazioni è:",
+    "answers": [
+      "Creare una variabile di connessione, associare un cursore alla connessione, eseguire execute() del cursore passando la questi come parametro e infine fetchall() del cursore per ottenere le tuple",
+      "Creare la connessione, eseguire fetchall(), associare un cursore, eseguire execute()",
+      "Creare il cursore, eseguire execute(), creare la connessione, fetchall()",
+      "Associare il cursore, creare la connessione, eseguire fetchall(), execute()"
+    ],
+    "correct_answer": "Creare una variabile di connessione, associare un cursore alla connessione, eseguire execute() del cursore passando la questi come parametro e infine fetchall() del cursore per ottenere le tuple"
+  },
+  {
+    "question": "La forma equivalente dell'istruzionewhiteside$Temp%&amp;gt;%length()è:",
+    "answers": [
+      "length(Temp$whiteside)",
+      "whiteside.Temp.length()",
+      "length(whiteside$Temp)",
+      "Temp(whiteside).length()"
+    ],
+    "correct_answer": "length(whiteside$Temp)"
+  },
+  {
+    "question": "Dopo l’esecuzione del seguente frammento di script in R v = c(7,5,8,9,6,5,9,5) s = v&gt;5 s ẻ:",
+    "answers": [
+      "Un vettore di 5 valori logial",
+      "Un vettore di 8 valori logical array",
+      "Una variabile a valore booleano",
+      "Un vettore di 5 valori numeric"
+    ],
+    "correct_answer": "Un vettore di 8 valori logical array"
+  },
+  {
+    "question": "il risultato del seguente frammento di codice in R: p=matrix (1,2,3,4,5,6) n row=3, byrow=TRUE) p=rowSums(p) e:",
+    "answers": [
+      "il vettore: 3 7 11",
+      "la matrice: 3 7 11",
+      "il fattore: 3 7 11",
+      "dizionario"
+    ],
+    "correct_answer": "il vettore: 3 7 11"
+  },
+  {
+    "question": "Il seguente frammento di codice S= “Asso” Print(s[s.find(‘z’)+1]) Visualizza a schermo:",
+    "answers": [
+      "a",
+      "tutti i campi di s",
+      "IL primo carattere ‘A’",
+      "asso"
+    ],
+    "correct_answer": "IL primo carattere ‘A’"
+  },
+  {
+    "question": "L'exception handler:",
+    "answers": [
+      "solleva le eccezioni",
+      "È successivo al try",
+      "È successivo al finally",
+      ".È successivo all'except"
+    ],
+    "correct_answer": ".È successivo all'except"
+  },
+  {
+    "question": "Nel caso in cui l’istruzione: f=open(file_name,’w) sollevi un’eccezione, è maggiormente indicato utilizzare il seguente codice:",
+    "answers": [
+      "except:",
+      "except FileNotFoundError",
+      "except ValueError:",
+      "in"
+    ],
+    "correct_answer": "except:"
+  },
+  {
+    "question": "Data la funzione ok(), nella chiamata al costruttore di un pulsante Button per impostare ok() come funzione di callback è necessario riportare?",
+    "answers": [
+      "la funzione del widget parent da invocare quando il pulsante viene cliccato",
+      "la funzione Python (detta funzione di Callback) da invocare quando il pulsante viene cliccato command = ok",
+      "ok",
+      "comman"
+    ],
+    "correct_answer": "la funzione Python (detta funzione di Callback) da invocare quando il pulsante viene cliccato command = ok"
+  },
+  {
+    "question": "Dato il seguente frammento di codice: def main(): a= -1 la funzione corretta da utilizzare per cambiare il segno di ‘a’ nel ‘main é:",
+    "answers": [
+      "def cambia_segno():      a = -a",
+      "def cambia_segno(a):    a = -a",
+      "def cambia_segno(x): return -x",
+      "def cambia_segno(): global a   a=-a"
+    ],
+    "correct_answer": "def cambia_segno(x): return -x"
+  },
+  {
+    "question": ". L'istruzione a = \"\".join(cons + voc + ['x']*2)[0:3] permette di:",
+    "answers": [
+      "calcolare la porzione del codice fiscale relativa al cognome",
+      "calcolare la porzione del codice fiscale relativa all'anno di nascita",
+      "calcolare la porzione del codice fiscale relativa alla città di nascita",
+      "calcolare la porzione del codice fiscale relativa al sesso"
+    ],
+    "correct_answer": "calcolare la porzione del codice fiscale relativa al cognome"
+  },
+  {
+    "question": "Nelle liste la ricerca è:",
+    "answers": [
+      "sublineare",
+      "lineare",
+      "logaritmica",
+      "esponenziale"
+    ],
+    "correct_answer": "lineare"
+  },
+  {
+    "question": "Le espressioni regolari sono:",
+    "answers": [
+      "modelli descritti con una sintassi formale per cercare corrispondenze in un testo",
+      "istruzioni con una sintassi formale per cercare corrispondenze in un testo",
+      "stringhe con una sintassi formale per cercare corrispondenze in un testo",
+      "letterali di testo con una sintassi formale per cercare corrispondenze in un testo"
+    ],
+    "correct_answer": "modelli descritti con una sintassi formale per cercare corrispondenze in un testo"
+  },
+  {
+    "question": "Con fonti algoritmiche di informazione si intendono:",
+    "answers": [
+      "le fonti su cui sono basati gli algoritmi",
+      "i motori di ricerca",
+      "gli algoritmi dei motori di ricerca e dei siti web",
+      "i motori di ricerca e i social network"
+    ],
+    "correct_answer": "i motori di ricerca e i social network"
+  },
+  {
+    "question": "I domini principali in ambito Big Data che sono significativi anche per i progetti europei di ricerca sono:",
+    "answers": [
+      "7",
+      "10",
+      "11",
+      "12"
+    ],
+    "correct_answer": "10"
+  },
+  {
+    "question": "Gli algoritmi di ricerca e gli algoritmi di pianificazione:",
+    "answers": [
+      "sono la stessa cosa",
+      "differiscono tra loro perché i primi cercano gli stati intermedi e la soluzione, i secondi solo la  soluzione",
+      "differiscono tra loro perché i primi cercano la soluzione, i secondi anche gli stati intermedi",
+      "entrambi cercano gli stati intermedi nella ricerca della soluzione"
+    ],
+    "correct_answer": "differiscono tra loro perché i primi cercano la soluzione, i secondi anche gli stati intermedi"
+  },
+  {
+    "question": "La definizione migliore di quantificatore ingordo /goloso come “*” e “+” è:",
+    "answers": [
+      "cerca solo la prima corrispondenza possibile per il pattern dato",
+      "cerca la corrispondenza più lunga possibile per il pattern dato",
+      "cerca il massimo numero possibile di corrispondenaze per il pattern dato",
+      "cerca la corrispondenza più corta possibile per il pattern dato"
+    ],
+    "correct_answer": "cerca la corrispondenza più lunga possibile per il pattern dato"
+  },
+  {
+    "question": "import numpy as np a1=[1,1,1]*2 a2=np.ones(6) print(a1) print(a2)",
+    "answers": [
+      "il primo l'array [1 0 0 0 0 0] il secondo l'array [1. 0. 0. 0. 0. 0.]",
+      "il primo l'array [1 1 1 1 1 1] il secondo l'array [0 0 0 0 0 0]",
+      "il primo l'array [1 1 1 1 1 1] il secondo l'array [1. 1. 1. 1. 1. 1.]",
+      "il primo l'array [0 0 0 0 0 0] il secondo l'array [1. 1. 1. 1. 1. 1.]"
+    ],
+    "correct_answer": "il primo l'array [1 1 1 1 1 1] il secondo l'array [1. 1. 1. 1. 1. 1.]"
+  },
+  {
+    "question": "Per poter leggere e scrivere su file binario è necessario:",
+    "answers": [
+      "deserializzare e serializzare gli oggetti, rispettivamente",
+      "serializzare e deserializzare gli oggetti, rispettivamente",
+      "deserializzare gli oggetti",
+      "serializzare gli oggetti"
+    ],
+    "correct_answer": "deserializzare e serializzare gli oggetti, rispettivamente"
+  },
+  {
+    "question": "Nel codice import pickle ifile = open('a.dat','rb') b = pickle.load(inputfile) b è:",
+    "answers": [
+      "una lista",
+      "un oggetto",
+      "un dizionario",
+      "una tupla"
+    ],
+    "correct_answer": "un oggetto"
+  },
+  {
+    "question": "Nel seguente frammento di script PySpark: from pyspark import SparkContext sc=SparkContext(‘local’,’Myspark’) i due parametri specificano:",
+    "answers": [
+      "Il primo parametro il nome della struttura dati Python in cui verrá trasformato l’RDD;il secondo parametro di creare  un RDD di nome ‘MySpark",
+      "Il primo parametro di creare un RDD locale allo script; Il secondo parametro di creare una struttura dati Python in  cui verrá trasformato l’RDD",
+      "Il primo parametro che deve essere usato il modulo che contiene le funzoni per l’internazionalizzazione dei  programmi; Il secondo parametro che il nome dell’applicazine é MySpark",
+      "il primo parametro il valore del cluster Spark;   il secondo parametro il nome dell'applicazione Spark"
+    ],
+    "correct_answer": "il primo parametro il valore del cluster Spark;   il secondo parametro il nome dell'applicazione Spark"
+  },
+  {
+    "question": "una stringa grezza in Python è",
+    "answers": [
+      "una stringa in cui non sono interpretati i caratteri '/' (backspask)",
+      "una stringa",
+      "una lista",
+      "false"
+    ],
+    "correct_answer": "una stringa in cui non sono interpretati i caratteri '/' (backspask)"
+  },
+  {
+    "question": "Il diagramma E/R prevede che per ciascuna entità ci sia:",
+    "answers": [
+      "un rombo",
+      "un cerchio",
+      "un rettangolo",
+      "una linea"
+    ],
+    "correct_answer": "un rettangolo"
+  },
+  {
+    "question": "Tutte le tuple della stessa entità hanno:",
+    "answers": [
+      "stesso numero e nome, ma diverso tipo e valori di attributi",
+      "stesso numero, ma diverso tipo, nome e valori di attributi",
+      "stesso nome, ma diverso tipo, numero e valori di attributi",
+      "stesso numero, nome e tipo, ma diversi valori di attributi"
+    ],
+    "correct_answer": "stesso numero, nome e tipo, ma diversi valori di attributi"
+  },
+  {
+    "question": "7. L'operatore compose() permette di ottenere:",
+    "answers": [
+      "il prodotto cartesiano di due grafi",
+      "il prodotto cartesiano di due grafi disgiunti",
+      "l'unione di due grafi",
+      "l'unione di due grafi disgiunti"
+    ],
+    "correct_answer": "l'unione di due grafi"
+  },
+  {
+    "question": "Per assegnare un peso di 3,5 all'arco tra il nodo 1 e il nodo 2 in un grafo pesato è necessario utilizzare la/le seguente/i istruzione/i:",
+    "answers": [
+      "g.add_edge(1,2, 3.5)",
+      "g.add_edge(1,2, weight = 3.5)",
+      "g.add_weight_edge(1,2, 3.5)",
+      "g.add_edge(1,2, 3,5)"
+    ],
+    "correct_answer": "g.add_edge(1,2, weight = 3.5)"
+  },
+  {
+    "question": "La funzione table() permette di:",
+    "answers": [
+      "visualizzare la tabella relativa ad un fattore",
+      "visualizzare la tabella relativa ad un vettore",
+      "visualizzare la tabella relativa ad una matrice",
+      "visualizzare la tabella di frequenza di un vettore"
+    ],
+    "correct_answer": "visualizzare la tabella di frequenza di un vettore"
+  },
+  {
+    "question": "La matrice ottenuta dalla seguente istruzione matrix(c(1,2,3,4,5,6)), nrow = 2, byrow = TRUE):",
+    "answers": [
+      "ha un numero di colonne pari a 4",
+      "ha un numero di colonne pari a 2",
+      "ha un numero di colonne pari a 3",
+      "ha un numero di colonne pari a 1"
+    ],
+    "correct_answer": "ha un numero di colonne pari a 3"
+  },
+  {
+    "question": "considerando la tabella Customers che contiene le informazioni relative ai clienti di un'azienda, il comando che permette di estrarre tutti i clienti con PostalCode formato da due parti separate dal carattere '-' è:",
+    "answers": [
+      "SELECT * FROM Customers WHERE PostalCode LIKE '%-%';",
+      "SELECT * FROM Customers",
+      "SELECT * FROM Customers WHERE PostalCode",
+      "SELECT * FROM Customers WHERE PostalCode LIKE"
+    ],
+    "correct_answer": "SELECT * FROM Customers WHERE PostalCode LIKE '%-%';"
+  },
+  {
+    "question": "Considerando la tabella Customers che contiene le informazioni relative ai clienti di un'azienda, il comando: SELECT COUNT(*), CustomerNdme FROM Customers;",
+    "answers": [
+      "Permette di conoscere il numero di clienti",
+      "Permette di conoscere il numero di clienti,ma é errata",
+      "Permette di conoscere il numero di clienti,ma é logicamente errata la richiesta del nome del cliente",
+      "Permette di conoscere il numero di clienti,ma errore fisico"
+    ],
+    "correct_answer": "Permette di conoscere il numero di clienti,ma é logicamente errata la richiesta del nome del cliente"
+  },
+  {
+    "question": "La riga di codice: s1&lt;=s2 con s1 e s2 due insiemi:",
+    "answers": [
+      "restituisce True se s1 contiene almeno un elemento minore/uguale agli elementi di s2",
+      "restituisce True se il numero degli elementi di s1 sono minori/uguali  del numero degli elementi di s2",
+      "restituisce false",
+      "restituisce True se tutti gli elementi di s1 sono contenuti in s2"
+    ],
+    "correct_answer": "restituisce True se tutti gli elementi di s1 sono contenuti in s2"
+  },
+  {
+    "question": "Il Navigator di Anaconda è:",
+    "answers": [
+      "un pannello in cui esiste un comando per ogni strumento invocabile",
+      "contiene solo l'IDLE di Python",
+      "un'interfaccia grafica di programmazione in Python",
+      "un'interfaccia testuale di programmazione in Python"
+    ],
+    "correct_answer": "un pannello in cui esiste un comando per ogni strumento invocabile"
+  },
+  {
+    "question": "Anaconda è?",
+    "answers": [
+      "una piattaforma di linguaggi di programmazione in Python e R per l'informatica scientifica",
+      "scripting",
+      "linguaggio di programmazione",
+      "motore di ricerca"
+    ],
+    "correct_answer": "una piattaforma di linguaggi di programmazione in Python e R per l'informatica scientifica"
+  },
+  {
+    "question": "Cosa serve per trovare il massimo in una lista bidimensionale?",
+    "answers": [
+      "utilizzare un ciclo, ma due indici",
+      "utilizzare due cicli nidificati e due indici",
+      "utilizzare due cicli nidificati, ma un indice",
+      "dizionario"
+    ],
+    "correct_answer": "utilizzare due cicli nidificati e due indici"
+  },
+  {
+    "question": "Sintassi per indicare che B è sottoclasse di A",
+    "answers": [
+      "class B(A)",
+      "classe B(A)",
+      "class B(class A)",
+      "class A(B)"
+    ],
+    "correct_answer": "class B(A)"
+  },
+  {
+    "question": "La forma equivalente di : import numpy.random as rnd seq=rnd.normal(0.0,1.0,100) é:",
+    "answers": [
+      "import numpy.random as ind seq-rnd.randn(100)",
+      "import numpy.random as rnd seq-rnd.uniform(0.0,1.0,100)",
+      "import numpy.random as rnd seq=rnd.randn(100)",
+      "import numpy.random as rnd seq=rnd.randint(0.0,1.0,100)"
+    ],
+    "correct_answer": "import numpy.random as rnd seq=rnd.randn(100)"
+  },
+  {
+    "question": "Creare un array di 10 valori numerici tra 0 e 1, tutti ugualmente spaziati array = np.linspace(0, 1, 10)",
+    "answers": [
+      "Un array contenente 10 valori numeri tra 0 e 1 tutti ugualmente equiprobabili",
+      "Un valore casuale tra 10 valori equamente distribuiti tra 0 e 1",
+      "un array di valori",
+      "Un valore casuale tra 10 valori equamente distribuiti"
+    ],
+    "correct_answer": "Un array contenente 10 valori numeri tra 0 e 1 tutti ugualmente equiprobabili"
+  },
+  {
+    "question": "L’associazione tra nome fisico e nome logico di un file avviene",
+    "answers": [
+      "mai",
+      "all'avvio",
+      "all'apertura del file",
+      "alla chiusura del file"
+    ],
+    "correct_answer": "all'apertura del file"
+  },
+  {
+    "question": "Per l’apertura di un file si utilizza la funzione open() il cui formato generale è",
+    "answers": [
+      "oggetto_file  = open (nomefile, modo)",
+      "oggetto_file  = open",
+      "oggetto_file  = open (modo)",
+      "oggetto"
+    ],
+    "correct_answer": "oggetto_file  = open (nomefile, modo)"
+  },
+  {
+    "question": "select * from clients where city=’Berlino’ AND city=’London’",
+    "answers": [
+      "estrarre tutti i clienti",
+      "estrarre tutti i clienti di 'Berlino' o di 'Londra'",
+      "nessun cliente",
+      "estrarre tutti i campi"
+    ],
+    "correct_answer": "nessun cliente"
+  },
+  {
+    "question": "Che modulo si usa per lavorare con file binari? Il comando da utilizzare per la gestione dei file binari é:",
+    "answers": [
+      "import random",
+      "import re",
+      "import pymysql",
+      "import pickle"
+    ],
+    "correct_answer": "import pickle"
+  },
+  {
+    "question": "Il codice import re s= “Ciao mondo” print(re.search(“n*ondo”,s).group()) produce a schermo: 1",
+    "answers": [
+      "ondo",
+      "Un messaggio di errore di Traceback",
+      "Un messaggio di errore di compilazione",
+      "un errore"
+    ],
+    "correct_answer": "ondo"
+  },
+  {
+    "question": "Dato il DataFrame df con : colums=[‘Nome’,’Regione’,Popolazione’],la seguente linea di codice : df.groupby(‘Regione’).groups restituisce:",
+    "answers": [
+      "un datafram",
+      "un dizionario",
+      "una series",
+      "un array"
+    ],
+    "correct_answer": "un dizionario"
+  },
+  {
+    "question": "La funzione findall() del modulo re:",
+    "answers": [
+      "restituisce un oggetto di",
+      "restituisce la lista delle sottostringhe che fanno match col modello",
+      "restituisce un oggetto di",
+      "restituisce un oggetto di"
+    ],
+    "correct_answer": "restituisce la lista delle sottostringhe che fanno match col modello"
+  },
+  {
+    "question": "Per attivare un metodo di un oggetto obj si usa la sintassi:",
+    "answers": [
+      "obj(metodo)",
+      "obj->metodo",
+      "obj:metodo",
+      "obj.metodo()"
+    ],
+    "correct_answer": "obj.metodo()"
+  },
+  {
+    "question": "La forma equivalente del seguente frammento di codice: for i in range(5) if i%2==1: print",
+    "answers": [
+      "i=0  while i < 5:  if i%2==1:  print(i)",
+      "i=1  while i < 5:  if i%2==1:  print(i)  i+=1",
+      "i=0  while i < 6:  if i%2==1:  print(i)  i+=1",
+      "i=0 while i < 5:  if i%2==1:  print(i)  i+=1"
+    ],
+    "correct_answer": "i=0 while i < 5:  if i%2==1:  print(i)  i+=1"
+  },
+  {
+    "question": "Il mapping delle associazioni dallo schema concettuale allo schema logico si realizza attraverso:",
+    "answers": [
+      "la definizione delle chiavi esterne",
+      "la definizione dei nomi delle colonne di una tabella",
+      "la definizione dei nomi delle tabelle",
+      "la definizione delle chiavi primarie"
+    ],
+    "correct_answer": "la definizione delle chiavi esterne"
+  },
+  {
+    "question": "Il seguente frammento di codice x = input(\"Un numero: \") print(type(x)) print(x+1) in esecuzione dà luogo a:",
+    "answers": [
+      "un errore solo se x non é un valore con la virgola",
+      "un errore solo se x non é un numero intero",
+      "un errore solo se x é una stringa",
+      "sempre un errore"
+    ],
+    "correct_answer": "sempre un errore"
+  },
+  {
+    "question": "La forma corretta per generare una matrice quadrata con tutti i valori sulla diagonale principale uguali a 5 é:",
+    "answers": [
+      "import numpy as np np.eye(N,dtype=np.int64)*5",
+      "import numpy as np np.full((N,N),5)",
+      "import numpy as np np.ones(N)*5",
+      "import numpy as np np.ones([N,N],dtype=np.int64)*5"
+    ],
+    "correct_answer": "import numpy as np np.eye(N,dtype=np.int64)*5"
+  },
+  {
+    "question": "La funzione Def somma(a,b):print(a+b) é :",
+    "answers": [
+      "senza parametri",
+      "errata",
+      "void",
+      "value-returning"
+    ],
+    "correct_answer": "void"
+  },
+  {
+    "question": "La funzione usata per creare un DataFrame da file di testo é:",
+    "answers": [
+      "readFromTextFile()",
+      "read.csv()",
+      "createDataFrame()",
+      "fromTextFile()"
+    ],
+    "correct_answer": "read.csv()"
+  },
+  {
+    "question": "La funzione group() é un metodo di oggetto di :",
+    "answers": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "correct_answer": ""
+  },
+  {
+    "question": "La misura che quantifica l’importanza di un nodo N nel flusso informativo di un grafo é detta:",
+    "answers": [
+      "centralità locale di N",
+      "centralità globale dei flussi di N",
+      "centralità globale di N",
+      "grado di N"
+    ],
+    "correct_answer": "centralità globale dei flussi di N"
+  },
+  {
+    "question": "Dopo l’esecuzione del seguente frammento di codice: import numpy as np v=np.arange(1,10) print(np.insert(v,4,-1)) print(np.append(v,-1)) l’array v conterrá:",
+    "answers": [
+      "10 elementi",
+      "9 elementi",
+      "11 elementi",
+      "12 elementi"
+    ],
+    "correct_answer": "9 elementi"
+  },
+  {
+    "question": "A partire dall’array m cosí definito: import numpy as np m = np.arange(1,25,2) attraverso i metodi di ridefinizione della forma, è possibile ottenere un numero di matrici a due dimensioni pari a:",
+    "answers": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correct_answer": "4"
+  },
+  {
+    "question": "Quando si dice che nei Big Data sono i dati stessi a \"parlare\", vuol dire che:",
+    "answers": [
+      "prima si stabilisce un modello plausibile di un fenomeno e poi nei dati va ricercato un legame tra le variabili",
+      "nei dati va ricercato un legame tra le variabili e poi si stabilisce una interpretazione plausibile del fenomeno",
+      "prima si stabilisce un modello plausibile di un fenomeno e poi nei dati va ricercato un legame",
+      "nei dati va ricercato un legame tra le variabili"
+    ],
+    "correct_answer": "nei dati va ricercato un legame tra le variabili e poi si stabilisce una interpretazione plausibile del fenomeno"
+  },
+  {
+    "question": "Nella programmazione orientata agli oggetti:",
+    "answers": [
+      "si individuano solo gli attributi di un oggetto",
+      "si individuano le entità in un determinato contesto denominate oggetti",
+      "si individuano solo le caratteristiche di un oggetto",
+      "si individuano solo i metodi di un oggetto"
+    ],
+    "correct_answer": "si individuano le entità in un determinato contesto denominate oggetti"
+  },
+  {
+    "question": "La comparsa del prompt nella shell:",
+    "answers": [
+      "che l'istruzione precedente non è valida",
+      "che ha elaborato il risultato",
+      "che sta elaborando il risultato",
+      "indica che la shell è pronta per la prossima istruzione"
+    ],
+    "correct_answer": "indica che la shell è pronta per la prossima istruzione"
+  },
+  {
+    "question": "Se ho necessità di utilizzare le virgolette in una stringa, in Python contrassegno la sequenza di caratteri con:",
+    "answers": [
+      "triple virgolette \"\"\"",
+      "apici '",
+      "virgolette \"",
+      "parentesi angolari"
+    ],
+    "correct_answer": "triple virgolette \"\"\""
+  },
+  {
+    "question": "L'istruzione 3a_ = 10.5:",
+    "answers": [
+      "È corretta",
+      "contiene due errori",
+      "contiene un errore",
+      "contiene tre errori"
+    ],
+    "correct_answer": "contiene un errore"
+  },
+  {
+    "question": "In Python è possibile:",
+    "answers": [
+      "denominare le variabili con i nomi delle keyword, ma con delle limitazioni",
+      "utilizzare cifre numeriche nel nome della variabile",
+      "utilizzare cifre numeriche nel nome della variabile, ma con delle limitazioni",
+      "denominare le variabili con i nomi delle keyword"
+    ],
+    "correct_answer": "utilizzare cifre numeriche nel nome della variabile, ma con delle limitazioni"
+  },
+  {
+    "question": "La funzione type() permette:",
+    "answers": [
+      "di modificare il tipo di dato della variabile",
+      "di assegnare un tipo di dato ad una variabile",
+      "di conoscere il tipo di dato della variabile",
+      "di visualizzare a schermo il tipo di dato della variabile"
+    ],
+    "correct_answer": "di conoscere il tipo di dato della variabile"
+  },
+  {
+    "question": "La precedenza degli operatori in Python è:",
+    "answers": [
+      "parentesi, **, * / // %, + -",
+      "parentesi, + -, * / // %, **",
+      "/ //, **, * parentesi, %, + -",
+      "+ -, **, * / // %, parentesi"
+    ],
+    "correct_answer": "parentesi, **, * / // %, + -"
+  },
+  {
+    "question": "Per determinare se un numero è al di fuori di un intervallo è più corretto utilizzare l'operatore:",
+    "answers": [
+      "and",
+      "or",
+      "not",
+      "divisione"
+    ],
+    "correct_answer": "or"
+  },
+  {
+    "question": "La funzione range():",
+    "answers": [
+      "implementa una struttura decisionale",
+      "implementa una struttura iterativa",
+      "è obbligatoria nel for",
+      "ritorna un oggetto iterabile"
+    ],
+    "correct_answer": "ritorna un oggetto iterabile"
+  },
+  {
+    "question": "Nel codice sorgente, i parametri che vengono passati alla funzione nella chiamata:",
+    "answers": [
+      "devono avere lo stesso nome di quelli contenuti nella defizione della funzione",
+      "possono avere lo stesso nome di quelli contenuti nella defizione della funzione",
+      "possono essere al massimo due",
+      "devono avere un nome diverso quelli contenuti nella defizione della funzione"
+    ],
+    "correct_answer": "possono avere lo stesso nome di quelli contenuti nella defizione della funzione"
+  },
+  {
+    "question": "Le variabili locali:",
+    "answers": [
+      "possono essere \"visualizzate\" da funzioni diverse da quella in cui sono state definite",
+      "possono essere \"visualizzate\" da funzioni diverse da quella in cui sono state definite se vengono passate come  parametri",
+      "non appartengono alla funzione che le ha create",
+      "possono essere \"visualizzate\" e modificate in modo permanente da funzioni diverse da quella in cui sono state  definite se vengono passate come parametri"
+    ],
+    "correct_answer": "possono essere \"visualizzate\" da funzioni diverse da quella in cui sono state definite se vengono passate come  parametri"
+  },
+  {
+    "question": "Lo scope individua:",
+    "answers": [
+      "la parte del programma che può accedere alla variabile",
+      "la parte del programma che non può accedere alla variabile",
+      "la parte della funzione che può accedere alla variabile",
+      "la parte della funzione che non può accedere alla variabile"
+    ],
+    "correct_answer": "la parte del programma che può accedere alla variabile"
+  },
+  {
+    "question": "Per definire una costante globale in Python:",
+    "answers": [
+      "basta scrivere la keyword global in tutte le funzioni prima del nome della variabile",
+      "basta scrivere il nome della variabile tutto in maiuscolo",
+      "non utilizzare la keyword global nel programma",
+      "basta scrivere il nome della variabile tutto in maiuscolo e la keyword global in tutte le funzioni prima del nome della  variabile"
+    ],
+    "correct_answer": "non utilizzare la keyword global nel programma"
+  },
+  {
+    "question": "La gestione del menu:",
+    "answers": [
+      "avviene tramite una struttura iterativa e una struttura decisionale",
+      "avviene tramite una struttura iterativa",
+      "avviene tramite una struttura decisionale",
+      "avviene tramite una struttura sequenziale"
+    ],
+    "correct_answer": "avviene tramite una struttura iterativa e una struttura decisionale"
+  },
+  {
+    "question": "Per stampare una stringa e un numero contenuto nella variabile a posso utilizzare la/e seguente/i istruzione/i:",
+    "answers": [
+      "print(\"Risultato:\"+a)",
+      "print(\"Risultato:\"+str(a))print(\"Risultato\", a)",
+      "print(\"Risultato:\"+str(a))print(Risultato, a)",
+      "print(\"Risultato:\"+str(a)"
+    ],
+    "correct_answer": "print(\"Risultato:\"+str(a))print(\"Risultato\", a)"
+  },
+  {
+    "question": "Scrittura e lettura su file corrispondono, rispettivamente, a:",
+    "answers": [
+      "output e input su file",
+      "close e open su file",
+      "open e close su file",
+      "input e output su file"
+    ],
+    "correct_answer": "output e input su file"
+  },
+  {
+    "question": "Il metodo write:",
+    "answers": [
+      "appartiene al nome fisico del file e riceve come parametro una stringa",
+      "appartiene al nome fisico del file e riceve come parametro un intero",
+      "appartiene all'oggetto file e riceve come parametro una stringa",
+      "appartiene all'oggetto file e riceve come parametro un intero"
+    ],
+    "correct_answer": "appartiene all'oggetto file e riceve come parametro una stringa"
+  },
+  {
+    "question": "A seguito di un'operazione di scrittura del file, al fine di procedere con un'operazione di lettura:",
+    "answers": [
+      ". È necessaria una chiusura del file",
+      "È necessaria un'apertura del file in lettura",
+      "sono necessarie sia la chiusura del file sia l'apertura in scrittura",
+      "sono necessarie sia la chiusura del file sia l'apertura in lettura"
+    ],
+    "correct_answer": "sono necessarie sia la chiusura del file sia l'apertura in lettura"
+  },
+  {
+    "question": "I valori numerici possono essere scritti su un file se:",
+    "answers": [
+      "si utilizza la funzione di casting int()",
+      "si utilizza la funzione di casting float()",
+      "si utilizza la funzione di casting str()",
+      "si utilizzano le funzioni di casting int() e float()"
+    ],
+    "correct_answer": "si utilizza la funzione di casting str()"
+  },
+  {
+    "question": ". Il codice del gestore delle eccezioni:",
+    "answers": [
+      "viene eseguito solo se sono state sollevate eccezioni",
+      "viene eseguito sempre",
+      "non viene eseguito se sono state sollevate eccezioni",
+      "non dipende dal blocco try"
+    ],
+    "correct_answer": "viene eseguito solo se sono state sollevate eccezioni"
+  },
+  {
+    "question": "L'istruzione d=d.rstrip('\\n') serve a:",
+    "answers": [
+      "inserire un carattere alla fine della stringa",
+      "eliminare un carattere alla fine della stringa",
+      "copiare parte della stringa d",
+      "andare a capo"
+    ],
+    "correct_answer": "eliminare un carattere alla fine della stringa"
+  },
+  {
+    "question": "Nell'istruzione os.remove(a):",
+    "answers": [
+      "os è il metodo, remove è il modulo, a è il file",
+      "os è il modulo, remove è il file, a è il funzione",
+      "os è il metodo, remove è il modulo, a è la funzione",
+      "os è il modulo, remove è una funzione, a è il file"
+    ],
+    "correct_answer": "os è il modulo, remove è una funzione, a è il file"
+  },
+  {
+    "question": "Nel caso di utilizzo del metodo index() della lista:",
+    "answers": [
+      "È possibile che venga sollevata un'eccezione ListError",
+      "È possibile che venga sollevata un'eccezione ValueError",
+      "È possibile che venga sollevata un'eccezione IndexError",
+      "non vengono sollevate eccezioni"
+    ],
+    "correct_answer": "È possibile che venga sollevata un'eccezione ValueError"
+  },
+  {
+    "question": "Per calcolare il totale degli elementi e contenuti in una lista a, le migliori istruzioni sono:",
+    "answers": [
+      "for e in a: c=c+e",
+      "c=0for e in a:   c=c+e",
+      "c=0for a in e:   c=c+e",
+      "c=0for e in a:   c=c+a"
+    ],
+    "correct_answer": "c=0for e in a:   c=c+e"
+  },
+  {
+    "question": "Per accedere ad un elemento di una lista bidimensionale:",
+    "answers": [
+      "È obbligatorio due indici, ma non due cicli nidificati",
+      "non è obbligatorio utilizzare nè due cicli nidificati nè due indici",
+      "È obbligatorio utilizzare due cicli nidificati, ma non due indici",
+      "È obbligatorio utilizzare due cicli nidificati e due indici"
+    ],
+    "correct_answer": "È obbligatorio due indici, ma non due cicli nidificati"
+  },
+  {
+    "question": ". A seguito dell'esecuzione delle seguenti istruzioni l = [1,2,3,3] s = set(l):",
+    "answers": [
+      "s conterrà 1 elemento",
+      "s conterrà 2 elementi",
+      "s conterrà 3 elementi",
+      "s conterrà 4 elementi"
+    ],
+    "correct_answer": "s conterrà 3 elementi"
+  },
+  {
+    "question": "La differenza simmetrica tra due set permette di individuare un nuovo set che:",
+    "answers": [
+      "contiene gli elementi non condivisi tra i due set",
+      "contiene gli elementi di entrambi i set",
+      "contiene gli elementi comuni ad entrambi i set",
+      "contiene gli elementi del primo set che non appartengono al secondo"
+    ],
+    "correct_answer": "contiene gli elementi non condivisi tra i due set"
+  },
+  {
+    "question": "L'istruzione s.issuperset(t):",
+    "answers": [
+      "restituisce il set formato dagli elementi di s e di t",
+      "restituisce un valore True se t contiene tutti gli elementi di s",
+      "restituisce il set formato dagli elementi comuni a s e a t",
+      "restituisce un valore True se s contiene tutti gli elementi di t"
+    ],
+    "correct_answer": "restituisce un valore True se s contiene tutti gli elementi di t"
+  },
+  {
+    "question": "Lo stato di un oggetto è l'insieme:",
+    "answers": [
+      "dei valori degli attributi",
+      "del valore dei metodi",
+      "dei metodi",
+      "del valore degli attributi e dei metodi"
+    ],
+    "correct_answer": "dei valori degli attributi"
+  },
+  {
+    "question": "L'interfaccia di un oggetto è l'insieme:",
+    "answers": [
+      "dei valori degli attributi",
+      "del valore degli attributi e dei metodi",
+      "dei metodi",
+      "del valore dei metodi"
+    ],
+    "correct_answer": "dei metodi"
+  },
+  {
+    "question": "I getter e i setter:",
+    "answers": [
+      "devono essere definiti per tutti gli attributi pubblici",
+      "possono essere definiti per tutti gli attributi",
+      "devono essere definiti per tutti gli attributi",
+      "devono essere definiti per tutti gli attributi privati"
+    ],
+    "correct_answer": "possono essere definiti per tutti gli attributi"
+  },
+  {
+    "question": "Nel diagramma UML delle classi:",
+    "answers": [
+      "lo schema della sottoclasse deve indicare anche gli attributi ereditati",
+      "lo schema della sottoclasse deve indicare anche i metodi ereditati",
+      "non è possibile indicare l'ereditarietà tra classi",
+      "lo schema della sottoclasse non deve indicare anche gli attributi ereditati"
+    ],
+    "correct_answer": "lo schema della sottoclasse non deve indicare anche gli attributi ereditati"
+  },
+  {
+    "question": "La funzione isinstance():",
+    "answers": [
+      "necessità dell'oggetto e della classe come argomenti",
+      "restituisce un numero intero",
+      "ritorna la classe dell'oggetto",
+      "stampa a schermo se l'oggetto è un'istanza della classe"
+    ],
+    "correct_answer": "necessità dell'oggetto e della classe come argomenti"
+  },
+  {
+    "question": "Le fasi principali di modellazione di un database sono:",
+    "answers": [
+      "una",
+      "due",
+      "tre",
+      "quattro"
+    ],
+    "correct_answer": "tre"
+  },
+  {
+    "question": "Tutte le tuple della stessa entità hanno:",
+    "answers": [
+      "stesso numero, nome e tipo, ma diversi valori di attributi",
+      "stesso numero e nome, ma diverso tipo e valori di attributi",
+      "stesso numero, ma diverso tipo, nome e valori di attributi",
+      "stesso nome, ma diverso tipo, numero e valori di attributi"
+    ],
+    "correct_answer": "stesso numero, nome e tipo, ma diversi valori di attributi"
+  },
+  {
+    "question": "Dopo la keyword SELECT si inserisce:",
+    "answers": [
+      "lista tabelle da cui estrarre",
+      "la condizione per il filtro",
+      "lista campi da estrarre",
+      "la clausola di ordinamento"
+    ],
+    "correct_answer": "lista campi da estrarre"
+  },
+  {
+    "question": "Il comando SELECT * FROM Studenti; permette di:",
+    "answers": [
+      "proiettare i dati della tabella Studenti",
+      "estrarre tutti i campi e tutte le tuple della tabella Studenti",
+      "estrarre tutte le tuple della tabella Studenti",
+      "estrarre tutti i campi della tabella Studenti"
+    ],
+    "correct_answer": "estrarre tutti i campi e tutte le tuple della tabella Studenti"
+  },
+  {
+    "question": "Il comando SELECT Matricola, Nome AS N, Città FROM Studenti; permette di ottenere una tabella:",
+    "answers": [
+      "che rappresenta una proiezione della tabella originale",
+      "che rappresenta una selezione della tabella originale",
+      "di quattro campi",
+      "una tabella formata dai seguenti campi: Matricola, Nome, Città"
+    ],
+    "correct_answer": "che rappresenta una proiezione della tabella originale"
+  },
+  {
+    "question": "Il comando SELECT * FROM Studenti INNER JOIN Voti ON Studenti.Matricola = Voti.MatricolaS; permette di",
+    "answers": [
+      "una tabella composta dalla somma delle tuple delle due tabelle di partenza",
+      "una tabella composta dalle tuple della tabella Studenti",
+      "una tabella vuota",
+      "una tabella composta dalla somma dei campi delle due tabelle di partenza"
+    ],
+    "correct_answer": "una tabella composta dalla somma dei campi delle due tabelle di partenza"
+  },
+  {
+    "question": "Il comando SELECT Studenti.Nome, Voti.Votofinale FROM Studenti LEFT JOIN Voti ON Studenti.Matricola = Voti.MatricolaS; permette di ottenere",
+    "answers": [
+      "una tabella composta dal numero di tuple della tabella Studenti",
+      "una tabella vuota",
+      "una tabella composta dalla somma dei campi delle due tabelle di partenza",
+      "una tabella composta dalla somma delle tuple delle due tabelle di partenza"
+    ],
+    "correct_answer": "una tabella composta dal numero di tuple della tabella Studenti"
+  },
+  {
+    "question": "Il comando SELECT * FROM Studenti FULL OUTER JOIN Voti ON Studenti.Matricola = Voti.MatricolaS; permette di ottenere",
+    "answers": [
+      "una tabella composta dalla somma delle tuple delle due tabelle di partenza",
+      "una tabella composta dal numero di tuple della tabella Studenti",
+      "una tabella composta dalla somma dei campi delle due tabelle di partenza",
+      "una tabella vuota"
+    ],
+    "correct_answer": "una tabella composta dalla somma dei campi delle due tabelle di partenza"
+  },
+  {
+    "question": "GROUP BY serve a:",
+    "answers": [
+      "partizionare in gruppi le righe di una tabella",
+      "raggruppare le tuple secondo il criterio espresso nell'HAVING",
+      "utilizzare le funzioni di aggregazione",
+      "utilizzare le funzioni di aggregazione"
+    ],
+    "correct_answer": "partizionare in gruppi le righe di una tabella"
+  },
+  {
+    "question": "SELECT customerName, Orders.* FROM Customers LEFT JOIN Orders ON Orders.CustomerID = Customers.CustomerID WHERE OrderDate = (SELECT MAX(OrderDate) FROM Orders)",
+    "answers": [
+      "errata",
+      "Conoscere i nomi dei clienti e i relativi ordini con la data più recente",
+      "conoscere i nomi dei clienti che hanno il numero massimo di ordini",
+      "conoscere l’importo totale di tutti gli ordini effettuati"
+    ],
+    "correct_answer": "Conoscere i nomi dei clienti e i relativi ordini con la data più recente"
+  },
+  {
+    "question": "Il comando ([x + (5 - x) for x in range(-100,100)],[y for y in range (-100,100)]) permette di generare:",
+    "answers": [
+      "una retta",
+      "un grafico lineare",
+      "il grafico di una retta orizzontale",
+      "il grafico di una retta verticale"
+    ],
+    "correct_answer": "il grafico di una retta verticale"
+  },
+  {
+    "question": "Il frammento di codice: import matplotlib.pyplot as mp mp.plot([0 for x in range(-100, 100)],[y for y in range(-100, 100)], [x for x in range(-100, 100)],[0 for y in range(-100, 100)]) permette di:",
+    "answers": [
+      "disegnare i due assi cartesiani passanti per (0,0)",
+      "due rette oblique",
+      "due rette parallele",
+      "una parabola"
+    ],
+    "correct_answer": "disegnare i due assi cartesiani passanti per (0,0)"
+  },
+  {
+    "question": "Un nodo A con centralitá globale CCA massima é:",
+    "answers": [
+      "Un nodo da cui è difficile accedere agli altri nodi della rete",
+      "Un nodo da cui è facile accedere agli altri nodi della rete",
+      "Un nodo con distanza massima dagli altri nodi del grafo",
+      "Un nodo con pochi vicini"
+    ],
+    "correct_answer": "Un nodo da cui è facile accedere agli altri nodi della rete"
+  },
+  {
+    "question": "Quale query prende i dati dei prodotti il cui prezzo è maggiore della media dei prezzi?",
+    "answers": [
+      "SELECT *FROM Products  WHERE Price >= 10 OR Price <= 15;",
+      "SELECT *FROM Products  WHERE Price > (SELECT AVG(Price) FROM Products);",
+      "SELECT *FROM Products  WHERE Price >(SELECT Price,  AVG(Price)  FROM Products  GROUP BY Price);",
+      "SELECT *FROM Products  WHERE Price >(SELECT ProductID,  AVG(Price)  FROM Products);"
+    ],
+    "correct_answer": "SELECT *FROM Products  WHERE Price > (SELECT AVG(Price) FROM Products);"
+  },
+  {
+    "question": "Suddividere s in 2 categorie zero e uno (discretizzazione di s in 2 categorie con eitchetta 0 e 1)",
+    "answers": [
+      "import pandas as pd pd.cut(s,labels=('ZERO','UNO'))",
+      "import pandas as pd pd.cut(s,1,labels=('ZERO', 'UNO'))",
+      "import pandas as pd pd.cut(s,labels=('ZERO','UNO'),2)",
+      "import pandas as pd pd.cut(s,2,labels=('ZERO', 'UNO'))"
+    ],
+    "correct_answer": "import pandas as pd pd.cut(s,2,labels=('ZERO', 'UNO'))"
+  },
+  {
+    "question": "Domanda (?)",
+    "answers": [
+      "solo operazioni di estrazioni",
+      "operazioni di Map e operazioni di Reduce",
+      "operazioni di filtratura e operazioni di ordinamento",
+      "operazione di ordinamento"
+    ],
+    "correct_answer": "operazioni di Map e operazioni di Reduce"
+  },
+  {
+    "question": "Il metodo fetchall():",
+    "answers": [
+      "È un metodo dell'oggetto connessione e restituisce un connettore",
+      "È un metodo dell'oggetto cursore e restituisce un connettore alla tabella",
+      "È un metodo dell'oggetto cursore e restituisce tutte le tuple di una tabella",
+      "È un metodo dell'oggetto connessione e restituisce tutti i connettori"
+    ],
+    "correct_answer": "È un metodo dell'oggetto cursore e restituisce tutte le tuple di una tabella"
+  },
+  {
+    "question": "Il metodo lstrip(a) restituisce:",
+    "answers": [
+      "una stringa con tutti gli spazi bianchi rimossi",
+      "una stringa con tutti gli i caratteri a iniziali rimossi",
+      "una stringa con tutti gli spazi bianchi iniziali rimossi",
+      "una stringa con tutti gli i caratteri a rimossi"
+    ],
+    "correct_answer": "una stringa con tutti gli i caratteri a iniziali rimossi"
+  },
+  {
+    "question": "L'istruzione s.isdigit() restituisce:",
+    "answers": [
+      "vero se s contiene solo cifre numeriche",
+      "verso se s non contiene cifre numeriche",
+      "vero se s contiene esattamente una cifra numerica",
+      "vero se s contiene almeno una cifra numerica"
+    ],
+    "correct_answer": "vero se s contiene solo cifre numeriche"
+  },
+  {
+    "question": "Time.time() è:",
+    "answers": [
+      "un metodo che restituisce il timestamp",
+      "una funzione che restituisce il timestamp",
+      "una funzione che restituisce l'orario",
+      "un metodo che restituisce l'orario"
+    ],
+    "correct_answer": "una funzione che restituisce il timestamp"
+  },
+  {
+    "question": ".Per verificare le mail del tipo nome_utente@unimercatorum.it è necessario utilizzare la seguente espressione regolare:",
+    "answers": [
+      "r'[\\w-]*@unimercatorum.it'",
+      "r'[a-zA-Z]*@unimercatorum.it'",
+      "r'[a-zA-Z][\\w-]*@unimercatorum.it'",
+      "r'[a-zA-Z][\\w-]@unimercatorum.it'"
+    ],
+    "correct_answer": "r'[a-zA-Z][\\w-]*@unimercatorum.it'"
+  },
+  {
+    "question": "La funzione iglob() è:",
+    "answers": [
+      "completamente diversa da glob()",
+      "simile a glob(), ma non memorizza simultaneamente tutti i valori restituiti da glob()",
+      "identica a glob()",
+      "simile a glob(), ma memorizza simultaneamente tutti i valori restituiti da glob()"
+    ],
+    "correct_answer": "simile a glob(), ma non memorizza simultaneamente tutti i valori restituiti da glob()"
+  },
+  {
+    "question": "Nell'istruzione pickle.dump(a,b) a e b sono:",
+    "answers": [
+      "gestore del file e oggetto",
+      "oggetto e gestore del file",
+      "nome del file e oggetto",
+      "oggetto e nome del file"
+    ],
+    "correct_answer": "oggetto e gestore del file"
+  },
+  {
+    "question": "Nell'indicizzatore di file, l'istruzione d[p.upper()] = d[p.upper()]+lista permette di:",
+    "answers": [
+      "aggiornare la lista dei valori di p includendo un file già presente",
+      "concatenare la lista dei valori di p",
+      "aggiornare la lista dei valori di p includendo un nuovo file",
+      "concatenare la lista di p"
+    ],
+    "correct_answer": "aggiornare la lista dei valori di p includendo un nuovo file"
+  },
+  {
+    "question": "Un notebook Jupyter è:",
+    "answers": [
+      "un pc portatile",
+      "un pc portatile della Jupyter",
+      "un applicativo che permette di scrivere un flusso di lavoro in verticale",
+      "un applicativo che permette di scrivere un flusso di lavoro in orizzontale"
+    ],
+    "correct_answer": "un applicativo che permette di scrivere un flusso di lavoro in verticale"
+  },
+  {
+    "question": "Un alias è:",
+    "answers": [
+      "un'istruzione",
+      "un nome (diminutivo) per chiamare una libreria/modulo",
+      "una libreria/modulo",
+      "una keyword"
+    ],
+    "correct_answer": "un nome (diminutivo) per chiamare una libreria/modulo"
+  },
+  {
+    "question": "Gli array differiscono dalla lista principalmente per:",
+    "answers": [
+      "due motivi",
+      "tre motivi",
+      "un motivo",
+      "quattro motivi"
+    ],
+    "correct_answer": "due motivi"
+  },
+  {
+    "question": "Il codice corretto per modificare la forma dell'array è:",
+    "answers": [
+      "v.shape = [a,b]",
+      "v.shape = {a,b}",
+      "v.shape = (a,b)",
+      "v.shape = a,b"
+    ],
+    "correct_answer": "v.shape = [a,b]"
+  },
+  {
+    "question": "L'effetto dell'istruzione m.transpose(0,2,1) è:",
+    "answers": [
+      "terzo asse rimane verticale, altri due assi scambiati",
+      "secondo asse rimane verticale, altri due assi scambiati",
+      "primo asse rimane verticale, altri due assi scambiati",
+      "la trasposizione dell'intera matrice"
+    ],
+    "correct_answer": "primo asse rimane verticale, altri due assi scambiati"
+  },
+  {
+    "question": "Data una matrice m di dimensioni 7x5 la seguente istruzione m[3:5][1][0] permette di raccogliere:",
+    "answers": [
+      "le righe dalla quarta alla quinta",
+      "la quinta riga",
+      "il secondo elemento della quarta riga",
+      "il primo elemento della quinta riga"
+    ],
+    "correct_answer": "il primo elemento della quinta riga"
+  },
+  {
+    "question": "La libreria per i grafici in Python si chiama:",
+    "answers": [
+      "NumPy",
+      "Matplotlib",
+      "statistics",
+      "Matplot"
+    ],
+    "correct_answer": "Matplotlib"
+  },
+  {
+    "question": "Il metodo gfc:",
+    "answers": [
+      "estrae la figure corrente o la crea se non esiste ancora",
+      "impostare l'area del grafico",
+      "salva il grafico sul file",
+      "estrae la figure corrente"
+    ],
+    "correct_answer": "estrae la figure corrente o la crea se non esiste ancora"
+  },
+  {
+    "question": "La proprietà kde:",
+    "answers": [
+      "È della funzione scatter e serve a calcolare una stima della densità del kernel per uniformare la distribuzione",
+      "È della funzione displot e serve a calcolare una stima della densità del kernel per uniformare la distribuzione",
+      "È della funzione hist e serve a calcolare una stima della densità del kernel per uniformare la distribuzione",
+      "È della funzione plot e serve a calcolare una stima della densità del kernel per uniformare la distribuzione"
+    ],
+    "correct_answer": "È della funzione displot e serve a calcolare una stima della densità del kernel per uniformare la distribuzione"
+  },
+  {
+    "question": "Nella funzione rand():",
+    "answers": [
+      "i parametri sono tutti di default",
+      "i parametri sono tutti di default ad esclusione dell'estremo inferiore dell'intervallo",
+      "i parametri sono tutti di default ad esclusione dell'estremo superiore dell'intervallo",
+      "i parametri sono tutti di default ad esclusione della shape"
+    ],
+    "correct_answer": "i parametri sono tutti di default ad esclusione della shape"
+  },
+  {
+    "question": "L'attributo dtypes:",
+    "answers": [
+      "È relativo al DataFrame ed elenca il tipo di tutti i campi",
+      "È relativo alla Series ed elenca il tipo del primo campo",
+      "È relativo al DataFrame ed elenca il tipo del primo campo",
+      "È relativo al Series ed elenca il tipo di tutti i campi"
+    ],
+    "correct_answer": "È relativo al DataFrame ed elenca il tipo di tutti i campi"
+  },
+  {
+    "question": "Il risultato del seguente codice a = pd.read_csv('a.csv', delimiter='.') print(type(a)) è:",
+    "answers": [
+      "Series",
+      "Array",
+      "DataFrame",
+      "Dictionary"
+    ],
+    "correct_answer": "DataFrame"
+  },
+  {
+    "question": "5. Per poter applicare una funzione ad una colonna di un DataFrame si utilizza la funzione:",
+    "answers": [
+      "applyColumn",
+      "apply",
+      "setColumn",
+      "set"
+    ],
+    "correct_answer": "apply"
+  },
+  {
+    "question": "Il metodo iterrows() permette di ottenere:",
+    "answers": [
+      "un generatore che ad ogni invocazione fornirà un indice di colonna e la Series che contiene i valori della colonna",
+      "un generatore che ad ogni iterazione fornirà un indice di riga e il DataFrame contenente i suoi valori",
+      "un generatore che ad ogni invocazione fornirà un indice di colonna e il DataFrame che contiene i valori della colonna",
+      "un generatore che ad ogni iterazione fornirà un indice di riga e la Series contenente i suoi valori"
+    ],
+    "correct_answer": "un generatore che ad ogni iterazione fornirà un indice di riga e la Series contenente i suoi valori"
+  },
+  {
+    "question": "Groups è:",
+    "answers": [
+      "la funzione per eseguire il raggruppamento",
+      "È una proprietà che contiene un dizionario",
+      "È una proprietà che contiene una lista",
+      "È una proprietà che contiene un DataFrame"
+    ],
+    "correct_answer": "È una proprietà che contiene un dizionario"
+  },
+  {
+    "question": "Per ottenere le statistiche complessive massime calcolate su un DataFrame raggruppato sul campo 'c' in base al valore del campo 'c2' è necessario utilizzare la seguente istruzione:",
+    "answers": [
+      "df.groupy['c']('c2').max().describe()",
+      "df.groupy('c')['c2'].max().describe()",
+      "df.groupy('c')['c2'].describe()['max']",
+      "df.groupy['c']('c2').describe()['max']"
+    ],
+    "correct_answer": "df.groupy('c')['c2'].describe()['max']"
+  },
+  {
+    "question": "Oltre all'importazione delle librerie opportune, la migliore sequenza di istruzioni per graficare il contenuto della colonna a di un DataFrame Pandas df con un grafico lineare è:",
+    "answers": [
+      "df['a'].plot(kind='line') matplot.show()",
+      "df.plot(kind='line') matplot.show()",
+      "matplot.plot(df, kind='line') matplot.show()",
+      "matplot.plot(df, kind='line')"
+    ],
+    "correct_answer": "df['a'].plot(kind='line') matplot.show()"
+  },
+  {
+    "question": "Nella formulazione originale della regola delle 3V, le 3V corrispondono a:",
+    "answers": [
+      "volume, velocità e veridicità",
+      "veridicità, velocità e varietà",
+      "volume, veridicità e varietà",
+      "volume, velocità e varietà"
+    ],
+    "correct_answer": "volume, velocità e varietà"
+  },
+  {
+    "question": "HDFS e YARN sono:",
+    "answers": [
+      "entrambi dei file system distribuiti",
+      "entrambi ambienti di elaborazione di MapReduce",
+      "rispettivamente file ambiente di elaborazione MapReduce e system distribuito",
+      "rispettivamente file system distribuito e ambiente di elaborazione MapReduce"
+    ],
+    "correct_answer": "rispettivamente file system distribuito e ambiente di elaborazione MapReduce"
+  },
+  {
+    "question": "I Worker Node sono:",
+    "answers": [
+      "tutti i nodi del cluster che svolgono il coordinamento tra di essi",
+      "tutti i nodi del cluster tra i quali sarà parallelizzato il lavoro",
+      "i nodi in cui risiede lo SparkContext",
+      "tutti i nodi che offrono uno strato di coesione al cluster"
+    ],
+    "correct_answer": "tutti i nodi del cluster tra i quali sarà parallelizzato il lavoro"
+  },
+  {
+    "question": "Le modalità per ottenere un RDD sono:",
+    "answers": [
+      "1",
+      "3",
+      "2",
+      "4"
+    ],
+    "correct_answer": "2"
+  },
+  {
+    "question": "Le operazioni di map e reduce:",
+    "answers": [
+      "sono trasformazioni e azioni, rispettivamente",
+      "sono azioni e trasformazioni, rispettivamente",
+      "sono entrambe azioni",
+      "sono entrambe trasformazioni"
+    ],
+    "correct_answer": "sono trasformazioni e azioni, rispettivamente"
+  },
+  {
+    "question": "Il metodo collect():",
+    "answers": [
+      "corrisponde ad un'azione e restituisce il primo elemento del RDD",
+      "corrisponde ad una trasformazione e restituisce il primo elemento del RDD",
+      "corrisponde ad una trasformazione e restituisce gli elementi del RDD in una struttura dati Python",
+      "corrisponde ad un'azione e restituisce gli elementi del RDD in una struttura dati Python"
+    ],
+    "correct_answer": "corrisponde ad un'azione e restituisce gli elementi del RDD in una struttura dati Python"
+  },
+  {
+    "question": "Il metodo stats() restituisce:",
+    "answers": [
+      "un oggetto",
+      "un int",
+      "un float",
+      "una lista di numeri"
+    ],
+    "correct_answer": "un oggetto"
+  },
+  {
+    "question": "Nell'applicazione dell'algoritmo MapReduce in Spark:",
+    "answers": [
+      "deve esserci per forza una reduce",
+      "possono esserci solo map",
+      "devono esserci per forza sia map che reduce",
+      "deve esserci per forza una map"
+    ],
+    "correct_answer": "possono esserci solo map"
+  },
+  {
+    "question": "Una partizione è:",
+    "answers": [
+      "un nodo",
+      "un cluster",
+      "una suddivisione logica di un dataset",
+      "un insieme di nodi di un cluster"
+    ],
+    "correct_answer": "una suddivisione logica di un dataset"
+  },
+  {
+    "question": "La funzione countByKey() permette di:",
+    "answers": [
+      "contare gli elementi in un RDD",
+      "contare gli elementi in un RDD in base alla chiave/etichetta",
+      "contare gli elementi in una lista in base alla chiave/etichetta",
+      "contare gli elementi in una lista"
+    ],
+    "correct_answer": "contare gli elementi in un RDD in base alla chiave/etichetta"
+  },
+  {
+    "question": "Il metodo agg() si usa per:",
+    "answers": [
+      "raggruppare i dati secondo una chiave",
+      "mostrare i dati di un DataFrame",
+      "visualizzare la struttura del DataFrame",
+      "personalizzare maggiormente le aggregazioni da svolgere"
+    ],
+    "correct_answer": "personalizzare maggiormente le aggregazioni da svolgere"
+  },
+  {
+    "question": "Il grado di un nodo indica sempre:",
+    "answers": [
+      "numero di archi connessi al nodo",
+      "numero di archi non incidenti con il nodo",
+      "il numero di archi in ingresso verso il nodo",
+      "il numero dei nodi vicini al nodo"
+    ],
+    "correct_answer": "numero di archi connessi al nodo"
+  },
+  {
+    "question": "L'ordine e la dimensione di un grafo sono:",
+    "answers": [
+      "entrambi il numero dei nodi",
+      "entrambi il numero degli archi",
+      "rispettivamente il numero dei nodi e degli archi",
+      "rispettivamente il numero degli archi e dei nodi"
+    ],
+    "correct_answer": "rispettivamente il numero dei nodi e degli archi"
+  },
+  {
+    "question": "La funzione urlparse() suddivide un URL in una tupla di:",
+    "answers": [
+      "quattro elementi",
+      "cinque elementi",
+      "sei elementi",
+      "sette elementi"
+    ],
+    "correct_answer": "sei elementi"
+  },
+  {
+    "question": "7. Il metodo get_text() permette di:",
+    "answers": [
+      "estrarre il contenuto di un tag",
+      "accedere al testo del contenuto dell'HTML",
+      "visualizzare come i tag HTML sono annidati nel documento",
+      "estrarre un determinato tipo di tag"
+    ],
+    "correct_answer": "accedere al testo del contenuto dell'HTML"
+  },
+  {
+    "question": "Il metodo prettify() permette di:",
+    "answers": [
+      "accedere al testo del contenuto dell'HTML",
+      "estrarre il contenuto di un tag",
+      "estrarre un determinato tipo di tag",
+      "visualizzare come i tag HTML sono annidati nel documento"
+    ],
+    "correct_answer": "visualizzare come i tag HTML sono annidati nel documento"
+  },
+  {
+    "question": "Per accedere alla cella di una tabella è necessario:",
+    "answers": [
+      "accedere alla tabella",
+      "accedere alla cella",
+      "accedere gerarchicamente prima a",
+      "accedere direttamente al tag"
+    ],
+    "correct_answer": "accedere gerarchicamente prima a"
+  },
+  {
+    "question": "Per calcolare l'ordine del grafo esistono:",
+    "answers": [
+      "2 metodi",
+      "3 metodi",
+      "4 metodi",
+      "5 metodi"
+    ],
+    "correct_answer": "3 metodi"
+  },
+  {
+    "question": "Per calcolare la dimensione del grafo esistono:",
+    "answers": [
+      "5 metodi",
+      "4 metodi",
+      "3 metodi",
+      "2 metodi"
+    ],
+    "correct_answer": "2 metodi"
+  },
+  {
+    "question": "Le funzioni Graph() e DiGraph() permettono di:",
+    "answers": [
+      "ottenere entrambe grafi orientati",
+      "ottenere grafi non orientati e orientati, rispettivamente",
+      "ottenere grafi orientati e non orientati, rispettivamente",
+      "ottenere entrambe grafi non orientati"
+    ],
+    "correct_answer": "ottenere grafi non orientati e orientati, rispettivamente"
+  },
+  {
+    "question": "Per conoscere i nodi adiacenti ad un nodo a, si utilizza il metodo:",
+    "answers": [
+      "neighbors()",
+      "neighbor()",
+      "vicinato()",
+      "vicini()"
+    ],
+    "correct_answer": "neighbors()"
+  },
+  {
+    "question": "Connected_components() è:",
+    "answers": [
+      "un metodo del grafo che funziona solo per grafi non orientati",
+      "una funzione di networkx che funziona solo per grafi orientati",
+      "una funzione di networkx che funziona solo per grafi non orientati",
+      "un metodo del grafo che funziona solo per grafi orientati"
+    ],
+    "correct_answer": "una funzione di networkx che funziona solo per grafi non orientati"
+  },
+  {
+    "question": "I metodi in_degree() e out_degree() si usano per:",
+    "answers": [
+      "calcolare il grado entrante e uscente di tutti i nodi di un grafo non orientato",
+      "calcolare il grado entrante e uscente di un nodo di un grafo non orientato",
+      "calcolare il grado entrante e uscente di tutti i nodi di un grafo orientato",
+      "calcolare il grado entrante e uscente di un nodo di un grafo orientato"
+    ],
+    "correct_answer": "calcolare il grado entrante e uscente di tutti i nodi di un grafo orientato"
+  },
+  {
+    "question": "Per recuperare i dati della tabella di Wikipedia e generare la struttura dati propedeutica al grafo sono necessari:",
+    "answers": [
+      "Networkx, BeautifulSoup, urllib.request, pandas",
+      "BeautifulSoup, urllib.request, pandas",
+      "Networkx, urllib.request, pandas",
+      "BeautifulSoup, urllib.request, pyspark"
+    ],
+    "correct_answer": "BeautifulSoup, urllib.request, pandas"
+  },
+  {
+    "question": "In Gephi, anche senza elaborazioni del grafo, è attiva la funzionalità di:",
+    "answers": [
+      "il grado medio",
+      "la densità del grafo",
+      "il calcolo della modularità",
+      "individuazione del vicinato di un nodo"
+    ],
+    "correct_answer": "individuazione del vicinato di un nodo"
+  },
+  {
+    "question": "Il grado medio dei nodi si ottiene:",
+    "answers": [
+      "dal rapporto tra dimensione e ordine del grafo",
+      "dalla dimensione del grafo",
+      "dall'ordine del grafo",
+      "dal rapporto tra ordine e dimensione del grafo"
+    ],
+    "correct_answer": "dal rapporto tra dimensione e ordine del grafo"
+  },
+  {
+    "question": "La distribuzione del grado dei nodi permette di comprendere immediatamente:",
+    "answers": [
+      "il numero di vicini per un determinato nodo",
+      "il massimo numero di vicini dei nodi",
+      "mediamente quanti vicini ha un nodo",
+      "quanti sono i nodi isolati"
+    ],
+    "correct_answer": "il massimo numero di vicini dei nodi"
+  },
+  {
+    "question": "Le categorie della sezione Statistics di Gephi sono:",
+    "answers": [
+      "network overview, node overview, partition overview, dynamic",
+      "network overview, partition overview, edge overview, dynamic",
+      "network overview, node overview, edge overview, dynamic",
+      "network overview, node overview, edge overview, community"
+    ],
+    "correct_answer": "network overview, node overview, edge overview, dynamic"
+  },
+  {
+    "question": "Per l'equipment fault, i valori ammissibili sono:",
+    "answers": [
+      "1",
+      "2",
+      "5",
+      "20"
+    ],
+    "correct_answer": "2"
+  },
+  {
+    "question": "Solitamente, in una GUI, oltre al form, quanti elementi si inseriscono per completezza:",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "correct_answer": "3"
+  },
+  {
+    "question": "Nel widget Checkbutton, il parametro textvariable è:",
+    "answers": [
+      "l'argomento che collega variabile al testo dell'etichetta del widget",
+      "l'argomento di tipo StringVar collegato al widget",
+      "l'argomento che determina carattere visualizzato nell'entry",
+      "l'argomento che imposta widget parent"
+    ],
+    "correct_answer": "l'argomento che collega variabile al testo dell'etichetta del widget"
+  },
+  {
+    "question": "9.Per aggiungere un widget alla seconda riga in un layout a griglia è necessario passare al metodo grid:",
+    "answers": [
+      "row",
+      "row=0",
+      "row=1",
+      "row=2"
+    ],
+    "correct_answer": "row=1"
+  },
+  {
+    "question": "I metodi della classe LabelInput sottoposti a overriding sono:",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": "3"
+  },
+  {
+    "question": "La classe corrispondente al form è:",
+    "answers": [
+      "LabelInput",
+      "DataRecordForm",
+      "LabelFrame",
+      "Form"
+    ],
+    "correct_answer": "DataRecordForm"
+  },
+  {
+    "question": "La classe corrispondente ad una sezione del form è:",
+    "answers": [
+      "LabelInput",
+      "DataRecordForm",
+      "LabelFrame",
+      "Form"
+    ],
+    "correct_answer": "LabelFrame"
+  },
+  {
+    "question": "Le librerie utili presentate per il salvataggio dei dati del form su file CSV sono:",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": "3"
+  },
+  {
+    "question": "Dato il vettore numeric a, la somma dei valori di a si ottiene con la seguente istruzione:",
+    "answers": [
+      "sum(a)",
+      "a.sum()",
+      "sum(a) = b",
+      "c = sum(A)"
+    ],
+    "correct_answer": "sum(a)"
+  },
+  {
+    "question": "Il risultato dell'esecuzione delle seguenti istruzioni a = c(1,2,3) b = a&lt;0 a[b] è:",
+    "answers": [
+      "1 2 3",
+      "1 2",
+      "1",
+      "numeric(0)"
+    ],
+    "correct_answer": "numeric(0)"
+  },
+  {
+    "question": "Per rinominare le due colonne di una matrice m 5x2 è necessario richiamare la seguente istruzione:",
+    "answers": [
+      "colnames(m) = n",
+      "m.colnames = n",
+      "m. colnames = c('a','b')",
+      "colnames(m) = c('a','b')"
+    ],
+    "correct_answer": "colnames(m) = c('a','b')"
+  },
+  {
+    "question": "Per eliminare la terza e la quarta riga nella matrice m è necessario richiamare la seguente istruzione:",
+    "answers": [
+      "m[-(3:4),]",
+      "m[-(2:3),]",
+      "m.deleterow(3,4)",
+      "m.rowdelete(2,3)"
+    ],
+    "correct_answer": "m[-(3:4),]"
+  },
+  {
+    "question": "Dati i vettori a,b,c, il codice per creare il dataframe d è:",
+    "answers": [
+      "d = dataframe(a,b,c)",
+      "d = dataframe()d.add(a,b,c)",
+      "d = data.frame(a,b,c)",
+      "data.frame(a,b,c)"
+    ],
+    "correct_answer": "d = data.frame(a,b,c)"
+  },
+  {
+    "question": "Dato il dataframe d, l'istruzione dim(t)[1] permette di visualizzare:",
+    "answers": [
+      "il primo elemento del dataframe",
+      "il secondo elemento del dataframe",
+      "il numero delle righe del dataframe",
+      "il numero delle colonne del dataframe"
+    ],
+    "correct_answer": "il numero delle righe del dataframe"
+  },
+  {
+    "question": "Per rinominare gli oggetti di una lista si usa la funzione:",
+    "answers": [
+      "names()",
+      "rownames()",
+      "name()",
+      "rowname()"
+    ],
+    "correct_answer": "names()"
+  },
+  {
+    "question": "Per poter visualizzare due grafici sovrapposti nella stessa area è necessario:",
+    "answers": [
+      "invocare la funzione plot()",
+      "invocare la funzione points()",
+      "invocare prima la funzione points() e poi la funzione plot()",
+      "invocare prima la funzione plot() e poi la funzione point()"
+    ],
+    "correct_answer": "invocare prima la funzione plot() e poi la funzione point()"
+  },
+  {
+    "question": "La funzione per tracciare la retta di tendenza in un grafico è:",
+    "answers": [
+      "line()",
+      "abline()",
+      "aline()",
+      "bline()"
+    ],
+    "correct_answer": "abline()"
+  },
+  {
+    "question": "L'istruzione par(mfrow = c(2,3)) permette di ottenere:",
+    "answers": [
+      "un'area dei grafici composta da 2 righe e 3 colonne",
+      "un'area dei grafici composta da 3 righe e 2 colonne",
+      "un'area con 6 grafici sovrapposti",
+      "un grafico con un punto di coordinate (2,3)"
+    ],
+    "correct_answer": "un'area dei grafici composta da 2 righe e 3 colonne"
+  },
+  {
+    "question": "1.L'ultima versione dell'acronimo SPSS è:",
+    "answers": [
+      "Statistical Package for the Social Sciences",
+      "Statistical Product for the Social Sciences",
+      "Statistical Product and Service Solutions",
+      "Statistical Package and Service Solutions"
+    ],
+    "correct_answer": "Statistical Product and Service Solutions"
+  },
+  {
+    "question": "Nella struttura a matrice di SPSS:",
+    "answers": [
+      "sulle righe si dispongono i casi e sulle colonne le variabili",
+      "sulle righe si dispongono le variabili e sulle colonne i casi",
+      "È possibile decidere se disporre casi e variabili su righe o colonne nella schermata \"Vista dati\"",
+      "È possibile decidere se disporre casi e variabili su righe o colonne nella schermata \"Vista Variabile\""
+    ],
+    "correct_answer": "sulle righe si dispongono i casi e sulle colonne le variabili"
+  },
+  {
+    "question": "Il formato del nome attribuito di default da SPSS alle variabili se non diversamente indicato è:",
+    "answers": [
+      "name0000n",
+      "var0000n",
+      "variable0000n",
+      "stat0000n"
+    ],
+    "correct_answer": "var0000n"
+  },
+  {
+    "question": "Per visualizzare una tabella di esempio di SAS tra i risultati è necessario:",
+    "answers": [
+      "un data step",
+      "un proc step",
+      "un proc step seguito da un data step",
+      "un data step seguito da un proc step"
+    ],
+    "correct_answer": "un data step seguito da un proc step"
+  },
+  {
+    "question": "In un archivio SAS:",
+    "answers": [
+      "le osservazioni sono in colonna e le variabili in riga",
+      "le osservazioni sono in riga e le variabili sono in colonna",
+      "le osservazioni possono essere indifferentemente in riga o in colonna",
+      "le variabili possono essere indifferentemente in riga o in colonna"
+    ],
+    "correct_answer": "le osservazioni sono in riga e le variabili sono in colonna"
+  },
+  {
+    "question": "I tipi di variabile nei dataset SAS possono essere:",
+    "answers": [
+      "numeriche e booleane",
+      "numeriche e carattere",
+      "numeriche, carattere e booleane",
+      "carattere e booleane"
+    ],
+    "correct_answer": "numeriche e carattere"
+  },
+  {
+    "question": "Le metriche vengono individuate e concordate nella fase di:",
+    "answers": [
+      "documentazione",
+      "presentazione",
+      "raccolta dei requisiti",
+      "elaborazione dei dati e flusso di lavoro"
+    ],
+    "correct_answer": "elaborazione dei dati e flusso di lavoro"
+  },
+  {
+    "question": "La variabile indipendente e la variabile dipendente sono, rispettivamente:",
+    "answers": [
+      "la variabile di risposta e la variabile target",
+      "la variabile esplicativa e la variabile target",
+      "la variabile risposta e la variabile esplicativa",
+      "la variabile target e la variabile esplicativa"
+    ],
+    "correct_answer": "la variabile esplicativa e la variabile target"
+  },
+  {
+    "question": "Il grafico a barre e l'istogramma si utilizzano per rappresentare:",
+    "answers": [
+      "variabili numeriche",
+      "variabili categoriali",
+      "variabili numeriche e categoriali, rispettivamente",
+      "variabili categoriali e numeriche, rispettivamente"
+    ],
+    "correct_answer": "variabili categoriali e numeriche, rispettivamente"
+  },
+  {
+    "question": "L'istruzione d.describe().show(1) dove d è un dataframe spark permette di:",
+    "answers": [
+      "ottenere tutte le elaborazioni statistiche calcolate sul dataframe",
+      "il conteggio dei valori mancanti nel dataframe",
+      "il conteggio dei valori non mancanti nel dataframe",
+      "la media dei valori mancanti nel dataframe"
+    ],
+    "correct_answer": "il conteggio dei valori non mancanti nel dataframe"
+  },
+  {
+    "question": "I suggerimenti individuati per ottenere la riproducibilità utilizzando Jupyter notebook in Python sono:",
+    "answers": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct_answer": "6"
+  },
+  {
+    "question": "L'unità di misura zettabytes equivale a:",
+    "answers": [
+      "1018 bytes",
+      "1021 bytes",
+      "1024 bytes",
+      "1027 bytes"
+    ],
+    "correct_answer": "1021 bytes"
+  },
+  {
+    "question": "4.EdgeRank è:",
+    "answers": [
+      "un social network per mettere in contatto più utenti",
+      "un algoritmo che determina la visibilità dei contenuti e la personalizzazione dell'esperienza",
+      "un algoritmo che suggerisce determinati contenuti all'utente in modo personalizzato",
+      "un social network che aggrega le notizie"
+    ],
+    "correct_answer": "un algoritmo che determina la visibilità dei contenuti e la personalizzazione dell'esperienza"
+  },
+  {
+    "question": "ML e AI:",
+    "answers": [
+      "si riferiscono sostanzialmente alla stessa cosa",
+      "ML è un sottinsieme di AI",
+      "AI è un sottoinsieme di ML",
+      "si riferiscono ad ambiti completamente diversi"
+    ],
+    "correct_answer": "ML è un sottinsieme di AI"
+  },
+  {
+    "question": "Il modello hub-and-spoke:",
+    "answers": [
+      "prevede l'utilizzo di data center tutti con carichi di lavoro simili",
+      "permette di verificare la fruizione di contenuti da parte di persone e non di bot",
+      "permette di misurare la fruizione di contenuti da parte di persone",
+      "prevede un data center principale e più data center periferici"
+    ],
+    "correct_answer": "prevede un data center principale e più data center periferici"
+  },
+  {
+    "question": "HPC e HTC sono acronimi rispettivamente di:",
+    "answers": [
+      "High Performance Computing e High Technology Computer",
+      "High Processing Computing e High Technology Computer",
+      "High Performance Computing e High Tested Computer",
+      "High Processing Computing e High Tested Computer"
+    ],
+    "correct_answer": "High Performance Computing e High Technology Computer"
+  },
+  {
+    "question": "I componenti principali di un ecosistema pervasivo di tecnologie abilitanti sono:",
+    "answers": [
+      "reti ad alta velocità e GIS",
+      "repository di grandi volumi e GIS",
+      "C. dati industriali e repository di grandi volumi",
+      "D. reti ad alta velocità e repository di grandi volumi"
+    ],
+    "correct_answer": "D. reti ad alta velocità e repository di grandi volumi"
+  },
+  {
+    "question": "I pilastri dell'industry 4.0 sono:",
+    "answers": [
+      "7",
+      "9",
+      "11",
+      "13"
+    ],
+    "correct_answer": "9"
+  },
+  {
+    "question": "Nelle scienze sociali ed economia globali, i dati sono principalmente di tipo:",
+    "answers": [
+      "comportamentale e ambientale",
+      "comportamentale e psicologico",
+      "ambientale e psicologico",
+      "psicologico e di trasporto"
+    ],
+    "correct_answer": "comportamentale e psicologico"
+  },
+  {
+    "question": "L'apprendimento per rinforzo è:",
+    "answers": [
+      "tipico del deep learning e prevede tre comportamenti in merito al rinforzo",
+      "tipico del deep learning e prevede due comportamenti in merito al rinforzo",
+      "tipico del machine learning e prevede tre comportamenti in merito al rinforzo",
+      "tipico del machine learning e prevede due comportamenti in merito al rinforzo"
+    ],
+    "correct_answer": "tipico del machine learning e prevede due comportamenti in merito al rinforzo"
+  },
+  {
+    "question": "Nell'esempio del caso del NCSU, i Big Data sono stati integrati con tecniche di:",
+    "answers": [
+      "intelligenza artificiale e, soprattutto, di deep learning",
+      "intelligenza artificiale e, soprattutto, di machine learning",
+      "data mining",
+      "data science"
+    ],
+    "correct_answer": "intelligenza artificiale e, soprattutto, di deep learning"
+  },
+  {
+    "question": "Il comando CREATE:",
+    "answers": [
+      "appartiene al linguaggio DML di SQL",
+      "appartiene al linguaggio DDL di SQL",
+      "permette di creare delle tuple",
+      "permette di creare delle tuple"
+    ],
+    "correct_answer": "appartiene al linguaggio DDL di SQL"
+  },
+  {
+    "question": "La vista creata con il comando CREATE:",
+    "answers": [
+      "È una tabella che fa parte della base di dati",
+      "È una tabella virtuale che fa parte della base di dati",
+      "È una tabella che non fa parte della base di dati",
+      "È una tabella virtuale che non fa parte della base di dati"
+    ],
+    "correct_answer": "È una tabella virtuale che non fa parte della base di dati"
+  },
+  {
+    "question": "Il comando INSERT permette di:",
+    "answers": [
+      "creare nuove tabelle",
+      "creare nuovi campi",
+      "creare nuovi indici",
+      "creare nuovi dati"
+    ],
+    "correct_answer": "creare nuovi dati"
+  },
+  {
+    "question": "Per eseguire il prodotto matriciale XY è necessario che:",
+    "answers": [
+      "Il numero di colonne di X sia uguale al numero di righe di Y",
+      "Il numero delle righe di X sia uguale al numero di colonne di Y",
+      "X abbia lo stesso numero di colonne di Y",
+      "X abbia lo stesso numero di righe di Y"
+    ],
+    "correct_answer": "Il numero di colonne di X sia uguale al numero di righe di Y"
+  },
+  {
+    "question": "in un grafo a stella non orientato con 7 nodi , il grado del nodo centrale è?:",
+    "answers": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_answer": "6"
+  },
+  {
+    "question": "SELECT customerName, Orders.* FROM Customers LEFT JOIN Orders ON Orders.CustomerID = Customers.CustomerID WHERE OrderDate = (SELECT MAX(OrderDate) FROM Orders)",
+    "answers": [
+      "Conoscere i nomi dei clienti e i relativi ordini con la data più recente",
+      "conoscere i nomi dei clienti che hanno il numero massimo di ordini",
+      "conoscere l’importo totale di tutti gli ordini effettuati",
+      "errata"
+    ],
+    "correct_answer": "Conoscere i nomi dei clienti e i relativi ordini con la data più recente"
+  },
+  {
+    "question": "La differenza principale tra le seguenti due istruzioni: d.get (k). d.pop (k) (dove d è un dizionario e k una chiave) è:",
+    "answers": [
+      "pop() estrae la tupla (chiave,valore),mentre get() solo il valore",
+      "get() estrae il valore corrispondente alla chiave, ma non modifica il dizionario, mentre pop() modifica il dizionario",
+      "pop() estrae il valore corrispondente alla chiave,ma non modifica il dizionario,mentre get()modifica il dizionario",
+      "get() estrae la tupla(chiave,valore),mentre pop()solo il valore"
+    ],
+    "correct_answer": "get() estrae il valore corrispondente alla chiave, ma non modifica il dizionario, mentre pop() modifica il dizionario"
+  },
+  {
+    "question": "df_merged = df1.merge(df2, on='c1', how='left') [dfmerged = pd.merge(df1,df2, on=’c1’, how=‘left’)]",
+    "answers": [
+      "un dataFrame Pandas con tutte le righe di df1 congiunte sul valore della colonna 'c1' con df2. Per le righe di df1 che  non si congiungono viene assegnata una riga con tutti i campi di df2 al valore N",
+      "un errore perché il terzo parametro deve essere how=join",
+      "errata",
+      "errore logico"
+    ],
+    "correct_answer": "un dataFrame Pandas con tutte le righe di df1 congiunte sul valore della colonna 'c1' con df2. Per le righe di df1 che  non si congiungono viene assegnata una riga con tutti i campi di df2 al valore N"
+  },
+  {
+    "question": "Il seguente frammento di codice : import numpy as np m_3x3=np.eye(3,k=-1) prin(m_3x3) produce come risultato:",
+    "answers": [
+      "[[1. 0. 0.]   [0. 1. 0.]   [0. 0. 1.]]",
+      "[[0. 0. 0.]   [1. 0. 0.]   [0. 1. 0.]]",
+      "Un errore",
+      "[[0. 1. 0.]   [0. 0. 1.]   [0. 0. 0.]]"
+    ],
+    "correct_answer": "[[0. 0. 0.]   [1. 0. 0.]   [0. 1. 0.]]"
+  },
+  {
+    "question": "Puo' essere funzione reshape o swapaxis oppure byrow di R:",
+    "answers": [
+      "essere convertiti in testo piatto per fare uaso delle espressioni regolari",
+      "essere convertiti in colonne e righe",
+      "essere convertiti in formato HTML",
+      "non puo' essere convertito"
+    ],
+    "correct_answer": "essere convertiti in colonne e righe"
+  },
+  {
+    "question": "Il seguente frammento di codice: l=['1','2','3','4','10'] x=max(l) print(x) produce a video:",
+    "answers": [
+      "4",
+      "Un errore di Traceback",
+      "10",
+      "Un errore di compilazione"
+    ],
+    "correct_answer": "4"
+  },
+  {
+    "question": "La migliore definizione per replace nel seguente comando str.replace(str,str) é:",
+    "answers": [
+      "una funzione void",
+      "una funzione value-returning",
+      "un metodo value-returning",
+      "una metodo void"
+    ],
+    "correct_answer": "un metodo value-returning"
+  },
+  {
+    "question": "Cosa è replace(s1,s2)?",
+    "answers": [
+      "un metodo value-returning",
+      "una funzione value-returning",
+      "una funzione void",
+      "una metodo void"
+    ],
+    "correct_answer": "un metodo value-returning"
+  },
+  {
+    "question": "Come faccio a rendere una variabile o un attributo privato (non accessibile all'esterno)?",
+    "answers": [
+      "basta premettere __ (doppio trattino basso) al nome della variabile /attributo",
+      "basta dare un nome col primo carattere in maiuscolo alla variabile/attributo",
+      "basta premettere _al nome della variabile /attributo",
+      "lettera maiuscola al nome della variabile"
+    ],
+    "correct_answer": "basta premettere __ (doppio trattino basso) al nome della variabile /attributo"
+  },
+  {
+    "question": "Che keyword si usa per esplicitare il tipo di dato?",
+    "answers": [
+      "astype",
+      "dtype",
+      "type",
+      "ltype"
+    ],
+    "correct_answer": "dtype"
+  },
+  {
+    "question": "(?) Domanda sul polimorfismo(override) (?)",
+    "answers": [
+      "differisce dal metodo/funzione della classe base per il tipo di PARAMETRI",
+      "differisce dal metodo/funzione della classe base per il tipo di VALORE RESTITUITO",
+      "differisce dal metodo/funzione della classe base per il codice del metodo/funzione",
+      "errata"
+    ],
+    "correct_answer": "differisce dal metodo/funzione della classe base per il codice del metodo/funzione"
+  },
+  {
+    "question": "Il risultato a video del seguente codice: g=nx.complete_graph(['A','B','C','D','E','F']) print(g.order()) print(g.size()) è:",
+    "answers": [
+      "15 6",
+      "6 30",
+      "6 15",
+      "6 25"
+    ],
+    "correct_answer": "6 15"
+  },
+  {
+    "question": "La forma equivalente della linea di codice: print(\"Cuori\\tFiori\\tQuadri\\tPicche\\n\") é:",
+    "answers": [
+      "print\"Cuori\",\"Fiori\",\"Quadri\", \"Picche\", sep='\\t', end='n'",
+      "print(\"Cuori\",\"Fiori\",\"Quadri\", \"Picche\", sep='\\t', end='\\n')",
+      "print(\"Cuori\",\"Fiori\",\"Quadri\", \"Picche\", end='n')",
+      "print[\"Cuori\",\"Fiori\",\"Quadri\", \"Picche\", sep='t', end='\\n']"
+    ],
+    "correct_answer": "print(\"Cuori\",\"Fiori\",\"Quadri\", \"Picche\", sep='\\t', end='\\n')"
+  },
+  {
+    "question": "SQL é l’acronimo di :",
+    "answers": [
+      "Structured Query Language",
+      "System Query Language",
+      "Single Query Language",
+      "Single Query Language"
+    ],
+    "correct_answer": "Structured Query Language"
+  },
+  {
+    "question": "Domanda (?)",
+    "answers": [
+      "Il numero degli attributi coinvolti",
+      "Il numero delle entità coinvolte",
+      "Il numero di chiavi coinvolte",
+      "Il numero delle istanze coinvolte"
+    ],
+    "correct_answer": "Il numero delle entità coinvolte"
+  },
+  {
+    "question": "La funzione findall() del modulo re:",
+    "answers": [
+      "restituisce una lista di stringhe",
+      "restituisce un dizionario di stringhe",
+      "restituisce sempre una lista vuota",
+      "estituisce sempre una lista di stringhe"
+    ],
+    "correct_answer": "restituisce una lista di stringhe"
+  },
+  {
+    "question": "Il risultato dell'istruzione np.in1d(v2,v) è:",
+    "answers": [
+      "un array",
+      "un array booleano",
+      "un valore booleano",
+      "un array dello stesso tipo di v e v2"
+    ],
+    "correct_answer": "un array booleano"
+  },
+  {
+    "question": "Un multigrafo è un grafo:",
+    "answers": [
+      "semplice",
+      "con archi con estremi coincidenti",
+      "con archi paralleli",
+      "orientato"
+    ],
+    "correct_answer": "con archi paralleli"
+  },
+  {
+    "question": "Nel widget Checkbutton, il parametro variable è:",
+    "answers": [
+      "l'argomento che imposta l'etichetta del widget",
+      "l'argomento che collega variabile al testo dell'etichetta del widget",
+      "l'argomento di tipo StringVar collegato al widget",
+      "l'argomento di tipo BooleanVar a cui lo stato booleano è collegato"
+    ],
+    "correct_answer": "l'argomento di tipo BooleanVar a cui lo stato booleano è collegato"
+  },
+  {
+    "question": "Solitamente, i dataframe hanno il numero di righe e di colonne pari a:",
+    "answers": [
+      "numero di variabili e numero di osservazioni, rispettivamente",
+      "numero di osservazioni e numero di variabili, rispettivamente",
+      "numero di vettori e numero di osservazioni, rispettivamente",
+      "entrambi al numero di variabili"
+    ],
+    "correct_answer": "numero di osservazioni e numero di variabili, rispettivamente"
+  },
+  {
+    "question": "I fenomeni di viralizzazione dei contenuti informativi sono dovuti al fatto che:",
+    "answers": [
+      "sui social network gli utenti diventano parte attiva nella diffusione di informazioni, opinioni e punti di vista",
+      "i social network presentano all'utente un ordine generalmente personalizzato delle notizie disponibili",
+      "i social network sono governati da algoritmi in grado di filtrare costantemente le notizie disponibili",
+      "i social network consentono l'ingresso nell'ecosistema informativo di fonti estranee al classico circuito dell'informazione"
+    ],
+    "correct_answer": "sui social network gli utenti diventano parte attiva nella diffusione di informazioni, opinioni e punti di vista"
+  },
+  {
+    "question": "Per connettersi a MySQL si utilizza il comando:",
+    "answers": [
+      "\\conn",
+      "connect",
+      "\\connect",
+      "conn"
+    ],
+    "correct_answer": "\\connect"
+  },
+  {
+    "question": "Quante operazioni si possono mettere in pratica per gestire i dati mancanti:",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": "2"
+  },
+  {
+    "question": "Le prestazioni per HPC si misurano tipicamente in:",
+    "answers": [
+      "PetaHz",
+      "PetaB",
+      "PetaBPS",
+      "PetaFLOPS"
+    ],
+    "correct_answer": "PetaFLOPS"
+  },
+  {
+    "question": "Per indicare i due DataFrame per la congiunzione:",
+    "answers": [
+      "solo un DataFrame viene passato come argomento al metodo per il join",
+      "entrambi i DataFrame vengono passati al metodo per il join",
+      "entrambi i DataFrame vengono passati al metodo per il join con il parametro on",
+      "solo un DataFrame viene passato al metodo per il join con il parametro on"
+    ],
+    "correct_answer": "entrambi i DataFrame vengono passati al metodo per il join"
+  },
+  {
+    "question": "L'except senza l'indicazione del tipo di eccezione:",
+    "answers": [
+      "si riporta come ultima",
+      "si riporta come prima",
+      "serve a gestire un determinato tipo di eccezioni",
+      "serve ad evitare eccezioni"
+    ],
+    "correct_answer": "si riporta come ultima"
+  },
+  {
+    "question": "Explode è relativo a:",
+    "answers": [
+      "istogrammi",
+      "grafici a torta",
+      "grafici a barre",
+      "grafici lineari"
+    ],
+    "correct_answer": "grafici a torta"
+  },
+  {
+    "question": "Il campo Equipment fault è un widget:",
+    "answers": [
+      "Entry",
+      "Combobox",
+      "Spinbox",
+      "Checkbutton"
+    ],
+    "correct_answer": "Checkbutton"
+  },
+  {
+    "question": "Lo specificatore di formato \"10,.3e\" indica che il numero da stampare:",
+    "answers": [
+      "occuperà 10 caratteri, non avrà il separatore delle miglia, avrà 3 cifre decimali e sarà espresso in notazione scientifica",
+      "occuperà 10 caratteri, avrà il separatore delle miglia, avrà 3 cifre decimali e sarà espresso in notazione scientifica",
+      "occuperà 10 caratteri, avrà il separatore delle miglia, avrà 3 cifre decimali e sarà espresso in percentuale",
+      "avrà il separatore delle miglia, avrà 3 cifre decimali e sarà espresso in notazione scientifica"
+    ],
+    "correct_answer": "occuperà 10 caratteri, avrà il separatore delle miglia, avrà 3 cifre decimali e sarà espresso in notazione scientifica"
+  },
+  {
+    "question": "Le istruzioni l=set() l.discard(1):",
+    "answers": [
+      "sollevano l'eccezione KeyError",
+      "sollevano l'eccezione IndexError",
+      "sollevano l'eccezione Error",
+      "non sollevano nessuna eccezione"
+    ],
+    "correct_answer": "non sollevano nessuna eccezione"
+  },
+  {
+    "question": "Per il raggruppamento delle osservazioni per una particolare categoria si usa la parola chiave:",
+    "answers": [
+      "var",
+      "data",
+      "where",
+      "class"
+    ],
+    "correct_answer": "class"
+  },
+  {
+    "question": "L'eccezione ValueError viene sollevata quando:",
+    "answers": [
+      "si effettua un casting non consentito",
+      "il file non esiste",
+      "si divide per zero",
+      "il file non esiste in fase di lettura"
+    ],
+    "correct_answer": "si effettua un casting non consentito"
+  },
+  {
+    "question": "Il codice import re r = re.sub(r'\".*?\"',\"*\",'\"1 2 3\" \"a b c d\"') print® visualizza a schermo:",
+    "answers": [
+      "*",
+      "\"\"",
+      "**",
+      "\"\"\"\""
+    ],
+    "correct_answer": "**"
+  },
+  {
+    "question": "Il/i motivo/i alla base della difficoltà di gestione dell'accumulazione dei dati è/sono:",
+    "answers": [
+      "il volume dei dati",
+      "la velocità di accumulazione dei dati",
+      "il volume e la velocità di accumulazione dei dati",
+      "il volume e la varietà dei dati"
+    ],
+    "correct_answer": "il volume e la velocità di accumulazione dei dati"
+  },
+  {
+    "question": "Nella modalità di installazione e funzionamento pseudo-distributed:",
+    "answers": [
+      "il funzionamento sarà suddiviso in più processi Java e si avrà un single-node cluster",
+      "il funzionamento sarà racchiuso in un unico processo Java e si avrà un single-node cluster",
+      "il funzionamento sarà suddiviso in più processi Java e si avranno più nodi",
+      "il funzionamento sarà racchiuso in un unico processo Java e si avranno più nodi"
+    ],
+    "correct_answer": "il funzionamento sarà suddiviso in più processi Java e si avrà un single-node cluster"
+  },
+  {
+    "question": "Nel widget Spinbox, il parametro textvariable è:",
+    "answers": [
+      "l'argomento che imposta widget parent",
+      "l'argomento di tipo StringVar collegato al widget",
+      "l'argomento che determina carattere visualizzato nell'entry",
+      "l'argomento che collega variabile al testo dell'etichetta del widget"
+    ],
+    "correct_answer": "l'argomento di tipo StringVar collegato al widget"
+  },
+  {
+    "question": "Il codice import re r = re.findall(r\"[0-9a-z]+\",\"1 2 3 a b c d\") print(len(r)) visualizza a schermo:",
+    "answers": [
+      "una lista di 6 elementi",
+      "6",
+      "una lista di 7 elementi",
+      "7"
+    ],
+    "correct_answer": "7"
+  },
+  {
+    "question": "L'espressione [-10*x+2 for x in range(-100,100) permette di generare:",
+    "answers": [
+      "una parabola",
+      "una retta orizzontale",
+      "una retta crescente",
+      "una retta decrescente"
+    ],
+    "correct_answer": "una retta decrescente"
+  },
+  {
+    "question": "Il risultato di una trasformazione e di un'azione è:",
+    "answers": [
+      "sempre un altro RDD",
+      "un RDD e un risultato specifico, rispettivamente",
+      "un risultato specifico e un RDD, rispettivamente",
+      "sempre un risultato specifico"
+    ],
+    "correct_answer": "un RDD e un risultato specifico, rispettivamente"
+  },
+  {
+    "question": "Il metodo rstrip serve:",
+    "answers": [
+      "ad aggiungere un carattere di newline alla riga",
+      "ad eliminare il carattere di newline al termine di una stringa",
+      "ad eliminare specifici caratteri al termine della stringa",
+      "ad aggiungere specifici caratteri al termine della stringa"
+    ],
+    "correct_answer": "ad eliminare specifici caratteri al termine della stringa"
+  },
+  {
+    "question": "Il metodo findall(a) permette di:",
+    "answers": [
+      "estrarre il primo tag indicato da a",
+      "estrarre tutti i tag indicati da a",
+      "estrarre il contenuto tra il tag di apertura e di chiusura indicato da a",
+      "estrarre il primo paragrafo di a"
+    ],
+    "correct_answer": "estrarre tutti i tag indicati da a"
+  },
+  {
+    "question": "Untitled si riferisce:",
+    "answers": [
+      "alla finestra dello script mode",
+      "alla finestra dell'interactive mode",
+      "alla finestra sia dell'interactive mode sia a quella dello script mode",
+      "alla finestra del debugger"
+    ],
+    "correct_answer": "alla finestra dello script mode"
+  },
+  {
+    "question": "Math:",
+    "answers": [
+      "è una funzione della standard library",
+      "necessita dell'istruzione \"def math\" nel programma",
+      "è un modulo della standard library",
+      "è direttamente utilizzabile in Python senza necessità di importazione"
+    ],
+    "correct_answer": "è un modulo della standard library"
+  },
+  {
+    "question": "Gli oggetti creati negli script sono visualizzati nel quadrante:",
+    "answers": [
+      "area di script",
+      "console",
+      "workspace",
+      "quadrante in basso a destra"
+    ],
+    "correct_answer": "workspace"
+  },
+  {
+    "question": "I fenomeni di viralizzazione dei contenuti informativi sono dovuti al fatto che:",
+    "answers": [
+      "sui social network gli utenti diventano parte attiva nella diffusione di informazioni, opinioni e punti di vista",
+      "i social network presentano all'utente un ordine generalmente personalizzato delle notizie disponibili",
+      "i social network sono governati da algoritmi in grado di filtrare costantemente le notizie disponibili",
+      "i social network consentono l'ingresso nell'ecosistema informativo di fonti estranee al classico circuito dell'informazione"
+    ],
+    "correct_answer": "sui social network gli utenti diventano parte attiva nella diffusione di informazioni, opinioni e punti di vista"
+  },
+  {
+    "question": "Un'eccezione è:",
+    "answers": [
+      "un errore a tempo di compilazione rilevabile con il traceback",
+      "un errore a tempo di esecuzione rilevabile con il traceback",
+      "un errore a tempo di compilazione non rilevabile con il traceback",
+      "un errore a tempo di esecuzione non rilevabile con il traceback"
+    ],
+    "correct_answer": "un errore a tempo di esecuzione rilevabile con il traceback"
+  },
+  {
+    "question": "L'operatore index:",
+    "answers": [
+      "restituisce la posizione di una riga data la sua etichetta",
+      "restituisce l'etichetta di una riga in base alla sua posizione",
+      "restituisce la riga dato l'elemento",
+      "restituisce la posizione dato l'elemento"
+    ],
+    "correct_answer": "restituisce l'etichetta di una riga in base alla sua posizione"
+  },
+  {
+    "question": "I componenti principali di un cluster Spark sono:",
+    "answers": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_answer": "3"
+  },
+  {
+    "question": "Gli argomenti da passare allo SparkContext sono:",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": "2"
+  },
+  {
+    "question": "Il risultato a schermo del  seguente codicev=np.array(range(-2,2))v2=v[v&lt;=0]print(len(v2))è:",
+    "answers": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct_answer": "3"
+  },
+  {
+    "question": "Per stabilire il font del testo di una Label è necessario utilizzare:",
+    "answers": [
+      "una tupla di due elementi",
+      "due elementi",
+      "una tupla di tre elementi",
+      "tre elementi"
+    ],
+    "correct_answer": "una tupla di due elementi"
+  },
+  {
+    "question": "Una query SQL è suddivisa in:",
+    "answers": [
+      "costrutti, clausole e interrogazioni",
+      "comandi, interrogazioni e clausole",
+      "comandi, costrutti e interrogazioni",
+      "comandi, costrutti e clausole"
+    ],
+    "correct_answer": "comandi, costrutti e clausole"
+  },
+  {
+    "question": "Il quadrante che funge da schermo e comando rapido è:",
+    "answers": [
+      "area di script",
+      "console",
+      "workspace",
+      "quadrante in basso a destra"
+    ],
+    "correct_answer": "console"
+  },
+  {
+    "question": "Il codice def f(): a = 0 c = [] s = \"ciao\" for b in s: c.append(a) a+=2 return c restituisce:",
+    "answers": [
+      "un dizionario di 4 elementi",
+      "una lista di 5 elementi",
+      "una stringa di 4 elementi",
+      "un lista di 4 elementi"
+    ],
+    "correct_answer": "un lista di 4 elementi"
+  },
+  {
+    "question": "Gli oggetti creati negli script sono visualizzati nel quadrante:",
+    "answers": [
+      "area di script",
+      "console",
+      "workspace",
+      "quadrante in basso a destra"
+    ],
+    "correct_answer": "workspace"
+  },
+  {
+    "question": "In un LabelInput per un widget Text, il parametro input_args è:",
+    "answers": [
+      "una lista",
+      "un array",
+      "un dizionario",
+      "un DataFrame"
+    ],
+    "correct_answer": "un dizionario"
+  },
+  {
+    "question": "Per definire e riconoscere un problema è possibile individuare:",
+    "answers": [
+      "3 fasi",
+      "4 fasi",
+      "5 fasi",
+      "6 fasi"
+    ],
+    "correct_answer": "5 fasi"
+  },
+  {
+    "question": "Il processo di data-mining è costitutito da:",
+    "answers": [
+      "un'unica componente",
+      "2 componenti",
+      "3 componenti",
+      "4 componenti"
+    ],
+    "correct_answer": "2 componenti"
+  }
+]
