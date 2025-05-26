@@ -331,8 +331,10 @@ async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, 
         "index": 0,
         "score": 0,
         "total": len(selected),
-        "is_review": True
+        "is_review": True,
+        "subject": subject 
     }
+
 
     random.shuffle(user_states[user_id]["order"])
     await send_next_question(user_id, context)
@@ -344,6 +346,10 @@ async def handle_answer_callback(user_id: int, answer_index: int, context: Conte
     if not state:
         await context.bot.send_message(chat_id=user_id, text="Sessione scaduta. Riavvia il quiz con /start.")
         return
+
+    subject = state.get("subject")
+    if not subject:
+        subject = ""
 
     q_index = state["order"][state["index"]]
     question_data = state["quiz"][q_index]
