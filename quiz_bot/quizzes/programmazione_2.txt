@@ -1,0 +1,2092 @@
+DOMANDE:
+
+1. Il blocco di codice: a = 6, b = 3, media = a/b:
+A. un meccanismo dell'OOP che consente la riscrittura di un metodo ereditato dalla classe base per ottenere un  comportamento diverso negli oggetti della classe derivata
+B.  Un errore logico
+C. Un errore di sintassi
+D. non presenta errori
+
+2. Se in un grafo sono presenti archi paralleli, è possibile dedurre che:
+A. Il grafo è diretto
+B. ll grafo è bipartito
+C.  Il grafo è completo
+D.  Il grafo è un multigrafo
+
+3. In uno script per estrarre i dati da un database la sequenza corretta delle operazioni è:
+A. Creare una variabile di connessione, associare un cursore alla connessione, eseguire execute() del cursore passando la questi come parametro e infine fetchall() del cursore per ottenere le tuple
+B. Creare la connessione, eseguire fetchall(), associare un cursore, eseguire execute()
+C.  Creare il cursore, eseguire execute(), creare la connessione, fetchall()
+D. Associare il cursore, creare la connessione, eseguire fetchall(), execute()
+
+4. La forma equivalente dell'istruzionewhiteside$Temp%&amp;gt;%length()è:
+A. length(Temp$whiteside)
+B. whiteside.Temp.length()
+C. length(whiteside$Temp)
+D. Temp(whiteside).length()
+
+5. Dopo l’esecuzione del seguente frammento di script in R v = c(7,5,8,9,6,5,9,5) s = v&gt;5 s ẻ:
+A. Un vettore di 5 valori logial   
+B. Un vettore di 8 valori logical array  
+C. Una variabile a valore booleano   
+D. Un vettore di 5 valori numeric    
+
+6. il risultato del seguente frammento di codice in R: p=matrix (1,2,3,4,5,6) n row=3, byrow=TRUE) p=rowSums(p) e:
+A. il vettore: 3 7 11
+B. la matrice: 3 7 11
+C. il fattore: 3 7 11
+D. dizionario
+
+7. Il seguente frammento di codice S= “Asso” Print(s[s.find(‘z’)+1]) Visualizza a schermo:
+A. a
+B. tutti i campi di s
+C. IL primo carattere ‘A’  
+D. asso
+
+8. L'exception handler:
+A. solleva le eccezioni 
+B.  È successivo al try 
+C.  È successivo al finally 
+D. .È successivo all'except
+
+9. Nel caso in cui l’istruzione: f=open(file_name,’w) sollevi un’eccezione, è maggiormente indicato utilizzare il seguente codice:
+A. except: 
+B. except FileNotFoundError  
+C. except ValueError: 
+D. in
+
+10. Data la funzione ok(), nella chiamata al costruttore di un pulsante Button per impostare ok() come funzione di callback è necessario riportare?
+A. la funzione del widget parent da invocare quando il pulsante viene cliccato 
+B. la funzione Python (detta funzione di Callback) da invocare quando il pulsante viene cliccato command = ok   
+C. ok
+D. comman
+
+11. Dato il seguente frammento di codice: def main(): a= -1 la funzione corretta da utilizzare per cambiare il segno di ‘a’ nel ‘main é:
+A. def cambia_segno():      a = -a   
+B. def cambia_segno(a):    a = -a   
+C. def cambia_segno(x): return -x  
+D. def cambia_segno(): global a   a=-a   
+
+12. . L'istruzione a = "".join(cons + voc + ['x']*2)[0:3] permette di:
+A.  calcolare la porzione del codice fiscale relativa al cognome 
+B. calcolare la porzione del codice fiscale relativa all'anno di nascita 
+C. calcolare la porzione del codice fiscale relativa alla città di nascita 
+D. calcolare la porzione del codice fiscale relativa al sesso 
+
+13. Nelle liste la ricerca è:
+A. sublineare
+B. lineare
+C. logaritmica
+D. esponenziale
+
+14. Le espressioni regolari sono:
+A. modelli descritti con una sintassi formale per cercare corrispondenze in un testo 
+B. istruzioni con una sintassi formale per cercare corrispondenze in un testo 
+C. stringhe con una sintassi formale per cercare corrispondenze in un testo 
+D. letterali di testo con una sintassi formale per cercare corrispondenze in un testo 
+
+15. Con fonti algoritmiche di informazione si intendono:
+A. le fonti su cui sono basati gli algoritmi
+B. i motori di ricerca
+C. gli algoritmi dei motori di ricerca e dei siti web
+D. i motori di ricerca e i social network
+
+16. I domini principali in ambito Big Data che sono significativi anche per i progetti europei di ricerca sono:
+A. 7
+B. 10
+C. 11
+D. 12
+
+17. Gli algoritmi di ricerca e gli algoritmi di pianificazione:
+A. sono la stessa cosa
+B. differiscono tra loro perché i primi cercano gli stati intermedi e la soluzione, i secondi solo la  soluzione 
+C. differiscono tra loro perché i primi cercano la soluzione, i secondi anche gli stati intermedi
+D. entrambi cercano gli stati intermedi nella ricerca della soluzione
+
+18. La definizione migliore di quantificatore ingordo /goloso come “*” e “+” è:
+A. cerca solo la prima corrispondenza possibile per il pattern dato    
+B. cerca la corrispondenza più lunga possibile per il pattern dato  
+C. cerca il massimo numero possibile di corrispondenaze per il pattern dato   
+D. cerca la corrispondenza più corta possibile per il pattern dato    
+
+19. import numpy as np a1=[1,1,1]*2 a2=np.ones(6) print(a1) print(a2)
+A. il primo l'array [1 0 0 0 0 0] il secondo l'array [1. 0. 0. 0. 0. 0.]  
+B. il primo l'array [1 1 1 1 1 1] il secondo l'array [0 0 0 0 0 0]  
+C. il primo l'array [1 1 1 1 1 1] il secondo l'array [1. 1. 1. 1. 1. 1.]  
+D. il primo l'array [0 0 0 0 0 0] il secondo l'array [1. 1. 1. 1. 1. 1.]  
+
+20. Per poter leggere e scrivere su file binario è necessario:
+A. deserializzare e serializzare gli oggetti, rispettivamente 
+B.  serializzare e deserializzare gli oggetti, rispettivamente
+C.  deserializzare gli oggetti
+D.  serializzare gli oggetti
+
+21. Nel codice import pickle ifile = open('a.dat','rb') b = pickle.load(inputfile) b è:
+A. una lista
+B. un oggetto
+C. un dizionario
+D. una tupla
+
+22. Nel seguente frammento di script PySpark: from pyspark import SparkContext sc=SparkContext(‘local’,’Myspark’) i due parametri specificano:
+A. Il primo parametro il nome della struttura dati Python in cui verrá trasformato l’RDD;il secondo parametro di creare  un RDD di nome ‘MySpark    
+B. Il primo parametro di creare un RDD locale allo script; Il secondo parametro di creare una struttura dati Python in  cui verrá trasformato l’RDD    
+C. Il primo parametro che deve essere usato il modulo che contiene le funzoni per l’internazionalizzazione dei  programmi; Il secondo parametro che il nome dell’applicazine é MySpark   
+D. il primo parametro il valore del cluster Spark;   il secondo parametro il nome dell'applicazione Spark 
+
+23. una stringa grezza in Python è
+A. una stringa in cui non sono interpretati i caratteri '/' (backspask)
+B. una stringa
+C. una lista
+D. false
+
+24. Il diagramma E/R prevede che per ciascuna entità ci sia:
+A. un rombo
+B. un cerchio
+C. un rettangolo
+D. una linea
+
+25. Tutte le tuple della stessa entità hanno:
+A. stesso numero e nome, ma diverso tipo e valori di attributi 
+B. stesso numero, ma diverso tipo, nome e valori di attributi 
+C. stesso nome, ma diverso tipo, numero e valori di attributi
+D. stesso numero, nome e tipo, ma diversi valori di attributi 
+
+26. 7. L'operatore compose() permette di ottenere:
+A. il prodotto cartesiano di due grafi 
+B.  il prodotto cartesiano di due grafi disgiunti
+C. l'unione di due grafi 
+D.  l'unione di due grafi disgiunti
+
+27. Per assegnare un peso di 3,5 all'arco tra il nodo 1 e il nodo 2 in un grafo pesato è necessario utilizzare la/le seguente/i istruzione/i:
+A. g.add_edge(1,2, 3.5) 
+B. g.add_edge(1,2, weight = 3.5)
+C.  g.add_weight_edge(1,2, 3.5) 
+D.  g.add_edge(1,2, 3,5) 
+
+28. La funzione table() permette di:
+A.  visualizzare la tabella relativa ad un fattore
+B.  visualizzare la tabella relativa ad un vettore 
+C. visualizzare la tabella relativa ad una matrice
+D.  visualizzare la tabella di frequenza di un vettore 
+
+29. La matrice ottenuta dalla seguente istruzione matrix(c(1,2,3,4,5,6)), nrow = 2, byrow = TRUE):
+A. ha un numero di colonne pari a 4
+B. ha un numero di colonne pari a 2 
+C. ha un numero di colonne pari a 3 
+D. ha un numero di colonne pari a 1
+
+30. considerando la tabella Customers che contiene le informazioni relative ai clienti di un'azienda, il comando che permette di estrarre tutti i clienti con PostalCode formato da due parti separate dal carattere '-' è:
+A. SELECT * FROM Customers WHERE PostalCode LIKE '%-%';  
+B. SELECT * FROM Customers
+C. SELECT * FROM Customers WHERE PostalCode
+D. SELECT * FROM Customers WHERE PostalCode LIKE   
+
+31. Considerando la tabella Customers che contiene le informazioni relative ai clienti di un'azienda, il comando: SELECT COUNT(*), CustomerNdme FROM Customers;
+A. Permette di conoscere il numero di clienti
+B. Permette di conoscere il numero di clienti,ma é errata
+C. Permette di conoscere il numero di clienti,ma é logicamente errata la richiesta del nome del cliente  
+D. Permette di conoscere il numero di clienti,ma errore fisico
+
+32. La riga di codice: s1&lt;=s2 con s1 e s2 due insiemi:
+A. restituisce True se s1 contiene almeno un elemento minore/uguale agli elementi di s2  
+B. restituisce True se il numero degli elementi di s1 sono minori/uguali  del numero degli elementi di s2  
+C. restituisce false
+D. restituisce True se tutti gli elementi di s1 sono contenuti in s2  
+
+33. Il Navigator di Anaconda è:
+A.  un pannello in cui esiste un comando per ogni strumento invocabile
+B. contiene solo l'IDLE di Python 
+C. un'interfaccia grafica di programmazione in Python 
+D. un'interfaccia testuale di programmazione in Python 
+
+34. Anaconda è?
+A. una piattaforma di linguaggi di programmazione in Python e R per l'informatica scientifica  
+B. scripting
+C. linguaggio di programmazione
+D. motore di ricerca
+
+35. Cosa serve per trovare il massimo in una lista bidimensionale?
+A. utilizzare un ciclo, ma due indici  
+B. utilizzare due cicli nidificati e due indici  
+C. utilizzare due cicli nidificati, ma un indice
+D. dizionario
+
+36. Sintassi per indicare che B è sottoclasse di A
+A. class B(A) 
+B. classe B(A) 
+C. class B(class A)   
+D. class A(B)   
+
+37. La forma equivalente di : import numpy.random as rnd seq=rnd.normal(0.0,1.0,100) é:
+A. import numpy.random as ind seq-rnd.randn(100)    
+B. import numpy.random as rnd seq-rnd.uniform(0.0,1.0,100)    
+C. import numpy.random as rnd seq=rnd.randn(100)   
+D. import numpy.random as rnd seq=rnd.randint(0.0,1.0,100) 
+
+38. Creare un array di 10 valori numerici tra 0 e 1, tutti ugualmente spaziati array = np.linspace(0, 1, 10)
+A. Un array contenente 10 valori numeri tra 0 e 1 tutti ugualmente equiprobabili
+B. Un valore casuale tra 10 valori equamente distribuiti tra 0 e 1   
+C. un array di valori
+D. Un valore casuale tra 10 valori equamente distribuiti
+
+39. L’associazione tra nome fisico e nome logico di un file avviene
+A. mai
+B. all'avvio
+C. all'apertura del file
+D. alla chiusura del file
+
+40. Per l’apertura di un file si utilizza la funzione open() il cui formato generale è
+A. oggetto_file  = open (nomefile, modo)  
+B. oggetto_file  = open
+C. oggetto_file  = open (modo)  
+D. oggetto
+
+41. select * from clients where city=’Berlino’ AND city=’London’
+A. estrarre tutti i clienti
+B. estrarre tutti i clienti di 'Berlino' o di 'Londra'   
+C. nessun cliente   
+D. estrarre tutti i campi
+
+42. Che modulo si usa per lavorare con file binari? Il comando da utilizzare per la gestione dei file binari é:
+A. import random   
+B. import re   
+C. import pymysql   
+D. import pickle   
+
+43. Il codice import re s= “Ciao mondo” print(re.search(“n*ondo”,s).group()) produce a schermo: 1
+A. ondo   
+B. Un messaggio di errore di Traceback   
+C. Un messaggio di errore di compilazione   
+D. un errore
+
+44. Dato il DataFrame df con : colums=[‘Nome’,’Regione’,Popolazione’],la seguente linea di codice : df.groupby(‘Regione’).groups restituisce:
+A. un datafram
+B. un dizionario
+C. una series
+D. un array
+
+45. La funzione findall() del modulo re:
+A. restituisce un oggetto di    
+B. restituisce la lista delle sottostringhe che fanno match col modello 
+C. restituisce un oggetto di   
+D. restituisce un oggetto di    
+
+46. Per attivare un metodo di un oggetto obj si usa la sintassi:
+A. obj(metodo)   
+B. obj->metodo   
+C. obj:metodo   
+D. obj.metodo()  
+
+47. La forma equivalente del seguente frammento di codice: for i in range(5) if i%2==1: print
+A. i=0  while i < 5:  if i%2==1:  print(i)     
+B. i=1  while i < 5:  if i%2==1:  print(i)  i+=1  
+C. i=0  while i < 6:  if i%2==1:  print(i)  i+=1          
+D. i=0 while i < 5:  if i%2==1:  print(i)  i+=1        
+
+48. Il mapping delle associazioni dallo schema concettuale allo schema logico si realizza attraverso:
+A. la definizione delle chiavi esterne   
+B. la definizione dei nomi delle colonne di una tabella   
+C. la definizione dei nomi delle tabelle   
+D. la definizione delle chiavi primarie   
+
+49. Il seguente frammento di codice x = input("Un numero: ") print(type(x)) print(x+1) in esecuzione dà luogo a:
+A. un errore solo se x non é un valore con la virgola   
+B. un errore solo se x non é un numero intero   
+C. un errore solo se x é una stringa   
+D. sempre un errore                  
+
+50. La forma corretta per generare una matrice quadrata con tutti i valori sulla diagonale principale uguali a 5 é:
+A. import numpy as np np.eye(N,dtype=np.int64)*5   
+B. import numpy as np np.full((N,N),5)   
+C. import numpy as np np.ones(N)*5   
+D. import numpy as np np.ones([N,N],dtype=np.int64)*5   
+
+51. La funzione Def somma(a,b):print(a+b) é :
+A. senza parametri   
+B. errata   
+C. void   
+D. value-returning   
+
+52. La funzione usata per creare un DataFrame da file di testo é:
+A. readFromTextFile()   
+B. read.csv()   
+C. createDataFrame()   
+D. fromTextFile()   
+
+53. La funzione group() é un metodo di oggetto di :
+A.    
+B.    
+C.    
+D.    
+
+54. La misura che quantifica l’importanza di un nodo N nel flusso informativo di un grafo é detta:
+A. centralità locale di N   
+B. centralità globale dei flussi di N  
+C. centralità globale di N   
+D. grado di N   
+
+55. Dopo l’esecuzione del seguente frammento di codice: import numpy as np v=np.arange(1,10) print(np.insert(v,4,-1)) print(np.append(v,-1)) l’array v conterrá:
+A. 10 elementi   
+B. 9 elementi  
+C. 11 elementi
+D. 12 elementi
+
+56. A partire dall’array m cosí definito: import numpy as np m = np.arange(1,25,2) attraverso i metodi di ridefinizione della forma, è possibile ottenere un numero di matrici a due dimensioni pari a:
+A. 2
+B. 3
+C. 4
+D. 1
+
+57. Quando si dice che nei Big Data sono i dati stessi a "parlare", vuol dire che:
+A. prima si stabilisce un modello plausibile di un fenomeno e poi nei dati va ricercato un legame tra le variabili   
+B. nei dati va ricercato un legame tra le variabili e poi si stabilisce una interpretazione plausibile del fenomeno   
+C. prima si stabilisce un modello plausibile di un fenomeno e poi nei dati va ricercato un legame
+D. nei dati va ricercato un legame tra le variabili
+
+58. Nella programmazione orientata agli oggetti:
+A.  si individuano solo gli attributi di un oggetto 
+B. si individuano le entità in un determinato contesto denominate oggetti
+C.  si individuano solo le caratteristiche di un oggetto 
+D.  si individuano solo i metodi di un oggetto
+
+59. La comparsa del prompt nella shell:
+A.  che l'istruzione precedente non è valida
+B. che ha elaborato il risultato
+C. che sta elaborando il risultato
+D.  indica che la shell è pronta per la prossima istruzione 
+
+60. Se ho necessità di utilizzare le virgolette in una stringa, in Python contrassegno la sequenza di caratteri con:
+A.  triple virgolette """ 
+B.  apici ' 
+C.  virgolette " 
+D. parentesi angolari 
+
+61. L'istruzione 3a_ = 10.5:
+A.  È corretta
+B.  contiene due errori 
+C.  contiene un errore 
+D.  contiene tre errori 
+
+62. In Python è possibile:
+A.  denominare le variabili con i nomi delle keyword, ma con delle limitazioni
+B. utilizzare cifre numeriche nel nome della variabile
+C.  utilizzare cifre numeriche nel nome della variabile, ma con delle limitazioni 
+D. denominare le variabili con i nomi delle keyword
+
+63. La funzione type() permette:
+A. di modificare il tipo di dato della variabile
+B.  di assegnare un tipo di dato ad una variabile
+C.  di conoscere il tipo di dato della variabile 
+D. di visualizzare a schermo il tipo di dato della variabile
+
+64. La precedenza degli operatori in Python è:
+A.  parentesi, **, * / // %, + - 
+B.  parentesi, + -, * / // %, ** 
+C.  / //, **, * parentesi, %, + -
+D.  + -, **, * / // %, parentesi
+
+65. Per determinare se un numero è al di fuori di un intervallo è più corretto utilizzare l'operatore:
+A. and
+B. or
+C. not
+D. divisione
+
+66. La funzione range():
+A. implementa una struttura decisionale 
+B.  implementa una struttura iterativa
+C. è obbligatoria nel for 
+D.  ritorna un oggetto iterabile
+
+67. Nel codice sorgente, i parametri che vengono passati alla funzione nella chiamata:
+A.  devono avere lo stesso nome di quelli contenuti nella defizione della funzione 
+B.  possono avere lo stesso nome di quelli contenuti nella defizione della funzione
+C.  possono essere al massimo due
+D.  devono avere un nome diverso quelli contenuti nella defizione della funzione 
+
+68. Le variabili locali:
+A.  possono essere "visualizzate" da funzioni diverse da quella in cui sono state definite
+B. possono essere "visualizzate" da funzioni diverse da quella in cui sono state definite se vengono passate come  parametri
+C. non appartengono alla funzione che le ha create 
+D. possono essere "visualizzate" e modificate in modo permanente da funzioni diverse da quella in cui sono state  definite se vengono passate come parametri 
+
+69. Lo scope individua:
+A. la parte del programma che può accedere alla variabile
+B.  la parte del programma che non può accedere alla variabile
+C.  la parte della funzione che può accedere alla variabile 
+D.  la parte della funzione che non può accedere alla variabile 
+
+70. Per definire una costante globale in Python:
+A. basta scrivere la keyword global in tutte le funzioni prima del nome della variabile
+B. basta scrivere il nome della variabile tutto in maiuscolo
+C. non utilizzare la keyword global nel programma
+D.  basta scrivere il nome della variabile tutto in maiuscolo e la keyword global in tutte le funzioni prima del nome della  variabile 
+
+71. La gestione del menu:
+A.  avviene tramite una struttura iterativa e una struttura decisionale 
+B. avviene tramite una struttura iterativa
+C.  avviene tramite una struttura decisionale 
+D.  avviene tramite una struttura sequenziale
+
+72. Per stampare una stringa e un numero contenuto nella variabile a posso utilizzare la/e seguente/i istruzione/i:
+A. print("Risultato:"+a) 
+B.  print("Risultato:"+str(a))print("Risultato", a)
+C. print("Risultato:"+str(a))print(Risultato, a)
+D.  print("Risultato:"+str(a) 
+
+73. Scrittura e lettura su file corrispondono, rispettivamente, a:
+A.  output e input su file 
+B.  close e open su file
+C. open e close su file
+D.  input e output su file
+
+74. Il metodo write:
+A.  appartiene al nome fisico del file e riceve come parametro una stringa
+B.  appartiene al nome fisico del file e riceve come parametro un intero 
+C.  appartiene all'oggetto file e riceve come parametro una stringa 
+D.  appartiene all'oggetto file e riceve come parametro un intero 
+
+75. A seguito di un'operazione di scrittura del file, al fine di procedere con un'operazione di lettura:
+A. . È necessaria una chiusura del file 
+B.  È necessaria un'apertura del file in lettura 
+C.  sono necessarie sia la chiusura del file sia l'apertura in scrittura
+D.  sono necessarie sia la chiusura del file sia l'apertura in lettura
+
+76. I valori numerici possono essere scritti su un file se:
+A.  si utilizza la funzione di casting int() 
+B.  si utilizza la funzione di casting float()
+C.  si utilizza la funzione di casting str() 
+D.  si utilizzano le funzioni di casting int() e float() 
+
+77. . Il codice del gestore delle eccezioni:
+A. viene eseguito solo se sono state sollevate eccezioni
+B.  viene eseguito sempre
+C. non viene eseguito se sono state sollevate eccezioni
+D. non dipende dal blocco try 
+
+78. L'istruzione d=d.rstrip('\n') serve a:
+A.  inserire un carattere alla fine della stringa 
+B.  eliminare un carattere alla fine della stringa 
+C.  copiare parte della stringa d
+D. andare a capo 
+
+79. Nell'istruzione os.remove(a):
+A.  os è il metodo, remove è il modulo, a è il file
+B.  os è il modulo, remove è il file, a è il funzione 
+C. os è il metodo, remove è il modulo, a è la funzione
+D. os è il modulo, remove è una funzione, a è il file 
+
+80. Nel caso di utilizzo del metodo index() della lista:
+A.  È possibile che venga sollevata un'eccezione ListError 
+B.  È possibile che venga sollevata un'eccezione ValueError
+C.  È possibile che venga sollevata un'eccezione IndexError
+D.  non vengono sollevate eccezioni
+
+81. Per calcolare il totale degli elementi e contenuti in una lista a, le migliori istruzioni sono:
+A.  for e in a: c=c+e 
+B. c=0for e in a:   c=c+e
+C. c=0for a in e:   c=c+e 
+D.  c=0for e in a:   c=c+a
+
+82. Per accedere ad un elemento di una lista bidimensionale:
+A. È obbligatorio due indici, ma non due cicli nidificati
+B. non è obbligatorio utilizzare nè due cicli nidificati nè due indici 
+C.  È obbligatorio utilizzare due cicli nidificati, ma non due indici
+D. È obbligatorio utilizzare due cicli nidificati e due indici 
+
+83. . A seguito dell'esecuzione delle seguenti istruzioni l = [1,2,3,3] s = set(l):
+A.  s conterrà 1 elemento
+B.  s conterrà 2 elementi
+C.  s conterrà 3 elementi
+D. s conterrà 4 elementi
+
+84. La differenza simmetrica tra due set permette di individuare un nuovo set che:
+A.  contiene gli elementi non condivisi tra i due set
+B.  contiene gli elementi di entrambi i set 
+C.  contiene gli elementi comuni ad entrambi i set
+D.  contiene gli elementi del primo set che non appartengono al secondo 
+
+85. L'istruzione s.issuperset(t):
+A.  restituisce il set formato dagli elementi di s e di t
+B. restituisce un valore True se t contiene tutti gli elementi di s 
+C.  restituisce il set formato dagli elementi comuni a s e a t 
+D.  restituisce un valore True se s contiene tutti gli elementi di t 
+
+86. Lo stato di un oggetto è l'insieme:
+A.  dei valori degli attributi
+B.  del valore dei metodi 
+C.  dei metodi
+D.  del valore degli attributi e dei metodi 
+
+87. L'interfaccia di un oggetto è l'insieme:
+A.  dei valori degli attributi 
+B. del valore degli attributi e dei metodi 
+C. dei metodi 
+D. del valore dei metodi
+
+88. I getter e i setter:
+A.  devono essere definiti per tutti gli attributi pubblici
+B. possono essere definiti per tutti gli attributi
+C.  devono essere definiti per tutti gli attributi
+D. devono essere definiti per tutti gli attributi privati 
+
+89. Nel diagramma UML delle classi:
+A.  lo schema della sottoclasse deve indicare anche gli attributi ereditati
+B.  lo schema della sottoclasse deve indicare anche i metodi ereditati 
+C.  non è possibile indicare l'ereditarietà tra classi 
+D.  lo schema della sottoclasse non deve indicare anche gli attributi ereditati
+
+90. La funzione isinstance():
+A. necessità dell'oggetto e della classe come argomenti
+B. restituisce un numero intero 
+C.  ritorna la classe dell'oggetto 
+D. stampa a schermo se l'oggetto è un'istanza della classe
+
+91. Le fasi principali di modellazione di un database sono:
+A. una
+B. due
+C. tre
+D. quattro
+
+92. Tutte le tuple della stessa entità hanno:
+A.  stesso numero, nome e tipo, ma diversi valori di attributi 
+B.  stesso numero e nome, ma diverso tipo e valori di attributi 
+C. stesso numero, ma diverso tipo, nome e valori di attributi 
+D. stesso nome, ma diverso tipo, numero e valori di attributi
+
+93. Dopo la keyword SELECT si inserisce:
+A.  lista tabelle da cui estrarre
+B.  la condizione per il filtro 
+C.  lista campi da estrarre
+D.  la clausola di ordinamento
+
+94. Il comando SELECT * FROM Studenti; permette di:
+A.  proiettare i dati della tabella Studenti 
+B.  estrarre tutti i campi e tutte le tuple della tabella Studenti
+C.  estrarre tutte le tuple della tabella Studenti 
+D.  estrarre tutti i campi della tabella Studenti 
+
+95. Il comando SELECT Matricola, Nome AS N, Città FROM Studenti; permette di ottenere una tabella:
+A.  che rappresenta una proiezione della tabella originale
+B.  che rappresenta una selezione della tabella originale 
+C.  di quattro campi 
+D. una tabella formata dai seguenti campi: Matricola, Nome, Città
+
+96. Il comando SELECT * FROM Studenti INNER JOIN Voti ON Studenti.Matricola = Voti.MatricolaS; permette di
+A.  una tabella composta dalla somma delle tuple delle due tabelle di partenza 
+B. una tabella composta dalle tuple della tabella Studenti 
+C.  una tabella vuota 
+D. una tabella composta dalla somma dei campi delle due tabelle di partenza
+
+97. Il comando SELECT Studenti.Nome, Voti.Votofinale FROM Studenti LEFT JOIN Voti ON Studenti.Matricola = Voti.MatricolaS; permette di ottenere
+A.  una tabella composta dal numero di tuple della tabella Studenti
+B. una tabella vuota
+C.  una tabella composta dalla somma dei campi delle due tabelle di partenza 
+D.  una tabella composta dalla somma delle tuple delle due tabelle di partenza 
+
+98. Il comando SELECT * FROM Studenti FULL OUTER JOIN Voti ON Studenti.Matricola = Voti.MatricolaS; permette di ottenere
+A.  una tabella composta dalla somma delle tuple delle due tabelle di partenza
+B.  una tabella composta dal numero di tuple della tabella Studenti 
+C.  una tabella composta dalla somma dei campi delle due tabelle di partenza
+D.  una tabella vuota 
+
+99. GROUP BY serve a:
+A.  partizionare in gruppi le righe di una tabella
+B.  raggruppare le tuple secondo il criterio espresso nell'HAVING
+C.  utilizzare le funzioni di aggregazione 
+D.  utilizzare le funzioni di aggregazione 
+
+100. SELECT customerName, Orders.* FROM Customers LEFT JOIN Orders ON Orders.CustomerID = Customers.CustomerID WHERE OrderDate = (SELECT MAX(OrderDate) FROM Orders)
+A. errata
+B. Conoscere i nomi dei clienti e i relativi ordini con la data più recente   
+C. conoscere i nomi dei clienti che hanno il numero massimo di ordini   
+D. conoscere l’importo totale di tutti gli ordini effettuati 
+
+101. Il comando ([x + (5 - x) for x in range(-100,100)],[y for y in range (-100,100)]) permette di generare:
+A. una retta
+B. un grafico lineare
+C. il grafico di una retta orizzontale
+D. il grafico di una retta verticale   
+
+102. Il frammento di codice: import matplotlib.pyplot as mp mp.plot([0 for x in range(-100, 100)],[y for y in range(-100, 100)], [x for x in range(-100, 100)],[0 for y in range(-100, 100)]) permette di:
+A. disegnare i due assi cartesiani passanti per (0,0)  
+B. due rette oblique   
+C. due rette parallele   
+D. una parabola   
+
+103. Un nodo A con centralitá globale CCA massima é:
+A. Un nodo da cui è difficile accedere agli altri nodi della rete    
+B. Un nodo da cui è facile accedere agli altri nodi della rete   
+C. Un nodo con distanza massima dagli altri nodi del grafo    
+D. Un nodo con pochi vicini   
+
+104. Quale query prende i dati dei prodotti il cui prezzo è maggiore della media dei prezzi?
+A. SELECT *FROM Products  WHERE Price >= 10 OR Price <= 15;   
+B. SELECT *FROM Products  WHERE Price > (SELECT AVG(Price) FROM Products);  
+C. SELECT *FROM Products  WHERE Price >(SELECT Price,  AVG(Price)  FROM Products  GROUP BY Price);  
+D. SELECT *FROM Products  WHERE Price >(SELECT ProductID,  AVG(Price)  FROM Products); 
+
+105. Suddividere s in 2 categorie zero e uno (discretizzazione di s in 2 categorie con eitchetta 0 e 1)
+A. import pandas as pd pd.cut(s,labels=('ZERO','UNO'))   
+B. import pandas as pd pd.cut(s,1,labels=('ZERO', 'UNO'))  
+C. import pandas as pd pd.cut(s,labels=('ZERO','UNO'),2)  
+D. import pandas as pd pd.cut(s,2,labels=('ZERO', 'UNO'))  
+
+106. Domanda (?)
+A. solo operazioni di estrazioni   
+B. operazioni di Map e operazioni di Reduce   
+C. operazioni di filtratura e operazioni di ordinamento 
+D. operazione di ordinamento
+
+107. Il metodo fetchall():
+A.  È un metodo dell'oggetto connessione e restituisce un connettore 
+B.  È un metodo dell'oggetto cursore e restituisce un connettore alla tabella
+C.  È un metodo dell'oggetto cursore e restituisce tutte le tuple di una tabella 
+D.  È un metodo dell'oggetto connessione e restituisce tutti i connettori 
+
+108. Il metodo lstrip(a) restituisce:
+A.  una stringa con tutti gli spazi bianchi rimossi 
+B. una stringa con tutti gli i caratteri a iniziali rimossi
+C. una stringa con tutti gli spazi bianchi iniziali rimossi 
+D. una stringa con tutti gli i caratteri a rimossi 
+
+109. L'istruzione s.isdigit() restituisce:
+A.  vero se s contiene solo cifre numeriche
+B.  verso se s non contiene cifre numeriche
+C. vero se s contiene esattamente una cifra numerica
+D. vero se s contiene almeno una cifra numerica 
+
+110. Time.time() è:
+A. un metodo che restituisce il timestamp
+B. una funzione che restituisce il timestamp 
+C.  una funzione che restituisce l'orario 
+D.  un metodo che restituisce l'orario
+
+111. .Per verificare le mail del tipo nome_utente@unimercatorum.it è necessario utilizzare la seguente espressione regolare:
+A. r'[\w-]*@unimercatorum.it' 
+B. r'[a-zA-Z]*@unimercatorum.it'
+C. r'[a-zA-Z][\w-]*@unimercatorum.it' 
+D. r'[a-zA-Z][\w-]@unimercatorum.it'
+
+112. La funzione iglob() è:
+A. completamente diversa da glob() 
+B.  simile a glob(), ma non memorizza simultaneamente tutti i valori restituiti da glob()
+C. identica a glob() 
+D.  simile a glob(), ma memorizza simultaneamente tutti i valori restituiti da glob() 
+
+113. Nell'istruzione pickle.dump(a,b) a e b sono:
+A. gestore del file e oggetto 
+B. oggetto e gestore del file 
+C. nome del file e oggetto 
+D. oggetto e nome del file 
+
+114. Nell'indicizzatore di file, l'istruzione d[p.upper()] = d[p.upper()]+lista permette di:
+A. aggiornare la lista dei valori di p includendo un file già presente 
+B. concatenare la lista dei valori di p 
+C. aggiornare la lista dei valori di p includendo un nuovo file
+D. concatenare la lista di p 
+
+115. Un notebook Jupyter è:
+A. un pc portatile 
+B. un pc portatile della Jupyter 
+C. un applicativo che permette di scrivere un flusso di lavoro in verticale 
+D. un applicativo che permette di scrivere un flusso di lavoro in orizzontale 
+
+116. Un alias è:
+A. un'istruzione 
+B. un nome (diminutivo) per chiamare una libreria/modulo 
+C. una libreria/modulo 
+D. una keyword 
+
+117. Gli array differiscono dalla lista principalmente per:
+A. due motivi
+B. tre motivi
+C. un motivo
+D. quattro motivi
+
+118. Il codice corretto per modificare la forma dell'array è:
+A. v.shape = [a,b] 
+B. v.shape = {a,b} 
+C. v.shape = (a,b) 
+D. v.shape = a,b 
+
+119. L'effetto dell'istruzione m.transpose(0,2,1) è:
+A. terzo asse rimane verticale, altri due assi scambiati 
+B. secondo asse rimane verticale, altri due assi scambiati 
+C. primo asse rimane verticale, altri due assi scambiati 
+D. la trasposizione dell'intera matrice 
+
+120. Data una matrice m di dimensioni 7x5 la seguente istruzione m[3:5][1][0] permette di raccogliere:
+A. le righe dalla quarta alla quinta 
+B. la quinta riga 
+C. il secondo elemento della quarta riga 
+D. il primo elemento della quinta riga 
+
+121. La libreria per i grafici in Python si chiama:
+A. NumPy
+B. Matplotlib 
+C. statistics 
+D. Matplot 
+
+122. Il metodo gfc:
+A. estrae la figure corrente o la crea se non esiste ancora 
+B. impostare l'area del grafico 
+C. salva il grafico sul file 
+D. estrae la figure corrente 
+
+123. La proprietà kde:
+A. È della funzione scatter e serve a calcolare una stima della densità del kernel per uniformare la distribuzione 
+B. È della funzione displot e serve a calcolare una stima della densità del kernel per uniformare la distribuzione 
+C. È della funzione hist e serve a calcolare una stima della densità del kernel per uniformare la distribuzione 
+D. È della funzione plot e serve a calcolare una stima della densità del kernel per uniformare la distribuzione 
+
+124. Nella funzione rand():
+A. i parametri sono tutti di default 
+B. i parametri sono tutti di default ad esclusione dell'estremo inferiore dell'intervallo 
+C. i parametri sono tutti di default ad esclusione dell'estremo superiore dell'intervallo 
+D. i parametri sono tutti di default ad esclusione della shape 
+
+125. L'attributo dtypes:
+A. È relativo al DataFrame ed elenca il tipo di tutti i campi 
+B. È relativo alla Series ed elenca il tipo del primo campo 
+C. È relativo al DataFrame ed elenca il tipo del primo campo 
+D. È relativo al Series ed elenca il tipo di tutti i campi 
+
+126. Il risultato del seguente codice a = pd.read_csv('a.csv', delimiter='.') print(type(a)) è:
+A. Series
+B. Array
+C. DataFrame
+D. Dictionary
+
+127. 5. Per poter applicare una funzione ad una colonna di un DataFrame si utilizza la funzione:
+A. applyColumn
+B. apply
+C. setColumn
+D. set
+
+128. Il metodo iterrows() permette di ottenere:
+A. un generatore che ad ogni invocazione fornirà un indice di colonna e la Series che contiene i valori della colonna 
+B. un generatore che ad ogni iterazione fornirà un indice di riga e il DataFrame contenente i suoi valori 
+C. un generatore che ad ogni invocazione fornirà un indice di colonna e il DataFrame che contiene i valori della colonna 
+D. un generatore che ad ogni iterazione fornirà un indice di riga e la Series contenente i suoi valori 
+
+129. Groups è:
+A. la funzione per eseguire il raggruppamento 
+B. È una proprietà che contiene un dizionario 
+C. È una proprietà che contiene una lista 
+D. È una proprietà che contiene un DataFrame 
+
+130. Per ottenere le statistiche complessive massime calcolate su un DataFrame raggruppato sul campo 'c' in base al valore del campo 'c2' è necessario utilizzare la seguente istruzione:
+A. df.groupy['c']('c2').max().describe() 
+B. df.groupy('c')['c2'].max().describe() 
+C. df.groupy('c')['c2'].describe()['max'] 
+D. df.groupy['c']('c2').describe()['max'] 
+
+131. Oltre all'importazione delle librerie opportune, la migliore sequenza di istruzioni per graficare il contenuto della colonna a di un DataFrame Pandas df con un grafico lineare è:
+A. df['a'].plot(kind='line') matplot.show() 
+B. df.plot(kind='line') matplot.show() 
+C. matplot.plot(df, kind='line') matplot.show() 
+D. matplot.plot(df, kind='line') 
+
+132. Nella formulazione originale della regola delle 3V, le 3V corrispondono a:
+A. volume, velocità e veridicità 
+B. veridicità, velocità e varietà 
+C. volume, veridicità e varietà 
+D. volume, velocità e varietà 
+
+133. HDFS e YARN sono:
+A. entrambi dei file system distribuiti 
+B. entrambi ambienti di elaborazione di MapReduce 
+C. rispettivamente file ambiente di elaborazione MapReduce e system distribuito 
+D. rispettivamente file system distribuito e ambiente di elaborazione MapReduce 
+
+134. I Worker Node sono:
+A. tutti i nodi del cluster che svolgono il coordinamento tra di essi 
+B. tutti i nodi del cluster tra i quali sarà parallelizzato il lavoro 
+C. i nodi in cui risiede lo SparkContext 
+D. tutti i nodi che offrono uno strato di coesione al cluster 
+
+135. Le modalità per ottenere un RDD sono:
+A. 1
+B. 3
+C. 2
+D. 4
+
+136. Le operazioni di map e reduce:
+A. sono trasformazioni e azioni, rispettivamente 
+B. sono azioni e trasformazioni, rispettivamente 
+C. sono entrambe azioni 
+D. sono entrambe trasformazioni 
+
+137. Il metodo collect():
+A. corrisponde ad un'azione e restituisce il primo elemento del RDD 
+B. corrisponde ad una trasformazione e restituisce il primo elemento del RDD 
+C. corrisponde ad una trasformazione e restituisce gli elementi del RDD in una struttura dati Python 
+D. corrisponde ad un'azione e restituisce gli elementi del RDD in una struttura dati Python 
+
+138. Il metodo stats() restituisce:
+A. un oggetto                            
+B. un int
+C. un float
+D. una lista di numeri
+
+139. Nell'applicazione dell'algoritmo MapReduce in Spark:
+A. deve esserci per forza una reduce 
+B. possono esserci solo map 
+C. devono esserci per forza sia map che reduce 
+D. deve esserci per forza una map 
+
+140. Una partizione è:
+A. un nodo 
+B. un cluster 
+C. una suddivisione logica di un dataset 
+D. un insieme di nodi di un cluster 
+
+141. La funzione countByKey() permette di:
+A. contare gli elementi in un RDD 
+B. contare gli elementi in un RDD in base alla chiave/etichetta 
+C. contare gli elementi in una lista in base alla chiave/etichetta 
+D. contare gli elementi in una lista 
+
+142. Il metodo agg() si usa per:
+A. raggruppare i dati secondo una chiave 
+B. mostrare i dati di un DataFrame 
+C. visualizzare la struttura del DataFrame 
+D. personalizzare maggiormente le aggregazioni da svolgere 
+
+143. Il grado di un nodo indica sempre:
+A. numero di archi connessi al nodo 
+B. numero di archi non incidenti con il nodo 
+C. il numero di archi in ingresso verso il nodo 
+D. il numero dei nodi vicini al nodo 
+
+144. L'ordine e la dimensione di un grafo sono:
+A. entrambi il numero dei nodi 
+B. entrambi il numero degli archi 
+C. rispettivamente il numero dei nodi e degli archi 
+D. rispettivamente il numero degli archi e dei nodi
+
+145. La funzione urlparse() suddivide un URL in una tupla di:
+A. quattro elementi
+B. cinque elementi
+C. sei elementi 
+D. sette elementi
+
+146. 7. Il metodo get_text() permette di:
+A. estrarre il contenuto di un tag 
+B. accedere al testo del contenuto dell'HTML 
+C. visualizzare come i tag HTML sono annidati nel documento 
+D. estrarre un determinato tipo di tag 
+
+147. Il metodo prettify() permette di:
+A. accedere al testo del contenuto dell'HTML 
+B. estrarre il contenuto di un tag 
+C. estrarre un determinato tipo di tag
+D. visualizzare come i tag HTML sono annidati nel documento 
+
+148. Per accedere alla cella di una tabella è necessario:
+A. accedere alla tabella
+B. accedere alla cella
+C. accedere gerarchicamente prima a 
+D. accedere direttamente al tag 
+
+149. Per calcolare l'ordine del grafo esistono:
+A. 2 metodi
+B. 3 metodi
+C. 4 metodi
+D. 5 metodi
+
+150. Per calcolare la dimensione del grafo esistono:
+A. 5 metodi 
+B. 4 metodi 
+C. 3 metodi 
+D. 2 metodi 
+
+151. Le funzioni Graph() e DiGraph() permettono di:
+A. ottenere entrambe grafi orientati 
+B. ottenere grafi non orientati e orientati, rispettivamente 
+C. ottenere grafi orientati e non orientati, rispettivamente
+D. ottenere entrambe grafi non orientati 
+
+152. Per conoscere i nodi adiacenti ad un nodo a, si utilizza il metodo:
+A. neighbors() 
+B. neighbor() 
+C. vicinato() 
+D. vicini() 
+
+153. Connected_components() è:
+A. un metodo del grafo che funziona solo per grafi non orientati 
+B. una funzione di networkx che funziona solo per grafi orientati
+C. una funzione di networkx che funziona solo per grafi non orientati 
+D. un metodo del grafo che funziona solo per grafi orientati 
+
+154. I metodi in_degree() e out_degree() si usano per:
+A. calcolare il grado entrante e uscente di tutti i nodi di un grafo non orientato 
+B. calcolare il grado entrante e uscente di un nodo di un grafo non orientato 
+C. calcolare il grado entrante e uscente di tutti i nodi di un grafo orientato 
+D. calcolare il grado entrante e uscente di un nodo di un grafo orientato 
+
+155. Per recuperare i dati della tabella di Wikipedia e generare la struttura dati propedeutica al grafo sono necessari:
+A. Networkx, BeautifulSoup, urllib.request, pandas 
+B. BeautifulSoup, urllib.request, pandas 
+C. Networkx, urllib.request, pandas 
+D. BeautifulSoup, urllib.request, pyspark 
+
+156. In Gephi, anche senza elaborazioni del grafo, è attiva la funzionalità di:
+A. il grado medio 
+B. la densità del grafo 
+C. il calcolo della modularità 
+D. individuazione del vicinato di un nodo 
+
+157. Il grado medio dei nodi si ottiene:
+A. dal rapporto tra dimensione e ordine del grafo 
+B. dalla dimensione del grafo 
+C. dall'ordine del grafo 
+D. dal rapporto tra ordine e dimensione del grafo 
+
+158. La distribuzione del grado dei nodi permette di comprendere immediatamente:
+A. il numero di vicini per un determinato nodo 
+B. il massimo numero di vicini dei nodi
+C. mediamente quanti vicini ha un nodo 
+D. quanti sono i nodi isolati 
+
+159. Le categorie della sezione Statistics di Gephi sono:
+A. network overview, node overview, partition overview, dynamic 
+B. network overview, partition overview, edge overview, dynamic 
+C. network overview, node overview, edge overview, dynamic 
+D. network overview, node overview, edge overview, community 
+
+160. Per l'equipment fault, i valori ammissibili sono:
+A. 1
+B. 2
+C. 5
+D. 20
+
+161. Solitamente, in una GUI, oltre al form, quanti elementi si inseriscono per completezza:
+A. 1
+B. 2
+C. 3
+D. 5
+
+162. Nel widget Checkbutton, il parametro textvariable è:
+A. l'argomento che collega variabile al testo dell'etichetta del widget 
+B. l'argomento di tipo StringVar collegato al widget 
+C. l'argomento che determina carattere visualizzato nell'entry 
+D. l'argomento che imposta widget parent 
+
+163. 9.Per aggiungere un widget alla seconda riga in un layout a griglia è necessario passare al metodo grid:
+A. row 
+B. row=0 
+C. row=1 
+D. row=2 
+
+164. I metodi della classe LabelInput sottoposti a overriding sono:
+A. 1
+B. 2
+C. 3
+D. 4
+
+165. La classe corrispondente al form è:
+A. LabelInput 
+B. DataRecordForm 
+C. LabelFrame 
+D. Form
+
+166. La classe corrispondente ad una sezione del form è:
+A. LabelInput 
+B. DataRecordForm 
+C. LabelFrame 
+D. Form 
+
+167. Le librerie utili presentate per il salvataggio dei dati del form su file CSV sono:
+A. 1
+B. 2
+C. 3
+D. 4
+
+168. Dato il vettore numeric a, la somma dei valori di a si ottiene con la seguente istruzione:
+A. sum(a) 
+B. a.sum() 
+C. sum(a) = b 
+D. c = sum(A) 
+
+169. Il risultato dell'esecuzione delle seguenti istruzioni a = c(1,2,3) b = a&lt;0 a[b] è:
+A. 1 2 3
+B. 1 2
+C. 1
+D. numeric(0) 
+
+170. Per rinominare le due colonne di una matrice m 5x2 è necessario richiamare la seguente istruzione:
+A. colnames(m) = n 
+B. m.colnames = n 
+C. m. colnames = c('a','b') 
+D. colnames(m) = c('a','b') 
+
+171. Per eliminare la terza e la quarta riga nella matrice m è necessario richiamare la seguente istruzione:
+A. m[-(3:4),] 
+B. m[-(2:3),] 
+C. m.deleterow(3,4) 
+D. m.rowdelete(2,3) 
+
+172. Dati i vettori a,b,c, il codice per creare il dataframe d è:
+A. d = dataframe(a,b,c) 
+B. d = dataframe()d.add(a,b,c) 
+C. d = data.frame(a,b,c) 
+D. data.frame(a,b,c) 
+
+173. Dato il dataframe d, l'istruzione dim(t)[1] permette di visualizzare:
+A. il primo elemento del dataframe 
+B. il secondo elemento del dataframe 
+C. il numero delle righe del dataframe 
+D. il numero delle colonne del dataframe 
+
+174. Per rinominare gli oggetti di una lista si usa la funzione:
+A. names() 
+B. rownames()
+C. name() 
+D. rowname() 
+
+175. Per poter visualizzare due grafici sovrapposti nella stessa area è necessario:
+A. invocare la funzione plot() 
+B. invocare la funzione points() 
+C. invocare prima la funzione points() e poi la funzione plot() 
+D. invocare prima la funzione plot() e poi la funzione point() 
+
+176. La funzione per tracciare la retta di tendenza in un grafico è:
+A. line() 
+B. abline() 
+C. aline() 
+D. bline() 
+
+177. L'istruzione par(mfrow = c(2,3)) permette di ottenere:
+A. un'area dei grafici composta da 2 righe e 3 colonne 
+B. un'area dei grafici composta da 3 righe e 2 colonne 
+C. un'area con 6 grafici sovrapposti 
+D. un grafico con un punto di coordinate (2,3) 
+
+178. 1.L'ultima versione dell'acronimo SPSS è:
+A. Statistical Package for the Social Sciences 
+B. Statistical Product for the Social Sciences 
+C. Statistical Product and Service Solutions 
+D. Statistical Package and Service Solutions 
+
+179. Nella struttura a matrice di SPSS:
+A. sulle righe si dispongono i casi e sulle colonne le variabili 
+B. sulle righe si dispongono le variabili e sulle colonne i casi 
+C. È possibile decidere se disporre casi e variabili su righe o colonne nella schermata "Vista dati" 
+D. È possibile decidere se disporre casi e variabili su righe o colonne nella schermata "Vista Variabile" 
+
+180. Il formato del nome attribuito di default da SPSS alle variabili se non diversamente indicato è:
+A. name0000n 
+B. var0000n 
+C. variable0000n
+D. stat0000n 
+
+181. Per visualizzare una tabella di esempio di SAS tra i risultati è necessario:
+A. un data step 
+B. un proc step 
+C. un proc step seguito da un data step 
+D. un data step seguito da un proc step 
+
+182. In un archivio SAS:
+A. le osservazioni sono in colonna e le variabili in riga 
+B. le osservazioni sono in riga e le variabili sono in colonna 
+C. le osservazioni possono essere indifferentemente in riga o in colonna 
+D. le variabili possono essere indifferentemente in riga o in colonna 
+
+183. I tipi di variabile nei dataset SAS possono essere:
+A. numeriche e booleane 
+B. numeriche e carattere 
+C. numeriche, carattere e booleane 
+D. carattere e booleane 
+
+184. Le metriche vengono individuate e concordate nella fase di:
+A. documentazione 
+B. presentazione 
+C. raccolta dei requisiti 
+D. elaborazione dei dati e flusso di lavoro 
+
+185. La variabile indipendente e la variabile dipendente sono, rispettivamente:
+A. la variabile di risposta e la variabile target 
+B. la variabile esplicativa e la variabile target 
+C. la variabile risposta e la variabile esplicativa
+D. la variabile target e la variabile esplicativa 
+
+186. Il grafico a barre e l'istogramma si utilizzano per rappresentare:
+A. variabili numeriche 
+B. variabili categoriali 
+C. variabili numeriche e categoriali, rispettivamente 
+D. variabili categoriali e numeriche, rispettivamente 
+
+187. L'istruzione d.describe().show(1) dove d è un dataframe spark permette di:
+A. ottenere tutte le elaborazioni statistiche calcolate sul dataframe 
+B. il conteggio dei valori mancanti nel dataframe 
+C. il conteggio dei valori non mancanti nel dataframe 
+D. la media dei valori mancanti nel dataframe 
+
+188. I suggerimenti individuati per ottenere la riproducibilità utilizzando Jupyter notebook in Python sono:
+A. 4
+B. 5
+C. 6
+D. 7
+
+189. L'unità di misura zettabytes equivale a:
+A. 1018 bytes 
+B. 1021 bytes 
+C. 1024 bytes 
+D. 1027 bytes 
+
+190. 4.EdgeRank è:
+A. un social network per mettere in contatto più utenti 
+B. un algoritmo che determina la visibilità dei contenuti e la personalizzazione dell'esperienza 
+C. un algoritmo che suggerisce determinati contenuti all'utente in modo personalizzato 
+D. un social network che aggrega le notizie 
+
+191. ML e AI:
+A. si riferiscono sostanzialmente alla stessa cosa 
+B. ML è un sottinsieme di AI 
+C. AI è un sottoinsieme di ML 
+D. si riferiscono ad ambiti completamente diversi 
+
+192. Il modello hub-and-spoke:
+A. prevede l'utilizzo di data center tutti con carichi di lavoro simili 
+B. permette di verificare la fruizione di contenuti da parte di persone e non di bot 
+C. permette di misurare la fruizione di contenuti da parte di persone 
+D. prevede un data center principale e più data center periferici 
+
+193. HPC e HTC sono acronimi rispettivamente di:
+A. High Performance Computing e High Technology Computer 
+B. High Processing Computing e High Technology Computer 
+C. High Performance Computing e High Tested Computer 
+D. High Processing Computing e High Tested Computer 
+
+194. I componenti principali di un ecosistema pervasivo di tecnologie abilitanti sono:
+A. reti ad alta velocità e GIS 
+B. repository di grandi volumi e GIS 
+C. C. dati industriali e repository di grandi volumi 
+D. D. reti ad alta velocità e repository di grandi volumi 
+
+195. I pilastri dell'industry 4.0 sono:
+A. 7
+B. 9
+C. 11
+D. 13
+
+196. Nelle scienze sociali ed economia globali, i dati sono principalmente di tipo:
+A. comportamentale e ambientale 
+B. comportamentale e psicologico 
+C. ambientale e psicologico
+D. psicologico e di trasporto 
+
+197. L'apprendimento per rinforzo è:
+A. tipico del deep learning e prevede tre comportamenti in merito al rinforzo 
+B. tipico del deep learning e prevede due comportamenti in merito al rinforzo 
+C. tipico del machine learning e prevede tre comportamenti in merito al rinforzo 
+D. tipico del machine learning e prevede due comportamenti in merito al rinforzo 
+
+198. Nell'esempio del caso del NCSU, i Big Data sono stati integrati con tecniche di:
+A. intelligenza artificiale e, soprattutto, di deep learning 
+B. intelligenza artificiale e, soprattutto, di machine learning 
+C. data mining 
+D. data science 
+
+199. Il comando CREATE:
+A. appartiene al linguaggio DML di SQL 
+B. appartiene al linguaggio DDL di SQL
+C. permette di creare delle tuple 
+D. permette di creare delle tuple 
+
+200. La vista creata con il comando CREATE:
+A. È una tabella che fa parte della base di dati 
+B. È una tabella virtuale che fa parte della base di dati 
+C. È una tabella che non fa parte della base di dati 
+D. È una tabella virtuale che non fa parte della base di dati
+
+201. Il comando INSERT permette di:
+A. creare nuove tabelle 
+B. creare nuovi campi 
+C. creare nuovi indici 
+D. creare nuovi dati
+
+202. Per eseguire il prodotto matriciale XY è necessario che:
+A. Il numero di colonne di X sia uguale al numero di righe di Y
+B. Il numero delle righe di X sia uguale al numero di colonne di Y 
+C. X abbia lo stesso numero di colonne di Y 
+D. X abbia lo stesso numero di righe di Y 
+
+203. in un grafo a stella non orientato con 7 nodi , il grado del nodo centrale è?:
+A. 5
+B. 6
+C. 7
+D. 8
+
+204. SELECT customerName, Orders.* FROM Customers LEFT JOIN Orders ON Orders.CustomerID = Customers.CustomerID WHERE OrderDate = (SELECT MAX(OrderDate) FROM Orders)
+A. Conoscere i nomi dei clienti e i relativi ordini con la data più recente   
+B. conoscere i nomi dei clienti che hanno il numero massimo di ordini   
+C. conoscere l’importo totale di tutti gli ordini effettuati 
+D. errata
+
+205. La differenza principale tra le seguenti due istruzioni: d.get (k). d.pop (k) (dove d è un dizionario e k una chiave) è:
+A. pop() estrae la tupla (chiave,valore),mentre get() solo il valore    
+B. get() estrae il valore corrispondente alla chiave, ma non modifica il dizionario, mentre pop() modifica il dizionario  
+C. pop() estrae il valore corrispondente alla chiave,ma non modifica il dizionario,mentre get()modifica il dizionario   
+D. get() estrae la tupla(chiave,valore),mentre pop()solo il valore   
+
+206. df_merged = df1.merge(df2, on='c1', how='left') [dfmerged = pd.merge(df1,df2, on=’c1’, how=‘left’)]
+A. un dataFrame Pandas con tutte le righe di df1 congiunte sul valore della colonna 'c1' con df2. Per le righe di df1 che  non si congiungono viene assegnata una riga con tutti i campi di df2 al valore N
+B. un errore perché il terzo parametro deve essere how=join   
+C. errata
+D. errore logico
+
+207. Il seguente frammento di codice : import numpy as np m_3x3=np.eye(3,k=-1) prin(m_3x3) produce come risultato:
+A. [[1. 0. 0.]   [0. 1. 0.]   [0. 0. 1.]]   
+B. [[0. 0. 0.]   [1. 0. 0.]   [0. 1. 0.]]  
+C. Un errore    
+D. [[0. 1. 0.]   [0. 0. 1.]   [0. 0. 0.]]
+
+208. Puo' essere funzione reshape o swapaxis oppure byrow di R:
+A. essere convertiti in testo piatto per fare uaso delle espressioni regolari   
+B. essere convertiti in colonne e righe   
+C. essere convertiti in formato HTML   
+D. non puo' essere convertito
+
+209. Il seguente frammento di codice: l=['1','2','3','4','10'] x=max(l) print(x) produce a video:
+A. 4   
+B. Un errore di Traceback   
+C. 10
+D. Un errore di compilazione    
+
+210.  La migliore definizione per replace nel seguente comando str.replace(str,str) é:
+A. una funzione void   
+B. una funzione value-returning   
+C. un metodo value-returning   
+D. una metodo void   
+
+211. Cosa è replace(s1,s2)?
+A. un metodo value-returning   
+B. una funzione value-returning   
+C. una funzione void   
+D. una metodo void   
+
+212. Come faccio a rendere una variabile o un attributo privato (non accessibile all'esterno)?
+A. basta premettere __ (doppio trattino basso) al nome della variabile /attributo  
+B. basta dare un nome col primo carattere in maiuscolo alla variabile/attributo   
+C. basta premettere _al nome della variabile /attributo  
+D. lettera maiuscola al nome della variabile
+
+213. Che keyword si usa per esplicitare il tipo di dato?
+A. astype   
+B. dtype  
+C. type   
+D. ltype
+
+214. (?) Domanda sul polimorfismo(override) (?)
+A. differisce dal metodo/funzione della classe base per il tipo di PARAMETRI   
+B. differisce dal metodo/funzione della classe base per il tipo di VALORE RESTITUITO   
+C. differisce dal metodo/funzione della classe base per il codice del metodo/funzione   
+D. errata
+
+215. Il risultato a video del seguente codice: g=nx.complete_graph(['A','B','C','D','E','F']) print(g.order()) print(g.size()) è:
+A. 15 6   
+B. 6 30   
+C. 6 15
+D. 6 25
+
+216. La forma equivalente della linea di codice: print("Cuori\tFiori\tQuadri\tPicche\n") é:
+A. print"Cuori","Fiori","Quadri", "Picche", sep='\t', end='n'
+B. print("Cuori","Fiori","Quadri", "Picche", sep='\t', end='\n')    
+C. print("Cuori","Fiori","Quadri", "Picche", end='n')       
+D. print["Cuori","Fiori","Quadri", "Picche", sep='t', end='\n']
+
+217. SQL é l’acronimo di :
+A. Structured Query Language   
+B. System Query Language   
+C. Single Query Language   
+D. Single Query Language   
+
+218. Domanda (?)
+A. Il numero degli attributi coinvolti   
+B. Il numero delle entità coinvolte   
+C. Il numero di chiavi coinvolte 
+D. Il numero delle istanze coinvolte 
+
+219. La funzione findall() del modulo re:
+A. restituisce una lista di stringhe
+B. restituisce un dizionario di stringhe
+C. restituisce sempre una lista vuota
+D. estituisce sempre una lista di stringhe
+
+220. Il risultato dell'istruzione np.in1d(v2,v) è:
+A. un array
+B. un array booleano	
+C. un valore booleano	
+D. un array dello stesso tipo di v e v2	
+
+221. Un multigrafo è un grafo:
+A. semplice	
+B. con archi con estremi coincidenti	
+C. con archi paralleli	
+D. orientato	
+
+222. Nel widget Checkbutton, il parametro variable è:
+A. l'argomento che imposta l'etichetta del widget	
+B. l'argomento che collega variabile al testo dell'etichetta del widget	
+C. l'argomento di tipo StringVar collegato al widget	
+D. l'argomento di tipo BooleanVar a cui lo stato booleano è collegato	
+
+223. Solitamente, i dataframe hanno il numero di righe e di colonne pari a:
+A. numero di variabili e numero di osservazioni, rispettivamente	
+B. numero di osservazioni e numero di variabili, rispettivamente	
+C. numero di vettori e numero di osservazioni, rispettivamente	
+D. entrambi al numero di variabili	
+
+224. I fenomeni di viralizzazione dei contenuti informativi sono dovuti al fatto che:
+A. sui social network gli utenti diventano parte attiva nella diffusione di informazioni, opinioni e punti di vista	
+B. i social network presentano all'utente un ordine generalmente personalizzato delle notizie disponibili	
+C. i social network sono governati da algoritmi in grado di filtrare costantemente le notizie disponibili	
+D. i social network consentono l'ingresso nell'ecosistema informativo di fonti estranee al classico circuito dell'informazione	
+
+225. Per connettersi a MySQL si utilizza il comando:
+A. \conn	
+B. connect	
+C. \connect	
+D. conn
+
+226. Quante operazioni si possono mettere in pratica per gestire i dati mancanti:
+A. 1
+B. 2
+C. 3
+D. 4
+
+227. Le prestazioni per HPC si misurano tipicamente in:
+A. PetaHz	
+B. PetaB
+C. PetaBPS
+D. PetaFLOPS	
+
+228. Per indicare i due DataFrame per la congiunzione:
+A. solo un DataFrame viene passato come argomento al metodo per il join	
+B. entrambi i DataFrame vengono passati al metodo per il join	
+C. entrambi i DataFrame vengono passati al metodo per il join con il parametro on	
+D. solo un DataFrame viene passato al metodo per il join con il parametro on	
+
+229. L'except senza l'indicazione del tipo di eccezione:
+A. si riporta come ultima	
+B. si riporta come prima	
+C. serve a gestire un determinato tipo di eccezioni	
+D. serve ad evitare eccezioni	
+
+230. Explode è relativo a:
+A. istogrammi	
+B. grafici a torta	
+C. grafici a barre	
+D. grafici lineari	
+
+231. Il campo Equipment fault è un widget:
+A. Entry	
+B. Combobox	
+C. Spinbox	
+D. Checkbutton	
+
+232. Lo specificatore di formato "10,.3e" indica che il numero da stampare:
+A. occuperà 10 caratteri, non avrà il separatore delle miglia, avrà 3 cifre decimali e sarà espresso in notazione scientifica	
+B. occuperà 10 caratteri, avrà il separatore delle miglia, avrà 3 cifre decimali e sarà espresso in notazione scientifica	
+C. occuperà 10 caratteri, avrà il separatore delle miglia, avrà 3 cifre decimali e sarà espresso in percentuale	
+D. avrà il separatore delle miglia, avrà 3 cifre decimali e sarà espresso in notazione scientifica	
+
+233. Le istruzioni l=set() l.discard(1):
+A. sollevano l'eccezione KeyError	
+B. sollevano l'eccezione IndexError	
+C. sollevano l'eccezione Error	
+D. non sollevano nessuna eccezione	
+
+234. Per il raggruppamento delle osservazioni per una particolare categoria si usa la parola chiave:
+A. var
+B. data
+C. where
+D. class
+
+235. L'eccezione ValueError viene sollevata quando:
+A. si effettua un casting non consentito	
+B. il file non esiste	
+C. si divide per zero	
+D. il file non esiste in fase di lettura	
+
+236. Il codice import re r = re.sub(r'".*?"',"*",'"1 2 3" "a b c d"') print® visualizza a schermo:
+A. *
+B. ""	
+C. **	
+D. """"	
+
+237. Il/i motivo/i alla base della difficoltà di gestione dell'accumulazione dei dati è/sono:
+A. il volume dei dati	
+B. la velocità di accumulazione dei dati	
+C. il volume e la velocità di accumulazione dei dati	
+D. il volume e la varietà dei dati	
+
+238. Nella modalità di installazione e funzionamento pseudo-distributed:
+A. il funzionamento sarà suddiviso in più processi Java e si avrà un single-node cluster	
+B. il funzionamento sarà racchiuso in un unico processo Java e si avrà un single-node cluster	
+C. il funzionamento sarà suddiviso in più processi Java e si avranno più nodi	
+D. il funzionamento sarà racchiuso in un unico processo Java e si avranno più nodi	
+
+239. Nel widget Spinbox, il parametro textvariable è:
+A. l'argomento che imposta widget parent	
+B. l'argomento di tipo StringVar collegato al widget	
+C. l'argomento che determina carattere visualizzato nell'entry	
+D. l'argomento che collega variabile al testo dell'etichetta del widget	
+
+240. Il codice import re r = re.findall(r"[0-9a-z]+","1 2 3 a b c d") print(len(r)) visualizza a schermo:
+A. una lista di 6 elementi	
+B. 6
+C. una lista di 7 elementi	
+D. 7
+
+241. L'espressione [-10*x+2 for x in range(-100,100) permette di generare:
+A. una parabola	
+B. una retta orizzontale	
+C. una retta crescente	
+D. una retta decrescente	
+
+242. Il risultato di una trasformazione e di un'azione è:
+A. sempre un altro RDD	
+B. un RDD e un risultato specifico, rispettivamente	
+C. un risultato specifico e un RDD, rispettivamente	
+D. sempre un risultato specifico	
+
+243. Il metodo rstrip serve:
+A. ad aggiungere un carattere di newline alla riga	
+B. ad eliminare il carattere di newline al termine di una stringa	
+C. ad eliminare specifici caratteri al termine della stringa	
+D. ad aggiungere specifici caratteri al termine della stringa	
+
+244. Il metodo findall(a) permette di:
+A. estrarre il primo tag indicato da a	
+B. estrarre tutti i tag indicati da a	
+C. estrarre il contenuto tra il tag di apertura e di chiusura indicato da a	
+D. estrarre il primo paragrafo di a	
+
+245. Untitled si riferisce:
+A. alla finestra dello script mode
+B. alla finestra dell'interactive mode
+C. alla finestra sia dell'interactive mode sia a quella dello script mode
+D. alla finestra del debugger
+
+246. Math:
+A. è una funzione della standard library	
+B. necessita dell'istruzione "def math" nel programma	
+C. è un modulo della standard library	
+D. è direttamente utilizzabile in Python senza necessità di importazione	
+
+247. Gli oggetti creati negli script sono visualizzati nel quadrante:
+A. area di script	
+B. console	
+C. workspace	
+D. quadrante in basso a destra	
+
+248. I fenomeni di viralizzazione dei contenuti informativi sono dovuti al fatto che:
+A. sui social network gli utenti diventano parte attiva nella diffusione di informazioni, opinioni e punti di vista	
+B. i social network presentano all'utente un ordine generalmente personalizzato delle notizie disponibili	
+C. i social network sono governati da algoritmi in grado di filtrare costantemente le notizie disponibili	
+D. i social network consentono l'ingresso nell'ecosistema informativo di fonti estranee al classico circuito dell'informazione	
+
+249. Un'eccezione è:
+A. un errore a tempo di compilazione rilevabile con il traceback	
+B. un errore a tempo di esecuzione rilevabile con il traceback	
+C. un errore a tempo di compilazione non rilevabile con il traceback	
+D. un errore a tempo di esecuzione non rilevabile con il traceback	
+
+250. L'operatore index:
+A. restituisce la posizione di una riga data la sua etichetta	
+B. restituisce l'etichetta di una riga in base alla sua posizione	
+C. restituisce la riga dato l'elemento	
+D. restituisce la posizione dato l'elemento	
+
+251. I componenti principali di un cluster Spark sono:
+A. 2
+B. 3
+C. 4
+D. 5
+
+252. Gli argomenti da passare allo SparkContext sono:
+A. 1
+B. 2
+C. 3
+D. 4
+
+253. Il risultato a schermo del  seguente codicev=np.array(range(-2,2))v2=v[v&lt;=0]print(len(v2))è:
+A. 0
+B. 1
+C. 2
+D. 3
+
+254. Per stabilire il font del testo di una Label è necessario utilizzare:
+A. una tupla di due elementi	
+B. due elementi	
+C. una tupla di tre elementi	
+D. tre elementi	
+
+255. Una query SQL è suddivisa in:
+A. costrutti, clausole e interrogazioni	
+B. comandi, interrogazioni e clausole	
+C. comandi, costrutti e interrogazioni	
+D. comandi, costrutti e clausole	
+
+256. Il quadrante che funge da schermo e comando rapido è:
+A. area di script	
+B. console	
+C. workspace	
+D. quadrante in basso a destra	
+
+257. Il codice def f(): a = 0 c = [] s = "ciao" for b in s: c.append(a) a+=2 return c restituisce:
+A. un dizionario di 4 elementi	
+B. una lista di 5 elementi	
+C. una stringa di 4 elementi	
+D. un lista di 4 elementi	
+
+258. Gli oggetti creati negli script sono visualizzati nel quadrante:
+A. area di script	
+B. console
+C. workspace	
+D. quadrante in basso a destra	
+
+259. In un LabelInput per un widget Text, il parametro input_args è:
+A. una lista	
+B. un array	
+C. un dizionario	
+D. un DataFrame	
+
+260. Per definire e riconoscere un problema è possibile individuare:
+A. 3 fasi	
+B. 4 fasi	
+C. 5 fasi	
+D. 6 fasi	
+
+261. Il processo di data-mining è costitutito da:
+A. un'unica componente	
+B. 2 componenti	
+C. 3 componenti	
+D. 4 componenti	
+
+
+RISPOSTE:
+
+1. B
+
+2. D
+
+3. A
+
+4. C
+
+5. B
+
+6. A
+
+7. C
+
+8. D
+
+9. A
+
+10. B
+
+11. C
+
+12. A
+
+13. B
+
+14. A
+
+15. D
+
+16. B
+
+17. C
+
+18. B
+
+19. C
+
+20. A
+
+21. B
+
+22. D
+
+23. A
+
+24. C
+
+25. D
+
+26. C
+
+27. B
+
+28. D
+
+29. C
+
+30. A
+
+31. C
+
+32. D
+
+33. A
+
+34. A
+
+35. B
+
+36. A
+
+37. C
+
+38. A
+
+39. C
+
+40. A
+
+41. C
+
+42. D
+
+43. A
+
+44. B
+
+45. B
+
+46. D
+
+47. D
+
+48. A
+
+49. D
+
+50. A
+
+51. C
+
+52. B
+
+53. D
+
+54. B
+
+55. B
+
+56. C
+
+57. B
+
+58. B
+
+59. D
+
+60. A
+
+61. C
+
+62. C
+
+63. C
+
+64. A
+
+65. B
+
+66. D
+
+67. B
+
+68. B
+
+69. A
+
+70. C
+
+71. A
+
+72. B
+
+73. A
+
+74. C
+
+75. D
+
+76. C
+
+77. A
+
+78. B
+
+79. D
+
+80. B
+
+81. B
+
+82. A
+
+83. C
+
+84. A
+
+85. D
+
+86. A
+
+87. C
+
+88. B
+
+89. D
+
+90. A
+
+91. C
+
+92. A
+
+93. C
+
+94. B
+
+95. A
+
+96. D
+
+97. A
+
+98. C
+
+99. A
+
+100. B
+
+101. D
+
+102. A
+
+103. B
+
+104. B
+
+105. D
+
+106. B
+
+107. C
+
+108. B
+
+109. A
+
+110. B
+
+111. C
+
+112. B
+
+113. B
+
+114. C
+
+115. C
+
+116. B
+
+117. A
+
+118. A
+
+119. C
+
+120. D
+
+121. B
+
+122. A
+
+123. B
+
+124. D
+
+125. A
+
+126. C
+
+127. B
+
+128. D
+
+129. B
+
+130. C
+
+131. A
+
+132. D
+
+133. D
+
+134. B
+
+135. C
+
+136. A
+
+137. D
+
+138. A
+
+139. B
+
+140. C
+
+141. B
+
+142. D
+
+143. A
+
+144. C
+
+145. C
+
+146. B
+
+147. D
+
+148. C
+
+149. B
+
+150. D
+
+151. B
+
+152. A
+
+153. C
+
+154. C
+
+155. B
+
+156. D
+
+157. A
+
+158. B
+
+159. C
+
+160. B
+
+161. C
+
+162. A
+
+163. C
+
+164. C
+
+165. B
+
+166. C
+
+167. C
+
+168. A
+
+169. D
+
+170. D
+
+171. A
+
+172. C
+
+173. C
+
+174. A
+
+175. D
+
+176. B
+
+177. A
+
+178. C
+
+179. A
+
+180. B
+
+181. D
+
+182. B
+
+183. B
+
+184. D
+
+185. B
+
+186. D
+
+187. C
+
+188. C
+
+189. B
+
+190. B
+
+191. B
+
+192. D
+
+193. A
+
+194. D
+
+195. B
+
+196. B
+
+197. D
+
+198. A
+
+199. B
+
+200. D
+
+201. D
+
+202. A
+
+203. B
+
+204. A
+
+205. B
+
+206. A
+
+207. B
+
+208. B
+
+209. A
+
+210. C
+
+211. A
+
+212. A
+
+213. B
+
+214. C
+
+215. C
+
+216. B
+
+217. A
+
+218. B
+
+219. A
+
+220. B
+
+221. C
+
+222. D
+
+223. B
+
+224. A
+
+225. C
+
+226. B
+
+227. D
+
+228. B
+
+229. A
+
+230. B
+
+231. D
+
+232. B
+
+233. D
+
+234. D
+
+235. A
+
+236. C
+
+237. C
+
+238. A
+
+239. B
+
+240. D
+
+241. D
+
+242. B
+
+243. C
+
+244. B
+
+245. A
+
+246. C
+
+247. C
+
+248. A
+
+249. B
+
+250. B
+
+251. B
+
+252. B
+
+253. D
+
+254. A
+
+255. D
+
+256. B
+
+257. D
+
+258. C
+
+259. C
+
+260. C
+
+261. B
