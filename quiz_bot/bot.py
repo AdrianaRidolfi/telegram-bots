@@ -21,12 +21,13 @@ if not TOKEN:
 application = ApplicationBuilder().token(TOKEN).build()
 user_states = {}
 QUIZ_FOLDER = "quizzes"
+JSON = ".json"
 user_stats = {}  # Statistiche per utente e per materia
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_text_only=False):
     user_id = update.effective_user.id
     try:
-        files = [f for f in os.listdir(QUIZ_FOLDER) if f.endswith(".json")]
+        files = [f for f in os.listdir(QUIZ_FOLDER) if f.endswith(JSON)]
     except Exception as e:
         await context.bot.send_message(chat_id=user_id, text=f"Errore nel leggere la cartella quiz: {e}")
         return
@@ -36,7 +37,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         return
 
     keyboard = [
-        [InlineKeyboardButton(f.replace("_", " ").replace(".json", ""), callback_data=f)]
+        [InlineKeyboardButton(f.replace("_", " ").replace(JSON, ""), callback_data=f)]
         for f in files
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
@@ -49,6 +50,32 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         text="Scegli la materia del quiz:",
         reply_markup=reply_markup,
     )
+
+async def download(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = update.effective_user.id
+    try:
+        files = [f for f in os.listdir(QUIZ_FOLDER) if f.endswith(JSON)]
+    except Exception as e:
+        await context.bot.send_message(chat_id=user_id, text=f"Errore nel leggere la cartella quiz: {e}")
+        return
+
+    if not files:
+        await context.bot.send_message(chat_id=user_id, text="Nessun quiz disponibile.")
+        return
+
+    keyboard = [
+        [InlineKeyboardButton(f.replace("_", " ").replace(JSON, ""),
+         callback_data=json.dumps({"cmd": "download_pdf", "file": f}))]
+        for f in files
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
+    await context.bot.send_message(
+        chat_id=user_id,
+        text="📚 Scegli la materia per scaricare il PDF:",
+        reply_markup=reply_markup
+    )
+
 
 async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
@@ -76,7 +103,7 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "index": 0,
         "score": 0,
         "total": len(question_order),
-        "subject": filename.replace(".json", "")
+        "subject": filename.replace(JSON, "")
     }
 
 
@@ -194,12 +221,12 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     try:
         callback = json.loads(data)
-        if callback.get("cmd") == "scarica_inedite":
+        if callback.get("cmd") == "scarica_inedite" or callback.get("cmd") == "download_pdf":
             quiz_file = callback.get("file")
             await generate_pdf(quiz_file, context.bot, user_id)
             return
     except Exception:
-        pass  
+        pass
 
     if data == "stop":
         await stop(update, context)
@@ -210,7 +237,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await show_final_stats(user_id, context, state, from_change_course=True)
         await start(update, context, show_intro_text_only=True)
 
-    elif data.endswith(".json"):
+    elif data.endswith(JSON):
         await select_quiz(update, context)
 
     elif data == "reset_stats":
@@ -353,6 +380,7 @@ async def lifespan(app: FastAPI):
     await application.initialize()
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("stats", stats))
+    application.add_handler(CommandHandler("download", download))
     application.add_handler(CallbackQueryHandler(handle_callback))
     print("✅ Applicazione Telegram inizializzata con successo.")
     yield
