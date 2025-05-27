@@ -332,6 +332,7 @@ async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, 
     #salvo quiz in user_states
     user_states[user_id] = {
         "quiz": selected,
+        "quiz_file": subject + JSON,     
         "order": list(range(len(selected))),
         "index": 0,
         "score": 0,
