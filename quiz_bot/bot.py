@@ -143,9 +143,9 @@ async def send_next_question(user_id, context):
 
     if state["index"] >= state["total"]:
         await show_final_stats(user_id, context, state)
-        user_states.pop(user_id, None) 
         manager = WrongAnswersManager(str(user_id))
         manager.commit_changes()
+        user_states.pop(user_id, None) 
         return
 
 
@@ -286,7 +286,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if state:
             manager = WrongAnswersManager(str(user_id))
             manager.commit_changes()
-            
+
         await show_final_stats(user_id, context, state, from_change_course=True)
         await start(update, context, show_intro_text_only=True)
 
@@ -391,11 +391,10 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await context.bot.send_message(chat_id=user_id, text="Nessuna sessione attiva.")
         return
 
+   
     await show_final_stats(user_id, context, state, from_stop=True)
-    manager = WrongAnswersManager(str(user_id))
-    manager.commit_changes()
+    WrongAnswersManager(str(user_id)).commit_changes()
     user_states.pop(user_id, None)
-
 
 
 async def show_final_stats(user_id, context, state, from_stop=False, from_change_course=False):
