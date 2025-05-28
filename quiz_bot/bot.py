@@ -2,6 +2,7 @@ import os
 import json
 import random
 import firebase_admin
+from typing import Dict
 from fastapi import FastAPI, Request, HTTPException
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
