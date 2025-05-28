@@ -7,7 +7,8 @@
       "editoria cartacea",
       "radio FM"
     ],
-    "correct_answer": "pubblicità on-line"
+    "correct_answer": "pubblicità on-line",
+    "id": "ae6edd3e-d41e-4c5a-9ea5-f54a7fd130a8"
   },
   {
     "question": "Lo storytelling è",
@@ -17,7 +18,8 @@
       "Un tipo di montaggio video",
       "Una strategia SEO"
     ],
-    "correct_answer": "L'arte di raccontare qualcosa"
+    "correct_answer": "L'arte di raccontare qualcosa",
+    "id": "f19c307b-83b7-4a74-8a4a-0b15362f4a19"
   },
   {
     "question": "Link",
@@ -27,7 +29,8 @@
       "Un sistema di backup locale",
       "Un'estensione per browser"
     ],
-    "correct_answer": "Connessione tra una parola (frase o figura) e un altro file posto in qualsiasi altro punto del web"
+    "correct_answer": "Connessione tra una parola (frase o figura) e un altro file posto in qualsiasi altro punto del web",
+    "id": "436ec1c6-eaea-4406-9363-b32c64d0458d"
   },
   {
     "question": "La remunerazione su Facebook Watch è suddivisa:",
@@ -37,7 +40,8 @@
       "100% a Facebook",
       "60% al creatore, 40% a Facebook"
     ],
-    "correct_answer": "55% al creatore del video, 45% a Facebook"
+    "correct_answer": "55% al creatore del video, 45% a Facebook",
+    "id": "4c23af61-fe3d-49f9-92cb-bce6ea5f1a94"
   },
   {
     "question": "La principale caratteristica di Instagram Tv",
@@ -47,7 +51,8 @@
       "Essere limitata ai video di 5 secondi",
       "Supportare solo video orizzontali"
     ],
-    "correct_answer": "Essere pensata per una visione da mobile"
+    "correct_answer": "Essere pensata per una visione da mobile",
+    "id": "7ca11c77-f31c-4ccb-aed9-1a2d8af85a8e"
   },
   {
     "question": "Il marketing online è",
@@ -57,7 +62,8 @@
       "Solo pubblicità sui giornali",
       "Il marketing nei supermercati"
     ],
-    "correct_answer": "Il marketing con la rete internet/web marketing/internet marketing"
+    "correct_answer": "Il marketing con la rete internet/web marketing/internet marketing",
+    "id": "5eb27a55-15a8-42f7-9071-84276ab45a15"
   },
   {
     "question": "Il gatekeeper è:",
@@ -67,7 +73,8 @@
       "Un addetto alla sicurezza informatica",
       "Un moderatore di forum"
     ],
-    "correct_answer": "Colui che sceglie quali eventi diverranno notizia sulla base dei criteri precedentemente esposti"
+    "correct_answer": "Colui che sceglie quali eventi diverranno notizia sulla base dei criteri precedentemente esposti",
+    "id": "804e2a7e-2aed-4afc-9f32-8ec8dec27287"
   },
   {
     "question": "Imprese virtuali:",
@@ -77,7 +84,8 @@
       "start-up tradizionali",
       "multinazionali con sedi fisiche"
     ],
-    "correct_answer": "quelle che completano le proprie transizioni attraverso processi definiti esclusivamente in rete"
+    "correct_answer": "quelle che completano le proprie transizioni attraverso processi definiti esclusivamente in rete",
+    "id": "a9adb3f0-4baf-475c-9b4d-1d18de6d975c"
   },
   {
     "question": "Google Analytics:",
@@ -87,7 +95,8 @@
       "è un servizio di cloud storage",
       "permette di scrivere articoli online"
     ],
-    "correct_answer": "monitora le statistiche del blog"
+    "correct_answer": "monitora le statistiche del blog",
+    "id": "51ebe30b-bb10-4a6b-8541-989bcf5d303a"
   },
   {
     "question": "Delicious (socialbookmarking):",
@@ -97,7 +106,8 @@
       "È un servizio per videochiamate",
       "È un tool per l'editing di foto"
     ],
-    "correct_answer": "È un sito di social bookmarking per l'archiviazione, ricerca e condivisione di bookmark"
+    "correct_answer": "È un sito di social bookmarking per l'archiviazione, ricerca e condivisione di bookmark",
+    "id": "7f2cc040-20a1-4415-a471-fb25d204dea6"
   },
   {
     "question": "CISCO prevede che i video rappresenteranno:",
@@ -107,7 +117,8 @@
       "Solo una piccola percentuale",
       "Saranno irrilevanti"
     ],
-    "correct_answer": "80% di traffico futuro sul web"
+    "correct_answer": "80% di traffico futuro sul web",
+    "id": "3b83c8fa-db41-4ea9-87f7-6c726d9736f5"
   },
   {
     "question": "Secondo gli esperti il 2019 sarà l'anno:",
@@ -117,7 +128,8 @@
       "del fax",
       "dei giornali stampati"
     ],
-    "correct_answer": "delle STORIE"
+    "correct_answer": "delle STORIE",
+    "id": "2151055d-fc63-4a08-a41e-f40998354a89"
   },
   {
     "question": "Quali sono le caratteristiche di nuova PA?",
@@ -127,7 +139,8 @@
       "Inaccessibilità e lentezza",
       "Burocrazia opaca"
     ],
-    "correct_answer": "Apertura, capacità di ascolto e dialogo, orientamento all'interazione, disponibilità al cambiamento"
+    "correct_answer": "Apertura, capacità di ascolto e dialogo, orientamento all'interazione, disponibilità al cambiamento",
+    "id": "a1d39779-ec1d-418e-b323-a51e47240833"
   },
   {
     "question": "Che cos'è il COMPLETION RATE:",
@@ -137,7 +150,8 @@
       "La percentuale di click su un link",
       "Un algoritmo di compressione"
     ],
-    "correct_answer": "L'indice che serve a scoprire quale tipo di video viene visto fino alla fine"
+    "correct_answer": "L'indice che serve a scoprire quale tipo di video viene visto fino alla fine",
+    "id": "3d052cd2-00e0-4ae2-ad52-4acacdace597"
   },
   {
     "question": "Ultimo numero New York Times:",
@@ -147,7 +161,8 @@
       "Mark Zuckerberg nel 2020",
       "Steve Jobs nel 2010"
     ],
-    "correct_answer": "Roberto Thompson nel 2030"
+    "correct_answer": "Roberto Thompson nel 2030",
+    "id": "c7a54d9d-7830-4ebc-b3a0-af50efd95028"
   },
   {
     "question": "Tecnicamente la SEO è:",
@@ -157,7 +172,8 @@
       "L'insieme delle attività mirate al miglioramento delle posizioni di un sito web nella lista di risultati nei motori di ricerca. Si divide in local, global, on-site",
       "L'insieme delle attività mirate al miglioramento delle posizioni di un sito web nella lista di risultati nei motori di ricerca. Si divide in off-site, on-site, local-site"
     ],
-    "correct_answer": "L'insieme delle attività mirate al miglioramento delle posizioni di un sito web nella lista di risultati nei motori di ricerca. Si divide in off-site, on-page, on-site"
+    "correct_answer": "L'insieme delle attività mirate al miglioramento delle posizioni di un sito web nella lista di risultati nei motori di ricerca. Si divide in off-site, on-page, on-site",
+    "id": "62ea2cdb-4465-45fc-9100-019a93cc8d24"
   },
   {
     "question": "Google suggest è un una utility implementata nel motore di ricerca del gigante di Mountain View e serve per:",
@@ -167,7 +183,8 @@
       "Scoprire il CPC di una parola chiave (costo per click di AdWords, utile per capire quanto vale economicamente) e il suo volume di ricerca",
       "Per scoprire la parola digitata prima e dopo la keyword principale, che deve essere una parola singola"
     ],
-    "correct_answer": "Avere un punto di partenza indispensabile, grazie ai suggerimenti che offre, il polso della situazione e capire cosa cercano le persone intorno a un argomento o una determinata parola chiave"
+    "correct_answer": "Avere un punto di partenza indispensabile, grazie ai suggerimenti che offre, il polso della situazione e capire cosa cercano le persone intorno a un argomento o una determinata parola chiave",
+    "id": "439defee-8758-495a-ac1f-9ba16a795890"
   },
   {
     "question": "Il modo più corretto per scrivere i contenuti di un sito web è quello di:",
@@ -177,7 +194,8 @@
       "Ripetere più volte i concetti contenuti nel testo, ogni volta con parole diverse ma usando le keyword inserite nel metatag apposito, in modo da raggiungere un alto punteggio di keyword density",
       "Tenere presente sempre e prioritariamente non solo le \"keywords\" inserite nell'apposito tag ma anche quanto scritto nel metatag \"contents\", e fare in modo che ogni testo contenga almeno una volta le parole in essi riportate"
     ],
-    "correct_answer": "Creare contenuti originali, per evitare che i robot nel confronto con le pagine memorizzate ci scartino a priori"
+    "correct_answer": "Creare contenuti originali, per evitare che i robot nel confronto con le pagine memorizzate ci scartino a priori",
+    "id": "2911b4e5-c4b9-4e38-95d9-6955a6c7a26d"
   },
   {
     "question": "Il meta tag \"alt\", è particolarmente utile perché:",
@@ -187,7 +205,8 @@
       "Permette di inserire una descrizione discorsiva dell'immagine, che viene agevolmente interpretata dal motore di ricerca, ed inoltre funge da didascalia passandovi su il mouse e viene letta vocalmente dai browser per ipovedenti",
       "Perché può essere utilizzato per inserirvi parole chiave specifiche per quel testo quando esse non siano comprese in quelle generali del sito"
     ],
-    "correct_answer": "Permette di inserire una descrizione discorsiva dell'immagine, che viene agevolmente interpretata dal motore di ricerca, ed inoltre funge da didascalia passandovi su il mouse e viene letta vocalmente dai browser per ipovedenti"
+    "correct_answer": "Permette di inserire una descrizione discorsiva dell'immagine, che viene agevolmente interpretata dal motore di ricerca, ed inoltre funge da didascalia passandovi su il mouse e viene letta vocalmente dai browser per ipovedenti",
+    "id": "cdb8f5e4-b827-4d6f-9101-e74301ed1b43"
   },
   {
     "question": "Quando viene immessa nella barra di ricerca di Google una frase o una parola da cercare, esso:",
@@ -197,7 +216,8 @@
       "Attraverso la tecnica chiamata Google Instant comincia a proporre una serie di risultati che contengono almeno una delle parole inserite nella barra di ricerca, sperando che l'utente venga distratto e si indirizzi sul primo risultato che lo attiri",
       "Fa un rapido controllo su sinonimi delle parole chiave della ricerca per cercare di ampliare il numero di risultati che visualizza nella Serp"
     ],
-    "correct_answer": "Analizza oltre 200 parametri, tra cui ortografia, nome del sito, parole chiave dei siti, qualità dei contenuti e ortografia della richiesta per offrire un risultato quanto più preciso rispetto alle richieste dell'utente"
+    "correct_answer": "Analizza oltre 200 parametri, tra cui ortografia, nome del sito, parole chiave dei siti, qualità dei contenuti e ortografia della richiesta per offrire un risultato quanto più preciso rispetto alle richieste dell'utente",
+    "id": "2bca3ca1-5670-4d13-a4a5-812cec949f44"
   },
   {
     "question": "Il sito responsive è quello che:",
@@ -207,7 +227,8 @@
       "È capace, dopo aver fatto scegliere al navigatore che tipo di dispositivo sta usando da un menù che appare, di adattarsi alle caratteristiche grafiche del dispositivo",
       "Per la sua visualizzazione si adatta perfettamente (e autonomamente) agli schermi di tutti i dispositivi, desktop e mobili, senza perdita di qualità, informazioni o funzionalità"
     ],
-    "correct_answer": "Per la sua visualizzazione si adatta perfettamente (e autonomamente) agli schermi di tutti i dispositivi, desktop e mobili, senza perdita di qualità, informazioni o funzionalità"
+    "correct_answer": "Per la sua visualizzazione si adatta perfettamente (e autonomamente) agli schermi di tutti i dispositivi, desktop e mobili, senza perdita di qualità, informazioni o funzionalità",
+    "id": "e170c1f3-7c7d-4b89-9b98-e57c3f81e927"
   },
   {
     "question": "La tecnica del \"keyword stuffing\", molto in voga fino a qualche tempo fa prevedeva:",
@@ -217,7 +238,8 @@
       "La costruzione di testi sulla base di parole molto lunghe e di difficile comprensione, cosicché per il loro uso non frequente il nostro sito potesse apparire al primo posto nei risultati di ricerca",
       "Cominciare ogni paragrafo del testo con un numero, che viene più facilmente letto dai motori di ricerca"
     ],
-    "correct_answer": "La costruzione di testi sulla base di parole e frasi selezionate in precedenza, delle quali ci si era accertati che avessero livelli consistenti di volume di ricerca e traffico"
+    "correct_answer": "La costruzione di testi sulla base di parole e frasi selezionate in precedenza, delle quali ci si era accertati che avessero livelli consistenti di volume di ricerca e traffico",
+    "id": "c065c185-93e8-4a2a-b652-8c2b8680f6ed"
   },
   {
     "question": "Il modo SEO più corretto di trattare un'immagine inserita in una pagina web è:",
@@ -227,7 +249,8 @@
       "Rinominare la foto in modo chiaro e descrittivo, così che possa essere bene interpretata dal motore di ricerca, come nell'esempio \"questa è la foto del mio gatto.jpg\"",
       "Assegnare alla foto un nome descrittivo con le parole unite da trattini, e mettere la descrizione discorsiva nel meta tag \"alt\", come nell'esempio \"foto-del-gatto-boris.jpg\" e nel nel meta tag \"alt\" \"questa è la foto del mio gatto Boris\""
     ],
-    "correct_answer": "Assegnare alla foto un nome descrittivo con le parole unite da trattini, e mettere la descrizione discorsiva nel meta tag \"alt\", come nell'esempio \"foto-del-gatto-boris.jpg\" e nel nel meta tag \"alt\" \"questa è la foto del mio gatto Boris\""
+    "correct_answer": "Assegnare alla foto un nome descrittivo con le parole unite da trattini, e mettere la descrizione discorsiva nel meta tag \"alt\", come nell'esempio \"foto-del-gatto-boris.jpg\" e nel nel meta tag \"alt\" \"questa è la foto del mio gatto Boris\"",
+    "id": "e933c6f7-2c20-4d10-b7d4-dc6a0b427c23"
   },
   {
     "question": "Tramite lo strumento web Ubersuggest è possibile:",
@@ -237,7 +260,8 @@
       "Trovare chiavi secondarie, varianti della chiave principale e quelle correlate",
       "Cercare parole basate su una ricerca discorsiva, tipo \"come smontare il mio pc?\""
     ],
-    "correct_answer": "Trovare chiavi secondarie, varianti della chiave principale e quelle correlate"
+    "correct_answer": "Trovare chiavi secondarie, varianti della chiave principale e quelle correlate",
+    "id": "7a90eb48-2a8d-4ad4-93d6-9789333242e4"
   },
   {
     "question": "La percentuale di ricerche degli utenti che quotidianamente passa attraverso il motore di ricerca Google è pari al:",
@@ -247,7 +271,8 @@
       "Dal 70 all'80%",
       "Oltre il 60%"
     ],
-    "correct_answer": "Oltre il 90%"
+    "correct_answer": "Oltre il 90%",
+    "id": "c70c1fd9-73d3-478d-98dc-0217b02fea86"
   },
   {
     "question": "Tra le persone ritratte da Richard Avedon ci sono:",
@@ -257,7 +282,8 @@
       "Marilyn Monroe, Charlie Chaplin, Brigitte Bardot, Andy Warhol e Sophia Loren",
       "Marilyn Monroe, Janis Joplin, Brigitte Nielsen, Andy Warhol e Sophia Loren"
     ],
-    "correct_answer": "Marilyn Monroe, Janis Joplin, Brigitte Bardot, Andy Warhol e Sophia Loren"
+    "correct_answer": "Marilyn Monroe, Janis Joplin, Brigitte Bardot, Andy Warhol e Sophia Loren",
+    "id": "3005193a-0b3a-4c4e-a83a-5714c2ca13de"
   },
   {
     "question": "Il fotosubacqueo Francesco Pacienza ha ottenuto i seguenti premi internazionali:",
@@ -267,7 +293,8 @@
       "Golden Turtle, Deep Indonesia, Ocean Art, Ocean Geographic, Without Borders",
       "Golden Turtle, Deep Indonesia, Ocean Art, Le Photographe de la Tour, Without Borders"
     ],
-    "correct_answer": "Golden Turtle, Deep Indonesia, Ocean Art, Ocean Geographic, Without Borders"
+    "correct_answer": "Golden Turtle, Deep Indonesia, Ocean Art, Ocean Geographic, Without Borders",
+    "id": "c40fc2ab-a0b1-4dd2-8dad-a268c55a2577"
   },
   {
     "question": "La composizione del collodio era a base di:",
@@ -277,7 +304,8 @@
       "Nitrocellulosa disciolta in alcool isopropilico ed etere",
       "Nitrocellulosa disciolta in alcool denaturato ed etere"
     ],
-    "correct_answer": "Nitrocellulosa disciolta in alcool etilico ed etere"
+    "correct_answer": "Nitrocellulosa disciolta in alcool etilico ed etere",
+    "id": "973ab465-0228-4137-af0f-e78ecd72e31b"
   },
   {
     "question": "Nella mia fotografia ho sempre affermato che attraverso di essa io mento. Questa affermazione è attribuibile a:",
@@ -287,7 +315,8 @@
       "Al fotografo milanese Oliviero Toscani",
       "Al fotografo cosentino Francesco Pacienza"
     ],
-    "correct_answer": "Al fotografo cosentino Francesco Pacienza"
+    "correct_answer": "Al fotografo cosentino Francesco Pacienza",
+    "id": "a2d9c3ef-9002-46d3-a793-2474445efb00"
   },
   {
     "question": "Per rendere fotograficamente una situazione diversa dalla realtà senza artifici:",
@@ -297,7 +326,8 @@
       "Una foto, specie se su pellicola, non può essere manipolata",
       "Si deve lavorare sul negativo dell'immagine, che per tale motivo deve essere di grandi dimensioni"
     ],
-    "correct_answer": "Basta, spesso, solo variare il punto di inquadratura del soggetto/dei soggetti"
+    "correct_answer": "Basta, spesso, solo variare il punto di inquadratura del soggetto/dei soggetti",
+    "id": "0c123a2c-4f73-43e6-81ef-7868c6748f75"
   },
   {
     "question": "Per epoca vittoriana si intende:",
@@ -307,7 +337,8 @@
       "Il periodo in cui Giuseppe Di Vittorio guidò il sindacato Cgil, durante il quale i lavoratori conobbero decisi progressi nei loro diritti",
       "L'epoca in cui in Italia regno Vittorio Emanuele II"
     ],
-    "correct_answer": "L'epoca in cui in Inghilterra regnò la regina Vittoria, che fu tra l'altro caratterizzato da pace in Europa e progresso economico"
+    "correct_answer": "L'epoca in cui in Inghilterra regnò la regina Vittoria, che fu tra l'altro caratterizzato da pace in Europa e progresso economico",
+    "id": "8f4d6833-cd0c-4457-9bbf-8af74d9b6ec6"
   },
   {
     "question": "Il principale uso del collodio era:",
@@ -317,7 +348,8 @@
       "Veniva inizialmente usato in campo medico come cicatrizzante e protettore delle ferite",
       "Veniva stesso sui fili di rame dei primi impianti elettrici per le sue proprietà elettroconduttive"
     ],
-    "correct_answer": "Veniva inizialmente usato in campo medico come cicatrizzante e protettore delle ferite"
+    "correct_answer": "Veniva inizialmente usato in campo medico come cicatrizzante e protettore delle ferite",
+    "id": "44be5d39-3e3e-46d7-ae78-1a0e7e9444d0"
   },
   {
     "question": "La fotografia non sa mentire ma i bugiardi sanno fotografare. L'autore di questa affermazione è:",
@@ -327,7 +359,8 @@
       "L'ex primo ministro inglese Theresa May, che la pronunciò dopo un servizio sul Times che ne danneggiò la campagna elettorale",
       "Il fotografo modenese Franco Fontana"
     ],
-    "correct_answer": "Il fotografo modenese Franco Fontana"
+    "correct_answer": "Il fotografo modenese Franco Fontana",
+    "id": "00f3c998-38eb-4610-9b4a-0cbde319e404"
   },
   {
     "question": "L'uso delle lastre di vetro come negativo fotografico risale al:",
@@ -337,7 +370,8 @@
       "1847, grazie gli esperimenti di Nicéphore Niépce",
       "Il vetro non è stato mai usato come negativo fotografico"
     ],
-    "correct_answer": "1847, grazie all'intuito di Claude Nièpce"
+    "correct_answer": "1847, grazie all'intuito di Claude Nièpce",
+    "id": "5ae8bbcf-8fcd-467a-91a5-07389e8129ed"
   },
   {
     "question": "Per far percepire la presenza del colore su una immagine in bianco e nero:",
@@ -347,7 +381,8 @@
       "Non esiste un modo per rendere colorata una immagine in bianco e nero",
       "Si può ricorrere alla tecnica della colorazione manuale, come facevano già i fotografi di fine '800"
     ],
-    "correct_answer": "Possono essere sovrapposte all'immagine delle figure geometriche colorati con i colori primari (rosso, verde, blu)"
+    "correct_answer": "Possono essere sovrapposte all'immagine delle figure geometriche colorati con i colori primari (rosso, verde, blu)",
+    "id": "b43fc4e5-d1f5-4860-ac24-3e598ace2ad8"
   },
   {
     "question": "Le carte deontologiche dei giornalisti:",
@@ -357,7 +392,8 @@
       "Sono state emanate dalla Corte di Cassazione con la sentenza 5259, emessa il 18 ottobre 1984",
       "Sono il recepimento della normativa europea in materia varata nel 1995"
     ],
-    "correct_answer": "Traggono origine ed ispirazione dalla Dichiarazione Universale dei diritti dell'uomo, dal Patto internazionale Onu sui diritti civili e politici, dalla Costituzione Italiana e dalla Legislazione Europea"
+    "correct_answer": "Traggono origine ed ispirazione dalla Dichiarazione Universale dei diritti dell'uomo, dal Patto internazionale Onu sui diritti civili e politici, dalla Costituzione Italiana e dalla Legislazione Europea",
+    "id": "c5f1bace-704b-4af9-8607-48dc9724029b"
   },
   {
     "question": "La legge 8 febbraio 1948, numero 47:",
@@ -367,7 +403,8 @@
       "Regolamenta i criteri per il passaggio dei giornalisti dall'albo dei pubblicisti a quello dei professionisti",
       "Contiene le norme deontologiche cui debbono attenersi i giornalisti della carta stampata, della radio e della Tv"
     ],
-    "correct_answer": "Si occupa delle cosiddette \"disposizioni sulla stampa\""
+    "correct_answer": "Si occupa delle cosiddette \"disposizioni sulla stampa\"",
+    "id": "e748e24d-68a3-4a66-bed0-2a3b417aa22d"
   },
   {
     "question": "Tecnicamente, una fake news è:",
@@ -377,7 +414,8 @@
       "È una notizia messa in piedi solo per fare uno scherzo ad un amico che poi viene diffusa a scherzo riuscito",
       "Una notizia falsa, distorta o manipolata che viene presentata come vera"
     ],
-    "correct_answer": "Una notizia falsa, distorta o manipolata che viene presentata come vera"
+    "correct_answer": "Una notizia falsa, distorta o manipolata che viene presentata come vera",
+    "id": "931df9bc-634d-4a37-b71b-63bd7fb86c1a"
   },
   {
     "question": "Parlare in modo negativo di un prodotto o servizio di un'azienda",
@@ -387,7 +425,8 @@
       "Si rischia di incorrere nel reato previsto dall'articolo 2598 del codice civile, integrando atti di concorrenza sleale. L'autore della notizia falsa può essere condannato al risarcimento dei danni nei confronti dell'azienda o della persona danneggiata.",
       "Posso incorrrere nel reato di cui all'articolo 501 del Codice penale, punito con la reclusione fino a tre anni e con la multa da 516 a 25.829 euro"
     ],
-    "correct_answer": "Si rischia di incorrere nel reato previsto dall'articolo 2598 del codice civile, integrando atti di concorrenza sleale. L'autore della notizia falsa può essere condannato al risarcimento dei danni nei confronti dell'azienda o della persona danneggiata."
+    "correct_answer": "Si rischia di incorrere nel reato previsto dall'articolo 2598 del codice civile, integrando atti di concorrenza sleale. L'autore della notizia falsa può essere condannato al risarcimento dei danni nei confronti dell'azienda o della persona danneggiata.",
+    "id": "9c7bacf9-48cd-495b-b333-42b9c63d4d25"
   },
   {
     "question": "L'offesa di una persona attraverso Facebook:",
@@ -397,7 +436,8 @@
       "È ormai riconosciuta dalla giurisprudenza come appartenente alla fattispecie dell'articolo 595 (diffamazione), ed anzi in molti casi è considerata come diffamazione a mezzo stampa",
       "Non è stata ancora approvata nessuna normativa che regolamenti le ingiurie a mezzo dei social network"
     ],
-    "correct_answer": "È ormai riconosciuta dalla giurisprudenza come appartenente alla fattispecie dell'articolo 595 (diffamazione), ed anzi in molti casi è considerata come diffamazione a mezzo stampa"
+    "correct_answer": "È ormai riconosciuta dalla giurisprudenza come appartenente alla fattispecie dell'articolo 595 (diffamazione), ed anzi in molti casi è considerata come diffamazione a mezzo stampa",
+    "id": "1c561656-5138-4571-9a7f-593ebdd6e95b"
   },
   {
     "question": "Chi condivide e commenta una fake news su un social network:",
@@ -407,7 +447,8 @@
       "È comunque corresponsabile perché, come recita l'articolo 5 del Codice penale, \"Nessuno può invocare a propria scusa l'ignoranza della legge penale\"",
       "Può essere imputato degli stessi reati commessi dall'autore solo se ha condiviso più di dieci volte sui social il post incriminato"
     ],
-    "correct_answer": "Può essere chiamato a correità se non dimostra inconfutabilmente di essere stato tratto in inganno dall'autore della fake"
+    "correct_answer": "Può essere chiamato a correità se non dimostra inconfutabilmente di essere stato tratto in inganno dall'autore della fake",
+    "id": "d79d215c-2be9-4c82-b50b-1c1468ea6ff3"
   },
   {
     "question": "CTR è un acronimo che indica:",
@@ -417,7 +458,8 @@
       "Click Through Rate, ed è un parametro che sia per la comunicazione giornalistica che per quella pubblicitaria è essenziale su internet",
       "Il numero di visualizzazioni complessive di un articolo, e significa Click To Read, clicca per leggere"
     ],
-    "correct_answer": "Click Through Rate, ed è un parametro che sia per la comunicazione giornalistica che per quella pubblicitaria è essenziale su internet"
+    "correct_answer": "Click Through Rate, ed è un parametro che sia per la comunicazione giornalistica che per quella pubblicitaria è essenziale su internet",
+    "id": "ed4e5930-e37c-4092-819e-a8b4bed69a65"
   },
   {
     "question": "Il diritto alla libertà di espressione del pensiero in Italia è tutelato:",
@@ -427,7 +469,8 @@
       "Dall'articolo 5 della legge 8 febbraio 1948, numero 47",
       "Dall'articolo 21 della Costituzione Italiana"
     ],
-    "correct_answer": "Dall'articolo 21 della Costituzione Italiana"
+    "correct_answer": "Dall'articolo 21 della Costituzione Italiana",
+    "id": "7eeb01ba-5fba-45c5-a264-2b6d3d074815"
   },
   {
     "question": "Quando si parla di una persona protagonista di un fatto di cronaca:",
@@ -437,7 +480,8 @@
       "Bisogna limitarsi ai fatti correnti, ma si può fare riferimento alla sua famiglia e ai risvolti che avrà il fatto raccontato su di essa, specie se si tratta di una condanna",
       "Bisogna interpellare l'interessato e chiedergli se è d'accordo a che si pubblichi un articolo sul fatto che lo ha visto protagonista"
     ],
-    "correct_answer": "Se si parla di una persona condannata in passato si deve pesare l'incidenza della pubblicazione sul percorso di reinserimento sociale dell'interessato e sulla famiglia, specialmente se genitore o fratello di persone di minore età."
+    "correct_answer": "Se si parla di una persona condannata in passato si deve pesare l'incidenza della pubblicazione sul percorso di reinserimento sociale dell'interessato e sulla famiglia, specialmente se genitore o fratello di persone di minore età.",
+    "id": "800e9918-8630-496d-a19d-fd7a6753ed5a"
   },
   {
     "question": "Il giornalista, in merito ai suoi archivi:",
@@ -447,7 +491,8 @@
       "Deve metterli a disposizione solo se appartengono alla sua redazione con annunci da pubblicare due volte all'anno",
       "Deve condividerli anche con altri colleghi giornalisti per verificare l'esattezza dei contenuti"
     ],
-    "correct_answer": "Deve metterli a disposizione solo se appartengono alla sua redazione con annunci da pubblicare due volte all'anno"
+    "correct_answer": "Deve metterli a disposizione solo se appartengono alla sua redazione con annunci da pubblicare due volte all'anno",
+    "id": "5e5e3c9f-385e-4481-a2cd-dcad36dc407a"
   },
   {
     "question": "Il diritto di cronaca è riservato a:",
@@ -457,7 +502,8 @@
       "Solo ai giornalisti che operino all'interno di una redazione",
       "Va riconosciuto a chi narra fatti o esprime un pensiero utilizzando un mezzo tecnicamente idoneo ad informare una cerchia indeterminata di persone"
     ],
-    "correct_answer": "Va riconosciuto a chi narra fatti o esprime un pensiero utilizzando un mezzo tecnicamente idoneo ad informare una cerchia indeterminata di persone"
+    "correct_answer": "Va riconosciuto a chi narra fatti o esprime un pensiero utilizzando un mezzo tecnicamente idoneo ad informare una cerchia indeterminata di persone",
+    "id": "7ea92410-3290-4bf2-ad24-b59d15642911"
   },
   {
     "question": "Nei quattro elenchi di caratteristiche di un titolo che seguono una è certamente da non usare per il web",
@@ -467,7 +513,8 @@
       "Deve scegliere una via lineare, legata ai fatti e all'informazione",
       "Deve invitare a proseguire usando punti di domanda e altri \"ganci\" per il lettore"
     ],
-    "correct_answer": "Il titolo deve giocare sempre sul calembour"
+    "correct_answer": "Il titolo deve giocare sempre sul calembour",
+    "id": "d5590e6b-fce5-4a50-8abb-009b32a392a2"
   },
   {
     "question": "Legare il \"lead\" (l'attacco dell'articolo) al titolo:",
@@ -477,7 +524,8 @@
       "È il modo migliore per garantirsi una buona posizione del proprio scritto nei motori di ricerca",
       "È un errore davvero grave tecnicamente rendere dipendenti la titolazione e l'articolo, e deprime il potenziale comunicativo sia del primo che del secondo"
     ],
-    "correct_answer": "È un errore davvero grave tecnicamente rendere dipendenti la titolazione e l'articolo, e deprime il potenziale comunicativo sia del primo che del secondo"
+    "correct_answer": "È un errore davvero grave tecnicamente rendere dipendenti la titolazione e l'articolo, e deprime il potenziale comunicativo sia del primo che del secondo",
+    "id": "e0d972f0-ef22-4eec-bbb2-30394ed7fd0d"
   },
   {
     "question": "La principale differenza tra un gruppo titolo su un giornale e quello su web riguarda",
@@ -487,7 +535,8 @@
       "In quello su web esiste solo il titolo senza altri elementi",
       "Il titolo su web non può superare 60 caratteri"
     ],
-    "correct_answer": "In quello su web normalmente esiste solo il titolo e il sommario"
+    "correct_answer": "In quello su web normalmente esiste solo il titolo e il sommario",
+    "id": "07e84d13-d214-4966-8182-b345b7c093b1"
   },
   {
     "question": "Un titolo su un quotidiano comprende generalmente:",
@@ -497,7 +546,8 @@
       "Solo il titolo principale",
       "Un catenacccio che introduce la notizia, il titolo e il sommario sotto"
     ],
-    "correct_answer": "Un occhiello sopra il titolo che lo introduce, il titolo, il sommario sotto il titolo e un catenaccio sotto il sommario"
+    "correct_answer": "Un occhiello sopra il titolo che lo introduce, il titolo, il sommario sotto il titolo e un catenaccio sotto il sommario",
+    "id": "7ec7a85a-c024-45f4-bf32-c07bbaf293d0"
   },
   {
     "question": "Lo psicologo americano che si occupò del limite della memoria umana a breve termine si chiamava:",
@@ -507,7 +557,8 @@
       "Arthur Miller",
       "George Armitage Miller"
     ],
-    "correct_answer": "George Armitage Miller"
+    "correct_answer": "George Armitage Miller",
+    "id": "4ac2a7c3-b6b7-4b10-b943-01e56587bebe"
   },
   {
     "question": "Google traccia di un titolo su web:",
@@ -517,7 +568,8 @@
       "Da sei ad otto parole",
       "Solo le prime due parole"
     ],
-    "correct_answer": "Da sei ad otto parole"
+    "correct_answer": "Da sei ad otto parole",
+    "id": "53873048-9655-4a64-8f3b-9d7936a1fb0f"
   },
   {
     "question": "Indica tra le quattro risposte il titolo che può essere definito un calembour",
@@ -527,7 +579,8 @@
       "M'illumino d'immenso",
       "L'isola dei formosi"
     ],
-    "correct_answer": "L'isola dei formosi"
+    "correct_answer": "L'isola dei formosi",
+    "id": "40908d40-d3e2-4a11-a5e3-a0074968efc0"
   },
   {
     "question": "Secondo Umberto Eco i titoli possono essere:",
@@ -537,7 +590,8 @@
       "Informativi o emotivi",
       "Informativi o interpretativi"
     ],
-    "correct_answer": "Informativi o emotivi"
+    "correct_answer": "Informativi o emotivi",
+    "id": "1701e5d2-6e4b-477c-a042-1854c9fdef94"
   },
   {
     "question": "Francesca Pagini in \"L'arte di titolare\" definisce il titolo:",
@@ -547,7 +601,8 @@
       "Un requisito oggi determinante, perché i quotidiani e i siti web sono soggetti a una lettura veloce ed il titolo diventa l'elemento determinante che induce a decidere se leggere o meno l'articolo",
       "Il titolo è l'etichetta con cui sigilliamo un'opera creativa e la mettiamo in circolazione: un articolo, un libro, un quadro, un film"
     ],
-    "correct_answer": "Il titolo è l'etichetta con cui sigilliamo un'opera creativa e la mettiamo in circolazione: un articolo, un libro, un quadro, un film"
+    "correct_answer": "Il titolo è l'etichetta con cui sigilliamo un'opera creativa e la mettiamo in circolazione: un articolo, un libro, un quadro, un film",
+    "id": "d09edbd5-9e92-4802-877e-d9c36171391c"
   },
   {
     "question": "Nei tag <head> e </head> va inserito",
@@ -557,7 +612,8 @@
       "Sono i tag che contengono le notizie di chiusura e avvisano il browser che la pagina sta terminando",
       "Vi vanno inseriti i meta tag, finalizzati a fornire informazioni aggiuntive su un documento ipertestuale"
     ],
-    "correct_answer": "Vi vanno inseriti i meta tag, finalizzati a fornire informazioni aggiuntive su un documento ipertestuale"
+    "correct_answer": "Vi vanno inseriti i meta tag, finalizzati a fornire informazioni aggiuntive su un documento ipertestuale",
+    "id": "50c38d3a-aa21-4d21-bb6b-348724686162"
   },
   {
     "question": "Individua tra le risposte quale contiene un tag Html inesistente:",
@@ -567,7 +623,8 @@
       "<bold>, <right>. <body>. <UL><LI>, </OL>, <i>, <center>",
       "<br>, <img src\"/image.jpg\">, <bold>, <right>, <body>, <small>, <u><b><i>"
     ],
-    "correct_answer": "<p>, <center>, <H7>. <left>. <p align=\"right\">, <a href=\"https://unipegaso.it/images/logo.png\">, </UL>"
+    "correct_answer": "<p>, <center>, <H7>. <left>. <p align=\"right\">, <a href=\"https://unipegaso.it/images/logo.png\">, </UL>",
+    "id": "fef60917-548d-41d9-8e44-5b450b40963e"
   },
   {
     "question": "I plugin vengono usati all'interno dei Cms per:",
@@ -577,7 +634,8 @@
       "Per agevolare ulteriormente l'inserimento dei contenuti nel sito",
       "Per aumentare la sicurezza del sito, per consentire la considivisione sui social dei contenuti, per effettuare backup del sito, per gestire newsletter, per ottimizzare la SEO"
     ],
-    "correct_answer": "Per aumentare la sicurezza del sito, per consentire la considivisione sui social dei contenuti, per effettuare backup del sito, per gestire newsletter, per ottimizzare la SEO"
+    "correct_answer": "Per aumentare la sicurezza del sito, per consentire la considivisione sui social dei contenuti, per effettuare backup del sito, per gestire newsletter, per ottimizzare la SEO",
+    "id": "c4e3931b-0c79-469b-acbf-1cd7de292c11"
   },
   {
     "question": "I captcha sono usati per:",
@@ -587,7 +645,8 @@
       "Accertarsi dell'identità del navigatore prima di permettergli l'accesso alle pagine del sito web",
       "Per impedire che i bot utilizzino forum, registrazione presso siti web, scrittura di commenti e in generale tutto ciò che potrebbe essere usato per creare spam o per violare la sicurezza con operazioni di hacking"
     ],
-    "correct_answer": "Per impedire che i bot utilizzino forum, registrazione presso siti web, scrittura di commenti e in generale tutto ciò che potrebbe essere usato per creare spam o per violare la sicurezza con operazioni di hacking"
+    "correct_answer": "Per impedire che i bot utilizzino forum, registrazione presso siti web, scrittura di commenti e in generale tutto ciò che potrebbe essere usato per creare spam o per violare la sicurezza con operazioni di hacking",
+    "id": "baff479b-c88a-4866-803c-52a28ecae858"
   },
   {
     "question": "L'acronimo Cms sta per:",
@@ -597,7 +656,8 @@
       "Content Management System, ovvero Sistema per la Gestione di Contenuti",
       "Container of Macro Systems, ovvero Contenitore di Macro Sistemi"
     ],
-    "correct_answer": "Content Management System, ovvero Sistema per la Gestione di Contenuti"
+    "correct_answer": "Content Management System, ovvero Sistema per la Gestione di Contenuti",
+    "id": "2acb603b-2cef-4a64-8df9-dc9662e3b284"
   },
   {
     "question": "Il Cms è nato:",
@@ -607,7 +667,8 @@
       "Il 17 agosto 2005, grazie al gruppo di sviluppatori dell'australiana Miro Corporation",
       "Nel novembre del 1995, quando Ross Garber e Neil Webber fondarono la Vignette Corporation con lo scopo di creare un sistema che rendesse più agevoli e facili le pubblicazioni sul Web"
     ],
-    "correct_answer": "Nel novembre del 1995, quando Ross Garber e Neil Webber fondarono la Vignette Corporation con lo scopo di creare un sistema che rendesse più agevoli e facili le pubblicazioni sul Web"
+    "correct_answer": "Nel novembre del 1995, quando Ross Garber e Neil Webber fondarono la Vignette Corporation con lo scopo di creare un sistema che rendesse più agevoli e facili le pubblicazioni sul Web",
+    "id": "bb3c5c5d-3d6b-41c6-bef2-52007dc6db50"
   },
   {
     "question": "Il tag serve per:",
@@ -617,7 +678,8 @@
       "Serve ad indicare ai motori di ricerca, attraverso parole chiave studiate, gli argomenti di cui parla il sito",
       "È un Tag diretto agli algoritmi dei motori di ricerca, e gli indica se scansionare il sito per intero o in parte"
     ],
-    "correct_answer": "Serve ad indicare ai motori di ricerca, attraverso parole chiave studiate, gli argomenti di cui parla il sito"
+    "correct_answer": "Serve ad indicare ai motori di ricerca, attraverso parole chiave studiate, gli argomenti di cui parla il sito",
+    "id": "c8902093-70d2-485a-b4f5-c1d0b72d0ecd"
   },
   {
     "question": "L'utilizzo dei meta tag è utile a:",
@@ -627,7 +689,8 @@
       "Sono Tag utili ad indicare sia notizie tecniche al browser che stiamo usando che per la lettura dei contenuti da parte dei motori di ricerca",
       "Servono al browser per memorizzare notizie come il server da cui proviene la pagina e l'argomento di cui essa tratta"
     ],
-    "correct_answer": "Sono Tag utili ad indicare sia notizie tecniche al browser che stiamo usando che per la lettura dei contenuti da parte dei motori di ricerca"
+    "correct_answer": "Sono Tag utili ad indicare sia notizie tecniche al browser che stiamo usando che per la lettura dei contenuti da parte dei motori di ricerca",
+    "id": "4412b50c-1def-4e4f-bb5b-3a439ef96b84"
   },
   {
     "question": "La prima pagina Html fu messa online:",
@@ -637,7 +700,8 @@
       "Nel 1996 ad opera del W3C, ovvero il World Wide Web Consortium",
       "Nel 1974 grazie all'avvento del protocollo TCP/IP"
     ],
-    "correct_answer": "Nel 1991, sul server del Cern di Ginevra"
+    "correct_answer": "Nel 1991, sul server del Cern di Ginevra",
+    "id": "54b70489-4357-4e83-8d1e-d3aac86b0f39"
   },
   {
     "question": "L'Html è:",
@@ -647,7 +711,8 @@
       "Un linguaggio fatto da un insieme di marcatori (mark-up, in inglese), che legge dei contrassegni",
       "Il codice grazie al quale vengono disegnate graficamente le pagine web"
     ],
-    "correct_answer": "Un linguaggio fatto da un insieme di marcatori (mark-up, in inglese), che legge dei contrassegni"
+    "correct_answer": "Un linguaggio fatto da un insieme di marcatori (mark-up, in inglese), che legge dei contrassegni",
+    "id": "d24ce412-8ab7-4f85-9cda-bcc7e6a061c0"
   },
   {
     "question": "Gli aggiornamenti di sirurezza dei sistemi operativi (Windows, Linux, Android, MacOs):",
@@ -657,7 +722,8 @@
       "Vanno scaricati con tempestività per la loro importanza, ricorrendo anche alle utility come Windows update che vi aggiorna sulla loro presenza e vi permette di decidere se scaricarli in automatico o su vostro imput",
       "Una volta che un sistema è stato verificato come sicuro e affidabile è preferibile non scaricarli mai per evitare malfunzionamenti"
     ],
-    "correct_answer": "Vanno scaricati con tempestività per la loro importanza, ricorrendo anche alle utility come Windows update che vi aggiorna sulla loro presenza e vi permette di decidere se scaricarli in automatico o su vostro imput"
+    "correct_answer": "Vanno scaricati con tempestività per la loro importanza, ricorrendo anche alle utility come Windows update che vi aggiorna sulla loro presenza e vi permette di decidere se scaricarli in automatico o su vostro imput",
+    "id": "75006f7b-6044-45eb-861b-5c48d9f0ec76"
   },
   {
     "question": "Per seguire correttamente le lezioni della piattaforma Unipegaso:",
@@ -667,7 +733,8 @@
       "È necessario che le impostazioni del nostro browser siano impostate sullo stato di 'massima sicurezza'",
       "Non è necessario alcun particolare accorgimento per seguire le lezioni della piattaforma"
     ],
-    "correct_answer": "È necessario che almeno i controlli javascript siano attivi: è anche su di essi che è basata l'interazione tra studente e piattaforma"
+    "correct_answer": "È necessario che almeno i controlli javascript siano attivi: è anche su di essi che è basata l'interazione tra studente e piattaforma",
+    "id": "e23ac4d7-9fe0-47ed-936e-c7063162b09a"
   },
   {
     "question": "Un file word è potenzialmente insicuro:",
@@ -677,7 +744,8 @@
       "Perché è eccessivamente grande rispetto a un file di testo e questo ne può compromettere la trasmissione via internet con un collegamento lento",
       "Perché se la versione di Office che usiamo non è originale Microsoft ha inserito un accorgimento di protezione che distrugge i dati sull'unità di memoria che lo contiene"
     ],
-    "correct_answer": "Perché consultando le sue proprietà possono essere letti dati quali autore, nome del pc, data di revisione, server su cui è depositato ed altro"
+    "correct_answer": "Perché consultando le sue proprietà possono essere letti dati quali autore, nome del pc, data di revisione, server su cui è depositato ed altro",
+    "id": "053a177d-e429-425c-a502-5aa9a3cab32b"
   },
   {
     "question": "La Vpn è:",
@@ -687,7 +755,8 @@
       "Una rete di comunicazione privata istituita tra due apparati (pc, notebook, smartphone, tablet), che si svolge attraverso un 'tunnel' privato e virtuale con protocolli sicuri",
       "Un collegamento privato e virtuale tra due persone. Generalmente avviene tra due partner che si scambiano messaggi che non vogliono rendere pubblici"
     ],
-    "correct_answer": "Una rete di comunicazione privata istituita tra due apparati (pc, notebook, smartphone, tablet), che si svolge attraverso un 'tunnel' privato e virtuale con protocolli sicuri"
+    "correct_answer": "Una rete di comunicazione privata istituita tra due apparati (pc, notebook, smartphone, tablet), che si svolge attraverso un 'tunnel' privato e virtuale con protocolli sicuri",
+    "id": "63ec3986-a244-4fb1-a76e-82049cc37460"
   },
   {
     "question": "Il ransomware:",
@@ -697,7 +766,8 @@
       "È un tipo di malware che limita l'accesso del dispositivo che infetta, richiedendo un riscatto (ransom in inglese) da pagare per rimuovere la limitazione",
       "Una pratica in uso tra i ladri di telefonini e portatili, che poi ricattano (ransom) il proprietario per restituirgli il bene"
     ],
-    "correct_answer": "È un tipo di malware che limita l'accesso del dispositivo che infetta, richiedendo un riscatto (ransom in inglese) da pagare per rimuovere la limitazione"
+    "correct_answer": "È un tipo di malware che limita l'accesso del dispositivo che infetta, richiedendo un riscatto (ransom in inglese) da pagare per rimuovere la limitazione",
+    "id": "a514e6f9-3ab2-4159-bee0-557f5ec4a128"
   },
   {
     "question": "È consigliato eseguire un backup dei propri dati:",
@@ -707,7 +777,8 @@
       "Almeno una volta al mese",
       "Prima di ogni aggiornamento di sistema, dell'installazione di nuovi software/periferiche, e comunque periodicamente sulla base dell'uso che si fa del proprio apparato"
     ],
-    "correct_answer": "Prima di ogni aggiornamento di sistema, dell'installazione di nuovi software/periferiche, e comunque periodicamente sulla base dell'uso che si fa del proprio apparato"
+    "correct_answer": "Prima di ogni aggiornamento di sistema, dell'installazione di nuovi software/periferiche, e comunque periodicamente sulla base dell'uso che si fa del proprio apparato",
+    "id": "fb2fb505-995c-4028-9ff8-f17903ce5b6b"
   },
   {
     "question": "Lo scareware è quel tipo di programma malevolo:",
@@ -717,7 +788,8 @@
       "Che cerca di spaventarmi evidenziando problemi inesistenti o banali sul mio apparato, per indurmi ad acquistarlo con al promessa di risolverli",
       "Che si nasconde all'interno di un programma dall'apparenza innocua, e si usa per mantenere il controllo remoto del computer infetto, senza che il legittimo proprietario si accorga di nulla"
     ],
-    "correct_answer": "Che cerca di spaventarmi evidenziando problemi inesistenti o banali sul mio apparato, per indurmi ad acquistarlo con al promessa di risolverli"
+    "correct_answer": "Che cerca di spaventarmi evidenziando problemi inesistenti o banali sul mio apparato, per indurmi ad acquistarlo con al promessa di risolverli",
+    "id": "422a46d6-2f30-4c5e-b0ac-81d4a2e7360c"
   },
   {
     "question": "Una password è sicura quando",
@@ -727,7 +799,8 @@
       "È composta almeno di sei caratteri, comprendenti maiuscole e minuscole",
       "È composta da almeno otto caratteri, comprendenti maiuscole, minuscole, caratteri speciali e segni di interpunzione"
     ],
-    "correct_answer": "È composta da almeno otto caratteri, comprendenti maiuscole, minuscole, caratteri speciali e segni di interpunzione"
+    "correct_answer": "È composta da almeno otto caratteri, comprendenti maiuscole, minuscole, caratteri speciali e segni di interpunzione",
+    "id": "46e23513-7367-4287-a880-53ce8ee00507"
   },
   {
     "question": "Il phishing è:",
@@ -737,7 +810,8 @@
       "Una tecnica ingannevole attraverso la quale malintenzionati cercano di carpire dati personali e numeri di carta di credito",
       "Una tecnica per ingannare i navigatori più sprovveduti, che in Italia vengono chiamati 'boccaloni' appunto ispirandosi ai pesci che attaccano l'amo con il cibo"
     ],
-    "correct_answer": "Una tecnica ingannevole attraverso la quale malintenzionati cercano di carpire dati personali e numeri di carta di credito"
+    "correct_answer": "Una tecnica ingannevole attraverso la quale malintenzionati cercano di carpire dati personali e numeri di carta di credito",
+    "id": "52b9fe78-a15a-4618-b775-5af0830d31a8"
   },
   {
     "question": "Usare un firewall sul nostro pc o tablet o smartphone è importante:",
@@ -747,7 +821,8 @@
       "Perché rende la nostra navigazione più veloce",
       "Perché ci difende dai virus"
     ],
-    "correct_answer": "Perché agisce come una sorta di buttafuori che impedisce accessi indesiderati al nostro sistema"
+    "correct_answer": "Perché agisce come una sorta di buttafuori che impedisce accessi indesiderati al nostro sistema",
+    "id": "a02ced54-ad68-4a17-84d1-e69c0bb86d3c"
   },
   {
     "question": "Il brand journalism nella Pubblica Amministrazione:",
@@ -757,7 +832,8 @@
       "È realizzabile e la rete Iperbole di Bologna, con i servizi offerti in rete e il magazine \"La lettera di Iperbole\" ne è un esempio molto ben riuscito",
       "È realizzabile solo se tutti i cittadini che vivono nel territorio coperto dalla rete ciivica sono collegati a internet con la fibra ottica"
     ],
-    "correct_answer": "È realizzabile e la rete Iperbole di Bologna, con i servizi offerti in rete e il magazine \"La lettera di Iperbole\" ne è un esempio molto ben riuscito"
+    "correct_answer": "È realizzabile e la rete Iperbole di Bologna, con i servizi offerti in rete e il magazine \"La lettera di Iperbole\" ne è un esempio molto ben riuscito",
+    "id": "4798dca0-cc7a-4a4f-8bc3-9d69f85da909"
   },
   {
     "question": "Tra gli scopi di una Rete Civica, secondo il sito qualitapa.gov.it, vi è:",
@@ -767,7 +843,8 @@
       "Mettere a disposizione dei cittadini ogni tipo di atto prodotto dalla municipalità cui la rete appartiene",
       "Consentire ai cittadini di potersi sposare e unire civilmente anche restando a casa"
     ],
-    "correct_answer": "L'interazione tra cittadini e amministratori"
+    "correct_answer": "L'interazione tra cittadini e amministratori",
+    "id": "ede13927-bd1f-457f-8bc6-f0ea2a30cfc9"
   },
   {
     "question": "Le Bbs, nate negli anni '80, erano:",
@@ -777,7 +854,8 @@
       "Le prime forme di chat, attraverso le quali persone che vivevano a distanza notevole socializzavano tra loro",
       "Servizi sperimentali di tv sulla rete internet realizzati dalla British Broadcasting Service"
     ],
-    "correct_answer": "Sistemi di bacheca elettronica attraverso i quali computer remoti potevano collegarsi a un server centrale per prelevare o condividere risorse"
+    "correct_answer": "Sistemi di bacheca elettronica attraverso i quali computer remoti potevano collegarsi a un server centrale per prelevare o condividere risorse",
+    "id": "0f4da4f4-c668-44dd-9196-856f6cec9e7a"
   },
   {
     "question": "Il professor Roberto Zarriello definisce il brand journalism:",
@@ -787,7 +865,8 @@
       "Tipo di giornalismo prettamente dedicato alla pubblicità di un marchio (brand) attraverso gli strumenti e le regole proprie del professionista che opera nei mass media",
       "Tipo di giornalismo che si occupa di generare interesse per un marchio (brand) in media già esistenti, attraverso gli strumenti e le regole proprie del professionista che opera nei mass media"
     ],
-    "correct_answer": "Tipo di giornalismo che si occupa della comunicazione di tutto ciò che ruota attorno a un marchio (brand) con lo scopo fondamentale di informare i lettori sulla storia dell'azienda attraverso gli strumenti e le regole proprie del professionista che opera nei mass media"
+    "correct_answer": "Tipo di giornalismo che si occupa della comunicazione di tutto ciò che ruota attorno a un marchio (brand) con lo scopo fondamentale di informare i lettori sulla storia dell'azienda attraverso gli strumenti e le regole proprie del professionista che opera nei mass media",
+    "id": "4274ce71-e983-47b2-b6c4-b97a6b8b8365"
   },
   {
     "question": "Il piano stampa operativo comprende tra l'altro:",
@@ -797,7 +876,8 @@
       "La selezione delle testate con le quali interfacciarsi e la scelta della tempistica di invio dei comunicati sulla base della periodicità delle stesse",
       "Assicurarsi di avere a portata di mano gli orari di apertura delle varie redazioni per essere sicuri di mandare i comunicati nei tempi giusti"
     ],
-    "correct_answer": "La selezione delle testate con le quali interfacciarsi e la scelta della tempistica di invio dei comunicati sulla base della periodicità delle stesse"
+    "correct_answer": "La selezione delle testate con le quali interfacciarsi e la scelta della tempistica di invio dei comunicati sulla base della periodicità delle stesse",
+    "id": "7c29d319-6702-4a5a-b962-c59a2eadd97b"
   },
   {
     "question": "Il materiale multimediale che deve accompagnare il comunicato:",
@@ -807,7 +887,8 @@
       "È preferibile non allegare materiale multimediale al comunicato: di solito i redattori preferiscono cercarlo in rete da soli",
       "Va differenziato a seconda della testata destinataria: solo audio alle radio, solo video alle Tv, solo foto alle testate cartacee e web"
     ],
-    "correct_answer": "Va caricato su uno dei servizi gratuitamente disponibile, come Google drive o One drive di Microsoft, in modo che il destinatario del nostro comunicato possa scegliere quello che gli occorre"
+    "correct_answer": "Va caricato su uno dei servizi gratuitamente disponibile, come Google drive o One drive di Microsoft, in modo che il destinatario del nostro comunicato possa scegliere quello che gli occorre",
+    "id": "82d2d2ca-f29e-490c-8d7c-f7e5d6da4f97"
   },
   {
     "question": "Una delle regole fondamentali per la scrittura di un comunicato stampa è:",
@@ -817,7 +898,8 @@
       "Salvaguardare l'immagine aziendale fornendo alla fine del testo solo i recapiti degli organizzatori, così che possano essere raggiunti dai redattori interessati",
       "Il contenuto dovrà essere convincente e chiaro dovrà inoltre anche incuriosire il destinatario nel voler divulgare la notizia che comunichiamo"
     ],
-    "correct_answer": "Il contenuto dovrà essere convincente e chiaro dovrà inoltre anche incuriosire il destinatario nel voler divulgare la notizia che comunichiamo"
+    "correct_answer": "Il contenuto dovrà essere convincente e chiaro dovrà inoltre anche incuriosire il destinatario nel voler divulgare la notizia che comunichiamo",
+    "id": "9b1e124c-5940-48f1-9047-08570c6a0e08"
   },
   {
     "question": "La lista di contatti (mailing list) va:",
@@ -827,7 +909,8 @@
       "Redatta ricorrendo anche al copia e incolla delle liste di altri colleghi, allo scopo di renderla corposa",
       "Chiesta in prestito a chi in precedenza abbia ricoperto incarichi simili al nostro"
     ],
-    "correct_answer": "Preparata in base all'evento, al prodotto, all'azienda o all'associazione che promuoveremo nel nostro comunicato stampa, e continuamente aggiornata"
+    "correct_answer": "Preparata in base all'evento, al prodotto, all'azienda o all'associazione che promuoveremo nel nostro comunicato stampa, e continuamente aggiornata",
+    "id": "54523893-0b6d-4655-90fb-ae851583cebc"
   },
   {
     "question": "I passi indispensabili prima di dare avvio all'attività dell'ufficio stampa sono:",
@@ -837,7 +920,8 @@
       "Andare in giro per le redazioni avvisando dell'imminente inizio del nostro incarico",
       "Documentarsi bene su quanto dobbiamo promuovere, preparare la mailing list, predisporre un piano di gestione"
     ],
-    "correct_answer": "Documentarsi bene su quanto dobbiamo promuovere, preparare la mailing list, predisporre un piano di gestione"
+    "correct_answer": "Documentarsi bene su quanto dobbiamo promuovere, preparare la mailing list, predisporre un piano di gestione",
+    "id": "90e8bfd6-4233-4ca0-9058-71e03fe4f12b"
   },
   {
     "question": "Per la migliore gestione di un ufficio stampa è utile:",
@@ -847,7 +931,8 @@
       "Mandare quante più mail possibile al giorno alle redazioni, così di sicuro pubblicheranno i nostri comunicati",
       "Non ci sono particolari regole da seguire, basta mandare i comunicati stampa via fax"
     ],
-    "correct_answer": "Anche se non obbligatorio, che al suo interno vi siano anche uno o più giornalisti, pubblicisti o professionisti"
+    "correct_answer": "Anche se non obbligatorio, che al suo interno vi siano anche uno o più giornalisti, pubblicisti o professionisti",
+    "id": "0faa110e-52a3-4e61-afa2-ce6b9268d331"
   },
   {
     "question": "Si scrive:",
@@ -857,7 +942,8 @@
       "papa Francesco, il Vescovo Giuseppe Alfano, il professore, le provincie",
       "papa Francesco, il vescovo Giuseppe Alfano, il professore, le province"
     ],
-    "correct_answer": "papa Francesco, il vescovo Giuseppe Alfano, il professore, le province"
+    "correct_answer": "papa Francesco, il vescovo Giuseppe Alfano, il professore, le province",
+    "id": "faeabbd0-4ef6-4680-badd-f132c88edd46"
   },
   {
     "question": "Nello scrivere parole non italiane al plurale la regola è:",
@@ -867,7 +953,8 @@
       "È indifferente il modo di scrivere le parole straniere al plurale",
       "Esse infatti rimangono invariate essendo assimilate per la grammatica ai nomi invariabili italiani"
     ],
-    "correct_answer": "Esse infatti rimangono invariate essendo assimilate per la grammatica ai nomi invariabili italiani"
+    "correct_answer": "Esse infatti rimangono invariate essendo assimilate per la grammatica ai nomi invariabili italiani",
+    "id": "e4ecb17b-a3d8-481b-b699-acd4780dfca0"
   },
   {
     "question": "Il cybergiornalista deve:",
@@ -877,7 +964,8 @@
       "Conoscere nel dettaglio ogni notizia utile sui suoi lettori, anche attraverso l'uso degli analytics",
       "pubblicare i suoi articoli quanto prima possibile di mattina, così che abbiano una diffusione più ampia"
     ],
-    "correct_answer": "Conoscere nel dettaglio ogni notizia utile sui suoi lettori, anche attraverso l'uso degli analytics"
+    "correct_answer": "Conoscere nel dettaglio ogni notizia utile sui suoi lettori, anche attraverso l'uso degli analytics",
+    "id": "fb18e55b-6bf9-4814-a210-3312ffd083b0"
   },
   {
     "question": "Il Php nasce nel 1994 con lo scopo di:",
@@ -887,7 +975,8 @@
       "Già dalla prima versione fu scritto per gestire database complessi",
       "Aiutare gli sviluppatori a realizzare videogiochi con una grafica migliore"
     ],
-    "correct_answer": "Fornire all'utente una raccolta di script per realizzare siti web dinamici, e fu presentato con la sigla \"Personal Home Page\""
+    "correct_answer": "Fornire all'utente una raccolta di script per realizzare siti web dinamici, e fu presentato con la sigla \"Personal Home Page\"",
+    "id": "2f538587-c4f2-4468-8a9d-a276ae4b51c1"
   },
   {
     "question": "L'espessione che definisce meglio l'acronimo CMS è:",
@@ -897,7 +986,8 @@
       "Il CMS è un Assistente Multimediale per la realizzazione di un sito web",
       "Il CMS è un Coadiutore Multimediale di Scrittura"
     ],
-    "correct_answer": "CMS sta per Content Management System, ovvero Sistema di Gestione dei Contenuti"
+    "correct_answer": "CMS sta per Content Management System, ovvero Sistema di Gestione dei Contenuti",
+    "id": "fd2f931f-1514-4310-8d7a-ae237e0131d8"
   },
   {
     "question": "Il modo corretto di scrivere il titolo di un'opera letteraria è:",
@@ -907,7 +997,8 @@
       "Le novelle della Pescara",
       "Le Novelle Della Pescara"
     ],
-    "correct_answer": "Le Novelle della Pescara"
+    "correct_answer": "Le Novelle della Pescara",
+    "id": "77f8366a-6dde-48b8-bbeb-ba0a343b6fd6"
   },
   {
     "question": "Tra i tre tipi di modelli comunicativi: la dimensione verticale (autorità), orizzontale (tra pari) di profondità (intimità), il giornalista deve:",
@@ -917,7 +1008,8 @@
       "Deve soprattutto avvalersi del modello di comunicazione di profondità, stabilendo un rapporto quanto più confidenziale possibile con il suo lettore",
       "Deve saper istituire con i suoi lettori una sintesi dei tre tipi"
     ],
-    "correct_answer": "Deve saper istituire con i suoi lettori una sintesi dei tre tipi"
+    "correct_answer": "Deve saper istituire con i suoi lettori una sintesi dei tre tipi",
+    "id": "f75cf700-bc2e-48c3-bf29-5a8a501701ab"
   },
   {
     "question": "Il web content manager è:",
@@ -927,7 +1019,8 @@
       "Una persona che ha la responsabilità di inserire i contenuti in rete, ovvero informazioni che vengono fornite agli utenti",
       "Colui che è addetto al controllo della rispondenza alle etiche aziendali dei contenuti di un sito"
     ],
-    "correct_answer": "Una persona che ha la responsabilità di inserire i contenuti in rete, ovvero informazioni che vengono fornite agli utenti"
+    "correct_answer": "Una persona che ha la responsabilità di inserire i contenuti in rete, ovvero informazioni che vengono fornite agli utenti",
+    "id": "1f2b8b81-1973-4d9d-abb6-9026b6023781"
   },
   {
     "question": "La trasmissione di una fotografia 13x24 in b/n con la telefoto richiedeva:",
@@ -937,7 +1030,8 @@
       "Quaranta minuti a 45 giri/minuto",
       "Dodici minuti a 120 giri/minuto"
     ],
-    "correct_answer": "Dodici minuti a 120 giri/minuto"
+    "correct_answer": "Dodici minuti a 120 giri/minuto",
+    "id": "f32c30a4-472d-4b99-8a19-cf3e2e2de36c"
   },
   {
     "question": "Il dimafonista era:",
@@ -947,7 +1041,8 @@
       "Il poligrafico velocissimo nello scrivere (dal greco δεῖγμα «campione» e γράϕω «scrivere») che riceveva via telefono la dettatura gli articoli",
       "Un apparecchio registratore in uso nelle redazioni giornalistiche fino agli anni '90 dove il caporedattore registrava ogni giorno le sue direttive"
     ],
-    "correct_answer": "L'operatore che riceveva le telefonate con la dettatura degli articoli giornalistici e le registrava su un apparecchio chiamato appunto dimafono"
+    "correct_answer": "L'operatore che riceveva le telefonate con la dettatura degli articoli giornalistici e le registrava su un apparecchio chiamato appunto dimafono",
+    "id": "b65a5573-ad83-4bbf-95ae-160d48feaf94"
   },
   {
     "question": "Le vendite di quodidiani in Italia:",
@@ -957,7 +1052,8 @@
       "Non hanno subito negli ultimi anni variazioni significative",
       "Sono state messe in crisi dall'avvento della Tv digitale"
     ],
-    "correct_answer": "Sono diminuite del 45% circa dal 1990 al 2013"
+    "correct_answer": "Sono diminuite del 45% circa dal 1990 al 2013",
+    "id": "6e95cf84-4d98-44ed-bc13-a62581f4b09c"
   },
   {
     "question": "La piramide rovesciata è:",
@@ -967,7 +1063,8 @@
       "Il trofeo in cristallo che viene assegnato al premio Saint-Vincent per il giornalismo",
       "È la tecnica giornalistica che consiste nello scrivere all'inizio le informazioni più importanti, per poi passare a esporre i dettagli"
     ],
-    "correct_answer": "È la tecnica giornalistica che consiste nello scrivere all'inizio le informazioni più importanti, per poi passare a esporre i dettagli"
+    "correct_answer": "È la tecnica giornalistica che consiste nello scrivere all'inizio le informazioni più importanti, per poi passare a esporre i dettagli",
+    "id": "55882f0f-3258-44a5-bbfd-42f9a9bd7f99"
   },
   {
     "question": " Le celeberrime 5W del giornalismo risalgono:",
@@ -977,7 +1074,8 @@
       "La tecnica di rispondere ad una serie di domande fisse, tra cui quelle che oggi vengono indicate con le 5W, viene fatta risalire ad Ermagora di Temno ( II sec. A.C.)",
       "Fu Tommaso d'Aquino che nel 1215 stabilì che un argomento dovesse rispondere alle domande Quis (chi), Quid (cosa), Quando (quando), Ubi (dove), Cur (perché), Quantum (quanto), Quomodo (in che modo), Quibus Auxiliis (con che mezzi)"
     ],
-    "correct_answer": "La tecnica di rispondere ad una serie di domande fisse, tra cui quelle che oggi vengono indicate con le 5W, viene fatta risalire ad Ermagora di Temno ( II sec. A.C.)"
+    "correct_answer": "La tecnica di rispondere ad una serie di domande fisse, tra cui quelle che oggi vengono indicate con le 5W, viene fatta risalire ad Ermagora di Temno ( II sec. A.C.)",
+    "id": "fb4b517f-5d3c-4054-9bcf-85cec1f15c11"
   },
   {
     "question": "Sul web un articolo di solo testo:",
@@ -987,7 +1085,8 @@
       "Non esistono articoli solo testuali nei moderni siti",
       "Viene letto mediamente per la metà"
     ],
-    "correct_answer": "Viene letto mediamente per la metà"
+    "correct_answer": "Viene letto mediamente per la metà",
+    "id": "f085804e-8933-48b3-8139-349f204467df"
   },
   {
     "question": "Con \"rischio della spirale\", nel mondo giornalistico, si intende:",
@@ -997,7 +1096,8 @@
       "Il fenomeno per il quale tutti finiscono per copiare da tutti perdendo di vista l'origine della notizia",
       "Il dubbio vorticoso che avvolge il giornalista al momento in cui scegliere la notizia cui dedicarsi"
     ],
-    "correct_answer": "Il fenomeno per il quale tutti finiscono per copiare da tutti perdendo di vista l'origine della notizia"
+    "correct_answer": "Il fenomeno per il quale tutti finiscono per copiare da tutti perdendo di vista l'origine della notizia",
+    "id": "a98c2f22-e4a3-4ae8-973b-e8b1bb372301"
   },
   {
     "question": "La fonte passiva, giornalisticamente, è:",
@@ -1007,7 +1107,8 @@
       "L'addetto stampa della Prefettura quando trasmette un comunicato",
       "Ogni comunicato dove non vi è possibilità di ricontattare il mittente"
     ],
-    "correct_answer": "Quella che il giornalista cerca direttamente sul campo"
+    "correct_answer": "Quella che il giornalista cerca direttamente sul campo",
+    "id": "f718ed61-0035-4423-a427-bd5fdf085fe0"
   },
   {
     "question": "Il giornalista che segue personalmente un evento si affida ad una fonte:",
@@ -1017,7 +1118,8 @@
       "Partecipa perché invitato e scrive quel che l'organizzazione gli trasmette per iscritto",
       "Non ufficiale"
     ],
-    "correct_answer": "Primaria"
+    "correct_answer": "Primaria",
+    "id": "b2267505-aa30-4d08-8dfe-f584db0ea848"
   },
   {
     "question": "Un testo meno denso:",
@@ -1027,7 +1129,8 @@
       "consente inferenze, che però sono ricavabili solo da chi conosce piuttosto bene l'argomento",
       "Consente inferenze abbastanza evidenti"
     ],
-    "correct_answer": "consente inferenze, che però sono ricavabili solo da chi conosce piuttosto bene l'argomento"
+    "correct_answer": "consente inferenze, che però sono ricavabili solo da chi conosce piuttosto bene l'argomento",
+    "id": "353e9e12-c492-4641-ba43-589f2453a9d5"
   },
   {
     "question": "L'inferenza è:",
@@ -1037,7 +1140,8 @@
       "Un tipo di aggressione fisica che produce ferite dall'aspetto caratteristico",
       "il processo con il quale da una proposizione accolta come vera si passa a una seconda proposizione la cui verità è derivata dal contenuto della prima"
     ],
-    "correct_answer": "il processo con il quale da una proposizione accolta come vera si passa a una seconda proposizione la cui verità è derivata dal contenuto della prima"
+    "correct_answer": "il processo con il quale da una proposizione accolta come vera si passa a una seconda proposizione la cui verità è derivata dal contenuto della prima",
+    "id": "ff5e43ed-1810-4ca3-a10c-0dbc3d6686ff"
   },
   {
     "question": "Un testo documentato è: Cos'è un testo documentato",
@@ -1047,6 +1151,7 @@
       "Un testo che riporta i dati contenuti in documenti di identità",
       "Un compito scolastico"
     ],
-    "correct_answer": "Una scrittura che si basa su una documentazione, cioè su dei dati"
+    "correct_answer": "Una scrittura che si basa su una documentazione, cioè su dei dati",
+    "id": "1edec2d9-a428-40ef-8901-558f3c10cce2"
   }
 ]
