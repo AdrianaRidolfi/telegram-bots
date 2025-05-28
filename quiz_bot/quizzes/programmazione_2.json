@@ -7,7 +7,8 @@
       "Un errore di sintassi",
       "non presenta errori"
     ],
-    "correct_answer": "Un errore logico"
+    "correct_answer": "Un errore logico",
+    "id": "3d8beae4-8c61-494f-ab6c-640250f614bb"
   },
   {
     "question": "Se in un grafo sono presenti archi paralleli, è possibile dedurre che:",
@@ -17,7 +18,8 @@
       "Il grafo è completo",
       "Il grafo è un multigrafo"
     ],
-    "correct_answer": "Il grafo è un multigrafo"
+    "correct_answer": "Il grafo è un multigrafo",
+    "id": "86c42b34-d157-4eef-981b-8d7ee94c929f"
   },
   {
     "question": "In uno script per estrarre i dati da un database la sequenza corretta delle operazioni è:",
@@ -27,7 +29,8 @@
       "Creare il cursore, eseguire execute(), creare la connessione, fetchall()",
       "Associare il cursore, creare la connessione, eseguire fetchall(), execute()"
     ],
-    "correct_answer": "Creare una variabile di connessione, associare un cursore alla connessione, eseguire execute() del cursore passando la questi come parametro e infine fetchall() del cursore per ottenere le tuple"
+    "correct_answer": "Creare una variabile di connessione, associare un cursore alla connessione, eseguire execute() del cursore passando la questi come parametro e infine fetchall() del cursore per ottenere le tuple",
+    "id": "b03dd0bb-90e9-4b87-b4a5-c30c77f4d2c4"
   },
   {
     "question": "La forma equivalente dell'istruzionewhiteside$Temp%&amp;gt;%length()è:",
@@ -37,7 +40,8 @@
       "length(whiteside$Temp)",
       "Temp(whiteside).length()"
     ],
-    "correct_answer": "length(whiteside$Temp)"
+    "correct_answer": "length(whiteside$Temp)",
+    "id": "dc907c14-322f-470c-9bce-0a95590f157f"
   },
   {
     "question": "Dopo l’esecuzione del seguente frammento di script in R v = c(7,5,8,9,6,5,9,5) s = v&gt;5 s ẻ:",
@@ -47,7 +51,8 @@
       "Una variabile a valore booleano",
       "Un vettore di 5 valori numeric"
     ],
-    "correct_answer": "Un vettore di 8 valori logical array"
+    "correct_answer": "Un vettore di 8 valori logical array",
+    "id": "01bc4721-741c-4ce1-a63f-bed122708742"
   },
   {
     "question": "il risultato del seguente frammento di codice in R: p=matrix (1,2,3,4,5,6) n row=3, byrow=TRUE) p=rowSums(p) e:",
@@ -57,7 +62,8 @@
       "il fattore: 3 7 11",
       "dizionario"
     ],
-    "correct_answer": "il vettore: 3 7 11"
+    "correct_answer": "il vettore: 3 7 11",
+    "id": "9cc472c2-fc37-460e-8d89-cab2641add1d"
   },
   {
     "question": "Il seguente frammento di codice S= “Asso” Print(s[s.find(‘z’)+1]) Visualizza a schermo:",
@@ -67,7 +73,8 @@
       "IL primo carattere ‘A’",
       "asso"
     ],
-    "correct_answer": "IL primo carattere ‘A’"
+    "correct_answer": "IL primo carattere ‘A’",
+    "id": "4fc3e193-86f2-42eb-a40f-82e89250d9f8"
   },
   {
     "question": "L'exception handler:",
@@ -77,7 +84,8 @@
       "È successivo al finally",
       ".È successivo all'except"
     ],
-    "correct_answer": ".È successivo all'except"
+    "correct_answer": ".È successivo all'except",
+    "id": "a8bb555d-d116-4602-a339-1381b1ec570f"
   },
   {
     "question": "Nel caso in cui l’istruzione: f=open(file_name,’w) sollevi un’eccezione, è maggiormente indicato utilizzare il seguente codice:",
@@ -87,7 +95,8 @@
       "except ValueError:",
       "in"
     ],
-    "correct_answer": "except:"
+    "correct_answer": "except:",
+    "id": "9578b8c3-f521-48bc-a3d4-70653c7b6b32"
   },
   {
     "question": "Data la funzione ok(), nella chiamata al costruttore di un pulsante Button per impostare ok() come funzione di callback è necessario riportare?",
@@ -97,7 +106,8 @@
       "ok",
       "comman"
     ],
-    "correct_answer": "la funzione Python (detta funzione di Callback) da invocare quando il pulsante viene cliccato command = ok"
+    "correct_answer": "la funzione Python (detta funzione di Callback) da invocare quando il pulsante viene cliccato command = ok",
+    "id": "20eb3306-cb2b-4e6b-9de0-eeb054f8f91e"
   },
   {
     "question": "Dato il seguente frammento di codice: def main(): a= -1 la funzione corretta da utilizzare per cambiare il segno di ‘a’ nel ‘main é:",
@@ -107,7 +117,8 @@
       "def cambia_segno(x): return -x",
       "def cambia_segno(): global a   a=-a"
     ],
-    "correct_answer": "def cambia_segno(x): return -x"
+    "correct_answer": "def cambia_segno(x): return -x",
+    "id": "a0c2b7c5-6237-4503-8ee5-8664516b6528"
   },
   {
     "question": ". L'istruzione a = \"\".join(cons + voc + ['x']*2)[0:3] permette di:",
@@ -117,7 +128,8 @@
       "calcolare la porzione del codice fiscale relativa alla città di nascita",
       "calcolare la porzione del codice fiscale relativa al sesso"
     ],
-    "correct_answer": "calcolare la porzione del codice fiscale relativa al cognome"
+    "correct_answer": "calcolare la porzione del codice fiscale relativa al cognome",
+    "id": "2f4156cc-002d-4039-928e-edcd99a4e8cd"
   },
   {
     "question": "Nelle liste la ricerca è:",
@@ -127,7 +139,8 @@
       "logaritmica",
       "esponenziale"
     ],
-    "correct_answer": "lineare"
+    "correct_answer": "lineare",
+    "id": "a6618e56-6392-48ab-b36e-0056f70f4977"
   },
   {
     "question": "Le espressioni regolari sono:",
@@ -137,7 +150,8 @@
       "stringhe con una sintassi formale per cercare corrispondenze in un testo",
       "letterali di testo con una sintassi formale per cercare corrispondenze in un testo"
     ],
-    "correct_answer": "modelli descritti con una sintassi formale per cercare corrispondenze in un testo"
+    "correct_answer": "modelli descritti con una sintassi formale per cercare corrispondenze in un testo",
+    "id": "4faff466-13bb-484d-b680-e0ad2ae0f5e4"
   },
   {
     "question": "Con fonti algoritmiche di informazione si intendono:",
@@ -147,7 +161,8 @@
       "gli algoritmi dei motori di ricerca e dei siti web",
       "i motori di ricerca e i social network"
     ],
-    "correct_answer": "i motori di ricerca e i social network"
+    "correct_answer": "i motori di ricerca e i social network",
+    "id": "99bc1670-6889-4c2b-946c-b1e0189c8d02"
   },
   {
     "question": "I domini principali in ambito Big Data che sono significativi anche per i progetti europei di ricerca sono:",
@@ -157,7 +172,8 @@
       "11",
       "12"
     ],
-    "correct_answer": "10"
+    "correct_answer": "10",
+    "id": "2f5670a6-30a3-4ed3-89de-7fd61004c1bd"
   },
   {
     "question": "Gli algoritmi di ricerca e gli algoritmi di pianificazione:",
@@ -167,7 +183,8 @@
       "differiscono tra loro perché i primi cercano la soluzione, i secondi anche gli stati intermedi",
       "entrambi cercano gli stati intermedi nella ricerca della soluzione"
     ],
-    "correct_answer": "differiscono tra loro perché i primi cercano la soluzione, i secondi anche gli stati intermedi"
+    "correct_answer": "differiscono tra loro perché i primi cercano la soluzione, i secondi anche gli stati intermedi",
+    "id": "fdd8c406-8548-406f-bfd6-519ff220e1c1"
   },
   {
     "question": "La definizione migliore di quantificatore ingordo /goloso come “*” e “+” è:",
@@ -177,7 +194,8 @@
       "cerca il massimo numero possibile di corrispondenaze per il pattern dato",
       "cerca la corrispondenza più corta possibile per il pattern dato"
     ],
-    "correct_answer": "cerca la corrispondenza più lunga possibile per il pattern dato"
+    "correct_answer": "cerca la corrispondenza più lunga possibile per il pattern dato",
+    "id": "eac1aab7-e00d-47b9-9eae-6f87eeea8957"
   },
   {
     "question": "import numpy as np a1=[1,1,1]*2 a2=np.ones(6) print(a1) print(a2)",
@@ -187,7 +205,8 @@
       "il primo l'array [1 1 1 1 1 1] il secondo l'array [1. 1. 1. 1. 1. 1.]",
       "il primo l'array [0 0 0 0 0 0] il secondo l'array [1. 1. 1. 1. 1. 1.]"
     ],
-    "correct_answer": "il primo l'array [1 1 1 1 1 1] il secondo l'array [1. 1. 1. 1. 1. 1.]"
+    "correct_answer": "il primo l'array [1 1 1 1 1 1] il secondo l'array [1. 1. 1. 1. 1. 1.]",
+    "id": "2bf1047c-6c73-4c61-a5ff-16f4638b730a"
   },
   {
     "question": "Per poter leggere e scrivere su file binario è necessario:",
@@ -197,7 +216,8 @@
       "deserializzare gli oggetti",
       "serializzare gli oggetti"
     ],
-    "correct_answer": "deserializzare e serializzare gli oggetti, rispettivamente"
+    "correct_answer": "deserializzare e serializzare gli oggetti, rispettivamente",
+    "id": "5838587b-5aa7-436c-9ca9-53d3d0b842dc"
   },
   {
     "question": "Nel codice import pickle ifile = open('a.dat','rb') b = pickle.load(inputfile) b è:",
@@ -207,7 +227,8 @@
       "un dizionario",
       "una tupla"
     ],
-    "correct_answer": "un oggetto"
+    "correct_answer": "un oggetto",
+    "id": "5625ad16-d8c9-4060-9b47-7d5c6b21b2ad"
   },
   {
     "question": "Nel seguente frammento di script PySpark: from pyspark import SparkContext sc=SparkContext(‘local’,’Myspark’) i due parametri specificano:",
@@ -217,7 +238,8 @@
       "Il primo parametro che deve essere usato il modulo che contiene le funzoni per l’internazionalizzazione dei  programmi; Il secondo parametro che il nome dell’applicazine é MySpark",
       "il primo parametro il valore del cluster Spark;   il secondo parametro il nome dell'applicazione Spark"
     ],
-    "correct_answer": "il primo parametro il valore del cluster Spark;   il secondo parametro il nome dell'applicazione Spark"
+    "correct_answer": "il primo parametro il valore del cluster Spark;   il secondo parametro il nome dell'applicazione Spark",
+    "id": "66644f8b-0e96-4098-8650-4fb7057d5292"
   },
   {
     "question": "una stringa grezza in Python è",
@@ -227,7 +249,8 @@
       "una lista",
       "false"
     ],
-    "correct_answer": "una stringa in cui non sono interpretati i caratteri '/' (backspask)"
+    "correct_answer": "una stringa in cui non sono interpretati i caratteri '/' (backspask)",
+    "id": "015766d6-b5db-42b3-ba1f-ac9d9b1af56a"
   },
   {
     "question": "Il diagramma E/R prevede che per ciascuna entità ci sia:",
@@ -237,7 +260,8 @@
       "un rettangolo",
       "una linea"
     ],
-    "correct_answer": "un rettangolo"
+    "correct_answer": "un rettangolo",
+    "id": "fc8830cc-9e46-48de-b304-d8fc3f804d86"
   },
   {
     "question": "Tutte le tuple della stessa entità hanno:",
@@ -247,7 +271,8 @@
       "stesso nome, ma diverso tipo, numero e valori di attributi",
       "stesso numero, nome e tipo, ma diversi valori di attributi"
     ],
-    "correct_answer": "stesso numero, nome e tipo, ma diversi valori di attributi"
+    "correct_answer": "stesso numero, nome e tipo, ma diversi valori di attributi",
+    "id": "616374ea-e457-4453-912c-71e995dc0111"
   },
   {
     "question": "7. L'operatore compose() permette di ottenere:",
@@ -257,7 +282,8 @@
       "l'unione di due grafi",
       "l'unione di due grafi disgiunti"
     ],
-    "correct_answer": "l'unione di due grafi"
+    "correct_answer": "l'unione di due grafi",
+    "id": "82098ee0-910b-466b-b5fa-0cd74c46c2e9"
   },
   {
     "question": "Per assegnare un peso di 3,5 all'arco tra il nodo 1 e il nodo 2 in un grafo pesato è necessario utilizzare la/le seguente/i istruzione/i:",
@@ -267,7 +293,8 @@
       "g.add_weight_edge(1,2, 3.5)",
       "g.add_edge(1,2, 3,5)"
     ],
-    "correct_answer": "g.add_edge(1,2, weight = 3.5)"
+    "correct_answer": "g.add_edge(1,2, weight = 3.5)",
+    "id": "fdb78003-b661-4b81-9e2f-495613a5f531"
   },
   {
     "question": "La funzione table() permette di:",
@@ -277,7 +304,8 @@
       "visualizzare la tabella relativa ad una matrice",
       "visualizzare la tabella di frequenza di un vettore"
     ],
-    "correct_answer": "visualizzare la tabella di frequenza di un vettore"
+    "correct_answer": "visualizzare la tabella di frequenza di un vettore",
+    "id": "521c43bb-13f4-4dd4-89b1-1e6c193a8a49"
   },
   {
     "question": "La matrice ottenuta dalla seguente istruzione matrix(c(1,2,3,4,5,6)), nrow = 2, byrow = TRUE):",
@@ -287,7 +315,8 @@
       "ha un numero di colonne pari a 3",
       "ha un numero di colonne pari a 1"
     ],
-    "correct_answer": "ha un numero di colonne pari a 3"
+    "correct_answer": "ha un numero di colonne pari a 3",
+    "id": "d045d202-6001-49e8-bba4-0de970573a07"
   },
   {
     "question": "considerando la tabella Customers che contiene le informazioni relative ai clienti di un'azienda, il comando che permette di estrarre tutti i clienti con PostalCode formato da due parti separate dal carattere '-' è:",
@@ -297,7 +326,8 @@
       "SELECT * FROM Customers WHERE PostalCode",
       "SELECT * FROM Customers WHERE PostalCode LIKE"
     ],
-    "correct_answer": "SELECT * FROM Customers WHERE PostalCode LIKE '%-%';"
+    "correct_answer": "SELECT * FROM Customers WHERE PostalCode LIKE '%-%';",
+    "id": "97a00169-fab7-47c6-844a-7e0b36714287"
   },
   {
     "question": "Considerando la tabella Customers che contiene le informazioni relative ai clienti di un'azienda, il comando: SELECT COUNT(*), CustomerNdme FROM Customers;",
@@ -307,7 +337,8 @@
       "Permette di conoscere il numero di clienti,ma é logicamente errata la richiesta del nome del cliente",
       "Permette di conoscere il numero di clienti,ma errore fisico"
     ],
-    "correct_answer": "Permette di conoscere il numero di clienti,ma é logicamente errata la richiesta del nome del cliente"
+    "correct_answer": "Permette di conoscere il numero di clienti,ma é logicamente errata la richiesta del nome del cliente",
+    "id": "71838732-cfb7-4161-883e-ecb4f8744c55"
   },
   {
     "question": "La riga di codice: s1&lt;=s2 con s1 e s2 due insiemi:",
@@ -317,7 +348,8 @@
       "restituisce false",
       "restituisce True se tutti gli elementi di s1 sono contenuti in s2"
     ],
-    "correct_answer": "restituisce True se tutti gli elementi di s1 sono contenuti in s2"
+    "correct_answer": "restituisce True se tutti gli elementi di s1 sono contenuti in s2",
+    "id": "36929a3e-cf5e-4a62-830e-6ed164530bbc"
   },
   {
     "question": "Il Navigator di Anaconda è:",
@@ -327,7 +359,8 @@
       "un'interfaccia grafica di programmazione in Python",
       "un'interfaccia testuale di programmazione in Python"
     ],
-    "correct_answer": "un pannello in cui esiste un comando per ogni strumento invocabile"
+    "correct_answer": "un pannello in cui esiste un comando per ogni strumento invocabile",
+    "id": "224439ef-5e59-4817-a3bc-1314bc90b480"
   },
   {
     "question": "Anaconda è?",
@@ -337,7 +370,8 @@
       "linguaggio di programmazione",
       "motore di ricerca"
     ],
-    "correct_answer": "una piattaforma di linguaggi di programmazione in Python e R per l'informatica scientifica"
+    "correct_answer": "una piattaforma di linguaggi di programmazione in Python e R per l'informatica scientifica",
+    "id": "27c05b5a-bd88-4bf1-90ce-de928ccb1400"
   },
   {
     "question": "Cosa serve per trovare il massimo in una lista bidimensionale?",
@@ -347,7 +381,8 @@
       "utilizzare due cicli nidificati, ma un indice",
       "dizionario"
     ],
-    "correct_answer": "utilizzare due cicli nidificati e due indici"
+    "correct_answer": "utilizzare due cicli nidificati e due indici",
+    "id": "c40979a0-36b1-453a-8b2f-b210fb3c3adc"
   },
   {
     "question": "Sintassi per indicare che B è sottoclasse di A",
@@ -357,7 +392,8 @@
       "class B(class A)",
       "class A(B)"
     ],
-    "correct_answer": "class B(A)"
+    "correct_answer": "class B(A)",
+    "id": "2556479a-101c-4935-afe4-9504a4c44eb1"
   },
   {
     "question": "La forma equivalente di : import numpy.random as rnd seq=rnd.normal(0.0,1.0,100) é:",
@@ -367,7 +403,8 @@
       "import numpy.random as rnd seq=rnd.randn(100)",
       "import numpy.random as rnd seq=rnd.randint(0.0,1.0,100)"
     ],
-    "correct_answer": "import numpy.random as rnd seq=rnd.randn(100)"
+    "correct_answer": "import numpy.random as rnd seq=rnd.randn(100)",
+    "id": "e0b17ef6-635e-45ca-9c52-5248966f9b3a"
   },
   {
     "question": "Creare un array di 10 valori numerici tra 0 e 1, tutti ugualmente spaziati array = np.linspace(0, 1, 10)",
@@ -377,7 +414,8 @@
       "un array di valori",
       "Un valore casuale tra 10 valori equamente distribuiti"
     ],
-    "correct_answer": "Un array contenente 10 valori numeri tra 0 e 1 tutti ugualmente equiprobabili"
+    "correct_answer": "Un array contenente 10 valori numeri tra 0 e 1 tutti ugualmente equiprobabili",
+    "id": "927037d0-ebbf-488b-80d1-293e7172fdc2"
   },
   {
     "question": "L’associazione tra nome fisico e nome logico di un file avviene",
@@ -387,7 +425,8 @@
       "all'apertura del file",
       "alla chiusura del file"
     ],
-    "correct_answer": "all'apertura del file"
+    "correct_answer": "all'apertura del file",
+    "id": "b31bdf65-c5f2-42cc-a63a-c3713c5066ef"
   },
   {
     "question": "Per l’apertura di un file si utilizza la funzione open() il cui formato generale è",
@@ -397,7 +436,8 @@
       "oggetto_file  = open (modo)",
       "oggetto"
     ],
-    "correct_answer": "oggetto_file  = open (nomefile, modo)"
+    "correct_answer": "oggetto_file  = open (nomefile, modo)",
+    "id": "d7cb7a97-9c05-4ee2-a18c-7c42f3286974"
   },
   {
     "question": "select * from clients where city=’Berlino’ AND city=’London’",
@@ -407,7 +447,8 @@
       "nessun cliente",
       "estrarre tutti i campi"
     ],
-    "correct_answer": "nessun cliente"
+    "correct_answer": "nessun cliente",
+    "id": "2cf5f9a1-5aca-4e08-adce-479bedc28159"
   },
   {
     "question": "Che modulo si usa per lavorare con file binari? Il comando da utilizzare per la gestione dei file binari é:",
@@ -417,7 +458,8 @@
       "import pymysql",
       "import pickle"
     ],
-    "correct_answer": "import pickle"
+    "correct_answer": "import pickle",
+    "id": "d06f444f-4f17-42c6-a9cf-d522b8b6c523"
   },
   {
     "question": "Il codice import re s= “Ciao mondo” print(re.search(“n*ondo”,s).group()) produce a schermo: 1",
@@ -427,7 +469,8 @@
       "Un messaggio di errore di compilazione",
       "un errore"
     ],
-    "correct_answer": "ondo"
+    "correct_answer": "ondo",
+    "id": "2f26a7fa-8877-4efe-90f0-f0834a871c8f"
   },
   {
     "question": "Dato il DataFrame df con : colums=[‘Nome’,’Regione’,Popolazione’],la seguente linea di codice : df.groupby(‘Regione’).groups restituisce:",
@@ -437,7 +480,8 @@
       "una series",
       "un array"
     ],
-    "correct_answer": "un dizionario"
+    "correct_answer": "un dizionario",
+    "id": "2aacad4a-c174-45c7-8e74-200cd805b8e2"
   },
   {
     "question": "La funzione findall() del modulo re:",
@@ -447,7 +491,8 @@
       "restituisce un oggetto di",
       "restituisce un oggetto di"
     ],
-    "correct_answer": "restituisce la lista delle sottostringhe che fanno match col modello"
+    "correct_answer": "restituisce la lista delle sottostringhe che fanno match col modello",
+    "id": "9344915f-47f2-4834-a871-dc70fe8f2ed0"
   },
   {
     "question": "Per attivare un metodo di un oggetto obj si usa la sintassi:",
@@ -457,7 +502,8 @@
       "obj:metodo",
       "obj.metodo()"
     ],
-    "correct_answer": "obj.metodo()"
+    "correct_answer": "obj.metodo()",
+    "id": "60f87627-24cf-4364-a8a4-78e96c8c69af"
   },
   {
     "question": "La forma equivalente del seguente frammento di codice: for i in range(5) if i%2==1: print",
@@ -467,7 +513,8 @@
       "i=0  while i < 6:  if i%2==1:  print(i)  i+=1",
       "i=0 while i < 5:  if i%2==1:  print(i)  i+=1"
     ],
-    "correct_answer": "i=0 while i < 5:  if i%2==1:  print(i)  i+=1"
+    "correct_answer": "i=0 while i < 5:  if i%2==1:  print(i)  i+=1",
+    "id": "1a31a1d1-db21-495e-89e1-9d136ee46a5f"
   },
   {
     "question": "Il mapping delle associazioni dallo schema concettuale allo schema logico si realizza attraverso:",
@@ -477,7 +524,8 @@
       "la definizione dei nomi delle tabelle",
       "la definizione delle chiavi primarie"
     ],
-    "correct_answer": "la definizione delle chiavi esterne"
+    "correct_answer": "la definizione delle chiavi esterne",
+    "id": "d32f9084-99e0-401b-ad18-ede7e20b0a1f"
   },
   {
     "question": "Il seguente frammento di codice x = input(\"Un numero: \") print(type(x)) print(x+1) in esecuzione dà luogo a:",
@@ -487,7 +535,8 @@
       "un errore solo se x é una stringa",
       "sempre un errore"
     ],
-    "correct_answer": "sempre un errore"
+    "correct_answer": "sempre un errore",
+    "id": "c67b92ef-500e-4b69-ad6c-6238806bbad3"
   },
   {
     "question": "La forma corretta per generare una matrice quadrata con tutti i valori sulla diagonale principale uguali a 5 é:",
@@ -497,7 +546,8 @@
       "import numpy as np np.ones(N)*5",
       "import numpy as np np.ones([N,N],dtype=np.int64)*5"
     ],
-    "correct_answer": "import numpy as np np.eye(N,dtype=np.int64)*5"
+    "correct_answer": "import numpy as np np.eye(N,dtype=np.int64)*5",
+    "id": "a8bbc350-60f9-4ace-b404-0a644143d268"
   },
   {
     "question": "La funzione Def somma(a,b):print(a+b) é :",
@@ -507,7 +557,8 @@
       "void",
       "value-returning"
     ],
-    "correct_answer": "void"
+    "correct_answer": "void",
+    "id": "158f09d3-4df3-44f2-8fff-021831f9ffe5"
   },
   {
     "question": "La funzione usata per creare un DataFrame da file di testo é:",
@@ -517,7 +568,8 @@
       "createDataFrame()",
       "fromTextFile()"
     ],
-    "correct_answer": "read.csv()"
+    "correct_answer": "read.csv()",
+    "id": "93ebb519-cdaf-4266-a2d1-db9480dcb154"
   },
   {
     "question": "La funzione group() é un metodo di oggetto di :",
@@ -527,7 +579,8 @@
       "",
       ""
     ],
-    "correct_answer": ""
+    "correct_answer": "",
+    "id": "e464f26b-0e64-4a1f-89e2-52fb6a129c68"
   },
   {
     "question": "La misura che quantifica l’importanza di un nodo N nel flusso informativo di un grafo é detta:",
@@ -537,7 +590,8 @@
       "centralità globale di N",
       "grado di N"
     ],
-    "correct_answer": "centralità globale dei flussi di N"
+    "correct_answer": "centralità globale dei flussi di N",
+    "id": "bd9495de-b0d3-496d-be59-028008e879b4"
   },
   {
     "question": "Dopo l’esecuzione del seguente frammento di codice: import numpy as np v=np.arange(1,10) print(np.insert(v,4,-1)) print(np.append(v,-1)) l’array v conterrá:",
@@ -547,7 +601,8 @@
       "11 elementi",
       "12 elementi"
     ],
-    "correct_answer": "9 elementi"
+    "correct_answer": "9 elementi",
+    "id": "838be01b-ba0c-4f70-8a88-855377f1df1f"
   },
   {
     "question": "A partire dall’array m cosí definito: import numpy as np m = np.arange(1,25,2) attraverso i metodi di ridefinizione della forma, è possibile ottenere un numero di matrici a due dimensioni pari a:",
@@ -557,7 +612,8 @@
       "4",
       "1"
     ],
-    "correct_answer": "4"
+    "correct_answer": "4",
+    "id": "a8fa1182-40d1-4df5-afc0-78f5a9da99a6"
   },
   {
     "question": "Quando si dice che nei Big Data sono i dati stessi a \"parlare\", vuol dire che:",
@@ -567,7 +623,8 @@
       "prima si stabilisce un modello plausibile di un fenomeno e poi nei dati va ricercato un legame",
       "nei dati va ricercato un legame tra le variabili"
     ],
-    "correct_answer": "nei dati va ricercato un legame tra le variabili e poi si stabilisce una interpretazione plausibile del fenomeno"
+    "correct_answer": "nei dati va ricercato un legame tra le variabili e poi si stabilisce una interpretazione plausibile del fenomeno",
+    "id": "ad785ba7-f6da-423f-8e0f-08517438fcb1"
   },
   {
     "question": "Nella programmazione orientata agli oggetti:",
@@ -577,7 +634,8 @@
       "si individuano solo le caratteristiche di un oggetto",
       "si individuano solo i metodi di un oggetto"
     ],
-    "correct_answer": "si individuano le entità in un determinato contesto denominate oggetti"
+    "correct_answer": "si individuano le entità in un determinato contesto denominate oggetti",
+    "id": "3e6a1b14-fee8-4da2-bdde-d8ea7f889c35"
   },
   {
     "question": "La comparsa del prompt nella shell:",
@@ -587,7 +645,8 @@
       "che sta elaborando il risultato",
       "indica che la shell è pronta per la prossima istruzione"
     ],
-    "correct_answer": "indica che la shell è pronta per la prossima istruzione"
+    "correct_answer": "indica che la shell è pronta per la prossima istruzione",
+    "id": "f91d11c8-b22c-45d5-a572-c8db141e2e58"
   },
   {
     "question": "Se ho necessità di utilizzare le virgolette in una stringa, in Python contrassegno la sequenza di caratteri con:",
@@ -597,7 +656,8 @@
       "virgolette \"",
       "parentesi angolari"
     ],
-    "correct_answer": "triple virgolette \"\"\""
+    "correct_answer": "triple virgolette \"\"\"",
+    "id": "5fcbcedf-13fa-4850-941c-2c7981a0a9ab"
   },
   {
     "question": "L'istruzione 3a_ = 10.5:",
@@ -607,7 +667,8 @@
       "contiene un errore",
       "contiene tre errori"
     ],
-    "correct_answer": "contiene un errore"
+    "correct_answer": "contiene un errore",
+    "id": "053b73b3-a0d5-490c-ab60-5d6d25b56b88"
   },
   {
     "question": "In Python è possibile:",
@@ -617,7 +678,8 @@
       "utilizzare cifre numeriche nel nome della variabile, ma con delle limitazioni",
       "denominare le variabili con i nomi delle keyword"
     ],
-    "correct_answer": "utilizzare cifre numeriche nel nome della variabile, ma con delle limitazioni"
+    "correct_answer": "utilizzare cifre numeriche nel nome della variabile, ma con delle limitazioni",
+    "id": "630ab3a1-3616-48ae-ab55-f22bee99018e"
   },
   {
     "question": "La funzione type() permette:",
@@ -627,7 +689,8 @@
       "di conoscere il tipo di dato della variabile",
       "di visualizzare a schermo il tipo di dato della variabile"
     ],
-    "correct_answer": "di conoscere il tipo di dato della variabile"
+    "correct_answer": "di conoscere il tipo di dato della variabile",
+    "id": "668b1645-8fdd-432c-8dc6-257671ef6de4"
   },
   {
     "question": "La precedenza degli operatori in Python è:",
@@ -637,7 +700,8 @@
       "/ //, **, * parentesi, %, + -",
       "+ -, **, * / // %, parentesi"
     ],
-    "correct_answer": "parentesi, **, * / // %, + -"
+    "correct_answer": "parentesi, **, * / // %, + -",
+    "id": "4430b637-306a-44f1-9bdd-e8eb8b2fac4d"
   },
   {
     "question": "Per determinare se un numero è al di fuori di un intervallo è più corretto utilizzare l'operatore:",
@@ -647,7 +711,8 @@
       "not",
       "divisione"
     ],
-    "correct_answer": "or"
+    "correct_answer": "or",
+    "id": "708102d5-b419-4b06-90df-b46e5494a435"
   },
   {
     "question": "La funzione range():",
@@ -657,7 +722,8 @@
       "è obbligatoria nel for",
       "ritorna un oggetto iterabile"
     ],
-    "correct_answer": "ritorna un oggetto iterabile"
+    "correct_answer": "ritorna un oggetto iterabile",
+    "id": "a5b4a920-83d4-4bd4-88b9-1b3694ddc062"
   },
   {
     "question": "Nel codice sorgente, i parametri che vengono passati alla funzione nella chiamata:",
@@ -667,7 +733,8 @@
       "possono essere al massimo due",
       "devono avere un nome diverso quelli contenuti nella defizione della funzione"
     ],
-    "correct_answer": "possono avere lo stesso nome di quelli contenuti nella defizione della funzione"
+    "correct_answer": "possono avere lo stesso nome di quelli contenuti nella defizione della funzione",
+    "id": "d04e0886-0731-4e0e-912b-c3afbeeaba25"
   },
   {
     "question": "Le variabili locali:",
@@ -677,7 +744,8 @@
       "non appartengono alla funzione che le ha create",
       "possono essere \"visualizzate\" e modificate in modo permanente da funzioni diverse da quella in cui sono state  definite se vengono passate come parametri"
     ],
-    "correct_answer": "possono essere \"visualizzate\" da funzioni diverse da quella in cui sono state definite se vengono passate come  parametri"
+    "correct_answer": "possono essere \"visualizzate\" da funzioni diverse da quella in cui sono state definite se vengono passate come  parametri",
+    "id": "3ebeea59-f822-4551-81d3-27c12c31156d"
   },
   {
     "question": "Lo scope individua:",
@@ -687,7 +755,8 @@
       "la parte della funzione che può accedere alla variabile",
       "la parte della funzione che non può accedere alla variabile"
     ],
-    "correct_answer": "la parte del programma che può accedere alla variabile"
+    "correct_answer": "la parte del programma che può accedere alla variabile",
+    "id": "069270b4-326a-40f2-9754-7164c4157969"
   },
   {
     "question": "Per definire una costante globale in Python:",
@@ -697,7 +766,8 @@
       "non utilizzare la keyword global nel programma",
       "basta scrivere il nome della variabile tutto in maiuscolo e la keyword global in tutte le funzioni prima del nome della  variabile"
     ],
-    "correct_answer": "non utilizzare la keyword global nel programma"
+    "correct_answer": "non utilizzare la keyword global nel programma",
+    "id": "16548250-1ca7-4322-b92a-415ceeec05c3"
   },
   {
     "question": "La gestione del menu:",
@@ -707,7 +777,8 @@
       "avviene tramite una struttura decisionale",
       "avviene tramite una struttura sequenziale"
     ],
-    "correct_answer": "avviene tramite una struttura iterativa e una struttura decisionale"
+    "correct_answer": "avviene tramite una struttura iterativa e una struttura decisionale",
+    "id": "169fb251-f506-4918-9a75-eab149dbb191"
   },
   {
     "question": "Per stampare una stringa e un numero contenuto nella variabile a posso utilizzare la/e seguente/i istruzione/i:",
@@ -717,7 +788,8 @@
       "print(\"Risultato:\"+str(a))print(Risultato, a)",
       "print(\"Risultato:\"+str(a)"
     ],
-    "correct_answer": "print(\"Risultato:\"+str(a))print(\"Risultato\", a)"
+    "correct_answer": "print(\"Risultato:\"+str(a))print(\"Risultato\", a)",
+    "id": "fb346fc7-cd38-4dc0-a057-241f56c116e5"
   },
   {
     "question": "Scrittura e lettura su file corrispondono, rispettivamente, a:",
@@ -727,7 +799,8 @@
       "open e close su file",
       "input e output su file"
     ],
-    "correct_answer": "output e input su file"
+    "correct_answer": "output e input su file",
+    "id": "59b90bb7-1bc2-48ee-9144-897ccc010535"
   },
   {
     "question": "Il metodo write:",
@@ -737,7 +810,8 @@
       "appartiene all'oggetto file e riceve come parametro una stringa",
       "appartiene all'oggetto file e riceve come parametro un intero"
     ],
-    "correct_answer": "appartiene all'oggetto file e riceve come parametro una stringa"
+    "correct_answer": "appartiene all'oggetto file e riceve come parametro una stringa",
+    "id": "84912298-ae98-44a0-8ca0-7e7a2c72aaa8"
   },
   {
     "question": "A seguito di un'operazione di scrittura del file, al fine di procedere con un'operazione di lettura:",
@@ -747,7 +821,8 @@
       "sono necessarie sia la chiusura del file sia l'apertura in scrittura",
       "sono necessarie sia la chiusura del file sia l'apertura in lettura"
     ],
-    "correct_answer": "sono necessarie sia la chiusura del file sia l'apertura in lettura"
+    "correct_answer": "sono necessarie sia la chiusura del file sia l'apertura in lettura",
+    "id": "f98b5052-390f-4120-a512-1e27d2b556bf"
   },
   {
     "question": "I valori numerici possono essere scritti su un file se:",
@@ -757,7 +832,8 @@
       "si utilizza la funzione di casting str()",
       "si utilizzano le funzioni di casting int() e float()"
     ],
-    "correct_answer": "si utilizza la funzione di casting str()"
+    "correct_answer": "si utilizza la funzione di casting str()",
+    "id": "31bc81ba-362b-4b44-9375-42b0668c6197"
   },
   {
     "question": ". Il codice del gestore delle eccezioni:",
@@ -767,7 +843,8 @@
       "non viene eseguito se sono state sollevate eccezioni",
       "non dipende dal blocco try"
     ],
-    "correct_answer": "viene eseguito solo se sono state sollevate eccezioni"
+    "correct_answer": "viene eseguito solo se sono state sollevate eccezioni",
+    "id": "d745f21b-2438-4ab4-a02a-97aa764f01e0"
   },
   {
     "question": "L'istruzione d=d.rstrip('\\n') serve a:",
@@ -777,7 +854,8 @@
       "copiare parte della stringa d",
       "andare a capo"
     ],
-    "correct_answer": "eliminare un carattere alla fine della stringa"
+    "correct_answer": "eliminare un carattere alla fine della stringa",
+    "id": "710b7904-6117-4888-aa85-1634e56186da"
   },
   {
     "question": "Nell'istruzione os.remove(a):",
@@ -787,7 +865,8 @@
       "os è il metodo, remove è il modulo, a è la funzione",
       "os è il modulo, remove è una funzione, a è il file"
     ],
-    "correct_answer": "os è il modulo, remove è una funzione, a è il file"
+    "correct_answer": "os è il modulo, remove è una funzione, a è il file",
+    "id": "50237008-9026-4efa-86a7-ba2435324bf8"
   },
   {
     "question": "Nel caso di utilizzo del metodo index() della lista:",
@@ -797,7 +876,8 @@
       "È possibile che venga sollevata un'eccezione IndexError",
       "non vengono sollevate eccezioni"
     ],
-    "correct_answer": "È possibile che venga sollevata un'eccezione ValueError"
+    "correct_answer": "È possibile che venga sollevata un'eccezione ValueError",
+    "id": "ad096b90-befd-4b90-8f51-8d8ba0f72572"
   },
   {
     "question": "Per calcolare il totale degli elementi e contenuti in una lista a, le migliori istruzioni sono:",
@@ -807,7 +887,8 @@
       "c=0for a in e:   c=c+e",
       "c=0for e in a:   c=c+a"
     ],
-    "correct_answer": "c=0for e in a:   c=c+e"
+    "correct_answer": "c=0for e in a:   c=c+e",
+    "id": "2c023e54-9071-4fec-bfdf-5b3a94a485e9"
   },
   {
     "question": "Per accedere ad un elemento di una lista bidimensionale:",
@@ -817,7 +898,8 @@
       "È obbligatorio utilizzare due cicli nidificati, ma non due indici",
       "È obbligatorio utilizzare due cicli nidificati e due indici"
     ],
-    "correct_answer": "È obbligatorio due indici, ma non due cicli nidificati"
+    "correct_answer": "È obbligatorio due indici, ma non due cicli nidificati",
+    "id": "5ac40ea2-83fb-4210-8365-cd2678c1eee4"
   },
   {
     "question": ". A seguito dell'esecuzione delle seguenti istruzioni l = [1,2,3,3] s = set(l):",
@@ -827,7 +909,8 @@
       "s conterrà 3 elementi",
       "s conterrà 4 elementi"
     ],
-    "correct_answer": "s conterrà 3 elementi"
+    "correct_answer": "s conterrà 3 elementi",
+    "id": "10f9f2e6-a6ab-4bb9-a6d7-affc9d0d1a08"
   },
   {
     "question": "La differenza simmetrica tra due set permette di individuare un nuovo set che:",
@@ -837,7 +920,8 @@
       "contiene gli elementi comuni ad entrambi i set",
       "contiene gli elementi del primo set che non appartengono al secondo"
     ],
-    "correct_answer": "contiene gli elementi non condivisi tra i due set"
+    "correct_answer": "contiene gli elementi non condivisi tra i due set",
+    "id": "f076b1b5-b9c4-41f4-91e3-44d769e7250c"
   },
   {
     "question": "L'istruzione s.issuperset(t):",
@@ -847,7 +931,8 @@
       "restituisce il set formato dagli elementi comuni a s e a t",
       "restituisce un valore True se s contiene tutti gli elementi di t"
     ],
-    "correct_answer": "restituisce un valore True se s contiene tutti gli elementi di t"
+    "correct_answer": "restituisce un valore True se s contiene tutti gli elementi di t",
+    "id": "efe9e05c-cff4-4a41-b1df-515f74ce349a"
   },
   {
     "question": "Lo stato di un oggetto è l'insieme:",
@@ -857,7 +942,8 @@
       "dei metodi",
       "del valore degli attributi e dei metodi"
     ],
-    "correct_answer": "dei valori degli attributi"
+    "correct_answer": "dei valori degli attributi",
+    "id": "ddeeb989-2440-4a1c-b10a-9f06f0fac7ee"
   },
   {
     "question": "L'interfaccia di un oggetto è l'insieme:",
@@ -867,7 +953,8 @@
       "dei metodi",
       "del valore dei metodi"
     ],
-    "correct_answer": "dei metodi"
+    "correct_answer": "dei metodi",
+    "id": "15e7bee4-4273-4b17-bece-d6357e7cfa26"
   },
   {
     "question": "I getter e i setter:",
@@ -877,7 +964,8 @@
       "devono essere definiti per tutti gli attributi",
       "devono essere definiti per tutti gli attributi privati"
     ],
-    "correct_answer": "possono essere definiti per tutti gli attributi"
+    "correct_answer": "possono essere definiti per tutti gli attributi",
+    "id": "c6b832b4-5be4-4f0d-a457-e535c8535ec9"
   },
   {
     "question": "Nel diagramma UML delle classi:",
@@ -887,7 +975,8 @@
       "non è possibile indicare l'ereditarietà tra classi",
       "lo schema della sottoclasse non deve indicare anche gli attributi ereditati"
     ],
-    "correct_answer": "lo schema della sottoclasse non deve indicare anche gli attributi ereditati"
+    "correct_answer": "lo schema della sottoclasse non deve indicare anche gli attributi ereditati",
+    "id": "b6fbd272-b41f-4192-b729-103603c30a5a"
   },
   {
     "question": "La funzione isinstance():",
@@ -897,7 +986,8 @@
       "ritorna la classe dell'oggetto",
       "stampa a schermo se l'oggetto è un'istanza della classe"
     ],
-    "correct_answer": "necessità dell'oggetto e della classe come argomenti"
+    "correct_answer": "necessità dell'oggetto e della classe come argomenti",
+    "id": "07f473c7-e92c-4835-9558-4b0c4a06fc25"
   },
   {
     "question": "Le fasi principali di modellazione di un database sono:",
@@ -907,7 +997,8 @@
       "tre",
       "quattro"
     ],
-    "correct_answer": "tre"
+    "correct_answer": "tre",
+    "id": "071f70fe-0a99-4903-8364-6d2b79136284"
   },
   {
     "question": "Tutte le tuple della stessa entità hanno:",
@@ -917,7 +1008,8 @@
       "stesso numero, ma diverso tipo, nome e valori di attributi",
       "stesso nome, ma diverso tipo, numero e valori di attributi"
     ],
-    "correct_answer": "stesso numero, nome e tipo, ma diversi valori di attributi"
+    "correct_answer": "stesso numero, nome e tipo, ma diversi valori di attributi",
+    "id": "354f888e-19fb-4ff9-b7b1-b6dc1f13e08b"
   },
   {
     "question": "Dopo la keyword SELECT si inserisce:",
@@ -927,7 +1019,8 @@
       "lista campi da estrarre",
       "la clausola di ordinamento"
     ],
-    "correct_answer": "lista campi da estrarre"
+    "correct_answer": "lista campi da estrarre",
+    "id": "6c0aad0c-6849-4140-a350-327947e2e8c6"
   },
   {
     "question": "Il comando SELECT * FROM Studenti; permette di:",
@@ -937,7 +1030,8 @@
       "estrarre tutte le tuple della tabella Studenti",
       "estrarre tutti i campi della tabella Studenti"
     ],
-    "correct_answer": "estrarre tutti i campi e tutte le tuple della tabella Studenti"
+    "correct_answer": "estrarre tutti i campi e tutte le tuple della tabella Studenti",
+    "id": "2cd5b24e-e795-40ac-82e8-a0888f6c401b"
   },
   {
     "question": "Il comando SELECT Matricola, Nome AS N, Città FROM Studenti; permette di ottenere una tabella:",
@@ -947,7 +1041,8 @@
       "di quattro campi",
       "una tabella formata dai seguenti campi: Matricola, Nome, Città"
     ],
-    "correct_answer": "che rappresenta una proiezione della tabella originale"
+    "correct_answer": "che rappresenta una proiezione della tabella originale",
+    "id": "2de1fb0c-0253-4b8c-857e-5a38df96cf96"
   },
   {
     "question": "Il comando SELECT * FROM Studenti INNER JOIN Voti ON Studenti.Matricola = Voti.MatricolaS; permette di",
@@ -957,7 +1052,8 @@
       "una tabella vuota",
       "una tabella composta dalla somma dei campi delle due tabelle di partenza"
     ],
-    "correct_answer": "una tabella composta dalla somma dei campi delle due tabelle di partenza"
+    "correct_answer": "una tabella composta dalla somma dei campi delle due tabelle di partenza",
+    "id": "aa57fc09-67f3-436e-b66e-6683f35e3e00"
   },
   {
     "question": "Il comando SELECT Studenti.Nome, Voti.Votofinale FROM Studenti LEFT JOIN Voti ON Studenti.Matricola = Voti.MatricolaS; permette di ottenere",
@@ -967,7 +1063,8 @@
       "una tabella composta dalla somma dei campi delle due tabelle di partenza",
       "una tabella composta dalla somma delle tuple delle due tabelle di partenza"
     ],
-    "correct_answer": "una tabella composta dal numero di tuple della tabella Studenti"
+    "correct_answer": "una tabella composta dal numero di tuple della tabella Studenti",
+    "id": "cfc7d6f9-d01b-4a51-9b42-000bead9d7d5"
   },
   {
     "question": "Il comando SELECT * FROM Studenti FULL OUTER JOIN Voti ON Studenti.Matricola = Voti.MatricolaS; permette di ottenere",
@@ -977,7 +1074,8 @@
       "una tabella composta dalla somma dei campi delle due tabelle di partenza",
       "una tabella vuota"
     ],
-    "correct_answer": "una tabella composta dalla somma dei campi delle due tabelle di partenza"
+    "correct_answer": "una tabella composta dalla somma dei campi delle due tabelle di partenza",
+    "id": "e6e35e1f-dd4b-4b40-8b6e-c97e06ac2c8e"
   },
   {
     "question": "GROUP BY serve a:",
@@ -987,7 +1085,8 @@
       "utilizzare le funzioni di aggregazione",
       "utilizzare le funzioni di aggregazione"
     ],
-    "correct_answer": "partizionare in gruppi le righe di una tabella"
+    "correct_answer": "partizionare in gruppi le righe di una tabella",
+    "id": "1673cbd8-8d09-481b-881d-ca90a4dd5a1c"
   },
   {
     "question": "SELECT customerName, Orders.* FROM Customers LEFT JOIN Orders ON Orders.CustomerID = Customers.CustomerID WHERE OrderDate = (SELECT MAX(OrderDate) FROM Orders)",
@@ -997,7 +1096,8 @@
       "conoscere i nomi dei clienti che hanno il numero massimo di ordini",
       "conoscere l’importo totale di tutti gli ordini effettuati"
     ],
-    "correct_answer": "Conoscere i nomi dei clienti e i relativi ordini con la data più recente"
+    "correct_answer": "Conoscere i nomi dei clienti e i relativi ordini con la data più recente",
+    "id": "195d0057-56e8-49a1-a965-72b8f8ed19c9"
   },
   {
     "question": "Il comando ([x + (5 - x) for x in range(-100,100)],[y for y in range (-100,100)]) permette di generare:",
@@ -1007,7 +1107,8 @@
       "il grafico di una retta orizzontale",
       "il grafico di una retta verticale"
     ],
-    "correct_answer": "il grafico di una retta verticale"
+    "correct_answer": "il grafico di una retta verticale",
+    "id": "bea30cd5-aeb9-467b-858d-d7af5568cb51"
   },
   {
     "question": "Il frammento di codice: import matplotlib.pyplot as mp mp.plot([0 for x in range(-100, 100)],[y for y in range(-100, 100)], [x for x in range(-100, 100)],[0 for y in range(-100, 100)]) permette di:",
@@ -1017,7 +1118,8 @@
       "due rette parallele",
       "una parabola"
     ],
-    "correct_answer": "disegnare i due assi cartesiani passanti per (0,0)"
+    "correct_answer": "disegnare i due assi cartesiani passanti per (0,0)",
+    "id": "31d70432-a2d4-41a4-8737-eb98620f2c0e"
   },
   {
     "question": "Un nodo A con centralitá globale CCA massima é:",
@@ -1027,7 +1129,8 @@
       "Un nodo con distanza massima dagli altri nodi del grafo",
       "Un nodo con pochi vicini"
     ],
-    "correct_answer": "Un nodo da cui è facile accedere agli altri nodi della rete"
+    "correct_answer": "Un nodo da cui è facile accedere agli altri nodi della rete",
+    "id": "60c4a6d7-569d-4a89-b5bd-c0eccae19404"
   },
   {
     "question": "Quale query prende i dati dei prodotti il cui prezzo è maggiore della media dei prezzi?",
@@ -1037,7 +1140,8 @@
       "SELECT *FROM Products  WHERE Price >(SELECT Price,  AVG(Price)  FROM Products  GROUP BY Price);",
       "SELECT *FROM Products  WHERE Price >(SELECT ProductID,  AVG(Price)  FROM Products);"
     ],
-    "correct_answer": "SELECT *FROM Products  WHERE Price > (SELECT AVG(Price) FROM Products);"
+    "correct_answer": "SELECT *FROM Products  WHERE Price > (SELECT AVG(Price) FROM Products);",
+    "id": "6b3ae46e-1553-44e4-825a-8963c8e3d28e"
   },
   {
     "question": "Suddividere s in 2 categorie zero e uno (discretizzazione di s in 2 categorie con eitchetta 0 e 1)",
@@ -1047,7 +1151,8 @@
       "import pandas as pd pd.cut(s,labels=('ZERO','UNO'),2)",
       "import pandas as pd pd.cut(s,2,labels=('ZERO', 'UNO'))"
     ],
-    "correct_answer": "import pandas as pd pd.cut(s,2,labels=('ZERO', 'UNO'))"
+    "correct_answer": "import pandas as pd pd.cut(s,2,labels=('ZERO', 'UNO'))",
+    "id": "d8d6d087-c0d2-4dcd-a75b-9e405870a4e6"
   },
   {
     "question": "Domanda (?)",
@@ -1057,7 +1162,8 @@
       "operazioni di filtratura e operazioni di ordinamento",
       "operazione di ordinamento"
     ],
-    "correct_answer": "operazioni di Map e operazioni di Reduce"
+    "correct_answer": "operazioni di Map e operazioni di Reduce",
+    "id": "3a385d98-d0b7-4f38-9fe0-44f16c3af7f4"
   },
   {
     "question": "Il metodo fetchall():",
@@ -1067,7 +1173,8 @@
       "È un metodo dell'oggetto cursore e restituisce tutte le tuple di una tabella",
       "È un metodo dell'oggetto connessione e restituisce tutti i connettori"
     ],
-    "correct_answer": "È un metodo dell'oggetto cursore e restituisce tutte le tuple di una tabella"
+    "correct_answer": "È un metodo dell'oggetto cursore e restituisce tutte le tuple di una tabella",
+    "id": "36041821-b9e0-4c1a-ad26-4c03c6e6f35f"
   },
   {
     "question": "Il metodo lstrip(a) restituisce:",
@@ -1077,7 +1184,8 @@
       "una stringa con tutti gli spazi bianchi iniziali rimossi",
       "una stringa con tutti gli i caratteri a rimossi"
     ],
-    "correct_answer": "una stringa con tutti gli i caratteri a iniziali rimossi"
+    "correct_answer": "una stringa con tutti gli i caratteri a iniziali rimossi",
+    "id": "99c773ec-bf48-43cc-9a18-ffb4b827fd60"
   },
   {
     "question": "L'istruzione s.isdigit() restituisce:",
@@ -1087,7 +1195,8 @@
       "vero se s contiene esattamente una cifra numerica",
       "vero se s contiene almeno una cifra numerica"
     ],
-    "correct_answer": "vero se s contiene solo cifre numeriche"
+    "correct_answer": "vero se s contiene solo cifre numeriche",
+    "id": "2981fdcd-ae08-47be-89bc-08b3081e0411"
   },
   {
     "question": "Time.time() è:",
@@ -1097,7 +1206,8 @@
       "una funzione che restituisce l'orario",
       "un metodo che restituisce l'orario"
     ],
-    "correct_answer": "una funzione che restituisce il timestamp"
+    "correct_answer": "una funzione che restituisce il timestamp",
+    "id": "33dc0cdd-cf4d-4934-a65c-5e2cea7ec4f4"
   },
   {
     "question": ".Per verificare le mail del tipo nome_utente@unimercatorum.it è necessario utilizzare la seguente espressione regolare:",
@@ -1107,7 +1217,8 @@
       "r'[a-zA-Z][\\w-]*@unimercatorum.it'",
       "r'[a-zA-Z][\\w-]@unimercatorum.it'"
     ],
-    "correct_answer": "r'[a-zA-Z][\\w-]*@unimercatorum.it'"
+    "correct_answer": "r'[a-zA-Z][\\w-]*@unimercatorum.it'",
+    "id": "8c6c6925-b3f0-4ba9-981e-6912b8302753"
   },
   {
     "question": "La funzione iglob() è:",
@@ -1117,7 +1228,8 @@
       "identica a glob()",
       "simile a glob(), ma memorizza simultaneamente tutti i valori restituiti da glob()"
     ],
-    "correct_answer": "simile a glob(), ma non memorizza simultaneamente tutti i valori restituiti da glob()"
+    "correct_answer": "simile a glob(), ma non memorizza simultaneamente tutti i valori restituiti da glob()",
+    "id": "917dc6de-a6f0-49da-9bfe-a0f48ffe8f3d"
   },
   {
     "question": "Nell'istruzione pickle.dump(a,b) a e b sono:",
@@ -1127,7 +1239,8 @@
       "nome del file e oggetto",
       "oggetto e nome del file"
     ],
-    "correct_answer": "oggetto e gestore del file"
+    "correct_answer": "oggetto e gestore del file",
+    "id": "7d5a6562-ac7e-4ab4-a8b7-9809fbaa52b9"
   },
   {
     "question": "Nell'indicizzatore di file, l'istruzione d[p.upper()] = d[p.upper()]+lista permette di:",
@@ -1137,7 +1250,8 @@
       "aggiornare la lista dei valori di p includendo un nuovo file",
       "concatenare la lista di p"
     ],
-    "correct_answer": "aggiornare la lista dei valori di p includendo un nuovo file"
+    "correct_answer": "aggiornare la lista dei valori di p includendo un nuovo file",
+    "id": "f56abf1f-6f8c-4c7e-a4e2-50e8744c9a9f"
   },
   {
     "question": "Un notebook Jupyter è:",
@@ -1147,7 +1261,8 @@
       "un applicativo che permette di scrivere un flusso di lavoro in verticale",
       "un applicativo che permette di scrivere un flusso di lavoro in orizzontale"
     ],
-    "correct_answer": "un applicativo che permette di scrivere un flusso di lavoro in verticale"
+    "correct_answer": "un applicativo che permette di scrivere un flusso di lavoro in verticale",
+    "id": "582c1fa1-9ed0-4ace-8cc6-0097a6e12318"
   },
   {
     "question": "Un alias è:",
@@ -1157,7 +1272,8 @@
       "una libreria/modulo",
       "una keyword"
     ],
-    "correct_answer": "un nome (diminutivo) per chiamare una libreria/modulo"
+    "correct_answer": "un nome (diminutivo) per chiamare una libreria/modulo",
+    "id": "b3aa1398-0778-4a4b-9af5-4a6026c2fba7"
   },
   {
     "question": "Gli array differiscono dalla lista principalmente per:",
@@ -1167,7 +1283,8 @@
       "un motivo",
       "quattro motivi"
     ],
-    "correct_answer": "due motivi"
+    "correct_answer": "due motivi",
+    "id": "1c642e6b-cb89-4e10-be54-adeedc00e54a"
   },
   {
     "question": "Il codice corretto per modificare la forma dell'array è:",
@@ -1177,7 +1294,8 @@
       "v.shape = (a,b)",
       "v.shape = a,b"
     ],
-    "correct_answer": "v.shape = [a,b]"
+    "correct_answer": "v.shape = [a,b]",
+    "id": "e5154935-10e8-4905-bb71-b6d89219cb60"
   },
   {
     "question": "L'effetto dell'istruzione m.transpose(0,2,1) è:",
@@ -1187,7 +1305,8 @@
       "primo asse rimane verticale, altri due assi scambiati",
       "la trasposizione dell'intera matrice"
     ],
-    "correct_answer": "primo asse rimane verticale, altri due assi scambiati"
+    "correct_answer": "primo asse rimane verticale, altri due assi scambiati",
+    "id": "3048994d-4e8d-4ff5-ba6f-14c1d9ce7541"
   },
   {
     "question": "Data una matrice m di dimensioni 7x5 la seguente istruzione m[3:5][1][0] permette di raccogliere:",
@@ -1197,7 +1316,8 @@
       "il secondo elemento della quarta riga",
       "il primo elemento della quinta riga"
     ],
-    "correct_answer": "il primo elemento della quinta riga"
+    "correct_answer": "il primo elemento della quinta riga",
+    "id": "16f60a3d-f55c-4665-9415-053f290a89a3"
   },
   {
     "question": "La libreria per i grafici in Python si chiama:",
@@ -1207,7 +1327,8 @@
       "statistics",
       "Matplot"
     ],
-    "correct_answer": "Matplotlib"
+    "correct_answer": "Matplotlib",
+    "id": "d7bcf3b7-80b3-4cdd-bbfa-505b8bafc96d"
   },
   {
     "question": "Il metodo gfc:",
@@ -1217,7 +1338,8 @@
       "salva il grafico sul file",
       "estrae la figure corrente"
     ],
-    "correct_answer": "estrae la figure corrente o la crea se non esiste ancora"
+    "correct_answer": "estrae la figure corrente o la crea se non esiste ancora",
+    "id": "0d008ae9-90f4-4158-8e56-e08afab5641b"
   },
   {
     "question": "La proprietà kde:",
@@ -1227,7 +1349,8 @@
       "È della funzione hist e serve a calcolare una stima della densità del kernel per uniformare la distribuzione",
       "È della funzione plot e serve a calcolare una stima della densità del kernel per uniformare la distribuzione"
     ],
-    "correct_answer": "È della funzione displot e serve a calcolare una stima della densità del kernel per uniformare la distribuzione"
+    "correct_answer": "È della funzione displot e serve a calcolare una stima della densità del kernel per uniformare la distribuzione",
+    "id": "feae9b96-d834-48ab-a5b4-c0979557bc35"
   },
   {
     "question": "Nella funzione rand():",
@@ -1237,7 +1360,8 @@
       "i parametri sono tutti di default ad esclusione dell'estremo superiore dell'intervallo",
       "i parametri sono tutti di default ad esclusione della shape"
     ],
-    "correct_answer": "i parametri sono tutti di default ad esclusione della shape"
+    "correct_answer": "i parametri sono tutti di default ad esclusione della shape",
+    "id": "86f3bb50-1031-4cd6-8dcb-c0838b0b44e1"
   },
   {
     "question": "L'attributo dtypes:",
@@ -1247,7 +1371,8 @@
       "È relativo al DataFrame ed elenca il tipo del primo campo",
       "È relativo al Series ed elenca il tipo di tutti i campi"
     ],
-    "correct_answer": "È relativo al DataFrame ed elenca il tipo di tutti i campi"
+    "correct_answer": "È relativo al DataFrame ed elenca il tipo di tutti i campi",
+    "id": "6d2b5b9c-3c2d-488c-acda-485f227c3a8d"
   },
   {
     "question": "Il risultato del seguente codice a = pd.read_csv('a.csv', delimiter='.') print(type(a)) è:",
@@ -1257,7 +1382,8 @@
       "DataFrame",
       "Dictionary"
     ],
-    "correct_answer": "DataFrame"
+    "correct_answer": "DataFrame",
+    "id": "e92e57cf-60e9-407c-b13b-819fdba97462"
   },
   {
     "question": "5. Per poter applicare una funzione ad una colonna di un DataFrame si utilizza la funzione:",
@@ -1267,7 +1393,8 @@
       "setColumn",
       "set"
     ],
-    "correct_answer": "apply"
+    "correct_answer": "apply",
+    "id": "a5d13e4e-5884-4c7c-bf06-4c1b2f76f7f3"
   },
   {
     "question": "Il metodo iterrows() permette di ottenere:",
@@ -1277,7 +1404,8 @@
       "un generatore che ad ogni invocazione fornirà un indice di colonna e il DataFrame che contiene i valori della colonna",
       "un generatore che ad ogni iterazione fornirà un indice di riga e la Series contenente i suoi valori"
     ],
-    "correct_answer": "un generatore che ad ogni iterazione fornirà un indice di riga e la Series contenente i suoi valori"
+    "correct_answer": "un generatore che ad ogni iterazione fornirà un indice di riga e la Series contenente i suoi valori",
+    "id": "434be356-0e7f-4acb-aced-773c418e4744"
   },
   {
     "question": "Groups è:",
@@ -1287,7 +1415,8 @@
       "È una proprietà che contiene una lista",
       "È una proprietà che contiene un DataFrame"
     ],
-    "correct_answer": "È una proprietà che contiene un dizionario"
+    "correct_answer": "È una proprietà che contiene un dizionario",
+    "id": "f57bd4b5-8dbb-4007-b8f6-f7d0651201f9"
   },
   {
     "question": "Per ottenere le statistiche complessive massime calcolate su un DataFrame raggruppato sul campo 'c' in base al valore del campo 'c2' è necessario utilizzare la seguente istruzione:",
@@ -1297,7 +1426,8 @@
       "df.groupy('c')['c2'].describe()['max']",
       "df.groupy['c']('c2').describe()['max']"
     ],
-    "correct_answer": "df.groupy('c')['c2'].describe()['max']"
+    "correct_answer": "df.groupy('c')['c2'].describe()['max']",
+    "id": "5b9a4722-5dd1-4762-a186-3b48ccecd9ff"
   },
   {
     "question": "Oltre all'importazione delle librerie opportune, la migliore sequenza di istruzioni per graficare il contenuto della colonna a di un DataFrame Pandas df con un grafico lineare è:",
@@ -1307,7 +1437,8 @@
       "matplot.plot(df, kind='line') matplot.show()",
       "matplot.plot(df, kind='line')"
     ],
-    "correct_answer": "df['a'].plot(kind='line') matplot.show()"
+    "correct_answer": "df['a'].plot(kind='line') matplot.show()",
+    "id": "a89de576-43f5-4730-abe2-db1d361c7439"
   },
   {
     "question": "Nella formulazione originale della regola delle 3V, le 3V corrispondono a:",
@@ -1317,7 +1448,8 @@
       "volume, veridicità e varietà",
       "volume, velocità e varietà"
     ],
-    "correct_answer": "volume, velocità e varietà"
+    "correct_answer": "volume, velocità e varietà",
+    "id": "b83b0eb7-5db3-4c8d-bc23-227bb6b14e2e"
   },
   {
     "question": "HDFS e YARN sono:",
@@ -1327,7 +1459,8 @@
       "rispettivamente file ambiente di elaborazione MapReduce e system distribuito",
       "rispettivamente file system distribuito e ambiente di elaborazione MapReduce"
     ],
-    "correct_answer": "rispettivamente file system distribuito e ambiente di elaborazione MapReduce"
+    "correct_answer": "rispettivamente file system distribuito e ambiente di elaborazione MapReduce",
+    "id": "10958a64-3ad4-4fa0-94e6-91dee42ac508"
   },
   {
     "question": "I Worker Node sono:",
@@ -1337,7 +1470,8 @@
       "i nodi in cui risiede lo SparkContext",
       "tutti i nodi che offrono uno strato di coesione al cluster"
     ],
-    "correct_answer": "tutti i nodi del cluster tra i quali sarà parallelizzato il lavoro"
+    "correct_answer": "tutti i nodi del cluster tra i quali sarà parallelizzato il lavoro",
+    "id": "a55ffa99-597b-4ba7-9793-6c8c3b60ed27"
   },
   {
     "question": "Le modalità per ottenere un RDD sono:",
@@ -1347,7 +1481,8 @@
       "2",
       "4"
     ],
-    "correct_answer": "2"
+    "correct_answer": "2",
+    "id": "8a778303-b9e2-43be-afb5-f3a84ec50393"
   },
   {
     "question": "Le operazioni di map e reduce:",
@@ -1357,7 +1492,8 @@
       "sono entrambe azioni",
       "sono entrambe trasformazioni"
     ],
-    "correct_answer": "sono trasformazioni e azioni, rispettivamente"
+    "correct_answer": "sono trasformazioni e azioni, rispettivamente",
+    "id": "b61b3078-3513-45a3-b042-811237be2173"
   },
   {
     "question": "Il metodo collect():",
@@ -1367,7 +1503,8 @@
       "corrisponde ad una trasformazione e restituisce gli elementi del RDD in una struttura dati Python",
       "corrisponde ad un'azione e restituisce gli elementi del RDD in una struttura dati Python"
     ],
-    "correct_answer": "corrisponde ad un'azione e restituisce gli elementi del RDD in una struttura dati Python"
+    "correct_answer": "corrisponde ad un'azione e restituisce gli elementi del RDD in una struttura dati Python",
+    "id": "7892be45-a238-4ebb-9866-e82bb21d4ad1"
   },
   {
     "question": "Il metodo stats() restituisce:",
@@ -1377,7 +1514,8 @@
       "un float",
       "una lista di numeri"
     ],
-    "correct_answer": "un oggetto"
+    "correct_answer": "un oggetto",
+    "id": "a2cad452-9345-44d2-9d56-4fd134dd0fa1"
   },
   {
     "question": "Nell'applicazione dell'algoritmo MapReduce in Spark:",
@@ -1387,7 +1525,8 @@
       "devono esserci per forza sia map che reduce",
       "deve esserci per forza una map"
     ],
-    "correct_answer": "possono esserci solo map"
+    "correct_answer": "possono esserci solo map",
+    "id": "77f79728-b130-414e-b85a-d576f8e77fc2"
   },
   {
     "question": "Una partizione è:",
@@ -1397,7 +1536,8 @@
       "una suddivisione logica di un dataset",
       "un insieme di nodi di un cluster"
     ],
-    "correct_answer": "una suddivisione logica di un dataset"
+    "correct_answer": "una suddivisione logica di un dataset",
+    "id": "bd9b988a-8f56-4150-bcf3-8529afd07354"
   },
   {
     "question": "La funzione countByKey() permette di:",
@@ -1407,7 +1547,8 @@
       "contare gli elementi in una lista in base alla chiave/etichetta",
       "contare gli elementi in una lista"
     ],
-    "correct_answer": "contare gli elementi in un RDD in base alla chiave/etichetta"
+    "correct_answer": "contare gli elementi in un RDD in base alla chiave/etichetta",
+    "id": "1ff0648b-6691-4ea9-930c-32208ce100e9"
   },
   {
     "question": "Il metodo agg() si usa per:",
@@ -1417,7 +1558,8 @@
       "visualizzare la struttura del DataFrame",
       "personalizzare maggiormente le aggregazioni da svolgere"
     ],
-    "correct_answer": "personalizzare maggiormente le aggregazioni da svolgere"
+    "correct_answer": "personalizzare maggiormente le aggregazioni da svolgere",
+    "id": "0f231b34-b23b-45ac-8947-4fb101ad65a1"
   },
   {
     "question": "Il grado di un nodo indica sempre:",
@@ -1427,7 +1569,8 @@
       "il numero di archi in ingresso verso il nodo",
       "il numero dei nodi vicini al nodo"
     ],
-    "correct_answer": "numero di archi connessi al nodo"
+    "correct_answer": "numero di archi connessi al nodo",
+    "id": "1fcbe268-4f85-4112-8d2f-f6c89ca5fe80"
   },
   {
     "question": "L'ordine e la dimensione di un grafo sono:",
@@ -1437,7 +1580,8 @@
       "rispettivamente il numero dei nodi e degli archi",
       "rispettivamente il numero degli archi e dei nodi"
     ],
-    "correct_answer": "rispettivamente il numero dei nodi e degli archi"
+    "correct_answer": "rispettivamente il numero dei nodi e degli archi",
+    "id": "e631f9f8-555d-4ca1-b468-c1f73f3abea8"
   },
   {
     "question": "La funzione urlparse() suddivide un URL in una tupla di:",
@@ -1447,7 +1591,8 @@
       "sei elementi",
       "sette elementi"
     ],
-    "correct_answer": "sei elementi"
+    "correct_answer": "sei elementi",
+    "id": "458c0a01-ed71-4ea6-aa6b-03aae1b17791"
   },
   {
     "question": "7. Il metodo get_text() permette di:",
@@ -1457,7 +1602,8 @@
       "visualizzare come i tag HTML sono annidati nel documento",
       "estrarre un determinato tipo di tag"
     ],
-    "correct_answer": "accedere al testo del contenuto dell'HTML"
+    "correct_answer": "accedere al testo del contenuto dell'HTML",
+    "id": "cb1c3b29-ec17-429e-bfa9-0ede5c4f6d15"
   },
   {
     "question": "Il metodo prettify() permette di:",
@@ -1467,7 +1613,8 @@
       "estrarre un determinato tipo di tag",
       "visualizzare come i tag HTML sono annidati nel documento"
     ],
-    "correct_answer": "visualizzare come i tag HTML sono annidati nel documento"
+    "correct_answer": "visualizzare come i tag HTML sono annidati nel documento",
+    "id": "76ea4fc9-7108-4f20-8860-d7c686c6c1bd"
   },
   {
     "question": "Per accedere alla cella di una tabella è necessario:",
@@ -1477,7 +1624,8 @@
       "accedere gerarchicamente prima a",
       "accedere direttamente al tag"
     ],
-    "correct_answer": "accedere gerarchicamente prima a"
+    "correct_answer": "accedere gerarchicamente prima a",
+    "id": "2b700c81-f65d-40b8-a08b-cb1cba6904fa"
   },
   {
     "question": "Per calcolare l'ordine del grafo esistono:",
@@ -1487,7 +1635,8 @@
       "4 metodi",
       "5 metodi"
     ],
-    "correct_answer": "3 metodi"
+    "correct_answer": "3 metodi",
+    "id": "d474d493-4835-49d8-9d72-30d5daba9863"
   },
   {
     "question": "Per calcolare la dimensione del grafo esistono:",
@@ -1497,7 +1646,8 @@
       "3 metodi",
       "2 metodi"
     ],
-    "correct_answer": "2 metodi"
+    "correct_answer": "2 metodi",
+    "id": "06e1f74e-2a16-47e3-807c-707cf55ac76b"
   },
   {
     "question": "Le funzioni Graph() e DiGraph() permettono di:",
@@ -1507,7 +1657,8 @@
       "ottenere grafi orientati e non orientati, rispettivamente",
       "ottenere entrambe grafi non orientati"
     ],
-    "correct_answer": "ottenere grafi non orientati e orientati, rispettivamente"
+    "correct_answer": "ottenere grafi non orientati e orientati, rispettivamente",
+    "id": "a59416aa-1ea5-4cd9-9556-440a8c6f76be"
   },
   {
     "question": "Per conoscere i nodi adiacenti ad un nodo a, si utilizza il metodo:",
@@ -1517,7 +1668,8 @@
       "vicinato()",
       "vicini()"
     ],
-    "correct_answer": "neighbors()"
+    "correct_answer": "neighbors()",
+    "id": "ec2d0cf8-2cd3-4ebe-a9f7-721e31fad3d9"
   },
   {
     "question": "Connected_components() è:",
@@ -1527,7 +1679,8 @@
       "una funzione di networkx che funziona solo per grafi non orientati",
       "un metodo del grafo che funziona solo per grafi orientati"
     ],
-    "correct_answer": "una funzione di networkx che funziona solo per grafi non orientati"
+    "correct_answer": "una funzione di networkx che funziona solo per grafi non orientati",
+    "id": "6a96995e-93fe-4364-8bde-35e1151ea00d"
   },
   {
     "question": "I metodi in_degree() e out_degree() si usano per:",
@@ -1537,7 +1690,8 @@
       "calcolare il grado entrante e uscente di tutti i nodi di un grafo orientato",
       "calcolare il grado entrante e uscente di un nodo di un grafo orientato"
     ],
-    "correct_answer": "calcolare il grado entrante e uscente di tutti i nodi di un grafo orientato"
+    "correct_answer": "calcolare il grado entrante e uscente di tutti i nodi di un grafo orientato",
+    "id": "f5696b99-ccb0-426c-82af-14f55d723a09"
   },
   {
     "question": "Per recuperare i dati della tabella di Wikipedia e generare la struttura dati propedeutica al grafo sono necessari:",
@@ -1547,7 +1701,8 @@
       "Networkx, urllib.request, pandas",
       "BeautifulSoup, urllib.request, pyspark"
     ],
-    "correct_answer": "BeautifulSoup, urllib.request, pandas"
+    "correct_answer": "BeautifulSoup, urllib.request, pandas",
+    "id": "301831f7-c456-4954-a281-24d0a14ab1ca"
   },
   {
     "question": "In Gephi, anche senza elaborazioni del grafo, è attiva la funzionalità di:",
@@ -1557,7 +1712,8 @@
       "il calcolo della modularità",
       "individuazione del vicinato di un nodo"
     ],
-    "correct_answer": "individuazione del vicinato di un nodo"
+    "correct_answer": "individuazione del vicinato di un nodo",
+    "id": "c6b4c295-d717-43da-87c5-d474c9c23e56"
   },
   {
     "question": "Il grado medio dei nodi si ottiene:",
@@ -1567,7 +1723,8 @@
       "dall'ordine del grafo",
       "dal rapporto tra ordine e dimensione del grafo"
     ],
-    "correct_answer": "dal rapporto tra dimensione e ordine del grafo"
+    "correct_answer": "dal rapporto tra dimensione e ordine del grafo",
+    "id": "0e9af2c3-f904-464e-b4c0-d5645319825b"
   },
   {
     "question": "La distribuzione del grado dei nodi permette di comprendere immediatamente:",
@@ -1577,7 +1734,8 @@
       "mediamente quanti vicini ha un nodo",
       "quanti sono i nodi isolati"
     ],
-    "correct_answer": "il massimo numero di vicini dei nodi"
+    "correct_answer": "il massimo numero di vicini dei nodi",
+    "id": "4fd73fc2-0375-40bd-ad30-46436303dea7"
   },
   {
     "question": "Le categorie della sezione Statistics di Gephi sono:",
@@ -1587,7 +1745,8 @@
       "network overview, node overview, edge overview, dynamic",
       "network overview, node overview, edge overview, community"
     ],
-    "correct_answer": "network overview, node overview, edge overview, dynamic"
+    "correct_answer": "network overview, node overview, edge overview, dynamic",
+    "id": "1448e6c8-2952-4ec6-b826-ea5be64cb23b"
   },
   {
     "question": "Per l'equipment fault, i valori ammissibili sono:",
@@ -1597,7 +1756,8 @@
       "5",
       "20"
     ],
-    "correct_answer": "2"
+    "correct_answer": "2",
+    "id": "4e6d3b86-9723-4f30-a1c1-faa795c2f56c"
   },
   {
     "question": "Solitamente, in una GUI, oltre al form, quanti elementi si inseriscono per completezza:",
@@ -1607,7 +1767,8 @@
       "3",
       "5"
     ],
-    "correct_answer": "3"
+    "correct_answer": "3",
+    "id": "69b17e52-c3bc-4e57-be9c-33083c852d2e"
   },
   {
     "question": "Nel widget Checkbutton, il parametro textvariable è:",
@@ -1617,7 +1778,8 @@
       "l'argomento che determina carattere visualizzato nell'entry",
       "l'argomento che imposta widget parent"
     ],
-    "correct_answer": "l'argomento che collega variabile al testo dell'etichetta del widget"
+    "correct_answer": "l'argomento che collega variabile al testo dell'etichetta del widget",
+    "id": "4ce51247-c9c4-4741-94c6-01fa801b990b"
   },
   {
     "question": "9.Per aggiungere un widget alla seconda riga in un layout a griglia è necessario passare al metodo grid:",
@@ -1627,7 +1789,8 @@
       "row=1",
       "row=2"
     ],
-    "correct_answer": "row=1"
+    "correct_answer": "row=1",
+    "id": "5ee001fb-7868-4664-8d12-093fdacdb1fd"
   },
   {
     "question": "I metodi della classe LabelInput sottoposti a overriding sono:",
@@ -1637,7 +1800,8 @@
       "3",
       "4"
     ],
-    "correct_answer": "3"
+    "correct_answer": "3",
+    "id": "5a4762a5-2a62-4a8e-9037-375893fa0169"
   },
   {
     "question": "La classe corrispondente al form è:",
@@ -1647,7 +1811,8 @@
       "LabelFrame",
       "Form"
     ],
-    "correct_answer": "DataRecordForm"
+    "correct_answer": "DataRecordForm",
+    "id": "fb935309-d9c4-407d-af71-9338b046a0b1"
   },
   {
     "question": "La classe corrispondente ad una sezione del form è:",
@@ -1657,7 +1822,8 @@
       "LabelFrame",
       "Form"
     ],
-    "correct_answer": "LabelFrame"
+    "correct_answer": "LabelFrame",
+    "id": "99cebc5f-5835-4654-a327-3b7ca74e74d5"
   },
   {
     "question": "Le librerie utili presentate per il salvataggio dei dati del form su file CSV sono:",
@@ -1667,7 +1833,8 @@
       "3",
       "4"
     ],
-    "correct_answer": "3"
+    "correct_answer": "3",
+    "id": "0f371b4d-3c6e-4ad0-8d01-9441ae6a5528"
   },
   {
     "question": "Dato il vettore numeric a, la somma dei valori di a si ottiene con la seguente istruzione:",
@@ -1677,7 +1844,8 @@
       "sum(a) = b",
       "c = sum(A)"
     ],
-    "correct_answer": "sum(a)"
+    "correct_answer": "sum(a)",
+    "id": "a291af8e-2393-4ea0-8081-a2c51ea1123b"
   },
   {
     "question": "Il risultato dell'esecuzione delle seguenti istruzioni a = c(1,2,3) b = a&lt;0 a[b] è:",
@@ -1687,7 +1855,8 @@
       "1",
       "numeric(0)"
     ],
-    "correct_answer": "numeric(0)"
+    "correct_answer": "numeric(0)",
+    "id": "b4f9b691-5ca2-487d-955c-c0737f0f1165"
   },
   {
     "question": "Per rinominare le due colonne di una matrice m 5x2 è necessario richiamare la seguente istruzione:",
@@ -1697,7 +1866,8 @@
       "m. colnames = c('a','b')",
       "colnames(m) = c('a','b')"
     ],
-    "correct_answer": "colnames(m) = c('a','b')"
+    "correct_answer": "colnames(m) = c('a','b')",
+    "id": "937613bf-b633-43c7-981d-c263d9bdb913"
   },
   {
     "question": "Per eliminare la terza e la quarta riga nella matrice m è necessario richiamare la seguente istruzione:",
@@ -1707,7 +1877,8 @@
       "m.deleterow(3,4)",
       "m.rowdelete(2,3)"
     ],
-    "correct_answer": "m[-(3:4),]"
+    "correct_answer": "m[-(3:4),]",
+    "id": "1a161c10-0c2e-4351-b192-cb630c9cd71c"
   },
   {
     "question": "Dati i vettori a,b,c, il codice per creare il dataframe d è:",
@@ -1717,7 +1888,8 @@
       "d = data.frame(a,b,c)",
       "data.frame(a,b,c)"
     ],
-    "correct_answer": "d = data.frame(a,b,c)"
+    "correct_answer": "d = data.frame(a,b,c)",
+    "id": "8a5a0b93-25e1-4141-b189-7a3bea0bc62c"
   },
   {
     "question": "Dato il dataframe d, l'istruzione dim(t)[1] permette di visualizzare:",
@@ -1727,7 +1899,8 @@
       "il numero delle righe del dataframe",
       "il numero delle colonne del dataframe"
     ],
-    "correct_answer": "il numero delle righe del dataframe"
+    "correct_answer": "il numero delle righe del dataframe",
+    "id": "81f10eb9-9f8a-4970-a822-64d39f7eeeba"
   },
   {
     "question": "Per rinominare gli oggetti di una lista si usa la funzione:",
@@ -1737,7 +1910,8 @@
       "name()",
       "rowname()"
     ],
-    "correct_answer": "names()"
+    "correct_answer": "names()",
+    "id": "6a5757df-ce4b-4ff7-b2bb-1e9d3e9973c3"
   },
   {
     "question": "Per poter visualizzare due grafici sovrapposti nella stessa area è necessario:",
@@ -1747,7 +1921,8 @@
       "invocare prima la funzione points() e poi la funzione plot()",
       "invocare prima la funzione plot() e poi la funzione point()"
     ],
-    "correct_answer": "invocare prima la funzione plot() e poi la funzione point()"
+    "correct_answer": "invocare prima la funzione plot() e poi la funzione point()",
+    "id": "45bea1c9-ece5-45a0-8abf-385105e1dfc5"
   },
   {
     "question": "La funzione per tracciare la retta di tendenza in un grafico è:",
@@ -1757,7 +1932,8 @@
       "aline()",
       "bline()"
     ],
-    "correct_answer": "abline()"
+    "correct_answer": "abline()",
+    "id": "80429a02-b3f1-46df-a254-832811e66222"
   },
   {
     "question": "L'istruzione par(mfrow = c(2,3)) permette di ottenere:",
@@ -1767,7 +1943,8 @@
       "un'area con 6 grafici sovrapposti",
       "un grafico con un punto di coordinate (2,3)"
     ],
-    "correct_answer": "un'area dei grafici composta da 2 righe e 3 colonne"
+    "correct_answer": "un'area dei grafici composta da 2 righe e 3 colonne",
+    "id": "b65d0b1a-5c3e-4aad-865f-4930f29c6753"
   },
   {
     "question": "1.L'ultima versione dell'acronimo SPSS è:",
@@ -1777,7 +1954,8 @@
       "Statistical Product and Service Solutions",
       "Statistical Package and Service Solutions"
     ],
-    "correct_answer": "Statistical Product and Service Solutions"
+    "correct_answer": "Statistical Product and Service Solutions",
+    "id": "3bd8129f-d45d-4d17-9815-ac36e0965bb4"
   },
   {
     "question": "Nella struttura a matrice di SPSS:",
@@ -1787,7 +1965,8 @@
       "È possibile decidere se disporre casi e variabili su righe o colonne nella schermata \"Vista dati\"",
       "È possibile decidere se disporre casi e variabili su righe o colonne nella schermata \"Vista Variabile\""
     ],
-    "correct_answer": "sulle righe si dispongono i casi e sulle colonne le variabili"
+    "correct_answer": "sulle righe si dispongono i casi e sulle colonne le variabili",
+    "id": "a113a133-a1fe-47e2-86d6-79d315d6c693"
   },
   {
     "question": "Il formato del nome attribuito di default da SPSS alle variabili se non diversamente indicato è:",
@@ -1797,7 +1976,8 @@
       "variable0000n",
       "stat0000n"
     ],
-    "correct_answer": "var0000n"
+    "correct_answer": "var0000n",
+    "id": "90be6a68-cc5a-42ec-b2bf-2e4b14dd77cf"
   },
   {
     "question": "Per visualizzare una tabella di esempio di SAS tra i risultati è necessario:",
@@ -1807,7 +1987,8 @@
       "un proc step seguito da un data step",
       "un data step seguito da un proc step"
     ],
-    "correct_answer": "un data step seguito da un proc step"
+    "correct_answer": "un data step seguito da un proc step",
+    "id": "1258b52b-558a-46b1-8817-6417cbc1c6e6"
   },
   {
     "question": "In un archivio SAS:",
@@ -1817,7 +1998,8 @@
       "le osservazioni possono essere indifferentemente in riga o in colonna",
       "le variabili possono essere indifferentemente in riga o in colonna"
     ],
-    "correct_answer": "le osservazioni sono in riga e le variabili sono in colonna"
+    "correct_answer": "le osservazioni sono in riga e le variabili sono in colonna",
+    "id": "9b3f434e-9d2c-4849-8e56-c14f5a0e3cf7"
   },
   {
     "question": "I tipi di variabile nei dataset SAS possono essere:",
@@ -1827,7 +2009,8 @@
       "numeriche, carattere e booleane",
       "carattere e booleane"
     ],
-    "correct_answer": "numeriche e carattere"
+    "correct_answer": "numeriche e carattere",
+    "id": "fd861b21-6e47-4c35-b93c-33d0de794213"
   },
   {
     "question": "Le metriche vengono individuate e concordate nella fase di:",
@@ -1837,7 +2020,8 @@
       "raccolta dei requisiti",
       "elaborazione dei dati e flusso di lavoro"
     ],
-    "correct_answer": "elaborazione dei dati e flusso di lavoro"
+    "correct_answer": "elaborazione dei dati e flusso di lavoro",
+    "id": "904fdecf-abb7-41e3-9ba4-56232bad531b"
   },
   {
     "question": "La variabile indipendente e la variabile dipendente sono, rispettivamente:",
@@ -1847,7 +2031,8 @@
       "la variabile risposta e la variabile esplicativa",
       "la variabile target e la variabile esplicativa"
     ],
-    "correct_answer": "la variabile esplicativa e la variabile target"
+    "correct_answer": "la variabile esplicativa e la variabile target",
+    "id": "6162b7e1-c803-42be-a0ae-14bae7a591b5"
   },
   {
     "question": "Il grafico a barre e l'istogramma si utilizzano per rappresentare:",
@@ -1857,7 +2042,8 @@
       "variabili numeriche e categoriali, rispettivamente",
       "variabili categoriali e numeriche, rispettivamente"
     ],
-    "correct_answer": "variabili categoriali e numeriche, rispettivamente"
+    "correct_answer": "variabili categoriali e numeriche, rispettivamente",
+    "id": "6b0d4a6f-8a24-473e-883f-6e02f5383efe"
   },
   {
     "question": "L'istruzione d.describe().show(1) dove d è un dataframe spark permette di:",
@@ -1867,7 +2053,8 @@
       "il conteggio dei valori non mancanti nel dataframe",
       "la media dei valori mancanti nel dataframe"
     ],
-    "correct_answer": "il conteggio dei valori non mancanti nel dataframe"
+    "correct_answer": "il conteggio dei valori non mancanti nel dataframe",
+    "id": "0bb9f54c-030f-41a6-b29e-f3ec6dc40fa4"
   },
   {
     "question": "I suggerimenti individuati per ottenere la riproducibilità utilizzando Jupyter notebook in Python sono:",
@@ -1877,7 +2064,8 @@
       "6",
       "7"
     ],
-    "correct_answer": "6"
+    "correct_answer": "6",
+    "id": "b76f0a15-6290-41e0-a325-b16fd7179eae"
   },
   {
     "question": "L'unità di misura zettabytes equivale a:",
@@ -1887,7 +2075,8 @@
       "1024 bytes",
       "1027 bytes"
     ],
-    "correct_answer": "1021 bytes"
+    "correct_answer": "1021 bytes",
+    "id": "70d31b76-6c5a-4fe5-9b65-635ade6ac26c"
   },
   {
     "question": "4.EdgeRank è:",
@@ -1897,7 +2086,8 @@
       "un algoritmo che suggerisce determinati contenuti all'utente in modo personalizzato",
       "un social network che aggrega le notizie"
     ],
-    "correct_answer": "un algoritmo che determina la visibilità dei contenuti e la personalizzazione dell'esperienza"
+    "correct_answer": "un algoritmo che determina la visibilità dei contenuti e la personalizzazione dell'esperienza",
+    "id": "c5b99a40-fdd5-4131-80e8-770b37ec822a"
   },
   {
     "question": "ML e AI:",
@@ -1907,7 +2097,8 @@
       "AI è un sottoinsieme di ML",
       "si riferiscono ad ambiti completamente diversi"
     ],
-    "correct_answer": "ML è un sottinsieme di AI"
+    "correct_answer": "ML è un sottinsieme di AI",
+    "id": "a5b0f5d9-c1fd-44f4-b552-247d21771e56"
   },
   {
     "question": "Il modello hub-and-spoke:",
@@ -1917,7 +2108,8 @@
       "permette di misurare la fruizione di contenuti da parte di persone",
       "prevede un data center principale e più data center periferici"
     ],
-    "correct_answer": "prevede un data center principale e più data center periferici"
+    "correct_answer": "prevede un data center principale e più data center periferici",
+    "id": "7bbcbb4f-bd03-4e32-b066-320ce554e7ff"
   },
   {
     "question": "HPC e HTC sono acronimi rispettivamente di:",
@@ -1927,7 +2119,8 @@
       "High Performance Computing e High Tested Computer",
       "High Processing Computing e High Tested Computer"
     ],
-    "correct_answer": "High Performance Computing e High Technology Computer"
+    "correct_answer": "High Performance Computing e High Technology Computer",
+    "id": "2e69982b-376d-473d-8fed-b98636164692"
   },
   {
     "question": "I componenti principali di un ecosistema pervasivo di tecnologie abilitanti sono:",
@@ -1937,7 +2130,8 @@
       "C. dati industriali e repository di grandi volumi",
       "D. reti ad alta velocità e repository di grandi volumi"
     ],
-    "correct_answer": "D. reti ad alta velocità e repository di grandi volumi"
+    "correct_answer": "D. reti ad alta velocità e repository di grandi volumi",
+    "id": "c5aac67e-360a-47be-8570-ec3a97cadc4b"
   },
   {
     "question": "I pilastri dell'industry 4.0 sono:",
@@ -1947,7 +2141,8 @@
       "11",
       "13"
     ],
-    "correct_answer": "9"
+    "correct_answer": "9",
+    "id": "2142c63b-f150-455e-8ca8-bd9e8b1ff874"
   },
   {
     "question": "Nelle scienze sociali ed economia globali, i dati sono principalmente di tipo:",
@@ -1957,7 +2152,8 @@
       "ambientale e psicologico",
       "psicologico e di trasporto"
     ],
-    "correct_answer": "comportamentale e psicologico"
+    "correct_answer": "comportamentale e psicologico",
+    "id": "1c960c74-5961-4d85-8384-943610586a76"
   },
   {
     "question": "L'apprendimento per rinforzo è:",
@@ -1967,7 +2163,8 @@
       "tipico del machine learning e prevede tre comportamenti in merito al rinforzo",
       "tipico del machine learning e prevede due comportamenti in merito al rinforzo"
     ],
-    "correct_answer": "tipico del machine learning e prevede due comportamenti in merito al rinforzo"
+    "correct_answer": "tipico del machine learning e prevede due comportamenti in merito al rinforzo",
+    "id": "f5326010-63bc-4d51-87f2-dd379607d8dc"
   },
   {
     "question": "Nell'esempio del caso del NCSU, i Big Data sono stati integrati con tecniche di:",
@@ -1977,7 +2174,8 @@
       "data mining",
       "data science"
     ],
-    "correct_answer": "intelligenza artificiale e, soprattutto, di deep learning"
+    "correct_answer": "intelligenza artificiale e, soprattutto, di deep learning",
+    "id": "b15dac95-6c6a-4935-ba06-b1a669c04e5c"
   },
   {
     "question": "Il comando CREATE:",
@@ -1987,7 +2185,8 @@
       "permette di creare delle tuple",
       "permette di creare delle tuple"
     ],
-    "correct_answer": "appartiene al linguaggio DDL di SQL"
+    "correct_answer": "appartiene al linguaggio DDL di SQL",
+    "id": "0de12531-35c8-4f8b-a902-b6a909ee367a"
   },
   {
     "question": "La vista creata con il comando CREATE:",
@@ -1997,7 +2196,8 @@
       "È una tabella che non fa parte della base di dati",
       "È una tabella virtuale che non fa parte della base di dati"
     ],
-    "correct_answer": "È una tabella virtuale che non fa parte della base di dati"
+    "correct_answer": "È una tabella virtuale che non fa parte della base di dati",
+    "id": "91710034-0da1-44be-95b3-be6a957a3dd8"
   },
   {
     "question": "Il comando INSERT permette di:",
@@ -2007,7 +2207,8 @@
       "creare nuovi indici",
       "creare nuovi dati"
     ],
-    "correct_answer": "creare nuovi dati"
+    "correct_answer": "creare nuovi dati",
+    "id": "663d7f11-71d0-407b-91cd-e93209b44c57"
   },
   {
     "question": "Per eseguire il prodotto matriciale XY è necessario che:",
@@ -2017,7 +2218,8 @@
       "X abbia lo stesso numero di colonne di Y",
       "X abbia lo stesso numero di righe di Y"
     ],
-    "correct_answer": "Il numero di colonne di X sia uguale al numero di righe di Y"
+    "correct_answer": "Il numero di colonne di X sia uguale al numero di righe di Y",
+    "id": "cc6ae8e9-dce2-4284-8178-a7357c4d2fb4"
   },
   {
     "question": "in un grafo a stella non orientato con 7 nodi , il grado del nodo centrale è?:",
@@ -2027,7 +2229,8 @@
       "7",
       "8"
     ],
-    "correct_answer": "6"
+    "correct_answer": "6",
+    "id": "c674c3f5-0faf-4a9c-9afa-00ab03dbdb6f"
   },
   {
     "question": "SELECT customerName, Orders.* FROM Customers LEFT JOIN Orders ON Orders.CustomerID = Customers.CustomerID WHERE OrderDate = (SELECT MAX(OrderDate) FROM Orders)",
@@ -2037,7 +2240,8 @@
       "conoscere l’importo totale di tutti gli ordini effettuati",
       "errata"
     ],
-    "correct_answer": "Conoscere i nomi dei clienti e i relativi ordini con la data più recente"
+    "correct_answer": "Conoscere i nomi dei clienti e i relativi ordini con la data più recente",
+    "id": "1cf723be-9292-479a-a8f2-9406c4110335"
   },
   {
     "question": "La differenza principale tra le seguenti due istruzioni: d.get (k). d.pop (k) (dove d è un dizionario e k una chiave) è:",
@@ -2047,7 +2251,8 @@
       "pop() estrae il valore corrispondente alla chiave,ma non modifica il dizionario,mentre get()modifica il dizionario",
       "get() estrae la tupla(chiave,valore),mentre pop()solo il valore"
     ],
-    "correct_answer": "get() estrae il valore corrispondente alla chiave, ma non modifica il dizionario, mentre pop() modifica il dizionario"
+    "correct_answer": "get() estrae il valore corrispondente alla chiave, ma non modifica il dizionario, mentre pop() modifica il dizionario",
+    "id": "67d0303c-49be-4e59-a776-6d3498a1f49c"
   },
   {
     "question": "df_merged = df1.merge(df2, on='c1', how='left') [dfmerged = pd.merge(df1,df2, on=’c1’, how=‘left’)]",
@@ -2057,7 +2262,8 @@
       "errata",
       "errore logico"
     ],
-    "correct_answer": "un dataFrame Pandas con tutte le righe di df1 congiunte sul valore della colonna 'c1' con df2. Per le righe di df1 che  non si congiungono viene assegnata una riga con tutti i campi di df2 al valore N"
+    "correct_answer": "un dataFrame Pandas con tutte le righe di df1 congiunte sul valore della colonna 'c1' con df2. Per le righe di df1 che  non si congiungono viene assegnata una riga con tutti i campi di df2 al valore N",
+    "id": "8222f5e1-4916-4a4e-8f2e-f30cb9753c1d"
   },
   {
     "question": "Il seguente frammento di codice : import numpy as np m_3x3=np.eye(3,k=-1) prin(m_3x3) produce come risultato:",
@@ -2067,7 +2273,8 @@
       "Un errore",
       "[[0. 1. 0.]   [0. 0. 1.]   [0. 0. 0.]]"
     ],
-    "correct_answer": "[[0. 0. 0.]   [1. 0. 0.]   [0. 1. 0.]]"
+    "correct_answer": "[[0. 0. 0.]   [1. 0. 0.]   [0. 1. 0.]]",
+    "id": "a2d71293-e2a0-44f4-99bc-e139c4d70cda"
   },
   {
     "question": "Puo' essere funzione reshape o swapaxis oppure byrow di R:",
@@ -2077,7 +2284,8 @@
       "essere convertiti in formato HTML",
       "non puo' essere convertito"
     ],
-    "correct_answer": "essere convertiti in colonne e righe"
+    "correct_answer": "essere convertiti in colonne e righe",
+    "id": "cd032f3e-3726-44d5-9478-109407d6233f"
   },
   {
     "question": "Il seguente frammento di codice: l=['1','2','3','4','10'] x=max(l) print(x) produce a video:",
@@ -2087,7 +2295,8 @@
       "10",
       "Un errore di compilazione"
     ],
-    "correct_answer": "4"
+    "correct_answer": "4",
+    "id": "6ba6d70c-7237-468d-ad04-d9665e4cf6c4"
   },
   {
     "question": "La migliore definizione per replace nel seguente comando str.replace(str,str) é:",
@@ -2097,7 +2306,8 @@
       "un metodo value-returning",
       "una metodo void"
     ],
-    "correct_answer": "un metodo value-returning"
+    "correct_answer": "un metodo value-returning",
+    "id": "8ed3a64a-289c-4442-8e72-7d5521a1e61f"
   },
   {
     "question": "Cosa è replace(s1,s2)?",
@@ -2107,7 +2317,8 @@
       "una funzione void",
       "una metodo void"
     ],
-    "correct_answer": "un metodo value-returning"
+    "correct_answer": "un metodo value-returning",
+    "id": "7cb59618-3f69-4d75-9a74-d9ea03fadf9e"
   },
   {
     "question": "Come faccio a rendere una variabile o un attributo privato (non accessibile all'esterno)?",
@@ -2117,7 +2328,8 @@
       "basta premettere _al nome della variabile /attributo",
       "lettera maiuscola al nome della variabile"
     ],
-    "correct_answer": "basta premettere __ (doppio trattino basso) al nome della variabile /attributo"
+    "correct_answer": "basta premettere __ (doppio trattino basso) al nome della variabile /attributo",
+    "id": "6b5ae50e-91fc-456f-9973-7368709cd399"
   },
   {
     "question": "Che keyword si usa per esplicitare il tipo di dato?",
@@ -2127,7 +2339,8 @@
       "type",
       "ltype"
     ],
-    "correct_answer": "dtype"
+    "correct_answer": "dtype",
+    "id": "1df267ae-e94b-4e59-b532-51824a9e913e"
   },
   {
     "question": "(?) Domanda sul polimorfismo(override) (?)",
@@ -2137,7 +2350,8 @@
       "differisce dal metodo/funzione della classe base per il codice del metodo/funzione",
       "errata"
     ],
-    "correct_answer": "differisce dal metodo/funzione della classe base per il codice del metodo/funzione"
+    "correct_answer": "differisce dal metodo/funzione della classe base per il codice del metodo/funzione",
+    "id": "551b5ad4-eab1-4262-a15a-673797218d92"
   },
   {
     "question": "Il risultato a video del seguente codice: g=nx.complete_graph(['A','B','C','D','E','F']) print(g.order()) print(g.size()) è:",
@@ -2147,7 +2361,8 @@
       "6 15",
       "6 25"
     ],
-    "correct_answer": "6 15"
+    "correct_answer": "6 15",
+    "id": "7f394a39-8e5e-45e7-8a9f-d28e4727a8c2"
   },
   {
     "question": "La forma equivalente della linea di codice: print(\"Cuori\\tFiori\\tQuadri\\tPicche\\n\") é:",
@@ -2157,7 +2372,8 @@
       "print(\"Cuori\",\"Fiori\",\"Quadri\", \"Picche\", end='n')",
       "print[\"Cuori\",\"Fiori\",\"Quadri\", \"Picche\", sep='t', end='\\n']"
     ],
-    "correct_answer": "print(\"Cuori\",\"Fiori\",\"Quadri\", \"Picche\", sep='\\t', end='\\n')"
+    "correct_answer": "print(\"Cuori\",\"Fiori\",\"Quadri\", \"Picche\", sep='\\t', end='\\n')",
+    "id": "8bc7431e-927a-410e-a696-87589e62c901"
   },
   {
     "question": "SQL é l’acronimo di :",
@@ -2167,7 +2383,8 @@
       "Single Query Language",
       "Single Query Language"
     ],
-    "correct_answer": "Structured Query Language"
+    "correct_answer": "Structured Query Language",
+    "id": "efef62bc-0d98-4ab7-9b17-b649291192f4"
   },
   {
     "question": "Domanda (?)",
@@ -2177,7 +2394,8 @@
       "Il numero di chiavi coinvolte",
       "Il numero delle istanze coinvolte"
     ],
-    "correct_answer": "Il numero delle entità coinvolte"
+    "correct_answer": "Il numero delle entità coinvolte",
+    "id": "ca1df1ce-234e-48d2-aee1-8dcb299963ad"
   },
   {
     "question": "La funzione findall() del modulo re:",
@@ -2187,7 +2405,8 @@
       "restituisce sempre una lista vuota",
       "estituisce sempre una lista di stringhe"
     ],
-    "correct_answer": "restituisce una lista di stringhe"
+    "correct_answer": "restituisce una lista di stringhe",
+    "id": "67cb4a9e-b38e-4d9e-9191-38ad2760f78a"
   },
   {
     "question": "Il risultato dell'istruzione np.in1d(v2,v) è:",
@@ -2197,7 +2416,8 @@
       "un valore booleano",
       "un array dello stesso tipo di v e v2"
     ],
-    "correct_answer": "un array booleano"
+    "correct_answer": "un array booleano",
+    "id": "d4e66ece-0d31-4e13-9472-510dfbf5dbb4"
   },
   {
     "question": "Un multigrafo è un grafo:",
@@ -2207,7 +2427,8 @@
       "con archi paralleli",
       "orientato"
     ],
-    "correct_answer": "con archi paralleli"
+    "correct_answer": "con archi paralleli",
+    "id": "08504725-9874-40ee-9fdd-464f67b9d729"
   },
   {
     "question": "Nel widget Checkbutton, il parametro variable è:",
@@ -2217,7 +2438,8 @@
       "l'argomento di tipo StringVar collegato al widget",
       "l'argomento di tipo BooleanVar a cui lo stato booleano è collegato"
     ],
-    "correct_answer": "l'argomento di tipo BooleanVar a cui lo stato booleano è collegato"
+    "correct_answer": "l'argomento di tipo BooleanVar a cui lo stato booleano è collegato",
+    "id": "f6d8b108-f354-4a4b-ae87-68437decb7ef"
   },
   {
     "question": "Solitamente, i dataframe hanno il numero di righe e di colonne pari a:",
@@ -2227,7 +2449,8 @@
       "numero di vettori e numero di osservazioni, rispettivamente",
       "entrambi al numero di variabili"
     ],
-    "correct_answer": "numero di osservazioni e numero di variabili, rispettivamente"
+    "correct_answer": "numero di osservazioni e numero di variabili, rispettivamente",
+    "id": "34d25596-a89a-43bb-a51d-5313c3268c26"
   },
   {
     "question": "I fenomeni di viralizzazione dei contenuti informativi sono dovuti al fatto che:",
@@ -2237,7 +2460,8 @@
       "i social network sono governati da algoritmi in grado di filtrare costantemente le notizie disponibili",
       "i social network consentono l'ingresso nell'ecosistema informativo di fonti estranee al classico circuito dell'informazione"
     ],
-    "correct_answer": "sui social network gli utenti diventano parte attiva nella diffusione di informazioni, opinioni e punti di vista"
+    "correct_answer": "sui social network gli utenti diventano parte attiva nella diffusione di informazioni, opinioni e punti di vista",
+    "id": "abe12b7e-2490-4d8c-b1e0-fd616dda0319"
   },
   {
     "question": "Per connettersi a MySQL si utilizza il comando:",
@@ -2247,7 +2471,8 @@
       "\\connect",
       "conn"
     ],
-    "correct_answer": "\\connect"
+    "correct_answer": "\\connect",
+    "id": "df1209f0-8b4f-49c1-875c-6f808bd8d2d0"
   },
   {
     "question": "Quante operazioni si possono mettere in pratica per gestire i dati mancanti:",
@@ -2257,7 +2482,8 @@
       "3",
       "4"
     ],
-    "correct_answer": "2"
+    "correct_answer": "2",
+    "id": "ef443f45-6249-490b-b947-3e89ee0f509e"
   },
   {
     "question": "Le prestazioni per HPC si misurano tipicamente in:",
@@ -2267,7 +2493,8 @@
       "PetaBPS",
       "PetaFLOPS"
     ],
-    "correct_answer": "PetaFLOPS"
+    "correct_answer": "PetaFLOPS",
+    "id": "a5041995-964e-4f02-bf9d-912bbeca3ae4"
   },
   {
     "question": "Per indicare i due DataFrame per la congiunzione:",
@@ -2277,7 +2504,8 @@
       "entrambi i DataFrame vengono passati al metodo per il join con il parametro on",
       "solo un DataFrame viene passato al metodo per il join con il parametro on"
     ],
-    "correct_answer": "entrambi i DataFrame vengono passati al metodo per il join"
+    "correct_answer": "entrambi i DataFrame vengono passati al metodo per il join",
+    "id": "ff2c4c63-6a18-4b04-aba5-94dda0cd9367"
   },
   {
     "question": "L'except senza l'indicazione del tipo di eccezione:",
@@ -2287,7 +2515,8 @@
       "serve a gestire un determinato tipo di eccezioni",
       "serve ad evitare eccezioni"
     ],
-    "correct_answer": "si riporta come ultima"
+    "correct_answer": "si riporta come ultima",
+    "id": "49820e25-6297-403d-8778-c8e8f75dd048"
   },
   {
     "question": "Explode è relativo a:",
@@ -2297,7 +2526,8 @@
       "grafici a barre",
       "grafici lineari"
     ],
-    "correct_answer": "grafici a torta"
+    "correct_answer": "grafici a torta",
+    "id": "cddd0185-d3d8-46c2-b81c-2aa70bd4340d"
   },
   {
     "question": "Il campo Equipment fault è un widget:",
@@ -2307,7 +2537,8 @@
       "Spinbox",
       "Checkbutton"
     ],
-    "correct_answer": "Checkbutton"
+    "correct_answer": "Checkbutton",
+    "id": "f2872527-aa10-48d2-bf62-f500db0455ee"
   },
   {
     "question": "Lo specificatore di formato \"10,.3e\" indica che il numero da stampare:",
@@ -2317,7 +2548,8 @@
       "occuperà 10 caratteri, avrà il separatore delle miglia, avrà 3 cifre decimali e sarà espresso in percentuale",
       "avrà il separatore delle miglia, avrà 3 cifre decimali e sarà espresso in notazione scientifica"
     ],
-    "correct_answer": "occuperà 10 caratteri, avrà il separatore delle miglia, avrà 3 cifre decimali e sarà espresso in notazione scientifica"
+    "correct_answer": "occuperà 10 caratteri, avrà il separatore delle miglia, avrà 3 cifre decimali e sarà espresso in notazione scientifica",
+    "id": "e2b1c7a5-e862-42dd-ab26-3f36a3634af2"
   },
   {
     "question": "Le istruzioni l=set() l.discard(1):",
@@ -2327,7 +2559,8 @@
       "sollevano l'eccezione Error",
       "non sollevano nessuna eccezione"
     ],
-    "correct_answer": "non sollevano nessuna eccezione"
+    "correct_answer": "non sollevano nessuna eccezione",
+    "id": "67f766b8-6510-4499-9b20-427a77cb8879"
   },
   {
     "question": "Per il raggruppamento delle osservazioni per una particolare categoria si usa la parola chiave:",
@@ -2337,7 +2570,8 @@
       "where",
       "class"
     ],
-    "correct_answer": "class"
+    "correct_answer": "class",
+    "id": "6285c667-6840-4b1c-bddd-c03844b910b8"
   },
   {
     "question": "L'eccezione ValueError viene sollevata quando:",
@@ -2347,7 +2581,8 @@
       "si divide per zero",
       "il file non esiste in fase di lettura"
     ],
-    "correct_answer": "si effettua un casting non consentito"
+    "correct_answer": "si effettua un casting non consentito",
+    "id": "d60bbca3-1e7c-49e8-a2c4-234e1c511818"
   },
   {
     "question": "Il codice import re r = re.sub(r'\".*?\"',\"*\",'\"1 2 3\" \"a b c d\"') print® visualizza a schermo:",
@@ -2357,7 +2592,8 @@
       "**",
       "\"\"\"\""
     ],
-    "correct_answer": "**"
+    "correct_answer": "**",
+    "id": "11ca7a7b-a86c-45a1-9138-9f7bffb31cc2"
   },
   {
     "question": "Il/i motivo/i alla base della difficoltà di gestione dell'accumulazione dei dati è/sono:",
@@ -2367,7 +2603,8 @@
       "il volume e la velocità di accumulazione dei dati",
       "il volume e la varietà dei dati"
     ],
-    "correct_answer": "il volume e la velocità di accumulazione dei dati"
+    "correct_answer": "il volume e la velocità di accumulazione dei dati",
+    "id": "8aecd18d-ce39-44a8-a12f-0a5436411f7f"
   },
   {
     "question": "Nella modalità di installazione e funzionamento pseudo-distributed:",
@@ -2377,7 +2614,8 @@
       "il funzionamento sarà suddiviso in più processi Java e si avranno più nodi",
       "il funzionamento sarà racchiuso in un unico processo Java e si avranno più nodi"
     ],
-    "correct_answer": "il funzionamento sarà suddiviso in più processi Java e si avrà un single-node cluster"
+    "correct_answer": "il funzionamento sarà suddiviso in più processi Java e si avrà un single-node cluster",
+    "id": "da6caca5-c401-4c12-9cea-e9f367d712de"
   },
   {
     "question": "Nel widget Spinbox, il parametro textvariable è:",
@@ -2387,7 +2625,8 @@
       "l'argomento che determina carattere visualizzato nell'entry",
       "l'argomento che collega variabile al testo dell'etichetta del widget"
     ],
-    "correct_answer": "l'argomento di tipo StringVar collegato al widget"
+    "correct_answer": "l'argomento di tipo StringVar collegato al widget",
+    "id": "79c6f2b7-d5dc-4502-8ceb-4e633217f881"
   },
   {
     "question": "Il codice import re r = re.findall(r\"[0-9a-z]+\",\"1 2 3 a b c d\") print(len(r)) visualizza a schermo:",
@@ -2397,7 +2636,8 @@
       "una lista di 7 elementi",
       "7"
     ],
-    "correct_answer": "7"
+    "correct_answer": "7",
+    "id": "6649d509-4580-4aab-a3f6-ca1b86da5cca"
   },
   {
     "question": "L'espressione [-10*x+2 for x in range(-100,100) permette di generare:",
@@ -2407,7 +2647,8 @@
       "una retta crescente",
       "una retta decrescente"
     ],
-    "correct_answer": "una retta decrescente"
+    "correct_answer": "una retta decrescente",
+    "id": "f5884c86-304f-4e0a-80ae-af1350229666"
   },
   {
     "question": "Il risultato di una trasformazione e di un'azione è:",
@@ -2417,7 +2658,8 @@
       "un risultato specifico e un RDD, rispettivamente",
       "sempre un risultato specifico"
     ],
-    "correct_answer": "un RDD e un risultato specifico, rispettivamente"
+    "correct_answer": "un RDD e un risultato specifico, rispettivamente",
+    "id": "4d43374b-2bb2-47d2-b683-92330d4b85ac"
   },
   {
     "question": "Il metodo rstrip serve:",
@@ -2427,7 +2669,8 @@
       "ad eliminare specifici caratteri al termine della stringa",
       "ad aggiungere specifici caratteri al termine della stringa"
     ],
-    "correct_answer": "ad eliminare specifici caratteri al termine della stringa"
+    "correct_answer": "ad eliminare specifici caratteri al termine della stringa",
+    "id": "85a06b3a-80bd-4cd4-8c19-d82dbfb97426"
   },
   {
     "question": "Il metodo findall(a) permette di:",
@@ -2437,7 +2680,8 @@
       "estrarre il contenuto tra il tag di apertura e di chiusura indicato da a",
       "estrarre il primo paragrafo di a"
     ],
-    "correct_answer": "estrarre tutti i tag indicati da a"
+    "correct_answer": "estrarre tutti i tag indicati da a",
+    "id": "5cff19ac-421b-4653-bb14-2252e719de6b"
   },
   {
     "question": "Untitled si riferisce:",
@@ -2447,7 +2691,8 @@
       "alla finestra sia dell'interactive mode sia a quella dello script mode",
       "alla finestra del debugger"
     ],
-    "correct_answer": "alla finestra dello script mode"
+    "correct_answer": "alla finestra dello script mode",
+    "id": "52a55d09-d2d2-4bec-9078-08ef8b72d037"
   },
   {
     "question": "Math:",
@@ -2457,7 +2702,8 @@
       "è un modulo della standard library",
       "è direttamente utilizzabile in Python senza necessità di importazione"
     ],
-    "correct_answer": "è un modulo della standard library"
+    "correct_answer": "è un modulo della standard library",
+    "id": "b636d924-faad-42cf-b6c8-8ec62c8f5894"
   },
   {
     "question": "Gli oggetti creati negli script sono visualizzati nel quadrante:",
@@ -2467,7 +2713,8 @@
       "workspace",
       "quadrante in basso a destra"
     ],
-    "correct_answer": "workspace"
+    "correct_answer": "workspace",
+    "id": "139ecebe-5734-4f33-b473-8cacda6aa240"
   },
   {
     "question": "I fenomeni di viralizzazione dei contenuti informativi sono dovuti al fatto che:",
@@ -2477,7 +2724,8 @@
       "i social network sono governati da algoritmi in grado di filtrare costantemente le notizie disponibili",
       "i social network consentono l'ingresso nell'ecosistema informativo di fonti estranee al classico circuito dell'informazione"
     ],
-    "correct_answer": "sui social network gli utenti diventano parte attiva nella diffusione di informazioni, opinioni e punti di vista"
+    "correct_answer": "sui social network gli utenti diventano parte attiva nella diffusione di informazioni, opinioni e punti di vista",
+    "id": "1a523001-d695-4b5b-b261-64888d27ac47"
   },
   {
     "question": "Un'eccezione è:",
@@ -2487,7 +2735,8 @@
       "un errore a tempo di compilazione non rilevabile con il traceback",
       "un errore a tempo di esecuzione non rilevabile con il traceback"
     ],
-    "correct_answer": "un errore a tempo di esecuzione rilevabile con il traceback"
+    "correct_answer": "un errore a tempo di esecuzione rilevabile con il traceback",
+    "id": "08700cb6-5055-4bcd-b172-4bf986bfa1d4"
   },
   {
     "question": "L'operatore index:",
@@ -2497,7 +2746,8 @@
       "restituisce la riga dato l'elemento",
       "restituisce la posizione dato l'elemento"
     ],
-    "correct_answer": "restituisce l'etichetta di una riga in base alla sua posizione"
+    "correct_answer": "restituisce l'etichetta di una riga in base alla sua posizione",
+    "id": "9ab8e006-302a-4fc6-8e62-5a1c726fa255"
   },
   {
     "question": "I componenti principali di un cluster Spark sono:",
@@ -2507,7 +2757,8 @@
       "4",
       "5"
     ],
-    "correct_answer": "3"
+    "correct_answer": "3",
+    "id": "7b11c778-211b-452d-aacd-bdec64d544c6"
   },
   {
     "question": "Gli argomenti da passare allo SparkContext sono:",
@@ -2517,7 +2768,8 @@
       "3",
       "4"
     ],
-    "correct_answer": "2"
+    "correct_answer": "2",
+    "id": "f632ac9d-355e-4410-9800-96e74c3ac13a"
   },
   {
     "question": "Il risultato a schermo del  seguente codicev=np.array(range(-2,2))v2=v[v&lt;=0]print(len(v2))è:",
@@ -2527,7 +2779,8 @@
       "2",
       "3"
     ],
-    "correct_answer": "3"
+    "correct_answer": "3",
+    "id": "4c669a4c-25a7-4ec9-a493-1c39e08f0e4c"
   },
   {
     "question": "Per stabilire il font del testo di una Label è necessario utilizzare:",
@@ -2537,7 +2790,8 @@
       "una tupla di tre elementi",
       "tre elementi"
     ],
-    "correct_answer": "una tupla di due elementi"
+    "correct_answer": "una tupla di due elementi",
+    "id": "ac26a448-a48a-4509-9ccb-44803b336be1"
   },
   {
     "question": "Una query SQL è suddivisa in:",
@@ -2547,7 +2801,8 @@
       "comandi, costrutti e interrogazioni",
       "comandi, costrutti e clausole"
     ],
-    "correct_answer": "comandi, costrutti e clausole"
+    "correct_answer": "comandi, costrutti e clausole",
+    "id": "1518bb12-bb26-4e2e-82e2-71abe8814ba9"
   },
   {
     "question": "Il quadrante che funge da schermo e comando rapido è:",
@@ -2557,7 +2812,8 @@
       "workspace",
       "quadrante in basso a destra"
     ],
-    "correct_answer": "console"
+    "correct_answer": "console",
+    "id": "39553115-6e88-4a02-89bf-e4620bc64452"
   },
   {
     "question": "Il codice def f(): a = 0 c = [] s = \"ciao\" for b in s: c.append(a) a+=2 return c restituisce:",
@@ -2567,7 +2823,8 @@
       "una stringa di 4 elementi",
       "un lista di 4 elementi"
     ],
-    "correct_answer": "un lista di 4 elementi"
+    "correct_answer": "un lista di 4 elementi",
+    "id": "8d2bb27d-5289-4625-a6a5-7e7e50a1f8e1"
   },
   {
     "question": "Gli oggetti creati negli script sono visualizzati nel quadrante:",
@@ -2577,7 +2834,8 @@
       "workspace",
       "quadrante in basso a destra"
     ],
-    "correct_answer": "workspace"
+    "correct_answer": "workspace",
+    "id": "2edf82ef-87d0-4da1-8ead-02f2b95ea6b8"
   },
   {
     "question": "In un LabelInput per un widget Text, il parametro input_args è:",
@@ -2587,7 +2845,8 @@
       "un dizionario",
       "un DataFrame"
     ],
-    "correct_answer": "un dizionario"
+    "correct_answer": "un dizionario",
+    "id": "f35f16e1-0e45-4ad8-81cd-a7c2cc028996"
   },
   {
     "question": "Per definire e riconoscere un problema è possibile individuare:",
@@ -2597,7 +2856,8 @@
       "5 fasi",
       "6 fasi"
     ],
-    "correct_answer": "5 fasi"
+    "correct_answer": "5 fasi",
+    "id": "ce630c31-2c91-4b39-a3c7-402080971dc8"
   },
   {
     "question": "Il processo di data-mining è costitutito da:",
@@ -2607,6 +2867,7 @@
       "3 componenti",
       "4 componenti"
     ],
-    "correct_answer": "2 componenti"
+    "correct_answer": "2 componenti",
+    "id": "38a0ddb8-4f29-4788-95ed-c99a22e3c07c"
   }
 ]
