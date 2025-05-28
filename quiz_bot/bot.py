@@ -32,6 +32,19 @@ if not firebase_admin._apps:
 # Inizializza Firestore
 db = firestore.client()
 
+# --- Manager globale per condivisione istanze per utente ---
+user_managers: Dict[int, WrongAnswersManager] = {}
+
+def get_manager(user_id: int) -> WrongAnswersManager:
+    """Restituisce (o crea) l'istanza condivisa di WrongAnswersManager per questo user_id."""
+    if user_id not in user_managers:
+        user_managers[user_id] = WrongAnswersManager(str(user_id))
+    return user_managers[user_id]
+
+def clear_manager(user_id: int):
+    """Rimuove l'istanza manager dopo il commit."""
+    user_managers.pop(user_id, None)
+
 # Inizializzazione bot Telegram
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 if not TOKEN:
@@ -39,12 +52,15 @@ if not TOKEN:
 
 application = ApplicationBuilder().token(TOKEN).build()
 user_states = {}
+user_stats = {}  # Statistiche per utente e per materia
+
 QUIZ_FOLDER = "quizzes"
 JSON = ".json"
-user_stats = {}  # Statistiche per utente e per materia
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_text_only=False):
     user_id = update.effective_user.id
+    # Inizializzo il manager per l'utente, pronto a raccogliere errori
+    get_manager(user_id)
     try:
         files = [f for f in os.listdir(QUIZ_FOLDER) if f.endswith(JSON)]
     except Exception as e:
@@ -256,7 +272,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except Exception:
         pass
 
-    manager = WrongAnswersManager(str(user_id))
+    manager = get_manager(user_id)
     if data == "review_errors":
         subjects = list(manager.get_all().keys())
 
@@ -284,8 +300,8 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif data == "change_course":
         state = user_states.get(user_id)
         if state:
-            manager = WrongAnswersManager(str(user_id))
             manager.commit_changes()
+            clean_manager(user_id)
 
         await show_final_stats(user_id, context, state, from_change_course=True)
         await start(update, context, show_intro_text_only=True)
@@ -362,8 +378,8 @@ async def handle_answer_callback(user_id: int, answer_index: int, context: Conte
         correct_index = question_data["answers"].index(question_data["correct_answer"])
 
     answers = question_data.get("_shuffled_answers", question_data.get("answers", []))
-    manager = WrongAnswersManager(str(user_id))
-
+    manager = get_manager(user_id)
+    
     if answer_index == correct_index:
         state["score"] += 1
         await context.bot.send_message(chat_id=user_id, text="✅ Corretto!")
@@ -391,10 +407,12 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not state:
         await context.bot.send_message(chat_id=user_id, text="Nessuna sessione attiva.")
         return
-
+   
+    manager = get_manager(user_id)
+    manager.commit_changes()
+    clear_manager(user_id)
    
     await show_final_stats(user_id, context, state, from_stop=True)
-    WrongAnswersManager(str(user_id)).commit_changes()
     user_states.pop(user_id, None)
 
 
@@ -452,7 +470,7 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
         InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
     ])
 
-    manager = WrongAnswersManager(str(user_id))
+    manager = get_manager(user_id)
     
     if manager.has_wrong_answers():
         keyboard.append([InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors")])
