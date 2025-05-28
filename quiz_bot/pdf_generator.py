@@ -2,6 +2,8 @@ import os
 from fpdf import FPDF
 from fpdf.enums import XPos, YPos
 import json
+from PIL import Image
+
 
 QUIZ_FOLDER = "quizzes"
 IMAGES_FOLDER = "quizzes/images"
@@ -68,7 +70,19 @@ def generate_pdf_sync(quiz_path: str) -> str:
                 x = pdf.get_x()
                 y = pdf.get_y()
                 max_width = pdf.w - 2 * pdf.l_margin
-                pdf.image(img_full_path, x=x, y=y, w=min(100, max_width))
+                desired_width = min(100, max_width)
+        
+                # Ottieni dimensioni reali immagine
+                with Image.open(img_full_path) as img:
+                    orig_width, orig_height = img.size
+        
+                # Calcola l'altezza mantenendo proporzioni
+                aspect_ratio = orig_height / orig_width
+                desired_height = desired_width * aspect_ratio
+        
+                # Inserisci immagine con dimensioni calcolate
+                pdf.image(img_full_path, x=x, y=y, w=desired_width, h=desired_height)
+                pdf.ln(desired_height + 5)  # salto di riga più un piccolo margine
 
         correct_letter = None
 
