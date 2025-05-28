@@ -64,10 +64,11 @@ def generate_pdf_sync(quiz_path: str) -> str:
         if image_path:
             img_full_path = os.path.join(IMAGES_FOLDER, image_path)
             if os.path.exists(img_full_path):
+                pdf.set_x(pdf.l_margin)
                 x = pdf.get_x()
                 y = pdf.get_y()
-                pdf.image(img_full_path, x=x, y=y, w=100)
-                pdf.ln(50)
+                max_width = pdf.w - 2 * pdf.l_margin
+                pdf.image(img_full_path, x=x, y=y, w=min(100, max_width))
 
         correct_letter = None
 
