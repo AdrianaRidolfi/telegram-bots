@@ -1,428 +1,470 @@
 [
-    {
-        "question": "L'organizzazione d'impresa e i processi decisionali sono legati tra loro in quanto:",
-        "answers": [
-            "Gli aspetti più visibili dell'organizzazione influenzano fortemente i processi decisionali strategici delle imprese",
-            "I processi decisionali avvengono indipendentemente dalla struttura organizzativa",
-            "L'organizzazione d'impresa non ha impatto sulle decisioni strategiche",
-            "I processi decisionali strategici sono influenzati solo da fattori esterni all'impresa"
-        ],
-        "correct_answer": "Gli aspetti più visibili dell'organizzazione influenzano fortemente i processi decisionali strategici delle imprese"
-    },
-    {
-        "question": "Qual è il valore di default della proprietà 'overflow' in CSS?",
-        "answers": [
-            "hidden",
-            "auto",
-            "scroll",
-            "visible"
-        ],
-        "correct_answer": "visible"
-    },
-    {
-        "question": "Quale dei seguenti enctype non è predefinito per i moduli HTML?",
-        "answers": [
-            "application/x-www-form-urlencoded",
-            "multipart/form-data",
-            "text/plain",
-            "application/xml"
-        ],
-        "correct_answer": "application/xml"
-    },
-    {
-        "question": "Quale affermazione è vera riguardo all'input di tipo password?",
-        "answers": [
-            "Cifra i dati durante la trasmissione",
-            "Non ha alcuna protezione sullo schermo",
-            "Protegge solo i dati visibili",
-            "Non ha implicazioni con la sicurezza del trasferimento dei dati"
-        ],
-        "correct_answer": "Non ha implicazioni con la sicurezza del trasferimento dei dati"
-    },
-    {
-        "question": "Cosa succede quando si carica la pagina con il codice jQuery fornito?",
-        "answers": [
-            "Il titolo della pagina cambia",
-            "Viene visualizzato un errore di sintassi",
-            "Il paragrafo con id 'mio_paragrafo' viene modificato",
-            "Il jQuery non viene caricato correttamente"
-        ],
-        "correct_answer": "Il paragrafo con id 'mio_paragrafo' viene modificato",
-        "image": "tec1.jpg"
-    },
-    {
-        "question": "Qual è l'enctype predefinito per i moduli HTML?",
-        "answers": [
-            "application/x-www-form-urlencoded",
-            "application/json",
-            "text/plain",
-            "multipart/form-data"
-        ],
-        "correct_answer": "application/x-www-form-urlencoded"
-    },
-    {
-        "question": "Qual è la funzione principale dell'elemento input con type=\"password\"?",
-        "answers": [
-            "Conservare i dati nei cookies",
-            "Proteggere i dati sullo schermo",
-            "Cifrare i dati durante la trasmissione",
-            "Specificare l'algoritmo di cifratura"
-        ],
-        "correct_answer": "Proteggere i dati sullo schermo"
-    },
-    {
-        "question": "Cosa succede con la seguente sequenza di istruzioni: let x = 'John Doe'; let x = 0;",
-        "answers": [
-            "è obsoleta",
-            "è ammessa",
-            "dà errore a compile-time",
-            "non è ammessa"
-        ],
-        "correct_answer": "dà errore a compile-time"
-    },
-    {
-        "question": "Cosa indica la seguente immagine riguardo ai cookie?",
-        "answers": [
-            "sono stati settati 2 cookies",
-            "c'è chiaramente un problema di gestione dei cookies",
-            "è stato settato un solo cookie",
-            "è stato settato il cookie ONEID ma poi è stato sovrascritto da TWOID"
-        ],
-        "correct_answer": "sono stati settati 2 cookies",
-        "image": "tec2.jpg"
-    },
-    {
-        "question": "Qual è la sintassi corretta per scrivere un messaggio sulla console in JavaScript?",
-        "answers": [
-            "console(“TESTO DA INSERIRE”);",
-            "console.log(“TESTO DA INSERIRE”)",
-            "console.log.write(“TESTO DA INSERIRE”);",
-            "log(“TESTO DA INSERIRE”)"
-        ],
-        "correct_answer": "console.log(“TESTO DA INSERIRE”)"
-    },
-    {
-        "question": "In JavaScript, come vengono passati gli oggetti in una funzione?",
-        "answers": [
-            "come copia degli originali",
-            "per riferimento",
-            "per valore",
-            "come array"
-        ],
-        "correct_answer": "per riferimento"
-    },
-    {
-        "question": "Quale errore è presente nel seguente JSON: { 'name': 'john', 'surname': 'red', 'cars': [ 'Ferrari', 'Porsche' 1, 'hobbies': [ 'go - kart', 'bicycle' ] }?",
-        "answers": [
-            "Le chiavi non devono essere racchiuse in virgolette",
-            "Manca una virgola dopo 'Porsche'",
-            "Non è possibile avere due array all'interno",
-            "La sezione 'hobbies' è corretta"
-        ],
-        "correct_answer": "Non è possibile avere due array all'interno"
-    },
-    {
-        "question": "Qual è la caratteristica principale del set-up della sessione TCP?",
-        "answers": [
-            "È a quattro vie",
-            "È a una via",
-            "È a due vie",
-            "È a tre vie"
-        ],
-        "correct_answer": "È a due vie"
-    },
-    {
-        "question": "Nell'URL http://www.miosito.it/percorso/index.html, cosa rappresenta 'http'?",
-        "answers": [
-            "l'host",
-            "il path",
-            "lo schema",
-            "la porta"
-        ],
-        "correct_answer": "lo schema"
-    },
-    {
-        "question": "Quale delle seguenti affermazioni è vera riguardo alla sezione 'hobbies' in un JSON?",
-        "answers": [
-            "Deve essere racchiusa in virgolette",
-            "Può contenere più array",
-            "Deve essere completata con un punto finale",
-            "Non è necessaria"
-        ],
-        "correct_answer": "Deve essere completata con un punto finale"
-    },
-    {
-        "question": "Qual è la struttura corretta per un array in JSON?",
-        "answers": [
-            "Deve essere racchiuso tra parentesi tonde",
-            "Deve essere racchiuso tra parentesi graffe",
-            "Deve essere racchiuso tra parentesi quadre",
-            "Non ha bisogno di alcuna parentesi"
-        ],
-        "correct_answer": "Deve essere racchiuso tra parentesi quadre"
-    },
-    {
-        "question": "In un ciclo do...while, quando viene eseguito il blocco di codice?",
-        "answers": [
-            "Solo se la condizione è falsa",
-            "Solo se la condizione è vera",
-            "Almeno una volta, prima di controllare la condizione",
-            "Al termine del ciclo, indipendentemente dalla condizione"
-        ],
-        "correct_answer": "Almeno una volta, prima di controllare la condizione"
-    },
-    {
-        "question": "Quale affermazione sui Bearer Token è corretta?",
-        "answers": [
-            "Sono sempre associati a un cookie di sessione",
-            "Possono essere utilizzati per accedere a risorse protette senza ulteriori credenziali",
-            "Sono utilizzati esclusivamente per l'autenticazione degli utenti",
-            "Devono essere sempre trasmessi in chiaro"
-        ],
-        "correct_answer": "Possono essere utilizzati per accedere a risorse protette senza ulteriori credenziali"
-    },
-    {
-        "question": "Il seguente JSON: {\"name\"=\"john\"} è valido?",
-        "answers": [
-            "Non è valido: vanno messi i ':' al posto dell' '='",
-            "È valido",
-            "Non è valido: occorre che la lettera 'j' sia maiuscola",
-            "È valido solo se 'john' è un numero"
-        ],
-        "correct_answer": "Non è valido: vanno messi i ':' al posto dell' '='"
-    },
-    {
-        "question": "Qual è la principale differenza tra un ciclo do...while e un ciclo while?",
-        "answers": [
-            "Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, indipendentemente dalla verità della condizione",
-            "Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, al termine del loop, indipendentemente dalla verità della condizione",
-            "Il blocco di codice all'interno del ciclo può essere eseguito se la condizione è verificata",
-            "Il blocco di codice all'interno del ciclo viene eseguito almeno due volte, una all'inizio ed una alla fine del ciclo"
-        ],
-        "correct_answer": "Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, indipendentemente dalla verità della condizione"
-    },
-    {
-        "question": "Cosa sono i Bearer Token?",
-        "answers": [
-            "Sono un tipo particolare di Cookie, usato per ottenere l'autorizzazione ad accedere ad una risorsa protetta tramite SSL",
-            "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad una risorsa protetta da un Authorization Server conforme con lo Standard OAuth2",
-            "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad un dominio generico",
-            "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad una risorsa protetta da un Authorization Server non conforme con lo standard OAuth2"
-        ],
-        "correct_answer": "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad una risorsa protetta da un Authorization Server conforme con lo Standard OAuth2"
-    },
-    {
-        "question": "Nel contesto di un URL, cosa rappresenta il 'path'?",
-        "answers": [
-            "La parte che indica il dominio del sito",
-            "La parte che specifica la posizione del file sul server",
-            "La parte che identifica il protocollo",
-            "La parte che specifica la porta di accesso"
-        ],
-        "correct_answer": "La parte che specifica la posizione del file sul server"
-    },
-    {
-        "question": "Cosa indica la risposta del server 'HTTP/1.1 401 Unauthorized'?",
-        "answers": [
-            "Che il client non è autenticato ed è richiesta una generica autenticazione",
-            "Che il client non è autenticato ed è richiesta una autenticazione 'basic'",
-            "Che il client è autenticato ma non è autorizzato",
-            "Che il client non è autenticato ed è richiesta una autenticazione 'digest'"
-        ],
-        "correct_answer": "Che il client non è autenticato ed è richiesta una autenticazione 'basic'"
-    },
-    {
-        "question": "Quale delle seguenti modifiche al JSON è corretta per aggiungere un nuovo hobby 'motors' con tre declinazioni?",
-        "answers": [
-            "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",\"f1\",\"f2\",\"f3\"]}",
-            "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",{\"motors\":[\"f1\",\"f2\",\"f3\"]}]}",
-            "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",[\"motors\":\"f1\",\"f2\",\"f3\"]]}",
-            "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",\"motors\":[\"f1\",\"f2\",\"f3\"]]}"
-        ],
-        "correct_answer": "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",{\"motors\":[\"f1\",\"f2\",\"f3\"]}]}"
-    },
-    {
-        "question": "Nell'immagine sono state depennate le etichette relative agli elementi dei boxmodel; indicare dalla più interna alla più esterna:",
-        "answers": [
-            "content, padding, border, margin",
-            "margin, border, padding, content",
-            "padding, content, border, margin",
-            "value, padding, border, margin"
-        ],
-        "correct_answer": "content, padding, border, margin",
-        "image": "tec3.jpg"
-    },
-    {
-        "question": "Caricando tale pagina, cosa compare?",
-        "answers": [
-            "Years Old",
-            "John Doe is 50 years old.",
-            "John is 50",
-            "John is 50 years old."
-        ],
-        "correct_answer": "John Doe is 50 years old.",
-        "image": "tec4.jpg"
-    },
-    {
-        "question": "Qual è il nome del livello depennato?",
-        "answers": [
-            "Application Layer",
-            "Transport Layer",
-            "Physical Layer",
-            "Session Layer"
-        ],
-        "correct_answer": "Session Layer",
-        "image": "tec5.jpg"
-    },
-    {
-        "question": "Nella seguente immagine sono state depennate le etichette relative agli elementi dei box model; indicare dalla più esterna alla più interna:",
-        "answers": [
-            "content,padding,border,margin",
-            "margin,border,padding,content",
-            "padding,content,border,margin",
-            "value,padding,border,margin"
-        ],
-        "correct_answer": "margin,border,padding,content",
-        "image": "tec3.jpg"
-    },
-    {
-        "question": "L'attributo enctype application/x-www-form-urlencoded:",
-        "answers": [
-            "è un tipo di codifica che compone una stringa convertendo tutti i campi della form in una sequenza di associazioni nomecampo=valore",
-            "è un tipo di codifica da usarsi soltanto con il metodo post: questa codifica compone ogni campo della form in una o più parti di un documento di tipo MIME",
-            "è una codifica che converte i dati della form in formato JSON prima dell'invio",
-            "è un tipo di codifica utilizzata per inviare dati binari come immagini e file"
-        ],
-        "correct_answer": "è un tipo di codifica che compone una stringa convertendo tutti i campi della form in una sequenza di associazioni nomecampo=valore"
-    },
-    {
-        "question": "mongose.model(name, schema, collection, skipinit) cosa rappresenta schema:",
-        "answers": [
-            "è lo schema Mongoose utilizzato per definire la struttura dei documenti della collezione",
-            "è il nome della collezione su cui operare",
-            "è un parametro booleano che indica se inizializzare il modello immediatamente",
-            "è la funzione callback eseguita dopo la creazione del modello"
-        ],
-        "correct_answer": "è lo schema Mongoose utilizzato per definire la struttura dei documenti della collezione"
-    },
-    {
-        "question": "Data la seguente URL: http://test.it/percorso/index.html \"test.it\" rappresenta:",
-        "answers": [
-            "il path",
-            "la risorsa",
-            "l’host",
-            "il protocollo"
-        ],
-        "correct_answer": "l’host"
-    },
-    {
-        "question": "Il protocollo ICMP è utilizzato nel livello:",
-        "answers": [
-            "internet",
-            "network access",
-            "transport",
-            "application"
-        ],
-        "correct_answer": "internet"
-    },
-    {
-        "question": "Nei messaggi HTTP di tipo request, il <method> non può essere:",
-        "answers": [
-            "PUT",
-            "POST",
-            "GET",
-            "WHERE"
-        ],
-        "correct_answer": "WHERE"
-    },
-    {
-        "question": "Il selettore identificato da #id si applica:",
-        "answers": [
-            "agli elementi che presentano l'attributo value=\"id\"",
-            "agli elementi che presentano l'attributo class=\"id\"",
-            "agli elementi che presentano l'attributo id=\"id\"",
-            "agli elementi che presentano l'attributo set=\"id\""
-        ],
-        "correct_answer": "agli elementi che presentano l'attributo id=\"id\""
-    },
-    {
-        "question": "Quando si carica la seguente pagina, cosa viene visualizzato?\n\n<!DOCTYPE html>\n<html>\n<body>\n<div id=\"main\">\n<p>Hello</p>\n<p>World</p>\n</div>\n<p id=\"demo\"></p>\n<script>\nconst x = document.getElementById(\"main\");\nconst y = x.getElementsByTagName(\"p\");\ndocument.getElementById(\"demo\").innerHTML = y.innerHTML\n</script>\n</body>\n</html>",
-        "answers": [
-            "HelloWorldundefined",
-            "HelloWorld",
-            "HelloWorldHello",
-            "HelloWorldWorld"
-        ],
-        "correct_answer": "HelloWorldundefined"
-    },
-    {
-        "question": "Quando si carica la seguente pagina, cosa viene visualizzato?\n\n<!DOCTYPE html>\n<html>\n<body>\n<p id=\"demo\"></p>\n<script>\nfunction findValue() {\n  let value = -1;\n  for(let i=0; i < arguments.length; i++) {\n    if (arguments[i] > value) {\n      value = arguments[i];\n    }\n  }\n  return value;\n}\ndocument.getElementById(\"demo\").innerHTML = findValue(4, 15, 6);\n</script>\n</body>\n</html>",
-        "answers": [
-            "4",
-            "15",
-            "6",
-            "25"
-        ],
-        "correct_answer": "15"
-    },
-    {
-        "question": "Quando si carica la seguente pagina, cosa viene mostrato?\n\n<!DOCTYPE html>\n<html>\n<body>\n<p id=\"demo\"></p>\n<script>\nconst person = {\n  fullName: function() {\n    return this.firstName + \" \" + this.lastName;\n  }\n}\nconst person1 = {\n  firstName: \"John\",\n  lastName: \"Doe\"\n}\nconst person2 = {\n  firstName: \"Mary\",\n  lastName: \"Doe\"\n}\ndocument.getElementById(\"demo\").innerHTML = person.fullName.call(person1);\n</script>\n</body>\n</html>",
-        "answers": [
-            "person1",
-            "John Doe",
-            "John Doe Mary Doe",
-            "Mary Doe"
-        ],
-        "correct_answer": "John Doe"
-    },
-    {
-        "question": "Quando si carica la seguente pagina, cosa viene mostrato?\n\n<!DOCTYPE html>\n<html>\n<body>\n<p id=\"demo\"></p>\n<script>\nconst person = {\n  fullName: function() {\n    return this.firstName + \" \" + this.lastName;\n  }\n}\nconst person1 = {\n  firstName: \"John\",\n  lastName: \"Doe\"\n}\nconst person2 = {\n  firstName: \"Mary\",\n  lastName: \"Doe\"\n}\ndocument.getElementById(\"demo\").innerHTML = person.fullName.call(person2);\n</script>\n</body>\n</html>",
-        "answers": [
-            "John Doe",
-            "Mary Doe",
-            "person1",
-            "John Doe Mary Doe"
-        ],
-        "correct_answer": "Mary Doe"
-    },
-    {
-        "question": "Nel seguente json:\n{\n\"name\": \"John\",\n\"surname\": \"Red\",\n\"cars\": ???\n}\nse volessi inserire una lista di macchine possedute da John Red, dovrei inserire al posto di ???",
-        "answers": [
-            "\"cars\": [\"Ferrari\", \"Porsche\"]",
-            "cars: [\"Ferrari\", \"Porsche\"]",
-            "\"cars\":[Ferrari, Porsche]",
-            "\"cars\":[\"Ferrari\", \"Porsche\"] 1"
-        ],
-        "correct_answer": "\"cars\": [\"Ferrari\", \"Porsche\"]"
-    },
-    {
-        "question": "Nei messaggi HTTP di tipo response, uno status 404 indica:",
-        "answers": [
-            "server error response",
-            "successful response",
-            "information response",
-            "client error response"
-        ],
-        "correct_answer": "client error response"
-    },
-    {
-        "question": "Data la seguente url: https://www.miosito.it/materiale?a=1\"a=1\" rappresenta:",
-        "answers": [
-            "il valore della porta",
-            "il numero di protocollo",
-            "il path",
-            "la querystring"
-        ],
-        "correct_answer": "la querystring"
-    },
-    {
-        "question": "La \"digest authentication\", rispetto alla \"basic\" ha i seguenti campi aggiuntivi nella response:",
-        "answers": [
-            "qop, nonce ed opaque",
-            "qop e nonce",
-            "qos e nonce",
-            "gos, nonce ed opaque"
-        ],
-        "correct_answer": "qop, nonce ed opaque"
-    }
+  {
+    "question": "L'organizzazione d'impresa e i processi decisionali sono legati tra loro in quanto:",
+    "answers": [
+      "Gli aspetti più visibili dell'organizzazione influenzano fortemente i processi decisionali strategici delle imprese",
+      "I processi decisionali avvengono indipendentemente dalla struttura organizzativa",
+      "L'organizzazione d'impresa non ha impatto sulle decisioni strategiche",
+      "I processi decisionali strategici sono influenzati solo da fattori esterni all'impresa"
+    ],
+    "correct_answer": "Gli aspetti più visibili dell'organizzazione influenzano fortemente i processi decisionali strategici delle imprese",
+    "id": "6edcf742-b288-488d-ac96-7ccde494aa38"
+  },
+  {
+    "question": "Qual è il valore di default della proprietà 'overflow' in CSS?",
+    "answers": [
+      "hidden",
+      "auto",
+      "scroll",
+      "visible"
+    ],
+    "correct_answer": "visible",
+    "id": "845403f9-6f20-4ff0-9a9f-587aa464d20b"
+  },
+  {
+    "question": "Quale dei seguenti enctype non è predefinito per i moduli HTML?",
+    "answers": [
+      "application/x-www-form-urlencoded",
+      "multipart/form-data",
+      "text/plain",
+      "application/xml"
+    ],
+    "correct_answer": "application/xml",
+    "id": "ced509ed-e6e1-45d3-8c4a-e08df757b80c"
+  },
+  {
+    "question": "Quale affermazione è vera riguardo all'input di tipo password?",
+    "answers": [
+      "Cifra i dati durante la trasmissione",
+      "Non ha alcuna protezione sullo schermo",
+      "Protegge solo i dati visibili",
+      "Non ha implicazioni con la sicurezza del trasferimento dei dati"
+    ],
+    "correct_answer": "Non ha implicazioni con la sicurezza del trasferimento dei dati",
+    "id": "0bf6b569-8270-4d3f-9512-19b567e4a6df"
+  },
+  {
+    "question": "Cosa succede quando si carica la pagina con il codice jQuery fornito?",
+    "answers": [
+      "Il titolo della pagina cambia",
+      "Viene visualizzato un errore di sintassi",
+      "Il paragrafo con id 'mio_paragrafo' viene modificato",
+      "Il jQuery non viene caricato correttamente"
+    ],
+    "correct_answer": "Il paragrafo con id 'mio_paragrafo' viene modificato",
+    "image": "tec1.jpg",
+    "id": "474cb559-be0c-45e0-809f-a1eb9ab8e2dd"
+  },
+  {
+    "question": "Qual è l'enctype predefinito per i moduli HTML?",
+    "answers": [
+      "application/x-www-form-urlencoded",
+      "application/json",
+      "text/plain",
+      "multipart/form-data"
+    ],
+    "correct_answer": "application/x-www-form-urlencoded",
+    "id": "0b43403a-a805-4b3b-bf3e-5fe462ae6368"
+  },
+  {
+    "question": "Qual è la funzione principale dell'elemento input con type=\"password\"?",
+    "answers": [
+      "Conservare i dati nei cookies",
+      "Proteggere i dati sullo schermo",
+      "Cifrare i dati durante la trasmissione",
+      "Specificare l'algoritmo di cifratura"
+    ],
+    "correct_answer": "Proteggere i dati sullo schermo",
+    "id": "ad76fd49-d63f-4ce4-9afa-422bfc784c06"
+  },
+  {
+    "question": "Cosa succede con la seguente sequenza di istruzioni: let x = 'John Doe'; let x = 0;",
+    "answers": [
+      "è obsoleta",
+      "è ammessa",
+      "dà errore a compile-time",
+      "non è ammessa"
+    ],
+    "correct_answer": "dà errore a compile-time",
+    "id": "acc7abed-cf16-405c-98fb-25c17164a155"
+  },
+  {
+    "question": "Cosa indica la seguente immagine riguardo ai cookie?",
+    "answers": [
+      "sono stati settati 2 cookies",
+      "c'è chiaramente un problema di gestione dei cookies",
+      "è stato settato un solo cookie",
+      "è stato settato il cookie ONEID ma poi è stato sovrascritto da TWOID"
+    ],
+    "correct_answer": "sono stati settati 2 cookies",
+    "image": "tec2.jpg",
+    "id": "05dd4be4-0c34-4496-8beb-bc79f18bd97e"
+  },
+  {
+    "question": "Qual è la sintassi corretta per scrivere un messaggio sulla console in JavaScript?",
+    "answers": [
+      "console(“TESTO DA INSERIRE”);",
+      "console.log(“TESTO DA INSERIRE”)",
+      "console.log.write(“TESTO DA INSERIRE”);",
+      "log(“TESTO DA INSERIRE”)"
+    ],
+    "correct_answer": "console.log(“TESTO DA INSERIRE”)",
+    "id": "2a300eee-04ff-4c9c-9a4b-4f69d5350d10"
+  },
+  {
+    "question": "In JavaScript, come vengono passati gli oggetti in una funzione?",
+    "answers": [
+      "come copia degli originali",
+      "per riferimento",
+      "per valore",
+      "come array"
+    ],
+    "correct_answer": "per riferimento",
+    "id": "08411dbc-43ca-4b27-a8a7-c4e6b22d46c8"
+  },
+  {
+    "question": "Quale errore è presente nel seguente JSON: { 'name': 'john', 'surname': 'red', 'cars': [ 'Ferrari', 'Porsche' 1, 'hobbies': [ 'go - kart', 'bicycle' ] }?",
+    "answers": [
+      "Le chiavi non devono essere racchiuse in virgolette",
+      "Manca una virgola dopo 'Porsche'",
+      "Non è possibile avere due array all'interno",
+      "La sezione 'hobbies' è corretta"
+    ],
+    "correct_answer": "Non è possibile avere due array all'interno",
+    "id": "a721333b-fd95-4145-955f-e04b4ac4d11a"
+  },
+  {
+    "question": "Qual è la caratteristica principale del set-up della sessione TCP?",
+    "answers": [
+      "È a quattro vie",
+      "È a una via",
+      "È a due vie",
+      "È a tre vie"
+    ],
+    "correct_answer": "È a due vie",
+    "id": "67fa0cdf-e2f8-483d-9bd5-a604bf4948c1"
+  },
+  {
+    "question": "Nell'URL http://www.miosito.it/percorso/index.html, cosa rappresenta 'http'?",
+    "answers": [
+      "l'host",
+      "il path",
+      "lo schema",
+      "la porta"
+    ],
+    "correct_answer": "lo schema",
+    "id": "05c92128-8879-423e-b9ac-05e89975a9a8"
+  },
+  {
+    "question": "Quale delle seguenti affermazioni è vera riguardo alla sezione 'hobbies' in un JSON?",
+    "answers": [
+      "Deve essere racchiusa in virgolette",
+      "Può contenere più array",
+      "Deve essere completata con un punto finale",
+      "Non è necessaria"
+    ],
+    "correct_answer": "Deve essere completata con un punto finale",
+    "id": "4c690f4c-610e-43c8-93a5-b028854044cd"
+  },
+  {
+    "question": "Qual è la struttura corretta per un array in JSON?",
+    "answers": [
+      "Deve essere racchiuso tra parentesi tonde",
+      "Deve essere racchiuso tra parentesi graffe",
+      "Deve essere racchiuso tra parentesi quadre",
+      "Non ha bisogno di alcuna parentesi"
+    ],
+    "correct_answer": "Deve essere racchiuso tra parentesi quadre",
+    "id": "0c53ae03-5773-4f6a-9521-fb00e6c25a41"
+  },
+  {
+    "question": "In un ciclo do...while, quando viene eseguito il blocco di codice?",
+    "answers": [
+      "Solo se la condizione è falsa",
+      "Solo se la condizione è vera",
+      "Almeno una volta, prima di controllare la condizione",
+      "Al termine del ciclo, indipendentemente dalla condizione"
+    ],
+    "correct_answer": "Almeno una volta, prima di controllare la condizione",
+    "id": "682d83e6-28f7-4e7f-b4af-3b5c63f3b761"
+  },
+  {
+    "question": "Quale affermazione sui Bearer Token è corretta?",
+    "answers": [
+      "Sono sempre associati a un cookie di sessione",
+      "Possono essere utilizzati per accedere a risorse protette senza ulteriori credenziali",
+      "Sono utilizzati esclusivamente per l'autenticazione degli utenti",
+      "Devono essere sempre trasmessi in chiaro"
+    ],
+    "correct_answer": "Possono essere utilizzati per accedere a risorse protette senza ulteriori credenziali",
+    "id": "4cb6f52b-530a-4fe1-aa90-8d5509e47c98"
+  },
+  {
+    "question": "Il seguente JSON: {\"name\"=\"john\"} è valido?",
+    "answers": [
+      "Non è valido: vanno messi i ':' al posto dell' '='",
+      "È valido",
+      "Non è valido: occorre che la lettera 'j' sia maiuscola",
+      "È valido solo se 'john' è un numero"
+    ],
+    "correct_answer": "Non è valido: vanno messi i ':' al posto dell' '='",
+    "id": "e13021c4-4860-4fda-aeb0-79346bd4b60f"
+  },
+  {
+    "question": "Qual è la principale differenza tra un ciclo do...while e un ciclo while?",
+    "answers": [
+      "Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, indipendentemente dalla verità della condizione",
+      "Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, al termine del loop, indipendentemente dalla verità della condizione",
+      "Il blocco di codice all'interno del ciclo può essere eseguito se la condizione è verificata",
+      "Il blocco di codice all'interno del ciclo viene eseguito almeno due volte, una all'inizio ed una alla fine del ciclo"
+    ],
+    "correct_answer": "Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, indipendentemente dalla verità della condizione",
+    "id": "1779deb9-78f0-4f14-b086-0bb371244591"
+  },
+  {
+    "question": "Cosa sono i Bearer Token?",
+    "answers": [
+      "Sono un tipo particolare di Cookie, usato per ottenere l'autorizzazione ad accedere ad una risorsa protetta tramite SSL",
+      "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad una risorsa protetta da un Authorization Server conforme con lo Standard OAuth2",
+      "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad un dominio generico",
+      "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad una risorsa protetta da un Authorization Server non conforme con lo standard OAuth2"
+    ],
+    "correct_answer": "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad una risorsa protetta da un Authorization Server conforme con lo Standard OAuth2",
+    "id": "6075a125-125d-4c47-ab00-36cb54d567b3"
+  },
+  {
+    "question": "Nel contesto di un URL, cosa rappresenta il 'path'?",
+    "answers": [
+      "La parte che indica il dominio del sito",
+      "La parte che specifica la posizione del file sul server",
+      "La parte che identifica il protocollo",
+      "La parte che specifica la porta di accesso"
+    ],
+    "correct_answer": "La parte che specifica la posizione del file sul server",
+    "id": "faffdbfd-c2a0-4548-a7e7-ea874e0d14d4"
+  },
+  {
+    "question": "Cosa indica la risposta del server 'HTTP/1.1 401 Unauthorized'?",
+    "answers": [
+      "Che il client non è autenticato ed è richiesta una generica autenticazione",
+      "Che il client non è autenticato ed è richiesta una autenticazione 'basic'",
+      "Che il client è autenticato ma non è autorizzato",
+      "Che il client non è autenticato ed è richiesta una autenticazione 'digest'"
+    ],
+    "correct_answer": "Che il client non è autenticato ed è richiesta una autenticazione 'basic'",
+    "id": "a1eaf0c3-1f6a-485d-b83b-c0c2a160901e"
+  },
+  {
+    "question": "Quale delle seguenti modifiche al JSON è corretta per aggiungere un nuovo hobby 'motors' con tre declinazioni?",
+    "answers": [
+      "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",\"f1\",\"f2\",\"f3\"]}",
+      "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",{\"motors\":[\"f1\",\"f2\",\"f3\"]}]}",
+      "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",[\"motors\":\"f1\",\"f2\",\"f3\"]]}",
+      "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",\"motors\":[\"f1\",\"f2\",\"f3\"]]}"
+    ],
+    "correct_answer": "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",{\"motors\":[\"f1\",\"f2\",\"f3\"]}]}",
+    "id": "1a10d2bc-d1f2-4883-9c4f-3f3f2974cdc3"
+  },
+  {
+    "question": "Nell'immagine sono state depennate le etichette relative agli elementi dei boxmodel; indicare dalla più interna alla più esterna:",
+    "answers": [
+      "content, padding, border, margin",
+      "margin, border, padding, content",
+      "padding, content, border, margin",
+      "value, padding, border, margin"
+    ],
+    "correct_answer": "content, padding, border, margin",
+    "image": "tec3.jpg",
+    "id": "29d5c8ac-ab2c-4700-afbe-ef6647051bee"
+  },
+  {
+    "question": "Caricando tale pagina, cosa compare?",
+    "answers": [
+      "Years Old",
+      "John Doe is 50 years old.",
+      "John is 50",
+      "John is 50 years old."
+    ],
+    "correct_answer": "John Doe is 50 years old.",
+    "image": "tec4.jpg",
+    "id": "439d4dda-8a5d-4e60-8460-d3581c1ad158"
+  },
+  {
+    "question": "Qual è il nome del livello depennato?",
+    "answers": [
+      "Application Layer",
+      "Transport Layer",
+      "Physical Layer",
+      "Session Layer"
+    ],
+    "correct_answer": "Session Layer",
+    "image": "tec5.jpg",
+    "id": "136d6fc1-a335-4fab-9693-e21448192b36"
+  },
+  {
+    "question": "Nella seguente immagine sono state depennate le etichette relative agli elementi dei box model; indicare dalla più esterna alla più interna:",
+    "answers": [
+      "content,padding,border,margin",
+      "margin,border,padding,content",
+      "padding,content,border,margin",
+      "value,padding,border,margin"
+    ],
+    "correct_answer": "margin,border,padding,content",
+    "image": "tec3.jpg",
+    "id": "d5089138-561b-4ef5-b664-7f2369ba3bd9"
+  },
+  {
+    "question": "L'attributo enctype application/x-www-form-urlencoded:",
+    "answers": [
+      "è un tipo di codifica che compone una stringa convertendo tutti i campi della form in una sequenza di associazioni nomecampo=valore",
+      "è un tipo di codifica da usarsi soltanto con il metodo post: questa codifica compone ogni campo della form in una o più parti di un documento di tipo MIME",
+      "è una codifica che converte i dati della form in formato JSON prima dell'invio",
+      "è un tipo di codifica utilizzata per inviare dati binari come immagini e file"
+    ],
+    "correct_answer": "è un tipo di codifica che compone una stringa convertendo tutti i campi della form in una sequenza di associazioni nomecampo=valore",
+    "id": "9c146f32-9a93-49ad-8093-d0ccce7af7ba"
+  },
+  {
+    "question": "mongose.model(name, schema, collection, skipinit) cosa rappresenta schema:",
+    "answers": [
+      "è lo schema Mongoose utilizzato per definire la struttura dei documenti della collezione",
+      "è il nome della collezione su cui operare",
+      "è un parametro booleano che indica se inizializzare il modello immediatamente",
+      "è la funzione callback eseguita dopo la creazione del modello"
+    ],
+    "correct_answer": "è lo schema Mongoose utilizzato per definire la struttura dei documenti della collezione",
+    "id": "ff2fe412-8ae3-42d2-9cb4-697d24d08fdd"
+  },
+  {
+    "question": "Data la seguente URL: http://test.it/percorso/index.html \"test.it\" rappresenta:",
+    "answers": [
+      "il path",
+      "la risorsa",
+      "l’host",
+      "il protocollo"
+    ],
+    "correct_answer": "l’host",
+    "id": "6595e860-f388-4e17-9974-360f32743187"
+  },
+  {
+    "question": "Il protocollo ICMP è utilizzato nel livello:",
+    "answers": [
+      "internet",
+      "network access",
+      "transport",
+      "application"
+    ],
+    "correct_answer": "internet",
+    "id": "6de07c53-a258-4c96-acb2-8659995d00ae"
+  },
+  {
+    "question": "Nei messaggi HTTP di tipo request, il <method> non può essere:",
+    "answers": [
+      "PUT",
+      "POST",
+      "GET",
+      "WHERE"
+    ],
+    "correct_answer": "WHERE",
+    "id": "914927bd-e2e7-4be5-b4e7-a363efff372c"
+  },
+  {
+    "question": "Il selettore identificato da #id si applica:",
+    "answers": [
+      "agli elementi che presentano l'attributo value=\"id\"",
+      "agli elementi che presentano l'attributo class=\"id\"",
+      "agli elementi che presentano l'attributo id=\"id\"",
+      "agli elementi che presentano l'attributo set=\"id\""
+    ],
+    "correct_answer": "agli elementi che presentano l'attributo id=\"id\"",
+    "id": "ca3536f6-c44f-4bd1-a7ae-bc40ce3da240"
+  },
+  {
+    "question": "Quando si carica la seguente pagina, cosa viene visualizzato?\n\n<!DOCTYPE html>\n<html>\n<body>\n<div id=\"main\">\n<p>Hello</p>\n<p>World</p>\n</div>\n<p id=\"demo\"></p>\n<script>\nconst x = document.getElementById(\"main\");\nconst y = x.getElementsByTagName(\"p\");\ndocument.getElementById(\"demo\").innerHTML = y.innerHTML\n</script>\n</body>\n</html>",
+    "answers": [
+      "HelloWorldundefined",
+      "HelloWorld",
+      "HelloWorldHello",
+      "HelloWorldWorld"
+    ],
+    "correct_answer": "HelloWorldundefined",
+    "id": "27858dae-7dcb-4136-a3d3-28d2b5ba431c"
+  },
+  {
+    "question": "Quando si carica la seguente pagina, cosa viene visualizzato?\n\n<!DOCTYPE html>\n<html>\n<body>\n<p id=\"demo\"></p>\n<script>\nfunction findValue() {\n  let value = -1;\n  for(let i=0; i < arguments.length; i++) {\n    if (arguments[i] > value) {\n      value = arguments[i];\n    }\n  }\n  return value;\n}\ndocument.getElementById(\"demo\").innerHTML = findValue(4, 15, 6);\n</script>\n</body>\n</html>",
+    "answers": [
+      "4",
+      "15",
+      "6",
+      "25"
+    ],
+    "correct_answer": "15",
+    "id": "1d52a9b9-6522-4021-baea-4966bf7f402f"
+  },
+  {
+    "question": "Quando si carica la seguente pagina, cosa viene mostrato?\n\n<!DOCTYPE html>\n<html>\n<body>\n<p id=\"demo\"></p>\n<script>\nconst person = {\n  fullName: function() {\n    return this.firstName + \" \" + this.lastName;\n  }\n}\nconst person1 = {\n  firstName: \"John\",\n  lastName: \"Doe\"\n}\nconst person2 = {\n  firstName: \"Mary\",\n  lastName: \"Doe\"\n}\ndocument.getElementById(\"demo\").innerHTML = person.fullName.call(person1);\n</script>\n</body>\n</html>",
+    "answers": [
+      "person1",
+      "John Doe",
+      "John Doe Mary Doe",
+      "Mary Doe"
+    ],
+    "correct_answer": "John Doe",
+    "id": "13855533-0e2c-4cb9-b868-fa0eebc88559"
+  },
+  {
+    "question": "Quando si carica la seguente pagina, cosa viene mostrato?\n\n<!DOCTYPE html>\n<html>\n<body>\n<p id=\"demo\"></p>\n<script>\nconst person = {\n  fullName: function() {\n    return this.firstName + \" \" + this.lastName;\n  }\n}\nconst person1 = {\n  firstName: \"John\",\n  lastName: \"Doe\"\n}\nconst person2 = {\n  firstName: \"Mary\",\n  lastName: \"Doe\"\n}\ndocument.getElementById(\"demo\").innerHTML = person.fullName.call(person2);\n</script>\n</body>\n</html>",
+    "answers": [
+      "John Doe",
+      "Mary Doe",
+      "person1",
+      "John Doe Mary Doe"
+    ],
+    "correct_answer": "Mary Doe",
+    "id": "4febde98-9b1e-412c-9fdb-e66d5e6c2320"
+  },
+  {
+    "question": "Nel seguente json:\n{\n\"name\": \"John\",\n\"surname\": \"Red\",\n\"cars\": ???\n}\nse volessi inserire una lista di macchine possedute da John Red, dovrei inserire al posto di ???",
+    "answers": [
+      "\"cars\": [\"Ferrari\", \"Porsche\"]",
+      "cars: [\"Ferrari\", \"Porsche\"]",
+      "\"cars\":[Ferrari, Porsche]",
+      "\"cars\":[\"Ferrari\", \"Porsche\"] 1"
+    ],
+    "correct_answer": "\"cars\": [\"Ferrari\", \"Porsche\"]",
+    "id": "e3394cbe-1dbc-4241-8a64-9f0d82ea4d80"
+  },
+  {
+    "question": "Nei messaggi HTTP di tipo response, uno status 404 indica:",
+    "answers": [
+      "server error response",
+      "successful response",
+      "information response",
+      "client error response"
+    ],
+    "correct_answer": "client error response",
+    "id": "672453c5-1dde-40be-8bc5-38bf7bdd7bad"
+  },
+  {
+    "question": "Data la seguente url: https://www.miosito.it/materiale?a=1\"a=1\" rappresenta:",
+    "answers": [
+      "il valore della porta",
+      "il numero di protocollo",
+      "il path",
+      "la querystring"
+    ],
+    "correct_answer": "la querystring",
+    "id": "98a233be-b75e-453b-986f-551b28cd8064"
+  },
+  {
+    "question": "La \"digest authentication\", rispetto alla \"basic\" ha i seguenti campi aggiuntivi nella response:",
+    "answers": [
+      "qop, nonce ed opaque",
+      "qop e nonce",
+      "qos e nonce",
+      "gos, nonce ed opaque"
+    ],
+    "correct_answer": "qop, nonce ed opaque",
+    "id": "dbb1de5d-e62a-4da8-b50c-a20a97b00dce"
+  }
 ]
