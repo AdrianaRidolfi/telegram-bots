@@ -7,7 +7,8 @@
       "Max Weber",
       "Henry Ford"
     ],
-    "correct_answer": "Frederick W. Taylor"
+    "correct_answer": "Frederick W. Taylor",
+    "id": "898609fc-601b-4eb7-b821-451f2cacf139"
   },
   {
     "question": "I bisogni di apparteneneza secondo Maslow riflettono il bisogno di:",
@@ -17,7 +18,8 @@
       "Raggiungere l'autorealizzazione attraverso risultati individuali",
       "Soddisfare esigenze fisiologiche primarie come fame e sonno"
     ],
-    "correct_answer": "Essere amati, compresi e sentirsi parte di un gruppo sociale"
+    "correct_answer": "Essere amati, compresi e sentirsi parte di un gruppo sociale",
+    "id": "14c84c6d-8115-46cc-9564-6dc59d9404a8"
   },
   {
     "question": "Qual è una caratteristica dell'organizzazione matrice?",
@@ -27,7 +29,8 @@
       "L'interazione diretta tra ogni dipendente e il vertice aziendale",
       "L'autonomia del comando per garantire chiarezza organizzativa"
     ],
-    "correct_answer": "L'unicità del comando per garantire chiarezza organizzativa"
+    "correct_answer": "L'unicità del comando per garantire chiarezza organizzativa",
+    "id": "ef7d338a-6103-454b-96e5-eb7d04fe1aa6"
   },
   {
     "question": "La specializzazione verticale del lavoro si riferisce a:",
@@ -37,7 +40,8 @@
       "La separazione tra progettazione ed esecuzione delle attività",
       "L'assegnazione di compiti semplici a ciascun operatore"
     ],
-    "correct_answer": "La separazione tra progettazione ed esecuzione delle attività"
+    "correct_answer": "La separazione tra progettazione ed esecuzione delle attività",
+    "id": "b78099bc-07bb-4b9d-a1b1-7e9646796150"
   },
   {
     "question": "Qual è la definizione di adattamento reciproco?",
@@ -47,7 +51,8 @@
       "Evita del tutto la necessità di supervisione diretta",
       "Promuove la standardizzazione delle procedure"
     ],
-    "correct_answer": "Consente agli operatori di risolvere autonomamente i problemi tramite interazione diretta"
+    "correct_answer": "Consente agli operatori di risolvere autonomamente i problemi tramite interazione diretta",
+    "id": "06485d0a-c83f-4699-a79e-c365dd084d28"
   },
   {
     "question": "I bisogni di sicurezza, secondo Maslow, includono la necessità di:",
@@ -57,7 +62,8 @@
       "Protezione da pericoli e minacce, conoscenza dell'ambiente",
       "Sviluppo delle capacità individuali"
     ],
-    "correct_answer": "Protezione da pericoli e minacce, conoscenza dell'ambiente"
+    "correct_answer": "Protezione da pericoli e minacce, conoscenza dell'ambiente",
+    "id": "aaf06844-b13a-4909-a724-79c159b6e04a"
   },
   {
     "question": "Cosa si intende per ampiezza manageriale e strategica?",
@@ -67,7 +73,8 @@
       "Il numero di livelli gerarchici nella catena di comando",
       "La varietà di funzioni aziendali"
     ],
-    "correct_answer": "Il numero di livelli gerarchici nella catena di comando"
+    "correct_answer": "Il numero di livelli gerarchici nella catena di comando",
+    "id": "63e32f77-0071-45b9-9aae-f90c845d4b12"
   },
   {
     "question": "I bisogni fisiologici, secondo Maslow, sono legati a:",
@@ -77,7 +84,8 @@
       "La sopravvivenza, come fame, sete e sonno",
       "La sicurezza dai pericoli e dalle minacce"
     ],
-    "correct_answer": "La sopravvivenza, come fame, sete e sonno"
+    "correct_answer": "La sopravvivenza, come fame, sete e sonno",
+    "id": "7090b406-8796-462e-a96b-2894d4eed6bc"
   },
   {
     "question": "Secondo il principio di unicità del comando di Fayol, ogni individuo e unità organizzativa deve:",
@@ -87,7 +95,8 @@
       "Ottenere indicazioni da responsabili multipli",
       "Operare senza alcuna supervizione diretta"
     ],
-    "correct_answer": "Ricevere ordini da un solo responsabile gerarchico"
+    "correct_answer": "Ricevere ordini da un solo responsabile gerarchico",
+    "id": "1d988120-e412-48ff-aa81-6d80bdb3c00b"
   },
   {
     "question": "Secondo la prospettiva politica, le organizzazioni aiutano a:",
@@ -97,7 +106,8 @@
       "Canalizzare i conflitti e consentire l'esercizio del potere",
       "Favorire la crescita individuale"
     ],
-    "correct_answer": "Canalizzare i conflitti e consentire l'esercizio del potere"
+    "correct_answer": "Canalizzare i conflitti e consentire l'esercizio del potere",
+    "id": "49505eb5-8640-4775-8341-2dd55dbf728d"
   },
   {
     "question": "Il raggruppamento su base geografica è utilizzato per organizzare le attività:",
@@ -107,7 +117,8 @@
       "Per la produzione e distribuzione di ciascun prodotto",
       "Secondo la struttura funzionale dell'azienda"
     ],
-    "correct_answer": "Svolte in un'unica area geografica tra quelle in cui l'azienda opera"
+    "correct_answer": "Svolte in un'unica area geografica tra quelle in cui l'azienda opera",
+    "id": "8b6581e8-2fe4-4451-966c-adeeb1826b35"
   },
   {
     "question": "I processi di supporto operativo si distinguono dai processi di governo perché:",
@@ -117,7 +128,8 @@
       "Hanno come clienti altre funzioni aziendali di livello medio-basso",
       "Sono esclusivamente dedicati alla gestione delle risorse umane"
     ],
-    "correct_answer": "Hanno come clienti altre funzioni aziendali di livello medio-basso"
+    "correct_answer": "Hanno come clienti altre funzioni aziendali di livello medio-basso",
+    "id": "ef65317a-b1b0-4d17-86dd-1334e84c0a74"
   },
   {
     "question": "Qual è la mansione della figura di collegamento?",
@@ -127,7 +139,8 @@
       "Supervisionare le attività di produzione",
       "Controllare la qualità dei prodotti"
     ],
-    "correct_answer": "Facilitare il coordinamento orizzontale tra due unità organizzative"
+    "correct_answer": "Facilitare il coordinamento orizzontale tra due unità organizzative",
+    "id": "565dd796-79c9-4a04-860c-ac61c2a17a10"
   },
   {
     "question": "Cosa si intende per progettazione microstrutturale?",
@@ -137,7 +150,8 @@
       "La creazione di un piano strategico a lungo termine",
       "La gestione delle risorse umane"
     ],
-    "correct_answer": "Un insieme di attività intrinsecamente collegate e inscindibili in relazione al lavoro dell'uomo e alle caratteristiche della tecnologia"
+    "correct_answer": "Un insieme di attività intrinsecamente collegate e inscindibili in relazione al lavoro dell'uomo e alle caratteristiche della tecnologia",
+    "id": "f7f22602-054d-4a5e-891b-f4f1121873fd"
   },
   {
     "question": "I sistemi informativi aziendali facilitano l'integrazione tra unità organizzative attraverso:",
@@ -147,7 +161,8 @@
       "La raccolta, lo scambio e la circolazione delle informazioni",
       "La riduzione delle competenze individuali necessarie"
     ],
-    "correct_answer": "La raccolta, lo scambio e la circolazione delle informazioni"
+    "correct_answer": "La raccolta, lo scambio e la circolazione delle informazioni",
+    "id": "790443da-d8e1-4c67-b118-628e30bd4c86"
   },
   {
     "question": "Quando criteri funzionali e divisionali hanno uguale peso nel determinare il raggruppamento delleattività, in alcuni casi si rinuncia ad attribuire in maniera unica le posizioni alle unità organizzative e sicrea:",
@@ -157,7 +172,8 @@
       "Un forte coordinamento centrale",
       "Una totale indipendenza delle unità locali"
     ],
-    "correct_answer": "La presenza di una pluralità di linee gerarchiche, che rispondono a criteri di raggruppamento multipli come funzione e area geografica"
+    "correct_answer": "La presenza di una pluralità di linee gerarchiche, che rispondono a criteri di raggruppamento multipli come funzione e area geografica",
+    "id": "f5beeba6-c967-43d3-bcc4-6ec62684a314"
   },
   {
     "question": "Le imprese globali di caratterizzano per:",
@@ -167,7 +183,8 @@
       "Un forte coordinamento centrale per massimizzare le economie di scala",
       "Una totale indipendenza delle unità locali dalle direttive centrali"
     ],
-    "correct_answer": "Un forte coordinamento centrale per massimizzare le economie di scala"
+    "correct_answer": "Un forte coordinamento centrale per massimizzare le economie di scala",
+    "id": "37a58079-734c-40b4-97ce-6270ec954450"
   },
   {
     "question": "La gestione orientata ai processi è utile per:",
@@ -177,7 +194,8 @@
       "Centralizzare tutte le decisioni e incrementare la flessibilità operativa",
       "Mantenere elevate le attività non produttive per garantire una copertura dei costi"
     ],
-    "correct_answer": "Riconoscere e focalizzare le risorse sulle attività che aggiungono effettivo valore al cliente"
+    "correct_answer": "Riconoscere e focalizzare le risorse sulle attività che aggiungono effettivo valore al cliente",
+    "id": "a3428054-78ca-4fc8-9d64-7f77f1c349ed"
   },
   {
     "question": "Le interdipendenze tra attività possono essere di natura:",
@@ -187,7 +205,8 @@
       "Soltanto reciproche, di spazio/tempo e legate alle risorse",
       "Soltanto legate alle risorse"
     ],
-    "correct_answer": "Sequenziale, reciproca, legata a spazio/tempo o alle risorse"
+    "correct_answer": "Sequenziale, reciproca, legata a spazio/tempo o alle risorse",
+    "id": "7c2e8d2d-df50-475e-8b52-8fdbe8a40bab"
   },
   {
     "question": "La dimensione verticale di un'organizzazione si riferisce a:",
@@ -197,7 +216,8 @@
       "Il numero di persone che dipendono direttamente da un capo",
       "La quantità di posizioni simili in un'unità organizzativa"
     ],
-    "correct_answer": "Il numero di livelli gerarchici e la catena di comando"
+    "correct_answer": "Il numero di livelli gerarchici e la catena di comando",
+    "id": "a47a49cd-ec2a-4003-8fcd-721ef8da0413"
   },
   {
     "question": "La standardizzazione dei processi diventa inefficace quando:",
@@ -207,7 +227,8 @@
       "Le condizioni operative di lavoro sono prevedibili e stabili",
       "L'attività non richiede innovazione o sviluppo di nuovi prodotti"
     ],
-    "correct_answer": "L'ambiente esterno è caratterizzato da turbolenza e imprevedibilità"
+    "correct_answer": "L'ambiente esterno è caratterizzato da turbolenza e imprevedibilità",
+    "id": "63ffedd1-d3c0-43df-9f7c-ded5000bd6e1"
   },
   {
     "question": "La struttura divisionale è stata adottata inizialmente per rispondere a:",
@@ -217,7 +238,8 @@
       "La necessità di centralizzare le decisioni operative",
       "Le strategie di specializzazione produttiva"
     ],
-    "correct_answer": "La difficoltà di coordinamento e controllo nei business diversificati"
+    "correct_answer": "La difficoltà di coordinamento e controllo nei business diversificati",
+    "id": "db518a7a-c159-439c-bf47-fba19480f29e"
   },
   {
     "question": "Quando un supervisore ha molte posizioni, l'unità organizzativa avrà:",
@@ -227,7 +249,8 @@
       "Un'ampia ampiezza di controllo ma scarsa capacità manageriale",
       "Una gerarchia verticale con numerosi livelli intermedi"
     ],
-    "correct_answer": "Un'ampia ampiezza di controllo ma scarsa capacità manageriale"
+    "correct_answer": "Un'ampia ampiezza di controllo ma scarsa capacità manageriale",
+    "id": "9c71ba12-bccf-434d-b437-16c279467665"
   },
   {
     "question": "Un esempio di unità organizzativa direttiva è rappresentato da:",
@@ -237,7 +260,8 @@
       "Il comitato esecutivo o il comitato di direzione",
       "L'ufficio vendite di un'azienda di distribuzione"
     ],
-    "correct_answer": "Il comitato esecutivo o il comitato di direzione"
+    "correct_answer": "Il comitato esecutivo o il comitato di direzione",
+    "id": "41b01f6b-0926-44b4-aa3c-b4eabe3b3550"
   },
   {
     "question": "Qual è la corretta distinzione tra efficienza ed efficacia in un processo organizzativo?",
@@ -247,7 +271,8 @@
       "L'efficienza riguarda l'ottimizzazione delle risorse, mentre l'efficacia si riferisce al raggiungimento degli obiettivi del processo",
       "L'efficienza riguarda il rispetto delle normative, mentre l'efficacia si riferisce alla velocità di esecuzione"
     ],
-    "correct_answer": "L'efficienza riguarda l'ottimizzazione delle risorse, mentre l'efficacia si riferisce al raggiungimento degli obiettivi del processo"
+    "correct_answer": "L'efficienza riguarda l'ottimizzazione delle risorse, mentre l'efficacia si riferisce al raggiungimento degli obiettivi del processo",
+    "id": "d28d3369-8122-44ae-a6e5-bbf57e0added"
   },
   {
     "question": "Il ruolo, nella progettazione microstrutturale, rappresenta:",
@@ -257,7 +282,8 @@
       "L'insieme delle aspettative di comportamento che l'organizzazione si attende da una persona in una certa posizione",
       "Un insieme di compiti e procedure formalizzate per ciascuna posizione aziendale"
     ],
-    "correct_answer": "L'insieme delle aspettative di comportamento che l'organizzazione si attende da una persona in una certa posizione"
+    "correct_answer": "L'insieme delle aspettative di comportamento che l'organizzazione si attende da una persona in una certa posizione",
+    "id": "cd6f1646-efcb-41b6-b8fb-773d6b09fe2f"
   },
   {
     "question": "La capacità, nella progettazione microstrutturale, è definita come:",
@@ -267,7 +293,8 @@
       "Un processo di adattamento delle competenze a nuove posizioni all'interno dell'azienda",
       "Una caratteristica intrinseca individuale alla base di una prestazione efficace o superiore in una specifica attività o mansion"
     ],
-    "correct_answer": "Una caratteristica intrinseca individuale alla base di una prestazione efficace o superiore in una specifica attività o mansion"
+    "correct_answer": "Una caratteristica intrinseca individuale alla base di una prestazione efficace o superiore in una specifica attività o mansion",
+    "id": "22b35457-4ecb-42ba-8be5-43f25675b188"
   },
   {
     "question": "Gli organi di staff hanno il compito di:",
@@ -277,7 +304,8 @@
       "Dirigere le attività operative quotidiane nei reparti funzionali",
       "Supervisionare direttamente il ciclo produttivo e la logistica interna"
     ],
-    "correct_answer": "Supportare gli organi di linea senza partecipare direttamente al core business"
+    "correct_answer": "Supportare gli organi di linea senza partecipare direttamente al core business",
+    "id": "fcc75ef7-0fc3-4be0-a845-5eb2cd0360e7"
   },
   {
     "question": "Cosa caratterizza un approccio orientato al marketing?",
@@ -287,7 +315,8 @@
       "Il controllo rigoroso dei processi interni a scapito della flessibilità verso il mercato",
       "L'obiettivo principale di aumentare la quota di mercato ignorando la customer satisfaction"
     ],
-    "correct_answer": "L'importanza di soddisfare le esigenze del cliente e di personalizzare prodotti e servizi"
+    "correct_answer": "L'importanza di soddisfare le esigenze del cliente e di personalizzare prodotti e servizi",
+    "id": "3dc04ce8-3e84-4962-a416-61ce0b2fe15c"
   },
   {
     "question": "La specializzazione verticale comporta:",
@@ -297,7 +326,8 @@
       "La sola esecuzione del lavoro",
       "Una mancata separazione tra la progettazione del lavoro e la sua esecuzione"
     ],
-    "correct_answer": "La separazione tra progettazione del lavoro e la sua esecuzione"
+    "correct_answer": "La separazione tra progettazione del lavoro e la sua esecuzione",
+    "id": "0c92ac5e-59b6-4458-ab2c-d4cfb9217217"
   },
   {
     "question": "La struttura semplice è caratterizzata da:",
@@ -307,7 +337,8 @@
       "Decentramento decisionale tra i diversi dipartimenti funzionali",
       "Utilizzo di procedure complesse e formalizzazione elevata dei ruoli"
     ],
-    "correct_answer": "Accentramento delle decisioni nelle mani dell'imprenditore"
+    "correct_answer": "Accentramento delle decisioni nelle mani dell'imprenditore",
+    "id": "ac7b5682-5a67-47fa-a3e2-fad219273ee9"
   },
   {
     "question": "Un vantaggio tipico della struttura divisionale è:",
@@ -317,7 +348,8 @@
       "Un più alto livello di specializzazione delle funzioni",
       "Una forte focalizzazione su mercati e clienti specifici"
     ],
-    "correct_answer": "Un più alto livello di specializzazione delle funzioni"
+    "correct_answer": "Un più alto livello di specializzazione delle funzioni",
+    "id": "65dcd2ef-fc00-40c8-9179-7159d5261d54"
   },
   {
     "question": "Qual è il compito principale di una figura di collegamento all'interno di un'organizzazione?",
@@ -327,7 +359,8 @@
       "Facilitare il coordinamento orizzontale tra due unità organizzative",
       "Gestire in autonomia il budget di tutte le funzioni aziendali"
     ],
-    "correct_answer": "Facilitare il coordinamento orizzontale tra due unità organizzative"
+    "correct_answer": "Facilitare il coordinamento orizzontale tra due unità organizzative",
+    "id": "021e70db-cb21-4c70-8d58-95d94514988d"
   },
   {
     "question": "La scelta del criterio di raggruppamento nelle unità organizzative deve considerare il tipo di interdipendenzeesistenti, che includono:",
@@ -337,7 +370,8 @@
       "Interdipendenze sequenziali, reciproche, legate alle risorse e spazio-temporali",
       "Interdipendenze operative, tattiche e strategiche"
     ],
-    "correct_answer": "Interdipendenze sequenziali, reciproche, legate alle risorse e spazio-temporali"
+    "correct_answer": "Interdipendenze sequenziali, reciproche, legate alle risorse e spazio-temporali",
+    "id": "23dbc84f-c29e-498a-8ac4-94d53f86ac5a"
   },
   {
     "question": "Un esempio di team interfunzionale temporaneo è:",
@@ -347,7 +381,8 @@
       "Un gruppo di lavoro dedicato alla riprogettazione dei processi aziendali in una banca",
       "Una riunione periodica dei direttori di corso in una business school"
     ],
-    "correct_answer": "Una riunione periodica dei direttori di corso in una business school"
+    "correct_answer": "Una riunione periodica dei direttori di corso in una business school",
+    "id": "864f6782-55a0-454f-bbd4-c21493a30b75"
   },
   {
     "question": "Gli organi di linea in un'organizzazione si occupano principalmente di:",
@@ -357,7 +392,8 @@
       "Mantenere le strutture e gli impianti aziendali",
       "L'attività centrale dell'azienda, legata al core business"
     ],
-    "correct_answer": "L'attività centrale dell'azienda, legata al core business"
+    "correct_answer": "L'attività centrale dell'azienda, legata al core business",
+    "id": "6f984184-ce81-4b4e-af53-d9b9b3254c66"
   },
   {
     "question": "Nelle organizzazioni con struttura semplice, il coordinamento tra le unità avviene principalmente attraverso:",
@@ -367,7 +403,8 @@
       "La creazione di team di lavoro autonomi con poteri decisionali",
       "Un sistema di geriarchia altamente formale"
     ],
-    "correct_answer": "Il mutuo adattamento e la standardizzazione delle competenze"
+    "correct_answer": "Il mutuo adattamento e la standardizzazione delle competenze",
+    "id": "67d4b64f-c880-4ec3-b48e-6527a1a53e5d"
   },
   {
     "question": "Gli elementi che caratterizzano un processo aziendale includono:",
@@ -377,7 +414,8 @@
       "input, output, prestazioni, controlli, risorse, fasi e attività, interdipendenze e metodi di gestione",
       "input, output, prestazioni, controlli, risorse, fasi e attività, organizzazioni e funzioni"
     ],
-    "correct_answer": "input, output, prestazioni, controlli, risorse, fasi e attività, interdipendenze e metodi di gestione"
+    "correct_answer": "input, output, prestazioni, controlli, risorse, fasi e attività, interdipendenze e metodi di gestione",
+    "id": "2e0d2710-f4e4-4b01-b9b9-9949df6fd085"
   },
   {
     "question": "La struttura divisionale è caratterizzata dal raggruppamento delle unità organizzative:",
@@ -387,7 +425,8 @@
       "In base agli output come prodotto, cliente o mercato",
       "In base alle competenze dei manager"
     ],
-    "correct_answer": "In base agli output come prodotto, cliente o mercato"
+    "correct_answer": "In base agli output come prodotto, cliente o mercato",
+    "id": "186558b4-0de5-49f5-94c8-69b54e127d6b"
   },
   {
     "question": "Un esempio di organo di staff centrale in un'azienda è:",
@@ -397,7 +436,8 @@
       "La funzione Marketing",
       "La funzione Sistemi Informativi"
     ],
-    "correct_answer": "La funzione Sistemi Informativi"
+    "correct_answer": "La funzione Sistemi Informativi",
+    "id": "22cff753-9fb6-491c-9179-90a6397f9ebf"
   },
   {
     "question": "I cambiamenti tecnologici e organizzativi complessi sono affrontati con team interfunzionali perché:",
@@ -407,7 +447,8 @@
       "Richiedono competenze e responsabilità trasversali",
       "Facilitano il mutuo adattamento delle unità funzionali"
     ],
-    "correct_answer": "Richiedono competenze e responsabilità trasversali"
+    "correct_answer": "Richiedono competenze e responsabilità trasversali",
+    "id": "0e844660-6cf1-462b-81b9-cf5235dd4f0e"
   },
   {
     "question": "Un esempio di raggruppamento basato sulle conoscenze e capacità utilizzate è rappresentato da:",
@@ -417,7 +458,8 @@
       "Le squadre di progetto create in base a obiettivi a breve termine",
       "Le unità organizzative raggruppate secondo criteri numerici"
     ],
-    "correct_answer": "I dipartimenti universitari organizzati per discipline di riferimento"
+    "correct_answer": "I dipartimenti universitari organizzati per discipline di riferimento",
+    "id": "1a97df3c-40db-4d23-94c8-13db4b925fc4"
   },
   {
     "question": "I criteri di raggruppamento nelle unità organizzative includono:",
@@ -427,7 +469,8 @@
       "Criteri strategici, di coordinamento e di sviluppo",
       "Criteri di complessità, di specializzazione e di innovazione"
     ],
-    "correct_answer": "Criteri numerici, orientati agli input e orientati agli output"
+    "correct_answer": "Criteri numerici, orientati agli input e orientati agli output",
+    "id": "8ae2a4d1-0c69-48d0-b6eb-2ede5281729b"
   },
   {
     "question": "Quando una mansione viene assegnata a più posizioni, questo significa che:",
@@ -437,7 +480,8 @@
       "La mansione viene eliminata se risulta duplicata in più posizioni",
       "Le competenze di ciascuna posizione vengono ampliate per coprire più ruoli"
     ],
-    "correct_answer": "Più persone possono svolgere lo stesso insieme di compiti in funzione del volume di attività"
+    "correct_answer": "Più persone possono svolgere lo stesso insieme di compiti in funzione del volume di attività",
+    "id": "10e6155d-4401-4cb4-bcb9-2c220532233b"
   },
   {
     "question": "I processi primari in un'azienda sono definiti come quelli che:",
@@ -447,7 +491,8 @@
       "Creano benefici solo per i clienti interni dell'azienda",
       "Supportano esclusivamente le funzioni aziendali interne"
     ],
-    "correct_answer": "Generano un valore riconosciuto direttamente dal cliente esterno"
+    "correct_answer": "Generano un valore riconosciuto direttamente dal cliente esterno",
+    "id": "a95b0d16-cf2f-4c3e-aa81-c0906004290f"
   },
   {
     "question": "La struttura organizzativa ibrida prevede l'utilizzo di criteri di raggruppamento:",
@@ -457,7 +502,8 @@
       "Che variano tra raggruppamenti funzionali e divisionali",
       "Basati esclusivamente sulle economie di scala, interdipendenze dall'area aziendale in cui vengono applicati"
     ],
-    "correct_answer": "Che variano tra raggruppamenti funzionali e divisionali"
+    "correct_answer": "Che variano tra raggruppamenti funzionali e divisionali",
+    "id": "a63a9738-2988-4a4b-b3b9-b79d45bda93c"
   },
   {
     "question": "Secondo il principio dell'unicità del comando di Fayol, ogni individuo e unità organizzativa deve:",
@@ -467,7 +513,8 @@
       "ottenere indicazioni da responsabili multipli",
       "operare senza alcuna supervisione diretta"
     ],
-    "correct_answer": "ricevere ordini da un solo responsabile gerarchico"
+    "correct_answer": "ricevere ordini da un solo responsabile gerarchico",
+    "id": "eb1c2c61-6b48-4168-8212-edb1881b733b"
   },
   {
     "question": "I bisogni di autorealizzazione sono quelli legati:",
@@ -477,7 +524,8 @@
       "Alla stima degli altri e al riconoscimento sociale",
       "Allo sviluppo delle proprie potenzialità"
     ],
-    "correct_answer": "Allo sviluppo delle proprie potenzialità"
+    "correct_answer": "Allo sviluppo delle proprie potenzialità",
+    "id": "ed42b6d9-7809-4c56-b39e-5836a8cde325"
   },
   {
     "question": "Le tre prospettive di analisi dell'organizzazione sono:",
@@ -487,7 +535,8 @@
       "Tecnica, economica e umanistica",
       "Strategica, operativa e funzionale"
     ],
-    "correct_answer": "Manageriale, sociologica e politica"
+    "correct_answer": "Manageriale, sociologica e politica",
+    "id": "6eca836e-8427-47ff-9d8f-5a69680fba80"
   },
   {
     "question": "Le prestazioni operative di un processo aziendale possono essere generalmente suddivise nelle seguentidimensioni:",
@@ -497,7 +546,8 @@
       "Autonomia, produttività, efficacia, supporto",
       "Costo, efficienza, qualità, produzione"
     ],
-    "correct_answer": "Costo, tempo, qualità, flessibilità"
+    "correct_answer": "Costo, tempo, qualità, flessibilità",
+    "id": "20eee5da-501a-40aa-9b7b-758eecf4e07c"
   },
   {
     "question": "Una struttura organizzativa funzionale è più adatta a realtà:",
@@ -507,7 +557,8 @@
       "Con molti prodotti e mercati diversificati",
       "Caratterizzate da pochi prodotti e mercati limitati"
     ],
-    "correct_answer": "Caratterizzate da pochi prodotti e mercati limitati"
+    "correct_answer": "Caratterizzate da pochi prodotti e mercati limitati",
+    "id": "023252f4-6099-459b-918e-5bd3fa10f3a5"
   },
   {
     "question": "I team interfunzionali sono utilizzati per:",
@@ -517,7 +568,8 @@
       "Integrare informazioni esclusivamente attraverso supervisione diretta",
       "Aumentare la gerarchia all'interno dell'azienda"
     ],
-    "correct_answer": "Coordinare unità organizzative per risolvere problemi specifici"
+    "correct_answer": "Coordinare unità organizzative per risolvere problemi specifici",
+    "id": "41675307-c257-4ad0-9ebc-6dc1e4f27ac7"
   },
   {
     "question": "La destinazione tra organi di linea e di staff può risultare complessa quando:",
@@ -527,7 +579,8 @@
       "I comitati esecutivi prendono decisioni per le unità operative",
       "Un' azienda esternalizza tutte le sue attività operative"
     ],
-    "correct_answer": "All'interno della stessa unità sono presenti sia posizioni di linea che di staff"
+    "correct_answer": "All'interno della stessa unità sono presenti sia posizioni di linea che di staff",
+    "id": "dd699f3a-cd9d-4082-9648-37f28e9b6309"
   },
   {
     "question": "Nelle strutture divisionali per prodotto, le attività si concentrano:",
@@ -537,7 +590,8 @@
       "Sulla gestione centralizzata dei clienti",
       "Esclusivamente su funzioni di supporto amministrativo"
     ],
-    "correct_answer": "Sulla coerenza e integrazione delle attività per ogni specifico prodotto"
+    "correct_answer": "Sulla coerenza e integrazione delle attività per ogni specifico prodotto",
+    "id": "b458f0b8-7678-403f-8d56-5dc9a385221b"
   },
   {
     "question": "Il criterio di raggruppamento in base al prodotto implica che le unità organizzative siano preposte asvolgere attività dedicate a:",
@@ -547,7 +601,8 @@
       "Le richieste specifiche di clienti individuali",
       "La distribuzione geografica delle risorse aziendali"
     ],
-    "correct_answer": "Ciascun prodotto o servizio dell'azienda"
+    "correct_answer": "Ciascun prodotto o servizio dell'azienda",
+    "id": "5198b7b7-3092-41bb-ab08-4c7b7a9856b6"
   },
   {
     "question": "La mansione o job, secondo la progettazione microstrutturale, si riferisce a:",
@@ -557,7 +612,8 @@
       "Un insieme di attività di supporto svolte a più livelli dell'organizzazione",
       "Un modello di gestione operativa applicabile ai compiti di ogni unità aziendale"
     ],
-    "correct_answer": "Un insieme di compiti assegnati a una posizione individuale"
+    "correct_answer": "Un insieme di compiti assegnati a una posizione individuale",
+    "id": "4e2e61c6-475c-4e97-82fc-efc79c06e067"
   },
   {
     "question": "La lunghezza della catena gerarchica in un'organizzazione è misurata con:",
@@ -567,7 +623,8 @@
       "Il numero di livelli gerarchici nella catena di comando più lunga",
       "Il numero di livelli di specializzazione presenti in ogni reparto"
     ],
-    "correct_answer": "Il numero di livelli gerarchici nella catena di comando più lunga"
+    "correct_answer": "Il numero di livelli gerarchici nella catena di comando più lunga",
+    "id": "cad5926d-89ee-45f4-8de1-eb47c3914806"
   },
   {
     "question": "Uno svantaggio comune delle strutture divisionali:",
@@ -577,7 +634,8 @@
       "La perdita di economie di scala e specializzazione delle risorse",
       "Un'eccessiva centralizzazione dei processi decisionali"
     ],
-    "correct_answer": "La perdita di economie di scala e specializzazione delle risorse"
+    "correct_answer": "La perdita di economie di scala e specializzazione delle risorse",
+    "id": "bcf140dd-2a19-46a0-8bef-5267fc672048"
   },
   {
     "question": "Un esempio di risorse immateriali che possono acquisire valore nel tempo è:",
@@ -587,7 +645,8 @@
       "Macchinari e attrezzature",
       "Forza lavoro e competenze pratiche"
     ],
-    "correct_answer": "Brevetti e conoscenza tecnologica"
+    "correct_answer": "Brevetti e conoscenza tecnologica",
+    "id": "6fe64108-4b4c-46ed-88c9-b6a3d0fff1fd"
   },
   {
     "question": "Nelle strutture funzionali, il principale meccanismo di coordinamento utilizzato è:",
@@ -597,7 +656,8 @@
       "La standardizzazione degli obiettivi",
       "L'autonomia decisionale"
     ],
-    "correct_answer": "La standardizzazione degli obiettivi"
+    "correct_answer": "La standardizzazione degli obiettivi",
+    "id": "4b31f3db-ed97-4766-aacb-673fff5d1705"
   },
   {
     "question": "Le unità organizzative operative si caratterizzano principalmente per:",
@@ -607,7 +667,8 @@
       "Il controllo dei flussi finanziari aziendali",
       "L'implementazione di politiche strategiche e di governance"
     ],
-    "correct_answer": "Il ruolo nel processo di trasformazione e l'elevata standardizzazione delle mansioni"
+    "correct_answer": "Il ruolo nel processo di trasformazione e l'elevata standardizzazione delle mansioni",
+    "id": "d2c23d62-9265-427c-9988-818fab099c46"
   },
   {
     "question": "La struttura divisionale orientata al mercato permette:",
@@ -617,7 +678,8 @@
       "Una minore specializzazione delle unità operative",
       "Un'elevata centralizzazione delle decisioni in tutte le funzioni"
     ],
-    "correct_answer": "Una risposta specifica e rapida alle richieste di segmenti di clientela diversi"
+    "correct_answer": "Una risposta specifica e rapida alle richieste di segmenti di clientela diversi",
+    "id": "c4075d15-92bc-4238-8eb2-e7e0dbb4a90a"
   },
   {
     "question": "Le problematiche organizzative si affrontano in modo efficace con:",
@@ -627,7 +689,8 @@
       "Le task force, anche temporanee",
       "I singoli contributi dei membri"
     ],
-    "correct_answer": "Le task force, anche temporanee"
+    "correct_answer": "Le task force, anche temporanee",
+    "id": "cd01aec6-0149-4ed6-932e-689b1014a7bd"
   },
   {
     "question": "Il valore attribuito dal cliente all'output di un prodotto o servizio dipende da quali fattori?",
@@ -637,7 +700,8 @@
       "Distribuzione geografica, budget di marketing e volume di produzione",
       "Prezzo di acquisizione, qualità, tempo e flessibilità"
     ],
-    "correct_answer": "Prezzo di acquisizione, qualità, tempo e flessibilità"
+    "correct_answer": "Prezzo di acquisizione, qualità, tempo e flessibilità",
+    "id": "bfef9240-167c-4310-be14-cb5f88f8425e"
   },
   {
     "question": "Un esempio di raggruppamento basato sulle conoscenze e capacità utilizzate è rappresentato da:",
@@ -647,7 +711,8 @@
       "Le divisioni aziendali create in base alla localizzazione geografica",
       "I gruppi di lavoro formati in base al volume di vendite delle singole aree"
     ],
-    "correct_answer": "I dipartimenti universitari organizzati per discipline di riferimento"
+    "correct_answer": "I dipartimenti universitari organizzati per discipline di riferimento",
+    "id": "e8981b5d-4647-47bf-9e33-66d4b60dc66c"
   },
   {
     "question": "La struttura organizzativa ibrida prevede l'utilizzo di criteri di raggruppamento che:",
@@ -657,7 +722,8 @@
       "Sono centrati solo sulla geolocalizzazione delle unità aziendali",
       "Si basano unicamente sul numero di dipendenti e sul fatturato"
     ],
-    "correct_answer": "Variano tra funzionali e divisionali"
+    "correct_answer": "Variano tra funzionali e divisionali",
+    "id": "a522015f-16da-4282-ac71-77c819a077b6"
   },
   {
     "question": "Nel contesto della gerarchia dei processi aziendali, il microprocesso è:",
@@ -667,7 +733,8 @@
       "Una macro area di attività coincidenti con le funzioni organizzative di alto livello",
       "Un singolo compito eseguito da un'unica persona in un reparto specifico"
     ],
-    "correct_answer": "Una macro area di attività coincidenti con le funzioni organizzative di alto livello"
+    "correct_answer": "Una macro area di attività coincidenti con le funzioni organizzative di alto livello",
+    "id": "c2209c94-f681-4169-ac88-c84b1bb16cf6"
   },
   {
     "question": "Nelle organizzazioni, la manutenzione degli impianti e dei macchinari è tipicamente compito di:",
@@ -677,7 +744,8 @@
       "Un organo di staff a livello gerarchico inferiore dedicato alla produzione",
       "Un reparto di marketing che coordina le attività promozionali per il prodotto"
     ],
-    "correct_answer": "Un organo di staff a livello gerarchico inferiore dedicato alla produzione"
+    "correct_answer": "Un organo di staff a livello gerarchico inferiore dedicato alla produzione",
+    "id": "d0ef6b22-12eb-4038-b188-584869e2ace6"
   },
   {
     "question": "L'orientamento del cliente prevede:",
@@ -687,7 +755,8 @@
       "Focalizzarsi esclusivamente sull'efficienza produttiva a scapito della qualità",
       "Creare prodotti standardizzati per soddisfare la massa di consumatori"
     ],
-    "correct_answer": "L'importanza di soddisfare le esigenze del cliente e di personalizzare prodotti e servizi"
+    "correct_answer": "L'importanza di soddisfare le esigenze del cliente e di personalizzare prodotti e servizi",
+    "id": "558445fc-a5b4-4b30-95d8-9e0af322648c"
   },
   {
     "question": "La progettazione organizzativa nella microstruttura consiste nel:",
@@ -697,7 +766,8 @@
       "Definire il contenuto del lavoro e il ruolo degli individui, formalizzando il comportamento atteso e sviluppando le competenze necessarie",
       "Determinare le tecniche di marketing per ogni prodotto e mercato"
     ],
-    "correct_answer": "Definire il contenuto del lavoro e il ruolo degli individui, formalizzando il comportamento atteso e sviluppando le competenze necessarie"
+    "correct_answer": "Definire il contenuto del lavoro e il ruolo degli individui, formalizzando il comportamento atteso e sviluppando le competenze necessarie",
+    "id": "d755b01b-95c3-422f-b4d4-597c15636539"
   },
   {
     "question": "Nei sistemi di pianificazione e controllo, i meccanismi di standardizzazione degli obiettivi e dei processi a livello di unità organizzative consentono di:",
@@ -707,7 +777,8 @@
       "Delegare la responsabilità solo al top management per l'intero processo",
       "Concentrarsi sulla standardizzazione delle risorse senza misurare i risultati"
     ],
-    "correct_answer": "Operare in relativa autonomia con controllo dei risultati"
+    "correct_answer": "Operare in relativa autonomia con controllo dei risultati",
+    "id": "22d84481-b874-4144-9b81-3d809c59c781"
   },
   {
     "question": "Su cosa si basa la time-based competition del caso COBRA?",
@@ -717,7 +788,8 @@
       "Creare un sistema di vendite che minimizza il tempo per la consegna",
       "Ricercare costantemente nuovi modi per rispondere rapidamente ai clienti"
     ],
-    "correct_answer": "Ricercare costantemente nuovi modi per rispondere rapidamente ai clienti"
+    "correct_answer": "Ricercare costantemente nuovi modi per rispondere rapidamente ai clienti",
+    "id": "75fedf1f-2a6d-4adf-8aa9-ae2a02dd2202"
   },
   {
     "question": "Ampiezza del controllo è:",
@@ -727,7 +799,8 @@
       "Il numero di livelli gerarchici in un'organizzazione",
       "Il numero di persone che dipendono direttamente da un supervisore"
     ],
-    "correct_answer": "Il numero di persone che dipendono direttamente da un supervisore"
+    "correct_answer": "Il numero di persone che dipendono direttamente da un supervisore",
+    "id": "f6f00787-eaf6-434b-9b88-4bc88ae07366"
   },
   {
     "question": "In una struttura divisionale le business unit:",
@@ -737,7 +810,8 @@
       "Godono di un'elevata autonomia sulle decisioni relative agli output",
       "Hanno una responsabilità limitata ai processi interni, ma non sugli output"
     ],
-    "correct_answer": "Godono di un'elevata autonomia sulle decisioni relative agli output"
+    "correct_answer": "Godono di un'elevata autonomia sulle decisioni relative agli output",
+    "id": "ea5eeda6-1c86-4027-850a-c3e8ffa5bdfe"
   },
   {
     "question": "Le organizzazioni di grandi dimensioni presentano problematiche organizzative maggiori perché:",
@@ -747,7 +821,8 @@
       "Non possono ridurre il numero di dipendenti senza compromettere l'efficienza",
       "Sono più difficili da monitorare e richiedono decisioni centralizzate"
     ],
-    "correct_answer": "Necessitano di coordinamento e specializzazione per evitare inefficienze"
+    "correct_answer": "Necessitano di coordinamento e specializzazione per evitare inefficienze",
+    "id": "6c55a4ab-e11c-4fbd-b6be-2b13eb491ca0"
   },
   {
     "question": "Struttura per area geografica. Privilegiando la capacità di risposta locale si ottiene?",
@@ -757,7 +832,8 @@
       "La mancanza di coordinamento su prodotti o clienti specifici",
       "Una centralizzazione delle decisioni strategiche"
     ],
-    "correct_answer": "La mancanza di coordinamento su prodotti o clienti specifici"
+    "correct_answer": "La mancanza di coordinamento su prodotti o clienti specifici",
+    "id": "e2ea44fd-d725-477d-9c54-01f9c1cb750f"
   },
   {
     "question": "Nell'ambito dell'organizzazione, quali dei seguenti concetti è corretto riguardo i gruppi e le organizzazioni meccanicistiche?",
@@ -767,7 +843,8 @@
       "I gruppi riducono la complessità delle attività da svolgere",
       "I gruppi eliminano la necessità di ruoli manageriali intermedi"
     ],
-    "correct_answer": "I gruppi offrono un contesto formale per favorire il mutuo adattamento"
+    "correct_answer": "I gruppi offrono un contesto formale per favorire il mutuo adattamento",
+    "id": "b428509e-ca76-40a7-a79e-1b1cc25b902f"
   },
   {
     "question": "Il processo aziendale può essere definito come:",
@@ -777,7 +854,8 @@
       "Una procedura tecnica per la gestione dei sistemi informativi",
       "Un insieme organizzato di attività e decisioni finalizzato alla creazione di un output di valore per un cliente"
     ],
-    "correct_answer": "Un insieme organizzato di attività e decisioni finalizzato alla creazione di un output di valore per un cliente"
+    "correct_answer": "Un insieme organizzato di attività e decisioni finalizzato alla creazione di un output di valore per un cliente",
+    "id": "18c4eac9-2f1b-4608-81c9-1d1c51e3807f"
   },
   {
     "question": "La prospettiva sociologica esplora ed interpreta:",
@@ -787,7 +865,8 @@
       "Il comportamento e le motivazioni delle persone nei contesti organizzativi",
       "Le strategie pubblicitarie per incrementare le vendite a breve termine"
     ],
-    "correct_answer": "Il comportamento e le motivazioni delle persone nei contesti organizzativi"
+    "correct_answer": "Il comportamento e le motivazioni delle persone nei contesti organizzativi",
+    "id": "92129535-3361-4def-9159-657ee47fbe4b"
   },
   {
     "question": "Una delle forze che si oppone alla crescita organizzativa è:",
@@ -797,7 +876,8 @@
       "L'introduzione di nuove tecnologie gestionali",
       "Il desiderio di espandere la quota di mercato"
     ],
-    "correct_answer": "La paura di perdere la flessibilità e il controllo aziendale"
+    "correct_answer": "La paura di perdere la flessibilità e il controllo aziendale",
+    "id": "97678929-c07e-413e-bb6a-beb3278e0a18"
   },
   {
     "question": "Uno dei limiti principali delle strutture funzionali è:",
@@ -807,7 +887,8 @@
       "La difficoltà di risposta a una domanda diversificata",
       "L'aumento dell'autonomia decisionale nei reparti"
     ],
-    "correct_answer": "La difficoltà di risposta a una domanda diversificata"
+    "correct_answer": "La difficoltà di risposta a una domanda diversificata",
+    "id": "4b8d035a-c874-4bcc-b8de-3c3a8d362dcc"
   },
   {
     "question": "I manager integratori, come i product manager e i project manager, hanno il compito di:",
@@ -817,7 +898,8 @@
       "Gestire il reclutamento e la formazione del personale tecnico",
       "Eseguire attività operative routinarie nei singoli reparti"
     ],
-    "correct_answer": "Coordinare unità organizzative per raggruppare obiettivi specifici"
+    "correct_answer": "Coordinare unità organizzative per raggruppare obiettivi specifici",
+    "id": "2c177cd7-6b7d-4f88-a998-8b6a41607699"
   },
   {
     "question": "Per un'impresa crescere è necessario per avere:",
@@ -827,7 +909,8 @@
       "La perdita di controllo sui processi decisionali",
       "La diminuzione della qualità del prodotto"
     ],
-    "correct_answer": "L'opportunità di accedere a finanziamenti più evoluti"
+    "correct_answer": "L'opportunità di accedere a finanziamenti più evoluti",
+    "id": "0a585c8e-00bc-430e-bce3-71e619bbced1"
   },
   {
     "question": "Qual è la base di differenziazione per la struttura delle organizzazioni?",
@@ -837,7 +920,8 @@
       "L'output prodotto",
       "La localizzazione geografica"
     ],
-    "correct_answer": "La funzione comune"
+    "correct_answer": "La funzione comune",
+    "id": "67c80c84-2eb9-4351-80db-eb22e6355211"
   },
   {
     "question": "Quali elementi definiscono la struttura gerarchica di un'organizzazione? (domanda inventata)",
@@ -847,7 +931,8 @@
       "Il numero dei livelli gerarchici e la catena di comando",
       "Il grado di automazione dei processi produttivi"
     ],
-    "correct_answer": "Il numero dei livelli gerarchici e la catena di comando"
+    "correct_answer": "Il numero dei livelli gerarchici e la catena di comando",
+    "id": "219d7aeb-3c3e-4332-b2d6-0d1bf4bc055a"
   },
   {
     "question": "Qual è uno dei principali limiti dei manager integratori all'interno di un'organizzazione? (domanda inventata)",
@@ -857,7 +942,8 @@
       "La possibilità di accedere a tutte le risorse aziendali senza restrizioni",
       "La mancanza di autorità formale sulle risorse da coordinare"
     ],
-    "correct_answer": "La mancanza di autorità formale sulle risorse da coordinare"
+    "correct_answer": "La mancanza di autorità formale sulle risorse da coordinare",
+    "id": "dd29d37a-023e-459f-9148-6fd53fae1c05"
   },
   {
     "question": "Secondo la teoria dei sistemi, le attività di un'organizzazione devono essere: (domanda inventata)",
@@ -867,7 +953,8 @@
       "Gerarchiche, flessibili e soggette a continua revisione",
       "Separate, ridondanti e orientate all'improvvisazione"
     ],
-    "correct_answer": "Interrelate, autonome, stabili e misurabili"
+    "correct_answer": "Interrelate, autonome, stabili e misurabili",
+    "id": "270fd6f0-7f2b-402d-a1d9-ee3706ef5ecb"
   },
   {
     "question": "In una struttura divisionale, le business unit:",
@@ -877,7 +964,8 @@
       "Seguono un'unica linea gerarchica comune a tutta l'organizzazione",
       "Hanno come obiettivo principale la riduzione dei costi delle funzioni di supporto"
     ],
-    "correct_answer": "Godono di elevata autonomia sulle decisioni relative agli output"
+    "correct_answer": "Godono di elevata autonomia sulle decisioni relative agli output",
+    "id": "6a9aa09b-1e6d-4cd9-a062-2e0b25a9ab7a"
   },
   {
     "question": "I servizi di massa:",
@@ -887,7 +975,8 @@
       "Sono posizionabili soltanto in basso a destra della matrice prodotto-processo",
       "Sono posizionabili in basso a sinistra della matrice prodotto-processo"
     ],
-    "correct_answer": "Sono posizionabili nella parte centrale e in basso a destra della matrice prodotto-processo"
+    "correct_answer": "Sono posizionabili nella parte centrale e in basso a destra della matrice prodotto-processo",
+    "id": "efc98d2d-a916-4c4a-98e5-380a7ec5bc32"
   },
   {
     "question": "In un sistema orientato all'output, cosa viene tipicamente specificato per guidare l'operato delle unità organizzative? (domanda inventata)",
@@ -897,7 +986,8 @@
       "Il risultato da produrre in termini di quantità e tipologia, senza indicazioni sul metodo di produzione",
       "La composizione del team e il calendario delle attività giornaliere"
     ],
-    "correct_answer": "Il risultato da produrre in termini di quantità e tipologia, senza indicazioni sul metodo di produzione"
+    "correct_answer": "Il risultato da produrre in termini di quantità e tipologia, senza indicazioni sul metodo di produzione",
+    "id": "74f83a2b-cde1-455b-8679-92c9a0b74d82"
   },
   {
     "question": "La capacità, nella progettazione microstrutturale, è definita come:",
@@ -907,7 +997,8 @@
       "Un processo di adattamento delle competenze a nuove posizioni all'interno dell'azienda",
       "Una caratteristica intrinseca individuale alla base di una prestazione efficace o superiore in una specifica attività o mansione"
     ],
-    "correct_answer": "Una caratteristica intrinseca individuale alla base di una prestazione efficace o superiore in una specifica attività o mansione"
+    "correct_answer": "Una caratteristica intrinseca individuale alla base di una prestazione efficace o superiore in una specifica attività o mansione",
+    "id": "7df04230-9ace-4b77-a0c8-cd0081059ae0"
   },
   {
     "question": "Secondo la teoria dei bisogni di Maslow, cosa caratterizza i bisogni di stima? (domanda inventata)",
@@ -917,7 +1008,8 @@
       "Desiderio di appartenenza a un gruppo familiare",
       "Ricerca di esperienze spirituali e trascendentali"
     ],
-    "correct_answer": "Stima degli altri e il riconoscimento sociale"
+    "correct_answer": "Stima degli altri e il riconoscimento sociale",
+    "id": "90d90d05-d2e4-4fbb-9629-3adb78701fd3"
   },
   {
     "question": "Quali caratteristiche devono avere i processi aziendali per essere considerati efficienti e adattabili?",
@@ -927,7 +1019,8 @@
       "Interrelabili, autonome e stabili",
       "Gerarchiche, subordinate e non misurabili"
     ],
-    "correct_answer": "Interrelabili, autonome e stabili"
+    "correct_answer": "Interrelabili, autonome e stabili",
+    "id": "8a3dee61-d7a4-4ca3-9070-05a1db3b8f64"
   },
   {
     "question": "Qual è la differenza tra capacità e competenze?",
@@ -937,7 +1030,8 @@
       "Le competenze si sviluppano solo sul posto di lavoro, le capacità solo in ambito scolastico",
       "Le capacità si riferiscono solo alle abilità tecniche, mentre le competenze includono anche hobby personali"
     ],
-    "correct_answer": "La valenza più innata delle capacità rispetto al ruolo dominante di studio e esperienza nelle competenze"
+    "correct_answer": "La valenza più innata delle capacità rispetto al ruolo dominante di studio e esperienza nelle competenze",
+    "id": "066f4556-80d8-473b-8ab5-9397ebba6db1"
   },
   {
     "question": "Come si configura tipicamente la struttura organizzativa per area geografica? (domanda inventata)",
@@ -947,7 +1041,8 @@
       "Un'unità produttiva per ciascuna grande area territoriale di attività",
       "Una rete di piccoli team interfunzionali sparsi casualmente sul territorio"
     ],
-    "correct_answer": "Un'unità produttiva per ciascuna grande area territoriale di attività"
+    "correct_answer": "Un'unità produttiva per ciascuna grande area territoriale di attività",
+    "id": "771f09b8-f623-47a4-a067-ca3a48b1d09f"
   },
   {
     "question": "I criteri di raggruppamento orientati agli input portano ad accorpare le attività di base a:",
@@ -957,7 +1052,8 @@
       "Preferenze individuali dei lavoratori",
       "Fasce orarie e disponibilità del personale"
     ],
-    "correct_answer": "Mezzi utilizzati come competenze, tecnologie o metodi di lavoro"
+    "correct_answer": "Mezzi utilizzati come competenze, tecnologie o metodi di lavoro",
+    "id": "6c05a066-db61-48d8-9e8c-4af30a2a55cf"
   },
   {
     "question": "Il principale effetto del raggruppamento consiste nel:",
@@ -967,7 +1063,8 @@
       "Definire un sistema di coordinamento comune",
       "Aumentare la varietà dei prodotti senza controllo"
     ],
-    "correct_answer": "Definire un sistema di coordinamento comune"
+    "correct_answer": "Definire un sistema di coordinamento comune",
+    "id": "3dbd039a-46dc-4c66-880a-bef4dbacb5e9"
   },
   {
     "question": "Le prestazioni (o performance) dei processi quantificano:",
@@ -977,7 +1074,8 @@
       "Il grado di utilizzo dei macchinari rispetto al tempo disponibile",
       "La capacità degli output di soddisfare le esigenze del cliente e creare valore per l'azienda"
     ],
-    "correct_answer": "La capacità degli output di soddisfare le esigenze del cliente e creare valore per l'azienda"
+    "correct_answer": "La capacità degli output di soddisfare le esigenze del cliente e creare valore per l'azienda",
+    "id": "596c8e80-87b3-4f93-a794-9a674efbd8de"
   },
   {
     "question": "Nella prospettiva manageriale, l'organizzazione è vista come",
@@ -987,6 +1085,7 @@
       "Un insieme di pratiche culturali da analizzare senza intervento diretto",
       "Un sistema informale di relazioni tra individui indipendenti"
     ],
-    "correct_answer": "Uno strumento plasmato dal potere per raggiungere fini specifici"
+    "correct_answer": "Uno strumento plasmato dal potere per raggiungere fini specifici",
+    "id": "ef090bc4-37c4-4da3-a79f-0a92fb0dd2c6"
   }
 ]
