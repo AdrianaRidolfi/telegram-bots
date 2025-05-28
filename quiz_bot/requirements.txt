@@ -5,3 +5,4 @@ python-dotenv>=1.0.0  # opzionale ma utile per caricare variabili da .env
 fpdf2
 firebase
 firebase-admin
+Pillow
