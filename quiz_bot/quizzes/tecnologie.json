@@ -249,7 +249,7 @@
             "padding, content, border, margin",
             "value, padding, border, margin"
         ],
-        "correct_answer": "margin, border, padding, content",
+        "correct_answer": "content, padding, border, margin",
         "image": "tec3.jpg"
     },
     {
