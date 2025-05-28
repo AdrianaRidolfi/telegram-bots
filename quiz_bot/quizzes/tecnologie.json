@@ -391,7 +391,6 @@
             "\"cars\": [\"Ferrari\", \"Porsche\"]",
             "cars: [\"Ferrari\", \"Porsche\"]",
             "\"cars\":[Ferrari, Porsche]",
-            "1",
             "\"cars\":[\"Ferrari\", \"Porsche\"] 1"
         ],
         "correct_answer": "\"cars\": [\"Ferrari\", \"Porsche\"]"
