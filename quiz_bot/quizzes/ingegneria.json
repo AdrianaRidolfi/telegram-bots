@@ -1,651 +1,717 @@
 [
-    {
-  "question": "Quale di questi elementi è parte di un diagramma dei casi d'uso?",
-  "answers": [
-    "Attore",
-    "Classe",
-    "Metodo statico",
-    "Pacchetto"
-  ],
-  "correct_answer": "Attore"
-}
-,{
-  "question": "Cosa indicano le frecce in un diagramma di sequenza?",
-  "answers": [
-    "Eventi inviati da un oggetto ad un altro",
-    "Relazioni di ereditarietà tra classi",
-    "Dipendenze tra pacchetti",
-    "Flussi di controllo tra moduli"
-  ],
-  "correct_answer": "Eventi inviati da un oggetto ad un altro"
-},
-{
-  "question": "Che tipo di relazione può esistere tra un attore e un caso d'uso:",
-  "answers": [
-    "Associazione",
-    "Ereditarietà",
-    "Realizzazione",
-    "Aggregazione"
-  ],
-  "correct_answer": "Associazione"
-},
-{
-  "question": "Un prototipo viene sviluppato per:",
-  "answers": [
-    "Interagire con il committente per convalidare i requisiti",
-    "Effettuare un primo test del sistema",
-    "Prendere iniziativa senza interloquire con il committente",
-    "Verificare le performance hardware in fase di sviluppo"
-  ],
-  "correct_answer": "Interagire con il committente per convalidare i requisiti"
-},
-{
-  "question": "Il lavoro che deve essere eseguito da un partecipante al progetto, viene denominato:",
-  "answers": [
-    "Task",
-    "Milestone",
-    "Deliverable",
-    "Workflow"
-  ],
-  "correct_answer": "Task"
-},
-{
-  "question": "In UML gli stati sono rappresentati con:",
-  "answers": [
-    "Ovali",
-    "Rettangoli",
-    "Triangoli",
-    "Diamanti"
-  ],
-  "correct_answer": "Ovali"
-},{
-  "question": "Il tempo durante il quale un certo lavoro in un progetto deve essere fatto, viene denominato:",
-  "answers": [
-    "Schedule",
-    "Deadline",
-    "Milestone",
-    "Scope"
-  ],
-  "correct_answer": "Schedule"
-},
-{
-  "question": "Cosa indica un rettangolo verticale sotto un oggetto in un diagramma di sequenza?",
-  "answers": [
-    "Il periodo di attivazione di una operazione dell'oggetto",
-    "La durata della vita dell'oggetto",
-    "Il tempo di risposta del sistema",
-    "La priorità dell'operazione"
-  ],
-  "correct_answer": "Il periodo di attivazione di una operazione dell'oggetto"
-},
-{
-  "question": "Cosa indica la linea tratteggiata verticale sotto un oggetto in un diagramma di sequenza?",
-  "answers": [
-    "La linea di vita dell'oggetto",
-    "Il flusso di controllo tra oggetti",
-    "Il messaggio ritardato",
-    "L'attivazione temporanea dell'oggetto"
-  ],
-  "correct_answer": "La linea di vita dell'oggetto"
-},
-{
-  "question": "Gli elementi tipici di un Sequence Diagram sono:",
-  "answers": [
-    "Gli oggetti ed i messaggi che si scambiano tra di loro",
-    "L'insieme degli artefatti che compongono un sistema",
-    "Le evoluzioni temporali degli stati di una classe",
-    "I flussi di lavoro e l'insieme delle attività nel sistema"
-  ],
-  "correct_answer": "Gli oggetti ed i messaggi che si scambiano tra di loro"
-},
-{
-  "question": "Qual è l'output di questo codice? Boolean isJavaFun= true; System.out.println(!isJavaFun);",
-  "answers": [
-    "False",
-    "True",
-    "null",
-    "Errore di compilazione"
-  ],
-  "correct_answer": "False"
-},
-{
-  "question": "Quale dei seguenti scenari rende ideale l'uso del pattern Singleton?",
-  "answers": [
-    "quando l'applicazione richiede un unico punto di accesso a una risorsa condivisa",
-    "quando si vogliono creare più istanze indipendenti di una classe",
-    "quando è necessario clonare oggetti rapidamente",
-    "quando si vogliono gestire operazioni asincrone in parallelo"
-  ],
-  "correct_answer": "quando l'applicazione richiede un unico punto di accesso a una risorsa condivisa"
-},
-{
-  "question": "Significato OCL",
-  "answers": [
-    "Object Constraint Language",
-    "Operational Control Logic",
-    "Object Coordination List",
-    "Open Class Library"
-  ],
-  "correct_answer": "Object Constraint Language"
-},
-{
-  "question": "Qual è il ruolo della parola chiave break in un'istruzione switch-case?",
-  "answers": [
-    "Per terminare il blocco del case",
-    "Per mettere in pausa l'esecuzione",
-    "Per passare al case successivo",
-    "Per ripetere il blocco del case"
-  ],
-  "correct_answer": "Per terminare il blocco del case"
-},
-{
-  "question": "Che cosa sono le classi astratte in Java?",
-  "answers": [
-    "Tutte le risposte sopra",
-    "Classi che contengono metodi astratti",
-    "Classi che possono essere usate come modelli per creare oggetti",
-    "Classi che non possono essere istanziate"
-  ],
-  "correct_answer": "Tutte le risposte sopra"
-},
-{
-  "question": "Qual è lo scopo della parola chiave “super” in Java?",
-  "answers": [
-    "Fare riferimento all'oggetto corrente",
-    "Accedere ai membri della superclasse",
-    "Creare una nuova istanza della classe",
-    "Nascondere dati e metodi all'interno di una classe"
-  ],
-  "correct_answer": "Accedere ai membri della superclasse"
-},
-{
-  "question": "Quale tra questi strumenti è ideale per le comunicazioni asincrone?",
-  "answers": [
-    "Telefonata",
-    "Meeting",
-    "Brainstorming",
-    "e-mail"
-  ],
-  "correct_answer": "e-mail"
-},
-{
-  "question": "Individua l'errore: int counter = 0; while(counter < 5) { counter++; } System.out.print(“contatore: “ + counter);",
-  "answers": [
-    "nessun errore",
-    "il ciclo non termina mai",
-    "il contatore non viene incrementato",
-    "istruzione di stampa errata"
-  ],
-  "correct_answer": "nessun errore"
-},
-{
-  "question": "Quale dei seguenti non è un diagramma di UML:",
-  "answers": [
-    "stateflow diagram",
-    "class diagram",
-    "activity diagram",
-    "component diagram"
-  ],
-  "correct_answer": "stateflow diagram"
-},
-{
-  "question": "In quale tipo di diagramma UML viene utilizzato il simbolo del parallelepipedo?",
-  "answers": [
-    "un diagramma di deployment",
-    "un diagramma di sequenza",
-    "un diagramma di temporizzazione",
-    "un diagramma di package"
-  ],
-  "correct_answer": "un diagramma di deployment"
-},
-{
-  "question": "In Java, qual è la convenzione corretta per scrivere i nomi delle classi?",
-  "answers": [
-    "Commandcase",
-    "CanvalCase",
-    "camelCase",
-    "PascalCase"
-  ],
-  "correct_answer": "PascalCase"
-},
-{
-  "question": "Quali sono i principali livelli di visibilità in Java che supportano l'incapsulamento?",
-  "answers": [
-    "pubblico, protetto, privato",
-    "globale, locale, interno",
-    "statico, dinamico, astratto",
-    "finale, volatile, transient"
-  ],
-  "correct_answer": "pubblico, protetto, privato"
-},
-{
-  "question": "Quale delle seguenti fasi non fa parte della definizione del problema?",
-  "answers": [
-    "walkthrough",
-    "definizione del problema",
-    "analisi dei requisiti",
-    "raccolta informazioni"
-  ],
-  "correct_answer": "walkthrough"
-},
-{
-  "question": "Qual è una differenza fondamentale tra una classe astratta e un'interfaccia in Java?",
-  "answers": [
-    "Una classe astratta può avere costruttori, un'interfaccia no",
-    "Un'interfaccia può avere variabili di istanza, una classe astratta no",
-    "Un'interfaccia può essere istanziata direttamente, una classe astratta no",
-    "Una classe astratta non può avere metodi astratti"
-  ],
-  "correct_answer": "Una classe astratta può avere costruttori, un'interfaccia no"
-},
-{
-  "question": "Come si definisce un'interfaccia in Java?",
-  "answers": [
-    "Interfaccia, se è una classe senza attributi e con tutte le operazioni astratte",
-    "Classe concreta con metodi implementati",
-    "Classe astratta con attributi",
-    "Solo astratta"
-  ],
-  "correct_answer": "Interfaccia, se è una classe senza attributi e con tutte le operazioni astratte"
-},
-{
-  "question": "Qual è lo scopo della parola chiave 'abstract' in Java?",
-  "answers": [
-    "Dichiarare una classe o un metodo astratto",
-    "Dichiarare solo una classe",
-    "Dichiarare solo un metodo astratto",
-    "Impedire l'ereditarietà della classe"
-  ],
-  "correct_answer": "Dichiarare una classe o un metodo astratto"
-},
-{
-  "question": "Quale termine indica la fase in cui il codice sorgente viene tradotto in codice eseguibile?",
-  "answers": [
-    "Compilazione",
-    "Incapsulamento",
-    "Esecuzione",
-    "Debugging"
-  ],
-  "correct_answer": "Compilazione"
-},
-{
-  "question": "Cosa significa 'override' in programmazione orientata agli oggetti?",
-  "answers": [
-    "Fornire un'implementazione diversa per un metodo ereditato in una sottoclasse.",
-    "Non fornire nulla",
-    "Fornire la stessa implementazione per ogni metodo ereditato",
-    "Eliminare un metodo ereditato"
-  ],
-  "correct_answer": "Fornire un'implementazione diversa per un metodo ereditato in una sottoclasse."
-},
-{
-  "question": "Nei diagrammi di attività, un nodo di decisione si rappresenta con:",
-  "answers": [
-    "un rombo",
-    "un'annotazione",
-    "un rettangolo",
-    "un rettangolo arrotondato"
-  ],
-  "correct_answer": "un rombo"
-},
-{
-  "question": "Cos'è il ciclo di vita del software?",
-  "answers": [
-    "Il periodo di tempo che ha inizio quando un prodotto software è concepito e termina quando il prodotto non è più utilizzato.",
-    "Il periodo di tempo che ha inizio quando un prodotto software è concepito e termina quando il prodotto non è più manutenuto.",
-    "Il periodo di tempo che ha inizio quando un prodotto software è sviluppato e termina quando non è più aggiornato.",
-    "Il periodo di tempo che ha inizio quando un prodotto software è rilasciato e termina quando il prodotto è dismesso."
-  ],
-  "correct_answer": "Il periodo di tempo che ha inizio quando un prodotto software è concepito e termina quando il prodotto non è più utilizzato."
-},
-{
-  "question": "Qual è il ruolo del 'Time keeper' in una riunione?",
-  "answers": [
-    "gestire la durata dell'incontro",
-    "gestire solo la prima parte dell'incontro",
-    "programmare la durata del tempo",
-    "moderare le discussioni"
-  ],
-  "correct_answer": "gestire la durata dell'incontro"
-},
-{
-  "question": "Quale tra questi termini è associato al pattern Singleton?",
-  "answers": [
-    "final",
-    "const",
-    "delete",
-    "static"
-  ],
-  "correct_answer": "final"
-},
-{
-  "question": "Qual è il compito principale del 'Minute taker' (segretario) durante una riunione?",
-  "answers": [
-    "verbalizzare i punti discussi",
-    "scrivere l'ordine del giorno",
-    "fissare appuntamento della riunione",
-    "moderare la discussione"
-  ],
-  "correct_answer": "verbalizzare i punti discussi"
-},
-{
-  "question": "Quale istruzione permette di uscire prematuramente da un ciclo in Java?",
-  "answers": [
-    "break",
-    "exit",
-    "return",
-    "continue"
-  ],
-  "correct_answer": "break"
-},
-{
-  "question": "Qual è la differenza tra overriding di metodo e overloading di metodo?",
-  "answers": [
-    "Tutte le risposte sopra.",
-    "Il sovraccarico implica la creazione di più metodi con lo stesso nome ma parametri diversi, mentre la sovrascrittura implica fornire un'implementazione diversa per un metodo ereditato.",
-    "L'overriding permette di modificare il comportamento di un metodo ereditato, mentre l'overloading consente di definire metodi con lo stesso nome ma firme diverse.",
-    "L'overriding è un concetto di runtime, mentre l'overloading è risolto a compile time."
-  ],
-  "correct_answer": "Tutte le risposte sopra."
-},
-{
-  "question": "Quale simbolo in UML rappresenta uno stato finale?",
-  "answers": [
-    "Un disco pieno",
-    "Una ellissi",
-    "Un disco vuoto",
-    "Un rettangolo"
-  ],
-  "correct_answer": "Un disco pieno"
-},
-{
-  "question": "Cos'è l'incapsulamento in programmazione orientata agli oggetti?",
-  "answers": [
-    "Il processo di combinare dati e metodi in un'unica unità",
-    "Il processo di nascondere dati e metodi all'interno di una classe",
-    "Il processo di combinare dati e metodi di due unità",
-    "Il processo di nascondere dati e metodi all'esterno di una classe"
-  ],
-  "correct_answer": "Il processo di combinare dati e metodi in un'unica unità"
-},
-{
-  "question": "Qual è l'output del seguente codice Java?\n\nint x = 0;\nSystem.out.println(x);",
-  "answers": [
-    "Nessun errore",
-    "Stampa 0",
-    "Stampa 1",
-    "Errore di compilazione"
-  ],
-  "correct_answer": "Nessun errore"
-},
-{
-  "question": "Nel diagramma di PERT, cosa rappresenta il percorso critico?",
-  "answers": [
-    "Il percorso più lungo nel grafo dei task",
-    "Il tempo massimo per un singolo task",
-    "Il percorso più veloce nel grafo dei task",
-    "Il numero totale di task completati"
-  ],
-  "correct_answer": "Il percorso più lungo nel grafo dei task"
-},
-{
-  "question": "Quali diagrammi UML mostrano l'interazione tra oggetti nel tempo?",
-  "answers": [
-    "diagrammi di sequenza",
-    "diagrammi delle attività",
-    "diagrammi delle classi",
-    "diagrammi dei componenti"
-  ],
-  "correct_answer": "diagrammi di sequenza"
-},
-{
-  "question": "Nei diagrammi di attività, qual è il focus principale?",
-  "answers": [
-    "il focus è sull'attività e non su chi la svolge",
-    "il focus è su chi svolge una attività",
-    "il focus è sulle variazioni dello stato interno in seguito al verificarsi di eventi",
-    "il focus è sulla struttura delle operazioni di un oggetto"
-  ],
-  "correct_answer": "il focus è sull'attività e non su chi la svolge"
-},
-{
-  "question": "Nei diagrammi di attività UML, come si rappresenta un'azione o uno stato?",
-  "answers": [
-    "Rettangoli con angoli arrotondati",
-    "Rettangoli",
-    "Quadrati",
-    "Cerchi"
-  ],
-  "correct_answer": "Rettangoli con angoli arrotondati"
-},
-{
-  "question": "Cos'è l'incapsulamento in programmazione orientata agli oggetti?",
-  "answers": [
-    "Il processo di combinare dati e metodi in un'unica unità",
-    "Il processo di riutilizzare il codice da classi esistenti",
-    "Il processo di nascondere dati e metodi all'interno di una classe",
-    "Il processo di creare nuove classi"
-  ],
-  "correct_answer": "Il processo di combinare dati e metodi in un'unica unità"
-},
-{
-  "question": "In UML, una classe è rappresentata graficamente con:",
-  "answers": [
-    "una ellisse con eventuali divisioni",
-    "un rettangolo avente minimo 3 compartimenti",
-    "un rettangolo avente massimo 3 compartimenti",
-    "un rettangolo avente fino a 3 compartimenti, ma almeno uno"
-  ],
-  "correct_answer": "un rettangolo avente fino a 3 compartimenti, ma almeno uno"
-},
-{
-  "question": "Un diagramma di package è rappresentato da:",
-  "answers": [
-    "Un rettangolo con una linguetta a sinistra",
-    "Un rettangolo arrotondato con una linguetta a sinistra",
-    "Un rettangolo",
-    "Un rettangolo con una linguetta a destra"
-  ],
-  "correct_answer": "Un rettangolo con una linguetta a sinistra"
-},
-{
-  "question": "Come si rappresenta un'azione o uno stato nei diagrammi di attività UML?",
-  "answers": [
-    "Un rettangolo arrotondato",
-    "Una freccia con tratteggio e punta vuota",
-    "Una ellissi",
-    "Un rombo"
-  ],
-  "correct_answer": "Un rettangolo arrotondato"
-},
-{
-  "question": "Qual è lo scopo principale di un diagramma di attività UML?",
-  "answers": [
-    "modellano il comportamento dinamico del sistema, in particolare il workflow, come ad esempio un flowchart.",
-    "Inizializzano il programma",
-    "Definiscono le strutture dati del sistema",
-    "Rappresentano l'architettura hardware"
-  ],
-  "correct_answer": "modellano il comportamento dinamico del sistema, in particolare il workflow, come ad esempio un flowchart."
-},
-{
-  "question": "Qual è il significato di riutilizzo del codice nella programmazione?",
-  "answers": [
-    "Riutilizzo del codice",
-    "Variazione del codice esistente",
-    "Scrittura di nuovo codice da zero",
-    "Eliminazione del codice duplicato"
-  ],
-  "correct_answer": "Riutilizzo del codice"
-},
-{
-  "question": "Qual è una caratteristica del ciclo do-while in Java?",
-  "answers": [
-    "Il ciclo do-while viene eseguito almeno una volta",
-    "Il ciclo do-while non viene eseguito",
-    "Il ciclo do-while viene eseguito due volte",
-    "Il ciclo do-while viene eseguito solo se la condizione è vera inizialmente"
-  ],
-  "correct_answer": "Il ciclo do-while viene eseguito almeno una volta"
-},
-{
-  "question": "Qual è l'obiettivo principale del pattern State?",
-  "answers": [
-    "Permettere a un oggetto di cambiare comportamento in base al proprio stato",
-    "Separare l'interfaccia dall'implementazione",
-    "Creare una singola istanza di un oggetto per tutta l'applicazione",
-    "Rimuovere la complessità del ciclo di vita degli oggetti"
-  ],
-  "correct_answer": "Permettere a un oggetto di cambiare comportamento in base al proprio stato"
-},
-{
-  "question": "Cos'è la sovrascrittura (overriding) in programmazione orientata agli oggetti?",
-  "answers": [
-    "Fornire un'implementazione diversa per un metodo ereditato in una sottoclasse.",
-    "Creare più metodi con lo stesso nome ma parametri diversi all'interno della stessa classe.",
-    "Definire una nuova classe senza ereditare da una superclass.",
-    "Utilizzare una classe senza ridefinire nessun metodo."
-  ],
-  "correct_answer": "Fornire un'implementazione diversa per un metodo ereditato in una sottoclasse."
-},
-{
-  "question": "Qual è l'output o l'errore del seguente codice Java?\n\nint[] arr = {1, 2, 3};\nSystem.out.println(arr[3]);",
-  "answers": [
-    "Indice fuori dai limiti dell'array",
-    "Nessun errore",
-    "Stampa 3",
-    "Errore di sintassi"
-  ],
-  "correct_answer": "Indice fuori dai limiti dell'array"
-},
-{
-  "question": "Qual è lo scopo principale di un diagramma di sequenza?",
-  "answers": [
-    "Il diagramma di sequenza mostra la struttura dei messaggi che gli oggetti coinvolti si scambiano al fine di realizzare un comportamento.",
-    "Il diagramma di sequenza può completare un diagramma della classe mostrandone il comportamento dinamico.",
-    "Il diagramma di sequenza documenta tipicamente il comportamento di un singolo scenario e, tipicamente, si accompagna ad un diagramma di caso d'uso.",
-    "Il diagramma di sequenza rappresenta la struttura statica delle classi nel sistema."
-  ],
-  "correct_answer": "Il diagramma di sequenza mostra la struttura dei messaggi che gli oggetti coinvolti si scambiano al fine di realizzare un comportamento."
-},
-{
-  "question": "Qual è uno svantaggio tipico di un metodo complesso?",
-  "answers": [
-    "Non è facilmente comprensibile ed applicabile",
-    "È facilmente comprensibile",
-    "È facilmente applicabile",
-    "È sempre efficiente"
-  ],
-  "correct_answer": "Non è facilmente comprensibile ed applicabile"
-},
-{
-  "question": "Qual è l'intervallo del tipo di dato short in Java?",
-  "answers": [
-    "-32768 a 32767",
-    "-128 a 127",
-    "-2147483648 a 2147483647",
-    "0 a 65535"
-  ],
-  "correct_answer": "-32768 a 32767"
-},
-{
-  "question": "Dove possono comparire i metadati in Java?",
-  "answers": [
-    "Possono comparire usando le annotazioni",
-    "Non possono comparire",
-    "Possono comparire solo in fase di compilazione",
-    "Possono comparire solo nei commenti"
-  ],
-  "correct_answer": "Possono comparire usando le annotazioni"
-},
-{
-  "question": "Quale tra i seguenti è uno strumento ideale per comunicazioni sincrone a distanza?",
-  "answers": [
-    "Videoconferenza",
-    "Presenza",
-    "Email",
-    "Messaggistica asincrona"
-  ],
-  "correct_answer": "Videoconferenza"
-},
-{
-  "question": "Cosa indica una vista (view) in un modello di sistema?",
-  "answers": [
-    "Mostra alcuni aspetti selezionati di un modello",
-    "Mostra un modello completo",
-    "Mostra solo alcuni modelli",
-    "Mostra il codice sorgente del sistema"
-  ],
-  "correct_answer": "Mostra alcuni aspetti selezionati di un modello"
-},
-{
-  "question": "Quale sarà l'output del seguente codice Java?\n\nint x = 10;\nif (x > 5) {\n    System.out.println(\"Maggiore\");\n} else {\n    System.out.println(\"Minore\");\n}",
-  "answers": [
-    "Maggiore",
-    "Minore",
-    "Errore di compilazione",
-    "Nessun output"
-  ],
-  "correct_answer": "Maggiore"
-},
-{
-  "question": "Qual è il vantaggio principale dello stream parallelo in Java?",
-  "answers": [
-    "Permette di eseguire operazioni parallele sui dati della collezione",
-    "Permette il riutilizzo dell'iterazione su vari tipi di collezione",
-    "Garantisce l'ordine degli elementi durante l'elaborazione",
-    "Semplifica la gestione delle eccezioni durante l'elaborazione"
-  ],
-  "correct_answer": "Permette di eseguire operazioni parallele sui dati della collezione"
-},
-{
-  "question": "Qual è lo scopo principale del pattern Singleton?",
-  "answers": [
-    "Assicurarsi che una classe abbia una sola istanza e fornire un punto di accesso globale",
-    "Definire una classe che può esistere in uno stato solo",
-    "Definire una classe che può esistere in più stati",
-    "Creare una nuova istanza ogni volta che viene richiesta"
-  ],
-  "correct_answer": "Assicurarsi che una classe abbia una sola istanza e fornire un punto di accesso globale"
-},
-{
-  "question": "Una astrazione in UML",
-  "answers": [
-    "è una classificazione di fenomeni in concetti",
-    "è un insieme di regole grafiche o testuali",
-    "è un oggetto nell'universo di dominio cosi come lo percepiamo",
-    "mostra alcuni aspetti selezionati di un modello"
-  ],
-  "correct_answer": "è una classificazione di fenomeni in concetti"
-},
-{
-  "question": "La modellazione si definisce come:",
-  "answers": [
-    "Lo sviluppo di astrazioni per rispondere a domande specifiche su un insieme di fenomeni rilevanti, ignorando i dettagli irrilevanti",
-    "Lo sviluppo di astrazioni per rispondere a domande specifiche su un insieme di fenomeni rilevanti, in tutti i loro dettagli",
-    "Lo sviluppo di oggetti per rispondere a domande specifiche su un insieme di fenomeni rilevanti, ignorando i dettagli irrilevanti",
-    "Lo sviluppo di prototipi per rispondere a domande specifiche su un insieme di fenomeni rilevanti, ignorando i dettagli irrilevanti"
-  ],
-  "correct_answer": "Lo sviluppo di astrazioni per rispondere a domande specifiche su un insieme di fenomeni rilevanti, ignorando i dettagli irrilevanti"
-},
-{
-  "question": "Qual è la differenza tra sovraccarico di metodo e sovrascrittura di metodo in Java?",
-  "answers": [
-    "La sovrascrittura fornisce una nuova implementazione, mentre il sovraccarico fornisce più metodi con lo stesso nome",
-    "Il sovraccarico è un concetto di polimorfismo a tempo di compilazione, mentre la sovrascrittura è un concetto di polimorfismo",
-    "Il sovraccarico implica la creazione di più metodi con lo stesso nome ma parametri diversi, mentre la sovrascrittura implica",
-    "Sono la stessa cosa"
-],
-  "correct_answer":    "La sovrascrittura fornisce una nuova implementazione, mentre il sovraccarico fornisce più metodi con lo stesso nome"
-},
-{
-  "question": "Quando si usa la parola chiave break in un'istruzione switch-case?",
-  "answers": [
-    "Per terminare il blocco del case",
-    "Per mettere in pausa l'esecuzione",
-    "Per ripetere il blocco del case",
-    "Per passare al case successivo"
-],
-    "correct_answer":     "Per terminare il blocco del case"
-}
+  {
+    "question": "Quale di questi elementi è parte di un diagramma dei casi d'uso?",
+    "answers": [
+      "Attore",
+      "Classe",
+      "Metodo statico",
+      "Pacchetto"
+    ],
+    "correct_answer": "Attore",
+    "id": "8455f57a-ebf4-40df-b494-cc737c32471f"
+  },
+  {
+    "question": "Cosa indicano le frecce in un diagramma di sequenza?",
+    "answers": [
+      "Eventi inviati da un oggetto ad un altro",
+      "Relazioni di ereditarietà tra classi",
+      "Dipendenze tra pacchetti",
+      "Flussi di controllo tra moduli"
+    ],
+    "correct_answer": "Eventi inviati da un oggetto ad un altro",
+    "id": "8d8f254b-ab84-4efc-8284-9e802ff07e0e"
+  },
+  {
+    "question": "Che tipo di relazione può esistere tra un attore e un caso d'uso:",
+    "answers": [
+      "Associazione",
+      "Ereditarietà",
+      "Realizzazione",
+      "Aggregazione"
+    ],
+    "correct_answer": "Associazione",
+    "id": "1e9c0875-9a2e-48c4-9242-fb092a847fcd"
+  },
+  {
+    "question": "Un prototipo viene sviluppato per:",
+    "answers": [
+      "Interagire con il committente per convalidare i requisiti",
+      "Effettuare un primo test del sistema",
+      "Prendere iniziativa senza interloquire con il committente",
+      "Verificare le performance hardware in fase di sviluppo"
+    ],
+    "correct_answer": "Interagire con il committente per convalidare i requisiti",
+    "id": "b41cfbaa-4fcc-4855-8548-bdc1c2550a0b"
+  },
+  {
+    "question": "Il lavoro che deve essere eseguito da un partecipante al progetto, viene denominato:",
+    "answers": [
+      "Task",
+      "Milestone",
+      "Deliverable",
+      "Workflow"
+    ],
+    "correct_answer": "Task",
+    "id": "80421823-fb07-45dd-a3bb-9992de57ae2a"
+  },
+  {
+    "question": "In UML gli stati sono rappresentati con:",
+    "answers": [
+      "Ovali",
+      "Rettangoli",
+      "Triangoli",
+      "Diamanti"
+    ],
+    "correct_answer": "Ovali",
+    "id": "ee995561-0ab0-47f2-894e-562eb9c8e6a3"
+  },
+  {
+    "question": "Il tempo durante il quale un certo lavoro in un progetto deve essere fatto, viene denominato:",
+    "answers": [
+      "Schedule",
+      "Deadline",
+      "Milestone",
+      "Scope"
+    ],
+    "correct_answer": "Schedule",
+    "id": "634994ea-de69-4813-9dc6-a11597a31dab"
+  },
+  {
+    "question": "Cosa indica un rettangolo verticale sotto un oggetto in un diagramma di sequenza?",
+    "answers": [
+      "Il periodo di attivazione di una operazione dell'oggetto",
+      "La durata della vita dell'oggetto",
+      "Il tempo di risposta del sistema",
+      "La priorità dell'operazione"
+    ],
+    "correct_answer": "Il periodo di attivazione di una operazione dell'oggetto",
+    "id": "868b8380-c8ec-4503-8893-4019074462a9"
+  },
+  {
+    "question": "Cosa indica la linea tratteggiata verticale sotto un oggetto in un diagramma di sequenza?",
+    "answers": [
+      "La linea di vita dell'oggetto",
+      "Il flusso di controllo tra oggetti",
+      "Il messaggio ritardato",
+      "L'attivazione temporanea dell'oggetto"
+    ],
+    "correct_answer": "La linea di vita dell'oggetto",
+    "id": "5f49ed4e-ef7e-42ce-8130-b1ae2ba83e6c"
+  },
+  {
+    "question": "Gli elementi tipici di un Sequence Diagram sono:",
+    "answers": [
+      "Gli oggetti ed i messaggi che si scambiano tra di loro",
+      "L'insieme degli artefatti che compongono un sistema",
+      "Le evoluzioni temporali degli stati di una classe",
+      "I flussi di lavoro e l'insieme delle attività nel sistema"
+    ],
+    "correct_answer": "Gli oggetti ed i messaggi che si scambiano tra di loro",
+    "id": "a1e938f5-5b25-4a57-ae6a-824f2fc012d2"
+  },
+  {
+    "question": "Qual è l'output di questo codice? Boolean isJavaFun= true; System.out.println(!isJavaFun);",
+    "answers": [
+      "False",
+      "True",
+      "null",
+      "Errore di compilazione"
+    ],
+    "correct_answer": "False",
+    "id": "ef39f4a9-0fd7-4f97-8463-262fe57b0995"
+  },
+  {
+    "question": "Quale dei seguenti scenari rende ideale l'uso del pattern Singleton?",
+    "answers": [
+      "quando l'applicazione richiede un unico punto di accesso a una risorsa condivisa",
+      "quando si vogliono creare più istanze indipendenti di una classe",
+      "quando è necessario clonare oggetti rapidamente",
+      "quando si vogliono gestire operazioni asincrone in parallelo"
+    ],
+    "correct_answer": "quando l'applicazione richiede un unico punto di accesso a una risorsa condivisa",
+    "id": "504d4bcc-982b-4120-8dc6-93e3b9242486"
+  },
+  {
+    "question": "Significato OCL",
+    "answers": [
+      "Object Constraint Language",
+      "Operational Control Logic",
+      "Object Coordination List",
+      "Open Class Library"
+    ],
+    "correct_answer": "Object Constraint Language",
+    "id": "a07af397-aa4b-411a-a3b0-5e09a35bc15d"
+  },
+  {
+    "question": "Qual è il ruolo della parola chiave break in un'istruzione switch-case?",
+    "answers": [
+      "Per terminare il blocco del case",
+      "Per mettere in pausa l'esecuzione",
+      "Per passare al case successivo",
+      "Per ripetere il blocco del case"
+    ],
+    "correct_answer": "Per terminare il blocco del case",
+    "id": "d8b1ca13-8841-4042-a59a-50c6cfa0ba94"
+  },
+  {
+    "question": "Che cosa sono le classi astratte in Java?",
+    "answers": [
+      "Tutte le risposte sopra",
+      "Classi che contengono metodi astratti",
+      "Classi che possono essere usate come modelli per creare oggetti",
+      "Classi che non possono essere istanziate"
+    ],
+    "correct_answer": "Tutte le risposte sopra",
+    "id": "b5f56149-2f77-48a3-971f-0d5a6a9f377f"
+  },
+  {
+    "question": "Qual è lo scopo della parola chiave “super” in Java?",
+    "answers": [
+      "Fare riferimento all'oggetto corrente",
+      "Accedere ai membri della superclasse",
+      "Creare una nuova istanza della classe",
+      "Nascondere dati e metodi all'interno di una classe"
+    ],
+    "correct_answer": "Accedere ai membri della superclasse",
+    "id": "ddd5129d-bd14-4821-ad80-c159ad033595"
+  },
+  {
+    "question": "Quale tra questi strumenti è ideale per le comunicazioni asincrone?",
+    "answers": [
+      "Telefonata",
+      "Meeting",
+      "Brainstorming",
+      "e-mail"
+    ],
+    "correct_answer": "e-mail",
+    "id": "148abdf1-ba69-43d1-94e3-ccf248d66f16"
+  },
+  {
+    "question": "Individua l'errore: int counter = 0; while(counter < 5) { counter++; } System.out.print(“contatore: “ + counter);",
+    "answers": [
+      "nessun errore",
+      "il ciclo non termina mai",
+      "il contatore non viene incrementato",
+      "istruzione di stampa errata"
+    ],
+    "correct_answer": "nessun errore",
+    "id": "745acb3d-824c-4d3e-b171-269d7bc40d9c"
+  },
+  {
+    "question": "Quale dei seguenti non è un diagramma di UML:",
+    "answers": [
+      "stateflow diagram",
+      "class diagram",
+      "activity diagram",
+      "component diagram"
+    ],
+    "correct_answer": "stateflow diagram",
+    "id": "e7bfa582-00d9-4883-a588-5c6e82f53404"
+  },
+  {
+    "question": "In quale tipo di diagramma UML viene utilizzato il simbolo del parallelepipedo?",
+    "answers": [
+      "un diagramma di deployment",
+      "un diagramma di sequenza",
+      "un diagramma di temporizzazione",
+      "un diagramma di package"
+    ],
+    "correct_answer": "un diagramma di deployment",
+    "id": "829c3f0f-b1d6-4bc4-99e3-b4ede1d7ee7c"
+  },
+  {
+    "question": "In Java, qual è la convenzione corretta per scrivere i nomi delle classi?",
+    "answers": [
+      "Commandcase",
+      "CanvalCase",
+      "camelCase",
+      "PascalCase"
+    ],
+    "correct_answer": "PascalCase",
+    "id": "47f1f8e2-9d61-4272-a5a1-1fcb3bd264e8"
+  },
+  {
+    "question": "Quali sono i principali livelli di visibilità in Java che supportano l'incapsulamento?",
+    "answers": [
+      "pubblico, protetto, privato",
+      "globale, locale, interno",
+      "statico, dinamico, astratto",
+      "finale, volatile, transient"
+    ],
+    "correct_answer": "pubblico, protetto, privato",
+    "id": "772c7dce-a4d1-481f-8590-65ca8ec4d072"
+  },
+  {
+    "question": "Quale delle seguenti fasi non fa parte della definizione del problema?",
+    "answers": [
+      "walkthrough",
+      "definizione del problema",
+      "analisi dei requisiti",
+      "raccolta informazioni"
+    ],
+    "correct_answer": "walkthrough",
+    "id": "7cc5516f-19fa-41d5-9604-9020f7acca03"
+  },
+  {
+    "question": "Qual è una differenza fondamentale tra una classe astratta e un'interfaccia in Java?",
+    "answers": [
+      "Una classe astratta può avere costruttori, un'interfaccia no",
+      "Un'interfaccia può avere variabili di istanza, una classe astratta no",
+      "Un'interfaccia può essere istanziata direttamente, una classe astratta no",
+      "Una classe astratta non può avere metodi astratti"
+    ],
+    "correct_answer": "Una classe astratta può avere costruttori, un'interfaccia no",
+    "id": "3f511a83-6c13-4856-80fc-9646f41a7c5d"
+  },
+  {
+    "question": "Come si definisce un'interfaccia in Java?",
+    "answers": [
+      "Interfaccia, se è una classe senza attributi e con tutte le operazioni astratte",
+      "Classe concreta con metodi implementati",
+      "Classe astratta con attributi",
+      "Solo astratta"
+    ],
+    "correct_answer": "Interfaccia, se è una classe senza attributi e con tutte le operazioni astratte",
+    "id": "74b01c8f-e5d1-4c06-a02b-6b7257c0e81b"
+  },
+  {
+    "question": "Qual è lo scopo della parola chiave 'abstract' in Java?",
+    "answers": [
+      "Dichiarare una classe o un metodo astratto",
+      "Dichiarare solo una classe",
+      "Dichiarare solo un metodo astratto",
+      "Impedire l'ereditarietà della classe"
+    ],
+    "correct_answer": "Dichiarare una classe o un metodo astratto",
+    "id": "b4c2e250-92c0-48fd-952e-bcb476932bc5"
+  },
+  {
+    "question": "Quale termine indica la fase in cui il codice sorgente viene tradotto in codice eseguibile?",
+    "answers": [
+      "Compilazione",
+      "Incapsulamento",
+      "Esecuzione",
+      "Debugging"
+    ],
+    "correct_answer": "Compilazione",
+    "id": "66188d36-11c0-4e16-99fe-31efc4494e50"
+  },
+  {
+    "question": "Cosa significa 'override' in programmazione orientata agli oggetti?",
+    "answers": [
+      "Fornire un'implementazione diversa per un metodo ereditato in una sottoclasse.",
+      "Non fornire nulla",
+      "Fornire la stessa implementazione per ogni metodo ereditato",
+      "Eliminare un metodo ereditato"
+    ],
+    "correct_answer": "Fornire un'implementazione diversa per un metodo ereditato in una sottoclasse.",
+    "id": "0d688e05-e38f-43ec-a888-368b009d41cb"
+  },
+  {
+    "question": "Nei diagrammi di attività, un nodo di decisione si rappresenta con:",
+    "answers": [
+      "un rombo",
+      "un'annotazione",
+      "un rettangolo",
+      "un rettangolo arrotondato"
+    ],
+    "correct_answer": "un rombo",
+    "id": "c6b2a34c-5a98-41c1-9b2a-e4f130ea269a"
+  },
+  {
+    "question": "Cos'è il ciclo di vita del software?",
+    "answers": [
+      "Il periodo di tempo che ha inizio quando un prodotto software è concepito e termina quando il prodotto non è più utilizzato.",
+      "Il periodo di tempo che ha inizio quando un prodotto software è concepito e termina quando il prodotto non è più manutenuto.",
+      "Il periodo di tempo che ha inizio quando un prodotto software è sviluppato e termina quando non è più aggiornato.",
+      "Il periodo di tempo che ha inizio quando un prodotto software è rilasciato e termina quando il prodotto è dismesso."
+    ],
+    "correct_answer": "Il periodo di tempo che ha inizio quando un prodotto software è concepito e termina quando il prodotto non è più utilizzato.",
+    "id": "fb4fe56e-07ef-4b2d-a083-882d623e6212"
+  },
+  {
+    "question": "Qual è il ruolo del 'Time keeper' in una riunione?",
+    "answers": [
+      "gestire la durata dell'incontro",
+      "gestire solo la prima parte dell'incontro",
+      "programmare la durata del tempo",
+      "moderare le discussioni"
+    ],
+    "correct_answer": "gestire la durata dell'incontro",
+    "id": "ae368d74-b044-4c89-bae7-99615561d838"
+  },
+  {
+    "question": "Quale tra questi termini è associato al pattern Singleton?",
+    "answers": [
+      "final",
+      "const",
+      "delete",
+      "static"
+    ],
+    "correct_answer": "final",
+    "id": "0af6aaee-36f1-4bda-845c-fd623cb1bacb"
+  },
+  {
+    "question": "Qual è il compito principale del 'Minute taker' (segretario) durante una riunione?",
+    "answers": [
+      "verbalizzare i punti discussi",
+      "scrivere l'ordine del giorno",
+      "fissare appuntamento della riunione",
+      "moderare la discussione"
+    ],
+    "correct_answer": "verbalizzare i punti discussi",
+    "id": "c2089514-f0b4-411c-8f62-2e2b2d1c95d4"
+  },
+  {
+    "question": "Quale istruzione permette di uscire prematuramente da un ciclo in Java?",
+    "answers": [
+      "break",
+      "exit",
+      "return",
+      "continue"
+    ],
+    "correct_answer": "break",
+    "id": "f0c057d9-da1e-46ad-85cb-616c16d699e4"
+  },
+  {
+    "question": "Qual è la differenza tra overriding di metodo e overloading di metodo?",
+    "answers": [
+      "Tutte le risposte sopra.",
+      "Il sovraccarico implica la creazione di più metodi con lo stesso nome ma parametri diversi, mentre la sovrascrittura implica fornire un'implementazione diversa per un metodo ereditato.",
+      "L'overriding permette di modificare il comportamento di un metodo ereditato, mentre l'overloading consente di definire metodi con lo stesso nome ma firme diverse.",
+      "L'overriding è un concetto di runtime, mentre l'overloading è risolto a compile time."
+    ],
+    "correct_answer": "Tutte le risposte sopra.",
+    "id": "f810645f-d4a1-477f-ac7d-b20a37b4db89"
+  },
+  {
+    "question": "Quale simbolo in UML rappresenta uno stato finale?",
+    "answers": [
+      "Un disco pieno",
+      "Una ellissi",
+      "Un disco vuoto",
+      "Un rettangolo"
+    ],
+    "correct_answer": "Un disco pieno",
+    "id": "06dc85ba-5c45-4075-9abb-6689b5064f94"
+  },
+  {
+    "question": "Cos'è l'incapsulamento in programmazione orientata agli oggetti?",
+    "answers": [
+      "Il processo di combinare dati e metodi in un'unica unità",
+      "Il processo di nascondere dati e metodi all'interno di una classe",
+      "Il processo di combinare dati e metodi di due unità",
+      "Il processo di nascondere dati e metodi all'esterno di una classe"
+    ],
+    "correct_answer": "Il processo di combinare dati e metodi in un'unica unità",
+    "id": "ab425b2d-0223-4d59-b9fe-9b846e991408"
+  },
+  {
+    "question": "Qual è l'output del seguente codice Java?\n\nint x = 0;\nSystem.out.println(x);",
+    "answers": [
+      "Nessun errore",
+      "Stampa 0",
+      "Stampa 1",
+      "Errore di compilazione"
+    ],
+    "correct_answer": "Nessun errore",
+    "id": "693ea606-ceb8-40de-a6ce-b5f9918d373f"
+  },
+  {
+    "question": "Nel diagramma di PERT, cosa rappresenta il percorso critico?",
+    "answers": [
+      "Il percorso più lungo nel grafo dei task",
+      "Il tempo massimo per un singolo task",
+      "Il percorso più veloce nel grafo dei task",
+      "Il numero totale di task completati"
+    ],
+    "correct_answer": "Il percorso più lungo nel grafo dei task",
+    "id": "d989e8e0-5a6b-422d-8f19-9b071239cbe2"
+  },
+  {
+    "question": "Quali diagrammi UML mostrano l'interazione tra oggetti nel tempo?",
+    "answers": [
+      "diagrammi di sequenza",
+      "diagrammi delle attività",
+      "diagrammi delle classi",
+      "diagrammi dei componenti"
+    ],
+    "correct_answer": "diagrammi di sequenza",
+    "id": "a3587296-0675-41de-8b04-ecada915b4b9"
+  },
+  {
+    "question": "Nei diagrammi di attività, qual è il focus principale?",
+    "answers": [
+      "il focus è sull'attività e non su chi la svolge",
+      "il focus è su chi svolge una attività",
+      "il focus è sulle variazioni dello stato interno in seguito al verificarsi di eventi",
+      "il focus è sulla struttura delle operazioni di un oggetto"
+    ],
+    "correct_answer": "il focus è sull'attività e non su chi la svolge",
+    "id": "944a7d87-da46-429a-8b58-0bdaf36580c8"
+  },
+  {
+    "question": "Nei diagrammi di attività UML, come si rappresenta un'azione o uno stato?",
+    "answers": [
+      "Rettangoli con angoli arrotondati",
+      "Rettangoli",
+      "Quadrati",
+      "Cerchi"
+    ],
+    "correct_answer": "Rettangoli con angoli arrotondati",
+    "id": "8ae8838d-44a4-401f-8c80-b2301e11a33d"
+  },
+  {
+    "question": "Cos'è l'incapsulamento in programmazione orientata agli oggetti?",
+    "answers": [
+      "Il processo di combinare dati e metodi in un'unica unità",
+      "Il processo di riutilizzare il codice da classi esistenti",
+      "Il processo di nascondere dati e metodi all'interno di una classe",
+      "Il processo di creare nuove classi"
+    ],
+    "correct_answer": "Il processo di combinare dati e metodi in un'unica unità",
+    "id": "f65208cc-3bb2-4a97-8a58-28e6e1808191"
+  },
+  {
+    "question": "In UML, una classe è rappresentata graficamente con:",
+    "answers": [
+      "una ellisse con eventuali divisioni",
+      "un rettangolo avente minimo 3 compartimenti",
+      "un rettangolo avente massimo 3 compartimenti",
+      "un rettangolo avente fino a 3 compartimenti, ma almeno uno"
+    ],
+    "correct_answer": "un rettangolo avente fino a 3 compartimenti, ma almeno uno",
+    "id": "9726fa72-7568-4dd1-a5b7-5848e7268598"
+  },
+  {
+    "question": "Un diagramma di package è rappresentato da:",
+    "answers": [
+      "Un rettangolo con una linguetta a sinistra",
+      "Un rettangolo arrotondato con una linguetta a sinistra",
+      "Un rettangolo",
+      "Un rettangolo con una linguetta a destra"
+    ],
+    "correct_answer": "Un rettangolo con una linguetta a sinistra",
+    "id": "f810e54d-e7de-4b40-a9ce-c2cb4a12c3f7"
+  },
+  {
+    "question": "Come si rappresenta un'azione o uno stato nei diagrammi di attività UML?",
+    "answers": [
+      "Un rettangolo arrotondato",
+      "Una freccia con tratteggio e punta vuota",
+      "Una ellissi",
+      "Un rombo"
+    ],
+    "correct_answer": "Un rettangolo arrotondato",
+    "id": "4806cd9f-63cd-4cd0-afc0-36ec39a98512"
+  },
+  {
+    "question": "Qual è lo scopo principale di un diagramma di attività UML?",
+    "answers": [
+      "modellano il comportamento dinamico del sistema, in particolare il workflow, come ad esempio un flowchart.",
+      "Inizializzano il programma",
+      "Definiscono le strutture dati del sistema",
+      "Rappresentano l'architettura hardware"
+    ],
+    "correct_answer": "modellano il comportamento dinamico del sistema, in particolare il workflow, come ad esempio un flowchart.",
+    "id": "94e70997-aa64-4cf5-82eb-4c39ef5aa6eb"
+  },
+  {
+    "question": "Qual è il significato di riutilizzo del codice nella programmazione?",
+    "answers": [
+      "Riutilizzo del codice",
+      "Variazione del codice esistente",
+      "Scrittura di nuovo codice da zero",
+      "Eliminazione del codice duplicato"
+    ],
+    "correct_answer": "Riutilizzo del codice",
+    "id": "0a16399d-4cfc-42e8-a9a6-8d77aa936701"
+  },
+  {
+    "question": "Qual è una caratteristica del ciclo do-while in Java?",
+    "answers": [
+      "Il ciclo do-while viene eseguito almeno una volta",
+      "Il ciclo do-while non viene eseguito",
+      "Il ciclo do-while viene eseguito due volte",
+      "Il ciclo do-while viene eseguito solo se la condizione è vera inizialmente"
+    ],
+    "correct_answer": "Il ciclo do-while viene eseguito almeno una volta",
+    "id": "34013796-c0ed-4e1b-8a7d-25600a775af9"
+  },
+  {
+    "question": "Qual è l'obiettivo principale del pattern State?",
+    "answers": [
+      "Permettere a un oggetto di cambiare comportamento in base al proprio stato",
+      "Separare l'interfaccia dall'implementazione",
+      "Creare una singola istanza di un oggetto per tutta l'applicazione",
+      "Rimuovere la complessità del ciclo di vita degli oggetti"
+    ],
+    "correct_answer": "Permettere a un oggetto di cambiare comportamento in base al proprio stato",
+    "id": "04426d30-ea11-408f-b785-75616343afe9"
+  },
+  {
+    "question": "Cos'è la sovrascrittura (overriding) in programmazione orientata agli oggetti?",
+    "answers": [
+      "Fornire un'implementazione diversa per un metodo ereditato in una sottoclasse.",
+      "Creare più metodi con lo stesso nome ma parametri diversi all'interno della stessa classe.",
+      "Definire una nuova classe senza ereditare da una superclass.",
+      "Utilizzare una classe senza ridefinire nessun metodo."
+    ],
+    "correct_answer": "Fornire un'implementazione diversa per un metodo ereditato in una sottoclasse.",
+    "id": "d1bf3dd9-ae8d-4a1a-89cb-b8a243d79404"
+  },
+  {
+    "question": "Qual è l'output o l'errore del seguente codice Java?\n\nint[] arr = {1, 2, 3};\nSystem.out.println(arr[3]);",
+    "answers": [
+      "Indice fuori dai limiti dell'array",
+      "Nessun errore",
+      "Stampa 3",
+      "Errore di sintassi"
+    ],
+    "correct_answer": "Indice fuori dai limiti dell'array",
+    "id": "08f5c517-a4df-4993-8ee4-892865b52bd0"
+  },
+  {
+    "question": "Qual è lo scopo principale di un diagramma di sequenza?",
+    "answers": [
+      "Il diagramma di sequenza mostra la struttura dei messaggi che gli oggetti coinvolti si scambiano al fine di realizzare un comportamento.",
+      "Il diagramma di sequenza può completare un diagramma della classe mostrandone il comportamento dinamico.",
+      "Il diagramma di sequenza documenta tipicamente il comportamento di un singolo scenario e, tipicamente, si accompagna ad un diagramma di caso d'uso.",
+      "Il diagramma di sequenza rappresenta la struttura statica delle classi nel sistema."
+    ],
+    "correct_answer": "Il diagramma di sequenza mostra la struttura dei messaggi che gli oggetti coinvolti si scambiano al fine di realizzare un comportamento.",
+    "id": "4dd44ab4-dad0-41c3-9cad-ffd615a25cde"
+  },
+  {
+    "question": "Qual è uno svantaggio tipico di un metodo complesso?",
+    "answers": [
+      "Non è facilmente comprensibile ed applicabile",
+      "È facilmente comprensibile",
+      "È facilmente applicabile",
+      "È sempre efficiente"
+    ],
+    "correct_answer": "Non è facilmente comprensibile ed applicabile",
+    "id": "af454a41-5582-43e6-8624-4563d294aa63"
+  },
+  {
+    "question": "Qual è l'intervallo del tipo di dato short in Java?",
+    "answers": [
+      "-32768 a 32767",
+      "-128 a 127",
+      "-2147483648 a 2147483647",
+      "0 a 65535"
+    ],
+    "correct_answer": "-32768 a 32767",
+    "id": "724006d3-bb45-4c0a-857c-fd6e2e89ed29"
+  },
+  {
+    "question": "Dove possono comparire i metadati in Java?",
+    "answers": [
+      "Possono comparire usando le annotazioni",
+      "Non possono comparire",
+      "Possono comparire solo in fase di compilazione",
+      "Possono comparire solo nei commenti"
+    ],
+    "correct_answer": "Possono comparire usando le annotazioni",
+    "id": "891692f4-3389-45b1-9ced-1a72a8f98e33"
+  },
+  {
+    "question": "Quale tra i seguenti è uno strumento ideale per comunicazioni sincrone a distanza?",
+    "answers": [
+      "Videoconferenza",
+      "Presenza",
+      "Email",
+      "Messaggistica asincrona"
+    ],
+    "correct_answer": "Videoconferenza",
+    "id": "ee6c4842-98f8-4fbb-b914-ee43046fc279"
+  },
+  {
+    "question": "Cosa indica una vista (view) in un modello di sistema?",
+    "answers": [
+      "Mostra alcuni aspetti selezionati di un modello",
+      "Mostra un modello completo",
+      "Mostra solo alcuni modelli",
+      "Mostra il codice sorgente del sistema"
+    ],
+    "correct_answer": "Mostra alcuni aspetti selezionati di un modello",
+    "id": "383cab63-c3ff-437e-8021-1ceb08645dff"
+  },
+  {
+    "question": "Quale sarà l'output del seguente codice Java?\n\nint x = 10;\nif (x > 5) {\n    System.out.println(\"Maggiore\");\n} else {\n    System.out.println(\"Minore\");\n}",
+    "answers": [
+      "Maggiore",
+      "Minore",
+      "Errore di compilazione",
+      "Nessun output"
+    ],
+    "correct_answer": "Maggiore",
+    "id": "57fc1a7f-3d8b-4049-b7b7-cb5bcc45b694"
+  },
+  {
+    "question": "Qual è il vantaggio principale dello stream parallelo in Java?",
+    "answers": [
+      "Permette di eseguire operazioni parallele sui dati della collezione",
+      "Permette il riutilizzo dell'iterazione su vari tipi di collezione",
+      "Garantisce l'ordine degli elementi durante l'elaborazione",
+      "Semplifica la gestione delle eccezioni durante l'elaborazione"
+    ],
+    "correct_answer": "Permette di eseguire operazioni parallele sui dati della collezione",
+    "id": "92464fc8-bab0-46e5-90a0-816bf1b8de7d"
+  },
+  {
+    "question": "Qual è lo scopo principale del pattern Singleton?",
+    "answers": [
+      "Assicurarsi che una classe abbia una sola istanza e fornire un punto di accesso globale",
+      "Definire una classe che può esistere in uno stato solo",
+      "Definire una classe che può esistere in più stati",
+      "Creare una nuova istanza ogni volta che viene richiesta"
+    ],
+    "correct_answer": "Assicurarsi che una classe abbia una sola istanza e fornire un punto di accesso globale",
+    "id": "96d2ee16-ceb8-4d77-ab45-0c8e8a71b726"
+  },
+  {
+    "question": "Una astrazione in UML",
+    "answers": [
+      "è una classificazione di fenomeni in concetti",
+      "è un insieme di regole grafiche o testuali",
+      "è un oggetto nell'universo di dominio cosi come lo percepiamo",
+      "mostra alcuni aspetti selezionati di un modello"
+    ],
+    "correct_answer": "è una classificazione di fenomeni in concetti",
+    "id": "f5529de8-c4dc-4578-84dc-fe530fa53028"
+  },
+  {
+    "question": "La modellazione si definisce come:",
+    "answers": [
+      "Lo sviluppo di astrazioni per rispondere a domande specifiche su un insieme di fenomeni rilevanti, ignorando i dettagli irrilevanti",
+      "Lo sviluppo di astrazioni per rispondere a domande specifiche su un insieme di fenomeni rilevanti, in tutti i loro dettagli",
+      "Lo sviluppo di oggetti per rispondere a domande specifiche su un insieme di fenomeni rilevanti, ignorando i dettagli irrilevanti",
+      "Lo sviluppo di prototipi per rispondere a domande specifiche su un insieme di fenomeni rilevanti, ignorando i dettagli irrilevanti"
+    ],
+    "correct_answer": "Lo sviluppo di astrazioni per rispondere a domande specifiche su un insieme di fenomeni rilevanti, ignorando i dettagli irrilevanti",
+    "id": "8e9e7c56-f82e-4667-b5cf-d0477959aa9c"
+  },
+  {
+    "question": "Qual è la differenza tra sovraccarico di metodo e sovrascrittura di metodo in Java?",
+    "answers": [
+      "La sovrascrittura fornisce una nuova implementazione, mentre il sovraccarico fornisce più metodi con lo stesso nome",
+      "Il sovraccarico è un concetto di polimorfismo a tempo di compilazione, mentre la sovrascrittura è un concetto di polimorfismo",
+      "Il sovraccarico implica la creazione di più metodi con lo stesso nome ma parametri diversi, mentre la sovrascrittura implica",
+      "Sono la stessa cosa"
+    ],
+    "correct_answer": "La sovrascrittura fornisce una nuova implementazione, mentre il sovraccarico fornisce più metodi con lo stesso nome",
+    "id": "0e600b57-afff-4956-8187-7f7e18b00091"
+  },
+  {
+    "question": "Quando si usa la parola chiave break in un'istruzione switch-case?",
+    "answers": [
+      "Per terminare il blocco del case",
+      "Per mettere in pausa l'esecuzione",
+      "Per ripetere il blocco del case",
+      "Per passare al case successivo"
+    ],
+    "correct_answer": "Per terminare il blocco del case",
+    "id": "810b5089-9a86-4bc8-910c-b027bd3b95ea"
+  }
 ]
