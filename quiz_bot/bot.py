@@ -61,7 +61,7 @@ JSON = ".json"
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_text_only=False):
     user_id = update.effective_user.id
     # Inizializzo il manager per l'utente, pronto a raccogliere errori
-    get_manager(user_id)
+    manager = get_manager(user_id)
     try:
         files = [f for f in os.listdir(QUIZ_FOLDER) if f.endswith(JSON)]
     except Exception as e:
@@ -78,7 +78,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
     ]
 
     #se l'utente ha errori aggiungo il bottone
-    manager = WrongAnswersManager(str(user_id))
     if manager.has_wrong_answers():
         keyboard.append([InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors")])
 
@@ -160,7 +159,7 @@ async def send_next_question(user_id, context):
 
     if state["index"] >= state["total"]:
         await show_final_stats(user_id, context, state)
-        manager = WrongAnswersManager(str(user_id))
+        manager = get_manager(user_id)
         manager.commit_changes()
         user_states.pop(user_id, None) 
         return
@@ -329,7 +328,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, subject: str):
     user_id = update.effective_user.id
-    manager = WrongAnswersManager(str(user_id))
+    manager = get_manager(user_id)
     wrong_qs = manager.get_for_subject(subject)
 
     weighted = []
