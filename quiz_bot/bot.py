@@ -301,7 +301,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         state = user_states.get(user_id)
         if state:
             manager.commit_changes()
-            clean_manager(user_id)
+            clear_manager(user_id)
 
         await show_final_stats(user_id, context, state, from_change_course=True)
         await start(update, context, show_intro_text_only=True)
@@ -327,39 +327,49 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")
 
 async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, subject: str):
+    
     user_id = update.effective_user.id
     manager = get_manager(user_id)
     wrong_qs = manager.get_for_subject(subject)
 
+    # Carica domande di base
+    base = json.load(open(os.path.join(QUIZ_FOLDER, subject + JSON), encoding="utf-8"))
+    base_by_id = {q["id"]: q for q in base}
+
     weighted = []
-    for q in wrong_qs:
-        weighted += [q] * q.get("counter", 1)
+    for entry in wrong_qs:
+        q_id = entry["id"]
+        counter = entry.get("counter", 1)
+        if q_id in base_by_id:
+            # Al massimo 2 ripetizioni
+            weighted += [base_by_id[q_id]] * min(counter, 2)
 
     selected = []
     if weighted:
         selected = random.sample(weighted, min(len(weighted), 30))
+
+    # Aggiunta di domande extra se < 30
     if len(selected) < 30:
-        base = json.load(open(os.path.join(QUIZ_FOLDER, subject + JSON), encoding="utf-8"))
-        used = {q["question"] for q in selected}
-        extras = [q for q in base if q["question"] not in used]
+        used_ids = {q["id"] for q in selected}
+        extras = [q for q in base if q["id"] not in used_ids]
         needed = 30 - len(selected)
         selected += random.sample(extras, min(len(extras), needed))
-    
-    #salvo quiz in user_states
+
+    # Salva quiz in stato utente
     user_states[user_id] = {
         "quiz": selected,
-        "quiz_file": subject + JSON,     
+        "quiz_file": subject + JSON,
         "order": list(range(len(selected))),
         "index": 0,
         "score": 0,
         "total": len(selected),
         "is_review": True,
-        "subject": subject 
+        "subject": subject
     }
-
 
     random.shuffle(user_states[user_id]["order"])
     await send_next_question(user_id, context)
+
 
 
 async def handle_answer_callback(user_id: int, answer_index: int, context: ContextTypes.DEFAULT_TYPE):
@@ -384,7 +394,7 @@ async def handle_answer_callback(user_id: int, answer_index: int, context: Conte
         state["score"] += 1
         await context.bot.send_message(chat_id=user_id, text="✅ Corretto!")
         if state.get("is_review"):
-            manager.queue_decrement(subject, question_data["question"])
+            manager.queue_decrement(subject, question_data["id"])
     else:
         await context.bot.send_message(chat_id=user_id, text="❌ Sbagliato!")
         correct_letter = chr(65 + correct_index)
