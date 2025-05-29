@@ -341,8 +341,9 @@ async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, 
         q_id = entry["id"]
         counter = entry.get("counter", 1)
         if q_id in base_by_id:
-            # Al massimo 2 ripetizioni
-            weighted += [base_by_id[q_id]] * min(counter, 2)
+            # Inserisci la domanda (counter + 1) // 2 volte, max 5
+            repeat_times = min((counter + 1) // 2, 5)
+            weighted += [base_by_id[q_id]] * repeat_times
 
     selected = []
     if weighted:
