@@ -3,14 +3,18 @@ import urllib.parse
 import re
 import os
 from bs4 import BeautifulSoup
+import uuid
 import xml.etree.ElementTree as ET
+from pathlib import Path
+
+import fitz  # PyMuPDF
 
 # Percorso della cartella dove si trova questo script
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Nome del file da convertire
-input_file = "tecnologie.txt"  # Cambia questo con il file da elaborare
-output_json = "tecnologie.json"
+input_file = "reti_di_calcolatori.pdf"  # Cambia questo con il file da elaborare
+output_json = "reti_di_calcolatori.json"
 
 def convert_txt_to_json(txt_path, json_path):
     with open(txt_path, "r", encoding="utf-8") as f:
@@ -35,6 +39,7 @@ def convert_txt_to_json(txt_path, json_path):
         options = [re.sub(r"^[A-Da-d]\.\s*", "", line).strip() for line in lines[1:]]
         questions.append({
             "question": question_text,
+            "id": str(uuid.uuid4()),
             "answers": options
         })
 
@@ -123,6 +128,7 @@ def convert_qwz_to_json(qwz_path, json_path):
             correct_answer = answers[0]  # fallback
 
         questions.append({
+            "id": str(uuid.uuid4()),
             "question": question_text,
             "answers": answers,
             "correct_answer": correct_answer
@@ -132,6 +138,93 @@ def convert_qwz_to_json(qwz_path, json_path):
         json.dump(questions, f, indent=2, ensure_ascii=False)
 
     print(f"File JSON salvato in: {json_path}")
+
+def parse_questions_from_text(text):
+    question_pattern = re.compile(
+        r"(\d+)\.\s+(.*?)\n(?:A\.\s+(.*?)\nB\.\s+(.*?)\nC\.\s+(.*?)\nD\.\s+(.*?))\n\n?Answer:\s*([A-D])",
+        re.DOTALL
+    )
+
+    questions = []
+
+    for match in question_pattern.finditer(text):
+        number, qtext, a, b, c, d, answer_letter = match.groups()
+        options = [a.strip(), b.strip(), c.strip(), d.strip()]
+        correct_index = ord(answer_letter.upper()) - ord("A")
+
+        questions.append({
+            "id": str(uuid.uuid4()),
+            "question": qtext.strip(),
+            "answers": options,
+            "correct_answer": options[correct_index],
+            "number": int(number),
+            "image": None
+        })
+
+    return questions
+
+def convert_pdf_to_json(pdf_path, json_path):
+    doc = fitz.open(pdf_path)
+    image_dir = os.path.join(BASE_DIR, "images")
+    os.makedirs(image_dir, exist_ok=True)
+
+    json_basename = Path(json_path).stem[:3].lower()
+    image_counter = 1
+
+    full_text = ""
+    page_question_map = []
+
+    for page_index, page in enumerate(doc):
+        text = page.get_text()
+        full_text += text
+
+        questions = parse_questions_from_text(text)
+        for q in questions:
+            q["page"] = page_index
+            q["image"] = None
+        page_question_map.extend(questions)
+
+        image_list = page.get_images(full=True)
+        for img_index, img in enumerate(image_list):
+            xref = img[0]
+            base_image = doc.extract_image(xref)
+            image_bytes = base_image["image"]
+            image_ext = ".jpg"
+            image_filename = f"{json_basename}{image_counter}.jpg"
+            image_path = os.path.join(image_dir, image_filename)
+
+            with open(image_path, "wb") as img_out:
+                img_out.write(image_bytes)
+
+            # Assegna immagine all'ultima domanda della pagina
+            last_question = [q for q in page_question_map if q["page"] == page_index]
+            if last_question:
+                last_question[-1]["image"] = image_filename
+
+            image_counter += 1
+
+    final_questions = []
+    for q in page_question_map:
+        q.pop("page", None)
+        q.pop("number", None)
+        if q.get("image") is None:
+            q.pop("image", None)
+        final_questions.append(q)
+
+    if os.path.exists(json_path):
+        with open(json_path, "r", encoding="utf-8") as f:
+            existing = json.load(f)
+    else:
+        existing = []
+
+    existing_qtexts = {q["question"] for q in existing}
+    merged = existing + [q for q in final_questions if q["question"] not in existing_qtexts]
+
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(merged, f, indent=2, ensure_ascii=False)
+
+    print(f"{len(final_questions)} nuove domande aggiunte. Totale: {len(merged)}.")
+
 
 def convert_quiz(input_file, json_file):
     input_path = os.path.join(BASE_DIR, input_file)
@@ -143,6 +236,8 @@ def convert_quiz(input_file, json_file):
         convert_txt_to_json(input_path, json_path)
     elif ext == ".qwz":
         convert_qwz_to_json(input_path, json_path)
+    elif ext == ".pdf":
+        convert_pdf_to_json(input_path, json_path)
     else:
         print(f"Estensione '{ext}' non supportata.")
 
