@@ -154,16 +154,21 @@ Come funziona:
 
 Le domande sbagliate vengono salvate automaticamente su Firestore, all’interno di un database non relazionale chiamato:
 
-quiz-bot-errori
+```code
+  quiz-bot-errori
+```
 
 Per ogni utente Telegram, i dati sono salvati nel percorso:
 
-wrong-answers/<telegram_user_id>/<materia>
+```code
+  wrong-answers/<telegram_user_id>/<materia>
+```
+Per ogni domanda sbagliata vengono salvati:
 
-Ogni voce contiene:
-
-    id: l'ID univoco della domanda sbagliata
-    counter: un contatore che indica quante volte è stata sbagliata (x3)
+```code
+  id: l'ID univoco della domanda sbagliata
+  counter: un contatore che indica quante volte è stata sbagliata (x3)
+```
 
 Logica del ripasso:
 
