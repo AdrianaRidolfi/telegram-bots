@@ -25,6 +25,7 @@ telegram-bots/
 │   ├── quizzes
 │   │   ├── diritto.json               # quiz in formato JSON
 │   │   ├── convert.py                 # utility per convertire in JSON
+│   │   ├── add_ids.py                 # utility per aggiungere gli id a un json
 │   │   ├── fonts                      # cartella per i font usati nei PDF
 │   │   │   └── [file di font vari]
 │   │   ├── images                     # cartella per le immagini usate nei quiz
@@ -78,8 +79,8 @@ Clicca su **Fork** in alto a destra per creare una copia nel tuo account.
 ```
 
 - **question**: testo della domanda
-- **options**: lista delle possibili risposte (in ordine)
-- **answer**: indice (zero-based) della risposta corr
+- **xanswers**: lista delle possibili risposte
+- **correct_answer**: la risposta corretta
 - **image**: eventuale immagine jpg, deve in quel caso essere aggiunta nella cartella images
 - **id**: identificativo univoco
 
@@ -108,9 +109,9 @@ Una volta approvato, il tuo quiz sarà incluso nel bot!
 Puoi convertire quiz da diversi formati a JSON usando lo script convert.py.
 Formati supportati:
 
-  - **.txt** (con blocchi DOMANDE / RISPOSTE)
+  - **.txt**: con blocchi DOMANDE e RISPOSTE, vedi [tecnologie.txt](/quiz_bot/quizzes/tecnologie.txt) per un esempio
 
-  - **.qwz** (Quiz Writer XML)
+  - **.qwz** Quiz Writer XML 
 
   - **.pdf** 
 
