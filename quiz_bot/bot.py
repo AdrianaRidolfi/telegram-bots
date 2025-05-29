@@ -487,7 +487,7 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
         keyboard.append([InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors")])
 
     keyboard.append([
-        InlineKeyboardButton("📥 Scarica inedite", callback_data=json.dumps({"cmd": "scarica_inedite", "file": state['quiz_file']})),
+        InlineKeyboardButton("📥 Scarica pdf", callback_data=json.dumps({"cmd": "scarica_inedite", "file": state['quiz_file']})),
         InlineKeyboardButton("🌐 Git", url="https://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")
     ])
 

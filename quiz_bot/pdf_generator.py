@@ -46,7 +46,7 @@ def generate_pdf_sync(quiz_path: str) -> str:
 
     pdf.set_font("DejaVu", "B", 16)
     # modifica ln=True con new_x e new_y per evitare deprecazione
-    pdf.cell(0, 10, "INEDITE", align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    pdf.cell(0, 10, file_name.upper(), align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     pdf.set_font("DejaVu", "", 12)
 
@@ -107,7 +107,7 @@ def generate_pdf_sync(quiz_path: str) -> str:
             pdf.set_text_color(0, 128, 0)
             pdf.set_font("DejaVu", "B", 12)
             # anche qui cambia ln=True come sopra
-            pdf.cell(0, 8, f"Risposta corretta: {correct_letter}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+            pdf.cell(0, 8, f"Answer: {correct_letter}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
             pdf.set_text_color(0, 0, 0)
 
         pdf.ln(5)
