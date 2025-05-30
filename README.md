@@ -111,7 +111,7 @@ Formati supportati:
 
   - **.txt**: con blocchi DOMANDE e RISPOSTE, vedi [tecnologie.txt](/quiz_bot/quizzes/tecnologie.txt) per un esempio
 
-  - **.qwz** Quiz Writer XML 
+  - **.qwz** XML prodotto per [Question Writer](https://www.questionwriter.com/download.html)  
 
   - **.pdf** 
 
