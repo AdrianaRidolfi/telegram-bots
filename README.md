@@ -1,6 +1,6 @@
 # telegram-bots
 
-Questo repository contiene bot Telegram per somministrare quiz agli utenti in chat private.
+Questo repository contiene [bot Telegram](https://core.telegram.org/bots/api) per somministrare quiz agli utenti in chat private.
 
 ---
 
@@ -47,7 +47,7 @@ pip install -r requirements.txt
 
 ## Deploy su Render
 
-Il bot è attualmente deployato gratuitamente su [Render](https://render.com/). Questo significa che, se non viene utilizzato da un po' di tempo, il server può andare in modalità "sleep" per risparmiare risorse. In tal caso, la prima risposta al comando /start può richiedere fino a 50 secondi. Una volta riattivato, le risposte torneranno rapide.
+Il bot è attualmente deployato gratuitamente su [Render](https://render.com/). Questo significa che, se non viene utilizzato da un po' di tempo, il server può andare in modalità "sleep" per risparmiare risorse. In tal caso, la prima risposta al comando /start può richiedere più di 50 secondi. Una volta riattivato, le risposte torneranno rapide.
 
 ## Come contribuire con nuovi test
 
@@ -79,7 +79,7 @@ Clicca su **Fork** in alto a destra per creare una copia nel tuo account.
 ```
 
 - **question**: testo della domanda
-- **xanswers**: lista delle possibili risposte
+- **answers**: lista delle possibili risposte
 - **correct_answer**: la risposta corretta
 - **image**: eventuale immagine jpg, deve in quel caso essere aggiunta nella cartella images
 - **id**: identificativo univoco
@@ -152,7 +152,7 @@ Il bot implementa un sistema di ripasso mirato basato sugli errori commessi dagl
 
 Come funziona:
 
-Le domande sbagliate vengono salvate automaticamente su Firestore, all’interno di un database non relazionale chiamato:
+Le domande sbagliate vengono salvate automaticamente su [Firestore](https://firebase.google.com/docs/firestore?hl=it), all’interno di un database non relazionale chiamato:
 
 ```code
   quiz-bot-errori
