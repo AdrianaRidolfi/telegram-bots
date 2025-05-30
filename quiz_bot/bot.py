@@ -16,7 +16,7 @@ from pdf_generator import generate_pdf
 from wrong_answers import WrongAnswersManager
 from firebase_admin import credentials, firestore
 
-# Carica la variabile d'ambiente (nome corretto: FIREBASE_CREDENTIALS_JSON)
+# Carica la variabile d'ambiente
 firebase_credentials = os.environ.get("FIREBASE_CREDENTIALS_JSON")
 
 if not firebase_credentials:
@@ -33,11 +33,10 @@ if not firebase_admin._apps:
 # Inizializza Firestore
 db = firestore.client()
 
-# --- Manager globale per condivisione istanze per utente ---
 user_managers: Dict[int, WrongAnswersManager] = {}
 
 def get_manager(user_id: int) -> WrongAnswersManager:
-    """Restituisce (o crea) l'istanza condivisa di WrongAnswersManager per questo user_id."""
+    # Restituisce (o crea) l'istanza condivisa di WrongAnswersManager per questo user_id
     if user_id not in user_managers:
         user_managers[user_id] = WrongAnswersManager(str(user_id))
     return user_managers[user_id]
@@ -139,7 +138,7 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     user_states[user_id] = {
         "quiz": quiz_data,
-        "quiz_file": filename,  # AGGIUNTO
+        "quiz_file": filename, 
         "order": question_order,
         "index": 0,
         "score": 0,
@@ -212,7 +211,7 @@ async def send_next_question(user_id, context):
                         caption=question_text,
                         reply_markup=reply_markup
                     )
-                return  # Non inviare anche il testo dopo la foto
+                return 
             except Exception as e:
                 await context.bot.send_message(chat_id=user_id, text=f"❗ Errore nell'invio dell'immagine: {e}")
 
@@ -324,7 +323,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
     elif data == "git":
-        await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")
+        await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots")
 
 async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, subject: str):
     
@@ -488,7 +487,7 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
 
     keyboard.append([
         InlineKeyboardButton("📥 Scarica pdf", callback_data=json.dumps({"cmd": "scarica_inedite", "file": state['quiz_file']})),
-        InlineKeyboardButton("🌐 Git", url="https://github.com/AdrianaRidolfi/telegram-bots/blob/main/README.md")
+        InlineKeyboardButton("🌐 Git", url="https://github.com/AdrianaRidolfi/telegram-bots")
     ])
 
     reply_markup = InlineKeyboardMarkup(keyboard)
