@@ -169,8 +169,9 @@ Per ogni domanda sbagliata vengono salvati:
   id: l'ID univoco della domanda sbagliata
   counter: un contatore che indica quante volte è stata sbagliata (x3)
 ```
+![immagine](https://github.com/user-attachments/assets/286fcb0d-aa4a-46b0-ae67-650bda575e42)
 
-Logica del ripasso:
+### Logica del ripasso:
 
 Quando un utente attiva una sessione di ripasso per una materia, il bot:
   - Recupera le domande sbagliate di quella materia
