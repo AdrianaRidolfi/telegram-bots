@@ -1114,12 +1114,12 @@
     "id": "8ef58171-2b45-4dd8-895a-31c9d57f1259",
     "question": "L'organizzazione d'impresa e i processi decisionali sono legati tra loro in quanto:",
     "answers": [
-      "L'articolazione degli obiettivi generali in sotto-obiettivi strumentali non deve essere coerente con il disegno \norganizzativo",
-      "Gli aspetti meno visibili ma più resistenti dell'organizzazione influenzano fortemente i processi decisionali strategici \ndelle imprese",
+      "L'articolazione degli obiettivi generali in sotto-obiettivi strumentali non deve essere coerente con il disegno organizzativo",
+      "Gli aspetti meno visibili ma più resistenti dell'organizzazione influenzano fortemente i processi decisionali strategici delle imprese",
       "Gli aspetti più visibili dell'organizzazione influenzano fortemente i processi decisionali strategici delle imprese",
-      "L'articolazione degli obiettivi generali in sotto-obiettivi strumentali deve essere coerente con il disegno organizzativo \ne gli aspetti meno visibili ma più resistenti dell'organizzazione influenzano fortemente i processi decisionali strategici \ndelle imprese"
+      "L'articolazione degli obiettivi generali in sotto-obiettivi strumentali deve essere coerente con il disegno organizzativo e gli aspetti meno visibili ma più resistenti dell'organizzazione influenzano fortemente i processi decisionali strategici delle imprese"
     ],
-    "correct_answer": "L'articolazione degli obiettivi generali in sotto-obiettivi strumentali deve essere coerente con il disegno organizzativo \ne gli aspetti meno visibili ma più resistenti dell'organizzazione influenzano fortemente i processi decisionali strategici \ndelle imprese"
+    "correct_answer": "L'articolazione degli obiettivi generali in sotto-obiettivi strumentali deve essere coerente con il disegno organizzativo e gli aspetti meno visibili ma più resistenti dell'organizzazione influenzano fortemente i processi decisionali strategici delle imprese"
   },
   {
     "id": "6555590e-cba4-40eb-9d35-acbce568dbdc",
@@ -1136,12 +1136,12 @@
     "id": "e5a97e56-3d42-4476-82d0-161757f4aef1",
     "question": "In generale, il termine organizzazione fa riferimento:",
     "answers": [
-      "A circostanze in cui un insieme d'individui condivide uno scopo comune, che può essere perseguito tramite azioni \ncollettive",
+      "A circostanze in cui un insieme d'individui condivide uno scopo comune, che può essere perseguito tramite azioni collettive",
       "Ad azioni individuali",
       "A circostanze in cui un insieme d'individui non condivide uno scopo comune",
-      "A circostanze in cui un insieme d'individui condivide uno scopo comune, che può essere perseguito tramite azioni \nindividuali"
+      "A circostanze in cui un insieme d'individui condivide uno scopo comune, che può essere perseguito tramite azioni individuali"
     ],
-    "correct_answer": "A circostanze in cui un insieme d'individui condivide uno scopo comune, che può essere perseguito tramite azioni \ncollettive"
+    "correct_answer": "A circostanze in cui un insieme d'individui condivide uno scopo comune, che può essere perseguito tramite azioni collettive"
   },
   {
     "id": "ccfdd435-86d5-4514-921e-22cfd4314740",
@@ -1238,20 +1238,20 @@
       "Una fase di stallo e, successivamente, una fase di ripresa della crescita dell'organizzazione medesima",
       "Una fase di declino, seguita da una fase di crescita dell'organizzazione medesima",
       "Un periodo in cui non può essere raggiunta la fase di declino da parte dell'organizzazione medesima",
-      "Il declino e, spesso, la contrazione dimensionale dell'organizzazione medesima, che può concludersi nell'estinzione o \nnell'incorporazione della stessa da parte di altre organizzazioni più vitali"
+      "Il declino e, spesso, la contrazione dimensionale dell'organizzazione medesima, che può concludersi nell'estinzione o nell'incorporazione della stessa da parte di altre organizzazioni più vitali"
     ],
-    "correct_answer": "Il declino e, spesso, la contrazione dimensionale dell'organizzazione medesima, che può concludersi nell'estinzione o \nnell'incorporazione della stessa da parte di altre organizzazioni più vitali"
+    "correct_answer": "Il declino e, spesso, la contrazione dimensionale dell'organizzazione medesima, che può concludersi nell'estinzione o nell'incorporazione della stessa da parte di altre organizzazioni più vitali"
   },
   {
     "id": "0950d120-4cf4-416a-8c2f-cb1dbcd67388",
     "question": "Il caso dell'azienda \"Bodin\" consente di comprendere meglio come:",
     "answers": [
       "Con la crescita e il progredire della specializzazione, l'organizzazione non si modifica minimamente",
-      "Con la crescita e il progredire della specializzazione, l'organizzazione si modifica, emergono problemi nuovi e \ncambiano i meccanismi di base per il coordinamento",
+      "Con la crescita e il progredire della specializzazione, l'organizzazione si modifica, emergono problemi nuovi e cambiano i meccanismi di base per il coordinamento",
       "Con la crescita e il progredire della specializzazione, non emergono problemi nuovi",
       "Con la crescita e il progredire della specializzazione, non cambiano i meccanismi di base per il coordinamento"
     ],
-    "correct_answer": "Con la crescita e il progredire della specializzazione, l'organizzazione si modifica, emergono problemi nuovi e \ncambiano i meccanismi di base per il coordinamento"
+    "correct_answer": "Con la crescita e il progredire della specializzazione, l'organizzazione si modifica, emergono problemi nuovi e cambiano i meccanismi di base per il coordinamento"
   },
   {
     "id": "16ab1511-8908-4dcf-ab4b-b11699d10e46",
@@ -1280,11 +1280,11 @@
     "question": "L'adattamento reciproco:",
     "answers": [
       "Non gioca mai un ruolo dominante in organizzazioni complesse e con elevati livelli di specializzazione",
-      "Gioca un ruolo dominante in organizzazioni complesse e con elevati livelli di specializzazione, soprattutto in presenza \nd'incertezza e ambiguità",
+      "Gioca un ruolo dominante in organizzazioni complesse e con elevati livelli di specializzazione, soprattutto in presenza d'incertezza e ambiguità",
       "Non è un meccanismo di base attraverso il quale può avvenire il coordinamento",
       "E' paragonabile alla supervisione diretta"
     ],
-    "correct_answer": "Gioca un ruolo dominante in organizzazioni complesse e con elevati livelli di specializzazione, soprattutto in presenza \nd'incertezza e ambiguità"
+    "correct_answer": "Gioca un ruolo dominante in organizzazioni complesse e con elevati livelli di specializzazione, soprattutto in presenza d'incertezza e ambiguità"
   },
   {
     "id": "9345e15f-4ace-4a32-9da1-8d2424c51f8b",
@@ -1345,10 +1345,10 @@
     "id": "cc33db8b-2a2d-4c33-89ac-8a35aa06fc3e",
     "question": "La progettazione microstrutturale:",
     "answers": [
-      "Afferisce all'individuazione dei criteri di raggruppamento secondo i quali effettuare le aggregazioni degli individui e \npervenire a una suddivisione del lavoro tra le unità stesse",
+      "Afferisce all'individuazione dei criteri di raggruppamento secondo i quali effettuare le aggregazioni degli individui e pervenire a una suddivisione del lavoro tra le unità stesse",
       "S'incrocia con la gestione delle risorse umane",
       "Non riguarda le organizzazioni",
-      "Non riguarda il complesso di scelte per determinare il livello di specializzazione orizzontale e verticale delle mansioni \nindividuali"
+      "Non riguarda il complesso di scelte per determinare il livello di specializzazione orizzontale e verticale delle mansioni individuali"
     ],
     "correct_answer": "S'incrocia con la gestione delle risorse umane"
   },
@@ -1358,10 +1358,10 @@
     "answers": [
       "Insiemi organizzati di attività e di decisioni, non finalizzati alla realizzazione di output",
       "Insiemi organizzati di attività e di decisioni, finalizzati alla realizzazione di input",
-      "Insiemi organizzati di attività e di decisioni, finalizzati alla realizzazione di output (prodotti, servizi, informazioni) \neffettivamente richiesti dai clienti (o dagli utenti) e ai quali questi attribuiscono un \"valore\" ben definito",
+      "Insiemi organizzati di attività e di decisioni, finalizzati alla realizzazione di output (prodotti, servizi, informazioni) effettivamente richiesti dai clienti (o dagli utenti) e ai quali questi attribuiscono un \"valore\" ben definito",
       "Non riguardano, in senso lato, il coordinamento"
     ],
-    "correct_answer": "Insiemi organizzati di attività e di decisioni, finalizzati alla realizzazione di output (prodotti, servizi, informazioni) \neffettivamente richiesti dai clienti (o dagli utenti) e ai quali questi attribuiscono un \"valore\" ben definito"
+    "correct_answer": "Insiemi organizzati di attività e di decisioni, finalizzati alla realizzazione di output (prodotti, servizi, informazioni) effettivamente richiesti dai clienti (o dagli utenti) e ai quali questi attribuiscono un \"valore\" ben definito"
   },
   {
     "id": "1b654ef7-80af-4568-8d83-0474b3969e34",
@@ -1380,10 +1380,10 @@
     "answers": [
       "Definisce, esclusivamente, il contenuto del lavoro dei singoli individui all'interno dell'organizzazione",
       "Definisce, esclusivamente, il ruolo dei singoli individui all'interno dell'organizzazione",
-      "Interviene, esclusivamente, per sviluppare le competenze e le capacita delle persone che operano all'interno \ndell'organizzazione",
-      "Definisce il contenuto del lavoro e il ruolo dei singoli individui all'interno dell'organizzazione, intervenendo, ove \nnecessario, per sviluppare le competenze e le capacita delle persone che operano all'interno dell'organizzazione \nmedesima"
+      "Interviene, esclusivamente, per sviluppare le competenze e le capacita delle persone che operano all'interno dell'organizzazione",
+      "Definisce il contenuto del lavoro e il ruolo dei singoli individui all'interno dell'organizzazione, intervenendo, ove necessario, per sviluppare le competenze e le capacita delle persone che operano all'interno dell'organizzazione medesima"
     ],
-    "correct_answer": "Definisce il contenuto del lavoro e il ruolo dei singoli individui all'interno dell'organizzazione, intervenendo, ove \nnecessario, per sviluppare le competenze e le capacita delle persone che operano all'interno dell'organizzazione \nmedesima"
+    "correct_answer": "Definisce il contenuto del lavoro e il ruolo dei singoli individui all'interno dell'organizzazione, intervenendo, ove necessario, per sviluppare le competenze e le capacita delle persone che operano all'interno dell'organizzazione medesima"
   },
   {
     "id": "2a0fdf8c-a684-4647-a801-d1bb6ef424ca",
@@ -1477,12 +1477,12 @@
     "id": "539e3545-7abe-4840-8f87-8793dd7bb9da",
     "question": "Un individuo con una capacità superiore rispetto a un altro individuo:",
     "answers": [
-      "Può ottenere una prestazione maggiore rispetto a quella dell'altro individuo, quando la motivazione di entrambi gli \nindividui è la stessa ed è bassa",
-      "Ottiene, esclusivamente, una prestazione minore rispetto a quella dell'altro individuo, quando la motivazione di \nentrambi gli individui è la stessa ed è bassa",
-      "Ottiene, esclusivamente, la medesima prestazione dell'altro individuo, quando la motivazione di entrambi gli \nindividui è la stessa ed è bassa",
+      "Può ottenere una prestazione maggiore rispetto a quella dell'altro individuo, quando la motivazione di entrambi gli individui è la stessa ed è bassa",
+      "Ottiene, esclusivamente, una prestazione minore rispetto a quella dell'altro individuo, quando la motivazione di entrambi gli individui è la stessa ed è bassa",
+      "Ottiene, esclusivamente, la medesima prestazione dell'altro individuo, quando la motivazione di entrambi gli individui è la stessa ed è bassa",
       "Ottiene una prestazione non comparabile con quella dell'altro individuo"
     ],
-    "correct_answer": "Può ottenere una prestazione maggiore rispetto a quella dell'altro individuo, quando la motivazione di entrambi gli \nindividui è la stessa ed è bassa"
+    "correct_answer": "Può ottenere una prestazione maggiore rispetto a quella dell'altro individuo, quando la motivazione di entrambi gli individui è la stessa ed è bassa"
   },
   {
     "id": "3b054d56-651f-4749-b66c-d529d640dab0",
@@ -1497,7 +1497,7 @@
   },
   {
     "id": "32b61434-c68b-486e-893d-0f4f33929f05",
-    "question": "Secondo le teorie del processo, i meccanismi che spiegano il formarsi, il consolidarsi e l'estinguersi della \nmotivazione sono:",
+    "question": "Secondo le teorie del processo, i meccanismi che spiegano il formarsi, il consolidarsi e l'estinguersi della motivazione sono:",
     "answers": [
       "Esclusivamente i rinforzi, il goal-setting e l'equità",
       "Esclusivamente il goal-setting, l'aspettativa, la valenza e l'equità",
@@ -1677,21 +1677,21 @@
     "answers": [
       "Esclusivamente dal bilanciamento tra le esigenze di efficienza ai diversi livelli gerarchici dell'organizzazione",
       "Esclusivamente dall'utilizzo dei criteri di raggruppamento",
-      "Dal bilanciamento tra le esigenze di efficienza e di efficacia ai diversi livelli gerarchici dell'organizzazione e dal \nconseguente utilizzo dei criteri di raggruppamento",
+      "Dal bilanciamento tra le esigenze di efficienza e di efficacia ai diversi livelli gerarchici dell'organizzazione e dal conseguente utilizzo dei criteri di raggruppamento",
       "Dallo sbilanciamento tra le esigenze di efficienza e di efficacia ai diversi livelli gerarchici dell'organizzazione"
     ],
-    "correct_answer": "Dal bilanciamento tra le esigenze di efficienza e di efficacia ai diversi livelli gerarchici dell'organizzazione e dal \nconseguente utilizzo dei criteri di raggruppamento"
+    "correct_answer": "Dal bilanciamento tra le esigenze di efficienza e di efficacia ai diversi livelli gerarchici dell'organizzazione e dal conseguente utilizzo dei criteri di raggruppamento"
   },
   {
     "id": "0785054b-99af-4f96-8a4f-42cb3d2e00cf",
     "question": "Le principali soluzioni per il coordinamento fra unità organizzative sono:",
     "answers": [
-      "I ruoli di collegamento, i manager integratori, i team interfunzionali, i sistemi di pianificazione e controllo nonché i \nsistemi informativi aziendali",
-      "Esclusivamente i manager integratori, i team interfunzionali, i sistemi di pianificazione e controllo nonché i sistemi \ninformativi aziendali",
-      "Esclusivamente I ruoli di collegamento, i team interfunzionali, i sistemi di pianificazione e controllo nonché i sistemi \ninformativi aziendali",
-      "Esclusivamente i ruoli di collegamento, i manager integratori, i team interfunzionali nonché i sistemi di \npianificazione e controllo"
+      "I ruoli di collegamento, i manager integratori, i team interfunzionali, i sistemi di pianificazione e controllo nonché i sistemi informativi aziendali",
+      "Esclusivamente i manager integratori, i team interfunzionali, i sistemi di pianificazione e controllo nonché i sistemi informativi aziendali",
+      "Esclusivamente I ruoli di collegamento, i team interfunzionali, i sistemi di pianificazione e controllo nonché i sistemi informativi aziendali",
+      "Esclusivamente i ruoli di collegamento, i manager integratori, i team interfunzionali nonché i sistemi di pianificazione e controllo"
     ],
-    "correct_answer": "I ruoli di collegamento, i manager integratori, i team interfunzionali, i sistemi di pianificazione e controllo nonché i \nsistemi informativi aziendali"
+    "correct_answer": "I ruoli di collegamento, i manager integratori, i team interfunzionali, i sistemi di pianificazione e controllo nonché i sistemi informativi aziendali"
   },
   {
     "id": "2a1f32bd-a585-421a-8a80-6fa55ebb11da",
@@ -1794,14 +1794,14 @@
   },
   {
     "id": "8faea433-679d-4493-8ab6-eb79dfd38462",
-    "question": "Il progetto di cambiamento di Cobra Automotive Technologies, avviato nel 2003 e volto a ridisegnare \nl'organizzazione secondo nuovi principi, ha previsto le seguenti fasi:",
+    "question": "Il progetto di cambiamento di Cobra Automotive Technologies, avviato nel 2003 e volto a ridisegnare l'organizzazione secondo nuovi principi, ha previsto le seguenti fasi:",
     "answers": [
-      "La mappatura dei processi aziendali, l'individuazione delle key performance dei processi, l'individuazione dei process \nowner e la selezione dei processi chiave",
-      "La mappatura dei processi aziendali, l'individuazione delle key performance dei processi, l'individuazione dei process \nowner, la selezione dei processi chiave e la definizione di una modalità di monitoraggio nonché di miglioramento \ncontinuo dei processi",
-      "L'individuazione delle key performance dei processi, l'individuazione dei process owner, la selezione dei processi \nchiave e la definizione di una modalità di monitoraggio nonché di miglioramento continuo dei processi",
-      "La mappatura dei processi aziendali, l'individuazione dei process owner, la selezione dei processi chiave e la \ndefinizione di una modalità di monitoraggio nonché di miglioramento continuo dei processi"
+      "La mappatura dei processi aziendali, l'individuazione delle key performance dei processi, l'individuazione dei process owner e la selezione dei processi chiave",
+      "La mappatura dei processi aziendali, l'individuazione delle key performance dei processi, l'individuazione dei process owner, la selezione dei processi chiave e la definizione di una modalità di monitoraggio nonché di miglioramento continuo dei processi",
+      "L'individuazione delle key performance dei processi, l'individuazione dei process owner, la selezione dei processi chiave e la definizione di una modalità di monitoraggio nonché di miglioramento continuo dei processi",
+      "La mappatura dei processi aziendali, l'individuazione dei process owner, la selezione dei processi chiave e la definizione di una modalità di monitoraggio nonché di miglioramento continuo dei processi"
     ],
-    "correct_answer": "La mappatura dei processi aziendali, l'individuazione delle key performance dei processi, l'individuazione dei process \nowner, la selezione dei processi chiave e la definizione di una modalità di monitoraggio nonché di miglioramento \ncontinuo dei processi"
+    "correct_answer": "La mappatura dei processi aziendali, l'individuazione delle key performance dei processi, l'individuazione dei process owner, la selezione dei processi chiave e la definizione di una modalità di monitoraggio nonché di miglioramento continuo dei processi"
   },
   {
     "id": "fb4cb87d-b9c9-4cd6-849e-5fcb4efd1c4c",
@@ -1829,12 +1829,12 @@
     "id": "6f8b016a-f3f6-4460-964f-f0bfcec26dca",
     "question": "I fattori competitivi che hanno spinto diverse aziende ad adottare un orientamento ai processi sono:",
     "answers": [
-      "L'orientamento al cliente, la time-based competition, la ricerca congiunta di efficienza ed efficacia nonché la \nnecessità di canalizzare le risorse e le competenze verso i risultati",
-      "Esclusivamente la time-based competition, la ricerca congiunta di efficienza ed efficacia nonché la necessità di \ncanalizzare le risorse e le competenze verso i risultati",
+      "L'orientamento al cliente, la time-based competition, la ricerca congiunta di efficienza ed efficacia nonché la necessità di canalizzare le risorse e le competenze verso i risultati",
+      "Esclusivamente la time-based competition, la ricerca congiunta di efficienza ed efficacia nonché la necessità di canalizzare le risorse e le competenze verso i risultati",
       "Soltanto l'orientamento al cliente, la time-based competition e la ricerca congiunta di efficienza ed efficacia",
-      "Unicamente la ricerca congiunta di efficienza ed efficacia nonché la necessità di canalizzare le risorse e le \ncompetenze verso i risultati"
+      "Unicamente la ricerca congiunta di efficienza ed efficacia nonché la necessità di canalizzare le risorse e le competenze verso i risultati"
     ],
-    "correct_answer": "L'orientamento al cliente, la time-based competition, la ricerca congiunta di efficienza ed efficacia nonché la \nnecessità di canalizzare le risorse e le competenze verso i risultati"
+    "correct_answer": "L'orientamento al cliente, la time-based competition, la ricerca congiunta di efficienza ed efficacia nonché la necessità di canalizzare le risorse e le competenze verso i risultati"
   },
   {
     "id": "6b82d6ad-d2d1-49cb-a3e9-fccd26599c22",
@@ -1882,7 +1882,7 @@
   },
   {
     "id": "d9adbbb8-ab0e-4ac4-a200-5123391b02c7",
-    "question": "L'American Productivity and Quality Centre propone un modello di riferimento dei processi di una tipica azienda \nindustriale o di servizi, individuando:",
+    "question": "L'American Productivity and Quality Centre propone un modello di riferimento dei processi di una tipica azienda industriale o di servizi, individuando:",
     "answers": [
       "N. 6 macroprocessi",
       "N. 12 macroprocessi",
@@ -1907,7 +1907,7 @@
     "question": "L'efficienza di un processo è:",
     "answers": [
       "La capacità di un processo di generare un output che soddisfi le esigenze del cliente",
-      "Ciò che determina superiori ricavi, grazie a una maggiore soddisfazione del cliente o al raggiungimento di un maggior \nnumero di clienti",
+      "Ciò che determina superiori ricavi, grazie a una maggiore soddisfazione del cliente o al raggiungimento di un maggior numero di clienti",
       "La capacità di un processo di ottimizzare il rapporto tra il valore dell'output e l'impiego di risorse",
       "Ciò che non determina il raggiungimento dei risultati aziendali attraverso la riduzione dei costi complessivi"
     ],
@@ -1928,7 +1928,7 @@
     "id": "fbf27f7c-3c1d-4245-b161-23605ca1be7c",
     "question": "Le prestazioni di flessibilità:",
     "answers": [
-      "Misurano il tempo che intercorre tra il momento in cui il cliente richiede l'output del processo e il momento in cui la \nsua richiesta viene soddisfatta",
+      "Misurano il tempo che intercorre tra il momento in cui il cliente richiede l'output del processo e il momento in cui la sua richiesta viene soddisfatta",
       "Misurano la capacità del processo di rispondere a cambiamenti richiesti dal cliente con costi ridotti e tempi limitati",
       "Misurano la qualità dell'output",
       "Misura la somma dei costi delle attività di un processo"
@@ -1942,9 +1942,9 @@
       "Al miglioramento di una performance non corrisponde mai il peggioramento di qualche altra",
       "Al miglioramento di una performance corrisponde sempre un'inalterazione di tutte le altre",
       "Al miglioramento di una performance corrisponde sempre il miglioramento di tutte le altre",
-      "Non sempre un'azione volta al miglioramento di una dimensione consente di migliorare o anche solo lasciare \ninvariati gli altri risultati"
+      "Non sempre un'azione volta al miglioramento di una dimensione consente di migliorare o anche solo lasciare invariati gli altri risultati"
     ],
-    "correct_answer": "Non sempre un'azione volta al miglioramento di una dimensione consente di migliorare o anche solo lasciare \ninvariati gli altri risultati"
+    "correct_answer": "Non sempre un'azione volta al miglioramento di una dimensione consente di migliorare o anche solo lasciare invariati gli altri risultati"
   },
   {
     "id": "6171f228-af68-407e-a1c3-3a91aa608187",
@@ -1961,12 +1961,12 @@
     "id": "4c963bc7-9d1e-4ac3-99ce-4e6eab3e7e60",
     "question": "I compiti manageriali connessi con la dimensione processo:",
     "answers": [
-      "Non riguardano il (ri) disegno del processo e l'ottimizzazione dei flussi e delle interdipendenze tra le attività, al fine \ndi garantire i target di prestazione definiti",
+      "Non riguardano il (ri) disegno del processo e l'ottimizzazione dei flussi e delle interdipendenze tra le attività, al fine di garantire i target di prestazione definiti",
       "Non riguardano la definizione di politiche, procedure e standard per lo svolgimento e la gestione dei processi",
       "Non riguardano il miglioramento continuo delle modalità attuative e gestionali dei processi",
-      "Riguardano il deployment degli obiettivi generali dell'impresa in obiettivi specifici e il monitoraggio delle prestazioni \nper ciascun processo chiave"
+      "Riguardano il deployment degli obiettivi generali dell'impresa in obiettivi specifici e il monitoraggio delle prestazioni per ciascun processo chiave"
     ],
-    "correct_answer": "Riguardano il deployment degli obiettivi generali dell'impresa in obiettivi specifici e il monitoraggio delle prestazioni \nper ciascun processo chiave"
+    "correct_answer": "Riguardano il deployment degli obiettivi generali dell'impresa in obiettivi specifici e il monitoraggio delle prestazioni per ciascun processo chiave"
   },
   {
     "id": "26b5bcb9-a25f-4f81-8f2b-fe9f79fe2a68",
@@ -1996,21 +1996,21 @@
     "answers": [
       "Introduzione dei process owner e job redesign",
       "Delega decisionale, riorganizzazione degli staff e delle attività di supporto nonché lean organisation",
-      "Introduzione dei process owner, job redesign, delega decisionale, riorganizzazione degli staff e delle attività di \nsupporto nonché lean organisation",
+      "Introduzione dei process owner, job redesign, delega decisionale, riorganizzazione degli staff e delle attività di supporto nonché lean organisation",
       "Riorganizzazione degli staff e delle attività di supporto nonché lean organisation"
     ],
-    "correct_answer": "Introduzione dei process owner, job redesign, delega decisionale, riorganizzazione degli staff e delle attività di \nsupporto nonché lean organisation"
+    "correct_answer": "Introduzione dei process owner, job redesign, delega decisionale, riorganizzazione degli staff e delle attività di supporto nonché lean organisation"
   },
   {
     "id": "b8b2314c-8f34-4d89-81c7-45d80e9e5f9c",
     "question": "I compiti tipici del process owner prevedono:",
     "answers": [
       "Soltanto la definizione degli obiettivi del processo e la sua progettazione per garantire i risultati auspicati",
-      "Unicamente  il coordinamento e la motivazione delle risorse nonché delle unità organizzative e la promozione del \nmiglioramento continuo del processo",
-      "La definizione degli obiettivi del processo, la sua progettazione per garantire i risultati auspicati, il coordinamento e \nla motivazione delle risorse nonché delle unità organizzative e la promozione del miglioramento continuo del processo \nmedesimo",
-      "Esclusivamente la progettazione del processo per garantire i risultati auspicati, il coordinamento e la motivazione \ndelle risorse nonché delle unità organizzative e la promozione del miglioramento continuo del processo medesimo"
+      "Unicamente  il coordinamento e la motivazione delle risorse nonché delle unità organizzative e la promozione del miglioramento continuo del processo",
+      "La definizione degli obiettivi del processo, la sua progettazione per garantire i risultati auspicati, il coordinamento e la motivazione delle risorse nonché delle unità organizzative e la promozione del miglioramento continuo del processo medesimo",
+      "Esclusivamente la progettazione del processo per garantire i risultati auspicati, il coordinamento e la motivazione delle risorse nonché delle unità organizzative e la promozione del miglioramento continuo del processo medesimo"
     ],
-    "correct_answer": "La definizione degli obiettivi del processo, la sua progettazione per garantire i risultati auspicati, il coordinamento e \nla motivazione delle risorse nonché delle unità organizzative e la promozione del miglioramento continuo del processo \nmedesimo"
+    "correct_answer": "La definizione degli obiettivi del processo, la sua progettazione per garantire i risultati auspicati, il coordinamento e la motivazione delle risorse nonché delle unità organizzative e la promozione del miglioramento continuo del processo medesimo"
   },
   {
     "id": "09ec6c69-c755-4708-b6c1-883fccd25701",
@@ -2019,7 +2019,7 @@
       "Ha competenze prevalentemente relazionali e di leadership (analisi, mediazione, motivazione)",
       "Ha competenze di progettazione e gestione dei flussi del processo",
       "Valuta le prestazioni e propone miglioramenti strutturali al processo",
-      "Responsabile di fronte al cliente e al vertice aziendale delle prestazioni medie del processo e, quindi, di tutti i singoli \nattraversamenti (istanze)"
+      "Responsabile di fronte al cliente e al vertice aziendale delle prestazioni medie del processo e, quindi, di tutti i singoli attraversamenti (istanze)"
     ],
     "correct_answer": "Ha competenze prevalentemente relazionali e di leadership (analisi, mediazione, motivazione)"
   },
@@ -2050,11 +2050,11 @@
     "question": "Per portare la logica cliente-fornitore nelle attività di supporto:",
     "answers": [
       "E' possibile, soltanto scorporare le attività di supporto critiche e riportarle nei processi primari",
-      "Si può, unicamente, utilizzare l'outsourcing dei processi di supporto e responsabilizzare gli staff su indicatori di \nservizio",
+      "Si può, unicamente, utilizzare l'outsourcing dei processi di supporto e responsabilizzare gli staff su indicatori di servizio",
       "Si puo, esclusivamente, utilizzare l'outsourcing dei processi di supporto",
-      "Si puo scorporare le attività di supporto critiche e riportarle nei processi primari, utilizzare l'outsourcing dei processi \ndi supporto e responsabilizzare gli staff su indicatori di servizio"
+      "Si puo scorporare le attività di supporto critiche e riportarle nei processi primari, utilizzare l'outsourcing dei processi di supporto e responsabilizzare gli staff su indicatori di servizio"
     ],
-    "correct_answer": "Si puo scorporare le attività di supporto critiche e riportarle nei processi primari, utilizzare l'outsourcing dei processi \ndi supporto e responsabilizzare gli staff su indicatori di servizio"
+    "correct_answer": "Si puo scorporare le attività di supporto critiche e riportarle nei processi primari, utilizzare l'outsourcing dei processi di supporto e responsabilizzare gli staff su indicatori di servizio"
   },
   {
     "id": "4a63cc2c-81a0-4f25-8cc0-19b28e297992",
@@ -2082,23 +2082,23 @@
     "id": "e63e0af4-ad1e-4e2d-aae2-dd042be76645",
     "question": "Gli interventi di natura gestionale investono:",
     "answers": [
-      "I sistemi di pianificazione, programmazione e controllo delle attività nonché i sistemi di monitoraggio delle \nperformance",
+      "I sistemi di pianificazione, programmazione e controllo delle attività nonché i sistemi di monitoraggio delle performance",
       "Soltanto i sistemi di pianificazione, programmazione e controllo delle attività",
       "Esclusivamente i sistemi di monitoraggio delle performance",
       "Unicamente i sistemi di pianificazione e programmazione delle attività"
     ],
-    "correct_answer": "I sistemi di pianificazione, programmazione e controllo delle attività nonché i sistemi di monitoraggio delle \nperformance"
+    "correct_answer": "I sistemi di pianificazione, programmazione e controllo delle attività nonché i sistemi di monitoraggio delle performance"
   },
   {
     "id": "acf19424-958b-42f7-9784-1e309039c8b8",
     "question": "Le leve gestionali più significative sono:",
     "answers": [
       "Lo sviluppo di un sistema di gestione dei processi e l'attivazione di catene clienti-fornitori",
-      "Lo sviluppo di un sistema di gestione dei processi, l'attivazione di catene clienti-fornitori nonché il bilanciamento tra \nl'utilizzo di logiche pull e push nella gestione dei processi",
-      "L'attivazione di catene clienti-fornitori nonché il bilanciamento tra l'utilizzo di logiche pull e push nella gestione dei \nprocessi",
-      "Lo sviluppo di un sistema di gestione dei processi nonché il bilanciamento tra l'utilizzo di logiche pull e push nella \ngestione dei processi"
+      "Lo sviluppo di un sistema di gestione dei processi, l'attivazione di catene clienti-fornitori nonché il bilanciamento tra l'utilizzo di logiche pull e push nella gestione dei processi",
+      "L'attivazione di catene clienti-fornitori nonché il bilanciamento tra l'utilizzo di logiche pull e push nella gestione dei processi",
+      "Lo sviluppo di un sistema di gestione dei processi nonché il bilanciamento tra l'utilizzo di logiche pull e push nella gestione dei processi"
     ],
-    "correct_answer": "Lo sviluppo di un sistema di gestione dei processi, l'attivazione di catene clienti-fornitori nonché il bilanciamento tra \nl'utilizzo di logiche pull e push nella gestione dei processi"
+    "correct_answer": "Lo sviluppo di un sistema di gestione dei processi, l'attivazione di catene clienti-fornitori nonché il bilanciamento tra l'utilizzo di logiche pull e push nella gestione dei processi"
   },
   {
     "id": "91845be2-4646-4246-818e-c3a55e986ded",
@@ -2161,10 +2161,10 @@
     "answers": [
       "Esclusivamente la struttura del settore",
       "Soltanto la struttura del settore e le caratteristiche dei mercati di sbocco",
-      "La struttura del settore, l'intensità della competizione, le caratteristiche dei mercati di sbocco e dei canali \ndistributivi, la variabilità della domanda finale, i mercati di fornitura e i mercati dei capitali",
-      "Unicamente la struttura del settore, le caratteristiche dei mercati di sbocco, i mercati di fornitura e i mercati dei \ncapitali"
+      "La struttura del settore, l'intensità della competizione, le caratteristiche dei mercati di sbocco e dei canali distributivi, la variabilità della domanda finale, i mercati di fornitura e i mercati dei capitali",
+      "Unicamente la struttura del settore, le caratteristiche dei mercati di sbocco, i mercati di fornitura e i mercati dei capitali"
     ],
-    "correct_answer": "La struttura del settore, l'intensità della competizione, le caratteristiche dei mercati di sbocco e dei canali \ndistributivi, la variabilità della domanda finale, i mercati di fornitura e i mercati dei capitali"
+    "correct_answer": "La struttura del settore, l'intensità della competizione, le caratteristiche dei mercati di sbocco e dei canali distributivi, la variabilità della domanda finale, i mercati di fornitura e i mercati dei capitali"
   },
   {
     "id": "29f97987-f78e-400e-b693-7ae2facb4398",
@@ -2291,12 +2291,12 @@
     "id": "09c87b30-192f-4bfe-9c5c-6a96bfaa129c",
     "question": "La molla strategica che fa scattare l'orientamento ai processi è riconducibile:",
     "answers": [
-      "Alla centralità del cliente, alla time-based competition, al miglioramento del trade-off tra efficacia ed efficienza \nnonché alla necessità di canalizzare le risorse verso i risultati",
+      "Alla centralità del cliente, alla time-based competition, al miglioramento del trade-off tra efficacia ed efficienza nonché alla necessità di canalizzare le risorse verso i risultati",
       "Unicamente alla necessità di canalizzare le risorse verso i risultati",
-      "Soltanto alla centralità del cliente, alla time-based competition e al miglioramento del trade-off tra efficacia ed \nefficienza",
+      "Soltanto alla centralità del cliente, alla time-based competition e al miglioramento del trade-off tra efficacia ed efficienza",
       "Esclusivamente alla centralità del cliente, alla time-based competition e  all'orientamento al risultato"
     ],
-    "correct_answer": "Alla centralità del cliente, alla time-based competition, al miglioramento del trade-off tra efficacia ed efficienza \nnonché alla necessità di canalizzare le risorse verso i risultati"
+    "correct_answer": "Alla centralità del cliente, alla time-based competition, al miglioramento del trade-off tra efficacia ed efficienza nonché alla necessità di canalizzare le risorse verso i risultati"
   },
   {
     "id": "10a3c54a-8ad8-400c-a656-91ed23a9deea",
@@ -2358,20 +2358,20 @@
     "question": "Nello stadio della delega:",
     "answers": [
       "Vi è forte focalizzazione sul prodotto/servizio e sulle attività operative di produzione e vendita",
-      "Vengono introdotte procedure formalizzate e sistemi di controllo, ma i processi decisionali divengono piuttosto \ncentralizzati",
-      "La macrostruttura evolve verso forme divisionali che consentono maggiore autonomia attraverso la creazione di \nresponsabilità di prodotto, mercato, area geografica",
-      "Vengono sviluppate norme e procedure nonché formalizzati i ruoli per poter coordinare un'organizzazione divenuta \nmolto vasta e articolata"
+      "Vengono introdotte procedure formalizzate e sistemi di controllo, ma i processi decisionali divengono piuttosto centralizzati",
+      "La macrostruttura evolve verso forme divisionali che consentono maggiore autonomia attraverso la creazione di responsabilità di prodotto, mercato, area geografica",
+      "Vengono sviluppate norme e procedure nonché formalizzati i ruoli per poter coordinare un'organizzazione divenuta molto vasta e articolata"
     ],
-    "correct_answer": "La macrostruttura evolve verso forme divisionali che consentono maggiore autonomia attraverso la creazione di \nresponsabilità di prodotto, mercato, area geografica"
+    "correct_answer": "La macrostruttura evolve verso forme divisionali che consentono maggiore autonomia attraverso la creazione di responsabilità di prodotto, mercato, area geografica"
   },
   {
     "id": "24ee2ee5-853f-4576-b665-43957ed74214",
     "question": "Nello stadio della collaborazione:",
     "answers": [
       "Vi è un ritorno, almeno parziale, verso forme organiche",
-      "L'enfasi si sposta sugli aspetti economico-finanziari, talvolta perdendo di vista il valore dei prodotti e dei servizi \nofferti, l'innovazione nonché le reali esigenze del mercato",
-      "L'azienda può crescere ancora sospinta dalla motivazione e dall'azione dei manager intermedi che sviluppano in \nautonomia la parte di attività sotto la propria responsabilità",
-      "I membri dell'organizzazione sviluppano spesso entusiasmo e senso di appartenenza, si spendono per la crescita e \nl'affermazione dell'impresa"
+      "L'enfasi si sposta sugli aspetti economico-finanziari, talvolta perdendo di vista il valore dei prodotti e dei servizi offerti, l'innovazione nonché le reali esigenze del mercato",
+      "L'azienda può crescere ancora sospinta dalla motivazione e dall'azione dei manager intermedi che sviluppano in autonomia la parte di attività sotto la propria responsabilità",
+      "I membri dell'organizzazione sviluppano spesso entusiasmo e senso di appartenenza, si spendono per la crescita e l'affermazione dell'impresa"
     ],
     "correct_answer": "Vi è un ritorno, almeno parziale, verso forme organiche"
   },
@@ -2445,12 +2445,12 @@
     "id": "a7982896-5c5b-4a73-b41e-97b9a00146e5",
     "question": "In World Consulting Network Italia:",
     "answers": [
-      "I consultant svolgono una mansione operativa, occupandosi di problemi circoscritti (specializzazione orizzontale \nmedio-alta)",
+      "I consultant svolgono una mansione operativa, occupandosi di problemi circoscritti (specializzazione orizzontale medio-alta)",
       "I manager godono della massima autonomia decisionale e si occupano di un'ampia gamma di attività",
       "I partner svolgono una mansione di medio livello",
       "Gli specialist svolgono una mansione di alto livello"
     ],
-    "correct_answer": "I consultant svolgono una mansione operativa, occupandosi di problemi circoscritti (specializzazione orizzontale \nmedio-alta)"
+    "correct_answer": "I consultant svolgono una mansione operativa, occupandosi di problemi circoscritti (specializzazione orizzontale medio-alta)"
   },
   {
     "id": "a15ac5bf-db19-48e7-afde-c4414094dbe5",
@@ -2469,7 +2469,7 @@
     "answers": [
       "E' di tipo ex ante",
       "E' finalizzato al coordinamento fra le risorse dei progetti nei team",
-      "E' finalizzato al coordinamento delle risorse più giovani e alla tutorship dei neoassunti da parte dei partner e dei \nmanager responsabili del progetto",
+      "E' finalizzato al coordinamento delle risorse più giovani e alla tutorship dei neoassunti da parte dei partner e dei manager responsabili del progetto",
       "E' particolarmente rilevante ai fini della certificazione della qualità"
     ],
     "correct_answer": "E' finalizzato al coordinamento fra le risorse dei progetti nei team"
@@ -2610,8 +2610,8 @@
     "id": "498bcbd1-44a9-4947-8867-f0740a9f0b34",
     "question": "Una decisione programmata riguarda, per esempio:",
     "answers": [
-      "Il lancio di un nuovo prodotto sul mercato in cui occorre definire la metodologia più appropriata per raggiungere un \ndeterminato risultato",
-      "Il lancio di un progetto di ricerca in cui occorre definire la metodologia più appropriata per raggiungere un \ndeterminato risultato",
+      "Il lancio di un nuovo prodotto sul mercato in cui occorre definire la metodologia più appropriata per raggiungere un determinato risultato",
+      "Il lancio di un progetto di ricerca in cui occorre definire la metodologia più appropriata per raggiungere un determinato risultato",
       "La programmazione della produzione su una linea di assemblaggio",
       "Una situazione in cui non vi è esperienza pregressa"
     ],
@@ -2623,7 +2623,7 @@
     "answers": [
       "Riguardano problemi ripetitivi e ben definiti, per i quali esistono metodologie di risoluzione e procedure consolidate",
       "Prevedono criteri di scelta chiari nonché univoci, e, generalmente, le informazioni necessarie sono disponibili",
-      "Comportano un'organizzazione che si predispone, in anticipo, ad affrontare il problema, e, addirittura, a pianificare, \nsempre in anticipo, i tempi e i modi della decisione",
+      "Comportano un'organizzazione che si predispone, in anticipo, ad affrontare il problema, e, addirittura, a pianificare, sempre in anticipo, i tempi e i modi della decisione",
       "Vengono affrontate senza una preparazione specifica"
     ],
     "correct_answer": "Vengono affrontate senza una preparazione specifica"
@@ -2643,16 +2643,16 @@
     "id": "dbf26235-6797-4509-bf14-50eec5b28eee",
     "question": "Le cause dei conflitti organizzativi sono riconducibili:",
     "answers": [
-      "Alla scomposizione degli obiettivi, alla differenziazione, all'interdipendenza dei compiti e all'accesso a risorse \nlimitate",
+      "Alla scomposizione degli obiettivi, alla differenziazione, all'interdipendenza dei compiti e all'accesso a risorse limitate",
       "Esclusivamente alla scomposizione degli obiettivi, alla differenziazione e all'interdipendenza dei compiti",
       "Soltanto alla differenziazione, all'interdipendenza dei compiti e all'accesso a risorse limitate",
       "Unicamente alla scomposizione degli obiettivi, alla differenziazione e all'accesso a risorse limitate"
     ],
-    "correct_answer": "Alla scomposizione degli obiettivi, alla differenziazione, all'interdipendenza dei compiti e all'accesso a risorse \nlimitate"
+    "correct_answer": "Alla scomposizione degli obiettivi, alla differenziazione, all'interdipendenza dei compiti e all'accesso a risorse limitate"
   },
   {
     "id": "4d908c05-da8f-41a7-b181-324cedccae20",
-    "question": "Se si genera una competizione tra unità organizzative per l'accesso alle risorse, umane nonché finanziarie, e, \ntalvolta, anche tecnologiche, si è di fronte al concetto:",
+    "question": "Se si genera una competizione tra unità organizzative per l'accesso alle risorse, umane nonché finanziarie, e, talvolta, anche tecnologiche, si è di fronte al concetto:",
     "answers": [
       "Della differenziazione",
       "Della scomposizione degli obiettivi",
@@ -2674,7 +2674,7 @@
   },
   {
     "id": "42d45184-fec4-44ee-b99e-ec977237f552",
-    "question": "Se le unità organizzative all'interno di un'impresa possiedono valori, attitudini e standard di comportamento non \nomogenei tra loro, si è di fronte al concetto:",
+    "question": "Se le unità organizzative all'interno di un'impresa possiedono valori, attitudini e standard di comportamento non omogenei tra loro, si è di fronte al concetto:",
     "answers": [
       "Dell'interdipendenza dei compiti",
       "Dell'accesso a risorse limitate",
@@ -2700,8 +2700,8 @@
     "answers": [
       "Coincide con la qualità dell'informazione",
       "Non coincide con la qualità dell'informazione",
-      "Comporta sempre la possibilità, da parte delle organizzazioni, di avere tempo e risorse per utilizzare la ridondanza \ninformativa medesima",
-      "Comporta sempre la possibilità, da parte delle organizzazioni, di avere il modo di utilizzatare la ridondanza \ninformativa medesima"
+      "Comporta sempre la possibilità, da parte delle organizzazioni, di avere tempo e risorse per utilizzare la ridondanza informativa medesima",
+      "Comporta sempre la possibilità, da parte delle organizzazioni, di avere il modo di utilizzatare la ridondanza informativa medesima"
     ],
     "correct_answer": "Non coincide con la qualità dell'informazione"
   },
@@ -2709,12 +2709,12 @@
     "id": "54924c81-62af-4939-ae44-632823f7f4d7",
     "question": "Le caratteristiche tipiche dei processi decisionali nelle organizzazioni sono:",
     "answers": [
-      "Unicamente l'ambiguità intrinseca che caratterizza gli obiettivi e le preferenze dei decisori nonché le tecnologie e i \nmetodi non consolidati",
-      "Esclusivamente l'ambiguità intrinseca che caratterizza gli obiettivi e le preferenze dei decisori nonché l'elevato \nturnover dei responsabili",
-      "L'ambiguità intrinseca che caratterizza gli obiettivi e le preferenze dei decisori, le tecnologie e i metodi non \nconsolidati nonché l'elevato turnover dei responsabili",
+      "Unicamente l'ambiguità intrinseca che caratterizza gli obiettivi e le preferenze dei decisori nonché le tecnologie e i metodi non consolidati",
+      "Esclusivamente l'ambiguità intrinseca che caratterizza gli obiettivi e le preferenze dei decisori nonché l'elevato turnover dei responsabili",
+      "L'ambiguità intrinseca che caratterizza gli obiettivi e le preferenze dei decisori, le tecnologie e i metodi non consolidati nonché l'elevato turnover dei responsabili",
       "Soltanto le tecnologie e i metodi non consolidati nonché l'elevato turnover dei responsabili"
     ],
-    "correct_answer": "L'ambiguità intrinseca che caratterizza gli obiettivi e le preferenze dei decisori, le tecnologie e i metodi non \nconsolidati nonché l'elevato turnover dei responsabili"
+    "correct_answer": "L'ambiguità intrinseca che caratterizza gli obiettivi e le preferenze dei decisori, le tecnologie e i metodi non consolidati nonché l'elevato turnover dei responsabili"
   },
   {
     "id": "9bcf524f-b12b-4886-adc4-554b3b1f9157",
@@ -2731,7 +2731,7 @@
     "id": "0e1b1669-8458-46f0-bd63-99b847354052",
     "question": "Il modello del garbage can:",
     "answers": [
-      "Non presuppone che i flussi dal cui incrocio casuale scaturiscono le decisioni siano autonomi nell'ambiente \norganizzativo",
+      "Non presuppone che i flussi dal cui incrocio casuale scaturiscono le decisioni siano autonomi nell'ambiente organizzativo",
       "Rappresenta bene i processi decisionali nelle grandi organizzazioni",
       "Non perde di valore nelle piccole organizzazioni",
       "Non rappresenta bene i processi decisionali nelle grandi organizzazioni"
@@ -2762,7 +2762,7 @@
   },
   {
     "id": "0b1c9cb7-dfd3-4058-890f-a77894aa3ccc",
-    "question": "Quando non vi è ambiguità di obiettivi né incertezza sulle soluzioni, i decisori tendono ad assumere un \ncomportamento riconducibile:",
+    "question": "Quando non vi è ambiguità di obiettivi né incertezza sulle soluzioni, i decisori tendono ad assumere un comportamento riconducibile:",
     "answers": [
       "Alla razionalità perfetta",
       "Al garbage can",
@@ -2784,7 +2784,7 @@
   },
   {
     "id": "8b1f5e78-2ea3-4218-ab10-4e5d8b6aa0b4",
-    "question": "Se il problema non è eccessivamente ambiguo, ma vi è molta incertezza sulle soluzioni e sui metodi di analisi, è \nfacile che la razionalità limitata si traduca in:",
+    "question": "Se il problema non è eccessivamente ambiguo, ma vi è molta incertezza sulle soluzioni e sui metodi di analisi, è facile che la razionalità limitata si traduca in:",
     "answers": [
       "Incrementalismo e garbage can",
       "Incrementalismo",
@@ -2797,12 +2797,12 @@
     "id": "6bae4677-2f28-4669-a69f-73703a77f7eb",
     "question": "Gestire quotidianamente un'organizzazione, di fatto, significa:",
     "answers": [
-      "Essere in grado di prendere decisioni consapevoli in merito alle scelte di marketing, alle scelte di fornitura, alle \nsoluzioni tecnologiche, alle soluzioni organizzative, alla formulazione dei budget e alla pianificazione delle attività \noperative",
-      "Essere in grado di prendere decisioni consapevoli, unicamente, in merito alle scelte di marketing, alle scelte di \nfornitura, alle soluzioni tecnologiche, alle soluzioni organizzative e alla formulazione dei budget",
-      "Essere in grado di prendere decisioni, soltanto, consapevoli in merito alle scelte di marketing, alle scelte di fornitura, \nalle soluzioni tecnologiche, alla formulazione dei budget e alla pianificazione delle attività operative",
-      "Essere in grado di prendere decisioni consapevoli, esclusivamente, in merito alle scelte di fornitura, alle soluzioni \ntecnologiche, alle soluzioni organizzative, alla formulazione dei budget e alla pianificazione delle attività operative"
+      "Essere in grado di prendere decisioni consapevoli in merito alle scelte di marketing, alle scelte di fornitura, alle soluzioni tecnologiche, alle soluzioni organizzative, alla formulazione dei budget e alla pianificazione delle attività operative",
+      "Essere in grado di prendere decisioni consapevoli, unicamente, in merito alle scelte di marketing, alle scelte di fornitura, alle soluzioni tecnologiche, alle soluzioni organizzative e alla formulazione dei budget",
+      "Essere in grado di prendere decisioni, soltanto, consapevoli in merito alle scelte di marketing, alle scelte di fornitura, alle soluzioni tecnologiche, alla formulazione dei budget e alla pianificazione delle attività operative",
+      "Essere in grado di prendere decisioni consapevoli, esclusivamente, in merito alle scelte di fornitura, alle soluzioni tecnologiche, alle soluzioni organizzative, alla formulazione dei budget e alla pianificazione delle attività operative"
     ],
-    "correct_answer": "Essere in grado di prendere decisioni consapevoli in merito alle scelte di marketing, alle scelte di fornitura, alle \nsoluzioni tecnologiche, alle soluzioni organizzative, alla formulazione dei budget e alla pianificazione delle attività \noperative"
+    "correct_answer": "Essere in grado di prendere decisioni consapevoli in merito alle scelte di marketing, alle scelte di fornitura, alle soluzioni tecnologiche, alle soluzioni organizzative, alla formulazione dei budget e alla pianificazione delle attività operative"
   },
   {
     "id": "b5d0f876-16f4-494d-b7dd-f613cd6a23c1",
@@ -2810,7 +2810,7 @@
     "answers": [
       "La definizione degli obiettivi, l'analisi dei fattori rilevanti per la scelta e l'identificazione delle alternative",
       "La percezione del problema, la definizione degli obiettivi e l'analisi dei fattori rilevanti per la scelta",
-      "La percezione del problema, la definizione degli obiettivi e la valutazione della capacità, da parte delle alternative, di \nraggiungere in tutto o in parte gli obiettivi",
+      "La percezione del problema, la definizione degli obiettivi e la valutazione della capacità, da parte delle alternative, di raggiungere in tutto o in parte gli obiettivi",
       "La definizione degli obiettivi, l'analisi dei fattori rilevanti per la scelta e la scelta nonché l'attuazione della decisione"
     ],
     "correct_answer": "La percezione del problema, la definizione degli obiettivi e l'analisi dei fattori rilevanti per la scelta"
@@ -2819,12 +2819,12 @@
     "id": "fa0889f0-ce43-4b7a-a78d-54c317621dce",
     "question": "La fase del \"problem solving\" include:",
     "answers": [
-      "La definizione degli obiettivi, l'analisi dei fattori rilevanti per la scelta, la scelta nonché l'attuazione della decisione e \nil controllo dei risultati ottenuti",
+      "La definizione degli obiettivi, l'analisi dei fattori rilevanti per la scelta, la scelta nonché l'attuazione della decisione e il controllo dei risultati ottenuti",
       "La scelta nonché l'attuazione della decisione e il controllo dei risultati ottenuti",
-      "L'identificazione delle alternative, la valutazione della loro capacità di raggiungere in tutto o in parte gli obiettivi, la \nscelta e l'attuazione della decisione e il controllo dei risultati ottenuti",
+      "L'identificazione delle alternative, la valutazione della loro capacità di raggiungere in tutto o in parte gli obiettivi, la scelta e l'attuazione della decisione e il controllo dei risultati ottenuti",
       "L'identificazione delle alternative e la valutazione della loro capacità di raggiungere in tutto o in parte gli obiettivi"
     ],
-    "correct_answer": "L'identificazione delle alternative, la valutazione della loro capacità di raggiungere in tutto o in parte gli obiettivi, la \nscelta e l'attuazione della decisione e il controllo dei risultati ottenuti"
+    "correct_answer": "L'identificazione delle alternative, la valutazione della loro capacità di raggiungere in tutto o in parte gli obiettivi, la scelta e l'attuazione della decisione e il controllo dei risultati ottenuti"
   },
   {
     "id": "488730de-f863-47f4-b515-b4da4a8f8380",
@@ -2929,12 +2929,12 @@
     "id": "fa5313f1-75f1-4f1d-a3d5-b5b1aab3c019",
     "question": "L'analisi morfologica si basa:",
     "answers": [
-      "Sulla definizione del problema, sulla definizione dei parametri, sulla lista delle variazioni, sulla realizzazione di \ndifferenti combinazioni e sulla valutazione nonché sul miglioramento delle alternative",
-      "Sulla definizione dei parametri, sulla lista delle variazioni, sulla realizzazione di differenti combinazioni e sulla \nvalutazione nonché sul miglioramento delle alternative",
-      "Sulla definizione del problema, sulla lista delle variazioni, sulla realizzazione di differenti combinazioni e sulla \nvalutazione nonché sul miglioramento delle alternative",
-      "Sulla definizione del problema, sulla definizione dei parametri, sulla realizzazione di differenti combinazioni e sulla \nvalutazione nonché sul miglioramento delle alternative"
+      "Sulla definizione del problema, sulla definizione dei parametri, sulla lista delle variazioni, sulla realizzazione di differenti combinazioni e sulla valutazione nonché sul miglioramento delle alternative",
+      "Sulla definizione dei parametri, sulla lista delle variazioni, sulla realizzazione di differenti combinazioni e sulla valutazione nonché sul miglioramento delle alternative",
+      "Sulla definizione del problema, sulla lista delle variazioni, sulla realizzazione di differenti combinazioni e sulla valutazione nonché sul miglioramento delle alternative",
+      "Sulla definizione del problema, sulla definizione dei parametri, sulla realizzazione di differenti combinazioni e sulla valutazione nonché sul miglioramento delle alternative"
     ],
-    "correct_answer": "Sulla definizione del problema, sulla definizione dei parametri, sulla lista delle variazioni, sulla realizzazione di \ndifferenti combinazioni e sulla valutazione nonché sul miglioramento delle alternative"
+    "correct_answer": "Sulla definizione del problema, sulla definizione dei parametri, sulla lista delle variazioni, sulla realizzazione di differenti combinazioni e sulla valutazione nonché sul miglioramento delle alternative"
   },
   {
     "id": "1f1fa495-e20a-43f7-bc96-4461845e4499",
@@ -2993,7 +2993,7 @@
   },
   {
     "id": "b4389c7c-cc70-4e31-8a44-142ebb0813c2",
-    "question": "Nell'ambito dell'approccio \"seeing first\", il momento in cui il decisore viene in contatto con una situazione che lo \nstimola, anche, inconsciamente:",
+    "question": "Nell'ambito dell'approccio \"seeing first\", il momento in cui il decisore viene in contatto con una situazione che lo stimola, anche, inconsciamente:",
     "answers": [
       "Corrisponde alla fase dell'incubazione",
       "Corrisponde alla fase dell'illuminazione",
@@ -3006,45 +3006,45 @@
     "id": "65128c00-2b7b-460a-a07a-129e45a5506c",
     "question": "Il marketing viene tradizionalmente considerato come:",
     "answers": [
-      "L'insieme di decisioni e di azioni che un'impresa intraprende per creare i prodotti e i servizi, stimolare la conoscenza \ndi prodotti e servizi nonché gestirne la domanda da parte dei clienti, e distribuire i prodotti ai clienti e/o rendere \nagevole la fruizione dei servizi",
-      "L'insieme di decisioni e di azioni che un'impresa intraprende, esclusivamente, per creare i prodotti e i servizi, e \ndistribuire i prodotti ai clienti e/o rendere agevole la fruizione dei servizi",
-      "L'insieme di decisioni e di azioni che un'impresa intraprende, unicamente, per creare i prodotti, stimolare la \nconoscenza di prodotti, e distribuire i prodotti ai clienti",
-      "L'insieme di decisioni e di azioni che un'impresa intraprende, soltanto, per creare i prodotti e i servizi, nonché \nstimolare la conoscenza di prodotti e servizi"
+      "L'insieme di decisioni e di azioni che un'impresa intraprende per creare i prodotti e i servizi, stimolare la conoscenza di prodotti e servizi nonché gestirne la domanda da parte dei clienti, e distribuire i prodotti ai clienti e/o rendere agevole la fruizione dei servizi",
+      "L'insieme di decisioni e di azioni che un'impresa intraprende, esclusivamente, per creare i prodotti e i servizi, e distribuire i prodotti ai clienti e/o rendere agevole la fruizione dei servizi",
+      "L'insieme di decisioni e di azioni che un'impresa intraprende, unicamente, per creare i prodotti, stimolare la conoscenza di prodotti, e distribuire i prodotti ai clienti",
+      "L'insieme di decisioni e di azioni che un'impresa intraprende, soltanto, per creare i prodotti e i servizi, nonché stimolare la conoscenza di prodotti e servizi"
     ],
-    "correct_answer": "L'insieme di decisioni e di azioni che un'impresa intraprende per creare i prodotti e i servizi, stimolare la conoscenza \ndi prodotti e servizi nonché gestirne la domanda da parte dei clienti, e distribuire i prodotti ai clienti e/o rendere \nagevole la fruizione dei servizi"
+    "correct_answer": "L'insieme di decisioni e di azioni che un'impresa intraprende per creare i prodotti e i servizi, stimolare la conoscenza di prodotti e servizi nonché gestirne la domanda da parte dei clienti, e distribuire i prodotti ai clienti e/o rendere agevole la fruizione dei servizi"
   },
   {
     "id": "91bc4537-dc12-45c6-b426-851f8685fa36",
     "question": "Il compito specifico del marketing è:",
     "answers": [
-      "Quello di indirizzare il bisogno degli individui verso il desiderio di un determinato prodotto o servizio e di renderne \npossibile la domanda esplicita",
+      "Quello di indirizzare il bisogno degli individui verso il desiderio di un determinato prodotto o servizio e di renderne possibile la domanda esplicita",
       "Esclusivamente quello di indirizzare il bisogno degli individui verso il desiderio di un determinato prodotto o servizio",
       "Unicamente quello di creare negli individui il bisogno di un determinato prodotto",
       "Soltanto quello di rendere possibile la domanda esplicita di un determinato prodotto o servizio"
     ],
-    "correct_answer": "Quello di indirizzare il bisogno degli individui verso il desiderio di un determinato prodotto o servizio e di renderne \npossibile la domanda esplicita"
+    "correct_answer": "Quello di indirizzare il bisogno degli individui verso il desiderio di un determinato prodotto o servizio e di renderne possibile la domanda esplicita"
   },
   {
     "id": "c35d4a32-a210-4201-961c-b669a27dd935",
     "question": "L'orientamento al marketing è centrato:",
     "answers": [
-      "Esclusivamente sulla soddisfazione del cliente, sull'esatta comprensione dei suoi bisogni e sul far emergere \ndomande latenti",
+      "Esclusivamente sulla soddisfazione del cliente, sull'esatta comprensione dei suoi bisogni e sul far emergere domande latenti",
       "Soltanto sulla soddisfazione del cliente e sull'esatta comprensione dei suoi bisogni",
-      "Sulla soddisfazione del cliente, sull'esatta comprensione dei suoi bisogni, sul far emergere domande latenti o sul \nsoddisfare, in modo pieno, domande già manifeste, il tutto conseguendo ricavi e profitti soddisfacenti per l'impresa",
-      "Unicamente sulla soddisfazione del cliente, sull'esatta comprensione dei suoi bisogni e sul soddisfare, in modo \npieno, domande già manifeste"
+      "Sulla soddisfazione del cliente, sull'esatta comprensione dei suoi bisogni, sul far emergere domande latenti o sul soddisfare, in modo pieno, domande già manifeste, il tutto conseguendo ricavi e profitti soddisfacenti per l'impresa",
+      "Unicamente sulla soddisfazione del cliente, sull'esatta comprensione dei suoi bisogni e sul soddisfare, in modo pieno, domande già manifeste"
     ],
-    "correct_answer": "Sulla soddisfazione del cliente, sull'esatta comprensione dei suoi bisogni, sul far emergere domande latenti o sul \nsoddisfare, in modo pieno, domande già manifeste, il tutto conseguendo ricavi e profitti soddisfacenti per l'impresa"
+    "correct_answer": "Sulla soddisfazione del cliente, sull'esatta comprensione dei suoi bisogni, sul far emergere domande latenti o sul soddisfare, in modo pieno, domande già manifeste, il tutto conseguendo ricavi e profitti soddisfacenti per l'impresa"
   },
   {
     "id": "ee23faab-3ac2-41d4-b45d-24304e45ad0f",
     "question": "Per domanda irregolare si intende:",
     "answers": [
       "Una domanda che presenta una sostanziale stabilità nel breve termine e forti oscillazioni nel lungo termine",
-      "Una domanda che presenta una sostanziale stabilità nel lungo termine e forti oscillazioni nel breve termine, dovute, \nad esempio, a stagionalità o a picchi improvvisi",
+      "Una domanda che presenta una sostanziale stabilità nel lungo termine e forti oscillazioni nel breve termine, dovute, ad esempio, a stagionalità o a picchi improvvisi",
       "Una domanda che presenta una sostanziale instabilità nel lungo termine e poche oscillazioni nel breve termine",
       "Una domanda che presenta, esclusivamente, una sostanziale stabilità nel lungo termine"
     ],
-    "correct_answer": "Una domanda che presenta una sostanziale stabilità nel lungo termine e forti oscillazioni nel breve termine, dovute, \nad esempio, a stagionalità o a picchi improvvisi"
+    "correct_answer": "Una domanda che presenta una sostanziale stabilità nel lungo termine e forti oscillazioni nel breve termine, dovute, ad esempio, a stagionalità o a picchi improvvisi"
   },
   {
     "id": "ee275fdb-aa36-478e-923a-9122835ddc58",
@@ -3075,9 +3075,9 @@
       "Si limitano agli utilizzatori",
       "Afferiscono, soltanto, agli utilizzatori, ai fornitori, ai centri di ricerca e alle università",
       "Afferiscono, unicamente, agli utilizzatori, ai fornitori, ai centri di ricerca, alle università e ai concorrenti",
-      "Afferiscono agli utilizzatori, ai fornitori, ai centri di ricerca, alle università, ai partner tecnologici produttori di beni \ncomplementari e, talvolta, ai concorrenti"
+      "Afferiscono agli utilizzatori, ai fornitori, ai centri di ricerca, alle università, ai partner tecnologici produttori di beni complementari e, talvolta, ai concorrenti"
     ],
-    "correct_answer": "Afferiscono agli utilizzatori, ai fornitori, ai centri di ricerca, alle università, ai partner tecnologici produttori di beni \ncomplementari e, talvolta, ai concorrenti"
+    "correct_answer": "Afferiscono agli utilizzatori, ai fornitori, ai centri di ricerca, alle università, ai partner tecnologici produttori di beni complementari e, talvolta, ai concorrenti"
   },
   {
     "id": "37dc5524-65f6-475b-b10a-46928b3c29b2",
@@ -3086,9 +3086,9 @@
       "Unicamente le fonti dell'innovazione a disposizione dell'impresa nonché il timing dell'innovazione",
       "Esclusivamente i conflitti di standard e i disegni dominanti, nonché il timing dell'innovazione",
       "Soltanto le fonti dell'innovazione a disposizione dell'impresa nonché i conflitti di standard e i disegni dominanti",
-      "Le fonti dell'innovazione a disposizione dell'impresa, i conflitti di standard e i disegni dominanti, nonché il timing \ndell'innovazione"
+      "Le fonti dell'innovazione a disposizione dell'impresa, i conflitti di standard e i disegni dominanti, nonché il timing dell'innovazione"
     ],
-    "correct_answer": "Le fonti dell'innovazione a disposizione dell'impresa, i conflitti di standard e i disegni dominanti, nonché il timing \ndell'innovazione"
+    "correct_answer": "Le fonti dell'innovazione a disposizione dell'impresa, i conflitti di standard e i disegni dominanti, nonché il timing dell'innovazione"
   },
   {
     "id": "688f21b0-5f24-45a2-b389-32a0bb528315",
@@ -3106,11 +3106,11 @@
     "question": "La strategia d'impresa, normalmente, definisce, di volta in volta:",
     "answers": [
       "Soltanto obiettivi di profittabilità, crescita e sviluppo",
-      "Obiettivi di profittabilità, crescita, sviluppo, diversificazione, o, talvolta, di consolidamento e mantenimento delle \nposizioni",
+      "Obiettivi di profittabilità, crescita, sviluppo, diversificazione, o, talvolta, di consolidamento e mantenimento delle posizioni",
       "Unicamente obiettivi di consolidamento e mantenimento delle posizioni",
       "Esclusivamente obiettivi di crescita, sviluppo e diversificazione"
     ],
-    "correct_answer": "Obiettivi di profittabilità, crescita, sviluppo, diversificazione, o, talvolta, di consolidamento e mantenimento delle \nposizioni"
+    "correct_answer": "Obiettivi di profittabilità, crescita, sviluppo, diversificazione, o, talvolta, di consolidamento e mantenimento delle posizioni"
   },
   {
     "id": "33127ae1-49cb-4237-9b68-e24ad4e2d369",
@@ -3128,11 +3128,11 @@
     "question": "Il processo di globalizzazione tende, di fatto, :",
     "answers": [
       "A non creare un \"consumatore globale\"",
-      "A creare un \"consumatore globale\", caratterizzato da mode, gusti e preferenze, che, però, non possono travalicare le \nbarriere linguistiche e culturali",
+      "A creare un \"consumatore globale\", caratterizzato da mode, gusti e preferenze, che, però, non possono travalicare le barriere linguistiche e culturali",
       "A creare un \"consumatore globale\" caratterizzato, esclusivamente, da mode",
-      "A creare un \"consumatore globale\", caratterizzato da mode, gusti e preferenze, che travalicano le barriere \nlinguistiche e culturali"
+      "A creare un \"consumatore globale\", caratterizzato da mode, gusti e preferenze, che travalicano le barriere linguistiche e culturali"
     ],
-    "correct_answer": "A creare un \"consumatore globale\", caratterizzato da mode, gusti e preferenze, che travalicano le barriere \nlinguistiche e culturali"
+    "correct_answer": "A creare un \"consumatore globale\", caratterizzato da mode, gusti e preferenze, che travalicano le barriere linguistiche e culturali"
   },
   {
     "id": "e96749cb-f7a8-4651-86ea-c0fa9196325c",
@@ -3141,20 +3141,20 @@
       "A far emergere, all'interno delle aziende, la vocazione delle stesse al profitto come elemento prioritario",
       "Ad accreditare l'immagine delle aziende che desiderano essere percepite come attori socialmente non positivi",
       "Alla definizione di alcune procedure di vendita",
-      "Ad accreditare l'immagine delle aziende, le quali, pur non trascurando la loro vocazione al profitto, desiderano \nessere percepite come attori socialmente positivi"
+      "Ad accreditare l'immagine delle aziende, le quali, pur non trascurando la loro vocazione al profitto, desiderano essere percepite come attori socialmente positivi"
     ],
-    "correct_answer": "Ad accreditare l'immagine delle aziende, le quali, pur non trascurando la loro vocazione al profitto, desiderano \nessere percepite come attori socialmente positivi"
+    "correct_answer": "Ad accreditare l'immagine delle aziende, le quali, pur non trascurando la loro vocazione al profitto, desiderano essere percepite come attori socialmente positivi"
   },
   {
     "id": "7e096649-3a7e-4df0-9222-bc643e90f831",
     "question": "Le macro-tendenze riguardanti il mondo del business afferiscono:",
     "answers": [
-      "Unicamente all'economia connessa con le società digitali, alla glocalization, alla responsabilità sociale nonché alla \nsostenibilità, e alla servitization",
-      "All'economia connessa con le società digitali, alla glocalization, alla responsabilità sociale nonché alla sostenibilità, \nalla privacy, e alla servitization",
-      "Esclusivamente all'economia connessa con le società digitali, alla glocalization, alla responsabilità sociale nonché alla \nsostenibilità, e alla privacy",
+      "Unicamente all'economia connessa con le società digitali, alla glocalization, alla responsabilità sociale nonché alla sostenibilità, e alla servitization",
+      "All'economia connessa con le società digitali, alla glocalization, alla responsabilità sociale nonché alla sostenibilità, alla privacy, e alla servitization",
+      "Esclusivamente all'economia connessa con le società digitali, alla glocalization, alla responsabilità sociale nonché alla sostenibilità, e alla privacy",
       "Soltanto  alla glocalization, alla responsabilità sociale nonché alla sostenibilità, alla privacy, e alla servitization"
     ],
-    "correct_answer": "All'economia connessa con le società digitali, alla glocalization, alla responsabilità sociale nonché alla sostenibilità, \nalla privacy, e alla servitization"
+    "correct_answer": "All'economia connessa con le società digitali, alla glocalization, alla responsabilità sociale nonché alla sostenibilità, alla privacy, e alla servitization"
   },
   {
     "id": "5c9d00ca-bbb8-47e7-bbf6-995f2fd7920d",
@@ -3193,32 +3193,32 @@
     "id": "eb91f012-5195-4ba8-a13c-293e66c5c629",
     "question": "Nel caso di acquisto \"saltuario\":",
     "answers": [
-      "Le vendite del prodotto crescono fino a un picco, oltre il quale inizia la fase di declino della domanda, legata alla \nsaturazione del mercato potenziale",
-      "Alle vendite di primo acquisto, si aggiungono e poi sostituiscono le vendite di riacquisto, che sono tanto più elevate \nquanto maggiore è la soddisfazione dei clienti rispetto al prodotto acquistato",
-      "Alle vendite di primo acquisto, si aggiungono le vendite di sostituzione, volte a sostituire i beni acquistati in passato \ne diventati obsoleti",
+      "Le vendite del prodotto crescono fino a un picco, oltre il quale inizia la fase di declino della domanda, legata alla saturazione del mercato potenziale",
+      "Alle vendite di primo acquisto, si aggiungono e poi sostituiscono le vendite di riacquisto, che sono tanto più elevate quanto maggiore è la soddisfazione dei clienti rispetto al prodotto acquistato",
+      "Alle vendite di primo acquisto, si aggiungono le vendite di sostituzione, volte a sostituire i beni acquistati in passato e diventati obsoleti",
       "Le vendite di sostituzione non consentono di avere una fase di maturità del prodotto più prolungata nel tempo"
     ],
-    "correct_answer": "Alle vendite di primo acquisto, si aggiungono le vendite di sostituzione, volte a sostituire i beni acquistati in passato \ne diventati obsoleti"
+    "correct_answer": "Alle vendite di primo acquisto, si aggiungono le vendite di sostituzione, volte a sostituire i beni acquistati in passato e diventati obsoleti"
   },
   {
     "id": "3fb2d2e1-cc7d-4918-96a6-9efd7bf00e74",
     "question": "Si è in presenza dello \"stadio della funzione integrata\" quando:",
     "answers": [
-      "Le attività di marketing - intese come l'analisi delle opportunità e delle minacce, le ricerche di mercato, i piani di \ncomunicazione - o sono inesistenti, o sono totalmente gestite in outsourcing e affidate a società esterne specializzate, \noppure sono annegate all'interno delle vendite e dunque poste sotto la responsabilità della direzione commerciale",
-      "Si sviluppano effettive competenze specialistiche e le strategie di marketing e comunicazione si fanno più sofisticate \ne aggressive",
-      "Le imprese diventano più consapevoli del marketing strategico, della necessità di analizzare in modo sistematico le \nopportunità e le minacce di mercato, dell'esigenza di investire in immagine, comunicazione e brand",
+      "Le attività di marketing - intese come l'analisi delle opportunità e delle minacce, le ricerche di mercato, i piani di comunicazione - o sono inesistenti, o sono totalmente gestite in outsourcing e affidate a società esterne specializzate, oppure sono annegate all'interno delle vendite e dunque poste sotto la responsabilità della direzione commerciale",
+      "Si sviluppano effettive competenze specialistiche e le strategie di marketing e comunicazione si fanno più sofisticate e aggressive",
+      "Le imprese diventano più consapevoli del marketing strategico, della necessità di analizzare in modo sistematico le opportunità e le minacce di mercato, dell'esigenza di investire in immagine, comunicazione e brand",
       "L'orientamento al marketing coinvolge tutta l'impresa e tutte le funzioni aziendali"
     ],
-    "correct_answer": "Le imprese diventano più consapevoli del marketing strategico, della necessità di analizzare in modo sistematico le \nopportunità e le minacce di mercato, dell'esigenza di investire in immagine, comunicazione e brand"
+    "correct_answer": "Le imprese diventano più consapevoli del marketing strategico, della necessità di analizzare in modo sistematico le opportunità e le minacce di mercato, dell'esigenza di investire in immagine, comunicazione e brand"
   },
   {
     "id": "67773752-90a8-4ee1-921f-01ff4e2dd3ea",
     "question": "Si è in presenza dello \"stadio della funzione diffusa\" quando:",
     "answers": [
-      "Si sviluppano effettive competenze specialistiche e le strategie di marketing e comunicazione si fanno più sofisticate \ne aggressive",
-      "Le imprese diventano più consapevoli del marketing strategico, della necessità di analizzare in modo sistematico le \nopportunità e le minacce di mercato, dell'esigenza di investire in immagine, comunicazione e brand",
+      "Si sviluppano effettive competenze specialistiche e le strategie di marketing e comunicazione si fanno più sofisticate e aggressive",
+      "Le imprese diventano più consapevoli del marketing strategico, della necessità di analizzare in modo sistematico le opportunità e le minacce di mercato, dell'esigenza di investire in immagine, comunicazione e brand",
       "L'orientamento al marketing coinvolge tutta l'impresa e tutte le funzioni aziendali",
-      "Le attività di marketing - intese come l'analisi delle opportunità e delle minacce, le ricerche di mercato, i piani di \ncomunicazione - o sono inesistenti, o sono totalmente gestite in outsourcing e affidate a società esterne specializzate, \noppure sono annegate all'interno delle vendite e dunque poste sotto la responsabilità della direzione commerciale"
+      "Le attività di marketing - intese come l'analisi delle opportunità e delle minacce, le ricerche di mercato, i piani di comunicazione - o sono inesistenti, o sono totalmente gestite in outsourcing e affidate a società esterne specializzate, oppure sono annegate all'interno delle vendite e dunque poste sotto la responsabilità della direzione commerciale"
     ],
     "correct_answer": "L'orientamento al marketing coinvolge tutta l'impresa e tutte le funzioni aziendali"
   },
@@ -3226,32 +3226,32 @@
     "id": "de490ff1-6923-4515-bfef-e154acc40c92",
     "question": "Si è in presenza dello \"stadio della funzione autonoma\" quando:",
     "answers": [
-      "Si sviluppano effettive competenze specialistiche e le strategie di marketing e comunicazione si fanno più sofisticate \ne aggressive",
-      "Le attività di marketing - intese come l'analisi delle opportunità e delle minacce, le ricerche di mercato, i piani di \ncomunicazione - o sono inesistenti, o sono totalmente gestite in outsourcing e affidate a società esterne specializzate, \noppure sono annegate all'interno delle vendite e dunque poste sotto la responsabilità della direzione commerciale",
-      "Le imprese diventano più consapevoli del marketing strategico, della necessità di analizzare in modo sistematico le \nopportunità e le minacce di mercato, dell'esigenza di investire in immagine, comunicazione e brand",
+      "Si sviluppano effettive competenze specialistiche e le strategie di marketing e comunicazione si fanno più sofisticate e aggressive",
+      "Le attività di marketing - intese come l'analisi delle opportunità e delle minacce, le ricerche di mercato, i piani di comunicazione - o sono inesistenti, o sono totalmente gestite in outsourcing e affidate a società esterne specializzate, oppure sono annegate all'interno delle vendite e dunque poste sotto la responsabilità della direzione commerciale",
+      "Le imprese diventano più consapevoli del marketing strategico, della necessità di analizzare in modo sistematico le opportunità e le minacce di mercato, dell'esigenza di investire in immagine, comunicazione e brand",
       "L'orientamento al marketing coinvolge tutta l'impresa e tutte le funzioni aziendali"
     ],
-    "correct_answer": "Si sviluppano effettive competenze specialistiche e le strategie di marketing e comunicazione si fanno più sofisticate \ne aggressive"
+    "correct_answer": "Si sviluppano effettive competenze specialistiche e le strategie di marketing e comunicazione si fanno più sofisticate e aggressive"
   },
   {
     "id": "fac44cff-0a90-4b9d-b62b-f13e37c4a99c",
     "question": "La funzione di marketing è organizzata in modo \"funzionale\":",
     "answers": [
       "Quando le basi tipiche organizzative sono quelle geografiche, di prodotto e di cliente",
-      "Quando vi è un'unica unità, coordinata da un Direttore marketing, che è composta da specialisti che presidiano \nattività diverse",
+      "Quando vi è un'unica unità, coordinata da un Direttore marketing, che è composta da specialisti che presidiano attività diverse",
       "Quando la dimensione geografica è combinata con quella di prodotto",
-      "Quando marketing e vendite sono divisionali su base geografica, e produzione nonché progettazione sono aggregate \nin strutture funzionali"
+      "Quando marketing e vendite sono divisionali su base geografica, e produzione nonché progettazione sono aggregate in strutture funzionali"
     ],
-    "correct_answer": "Quando vi è un'unica unità, coordinata da un Direttore marketing, che è composta da specialisti che presidiano \nattività diverse"
+    "correct_answer": "Quando vi è un'unica unità, coordinata da un Direttore marketing, che è composta da specialisti che presidiano attività diverse"
   },
   {
     "id": "43a0fcbc-b3c2-461e-b463-d30b26a1d225",
     "question": "La funzione di marketing è organizzata in modo \"divisionale\":",
     "answers": [
-      "Quando vi è un'unica unità, coordinata da un Direttore marketing, che è composta da specialisti che presidiano \nattività diverse",
+      "Quando vi è un'unica unità, coordinata da un Direttore marketing, che è composta da specialisti che presidiano attività diverse",
       "Quando la dimensione geografica è combinata con quella di prodotto",
       "Quando le basi tipiche organizzative sono quelle geografiche, di prodotto e di cliente",
-      "Quando marketing e vendite sono divisionali su base geografica, e produzione nonché progettazione sono aggregate \nin strutture funzionali"
+      "Quando marketing e vendite sono divisionali su base geografica, e produzione nonché progettazione sono aggregate in strutture funzionali"
     ],
     "correct_answer": "Quando le basi tipiche organizzative sono quelle geografiche, di prodotto e di cliente"
   },
@@ -3260,9 +3260,9 @@
     "question": "La funzione di marketing è organizzata in modo \"a matrice\":",
     "answers": [
       "Quando la dimensione geografica è combinata con quella di prodotto",
-      "Quando marketing e vendite sono divisionali su base geografica, e produzione nonché progettazione sono aggregate \nin strutture funzionali",
+      "Quando marketing e vendite sono divisionali su base geografica, e produzione nonché progettazione sono aggregate in strutture funzionali",
       "Quando le basi tipiche organizzative sono quelle geografiche, di prodotto e di cliente",
-      "Quando vi è un'unica unità, coordinata da un Direttore marketing, che è composta da specialisti che presidiano \nattività diverse"
+      "Quando vi è un'unica unità, coordinata da un Direttore marketing, che è composta da specialisti che presidiano attività diverse"
     ],
     "correct_answer": "Quando la dimensione geografica è combinata con quella di prodotto"
   },
@@ -3270,12 +3270,12 @@
     "id": "1be4e2c9-c350-429a-83c0-246dd65d7eb7",
     "question": "La funzione di marketing è organizzata in modo \"ibrida\":",
     "answers": [
-      "Quando marketing e vendite sono divisionali su base geografica, e produzione nonché progettazione sono aggregate \nin strutture funzionali",
+      "Quando marketing e vendite sono divisionali su base geografica, e produzione nonché progettazione sono aggregate in strutture funzionali",
       "Quando le basi tipiche organizzative sono quelle geografiche, di prodotto e di cliente",
-      "Quando vi è un'unica unità, coordinata da un Direttore marketing, che è composta da specialisti che presidiano \nattività diverse",
+      "Quando vi è un'unica unità, coordinata da un Direttore marketing, che è composta da specialisti che presidiano attività diverse",
       "Quando la dimensione geografica è combinata con quella di prodotto"
     ],
-    "correct_answer": "Quando marketing e vendite sono divisionali su base geografica, e produzione nonché progettazione sono aggregate \nin strutture funzionali"
+    "correct_answer": "Quando marketing e vendite sono divisionali su base geografica, e produzione nonché progettazione sono aggregate in strutture funzionali"
   },
   {
     "id": "b313e647-c570-401f-bfb2-ee8358e0ee27",
@@ -3292,23 +3292,23 @@
     "id": "66a6eda6-833f-4e7a-a2c4-e70396399e4f",
     "question": "I macroambienti in chiave marketing sono:",
     "answers": [
-      "L'ambiente demografico, l'ambiente economico, l'ambiente naturale, l'ambiente politico-istituzionale e l'ambiente \ntecnologico",
-      "L'ambiente demografico, l'ambiente socioculturale, l'ambiente economico, l'ambiente politico-istituzionale e \nl'ambiente tecnologico",
-      "L'ambiente demografico, l'ambiente socioculturale, l'ambiente economico, l'ambiente naturale, l'ambiente politico-\nistituzionale e l'ambiente tecnologico",
-      "L'ambiente demografico, l'ambiente socioculturale, l'ambiente economico, l'ambiente naturale e l'ambiente \ntecnologico"
+      "L'ambiente demografico, l'ambiente economico, l'ambiente naturale, l'ambiente politico-istituzionale e l'ambiente tecnologico",
+      "L'ambiente demografico, l'ambiente socioculturale, l'ambiente economico, l'ambiente politico-istituzionale e l'ambiente tecnologico",
+      "L'ambiente demografico, l'ambiente socioculturale, l'ambiente economico, l'ambiente naturale, l'ambiente politico-istituzionale e l'ambiente tecnologico",
+      "L'ambiente demografico, l'ambiente socioculturale, l'ambiente economico, l'ambiente naturale e l'ambiente tecnologico"
     ],
-    "correct_answer": "L'ambiente demografico, l'ambiente socioculturale, l'ambiente economico, l'ambiente naturale, l'ambiente politico-\nistituzionale e l'ambiente tecnologico"
+    "correct_answer": "L'ambiente demografico, l'ambiente socioculturale, l'ambiente economico, l'ambiente naturale, l'ambiente politico-istituzionale e l'ambiente tecnologico"
   },
   {
     "id": "3757bbe5-cf33-4fd7-8585-b6b161e64fb5",
     "question": "L'ambiente demografico:",
     "answers": [
-      "Fa riferimento a variabili importanti, quali la dimensione della popolazione, la sua composizione in termini di età, \nsesso, etnie e livello di istruzione, nonché la sua distribuzione geografica e le tendenze agli spostamenti",
-      "Riguarda lo stile di vita, spesso connesso all'atteggiamento delle persone nei confronti di se stessi, della natura, della \nsocietà, delle istituzioni, delle religioni",
+      "Fa riferimento a variabili importanti, quali la dimensione della popolazione, la sua composizione in termini di età, sesso, etnie e livello di istruzione, nonché la sua distribuzione geografica e le tendenze agli spostamenti",
+      "Riguarda lo stile di vita, spesso connesso all'atteggiamento delle persone nei confronti di se stessi, della natura, della società, delle istituzioni, delle religioni",
       "Include diversi aspetti che influenzano i comportamenti dei consumatori e delle imprese",
       "Riguarda le problematiche legate all'impatto ambientale delle attività economiche"
     ],
-    "correct_answer": "Fa riferimento a variabili importanti, quali la dimensione della popolazione, la sua composizione in termini di età, \nsesso, etnie e livello di istruzione, nonché la sua distribuzione geografica e le tendenze agli spostamenti"
+    "correct_answer": "Fa riferimento a variabili importanti, quali la dimensione della popolazione, la sua composizione in termini di età, sesso, etnie e livello di istruzione, nonché la sua distribuzione geografica e le tendenze agli spostamenti"
   },
   {
     "id": "3746fd17-5c36-4f52-9ef3-5a3e3def6e2d",
@@ -3316,8 +3316,8 @@
     "answers": [
       "Riguarda le problematiche legate all'impatto ambientale delle attività economiche",
       "Include diversi aspetti che influenzano i comportamenti dei consumatori e delle imprese",
-      "Fa riferimento a variabili importanti, quali la dimensione della popolazione, la sua composizione in termini di età, \nsesso, etnie e livello di istruzione, nonché la sua distribuzione geografica e le tendenze agli spostamenti",
-      "Riguarda lo stile di vita, spesso connesso all'atteggiamento delle persone nei confronti di se stessi, della natura, della \nsocietà, delle istituzioni, delle religioni"
+      "Fa riferimento a variabili importanti, quali la dimensione della popolazione, la sua composizione in termini di età, sesso, etnie e livello di istruzione, nonché la sua distribuzione geografica e le tendenze agli spostamenti",
+      "Riguarda lo stile di vita, spesso connesso all'atteggiamento delle persone nei confronti di se stessi, della natura, della società, delle istituzioni, delle religioni"
     ],
     "correct_answer": "Include diversi aspetti che influenzano i comportamenti dei consumatori e delle imprese"
   },
@@ -3327,8 +3327,8 @@
     "answers": [
       "Include diversi aspetti che influenzano i comportamenti dei consumatori e delle imprese",
       "Riguarda le problematiche legate all'impatto ambientale delle attività economiche",
-      "Fa riferimento a variabili importanti, quali la dimensione della popolazione, la sua composizione in termini di età, \nsesso, etnie e livello di istruzione, nonché la sua distribuzione geografica e le tendenze agli spostamenti",
-      "Riguarda lo stile di vita, spesso connesso all'atteggiamento delle persone nei confronti di se stessi, della natura, della \nsocietà, delle istituzioni, delle religioni"
+      "Fa riferimento a variabili importanti, quali la dimensione della popolazione, la sua composizione in termini di età, sesso, etnie e livello di istruzione, nonché la sua distribuzione geografica e le tendenze agli spostamenti",
+      "Riguarda lo stile di vita, spesso connesso all'atteggiamento delle persone nei confronti di se stessi, della natura, della società, delle istituzioni, delle religioni"
     ],
     "correct_answer": "Riguarda le problematiche legate all'impatto ambientale delle attività economiche"
   },
@@ -3336,23 +3336,23 @@
     "id": "d177fdd7-8ecf-4a5e-906d-7f14df2a2981",
     "question": "L'ambiente politico-istituzionale:",
     "answers": [
-      "Considera le direzioni e la velocità di sviluppo delle tecnologie un elemento fondamentale per comprendere le \nopportunità di mercato attuali e future",
+      "Considera le direzioni e la velocità di sviluppo delle tecnologie un elemento fondamentale per comprendere le opportunità di mercato attuali e future",
       "Include diversi aspetti che influenzano i comportamenti dei consumatori e delle imprese",
       "Riguarda le problematiche legate all'impatto ambientale delle attività economiche",
-      "Si sostanzia in leggi, organi di governo e gruppi di pressione che limitano o vincolano i comportamenti delle imprese \nrispetto alle modalità di concorrenza, alla relazione con i consumatori e con la società in genere"
+      "Si sostanzia in leggi, organi di governo e gruppi di pressione che limitano o vincolano i comportamenti delle imprese rispetto alle modalità di concorrenza, alla relazione con i consumatori e con la società in genere"
     ],
-    "correct_answer": "Si sostanzia in leggi, organi di governo e gruppi di pressione che limitano o vincolano i comportamenti delle imprese \nrispetto alle modalità di concorrenza, alla relazione con i consumatori e con la società in genere"
+    "correct_answer": "Si sostanzia in leggi, organi di governo e gruppi di pressione che limitano o vincolano i comportamenti delle imprese rispetto alle modalità di concorrenza, alla relazione con i consumatori e con la società in genere"
   },
   {
     "id": "8383dd37-e074-4a24-b1d2-b937e704e968",
     "question": "I parametri rilevanti per determinare l'intensità della concorrenza sono:",
     "answers": [
-      "Il livello di concentrazione del settore, la presenza di barriere all'ingresso o all'uscita, il tasso di crescita, la presenza \no meno di fattori di differenziazione e l'utilizzo di manovre o battaglie sui prezzi",
-      "Il livello di concentrazione del settore, la presenza di barriere all'ingresso o all'uscita, il tasso di crescita e la presenza \no meno di fattori di differenziazione",
-      "La presenza di barriere all'ingresso o all'uscita, il tasso di crescita, la presenza o meno di fattori di differenziazione e \nl'utilizzo di manovre o battaglie sui prezzi",
-      "Il livello di concentrazione del settore, la presenza di barriere all'ingresso o all'uscita, la presenza o meno di fattori di \ndifferenziazione e l'utilizzo di manovre o battaglie sui prezzi"
+      "Il livello di concentrazione del settore, la presenza di barriere all'ingresso o all'uscita, il tasso di crescita, la presenza o meno di fattori di differenziazione e l'utilizzo di manovre o battaglie sui prezzi",
+      "Il livello di concentrazione del settore, la presenza di barriere all'ingresso o all'uscita, il tasso di crescita e la presenza o meno di fattori di differenziazione",
+      "La presenza di barriere all'ingresso o all'uscita, il tasso di crescita, la presenza o meno di fattori di differenziazione e l'utilizzo di manovre o battaglie sui prezzi",
+      "Il livello di concentrazione del settore, la presenza di barriere all'ingresso o all'uscita, la presenza o meno di fattori di differenziazione e l'utilizzo di manovre o battaglie sui prezzi"
     ],
-    "correct_answer": "Il livello di concentrazione del settore, la presenza di barriere all'ingresso o all'uscita, il tasso di crescita, la presenza \no meno di fattori di differenziazione e l'utilizzo di manovre o battaglie sui prezzi"
+    "correct_answer": "Il livello di concentrazione del settore, la presenza di barriere all'ingresso o all'uscita, il tasso di crescita, la presenza o meno di fattori di differenziazione e l'utilizzo di manovre o battaglie sui prezzi"
   },
   {
     "id": "0cd2619e-4d13-4763-ae52-ec248acd4b4d",
@@ -3360,47 +3360,47 @@
     "answers": [
       "Il mercato dei consumatori, quello delle imprese e quello delle pubbliche amministrazioni",
       "Il mercato dei consumatori, quello delle imprese e quello degli intermediari (rivenditori)",
-      "Il mercato dei consumatori, quello delle imprese, quello degli intermediari (rivenditori) e quello delle pubbliche \namministrazioni",
+      "Il mercato dei consumatori, quello delle imprese, quello degli intermediari (rivenditori) e quello delle pubbliche amministrazioni",
       "Quello delle imprese, quello degli intermediari (rivenditori) e quello delle pubbliche amministrazioni"
     ],
-    "correct_answer": "Il mercato dei consumatori, quello delle imprese, quello degli intermediari (rivenditori) e quello delle pubbliche \namministrazioni"
+    "correct_answer": "Il mercato dei consumatori, quello delle imprese, quello degli intermediari (rivenditori) e quello delle pubbliche amministrazioni"
   },
   {
     "id": "f42786c8-dad2-443b-b00c-723760aa1aee",
     "question": "Le fasi del processo di acquisto di un bene o di un servizio sono:",
     "answers": [
       "La percezione del bisogno, la ricerca di informazioni, la valutazione delle alternative e la decisione di acquisto",
-      "La percezione del bisogno, la ricerca di informazioni, la valutazione delle alternative, la decisione di acquisto e il \ncomportamento post-acquisto",
+      "La percezione del bisogno, la ricerca di informazioni, la valutazione delle alternative, la decisione di acquisto e il comportamento post-acquisto",
       "La percezione del bisogno, la valutazione delle alternative, la decisione di acquisto e il comportamento post-acquisto",
       "La ricerca di informazioni, la valutazione delle alternative, la decisione di acquisto e il comportamento post-acquisto"
     ],
-    "correct_answer": "La percezione del bisogno, la ricerca di informazioni, la valutazione delle alternative, la decisione di acquisto e il \ncomportamento post-acquisto"
+    "correct_answer": "La percezione del bisogno, la ricerca di informazioni, la valutazione delle alternative, la decisione di acquisto e il comportamento post-acquisto"
   },
   {
     "id": "d078ecfc-ff3b-4fa4-837e-5421ab245265",
     "question": "Gli elementi più importanti da valutare nell'analisi del comportamento di acquisto dei clienti industriali sono:",
     "answers": [
-      "I fattori economici, le strategie e le politiche di approvvigionamento, le procedure e gli strumenti utilizzati per \nl'acquisto nonché i criteri e le modalità di valutazione dei fornitori",
-      "I fattori economici, le strategie e le politiche di approvvigionamento, la struttura organizzativa, le procedure e gli \nstrumenti utilizzati per l'acquisto nonché i criteri e le modalità di valutazione dei fornitori",
-      "Le strategie e le politiche di approvvigionamento, la struttura organizzativa, le procedure e gli strumenti utilizzati per \nl'acquisto nonché i criteri e le modalità di valutazione dei fornitori",
-      "I fattori economici, la struttura organizzativa, le procedure e gli strumenti utilizzati per l'acquisto nonché i criteri e le \nmodalità di valutazione dei fornitori"
+      "I fattori economici, le strategie e le politiche di approvvigionamento, le procedure e gli strumenti utilizzati per l'acquisto nonché i criteri e le modalità di valutazione dei fornitori",
+      "I fattori economici, le strategie e le politiche di approvvigionamento, la struttura organizzativa, le procedure e gli strumenti utilizzati per l'acquisto nonché i criteri e le modalità di valutazione dei fornitori",
+      "Le strategie e le politiche di approvvigionamento, la struttura organizzativa, le procedure e gli strumenti utilizzati per l'acquisto nonché i criteri e le modalità di valutazione dei fornitori",
+      "I fattori economici, la struttura organizzativa, le procedure e gli strumenti utilizzati per l'acquisto nonché i criteri e le modalità di valutazione dei fornitori"
     ],
-    "correct_answer": "I fattori economici, le strategie e le politiche di approvvigionamento, la struttura organizzativa, le procedure e gli \nstrumenti utilizzati per l'acquisto nonché i criteri e le modalità di valutazione dei fornitori"
+    "correct_answer": "I fattori economici, le strategie e le politiche di approvvigionamento, la struttura organizzativa, le procedure e gli strumenti utilizzati per l'acquisto nonché i criteri e le modalità di valutazione dei fornitori"
   },
   {
     "id": "537332d7-99c5-4cc6-b084-a91cf94ad4e8",
     "question": "Secondo la definizione formale proposta da Kotler, la domanda di mercato di un prodotto è:",
     "answers": [
-      "Il volume totale che verrebbe acquistato da un determinato segmento di consumatori, in una specifica area \ngeografica, in un determinato intervallo di tempo, dato un certo ambiente di marketing e un certo livello dell'attività di \nmarketing",
-      "Il volume totale che verrebbe acquistato da un determinato segmento di consumatori, in una specifica area \ngeografica, in un determinato intervallo di tempo e dato un certo livello dell'attività di marketing",
-      "Il volume totale che verrebbe acquistato da un determinato segmento di consumatori, in un determinato intervallo \ndi tempo, dato un certo ambiente di marketing e un certo livello dell'attività di marketing",
-      "Il volume totale che verrebbe acquistato da un determinato segmento di consumatori, in una specifica area \ngeografica, dato un certo ambiente di marketing e un certo livello dell'attività di marketing"
+      "Il volume totale che verrebbe acquistato da un determinato segmento di consumatori, in una specifica area geografica, in un determinato intervallo di tempo, dato un certo ambiente di marketing e un certo livello dell'attività di marketing",
+      "Il volume totale che verrebbe acquistato da un determinato segmento di consumatori, in una specifica area geografica, in un determinato intervallo di tempo e dato un certo livello dell'attività di marketing",
+      "Il volume totale che verrebbe acquistato da un determinato segmento di consumatori, in un determinato intervallo di tempo, dato un certo ambiente di marketing e un certo livello dell'attività di marketing",
+      "Il volume totale che verrebbe acquistato da un determinato segmento di consumatori, in una specifica area geografica, dato un certo ambiente di marketing e un certo livello dell'attività di marketing"
     ],
-    "correct_answer": "Il volume totale che verrebbe acquistato da un determinato segmento di consumatori, in una specifica area \ngeografica, in un determinato intervallo di tempo, dato un certo ambiente di marketing e un certo livello dell'attività di \nmarketing"
+    "correct_answer": "Il volume totale che verrebbe acquistato da un determinato segmento di consumatori, in una specifica area geografica, in un determinato intervallo di tempo, dato un certo ambiente di marketing e un certo livello dell'attività di marketing"
   },
   {
     "id": "00107d7f-0da6-4363-8b81-fcd07d723c08",
-    "question": "Le dimensioni di aggregazione della domanda di mercato possono riguardare il prodotto, il gruppo di clienti, il \ncanale e l'orizzonte temporale; nel caso di aggregazione della domanda medesima per canale distributivo, i diversi \nlivelli di aggregazione possibili sono:",
+    "question": "Le dimensioni di aggregazione della domanda di mercato possono riguardare il prodotto, il gruppo di clienti, il canale e l'orizzonte temporale; nel caso di aggregazione della domanda medesima per canale distributivo, i diversi livelli di aggregazione possibili sono:",
     "answers": [
       "Il singolo punto vendita, la linea di prodotti, la tipologia di punto vendita, il canale e l'intero mercato",
       "Esclusivamente il singolo punto vendita e l'intero mercato",
@@ -3426,14 +3426,14 @@
     "answers": [
       "L'insieme di tutti i soggetti che dimostrano interesse nei confronti dell'offerta di mercato relativa al prodotto",
       "E' costituito dai segmenti del mercato disponibile ai quali l'offerta di marketing si rivolge",
-      "La parte del mercato potenziale che, oltre ad avere interesse, ha anche il reddito necessario e l'accesso all'offerta di \nprodotto",
+      "La parte del mercato potenziale che, oltre ad avere interesse, ha anche il reddito necessario e l'accesso all'offerta di prodotto",
       "La parte del mercato servito che acquista effettivamente il prodotto"
     ],
-    "correct_answer": "La parte del mercato potenziale che, oltre ad avere interesse, ha anche il reddito necessario e l'accesso all'offerta di \nprodotto"
+    "correct_answer": "La parte del mercato potenziale che, oltre ad avere interesse, ha anche il reddito necessario e l'accesso all'offerta di prodotto"
   },
   {
     "id": "46d7b06c-4fa1-495b-9e92-609e106f70d2",
-    "question": "La quota di mercato di un'impresa può essere analizzata in base alle tre componenti operative - l'introduzione, la \ncopertura e la selettività - che spiegano la composizione dei volumi di vendita; la relazione tra la quota e le \ncomponenti operative è:",
+    "question": "La quota di mercato di un'impresa può essere analizzata in base alle tre componenti operative - l'introduzione, la copertura e la selettività - che spiegano la composizione dei volumi di vendita; la relazione tra la quota e le componenti operative è:",
     "answers": [
       "q = (I × C)/S",
       "q = I × C × S",
@@ -3446,12 +3446,12 @@
     "id": "74e3fc22-84ea-480c-b298-489e6ed7caa0",
     "question": "L'introduzione di un'impresa indica:",
     "answers": [
-      "Quale parte degli acquisti totali dei suoi clienti è costituita da prodotti da lei venduti, e rappresenta il peso medio \nrelativo dell'impresa come fornitore dei suoi clienti",
+      "Quale parte degli acquisti totali dei suoi clienti è costituita da prodotti da lei venduti, e rappresenta il peso medio relativo dell'impresa come fornitore dei suoi clienti",
       "La presenza sul mercato di un'impresa in termini di numero di clienti serviti",
       "La dimensione media degli acquisti dei clienti dell'azienda",
       "Quale parte degli acquisti totali dei suoi clienti è costituita da prodotti venduti da imprese concorrenti"
     ],
-    "correct_answer": "Quale parte degli acquisti totali dei suoi clienti è costituita da prodotti da lei venduti, e rappresenta il peso medio \nrelativo dell'impresa come fornitore dei suoi clienti"
+    "correct_answer": "Quale parte degli acquisti totali dei suoi clienti è costituita da prodotti da lei venduti, e rappresenta il peso medio relativo dell'impresa come fornitore dei suoi clienti"
   },
   {
     "id": "b7292110-cf4e-405d-8f54-5852250ca7bf",
@@ -3468,23 +3468,23 @@
     "id": "4aecb4a1-b042-426c-850e-fd8725b1e63a",
     "question": "Per prevedere la domanda di mercato, è possibile:",
     "answers": [
-      "Analizzare i comportamenti passati dei clienti ed estrapolare, da questi, i possibili comportamenti futuri; raccogliere \ninformazioni e previsioni, da parte della forza vendita o di esperti; indagare, direttamente presso i clienti, le intenzioni \ndi acquisto e di comportamento futuro; testare il mercato, attraverso la prova del prodotto, per analizzare la risposta \ndegli acquirenti",
-      "Raccogliere informazioni e previsioni, da parte della forza vendita o di esperti; indagare, direttamente presso i \nclienti, le intenzioni di acquisto e di comportamento futuro; testare il mercato, attraverso la prova del prodotto, per \nanalizzare la risposta degli acquirenti",
-      "Analizzare i comportamenti passati dei clienti ed estrapolare, da questi, i possibili comportamenti futuri; raccogliere \ninformazioni e previsioni, da parte della forza vendita o di esperti; indagare, direttamente presso i clienti, le intenzioni \ndi acquisto e di comportamento futuro",
-      "Analizzare i comportamenti passati dei clienti ed estrapolare, da questi, i possibili comportamenti futuri; indagare, \ndirettamente presso i clienti, le intenzioni di acquisto e di comportamento futuro; testare il mercato, attraverso la \nprova del prodotto, per analizzare la risposta degli acquirenti"
+      "Analizzare i comportamenti passati dei clienti ed estrapolare, da questi, i possibili comportamenti futuri; raccogliere informazioni e previsioni, da parte della forza vendita o di esperti; indagare, direttamente presso i clienti, le intenzioni di acquisto e di comportamento futuro; testare il mercato, attraverso la prova del prodotto, per analizzare la risposta degli acquirenti",
+      "Raccogliere informazioni e previsioni, da parte della forza vendita o di esperti; indagare, direttamente presso i clienti, le intenzioni di acquisto e di comportamento futuro; testare il mercato, attraverso la prova del prodotto, per analizzare la risposta degli acquirenti",
+      "Analizzare i comportamenti passati dei clienti ed estrapolare, da questi, i possibili comportamenti futuri; raccogliere informazioni e previsioni, da parte della forza vendita o di esperti; indagare, direttamente presso i clienti, le intenzioni di acquisto e di comportamento futuro",
+      "Analizzare i comportamenti passati dei clienti ed estrapolare, da questi, i possibili comportamenti futuri; indagare, direttamente presso i clienti, le intenzioni di acquisto e di comportamento futuro; testare il mercato, attraverso la prova del prodotto, per analizzare la risposta degli acquirenti"
     ],
-    "correct_answer": "Analizzare i comportamenti passati dei clienti ed estrapolare, da questi, i possibili comportamenti futuri; raccogliere \ninformazioni e previsioni, da parte della forza vendita o di esperti; indagare, direttamente presso i clienti, le intenzioni \ndi acquisto e di comportamento futuro; testare il mercato, attraverso la prova del prodotto, per analizzare la risposta \ndegli acquirenti"
+    "correct_answer": "Analizzare i comportamenti passati dei clienti ed estrapolare, da questi, i possibili comportamenti futuri; raccogliere informazioni e previsioni, da parte della forza vendita o di esperti; indagare, direttamente presso i clienti, le intenzioni di acquisto e di comportamento futuro; testare il mercato, attraverso la prova del prodotto, per analizzare la risposta degli acquirenti"
   },
   {
     "id": "20eee801-d929-4914-a501-39e5bdad4518",
     "question": "Il modello epidemiologico è:",
     "answers": [
-      "Una tecnica di previsione della domanda adatta a prevedere la domanda di primo acquisto di un prodotto \nesclusivamente a partire da parametri stimati tramite test di mercato",
-      "Una tecnica di previsione della domanda adatta a prevedere la domanda di primo acquisto di un prodotto \nesclusivamente a partire da parametri stimati tramite analisi di prodotti simili venduti nel passato",
-      "Una tecnica di previsione della domanda adatta a prevedere la domanda di primo acquisto di un prodotto a partire \nda parametri stimati tramite test di mercato o analisi di prodotti simili venduti nel passato",
-      "Una tecnica di previsione della domanda adatta a prevedere la domanda di primo acquisto di un prodotto senza la \nstima di alcun parametro"
+      "Una tecnica di previsione della domanda adatta a prevedere la domanda di primo acquisto di un prodotto esclusivamente a partire da parametri stimati tramite test di mercato",
+      "Una tecnica di previsione della domanda adatta a prevedere la domanda di primo acquisto di un prodotto esclusivamente a partire da parametri stimati tramite analisi di prodotti simili venduti nel passato",
+      "Una tecnica di previsione della domanda adatta a prevedere la domanda di primo acquisto di un prodotto a partire da parametri stimati tramite test di mercato o analisi di prodotti simili venduti nel passato",
+      "Una tecnica di previsione della domanda adatta a prevedere la domanda di primo acquisto di un prodotto senza la stima di alcun parametro"
     ],
-    "correct_answer": "Una tecnica di previsione della domanda adatta a prevedere la domanda di primo acquisto di un prodotto a partire \nda parametri stimati tramite test di mercato o analisi di prodotti simili venduti nel passato"
+    "correct_answer": "Una tecnica di previsione della domanda adatta a prevedere la domanda di primo acquisto di un prodotto a partire da parametri stimati tramite test di mercato o analisi di prodotti simili venduti nel passato"
   },
   {
     "id": "1d91781b-072d-4a0a-9a1d-4549c7352e82",
@@ -3510,7 +3510,7 @@
   },
   {
     "id": "424d7ef3-68e1-44c1-b5cc-b211e07e3722",
-    "question": "Nel mercato dei personal computer, vi sono due macrosegmenti costituiti da coloro che lo utilizzano sempre nello \nstesso luogo, e, quindi, necessitano di un computer fisso, e coloro che hanno bisogno di spostarsi, e, quindi, \nnecessitano di un computer portatile; in questo specifico caso, le preferenze dei clienti sono:",
+    "question": "Nel mercato dei personal computer, vi sono due macrosegmenti costituiti da coloro che lo utilizzano sempre nello stesso luogo, e, quindi, necessitano di un computer fisso, e coloro che hanno bisogno di spostarsi, e, quindi, necessitano di un computer portatile; in questo specifico caso, le preferenze dei clienti sono:",
     "answers": [
       "Omogenee (non sono presenti segmenti naturali di mercato)",
       "Diffuse",
@@ -3523,19 +3523,19 @@
     "id": "1a32fd83-f89f-4c79-8f0a-dd992630a844",
     "question": "Per poter perseguire una strategia di marketing mirata, le aziende devono:",
     "answers": [
-      "Dapprima individuare i gruppi di clienti che presentano bisogni e preferenze omogenee, ovvero segmentare il \nmercato, in secondo luogo devono selezionare uno o più segmenti nei quali operare, ovvero definire il mercato \nobiettivo (targeting)",
-      "Dapprima determinare la strategia di marketing da perseguire a partire dalle caratteristiche del proprio prodotto o \nservizio rispetto all'offerta di mercato",
+      "Dapprima individuare i gruppi di clienti che presentano bisogni e preferenze omogenee, ovvero segmentare il mercato, in secondo luogo devono selezionare uno o più segmenti nei quali operare, ovvero definire il mercato obiettivo (targeting)",
+      "Dapprima determinare la strategia di marketing da perseguire a partire dalle caratteristiche del proprio prodotto o servizio rispetto all'offerta di mercato",
       "Unicamente selezionare il mercato nel quale operare",
-      "Dapprima individuare i gruppi di clienti che presentano bisogni e preferenze omogenee, ovvero segmentare il \nmercato, in secondo luogo devono selezionare un solo segmento nel quale operarare"
+      "Dapprima individuare i gruppi di clienti che presentano bisogni e preferenze omogenee, ovvero segmentare il mercato, in secondo luogo devono selezionare un solo segmento nel quale operarare"
     ],
-    "correct_answer": "Dapprima individuare i gruppi di clienti che presentano bisogni e preferenze omogenee, ovvero segmentare il \nmercato, in secondo luogo devono selezionare uno o più segmenti nei quali operare, ovvero definire il mercato \nobiettivo (targeting)"
+    "correct_answer": "Dapprima individuare i gruppi di clienti che presentano bisogni e preferenze omogenee, ovvero segmentare il mercato, in secondo luogo devono selezionare uno o più segmenti nei quali operare, ovvero definire il mercato obiettivo (targeting)"
   },
   {
     "id": "74d4f60c-da7e-4690-9844-234f2e7879b1",
     "question": "Nei mercati dei consumatori finali (B2C), la segmentazione descrittiva differenzia i potenziali consumatori:",
     "answers": [
       "Soltanto in base alle caratteristiche demografiche",
-      "In base alle caratteristiche geografiche, demografiche, di status sociale, di stile di vita, di interessi e di opinioni dei \nconsumatori",
+      "In base alle caratteristiche geografiche, demografiche, di status sociale, di stile di vita, di interessi e di opinioni dei consumatori",
       "In base alle caratteristiche geografiche e demografiche",
       "Unicamente in base alle caratteristiche geografiche"
     ],
@@ -3556,34 +3556,34 @@
     "id": "368ee57a-4026-4259-bc90-fae0df7e51e5",
     "question": "Il concetto di \"marketing one-to-one\" prevede che:",
     "answers": [
-      "Si arrivi alla segmentazione totale del mercato, secondo la quale ogni segmento è costituito da più clienti, \ncaratterizzati da bisogni e comportamenti simili, a cui l'azienda risponde in modo personalizzato",
-      "Si arrivi alla segmentazione parziale del mercato, secondo la quale ogni segmento è costituito da un singolo cliente, \ncaratterizzato da bisogni e comportamenti diversi, a cui l'azienda risponde in modo personalizzato",
-      "Si arrivi alla segmentazione totale del mercato, secondo la quale ogni segmento è costituito da un singolo cliente, \ncaratterizzato da bisogni e comportamenti diversi, a cui l'azienda risponde in modo indifferenziato",
-      "Si arrivi alla segmentazione totale del mercato, secondo la quale ogni segmento è costituito da un singolo cliente, \ncaratterizzato da bisogni e comportamenti diversi, a cui l'azienda risponde in modo personalizzato"
+      "Si arrivi alla segmentazione totale del mercato, secondo la quale ogni segmento è costituito da più clienti, caratterizzati da bisogni e comportamenti simili, a cui l'azienda risponde in modo personalizzato",
+      "Si arrivi alla segmentazione parziale del mercato, secondo la quale ogni segmento è costituito da un singolo cliente, caratterizzato da bisogni e comportamenti diversi, a cui l'azienda risponde in modo personalizzato",
+      "Si arrivi alla segmentazione totale del mercato, secondo la quale ogni segmento è costituito da un singolo cliente, caratterizzato da bisogni e comportamenti diversi, a cui l'azienda risponde in modo indifferenziato",
+      "Si arrivi alla segmentazione totale del mercato, secondo la quale ogni segmento è costituito da un singolo cliente, caratterizzato da bisogni e comportamenti diversi, a cui l'azienda risponde in modo personalizzato"
     ],
-    "correct_answer": "Si arrivi alla segmentazione totale del mercato, secondo la quale ogni segmento è costituito da un singolo cliente, \ncaratterizzato da bisogni e comportamenti diversi, a cui l'azienda risponde in modo personalizzato"
+    "correct_answer": "Si arrivi alla segmentazione totale del mercato, secondo la quale ogni segmento è costituito da un singolo cliente, caratterizzato da bisogni e comportamenti diversi, a cui l'azienda risponde in modo personalizzato"
   },
   {
     "id": "5fc63ecc-7272-41de-a91b-090f08a2e88a",
     "question": "La strategia di marketing di un'impresa viene definita di \"marketing concentrato\" quando:",
     "answers": [
-      "Le scelte di prezzo, prodotto, distribuzione e promozione sono focalizzate sulle specifiche preferenze del segmento \ntarget",
+      "Le scelte di prezzo, prodotto, distribuzione e promozione sono focalizzate sulle specifiche preferenze del segmento target",
       "Decide di rivolgersi a più segmenti, ovvero di attuare politiche di marketing diverse e mirate a ciascun segmento",
-      "Decide di offrire a tutti i segmenti lo stesso prodotto, allo stesso prezzo, attraverso gli stessi canali e con le stesse \nstrategie di comunicazione",
+      "Decide di offrire a tutti i segmenti lo stesso prodotto, allo stesso prezzo, attraverso gli stessi canali e con le stesse strategie di comunicazione",
       "Le scelte di prezzo, prodotto, distribuzione e promozione sono focalizzate su più segmenti"
     ],
-    "correct_answer": "Le scelte di prezzo, prodotto, distribuzione e promozione sono focalizzate sulle specifiche preferenze del segmento \ntarget"
+    "correct_answer": "Le scelte di prezzo, prodotto, distribuzione e promozione sono focalizzate sulle specifiche preferenze del segmento target"
   },
   {
     "id": "7428f41c-3c01-4569-8692-9774dfe61e2b",
-    "question": "Il posizionamento dell'offerta (sia essa un prodotto o un servizio) in un determinato segmento di mercato \nconsiste:",
+    "question": "Il posizionamento dell'offerta (sia essa un prodotto o un servizio) in un determinato segmento di mercato consiste:",
     "answers": [
-      "nella definizione delle caratteristiche specifiche del prodotto che permettono all'impresa di differenziarsi dai \nconcorrenti nella percezione dell'acquirente",
-      "nella definizione delle caratteristiche specifiche dell'offerta di marketing che permettono all'impresa di differenziarsi \ndai concorrenti nella percezione dell'acquirente",
-      "nella definizione delle caratteristiche specifiche del prodotto e dell'offerta di marketing che permettono all'impresa \ndi differenziarsi dai concorrenti nella percezione dell'acquirente",
-      "nella definizione delle caratteristiche specifiche del prodotto e dell'offerta di marketing che non consentono \nall'impresa di differenziarsi dai concorrenti nella percezione dell'acquirente"
+      "nella definizione delle caratteristiche specifiche del prodotto che permettono all'impresa di differenziarsi dai concorrenti nella percezione dell'acquirente",
+      "nella definizione delle caratteristiche specifiche dell'offerta di marketing che permettono all'impresa di differenziarsi dai concorrenti nella percezione dell'acquirente",
+      "nella definizione delle caratteristiche specifiche del prodotto e dell'offerta di marketing che permettono all'impresa di differenziarsi dai concorrenti nella percezione dell'acquirente",
+      "nella definizione delle caratteristiche specifiche del prodotto e dell'offerta di marketing che non consentono all'impresa di differenziarsi dai concorrenti nella percezione dell'acquirente"
     ],
-    "correct_answer": "nella definizione delle caratteristiche specifiche del prodotto e dell'offerta di marketing che permettono all'impresa \ndi differenziarsi dai concorrenti nella percezione dell'acquirente"
+    "correct_answer": "nella definizione delle caratteristiche specifiche del prodotto e dell'offerta di marketing che permettono all'impresa di differenziarsi dai concorrenti nella percezione dell'acquirente"
   },
   {
     "id": "bc301f84-c35e-4109-9f77-dfef73cb4edd",
@@ -3655,34 +3655,34 @@
     "id": "3860ac0c-c713-4912-a812-60ee01e54adf",
     "question": "Un brand è definito come:",
     "answers": [
-      "un nome, un termine, un design, un simbolo, o un qualsiasi altro elemento che ha lo scopo di identificare i beni o i \nservizi di un venditore per differenziarli da quelli dei concorrenti",
-      "un nome, un termine, un design, un simbolo, o un qualsiasi altro elemento che ha lo scopo di identificare, \nesclusivamente, i beni di un venditore per differenziarli da quelli dei concorrenti",
-      "un nome, un termine, un design, un simbolo, o un qualsiasi altro elemento che ha lo scopo di identificare, \nesclusivamente, i servizi di un venditore per differenziarli da quelli dei concorrenti",
-      "un nome, un termine, un design, un simbolo, o un qualsiasi altro elemento che non identifica i beni o i servizi di un \nvenditore per differenziarli da quelli dei concorrenti"
+      "un nome, un termine, un design, un simbolo, o un qualsiasi altro elemento che ha lo scopo di identificare i beni o i servizi di un venditore per differenziarli da quelli dei concorrenti",
+      "un nome, un termine, un design, un simbolo, o un qualsiasi altro elemento che ha lo scopo di identificare, esclusivamente, i beni di un venditore per differenziarli da quelli dei concorrenti",
+      "un nome, un termine, un design, un simbolo, o un qualsiasi altro elemento che ha lo scopo di identificare, esclusivamente, i servizi di un venditore per differenziarli da quelli dei concorrenti",
+      "un nome, un termine, un design, un simbolo, o un qualsiasi altro elemento che non identifica i beni o i servizi di un venditore per differenziarli da quelli dei concorrenti"
     ],
-    "correct_answer": "un nome, un termine, un design, un simbolo, o un qualsiasi altro elemento che ha lo scopo di identificare i beni o i \nservizi di un venditore per differenziarli da quelli dei concorrenti"
+    "correct_answer": "un nome, un termine, un design, un simbolo, o un qualsiasi altro elemento che ha lo scopo di identificare i beni o i servizi di un venditore per differenziarli da quelli dei concorrenti"
   },
   {
     "id": "755e6196-3424-460b-82d8-1d23d69e1cbe",
     "question": "I livelli di significato associati alla marca sono:",
     "answers": [
-      "soltanto i benefici o i vantaggi funzionali o psicologico-emotivi che derivano dall'utilizzo del prodotto, i valori del \nproduttore, la cultura associata al prodotto e al brand, la personalità comunicata dal brand e le caratteristiche \ndell'utente che utilizzerà il prodotto",
-      "unicamente gli attributi tipici del prodotto che possiede il brand, i benefici o i vantaggi funzionali o psicologico-\nemotivi che derivano dall'utilizzo del prodotto, i valori del produttore, la cultura associata al prodotto e al brand \nnonché la personalità comunicata dal brand",
-      "gli attributi tipici del prodotto che possiede il brand, i benefici o i vantaggi funzionali o psicologico-emotivi che \nderivano dall'utilizzo del prodotto, i valori del produttore, la cultura associata al prodotto e al brand, la personalità \ncomunicata dal brand e le caratteristiche dell'utente che utilizzerà il prodotto",
-      "esclusivamente gli attributi tipici del prodotto che possiede il brand, i valori del produttore, la cultura associata al \nprodotto e al brand, la personalità comunicata dal brand e le caratteristiche dell'utente che utilizzerà il prodotto"
+      "soltanto i benefici o i vantaggi funzionali o psicologico-emotivi che derivano dall'utilizzo del prodotto, i valori del produttore, la cultura associata al prodotto e al brand, la personalità comunicata dal brand e le caratteristiche dell'utente che utilizzerà il prodotto",
+      "unicamente gli attributi tipici del prodotto che possiede il brand, i benefici o i vantaggi funzionali o psicologico-emotivi che derivano dall'utilizzo del prodotto, i valori del produttore, la cultura associata al prodotto e al brand nonché la personalità comunicata dal brand",
+      "gli attributi tipici del prodotto che possiede il brand, i benefici o i vantaggi funzionali o psicologico-emotivi che derivano dall'utilizzo del prodotto, i valori del produttore, la cultura associata al prodotto e al brand, la personalità comunicata dal brand e le caratteristiche dell'utente che utilizzerà il prodotto",
+      "esclusivamente gli attributi tipici del prodotto che possiede il brand, i valori del produttore, la cultura associata al prodotto e al brand, la personalità comunicata dal brand e le caratteristiche dell'utente che utilizzerà il prodotto"
     ],
-    "correct_answer": "gli attributi tipici del prodotto che possiede il brand, i benefici o i vantaggi funzionali o psicologico-emotivi che \nderivano dall'utilizzo del prodotto, i valori del produttore, la cultura associata al prodotto e al brand, la personalità \ncomunicata dal brand e le caratteristiche dell'utente che utilizzerà il prodotto"
+    "correct_answer": "gli attributi tipici del prodotto che possiede il brand, i benefici o i vantaggi funzionali o psicologico-emotivi che derivano dall'utilizzo del prodotto, i valori del produttore, la cultura associata al prodotto e al brand, la personalità comunicata dal brand e le caratteristiche dell'utente che utilizzerà il prodotto"
   },
   {
     "id": "0c8c5987-3d20-4a46-9631-e98d444f6476",
     "question": "Nello stadio di declino:",
     "answers": [
-      "ai avrà come obiettivo quello di conquistare quote di mercato, convertendo i clienti della concorrenza all'acquisto \ndel proprio prodotto",
-      "l'impresa tenderà a eliminare i prodotti o le varianti più deboli, con minor domanda, per concentrare gli sforzi sui \nprodotti della gamma centrali e con livelli di profitto più elevati",
+      "ai avrà come obiettivo quello di conquistare quote di mercato, convertendo i clienti della concorrenza all'acquisto del proprio prodotto",
+      "l'impresa tenderà a eliminare i prodotti o le varianti più deboli, con minor domanda, per concentrare gli sforzi sui prodotti della gamma centrali e con livelli di profitto più elevati",
       "l'attenzione dell'impresa deve essere rivolta a perfezionare e ampliare l'offerta commerciale",
       "l'azienda avrà convenienza a offrire un prodotto base, in poche varianti e versioni diverse"
     ],
-    "correct_answer": "l'impresa tenderà a eliminare i prodotti o le varianti più deboli, con minor domanda, per concentrare gli sforzi sui \nprodotti della gamma centrali e con livelli di profitto più elevati"
+    "correct_answer": "l'impresa tenderà a eliminare i prodotti o le varianti più deboli, con minor domanda, per concentrare gli sforzi sui prodotti della gamma centrali e con livelli di profitto più elevati"
   },
   {
     "id": "d3eb2f16-cea5-47be-9dd9-8a2c97c923d3",
@@ -3719,14 +3719,14 @@
   },
   {
     "id": "37586bdd-457b-4ea0-a515-36eb6e4bf3ae",
-    "question": "I passi che vengono generalmente seguiti per la prima definizione del prezzo, quando un prodotto nuovo è \nimmesso sul mercato o quando un prodotto esistente viene venduto in un nuovo mercato, sono:",
+    "question": "I passi che vengono generalmente seguiti per la prima definizione del prezzo, quando un prodotto nuovo è immesso sul mercato o quando un prodotto esistente viene venduto in un nuovo mercato, sono:",
     "answers": [
-      "unicamente la scelta del criterio di determinazione del prezzo, la definizione delle modifiche di prezzo ovvero dei \nprezzi da applicare alle diverse varianti del prodotto nei diversi canali e per diversi clienti o segmenti di mercato, e \nl'approntamento di manovre di prezzo eventualmente in risposta a manovre dei concorrenti",
-      "soltanto la definizione della politica e degli obiettivi di prezzo, la definizione delle modifiche di prezzo ovvero dei \nprezzi da applicare alle diverse varianti del prodotto nei diversi canali e per diversi clienti o segmenti di mercato, e \nl'approntamento di manovre di prezzo eventualmente in risposta a manovre dei concorrenti",
-      "la definizione della politica e degli obiettivi di prezzo, la scelta del criterio di determinazione del prezzo, la \ndefinizione delle modifiche di prezzo ovvero dei prezzi da applicare alle diverse varianti del prodotto nei diversi canali e \nper diversi clienti o segmenti di mercato, e l'approntamento di manovre di prezzo eventualmente in risposta a \nmanovre dei concorrenti",
-      "esclusivamente la definizione della politica e degli obiettivi di prezzo, la scelta del criterio di determinazione del \nprezzo nonché la definizione delle modifiche di prezzo ovvero dei prezzi da applicare alle diverse varianti del prodotto \nnei diversi canali e per diversi clienti o segmenti di mercato"
+      "unicamente la scelta del criterio di determinazione del prezzo, la definizione delle modifiche di prezzo ovvero dei prezzi da applicare alle diverse varianti del prodotto nei diversi canali e per diversi clienti o segmenti di mercato, e l'approntamento di manovre di prezzo eventualmente in risposta a manovre dei concorrenti",
+      "soltanto la definizione della politica e degli obiettivi di prezzo, la definizione delle modifiche di prezzo ovvero dei prezzi da applicare alle diverse varianti del prodotto nei diversi canali e per diversi clienti o segmenti di mercato, e l'approntamento di manovre di prezzo eventualmente in risposta a manovre dei concorrenti",
+      "la definizione della politica e degli obiettivi di prezzo, la scelta del criterio di determinazione del prezzo, la definizione delle modifiche di prezzo ovvero dei prezzi da applicare alle diverse varianti del prodotto nei diversi canali e per diversi clienti o segmenti di mercato, e l'approntamento di manovre di prezzo eventualmente in risposta a manovre dei concorrenti",
+      "esclusivamente la definizione della politica e degli obiettivi di prezzo, la scelta del criterio di determinazione del prezzo nonché la definizione delle modifiche di prezzo ovvero dei prezzi da applicare alle diverse varianti del prodotto nei diversi canali e per diversi clienti o segmenti di mercato"
     ],
-    "correct_answer": "la definizione della politica e degli obiettivi di prezzo, la scelta del criterio di determinazione del prezzo, la \ndefinizione delle modifiche di prezzo ovvero dei prezzi da applicare alle diverse varianti del prodotto nei diversi canali e \nper diversi clienti o segmenti di mercato, e l'approntamento di manovre di prezzo eventualmente in risposta a \nmanovre dei concorrenti"
+    "correct_answer": "la definizione della politica e degli obiettivi di prezzo, la scelta del criterio di determinazione del prezzo, la definizione delle modifiche di prezzo ovvero dei prezzi da applicare alle diverse varianti del prodotto nei diversi canali e per diversi clienti o segmenti di mercato, e l'approntamento di manovre di prezzo eventualmente in risposta a manovre dei concorrenti"
   },
   {
     "id": "87be5fe9-41c8-4758-bad8-a634e0cce7c6",
@@ -3765,12 +3765,12 @@
     "id": "a0f799e4-be28-46c1-ba35-98e9ab28b7d0",
     "question": "Le principali tipologie di sconti che le imprese sono solite effettuare sono:",
     "answers": [
-      "gli sconti quantità, gli sconti di cassa, gli sconti commerciali o funzionali, gli sconti stagionali, i prezzi promozionali e \naltre forme promozionali",
+      "gli sconti quantità, gli sconti di cassa, gli sconti commerciali o funzionali, gli sconti stagionali, i prezzi promozionali e altre forme promozionali",
       "esclusivamente gli sconti quantità, gli sconti di cassa, gli sconti commerciali o funzionali e gli sconti stagionali",
-      "soltanto gli sconti di cassa, gli sconti commerciali o funzionali, gli sconti stagionali, i prezzi promozionali e altre forme \npromozionali",
+      "soltanto gli sconti di cassa, gli sconti commerciali o funzionali, gli sconti stagionali, i prezzi promozionali e altre forme promozionali",
       "unicamente gli sconti quantità, gli sconti di cassa, gli sconti stagionali e i prezzi promozionali"
     ],
-    "correct_answer": "gli sconti quantità, gli sconti di cassa, gli sconti commerciali o funzionali, gli sconti stagionali, i prezzi promozionali e \naltre forme promozionali"
+    "correct_answer": "gli sconti quantità, gli sconti di cassa, gli sconti commerciali o funzionali, gli sconti stagionali, i prezzi promozionali e altre forme promozionali"
   },
   {
     "id": "c3ac8a7a-177a-40db-a7a9-0fdcbf95b600",
@@ -3785,18 +3785,18 @@
   },
   {
     "id": "2d72f39e-237a-46f8-a258-6b9e7f5f2d67",
-    "question": "Il fattore che accomuna i mercati di consumo e industriali, di prodotti e di servizi, è la compresenza, lungo il canale \ne in diverse direzioni, :",
+    "question": "Il fattore che accomuna i mercati di consumo e industriali, di prodotti e di servizi, è la compresenza, lungo il canale e in diverse direzioni, :",
     "answers": [
-      "unicamente dei flussi fisici di prodotti e servizi, dei flussi finanziari di pagamento dal cliente al produttore e dei flussi \nd'informazioni bidirezionali",
-      "esclusivamente dei flussi informativi di ordini, dei flussi finanziari di pagamento dal cliente al produttore e dei flussi \nd'informazioni bidirezionali",
-      "dei flussi fisici di prodotti e servizi, dei flussi informativi di ordini, dei flussi finanziari di pagamento dal cliente al \nproduttore e dei flussi d'informazioni bidirezionali",
-      "soltanto dei flussi fisici di prodotti e servizi, dei flussi informativi di ordini e dei flussi finanziari di pagamento dal \ncliente al produttore"
+      "unicamente dei flussi fisici di prodotti e servizi, dei flussi finanziari di pagamento dal cliente al produttore e dei flussi d'informazioni bidirezionali",
+      "esclusivamente dei flussi informativi di ordini, dei flussi finanziari di pagamento dal cliente al produttore e dei flussi d'informazioni bidirezionali",
+      "dei flussi fisici di prodotti e servizi, dei flussi informativi di ordini, dei flussi finanziari di pagamento dal cliente al produttore e dei flussi d'informazioni bidirezionali",
+      "soltanto dei flussi fisici di prodotti e servizi, dei flussi informativi di ordini e dei flussi finanziari di pagamento dal cliente al produttore"
     ],
-    "correct_answer": "dei flussi fisici di prodotti e servizi, dei flussi informativi di ordini, dei flussi finanziari di pagamento dal cliente al \nproduttore e dei flussi d'informazioni bidirezionali"
+    "correct_answer": "dei flussi fisici di prodotti e servizi, dei flussi informativi di ordini, dei flussi finanziari di pagamento dal cliente al produttore e dei flussi d'informazioni bidirezionali"
   },
   {
     "id": "db812df5-81d2-4965-9b61-364233726337",
-    "question": "I vari flussi che attraversano il canale possono essere gestiti da diverse tipologie di intermediari, riconducibili, \nfondamentalmente, :",
+    "question": "I vari flussi che attraversano il canale possono essere gestiti da diverse tipologie di intermediari, riconducibili, fondamentalmente, :",
     "answers": [
       "ai rivenditori, agli agenti, agli ausiliari, ai grossisti e ai dettaglianti",
       "soltanto agli agenti, agli ausiliari, ai grossisti e ai dettaglianti",
@@ -3866,21 +3866,21 @@
     "answers": [
       "unicamente gruppi d'acquisto, cooperative di consumo, centrali d'acquisto, franchising e conglomerati commerciali",
       "solatanto catene di negozi, unioni volontarie, centrali d'acquisto, franchising e conglomerati commerciali",
-      "esclusivamente catene di negozi, unioni volontarie, gruppi d'acquisto, cooperative di consumo e conglomerati \ncommerciali",
-      "catene di negozi, unioni volontarie, gruppi d'acquisto, cooperative di consumo, centrali d'acquisto, franchising e \nconglomerati commerciali"
+      "esclusivamente catene di negozi, unioni volontarie, gruppi d'acquisto, cooperative di consumo e conglomerati commerciali",
+      "catene di negozi, unioni volontarie, gruppi d'acquisto, cooperative di consumo, centrali d'acquisto, franchising e conglomerati commerciali"
     ],
-    "correct_answer": "catene di negozi, unioni volontarie, gruppi d'acquisto, cooperative di consumo, centrali d'acquisto, franchising e \nconglomerati commerciali"
+    "correct_answer": "catene di negozi, unioni volontarie, gruppi d'acquisto, cooperative di consumo, centrali d'acquisto, franchising e conglomerati commerciali"
   },
   {
     "id": "fcced761-7af0-451a-90ea-d8fbb62595a9",
     "question": "Nella fase di introduzione:",
     "answers": [
-      "la strategia di distribuzione tornerà a essere selettiva e verranno mantenuti i canali distributivi più redditizi e \napportatori di maggiori volumi",
-      "la distribuzione ha l'obiettivo di raggiungere il maggior numero di clienti e segmenti possibili e, di conseguenza, si \ndiversifica e amplia ulteriormente",
-      "la distribuzione è guidata dall'obiettivo di concentrarsi su pochi canali e massimizzarne l'efficacia, piuttosto che \nseguire una distribuzione intensiva su molti fronti diversi",
-      "la distribuzione si rivolge anche a nuovi segmenti di mercato con l'apertura di nuovi canali, in modo da raggiungere il \nnumero più alto possibile di clienti"
+      "la strategia di distribuzione tornerà a essere selettiva e verranno mantenuti i canali distributivi più redditizi e apportatori di maggiori volumi",
+      "la distribuzione ha l'obiettivo di raggiungere il maggior numero di clienti e segmenti possibili e, di conseguenza, si diversifica e amplia ulteriormente",
+      "la distribuzione è guidata dall'obiettivo di concentrarsi su pochi canali e massimizzarne l'efficacia, piuttosto che seguire una distribuzione intensiva su molti fronti diversi",
+      "la distribuzione si rivolge anche a nuovi segmenti di mercato con l'apertura di nuovi canali, in modo da raggiungere il numero più alto possibile di clienti"
     ],
-    "correct_answer": "la distribuzione è guidata dall'obiettivo di concentrarsi su pochi canali e massimizzarne l'efficacia, piuttosto che \nseguire una distribuzione intensiva su molti fronti diversi"
+    "correct_answer": "la distribuzione è guidata dall'obiettivo di concentrarsi su pochi canali e massimizzarne l'efficacia, piuttosto che seguire una distribuzione intensiva su molti fronti diversi"
   },
   {
     "id": "c5271e7b-3a31-45c0-86f3-ee93563b2152",
@@ -3910,10 +3910,10 @@
     "answers": [
       "non è nata per comunicare un brand o un prodotto",
       "non assolve alla necessità di far conoscere un servizio",
-      "assolve, sempre più, alla necessità di far conoscere un servizio, un vantaggio, di costruire il valore dell'azienda che \npuò costituire la differenza rispetto alla proposta dei propri concorrenti",
+      "assolve, sempre più, alla necessità di far conoscere un servizio, un vantaggio, di costruire il valore dell'azienda che può costituire la differenza rispetto alla proposta dei propri concorrenti",
       "non assolve alla necessità di far conoscere un vantaggio"
     ],
-    "correct_answer": "assolve, sempre più, alla necessità di far conoscere un servizio, un vantaggio, di costruire il valore dell'azienda che \npuò costituire la differenza rispetto alla proposta dei propri concorrenti"
+    "correct_answer": "assolve, sempre più, alla necessità di far conoscere un servizio, un vantaggio, di costruire il valore dell'azienda che può costituire la differenza rispetto alla proposta dei propri concorrenti"
   },
   {
     "id": "a4562ace-5383-4f28-b50d-13b6231e9b69",
@@ -3921,10 +3921,10 @@
     "answers": [
       "non deve rivolgersi a diversi interlocutori",
       "non deve assolvere al compito di promuovere prodotti o servizi",
-      "non deve assolvere al compito di promuovere l'organizzazione e l'immagine che la stessa organizzazione vuole \ntrasmettere al proprio pubblico",
-      "deve assolvere al compito di promuovere sia i prodotti (o servizi), sia l'organizzazione e l'immagine che la medesima \norganizzazione vuole trasmettere al proprio pubblico"
+      "non deve assolvere al compito di promuovere l'organizzazione e l'immagine che la stessa organizzazione vuole trasmettere al proprio pubblico",
+      "deve assolvere al compito di promuovere sia i prodotti (o servizi), sia l'organizzazione e l'immagine che la medesima organizzazione vuole trasmettere al proprio pubblico"
     ],
-    "correct_answer": "deve assolvere al compito di promuovere sia i prodotti (o servizi), sia l'organizzazione e l'immagine che la medesima \norganizzazione vuole trasmettere al proprio pubblico"
+    "correct_answer": "deve assolvere al compito di promuovere sia i prodotti (o servizi), sia l'organizzazione e l'immagine che la medesima organizzazione vuole trasmettere al proprio pubblico"
   },
   {
     "id": "ecb15e1e-1e2a-416a-ab90-5204653ce479",
@@ -3941,12 +3941,12 @@
     "id": "5b7c0e75-e796-490f-a7ff-5766c4ade19c",
     "question": "Nella fase di introduzione:",
     "answers": [
-      "le strategie di comunicazione sono volte prevalentemente a sottolineare il valore del prodotto, a sostenere la \nnotorietà del brand e a stimolare la fidelizzazione del cliente",
+      "le strategie di comunicazione sono volte prevalentemente a sottolineare il valore del prodotto, a sostenere la notorietà del brand e a stimolare la fidelizzazione del cliente",
       "gli investimenti in comunicazione sono generalmente elevati",
-      "la comunicazione ha un ruolo molto importante e l'obiettivo è prevalentemente quello di far conoscere il nuovo \nprodotto al cliente - in particolare ai clienti con maggiore propensione all'innovazione - e di affermare il brand e il \nposizionamento scelto per il prodotto",
-      "gli investimenti in comunicazione sono mediamente ridotti ed eventualmente volti a sottolineare nuove funzionalità \no servizi offerti o a proporre impieghi alternativi per il prodotto"
+      "la comunicazione ha un ruolo molto importante e l'obiettivo è prevalentemente quello di far conoscere il nuovo prodotto al cliente - in particolare ai clienti con maggiore propensione all'innovazione - e di affermare il brand e il posizionamento scelto per il prodotto",
+      "gli investimenti in comunicazione sono mediamente ridotti ed eventualmente volti a sottolineare nuove funzionalità o servizi offerti o a proporre impieghi alternativi per il prodotto"
     ],
-    "correct_answer": "la comunicazione ha un ruolo molto importante e l'obiettivo è prevalentemente quello di far conoscere il nuovo \nprodotto al cliente - in particolare ai clienti con maggiore propensione all'innovazione - e di affermare il brand e il \nposizionamento scelto per il prodotto"
+    "correct_answer": "la comunicazione ha un ruolo molto importante e l'obiettivo è prevalentemente quello di far conoscere il nuovo prodotto al cliente - in particolare ai clienti con maggiore propensione all'innovazione - e di affermare il brand e il posizionamento scelto per il prodotto"
   },
   {
     "id": "a31cb1d5-3eeb-41b8-b157-af81b72487b9",
@@ -3954,7 +3954,7 @@
     "answers": [
       "il mix di comunicazione è generalmente spostato sulla pubblicità e la promozione",
       "cresce la rilevanza delle promozioni nell'ambito del communication mix al fine di favorire la conversione di marca",
-      "le promozioni sono spesso utilizzate in modo massiccio verso il termine della vita del prodotto per favorire \nl'esaurimento delle scorte",
+      "le promozioni sono spesso utilizzate in modo massiccio verso il termine della vita del prodotto per favorire l'esaurimento delle scorte",
       "le strategie sono volte a sottolineare le caratteristiche del prodotto e indurre i clienti all'acquisto"
     ],
     "correct_answer": "le strategie sono volte a sottolineare le caratteristiche del prodotto e indurre i clienti all'acquisto"
@@ -3963,27 +3963,27 @@
     "id": "52c088a5-2283-40e8-8e3a-f63cf72b1b8d",
     "question": "Nella fase di maturità:",
     "answers": [
-      "le strategie di comunicazione sono volte prevalentemente a sottolineare il valore del prodotto, a sostenere la \nnotorietà del brand e a stimolare la fidelizzazione del cliente",
-      "la comunicazione ha un ruolo molto importante e l'obiettivo è prevalentemente quello di far conoscere il nuovo \nprodotto al cliente - in particolare ai clienti con maggiore propensione all'innovazione - e di affermare il brand e il \nposizionamento scelto per il prodotto",
-      "vi è un uso intenso della pubblicità, delle pubbliche relazioni e, talora, anche del direct marketing, mentre le \npromozioni sono normalmente premature",
-      "gli investimenti in comunicazione sono mediamente ridotti ed eventualmente volti a sottolineare nuove funzionalità \no servizi offerti o a proporre impieghi alternativi per il prodotto"
+      "le strategie di comunicazione sono volte prevalentemente a sottolineare il valore del prodotto, a sostenere la notorietà del brand e a stimolare la fidelizzazione del cliente",
+      "la comunicazione ha un ruolo molto importante e l'obiettivo è prevalentemente quello di far conoscere il nuovo prodotto al cliente - in particolare ai clienti con maggiore propensione all'innovazione - e di affermare il brand e il posizionamento scelto per il prodotto",
+      "vi è un uso intenso della pubblicità, delle pubbliche relazioni e, talora, anche del direct marketing, mentre le promozioni sono normalmente premature",
+      "gli investimenti in comunicazione sono mediamente ridotti ed eventualmente volti a sottolineare nuove funzionalità o servizi offerti o a proporre impieghi alternativi per il prodotto"
     ],
-    "correct_answer": "le strategie di comunicazione sono volte prevalentemente a sottolineare il valore del prodotto, a sostenere la \nnotorietà del brand e a stimolare la fidelizzazione del cliente"
+    "correct_answer": "le strategie di comunicazione sono volte prevalentemente a sottolineare il valore del prodotto, a sostenere la notorietà del brand e a stimolare la fidelizzazione del cliente"
   },
   {
     "id": "112e0be3-c4e0-41ca-ae15-0f49c4d17d82",
     "question": "Nell'ambito del caso ATP, nella fase di lancio del telefono innovativo denominato \"Phoenix\":",
     "answers": [
-      "ATP medesima pensa di concentrarsi sugli utenti che non dispongono di un accesso wireless a casa, in quanto pensa \nche siano i più sensibili e interessati al nuovo prodotto",
-      "ATP medesima pensa di concentrarsi sugli utenti che già dispongono di un accesso wireless a casa, in quanto pensa \nche siano i più sensibili e interessati al nuovo prodotto",
-      "ATP medesima pensa di concentrarsi sugli utenti che già dispongono di un accesso wireless a casa, in quanto pensa \nche siano i meno sensibili e interessati al nuovo prodotto",
-      "ATP medesima pensa di concentrarsi sugli utenti che non dispongono di un accesso wireless a casa, in quanto pensa \nche siano i meno sensibili e interessati al nuovo prodotto"
+      "ATP medesima pensa di concentrarsi sugli utenti che non dispongono di un accesso wireless a casa, in quanto pensa che siano i più sensibili e interessati al nuovo prodotto",
+      "ATP medesima pensa di concentrarsi sugli utenti che già dispongono di un accesso wireless a casa, in quanto pensa che siano i più sensibili e interessati al nuovo prodotto",
+      "ATP medesima pensa di concentrarsi sugli utenti che già dispongono di un accesso wireless a casa, in quanto pensa che siano i meno sensibili e interessati al nuovo prodotto",
+      "ATP medesima pensa di concentrarsi sugli utenti che non dispongono di un accesso wireless a casa, in quanto pensa che siano i meno sensibili e interessati al nuovo prodotto"
     ],
-    "correct_answer": "ATP medesima pensa di concentrarsi sugli utenti che già dispongono di un accesso wireless a casa, in quanto pensa \nche siano i più sensibili e interessati al nuovo prodotto"
+    "correct_answer": "ATP medesima pensa di concentrarsi sugli utenti che già dispongono di un accesso wireless a casa, in quanto pensa che siano i più sensibili e interessati al nuovo prodotto"
   },
   {
     "id": "6880ea30-1aaf-44bb-95fa-8bce73653477",
-    "question": "Nell'ambito del caso ATP, il mercato potenziale, essendo costituito da tutti gli attuali utilizzatori di telefono \ncellulare, ossia dal 95% della popolazione compresa fra i 10 e gli 80 anni (con la predetta popolazione ammontante a \n50 mln di persone), è pari a:",
+    "question": "Nell'ambito del caso ATP, il mercato potenziale, essendo costituito da tutti gli attuali utilizzatori di telefono cellulare, ossia dal 95% della popolazione compresa fra i 10 e gli 80 anni (con la predetta popolazione ammontante a 50 mln di persone), è pari a:",
     "answers": [
       "2,5 mln di persone",
       "25 mln di persone",
@@ -3994,7 +3994,7 @@
   },
   {
     "id": "a1ec328d-d0ea-4859-9bf5-7eddcd5a10f3",
-    "question": "Nell'ambito del caso ATP, il mercato disponibile, essendo costituito da coloro che, oltre a utilizzare abitualmente il \ntelefono cellulare e ad avere disponibilità economica (ammontanti a 47,5 mln di persone), utilizzano abitualmente \nInternet con una connessione a banda larga (corrispondente ad un valore percentuale del 20%), è pari a:",
+    "question": "Nell'ambito del caso ATP, il mercato disponibile, essendo costituito da coloro che, oltre a utilizzare abitualmente il telefono cellulare e ad avere disponibilità economica (ammontanti a 47,5 mln di persone), utilizzano abitualmente Internet con una connessione a banda larga (corrispondente ad un valore percentuale del 20%), è pari a:",
     "answers": [
       "9,5 mln di persone",
       "47,5 mln di persone",
@@ -4005,7 +4005,7 @@
   },
   {
     "id": "48b5cdf0-d9b6-4e23-a85a-e84af2d074ea",
-    "question": "Nell'ambito del caso ATP, il mercato servito su cui decide di concentrarsi ATP medesima, essendo costituito da \ncoloro che dispongono anche di una connessione Wireless a casa (ammontanti a 1,425 mln di persone), è pari a:",
+    "question": "Nell'ambito del caso ATP, il mercato servito su cui decide di concentrarsi ATP medesima, essendo costituito da coloro che dispongono anche di una connessione Wireless a casa (ammontanti a 1,425 mln di persone), è pari a:",
     "answers": [
       "9,5 mln di persone",
       "1,425 mln di persone",
@@ -4018,16 +4018,16 @@
     "id": "cd1f9b01-6a4a-4e2d-af9c-101a8851d155",
     "question": "Nell'ambito del caso ATP:",
     "answers": [
-      "in ordine alla leva relativa al prodotto, ATP medesima persegue una strategia di differenziazione, basata su \ninnovatività e qualità",
+      "in ordine alla leva relativa al prodotto, ATP medesima persegue una strategia di differenziazione, basata su innovatività e qualità",
       "la strategia relativa alla promozione non può essere articolata in azioni di tipo pull e di tipo push",
       "la distribuzione non è di tipo esclusivo",
       "il pricing non è legato alla scelta del canale distributivo"
     ],
-    "correct_answer": "in ordine alla leva relativa al prodotto, ATP medesima persegue una strategia di differenziazione, basata su \ninnovatività e qualità"
+    "correct_answer": "in ordine alla leva relativa al prodotto, ATP medesima persegue una strategia di differenziazione, basata su innovatività e qualità"
   },
   {
     "id": "c4848f35-5835-4883-bc5c-1127eec64eb1",
-    "question": "Se la Quota di mercato (Q) è pari al 15%, l'Introduzione (I) è del 20% e la Copertura (C) è del 50%, la Selettività (S) \nè pari a:",
+    "question": "Se la Quota di mercato (Q) è pari al 15%, l'Introduzione (I) è del 20% e la Copertura (C) è del 50%, la Selettività (S) è pari a:",
     "answers": [
       "1.5",
       "0",
@@ -4038,7 +4038,7 @@
   },
   {
     "id": "c9f596d0-c1cb-43e2-808b-8eba81445270",
-    "question": "Nell'ambito del caso ATP, essendo la dimensione del mercato servito Qtot = 1.425.000 e le vendite nei primi due \nmesi dal lancio del prodotto sul mercato q(1) = 20.000 e q(2) = 26.000, il coefficiente di propensione spontanea \nall'acquisto (p) è pari a:",
+    "question": "Nell'ambito del caso ATP, essendo la dimensione del mercato servito Qtot = 1.425.000 e le vendite nei primi due mesi dal lancio del prodotto sul mercato q(1) = 20.000 e q(2) = 26.000, il coefficiente di propensione spontanea all'acquisto (p) è pari a:",
     "answers": [
       "0.1",
       "0",
@@ -4049,7 +4049,7 @@
   },
   {
     "id": "3a12c132-16eb-4bc4-b7e9-eb8c2de166c2",
-    "question": "Nell'ambito del caso ATP, essendo la dimensione del mercato servito Qtot = 1.425.000 e le vendite nei primi due \nmesi dal lancio del prodotto sul mercato q(1) = 20.000 e q(2) = 26.000, il coefficiente imitativo o \"di contagio\" (r) è \npari a:",
+    "question": "Nell'ambito del caso ATP, essendo la dimensione del mercato servito Qtot = 1.425.000 e le vendite nei primi due mesi dal lancio del prodotto sul mercato q(1) = 20.000 e q(2) = 26.000, il coefficiente imitativo o \"di contagio\" (r) è pari a:",
     "answers": [
       "0.543",
       "2",
@@ -4063,15 +4063,15 @@
     "question": "L'azienda Bug:",
     "answers": [
       "non è uno dei leader mondiali dell'informatica e dell'elettronica di consumo",
-      "ha costruito il suo successo non con prodotti tecnicamente innovativi nel mercato dei personal computer e dei \nlettori Mp3",
-      "ha costruito il suo successo non con prodotti dal design accattivante nel mercato dei personal computer e dei lettori \nMp3",
-      "ha costruito il suo successo con prodotti tecnicamente innovativi e dal design accattivante nel mercato dei personal \ncomputer e dei lettori Mp3"
+      "ha costruito il suo successo non con prodotti tecnicamente innovativi nel mercato dei personal computer e dei lettori Mp3",
+      "ha costruito il suo successo non con prodotti dal design accattivante nel mercato dei personal computer e dei lettori Mp3",
+      "ha costruito il suo successo con prodotti tecnicamente innovativi e dal design accattivante nel mercato dei personal computer e dei lettori Mp3"
     ],
-    "correct_answer": "ha costruito il suo successo con prodotti tecnicamente innovativi e dal design accattivante nel mercato dei personal \ncomputer e dei lettori Mp3"
+    "correct_answer": "ha costruito il suo successo con prodotti tecnicamente innovativi e dal design accattivante nel mercato dei personal computer e dei lettori Mp3"
   },
   {
     "id": "9be32c2d-590a-4123-beb5-7314c7f0d3de",
-    "question": "Nell'ambito del caso Bug, essendo il mercato complessivo dei lettori Mp3 di circa 35 milioni di pezzi venduti ogni \nanno, il mercato potenziale è pari a:",
+    "question": "Nell'ambito del caso Bug, essendo il mercato complessivo dei lettori Mp3 di circa 35 milioni di pezzi venduti ogni anno, il mercato potenziale è pari a:",
     "answers": [
       "35 milioni di pezzi all'anno",
       "70 milioni di pezzi all'anno",
@@ -4082,7 +4082,7 @@
   },
   {
     "id": "71928f1a-1c7a-4235-a087-c75d816edabe",
-    "question": "Nell'ambito del caso Bug, essendo i soggetti che hanno le disponibilità economiche necessarie per acquistare il \nlettore Bug 2/5 del totale (rif. 35 milioni di pezzi venduti ogni anno), il mercato disponibile è pari a:",
+    "question": "Nell'ambito del caso Bug, essendo i soggetti che hanno le disponibilità economiche necessarie per acquistare il lettore Bug 2/5 del totale (rif. 35 milioni di pezzi venduti ogni anno), il mercato disponibile è pari a:",
     "answers": [
       "35 milioni di pezzi all'anno",
       "14 milioni di pezzi all'anno",
@@ -4093,7 +4093,7 @@
   },
   {
     "id": "dc2ce73f-cd27-4af6-99a8-ce1b4bf0bf03",
-    "question": "Nell'ambito del caso Bug, il mercato servito, essendo quello cui si rivolge, effettivamente, Bug, ovvero il 75% del \nmercato disponibile (rif. 14 milioni di pezzi all'anno) che risiede nelle 20 nazioni in cui l'azienda commercializzerà il \nnuovo prodotto, è pari a:",
+    "question": "Nell'ambito del caso Bug, il mercato servito, essendo quello cui si rivolge, effettivamente, Bug, ovvero il 75% del mercato disponibile (rif. 14 milioni di pezzi all'anno) che risiede nelle 20 nazioni in cui l'azienda commercializzerà il nuovo prodotto, è pari a:",
     "answers": [
       "21 milioni di pezzi all'anno",
       "14 milioni di pezzi all'anno",
@@ -4104,7 +4104,7 @@
   },
   {
     "id": "8c39dade-d15b-41ef-99b5-19ac6fcce7f6",
-    "question": "Nell'ambito del caso Bug, essendo il punto di coordinate (P1 = 150, D1 = 4) quello relativo allo scenario di lancio \ncon prezzo basso e il punto di coordinate (P2 = 400, D2 = 1) quello relativo all'ipotesi di lancio con prezzo elevato, \nl'elasticità della domanda rispetto al prezzo è pari a:",
+    "question": "Nell'ambito del caso Bug, essendo il punto di coordinate (P1 = 150, D1 = 4) quello relativo allo scenario di lancio con prezzo basso e il punto di coordinate (P2 = 400, D2 = 1) quello relativo all'ipotesi di lancio con prezzo elevato, l'elasticità della domanda rispetto al prezzo è pari a:",
     "answers": [
       "4.8",
       "2",
@@ -4126,7 +4126,7 @@
   },
   {
     "id": "d6ed51fc-6b5a-4222-b276-ae490505560f",
-    "question": "Nell'ambito del caso Bug, essendo il costo variabile unitario 100 €/unità, il costo fisso totale 80.000.000 €, e la \nfunzione di domanda D = 5.800.000 - 12.000 P, il prezzo del nuovo lettore multimediale che consentirebbe a Bug di \nmassimizzare i propri profitti è pari a:",
+    "question": "Nell'ambito del caso Bug, essendo il costo variabile unitario 100 €/unità, il costo fisso totale 80.000.000 €, e la funzione di domanda D = 5.800.000 - 12.000 P, il prezzo del nuovo lettore multimediale che consentirebbe a Bug di massimizzare i propri profitti è pari a:",
     "answers": [
       "300 €",
       "291.67 €",
@@ -4137,7 +4137,7 @@
   },
   {
     "id": "8a100dfb-5c26-424c-8f38-d2c443e1aa0e",
-    "question": "Nell'ambito del caso Bug, essendo il costo variabile unitario 100 €/unità, il costo fisso totale 80.000.000 €, e la \nfunzione di domanda D = 5.800.000 - 12.000 P, la domanda è pari a:",
+    "question": "Nell'ambito del caso Bug, essendo il costo variabile unitario 100 €/unità, il costo fisso totale 80.000.000 €, e la funzione di domanda D = 5.800.000 - 12.000 P, la domanda è pari a:",
     "answers": [
       "1 milione di pezzi",
       "2 milioni di pezzi",
@@ -4181,7 +4181,7 @@
   },
   {
     "id": "e470c501-41e1-424b-8fdc-35a9615823dd",
-    "question": "Se la Copertura (C) è del 22,5%, la Quota di mercato (Q) è del 15% e la Selettività (S) è 0,8, l'Introduzione (I) è pari \na:",
+    "question": "Se la Copertura (C) è del 22,5%, la Quota di mercato (Q) è del 15% e la Selettività (S) è 0,8, l'Introduzione (I) è pari a:",
     "answers": [
       "79.33%",
       "82.40%",
@@ -4214,7 +4214,7 @@
   },
   {
     "id": "83a9bfb3-15de-4f38-a625-20ad94d31569",
-    "question": "Nell'ambito del caso LCN, essendo il costo variabile unitario 1.200 €/unità, il costo fisso totale 720.000 €, e la \nfunzione di domanda D = 5.400,8- 2,18 P, il prezzo del bundle che consentirebbe a LCN di massimizzare i propri \nprofitti è pari a:",
+    "question": "Nell'ambito del caso LCN, essendo il costo variabile unitario 1.200 €/unità, il costo fisso totale 720.000 €, e la funzione di domanda D = 5.400,8- 2,18 P, il prezzo del bundle che consentirebbe a LCN di massimizzare i propri profitti è pari a:",
     "answers": [
       "1,810 €",
       "1,838.72 €",
@@ -4225,7 +4225,7 @@
   },
   {
     "id": "03a399ce-6398-4756-90a0-cd4ddfd6e6e6",
-    "question": "Nell'ambito del caso LCN, essendo la dimensione del mercato complessivo Qtot = 2.000 e le vendite nelle prime \ndue settimane dal lancio del prodotto sul mercato q(1) = 10 (distribuite in modo gratuito le prime 10 unità di \nprodotto) e q(2) = 15, il coefficiente imitativo o \"di contagio\" (r), quando p = 0, è pari a:",
+    "question": "Nell'ambito del caso LCN, essendo la dimensione del mercato complessivo Qtot = 2.000 e le vendite nelle prime due settimane dal lancio del prodotto sul mercato q(1) = 10 (distribuite in modo gratuito le prime 10 unità di prodotto) e q(2) = 15, il coefficiente imitativo o \"di contagio\" (r), quando p = 0, è pari a:",
     "answers": [
       "0",
       "1.51",
@@ -4236,7 +4236,7 @@
   },
   {
     "id": "427bdc1b-0a85-4b68-ac20-cf13af32feeb",
-    "question": "Nell'ambito del caso LCN, essendo la dimensione del mercato complessivo Qtot = 2.000 e le vendite nelle prime \ndue settimane dal lancio del prodotto sul mercato q(1) = 10 (distribuite in modo gratuito le prime 10 unità di \nprodotto) e q(2) = 15, le unità vendute al termine della quarta settimana [Q(5)], quando p = 0, è pari a:",
+    "question": "Nell'ambito del caso LCN, essendo la dimensione del mercato complessivo Qtot = 2.000 e le vendite nelle prime due settimane dal lancio del prodotto sul mercato q(1) = 10 (distribuite in modo gratuito le prime 10 unità di prodotto) e q(2) = 15, le unità vendute al termine della quarta settimana [Q(5)], quando p = 0, è pari a:",
     "answers": [
       "143",
       "145",
@@ -4305,8 +4305,8 @@
     "question": "Una relazione di mercato competitivo implica:",
     "answers": [
       "una selezione dei fornitori prevalentemente sulla base di prestazioni a lungo termine, soltanto in termini di costo",
-      "una selezione dei fornitori prevalentemente sulla base di prestazioni a lungo termine, esclusivamente in termini di \nqualità",
-      "una selezione dei fornitori prevalentemente sulla base di prestazioni a lungo termine, sia in termini di costo sia di \nqualità",
+      "una selezione dei fornitori prevalentemente sulla base di prestazioni a lungo termine, esclusivamente in termini di qualità",
+      "una selezione dei fornitori prevalentemente sulla base di prestazioni a lungo termine, sia in termini di costo sia di qualità",
       "generalmente transazioni spot in un'ottica di breve periodo"
     ],
     "correct_answer": "generalmente transazioni spot in un'ottica di breve periodo"
@@ -4327,11 +4327,11 @@
     "question": "L'integrazione verticale:",
     "answers": [
       "ha un orizzonte di breve termine",
-      "implica l'internalizzazione delle competenze e delle tecnologie necessarie, tramite lo sviluppo interno o tramite la \nfusione o l'acquisizione di aziende detentrici di tali competenze",
+      "implica l'internalizzazione delle competenze e delle tecnologie necessarie, tramite lo sviluppo interno o tramite la fusione o l'acquisizione di aziende detentrici di tali competenze",
       "risulta reversibile nel breve periodo",
       "comporta l'impossibilità di controllo sulle attività e sulle prestazioni ottenute"
     ],
-    "correct_answer": "implica l'internalizzazione delle competenze e delle tecnologie necessarie, tramite lo sviluppo interno o tramite la \nfusione o l'acquisizione di aziende detentrici di tali competenze"
+    "correct_answer": "implica l'internalizzazione delle competenze e delle tecnologie necessarie, tramite lo sviluppo interno o tramite la fusione o l'acquisizione di aziende detentrici di tali competenze"
   },
   {
     "id": "834afdc2-0f44-4049-ada4-4b962d67011b",
@@ -4349,9 +4349,9 @@
     "question": "La complessità descrittiva indica:",
     "answers": [
       "quanto è difficile per il cliente comunicare al potenziale fornitore tutte le specifiche del bene o del servizio richiesto",
-      "quanto è semplice per il cliente comunicare al potenziale fornitore tutte le specifiche del bene o del servizio \nrichiesto",
-      "l'entità degli investimenti addizionali che il potenziale fornitore dovrebbe sostenere per fornire al cliente l'attività in \nquestione",
-      "l'impossibilità di prevedere che cosa accadrà alla relazione in futuro, ad esempio dal punto di vista tecnologico o dei \nvolumi produttivi"
+      "quanto è semplice per il cliente comunicare al potenziale fornitore tutte le specifiche del bene o del servizio richiesto",
+      "l'entità degli investimenti addizionali che il potenziale fornitore dovrebbe sostenere per fornire al cliente l'attività in questione",
+      "l'impossibilità di prevedere che cosa accadrà alla relazione in futuro, ad esempio dal punto di vista tecnologico o dei volumi produttivi"
     ],
     "correct_answer": "quanto è difficile per il cliente comunicare al potenziale fornitore tutte le specifiche del bene o del servizio richiesto"
   },
@@ -4359,23 +4359,23 @@
     "id": "e6ece295-eef9-498c-9f4f-b5c1a024c376",
     "question": "La specificità misura:",
     "answers": [
-      "l'impossibilità di prevedere che cosa accadrà alla relazione in futuro, ad esempio dal punto di vista tecnologico o dei \nvolumi produttivi",
-      "l'entità degli investimenti addizionali che il potenziale fornitore dovrebbe sostenere per fornire al cliente l'attività in \nquestione",
-      "la possibilità di prevedere che cosa accadrà alla relazione in futuro, ad esempio dal punto di vista tecnologico o dei \nvolumi produttivi",
+      "l'impossibilità di prevedere che cosa accadrà alla relazione in futuro, ad esempio dal punto di vista tecnologico o dei volumi produttivi",
+      "l'entità degli investimenti addizionali che il potenziale fornitore dovrebbe sostenere per fornire al cliente l'attività in questione",
+      "la possibilità di prevedere che cosa accadrà alla relazione in futuro, ad esempio dal punto di vista tecnologico o dei volumi produttivi",
       "quanto è difficile per il cliente comunicare al potenziale fornitore tutte le specifiche del bene o del servizio richiesto"
     ],
-    "correct_answer": "l'entità degli investimenti addizionali che il potenziale fornitore dovrebbe sostenere per fornire al cliente l'attività in \nquestione"
+    "correct_answer": "l'entità degli investimenti addizionali che il potenziale fornitore dovrebbe sostenere per fornire al cliente l'attività in questione"
   },
   {
     "id": "50526b77-5cde-4e47-83cd-40fe01bcc25a",
     "question": "L'incertezza definisce:",
     "answers": [
-      "l'impossibilità di prevedere che cosa accadrà alla relazione in futuro, ad esempio dal punto di vista tecnologico o dei \nvolumi produttivi",
+      "l'impossibilità di prevedere che cosa accadrà alla relazione in futuro, ad esempio dal punto di vista tecnologico o dei volumi produttivi",
       "quanto è difficile per il cliente comunicare al potenziale fornitore tutte le specifiche del bene o del servizio richiesto",
-      "quanto è semplice per il cliente comunicare al potenziale fornitore tutte le specifiche del bene o del servizio \nrichiesto",
-      "l'entità degli investimenti addizionali che il potenziale fornitore dovrebbe sostenere per fornire al cliente l'attività in \nquestione"
+      "quanto è semplice per il cliente comunicare al potenziale fornitore tutte le specifiche del bene o del servizio richiesto",
+      "l'entità degli investimenti addizionali che il potenziale fornitore dovrebbe sostenere per fornire al cliente l'attività in questione"
     ],
-    "correct_answer": "l'impossibilità di prevedere che cosa accadrà alla relazione in futuro, ad esempio dal punto di vista tecnologico o dei \nvolumi produttivi"
+    "correct_answer": "l'impossibilità di prevedere che cosa accadrà alla relazione in futuro, ad esempio dal punto di vista tecnologico o dei volumi produttivi"
   },
   {
     "id": "1af1ecf6-c714-4648-a04a-c1c5e5cf85cb",
@@ -4425,23 +4425,23 @@
     "id": "1eb892fe-12f3-4b71-b41d-c0c090bd7cb0",
     "question": "I rapporti esistenti all'interno di una rete di fornitura:",
     "answers": [
-      "possono essere classificati in base al tipo di processo nonché in base alla posizione del fornitore in relazione alla \nfiliera di riferimento",
+      "possono essere classificati in base al tipo di processo nonché in base alla posizione del fornitore in relazione alla filiera di riferimento",
       "possono essere classificati, unicamente, in base al tipo di processo",
       "possono essere classificati, esclusivamente, in base alla posizione del fornitore in relazione alla filiera di riferimento",
       "non possono essere classificati"
     ],
-    "correct_answer": "possono essere classificati in base al tipo di processo nonché in base alla posizione del fornitore in relazione alla \nfiliera di riferimento"
+    "correct_answer": "possono essere classificati in base al tipo di processo nonché in base alla posizione del fornitore in relazione alla filiera di riferimento"
   },
   {
     "id": "274d8602-e8bb-4628-aa0e-bb75b33929fd",
     "question": "Un rapporto verticale di filiera:",
     "answers": [
-      "prevede una relazione tra due imprese che operano nello stesso stadio della filiera (e che spesso sono in \ncompetizione)",
+      "prevede una relazione tra due imprese che operano nello stesso stadio della filiera (e che spesso sono in competizione)",
       "prevedono una relazione tra due imprese che appartengono a filiere differenti",
-      "È la relazione che si instaura tra un cliente e un fornitore che svolgono attività poste in sequenza all'interno del loro \nsettore",
+      "È la relazione che si instaura tra un cliente e un fornitore che svolgono attività poste in sequenza all'interno del loro settore",
       "non è, in alcun modo, definibile"
     ],
-    "correct_answer": "È la relazione che si instaura tra un cliente e un fornitore che svolgono attività poste in sequenza all'interno del loro \nsettore"
+    "correct_answer": "È la relazione che si instaura tra un cliente e un fornitore che svolgono attività poste in sequenza all'interno del loro settore"
   },
   {
     "id": "cad5a358-505a-4aea-bf93-eae1ef0696bd",
@@ -4458,7 +4458,7 @@
     "id": "d450e142-75b7-41a8-a43d-536cdacff840",
     "question": "Si definiscono acquisti diretti:",
     "answers": [
-      "tutti i beni e servizi che non vengono incorporati nei prodotti/servizi dell'impresa, ma che risultano, comunque, \nnecessari per garantirne l'operatività",
+      "tutti i beni e servizi che non vengono incorporati nei prodotti/servizi dell'impresa, ma che risultano, comunque, necessari per garantirne l'operatività",
       "i materiali di imballaggio",
       "tutte le materie prime, i semilavorati e i componenti che confluiscono nei prodotti dell'azienda acquirente",
       "i servizi di trasporto"
@@ -4471,21 +4471,21 @@
     "answers": [
       "tutte le materie prime, i semilavorati e i componenti che confluiscono nei prodotti dell'azienda acquirente",
       "le attività di produzione demandate ad aziende esterne",
-      "tutti i materiali nonché i componenti elettronici, meccanici e plastici che vengono lavorati e assemblati per ottenere \ni prodotti dell'azienda, così come le attività di lavorazione delegate a fornitori",
-      "tutti i beni e servizi che non vengono incorporati nei prodotti/servizi dell'impresa, ma che risultano, comunque, \nnecessari per garantirne l'operatività"
+      "tutti i materiali nonché i componenti elettronici, meccanici e plastici che vengono lavorati e assemblati per ottenere i prodotti dell'azienda, così come le attività di lavorazione delegate a fornitori",
+      "tutti i beni e servizi che non vengono incorporati nei prodotti/servizi dell'impresa, ma che risultano, comunque, necessari per garantirne l'operatività"
     ],
-    "correct_answer": "tutti i beni e servizi che non vengono incorporati nei prodotti/servizi dell'impresa, ma che risultano, comunque, \nnecessari per garantirne l'operatività"
+    "correct_answer": "tutti i beni e servizi che non vengono incorporati nei prodotti/servizi dell'impresa, ma che risultano, comunque, necessari per garantirne l'operatività"
   },
   {
     "id": "5fceb247-f4fc-44e8-ba38-eb8bba87ce6e",
     "question": "Le attività primarie:",
     "answers": [
-      "sono quelle che concorrono direttamente alla produzione dei prodotti e servizi la cui vendita genera valore per il \ncliente",
+      "sono quelle che concorrono direttamente alla produzione dei prodotti e servizi la cui vendita genera valore per il cliente",
       "non richiedono l'acquisto di tutto ciò che verrà incorporato nei prodotti e nei servizi",
       "non sono gli acquisti diretti",
-      "includono la gestione delle risorse umane, l'amministrazione, la gestione della tecnologia e tutte le attività \ninfrastrutturali in genere"
+      "includono la gestione delle risorse umane, l'amministrazione, la gestione della tecnologia e tutte le attività infrastrutturali in genere"
     ],
-    "correct_answer": "sono quelle che concorrono direttamente alla produzione dei prodotti e servizi la cui vendita genera valore per il \ncliente"
+    "correct_answer": "sono quelle che concorrono direttamente alla produzione dei prodotti e servizi la cui vendita genera valore per il cliente"
   },
   {
     "id": "669cce36-ef06-42cd-bc5f-fb6ceba5c599",
@@ -4527,9 +4527,9 @@
       "talvolta nuove attività di marketing di acquisto, la richiesta di offerta, la negoziazione e la selezione",
       "la definizione specifiche, la richiesta di offerta, la negoziazione e la selezione",
       "la definizione specifiche, talvolta nuove attività di marketing di acquisto, la negoziazione e la selezione",
-      "la definizione specifiche, talvolta nuove attività di marketing di acquisto, la richiesta di offerta, la negoziazione e la \nselezione"
+      "la definizione specifiche, talvolta nuove attività di marketing di acquisto, la richiesta di offerta, la negoziazione e la selezione"
     ],
-    "correct_answer": "la definizione specifiche, talvolta nuove attività di marketing di acquisto, la richiesta di offerta, la negoziazione e la \nselezione"
+    "correct_answer": "la definizione specifiche, talvolta nuove attività di marketing di acquisto, la richiesta di offerta, la negoziazione e la selezione"
   },
   {
     "id": "64fe7f1e-6aee-47d1-9381-621faea4ca74",
@@ -4544,7 +4544,7 @@
   },
   {
     "id": "e431642f-68d8-40fc-98c4-4f528321bd48",
-    "question": "Gli stadi di sviluppo che, pur non venendo necessariamente percorsi da tutte le aziende negli stessi tempi e nella \nstessa sequenza, rappresentano con sufficiente generalità l'evoluzione della funzione acquisti nel tempo sono:",
+    "question": "Gli stadi di sviluppo che, pur non venendo necessariamente percorsi da tutte le aziende negli stessi tempi e nella stessa sequenza, rappresentano con sufficiente generalità l'evoluzione della funzione acquisti nel tempo sono:",
     "answers": [
       "l'attività imprenditoriale, gli acquisti frammentati, l'ufficio acquisti e la direzione acquisti",
       "soltanto gli acquisti frammentati, l'ufficio acquisti e la direzione acquisti",
@@ -4581,14 +4581,14 @@
     "answers": [
       "non dipende da alcun fattore",
       "considera l'esistenza o meno di ostacoli all'approvvigionamento del bene medesimo sul mercato",
-      "misura il suo contributo alle prestazioni competitive dell'azienda, distinguendo fra acquisti strategici e acquisti che, \nsebbene siano necessari, non forniscono vantaggi competitivi",
+      "misura il suo contributo alle prestazioni competitive dell'azienda, distinguendo fra acquisti strategici e acquisti che, sebbene siano necessari, non forniscono vantaggi competitivi",
       "È legata alle variabili specificità, complessità descrittiva e incertezza"
     ],
-    "correct_answer": "misura il suo contributo alle prestazioni competitive dell'azienda, distinguendo fra acquisti strategici e acquisti che, \nsebbene siano necessari, non forniscono vantaggi competitivi"
+    "correct_answer": "misura il suo contributo alle prestazioni competitive dell'azienda, distinguendo fra acquisti strategici e acquisti che, sebbene siano necessari, non forniscono vantaggi competitivi"
   },
   {
     "id": "8e357a66-e53b-4eb9-87ea-3e99ac8c5ab7",
-    "question": "L'intersezione delle dimensioni di importanza strategica dell'acquisto e di difficoltà del mercato di fornitura dà \norigine a una matrice di portafoglio con i quadranti:",
+    "question": "L'intersezione delle dimensioni di importanza strategica dell'acquisto e di difficoltà del mercato di fornitura dà origine a una matrice di portafoglio con i quadranti:",
     "answers": [
       "acquisti leva, colli di bottiglia e acquisti strategici",
       "acquisti non critici, colli di bottiglia e acquisti strategici",
@@ -4645,12 +4645,12 @@
     "id": "987d35bd-ed8a-42da-8b45-43993fd5465e",
     "question": "Con la tecnica dell'offerta:",
     "answers": [
-      "una volta raccolte le offerte da più fornitori, il cliente può già essere in grado di effettuare una scelta, oppure può \ndecidere di escludere alcune aziende, richiedere ulteriori informazioni a quelle rimaste ed effettuare una negoziazione, \nal fine di ottenere le condizioni migliori possibili",
+      "una volta raccolte le offerte da più fornitori, il cliente può già essere in grado di effettuare una scelta, oppure può decidere di escludere alcune aziende, richiedere ulteriori informazioni a quelle rimaste ed effettuare una negoziazione, al fine di ottenere le condizioni migliori possibili",
       "sono consentiti rilanci successivi delle offerte effettuate",
-      "fra tutte le offerte ricevute, il cliente seleziona quelle che soddisfano alcuni requisiti minimi e definisce quindi un \nnumero ristretto di aziende ammesse alla gara vera e propria",
+      "fra tutte le offerte ricevute, il cliente seleziona quelle che soddisfano alcuni requisiti minimi e definisce quindi un numero ristretto di aziende ammesse alla gara vera e propria",
       "i potenziali fornitori sono in concorrenza fra loro e rilanciano le proprie offerte al ribasso"
     ],
-    "correct_answer": "una volta raccolte le offerte da più fornitori, il cliente può già essere in grado di effettuare una scelta, oppure può \ndecidere di escludere alcune aziende, richiedere ulteriori informazioni a quelle rimaste ed effettuare una negoziazione, \nal fine di ottenere le condizioni migliori possibili"
+    "correct_answer": "una volta raccolte le offerte da più fornitori, il cliente può già essere in grado di effettuare una scelta, oppure può decidere di escludere alcune aziende, richiedere ulteriori informazioni a quelle rimaste ed effettuare una negoziazione, al fine di ottenere le condizioni migliori possibili"
   },
   {
     "id": "70595233-1804-4275-bd68-28679f289f15",
@@ -4658,10 +4658,10 @@
     "answers": [
       "sono consentiti rilanci successivi delle offerte effettuate",
       "i potenziali fornitori sono in concorrenza fra loro e rilanciano le proprie offerte al ribasso",
-      "una volta raccolte le offerte da più fornitori, il cliente può già essere in grado di effettuare una scelta, oppure può \ndecidere di escludere alcune aziende, richiedere ulteriori informazioni a quelle rimaste ed effettuare una negoziazione, \nal fine di ottenere le condizioni migliori possibili",
-      "fra tutte le offerte ricevute, il cliente seleziona quelle che soddisfano alcuni requisiti minimi e definisce quindi un \nnumero ristretto di aziende ammesse alla gara vera e propria"
+      "una volta raccolte le offerte da più fornitori, il cliente può già essere in grado di effettuare una scelta, oppure può decidere di escludere alcune aziende, richiedere ulteriori informazioni a quelle rimaste ed effettuare una negoziazione, al fine di ottenere le condizioni migliori possibili",
+      "fra tutte le offerte ricevute, il cliente seleziona quelle che soddisfano alcuni requisiti minimi e definisce quindi un numero ristretto di aziende ammesse alla gara vera e propria"
     ],
-    "correct_answer": "fra tutte le offerte ricevute, il cliente seleziona quelle che soddisfano alcuni requisiti minimi e definisce quindi un \nnumero ristretto di aziende ammesse alla gara vera e propria"
+    "correct_answer": "fra tutte le offerte ricevute, il cliente seleziona quelle che soddisfano alcuni requisiti minimi e definisce quindi un numero ristretto di aziende ammesse alla gara vera e propria"
   },
   {
     "id": "0d8a9311-a744-4972-b0b8-669e98222f45",
@@ -4669,8 +4669,8 @@
     "answers": [
       "i potenziali fornitori non sono in concorrenza fra loro",
       "sono consentiti rilanci successivi delle offerte effettuate",
-      "fra tutte le offerte ricevute, il cliente seleziona quelle che soddisfano alcuni requisiti minimi e definisce quindi un \nnumero ristretto di aziende ammesse alla gara vera e propria",
-      "una volta raccolte le offerte da più fornitori, il cliente può già essere in grado di effettuare una scelta, oppure può \ndecidere di escludere alcune aziende, richiedere ulteriori informazioni a quelle rimaste ed effettuare una negoziazione, \nal fine di ottenere le condizioni migliori possibili"
+      "fra tutte le offerte ricevute, il cliente seleziona quelle che soddisfano alcuni requisiti minimi e definisce quindi un numero ristretto di aziende ammesse alla gara vera e propria",
+      "una volta raccolte le offerte da più fornitori, il cliente può già essere in grado di effettuare una scelta, oppure può decidere di escludere alcune aziende, richiedere ulteriori informazioni a quelle rimaste ed effettuare una negoziazione, al fine di ottenere le condizioni migliori possibili"
     ],
     "correct_answer": "sono consentiti rilanci successivi delle offerte effettuate"
   },
@@ -4679,9 +4679,9 @@
     "question": "La Request For Information (RFI):",
     "answers": [
       "non è una tipologia di richiesta al fornitore",
-      "È una richiesta al fornitore di proporre in quale modo lo stesso fornitore è in grado di soddisfare, al meglio, le \nesigenze del cliente",
+      "È una richiesta al fornitore di proporre in quale modo lo stesso fornitore è in grado di soddisfare, al meglio, le esigenze del cliente",
       "consiste in una richiesta generale di informazioni a un fornitore",
-      "consiste nella richiesta, al fornitore, di un preventivo, al fine di poter confrontare i prezzi nonché le condizioni \npraticate da diversi fornitori"
+      "consiste nella richiesta, al fornitore, di un preventivo, al fine di poter confrontare i prezzi nonché le condizioni praticate da diversi fornitori"
     ],
     "correct_answer": "consiste in una richiesta generale di informazioni a un fornitore"
   },
@@ -4698,14 +4698,14 @@
   },
   {
     "id": "5c67ee9b-408c-4d57-a11d-af36cbcdcd4d",
-    "question": "Tutti i principali fattori che determinano la posizione negoziale delle parti coinvolte e il loro potere contrattuale \nsono:",
+    "question": "Tutti i principali fattori che determinano la posizione negoziale delle parti coinvolte e il loro potere contrattuale sono:",
     "answers": [
-      "gli obiettivi, le autorità, la competizione, lo \"spripta manent\", la fiducia, la conoscenza, il tempo, il denaro e le \ncompetenze negoziali",
+      "gli obiettivi, le autorità, la competizione, lo \"spripta manent\", la fiducia, la conoscenza, il tempo, il denaro e le competenze negoziali",
       "gli obiettivi, le autorità, la competizione, la fiducia, la conoscenza, il tempo, il denaro e le competenze negoziali",
       "gli obiettivi, le autorità, la competizione, la conoscenza, il tempo, il denaro e le competenze negoziali",
       "gli obiettivi, le autorità, la competizione, la conoscenza, il tempo e il denaro"
     ],
-    "correct_answer": "gli obiettivi, le autorità, la competizione, lo \"spripta manent\", la fiducia, la conoscenza, il tempo, il denaro e le \ncompetenze negoziali"
+    "correct_answer": "gli obiettivi, le autorità, la competizione, lo \"spripta manent\", la fiducia, la conoscenza, il tempo, il denaro e le competenze negoziali"
   },
   {
     "id": "3ba77ef1-1622-4f1f-9df7-e34d8157e5e1",
@@ -4731,25 +4731,25 @@
   },
   {
     "id": "aa616538-8c43-4d27-97cb-e3da928908a1",
-    "question": "Gli strumenti a disposizione di un'azienda, cliente o fornitore che sia, per instaurare una partnership tutelandosi \nda rischi eccessivi sono:",
+    "question": "Gli strumenti a disposizione di un'azienda, cliente o fornitore che sia, per instaurare una partnership tutelandosi da rischi eccessivi sono:",
     "answers": [
-      "soltanto il monitoraggio delle prestazioni, gli investimenti relazionali, la condivisione di conoscenza, la trasparenza \nnonché il riconoscimento dei costi e la reputazione",
-      "unicamente i contratti quadro, gli investimenti relazionali, la condivisione di conoscenza, la trasparenza nonché il \nriconoscimento dei costi e la reputazione",
-      "i contratti quadro, il monitoraggio delle prestazioni, gli investimenti relazionali, la condivisione di conoscenza, la \ntrasparenza nonché il riconoscimento dei costi e la reputazione",
-      "esclusivamente i contratti quadro, il monitoraggio delle prestazioni, la condivisione di conoscenza, la trasparenza \nnonché il riconoscimento dei costi e la reputazione"
+      "soltanto il monitoraggio delle prestazioni, gli investimenti relazionali, la condivisione di conoscenza, la trasparenza nonché il riconoscimento dei costi e la reputazione",
+      "unicamente i contratti quadro, gli investimenti relazionali, la condivisione di conoscenza, la trasparenza nonché il riconoscimento dei costi e la reputazione",
+      "i contratti quadro, il monitoraggio delle prestazioni, gli investimenti relazionali, la condivisione di conoscenza, la trasparenza nonché il riconoscimento dei costi e la reputazione",
+      "esclusivamente i contratti quadro, il monitoraggio delle prestazioni, la condivisione di conoscenza, la trasparenza nonché il riconoscimento dei costi e la reputazione"
     ],
-    "correct_answer": "i contratti quadro, il monitoraggio delle prestazioni, gli investimenti relazionali, la condivisione di conoscenza, la \ntrasparenza nonché il riconoscimento dei costi e la reputazione"
+    "correct_answer": "i contratti quadro, il monitoraggio delle prestazioni, gli investimenti relazionali, la condivisione di conoscenza, la trasparenza nonché il riconoscimento dei costi e la reputazione"
   },
   {
     "id": "53903c31-bc0d-4f5f-b953-4e6b07c80181",
     "question": "La trasparenza:",
     "answers": [
       "È uno scambio di know-how fra i partner",
-      "È un contratto di medio-lungo termine, che sancisce una relazione di fornitura duratura, garantendo al fornitore la \npossibilità di recuperare gli investimenti dedicati effettuati",
-      "non è uno strumento a disposizione di un'azienda, cliente o fornitore che sia, per instaurare una partnership \ntutelandosi da rischi eccessivi",
-      "È una delle leve più critiche ma anche più efficaci, in quanto se il fornitore rivela la propria struttura di costo, il \ncliente è tutelato rispetto alla richiesta di prezzi troppo elevati"
+      "È un contratto di medio-lungo termine, che sancisce una relazione di fornitura duratura, garantendo al fornitore la possibilità di recuperare gli investimenti dedicati effettuati",
+      "non è uno strumento a disposizione di un'azienda, cliente o fornitore che sia, per instaurare una partnership tutelandosi da rischi eccessivi",
+      "È una delle leve più critiche ma anche più efficaci, in quanto se il fornitore rivela la propria struttura di costo, il cliente è tutelato rispetto alla richiesta di prezzi troppo elevati"
     ],
-    "correct_answer": "È una delle leve più critiche ma anche più efficaci, in quanto se il fornitore rivela la propria struttura di costo, il \ncliente è tutelato rispetto alla richiesta di prezzi troppo elevati"
+    "correct_answer": "È una delle leve più critiche ma anche più efficaci, in quanto se il fornitore rivela la propria struttura di costo, il cliente è tutelato rispetto alla richiesta di prezzi troppo elevati"
   },
   {
     "id": "a56fd4ad-65d1-4777-881a-388826eefca8",
@@ -4757,8 +4757,8 @@
     "answers": [
       "può giocare un ruolo rilevante in una prospettiva di medio-lungo termine",
       "È uno scambio di know-how fra i partner",
-      "È una delle leve più critiche ma anche più efficaci, in quanto se il fornitore rivela la propria struttura di costo, il \ncliente è tutelato rispetto alla richiesta di prezzi troppo elevati",
-      "non è uno strumento a disposizione di un'azienda, cliente o fornitore che sia, per instaurare una partnership \ntutelandosi da rischi eccessivi"
+      "È una delle leve più critiche ma anche più efficaci, in quanto se il fornitore rivela la propria struttura di costo, il cliente è tutelato rispetto alla richiesta di prezzi troppo elevati",
+      "non è uno strumento a disposizione di un'azienda, cliente o fornitore che sia, per instaurare una partnership tutelandosi da rischi eccessivi"
     ],
     "correct_answer": "può giocare un ruolo rilevante in una prospettiva di medio-lungo termine"
   },
@@ -4766,10 +4766,10 @@
     "id": "cf01afaa-cafe-43e4-b927-894b4fbb1377",
     "question": "La condivisione della conoscenza:",
     "answers": [
-      "È una delle leve più critiche ma anche più efficaci, in quanto se il fornitore rivela la propria struttura di costo, il \ncliente è tutelato rispetto alla richiesta di prezzi troppo elevati",
+      "È una delle leve più critiche ma anche più efficaci, in quanto se il fornitore rivela la propria struttura di costo, il cliente è tutelato rispetto alla richiesta di prezzi troppo elevati",
       "È uno scambio di know-how fra i partner",
-      "non è uno strumento a disposizione di un'azienda, cliente o fornitore che sia, per instaurare una partnership \ntutelandosi da rischi eccessivi",
-      "È un contratto di medio-lungo termine, che sancisce una relazione di fornitura duratura, garantendo al fornitore la \npossibilità di recuperare gli investimenti dedicati effettuati"
+      "non è uno strumento a disposizione di un'azienda, cliente o fornitore che sia, per instaurare una partnership tutelandosi da rischi eccessivi",
+      "È un contratto di medio-lungo termine, che sancisce una relazione di fornitura duratura, garantendo al fornitore la possibilità di recuperare gli investimenti dedicati effettuati"
     ],
     "correct_answer": "È uno scambio di know-how fra i partner"
   },
@@ -4777,9 +4777,9 @@
     "id": "1114dbe3-62ee-4d9d-8fa6-09392f873fae",
     "question": "La Function Delivery:",
     "answers": [
-      "È il caso in cui viene sviluppato un nuovo processo produttivo con un processo decisionale condiviso fra cliente e \nfornitore, che interagiscono strettamente lungo tutte le fasi del codesign",
+      "È il caso in cui viene sviluppato un nuovo processo produttivo con un processo decisionale condiviso fra cliente e fornitore, che interagiscono strettamente lungo tutte le fasi del codesign",
       "È il caso in cui viene progettato un componente nuovo, utilizzando un processo decisionale separato",
-      "È il caso in cui il componente vero e proprio viene progettato autonomamente dal cliente, mentre il processo \nproduttivo viene sviluppato insieme con il fornitore",
+      "È il caso in cui il componente vero e proprio viene progettato autonomamente dal cliente, mentre il processo produttivo viene sviluppato insieme con il fornitore",
       "consiste nello sviluppo di un componente innovativo tramite un processo decisionale condiviso"
     ],
     "correct_answer": "È il caso in cui viene progettato un componente nuovo, utilizzando un processo decisionale separato"
@@ -4788,12 +4788,12 @@
     "id": "15adbc2b-1b9c-4fdd-b4ef-b01d27ff18c0",
     "question": "Il Process Delivery:",
     "answers": [
-      "È il caso in cui il componente vero e proprio viene progettato autonomamente dal cliente, mentre il processo \nproduttivo viene sviluppato insieme con il fornitore",
-      "È il caso in cui viene sviluppato un nuovo processo produttivo con un processo decisionale condiviso fra cliente e \nfornitore, che interagiscono strettamente lungo tutte le fasi del codesign",
+      "È il caso in cui il componente vero e proprio viene progettato autonomamente dal cliente, mentre il processo produttivo viene sviluppato insieme con il fornitore",
+      "È il caso in cui viene sviluppato un nuovo processo produttivo con un processo decisionale condiviso fra cliente e fornitore, che interagiscono strettamente lungo tutte le fasi del codesign",
       "È il caso in cui viene progettato un componente nuovo, utilizzando un processo decisionale separato",
       "consiste nello sviluppo di un componente innovativo tramite un processo decisionale condiviso"
     ],
-    "correct_answer": "È il caso in cui il componente vero e proprio viene progettato autonomamente dal cliente, mentre il processo \nproduttivo viene sviluppato insieme con il fornitore"
+    "correct_answer": "È il caso in cui il componente vero e proprio viene progettato autonomamente dal cliente, mentre il processo produttivo viene sviluppato insieme con il fornitore"
   },
   {
     "id": "3114a883-24f0-4b9d-8c53-bd80c7ff052d",
@@ -4801,18 +4801,18 @@
     "answers": [
       "È il caso in cui viene progettato un componente nuovo, utilizzando un processo decisionale separato",
       "consiste nello sviluppo di un componente innovativo tramite un processo decisionale condiviso",
-      "È il caso in cui il componente vero e proprio viene progettato autonomamente dal cliente, mentre il processo \nproduttivo viene sviluppato insieme con il fornitore",
-      "È il caso in cui viene sviluppato un nuovo processo produttivo con un processo decisionale condiviso fra cliente e \nfornitore, che interagiscono strettamente lungo tutte le fasi del codesign"
+      "È il caso in cui il componente vero e proprio viene progettato autonomamente dal cliente, mentre il processo produttivo viene sviluppato insieme con il fornitore",
+      "È il caso in cui viene sviluppato un nuovo processo produttivo con un processo decisionale condiviso fra cliente e fornitore, che interagiscono strettamente lungo tutte le fasi del codesign"
     ],
-    "correct_answer": "È il caso in cui viene sviluppato un nuovo processo produttivo con un processo decisionale condiviso fra cliente e \nfornitore, che interagiscono strettamente lungo tutte le fasi del codesign"
+    "correct_answer": "È il caso in cui viene sviluppato un nuovo processo produttivo con un processo decisionale condiviso fra cliente e fornitore, che interagiscono strettamente lungo tutte le fasi del codesign"
   },
   {
     "id": "f59e6d60-739b-4402-be18-e26ec4ee3ad7",
     "question": "La Joint Function Development:",
     "answers": [
-      "È il caso in cui il componente vero e proprio viene progettato autonomamente dal cliente, mentre il processo \nproduttivo viene sviluppato insieme con il fornitore",
+      "È il caso in cui il componente vero e proprio viene progettato autonomamente dal cliente, mentre il processo produttivo viene sviluppato insieme con il fornitore",
       "È il caso in cui viene progettato un componente nuovo, utilizzando un processo decisionale separato",
-      "È il caso in cui viene sviluppato un nuovo processo produttivo con un processo decisionale condiviso fra cliente e \nfornitore, che interagiscono strettamente lungo tutte le fasi del codesign",
+      "È il caso in cui viene sviluppato un nuovo processo produttivo con un processo decisionale condiviso fra cliente e fornitore, che interagiscono strettamente lungo tutte le fasi del codesign",
       "consiste nello sviluppo di un componente innovativo tramite un processo decisionale condiviso"
     ],
     "correct_answer": "consiste nello sviluppo di un componente innovativo tramite un processo decisionale condiviso"
