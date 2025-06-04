@@ -154,6 +154,17 @@
     "id": "f7f22602-054d-4a5e-891b-f4f1121873fd"
   },
   {
+  "question": "Il compito, nell'ambito della progettazione microstrutturale, è definito come:",
+  "answers": [
+    "una funzione gestionale orientata alla pianificazione strategica delle risorse",
+    "un'attività individuale assegnata in base alla gerarchia organizzativa",
+    "un insieme di operazioni eseguibili in autonomia senza vincoli tecnologici",
+    "un insieme di attività intrinsecamente collegate e inscindibili in relazione al lavoro dell'uomo e alle caratteristiche della tecnologia"
+  ],
+  "correct_answer": "un insieme di attività intrinsecamente collegate e inscindibili in relazione al lavoro dell'uomo e alle caratteristiche della tecnologia",
+  "id": "9d79e4a1-2f7e-4e8d-94c9-1c68cf7a12c3"
+},
+  {
     "question": "I sistemi informativi aziendali facilitano l'integrazione tra unità organizzative attraverso:",
     "answers": [
       "L'automazione totale dei processi produttivi",
@@ -165,7 +176,7 @@
     "id": "790443da-d8e1-4c67-b118-628e30bd4c86"
   },
   {
-    "question": "Quando criteri funzionali e divisionali hanno uguale peso nel determinare il raggruppamento delleattività, in alcuni casi si rinuncia ad attribuire in maniera unica le posizioni alle unità organizzative e sicrea:",
+    "question": "Quando criteri funzionali e divisionali hanno uguale peso nel determinare il raggruppamento delle attività, in alcuni casi si rinuncia ad attribuire in maniera unica le posizioni alle unità organizzative e si crea:",
     "answers": [
       "La presenza di una pluralità di linee gerarchiche, che rispondono a criteri di raggruppamento multipli come funzione e area geografica",
       "Un unico criterio di raggruppamento delle attività, per mantenere la linearità dei processi",
@@ -381,7 +392,7 @@
       "Un gruppo di lavoro dedicato alla riprogettazione dei processi aziendali in una banca",
       "Una riunione periodica dei direttori di corso in una business school"
     ],
-    "correct_answer": "Una riunione periodica dei direttori di corso in una business school",
+    "correct_answer": "Un gruppo di lavoro dedicato alla riprogettazione dei processi aziendali in una banca",
     "id": "864f6782-55a0-454f-bbd4-c21493a30b75"
   },
   {
@@ -550,6 +561,17 @@
     "id": "20eee5da-501a-40aa-9b7b-758eecf4e07c"
   },
   {
+  "question": "Nelle multinazionali con struttura divisionale per area geografica, un rischio è:",
+  "answers": [
+    "la ridondanza di controlli finanziari a livello centrale",
+    "la difficoltà di adattamento ai contesti locali",
+    "la dispersione dell'autorità decisionale tecnica",
+    "la mancanza di coordinamento sui prodotti o clienti specifici"
+  ],
+  "correct_answer": "la mancanza di coordinamento sui prodotti o clienti specifici",
+  "id": "c3f1a81e-6bc2-49ea-a9e5-3b3bb6c2f5df"
+  },
+  {
     "question": "Una struttura organizzativa funzionale è più adatta a realtà:",
     "answers": [
       "In rapida espansione su più mercati",
@@ -682,6 +704,17 @@
     "id": "c4075d15-92bc-4238-8eb2-e7e0dbb4a90a"
   },
   {
+  "question": "Ai livelli operativi di un'organizzazione:",
+  "answers": [
+    "Si definiscono le strategie di lungo periodo",
+    "Il livello di astrazione delle decisioni è massimo",
+    "Si gestiscono principalmente relazioni con gli stakeholder esterni",
+    "Il rischio e l'incertezza sono relativamente ridotti"
+  ],
+  "correct_answer": "Il rischio e l'incertezza sono relativamente ridotti",
+  "id": "b1a2c3e4-7d56-43f0-bf2b-92eaa7f845d9"
+  },
+  {
     "question": "Le problematiche organizzative si affrontano in modo efficace con:",
     "answers": [
       "Il coinvolgimento di consulenti esterni",
@@ -692,8 +725,19 @@
     "correct_answer": "Le task force, anche temporanee",
     "id": "cd01aec6-0149-4ed6-932e-689b1014a7bd"
   },
+    {
+    "question": "Un meccanismo per migliorare la partecipazione dei dipendenti ai processi decisionali è rappresentato da:",
+    "answers": [
+      "Il coinvolgimento di consulenti esterni",
+      "La supervisione diretta dei capi",
+      "Le task force, anche temporanee",
+      "I singoli contributi dei membri"
+    ],
+    "correct_answer": "Le task force, anche temporanee",
+    "id": "cd01aec6-0149-4ed6-932e-659b1014a7bd"
+  },
   {
-    "question": "Il valore attribuito dal cliente all'output di un prodotto o servizio dipende da quali fattori?",
+    "question": "Il valore percepito dall'output di un processo aziendale implica una valutazione in termini di:",
     "answers": [
       "Prezzo di acquisizione, qualità, velocità di acquisizione e tempo di acquisizione",
       "Durata del prodotto, reputazione del marchio e risorse utilizzate",
@@ -726,7 +770,7 @@
     "id": "a522015f-16da-4282-ac71-77c819a077b6"
   },
   {
-    "question": "Nel contesto della gerarchia dei processi aziendali, il microprocesso è:",
+    "question": "Nel contesto della gerarchia dei processi aziendali, il macroprocesso è:",
     "answers": [
       "Un insieme di attività finalizzate alla gestione di clienti esterni",
       "Un processo interfunzionale che collega tutte le divisioni aziendali",
@@ -790,6 +834,17 @@
     ],
     "correct_answer": "Ricercare costantemente nuovi modi per rispondere rapidamente ai clienti",
     "id": "75fedf1f-2a6d-4adf-8aa9-ae2a02dd2202"
+  },
+    {
+    "question": "La \"time-based competition\" impone alle aziende di:",
+    "answers": [
+      "Evitare la standardizzazione dei processi e mantenere alta la varietà di risposta",
+      "Focalizzarsi esclusivamente sulla riduzione dei costi",
+      "Creare un sistema di vendite che minimizza il tempo per la consegna",
+      "Ricercare costantemente nuovi modi per rispondere rapidamente ai clienti"
+    ],
+    "correct_answer": "Ricercare costantemente nuovi modi per rispondere rapidamente ai clienti",
+    "id": "75fedf1f-2a6c-4adf-8aa9-ae2a02dd2202"
   },
   {
     "question": "Ampiezza del controllo è:",
@@ -902,7 +957,7 @@
     "id": "2c177cd7-6b7d-4f88-a998-8b6a41607699"
   },
   {
-    "question": "Per un'impresa crescere è necessario per avere:",
+    "question": "Uno devi vantaggi che può spingere alla crescita le imprese è:",
     "answers": [
       "L'aumento della burocrazia interna",
       "L'opportunità di accedere a finanziamenti più evoluti",
@@ -935,7 +990,7 @@
     "id": "219d7aeb-3c3e-4332-b2d6-0d1bf4bc055a"
   },
   {
-    "question": "Qual è uno dei principali limiti dei manager integratori all'interno di un'organizzazione? (domanda inventata)",
+    "question": "Uno dei principali problemi dei manager integratori riguarda:",
     "answers": [
       "L'assenza di obiettivi di standardizzazione",
       "Il controllo diretto sui processi produttivi",
@@ -946,7 +1001,7 @@
     "id": "dd29d37a-023e-459f-9148-6fd53fae1c05"
   },
   {
-    "question": "Secondo la teoria dei sistemi, le attività di un'organizzazione devono essere: (domanda inventata)",
+    "question": "La definizione di unità organizzativa si riferisce a un sottoinsieme di posizioni e ruoli con caratteristiche:",
     "answers": [
       "Interrelate, autonome, stabili e misurabili",
       "Indipendenti, interconnesse e mutevoli",
@@ -1034,7 +1089,7 @@
     "id": "066f4556-80d8-473b-8ab5-9397ebba6db1"
   },
   {
-    "question": "Come si configura tipicamente la struttura organizzativa per area geografica? (domanda inventata)",
+    "question": "Un esempio di struttura organizzativa basata sull'area geografica è",
     "answers": [
       "Un unico centro operativo centralizzato a livello nazionale",
       "Una divisione per linea di prodotto in ogni regione",
@@ -2451,6 +2506,17 @@
       "Gli specialist svolgono una mansione di alto livello"
     ],
     "correct_answer": "I consultant svolgono una mansione operativa, occupandosi di problemi circoscritti (specializzazione orizzontale medio-alta)"
+  },
+  {
+  "question": "Alla direzione di World Consulting Network Italia rispondono direttamente:",
+  "answers": [
+    "I team di progetto distribuiti sui diversi territori",
+    "Le sedi internazionali della società madre",
+    "Le funzioni centrali di supporto come HR e Finance",
+    "Le unità organizzative (Manifacturing, Banking, Pubblica Amministrazione) relative ai diversi settori (industry) in cui opera l'azienda"
+  ],
+  "correct_answer": "Le unità organizzative (Manifacturing, Banking, Pubblica Amministrazione) relative ai diversi settori (industry) in cui opera l'azienda",
+  "id": "f8e67819-9a73-4c45-9a8f-824b675d1e6a"
   },
   {
     "id": "a15ac5bf-db19-48e7-afde-c4414094dbe5",
@@ -4167,6 +4233,17 @@
       "10.60%"
     ],
     "correct_answer": "11.60%"
+  },
+    {
+    "id": "1daf9cd1-40e7-4696-a957-9c25e8b5976p",
+    "question": "Se l'Introduzione (I) è del 15%, la Copertura (C) è del 15,4% e la Selettività (S) è 5, la Quota di mercato (Q) è pari a:",
+    "answers": [
+      "0.12%",
+      "0.11%",
+      "0.13%",
+      "0.10%"
+    ],
+    "correct_answer": "0.12%"
   },
   {
     "id": "8e081b12-c98e-4c45-ae86-56e56b0fc9e8",
