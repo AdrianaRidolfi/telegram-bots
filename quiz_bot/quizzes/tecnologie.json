@@ -466,5 +466,17 @@
     ],
     "correct_answer": "qop, nonce ed opaque",
     "id": "dbb1de5d-e62a-4da8-b50c-a20a97b00dce"
+  },
+    {
+    "question": "Caricando tale pagina, cosa compare a video?",
+    "answers": [
+      "100+50",
+      "150",
+      "100",
+      "50"
+    ],
+    "correct_answer": "150",
+    "image": "tec6.jpg",
+    "id": "2c9d4ce6-1be7-471c-b5b4-50221c7fe2ba"
   }
 ]
