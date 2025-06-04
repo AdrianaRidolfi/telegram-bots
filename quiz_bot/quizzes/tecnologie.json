@@ -85,7 +85,7 @@
       "dà errore a compile-time",
       "non è ammessa"
     ],
-    "correct_answer": "dà errore a compile-time",
+    "correct_answer": "non è ammessa",
     "id": "acc7abed-cf16-405c-98fb-25c17164a155"
   },
   {
@@ -478,5 +478,155 @@
     "correct_answer": "150",
     "image": "tec6.jpg",
     "id": "2c9d4ce6-1be7-471c-b5b4-50221c7fe2ba"
-  }
+  },
+  {
+  "question": "Nel contesto dello sviluppo web, quale termine descrive meglio il livello responsabile della visualizzazione dei contenuti all'utente? (domanda inventata)",
+  "answers": [
+    "Autenticazione",
+    "Persistenza",
+    "Routing",
+    "Presentation"
+  ],
+  "correct_answer": "Presentation",
+  "id": "e97d04e1-f93e-4f8b-bce3-0387d22e37cc"
+},
+{
+  "question": "Quali sono i livelli del modello TCP/IP responsabili della trasmissione dei dati attraverso la rete e dell'accesso alle risorse remote? (domanda inventata)",
+  "answers": [
+    "Application e Presentation",
+    "Transport e Session",
+    "Network e Physical",
+    "Internet e Data Access"
+  ],
+  "correct_answer": "Internet e Data Access",
+  "id": "9cbe78d1-f253-403e-9b38-7400a9f3cb7e"
+},
+{
+  "question": "Quale delle seguenti affermazioni descrive correttamente un cookie con il flag HttpOnly? (domanda inventata)",
+  "answers": [
+    "È un cookie che viene inviato solo alle richieste HTTPS",
+    "È un cookie che può essere modificato tramite JavaScript",
+    "È un cookie che scade immediatamente dopo la sessione",
+    "È un cookie che non può essere letto da API client-side come Javascript"
+  ],
+  "correct_answer": "È un cookie che non può essere letto da API client-side come Javascript",
+  "id": "e4a3d2f1-7c59-4d1b-8c3a-3b7d0c9752f1"
+},
+{
+  "question": "Cosa si intende per Network eavesdropping?",
+  "answers": [
+    "Se il canale non è cifrato, un soggetto in ascolto sul canale può eseguire il drop dei pacchetti",
+    "Una rete non protetta",
+    "Se il canale non è cifrato, un soggetto in ascolto sul canale può eseguire il drop dei pacchetti",
+    "Se il canale non è cifrato, un soggetto in ascolto sul canale può leggere i cookie in transito per impersonare in seguito un determinato utente"
+  ],
+  "correct_answer": "Se il canale non è cifrato, un soggetto in ascolto sul canale può leggere i cookie in transito per impersonare in seguito un determinato utente",
+  "id": "d78f19b6-964a-4a2d-b5e0-c16edff66f0b"
+},
+  {
+  "question": "In JavaScript, come vengono passati i tipi primitivi quando utilizzati come parametri in una funzione? (domanda inventata)",
+  "answers": [
+    "Come riferimento",
+    "Come array",
+    "Come copia degli originali",
+    "Per valore"
+  ],
+  "correct_answer": "Per valore",
+  "id": "a2e9d57c-6b18-4b2e-87c8-f754ef829c14"
+},
+{
+  "question": "Cosa accade quando viene caricata la seguente pagina?(",
+  "answers": [
+    "Appare Nuovo contenuto e dopo 3 secondi scompare",
+    "Appare immediatamente \"Nuovo contenuto\"",
+    "Inizialmente non c'è nulla ed in 3 secondi compare \"Nuovo contenuto\"",
+    "Non succede nulla: c'è un errore"
+  ],
+  "correct_answer": "Inizialmente non c'è nulla ed in 3 secondi compare "Nuovo contenuto"",
+  "image": "tec7.jpg"
+  "id": "a2e9d58c-6b18-4b2e-87c8-f754ef829c14"
+},
+{
+  "question": "Nell'URL http://opentutorials.org:3000/main?id=HML&pag=12, cosa rappresenta 'main'?",
+  "answers": [
+    "la risorsa",
+    "l'host",
+    "il percorso",
+    "il metodo della funzione da richiamare"
+  ],
+  "correct_answer": "il percorso",
+  "id": "9e4b7a1d-f2c8-4e31-bd4a-8c96f1aee3f5"
+},
+  {
+    "question": "Caricando tale pagina, cosa compare a video?",
+    "answers": [
+      "Non compare nulla",
+      "100100",
+      "100",
+      "200"
+    ],
+    "correct_answer": "100100",
+    "image": "tec8.jpg",
+    "id": "2c9d4ce6-1be7-471c-b5b4-50221c7fe2ex"
+  },
+  {
+    "question": "Caricando tale pagina, cosa compare a video?",
+    "answers": [
+      "Non compare nulla",
+      "1001001",
+      "100100",
+      "201"
+    ],
+    "correct_answer": "1001001",
+    "image": "tec9.jpg",
+    "id": "2c9d4ce6-1be7-471c-b5b4-10981c7fe2ex"
+  },
+    {
+    "question": "Caricando tale pagina, cosa compare a video?",
+    "answers": [
+      "John Doe is 50 years old.",
+      "John is 50",
+      "John is 50 years old.",
+      "Years Old"
+    ],
+    "correct_answer": "John is 50 years old.",
+    "image": "tec10.jpg",
+    "id": "2b3f4ce6-1be7-471c-b5b4-10981c7fe2ex"
+  },
+      {
+    "question": "Quando si carica la seguente pagina, cosa viene visualizzato?",
+    "answers": [
+      "HelloWorld",
+      "HelloWorldHello",
+      "undefined",
+      "Hello"
+    ],
+    "correct_answer": "HelloWorldHello",
+    "image": "tec11.jpg",
+    "id": "2b3f4ce6-8ar4-471c-b5b4-10981c7fe2ex"
+  },
+  {
+  "question": "Il seguente codice: form action",
+  "answers": [
+    "Rappresenta una form ma l'action non è valido",
+    "Rappresenta una form ma contiene degli errori sintattici",
+    "Rappresenta una form corretta",
+    "Rappresenta una form in cui il method specificato deve essere cambiato in mail"
+  ],
+  "correct_answer": "Rappresenta una form corretta",
+  "image": "tec12.jpg",
+  "id": "c3d8a7f1-4e55-4e4a-bd39-9e2f0a5a672e"
+},
+  {
+  "question": "Quando si carica tale pagina, cosa viene visualizzato?",
+  "answers": [
+    "Banana,Orange,Apple",
+    "Apple,Mango",
+    "Mango",
+    "Apple"
+  ],
+  "correct_answer": "Mango",
+  "image": "tec13.jpg",
+  "id": "c3d8a7f1-4e55-4e4a-bd39-9e2f0a5a531e"
+}
 ]
