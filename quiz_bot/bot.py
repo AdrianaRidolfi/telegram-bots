@@ -166,7 +166,7 @@ async def send_next_question(user_id, context):
         return
 
     if state["index"] >= state["total"]:
-        await show_final_stats(user_id, context, state)
+        await show_final_stats(user_id, context, state, is_review_mode=state.get("mode") == "review")
         manager = get_manager(user_id)
         manager.commit_changes()
         user_states.pop(user_id, None) 
@@ -305,6 +305,15 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if data == "stop":
         await stop(update, context)
 
+    elif data.startswith("clear_errors:"):
+        subject = data.split(":")[1]
+        manager.remove_subject(subject)
+        await context.bot.send_message(
+            chat_id=user_id,
+            text=f"✅ Errori per *{subject}* cancellati!",
+            parse_mode="Markdown"
+        )
+
     elif data == "change_course":
         state = user_states.get(user_id)
         if state:
@@ -435,7 +444,7 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_states.pop(user_id, None)
 
 
-async def show_final_stats(user_id, context, state, from_stop=False, from_change_course=False):
+async def show_final_stats(user_id, context, state, from_stop=False, from_change_course=False, is_review_mode=False):
     
     if not state:
         return
@@ -479,10 +488,16 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
             InlineKeyboardButton("🔁 Ripeti quiz", callback_data="repeat_quiz"),
             InlineKeyboardButton("📚 Cambia materia", callback_data="change_course")
         ])
-
-    keyboard.append([
-        InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
-    ])
+    if is_review_mode:
+        keyboard.append(
+            [
+                InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats"),
+                InlineKeyboardButton("🧽 Cancella Errori", callback_data=f"clear_errors:{state['subject']}")]
+        )
+    else: 
+        keyboard.append([
+            InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
+        ])
 
     manager = get_manager(user_id)
     
