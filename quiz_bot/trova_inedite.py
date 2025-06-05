@@ -98,6 +98,27 @@ def confronto_completo(txt_path, json_path, pdf_path, output_txt_path):
     print(f"File finale salvato in '{output_txt_path}' con {len(finali_filtrate)} domande residue.")
 
 
+import random
+
+def mescola_risposte(domande_json):
+    for domanda in domande_json:
+        correct = domanda["correct_answer"]
+        risposte = domanda["answers"]
+        random.shuffle(risposte)  # mescola in-place
+
+        # Aggiorno correct_answer nel caso fosse necessario per riferimento a stringa
+        # Se correct è già nella lista (lo è), nessuna modifica sul valore, ma giusto per sicurezza:
+        if correct not in risposte:
+            raise ValueError(f"La risposta corretta '{correct}' non è nella lista delle risposte per la domanda '{domanda['question']}'")
+        
+        # Se vuoi, puoi opzionalmente settare correct_answer alla stringa presente ora in risposte
+        # (ma dovrebbe essere la stessa stringa, solo ordine diverso)
+
+        domanda["correct_answer"] = correct
+
+    return domande_json
+
+
 # -----------------------
 # MAIN
 # -----------------------
@@ -110,4 +131,17 @@ if __name__ == "__main__":
 
     percorso_json = os.path.join("quizzes", nome_file_json)
 
-    confronto_completo(nome_file_txt, percorso_json, nome_file_pdf, nome_file_output)
+    # Carico il JSON
+    with open(percorso_json, "r", encoding="utf-8") as f:
+        domande = json.load(f)
+
+    # Mescolo le risposte
+    domande_miscelate = mescola_risposte(domande)
+
+    # Sovrascrivo il file JSON con il contenuto aggiornato
+    with open(percorso_json, "w", encoding="utf-8") as f:
+        json.dump(domande_miscelate, f, ensure_ascii=False, indent=4)
+
+    # Eseguo il confronto
+    #confronto_completo(nome_file_txt, percorso_json, nome_file_pdf, nome_file_output)
+

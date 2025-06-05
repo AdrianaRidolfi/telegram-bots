@@ -2,10 +2,10 @@
     {
         "question": "L'organizzazione d'impresa e i processi decisionali sono legati tra loro in quanto:",
         "answers": [
-            "Gli aspetti più visibili dell'organizzazione influenzano fortemente i processi decisionali strategici delle imprese",
-            "I processi decisionali avvengono indipendentemente dalla struttura organizzativa",
+            "I processi decisionali strategici sono influenzati solo da fattori esterni all'impresa",
             "L'organizzazione d'impresa non ha impatto sulle decisioni strategiche",
-            "I processi decisionali strategici sono influenzati solo da fattori esterni all'impresa"
+            "Gli aspetti più visibili dell'organizzazione influenzano fortemente i processi decisionali strategici delle imprese",
+            "I processi decisionali avvengono indipendentemente dalla struttura organizzativa"
         ],
         "correct_answer": "Gli aspetti più visibili dell'organizzazione influenzano fortemente i processi decisionali strategici delle imprese",
         "id": "6edcf742-b288-488d-ac96-7ccde494aa38"
@@ -13,10 +13,10 @@
     {
         "question": "Qual è il valore di default della proprietà 'overflow' in CSS?",
         "answers": [
+            "visible",
             "hidden",
             "auto",
-            "scroll",
-            "visible"
+            "scroll"
         ],
         "correct_answer": "visible",
         "id": "845403f9-6f20-4ff0-9a9f-587aa464d20b"
@@ -25,8 +25,8 @@
         "question": "Quale dei seguenti enctype non è predefinito per i moduli HTML?",
         "answers": [
             "application/x-www-form-urlencoded",
-            "multipart/form-data",
             "text/plain",
+            "multipart/form-data",
             "application/xml"
         ],
         "correct_answer": "application/xml",
@@ -36,9 +36,9 @@
         "question": "Quale affermazione è vera riguardo all'input di tipo password?",
         "answers": [
             "Cifra i dati durante la trasmissione",
-            "Non ha alcuna protezione sullo schermo",
+            "Non ha implicazioni con la sicurezza del trasferimento dei dati",
             "Protegge solo i dati visibili",
-            "Non ha implicazioni con la sicurezza del trasferimento dei dati"
+            "Non ha alcuna protezione sullo schermo"
         ],
         "correct_answer": "Non ha implicazioni con la sicurezza del trasferimento dei dati",
         "id": "0bf6b569-8270-4d3f-9512-19b567e4a6df"
@@ -46,10 +46,10 @@
     {
         "question": "Cosa succede quando si carica la pagina con il codice jQuery fornito?",
         "answers": [
-            "Il titolo della pagina cambia",
-            "Viene visualizzato un errore di sintassi",
+            "Il jQuery non viene caricato correttamente",
             "Il paragrafo con id 'mio_paragrafo' viene modificato",
-            "Il jQuery non viene caricato correttamente"
+            "Viene visualizzato un errore di sintassi",
+            "Il titolo della pagina cambia"
         ],
         "correct_answer": "Il paragrafo con id 'mio_paragrafo' viene modificato",
         "image": "tec1.jpg",
@@ -58,10 +58,10 @@
     {
         "question": "Qual è l'enctype predefinito per i moduli HTML?",
         "answers": [
-            "application/x-www-form-urlencoded",
-            "application/json",
             "text/plain",
-            "multipart/form-data"
+            "application/json",
+            "multipart/form-data",
+            "application/x-www-form-urlencoded"
         ],
         "correct_answer": "application/x-www-form-urlencoded",
         "id": "0b43403a-a805-4b3b-bf3e-5fe462ae6368"
@@ -69,9 +69,9 @@
     {
         "question": "Qual è la funzione principale dell'elemento input con type=\"password\"?",
         "answers": [
-            "Conservare i dati nei cookies",
-            "Proteggere i dati sullo schermo",
             "Cifrare i dati durante la trasmissione",
+            "Proteggere i dati sullo schermo",
+            "Conservare i dati nei cookies",
             "Specificare l'algoritmo di cifratura"
         ],
         "correct_answer": "Proteggere i dati sullo schermo",
@@ -80,10 +80,10 @@
     {
         "question": "Cosa succede con la seguente sequenza di istruzioni: let x = 'John Doe'; let x = 0;",
         "answers": [
-            "è obsoleta",
             "è ammessa",
             "dà errore a compile-time",
-            "non è ammessa"
+            "non è ammessa",
+            "è obsoleta"
         ],
         "correct_answer": "non è ammessa",
         "id": "acc7abed-cf16-405c-98fb-25c17164a155"
@@ -92,9 +92,9 @@
         "question": "Cosa indica la seguente immagine riguardo ai cookie?",
         "answers": [
             "sono stati settati 2 cookies",
-            "c'è chiaramente un problema di gestione dei cookies",
             "è stato settato un solo cookie",
-            "è stato settato il cookie ONEID ma poi è stato sovrascritto da TWOID"
+            "è stato settato il cookie ONEID ma poi è stato sovrascritto da TWOID",
+            "c'è chiaramente un problema di gestione dei cookies"
         ],
         "correct_answer": "sono stati settati 2 cookies",
         "image": "tec2.jpg",
@@ -103,10 +103,10 @@
     {
         "question": "Qual è la sintassi corretta per scrivere un messaggio sulla console in JavaScript?",
         "answers": [
-            "console(“TESTO DA INSERIRE”);",
+            "log(“TESTO DA INSERIRE”)",
             "console.log(“TESTO DA INSERIRE”)",
-            "console.log.write(“TESTO DA INSERIRE”);",
-            "log(“TESTO DA INSERIRE”)"
+            "console(“TESTO DA INSERIRE”);",
+            "console.log.write(“TESTO DA INSERIRE”);"
         ],
         "correct_answer": "console.log(“TESTO DA INSERIRE”)",
         "id": "2a300eee-04ff-4c9c-9a4b-4f69d5350d10"
@@ -115,9 +115,9 @@
         "question": "In JavaScript, come vengono passati gli oggetti in una funzione?",
         "answers": [
             "come copia degli originali",
-            "per riferimento",
+            "come array",
             "per valore",
-            "come array"
+            "per riferimento"
         ],
         "correct_answer": "per riferimento",
         "id": "08411dbc-43ca-4b27-a8a7-c4e6b22d46c8"
@@ -125,9 +125,9 @@
     {
         "question": "Quale struttura in JSON rappresenta una raccolta ordinata di valori?",
         "answers": [
+            "Set",
             "Oggetto",
             "Dizionario",
-            "Set",
             "Array"
         ],
         "correct_answer": "Array",
@@ -136,10 +136,10 @@
     {
         "question": "Quale errore è presente nel seguente JSON: { 'name': 'john', 'surname': 'red', 'cars': [ 'Ferrari', 'Porsche' 1, 'hobbies': [ 'go - kart', 'bicycle' ] }?",
         "answers": [
-            "Le chiavi non devono essere racchiuse in virgolette",
-            "Manca una virgola dopo 'Porsche'",
             "Non è possibile avere due array all'interno",
-            "La sezione 'hobbies' è corretta"
+            "Le chiavi non devono essere racchiuse in virgolette",
+            "La sezione 'hobbies' è corretta",
+            "Manca una virgola dopo 'Porsche'"
         ],
         "correct_answer": "Non è possibile avere due array all'interno",
         "id": "a721333b-fd95-4145-955f-e04b4ac4d11a"
@@ -148,9 +148,9 @@
         "question": "Qual è la caratteristica principale del set-up della sessione TCP?",
         "answers": [
             "È a quattro vie",
-            "È a una via",
             "È a due vie",
-            "È a tre vie"
+            "È a tre vie",
+            "È a una via"
         ],
         "correct_answer": "È a tre vie",
         "id": "67fa0cdf-e2f8-483d-9bd5-a604bf4948c1"
@@ -158,10 +158,10 @@
     {
         "question": "Nell'URL http://www.miosito.it/percorso/index.html, cosa rappresenta 'http'?",
         "answers": [
+            "la porta",
             "l'host",
-            "il path",
             "lo schema",
-            "la porta"
+            "il path"
         ],
         "correct_answer": "lo schema",
         "id": "05c92128-8879-423e-b9ac-05e89975a9a8"
@@ -170,9 +170,9 @@
         "question": "Quale delle seguenti affermazioni è vera riguardo alla sezione 'hobbies' in un JSON?",
         "answers": [
             "Deve essere racchiusa in virgolette",
-            "Può contenere più array",
+            "Non è necessaria",
             "Deve essere completata con un punto finale",
-            "Non è necessaria"
+            "Può contenere più array"
         ],
         "correct_answer": "Deve essere completata con un punto finale",
         "id": "4c690f4c-610e-43c8-93a5-b028854044cd"
@@ -180,10 +180,10 @@
     {
         "question": "Qual è la struttura corretta per un array in JSON?",
         "answers": [
-            "Deve essere racchiuso tra parentesi tonde",
+            "Non ha bisogno di alcuna parentesi",
             "Deve essere racchiuso tra parentesi graffe",
-            "Deve essere racchiuso tra parentesi quadre",
-            "Non ha bisogno di alcuna parentesi"
+            "Deve essere racchiuso tra parentesi tonde",
+            "Deve essere racchiuso tra parentesi quadre"
         ],
         "correct_answer": "Deve essere racchiuso tra parentesi quadre",
         "id": "0c53ae03-5773-4f6a-9521-fb00e6c25a41"
@@ -202,10 +202,10 @@
     {
         "question": "Quale affermazione sui Bearer Token è corretta?",
         "answers": [
+            "Devono essere sempre trasmessi in chiaro",
             "Sono sempre associati a un cookie di sessione",
-            "Possono essere utilizzati per accedere a risorse protette senza ulteriori credenziali",
             "Sono utilizzati esclusivamente per l'autenticazione degli utenti",
-            "Devono essere sempre trasmessi in chiaro"
+            "Possono essere utilizzati per accedere a risorse protette senza ulteriori credenziali"
         ],
         "correct_answer": "Possono essere utilizzati per accedere a risorse protette senza ulteriori credenziali",
         "id": "4cb6f52b-530a-4fe1-aa90-8d5509e47c98"
@@ -213,10 +213,10 @@
     {
         "question": "Il seguente JSON: {\"name\"=\"john\"} è valido?",
         "answers": [
-            "Non è valido: vanno messi i ':' al posto dell' '='",
-            "È valido",
             "Non è valido: occorre che la lettera 'j' sia maiuscola",
-            "È valido solo se 'john' è un numero"
+            "È valido",
+            "È valido solo se 'john' è un numero",
+            "Non è valido: vanno messi i ':' al posto dell' '='"
         ],
         "correct_answer": "Non è valido: vanno messi i ':' al posto dell' '='",
         "id": "e13021c4-4860-4fda-aeb0-79346bd4b60f"
@@ -224,10 +224,10 @@
     {
         "question": "Qual è lo scopo dell'autenticazione nelle applicazioni web",
         "answers": [
-            "Limitare l'accesso a risorse riservate",
-            "Garantire l'estetica dell'interfaccia utente",
+            "Controllare il traffico di rete tra server",
             "Velocizzare il caricamento delle pagine",
-            "Controllare il traffico di rete tra server"
+            "Garantire l'estetica dell'interfaccia utente",
+            "Limitare l'accesso a risorse riservate"
         ],
         "correct_answer": "Limitare l'accesso a risorse riservate",
         "id": "0c60a2f1-8d1f-4425-841b-18041589bca0"
@@ -236,9 +236,9 @@
         "question": "Cosa rappresenta un token JWT:",
         "answers": [
             "Un oggetto JSON firmato digitalmente che contiene informazioni sull'utente",
-            "Un tipo di cookie per la memorizzazione delle sessioni",
             "Un metodo di crittografia per proteggere i dati",
-            "Un server proxy per la gestione delle richieste"
+            "Un server proxy per la gestione delle richieste",
+            "Un tipo di cookie per la memorizzazione delle sessioni"
         ],
         "correct_answer": "Un oggetto JSON firmato digitalmente che contiene informazioni sull'utente",
         "id": "7b5d8f4c-9a1e-4f2a-8c26-3e2fbd15a60d"
@@ -247,8 +247,8 @@
         "question": "Quante colonne virtuali compongono la griglia di layout di Bootstrap:",
         "answers": [
             "12",
-            "6",
             "8",
+            "6",
             "16"
         ],
         "correct_answer": "12",
@@ -257,10 +257,10 @@
     {
         "question": "Quando un cookie viene considerato di terze parti (third-party):",
         "answers": [
-            "Quando è inviato da un dominio diverso rispetto a quello visitato dall'utente",
-            "Quando contiene dati criptati",
             "Quando scade dopo la sessione di navigazione",
-            "Quando è salvato solo nel browser"
+            "Quando è inviato da un dominio diverso rispetto a quello visitato dall'utente",
+            "Quando è salvato solo nel browser",
+            "Quando contiene dati criptati"
         ],
         "correct_answer": "Quando è inviato da un dominio diverso rispetto a quello visitato dall'utente",
         "id": "7e68a3f1-9c3d-4b8f-bb42-d1c91741dcee"
@@ -268,10 +268,10 @@
     {
         "question": "Quale metodo JavaScript converte un oggetto in una stringa JSON:",
         "answers": [
-            "JSON.stringify()",
             "JSON.parse()",
             "toJSONString()",
-            "JSON.convert()"
+            "JSON.convert()",
+            "JSON.stringify()"
         ],
         "correct_answer": "JSON.stringify()",
         "id": "d9e4a59f-7c0d-4b15-8f5e-6e2c3f8a7b12"
@@ -279,10 +279,10 @@
     {
         "question": "A cosa serve il tag <head> in un documento HTML:",
         "answers": [
-            "A contenere metadati e collegamenti a risorse esterne",
-            "A mostrare il contenuto principale della pagina",
             "A definire il piè di pagina del documento",
-            "A inserire commenti visibili nella pagina"
+            "A contenere metadati e collegamenti a risorse esterne",
+            "A inserire commenti visibili nella pagina",
+            "A mostrare il contenuto principale della pagina"
         ],
         "correct_answer": "A contenere metadati e collegamenti a risorse esterne",
         "id": "f812d7a9-8e44-4d16-a23c-9d2f7b1bfb33"
@@ -290,9 +290,9 @@
     {
         "question": "Cosa distingue il metodo POST dal metodo GET nei form HTML:",
         "answers": [
+            "Entrambi inviano i dati solo nell'URL",
             "GET include i dati nell'URL, POST li invia nel corpo della richiesta",
             "POST include i dati nell'URL, GET li invia nel corpo della richiesta",
-            "Entrambi inviano i dati solo nell'URL",
             "Entrambi inviano i dati solo nel corpo della richiesta"
         ],
         "correct_answer": "GET include i dati nell'URL, POST li invia nel corpo della richiesta",
@@ -301,10 +301,10 @@
     {
         "question": "Qual è la principale differenza tra un ciclo do...while e un ciclo while?",
         "answers": [
-            "Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, indipendentemente dalla verità della condizione",
-            "Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, al termine del loop, indipendentemente dalla verità della condizione",
             "Il blocco di codice all'interno del ciclo può essere eseguito se la condizione è verificata",
-            "Il blocco di codice all'interno del ciclo viene eseguito almeno due volte, una all'inizio ed una alla fine del ciclo"
+            "Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, al termine del loop, indipendentemente dalla verità della condizione",
+            "Il blocco di codice all'interno del ciclo viene eseguito almeno due volte, una all'inizio ed una alla fine del ciclo",
+            "Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, indipendentemente dalla verità della condizione"
         ],
         "correct_answer": "Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, indipendentemente dalla verità della condizione",
         "id": "1779deb9-78f0-4f14-b086-0bb371244591"
@@ -312,10 +312,10 @@
     {
         "question": "Quale funzione svolge il certificato digitale in una connessione HTTPS",
         "answers": [
-            "Permette al client di verificare l'identità del server",
-            "Controlla la larghezza di banda utilizzata",
             "Gestisce il layout delle pagine web",
-            "Aumenta la velocità della connessione"
+            "Permette al client di verificare l'identità del server",
+            "Aumenta la velocità della connessione",
+            "Controlla la larghezza di banda utilizzata"
         ],
         "correct_answer": "Permette al client di verificare l'identità del server",
         "id": "b8db4294-3e3e-4c0e-a042-e94f0f4ed36c"
@@ -323,10 +323,10 @@
     {
         "question": "Cosa sono i Bearer Token?",
         "answers": [
-            "Sono un tipo particolare di Cookie, usato per ottenere l'autorizzazione ad accedere ad una risorsa protetta tramite SSL",
             "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad una risorsa protetta da un Authorization Server conforme con lo Standard OAuth2",
-            "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad un dominio generico",
-            "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad una risorsa protetta da un Authorization Server non conforme con lo standard OAuth2"
+            "Sono un tipo particolare di Cookie, usato per ottenere l'autorizzazione ad accedere ad una risorsa protetta tramite SSL",
+            "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad una risorsa protetta da un Authorization Server non conforme con lo standard OAuth2",
+            "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad un dominio generico"
         ],
         "correct_answer": "Sono un tipo particolare di Access Token, usati per ottenere l'autorizzazione ad accedere ad una risorsa protetta da un Authorization Server conforme con lo Standard OAuth2",
         "id": "6075a125-125d-4c47-ab00-36cb54d567b3"
@@ -334,10 +334,10 @@
     {
         "question": "Nel contesto di un URL, cosa rappresenta il 'path'?",
         "answers": [
-            "La parte che indica il dominio del sito",
             "La parte che specifica la posizione del file sul server",
-            "La parte che identifica il protocollo",
-            "La parte che specifica la porta di accesso"
+            "La parte che indica il dominio del sito",
+            "La parte che specifica la porta di accesso",
+            "La parte che identifica il protocollo"
         ],
         "correct_answer": "La parte che specifica la posizione del file sul server",
         "id": "faffdbfd-c2a0-4548-a7e7-ea874e0d14d4"
@@ -345,10 +345,10 @@
     {
         "question": "Cosa indica la risposta del server 'HTTP/1.1 401 Unauthorized'?",
         "answers": [
+            "Che il client non è autenticato ed è richiesta una autenticazione 'digest'",
             "Che il client non è autenticato ed è richiesta una generica autenticazione",
-            "Che il client non è autenticato ed è richiesta una autenticazione 'basic'",
             "Che il client è autenticato ma non è autorizzato",
-            "Che il client non è autenticato ed è richiesta una autenticazione 'digest'"
+            "Che il client non è autenticato ed è richiesta una autenticazione 'basic'"
         ],
         "correct_answer": "Che il client non è autenticato ed è richiesta una autenticazione 'basic'",
         "id": "a1eaf0c3-1f6a-485d-b83b-c0c2a160901e"
@@ -356,9 +356,9 @@
     {
         "question": "Cosa accade quando si effettua una richiesta HTTP GET:",
         "answers": [
-            "Il server modifica la risorsa richiesta",
             "Il client invia dati nel corpo della richiesta",
             "La richiesta viene sempre autenticata automaticamente",
+            "Il server modifica la risorsa richiesta",
             "Il client richiede una risorsa senza inviare corpo nel messaggio"
         ],
         "correct_answer": "Il client richiede una risorsa senza inviare corpo nel messaggio",
@@ -367,9 +367,9 @@
     {
         "question": "Quale delle seguenti modifiche al JSON è corretta per aggiungere un nuovo hobby 'motors' con tre declinazioni?",
         "answers": [
+            "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",[\"motors\":\"f1\",\"f2\",\"f3\"]]}",
             "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",\"f1\",\"f2\",\"f3\"]}",
             "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",{\"motors\":[\"f1\",\"f2\",\"f3\"]}]}",
-            "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",[\"motors\":\"f1\",\"f2\",\"f3\"]]}",
             "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",\"motors\":[\"f1\",\"f2\",\"f3\"]]}"
         ],
         "correct_answer": "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",{\"motors\":[\"f1\",\"f2\",\"f3\"]}]}",
@@ -379,9 +379,9 @@
         "question": "Nell'immagine sono state depennate le etichette relative agli elementi dei boxmodel; indicare dalla più interna alla più esterna:",
         "answers": [
             "content, padding, border, margin",
-            "margin, border, padding, content",
+            "value, padding, border, margin",
             "padding, content, border, margin",
-            "value, padding, border, margin"
+            "margin, border, padding, content"
         ],
         "correct_answer": "content, padding, border, margin",
         "image": "tec3.jpg",
@@ -390,10 +390,10 @@
     {
         "question": "Qual è un vantaggio dell’uso della Fetch API rispetto a jQuery.ajax():",
         "answers": [
-            "Richiede meno permessi di sicurezza",
-            "Supporta tutti i browser legacy",
+            "Usa Promises per una gestione più moderna delle chiamate asincrone",
             "Offre una maggiore compatibilità con XML",
-            "Usa Promises per una gestione più moderna delle chiamate asincrone"
+            "Richiede meno permessi di sicurezza",
+            "Supporta tutti i browser legacy"
         ],
         "correct_answer": "Usa Promises per una gestione più moderna delle chiamate asincrone",
         "id": "42c9d2a6-bf18-4f8f-a769-92a28eac7e63"
@@ -402,8 +402,8 @@
         "question": "Qual è la differenza tra `inline` e `block` nel contesto di display CSS:",
         "answers": [
             "`inline` forza il ritorno a capo, `block` no",
-            "`inline` e `block` sono equivalenti in tutti i browser",
             "`block` non può contenere altri elementi, `inline` sì",
+            "`inline` e `block` sono equivalenti in tutti i browser",
             "`inline` non forza il ritorno a capo, `block` sì"
         ],
         "correct_answer": "`inline` non forza il ritorno a capo, `block` sì",
@@ -412,10 +412,10 @@
     {
         "question": "Cosa si intende per 'margin collapsing' in CSS:",
         "answers": [
-            "Il margine tra due box verticali è il massimo dei due",
+            "Quando un margine si applica solo al contenuto interno",
             "Quando due margini si sommano automaticamente",
             "Quando i margini scompaiono se i box sono vicini",
-            "Quando un margine si applica solo al contenuto interno"
+            "Il margine tra due box verticali è il massimo dei due"
         ],
         "correct_answer": "Il margine tra due box verticali è il massimo dei due",
         "id": "d4128c63-3aef-49c3-a2c7-0f7cf5f7c67c"
@@ -423,10 +423,10 @@
     {
         "question": "Caricando tale pagina, cosa compare?",
         "answers": [
-            "Years Old",
-            "John Doe is 50 years old.",
             "John is 50",
-            "John is 50 years old."
+            "John is 50 years old.",
+            "John Doe is 50 years old.",
+            "Years Old"
         ],
         "correct_answer": "John Doe is 50 years old.",
         "image": "tec4.jpg",
@@ -446,9 +446,9 @@
     {
         "question": "Cosa garantisce l'autenticità del certificato in una connessione HTTPS:",
         "answers": [
+            "L'uso del protocollo HTTP/2",
             "La crittografia a chiave pubblica del server",
             "La firma digitale di un'autorità di certificazione (CA)",
-            "L'uso del protocollo HTTP/2",
             "La presenza di un firewall attivo"
         ],
         "correct_answer": "La firma digitale di un'autorità di certificazione (CA)",
@@ -457,10 +457,10 @@
     {
         "question": "Qual è lo scopo del metodo 'emit' in Socket.IO:",
         "answers": [
-            "Ricevere un messaggio dal server o client",
-            "Inizializzare una connessione WebSocket",
             "Chiudere la connessione con il server",
-            "Inviare un messaggio dal server o client"
+            "Inizializzare una connessione WebSocket",
+            "Inviare un messaggio dal server o client",
+            "Ricevere un messaggio dal server o client"
         ],
         "correct_answer": "Inviare un messaggio dal server o client",
         "id": "a7e4b2c5-98d7-4f3c-8a29-3c1b7d4f5e11"
@@ -468,10 +468,10 @@
     {
         "question": "Nel DOM, qual è la differenza tra nodo ed elemento:",
         "answers": [
-            "Un nodo è sempre un elemento HTML",
             "Un elemento può contenere solo testo, mentre un nodo può contenere altri nodi",
-            "Un nodo e un elemento sono sinonimi e indicano la stessa cosa",
-            "Un nodo può essere un elemento, un testo o un commento; un elemento è un tipo specifico di nodo"
+            "Un nodo può essere un elemento, un testo o un commento; un elemento è un tipo specifico di nodo",
+            "Un nodo è sempre un elemento HTML",
+            "Un nodo e un elemento sono sinonimi e indicano la stessa cosa"
         ],
         "correct_answer": "Un nodo può essere un elemento, un testo o un commento; un elemento è un tipo specifico di nodo",
         "id": "f4b1e7c3-2d6a-4e89-9bc8-81d3f2b4a672"
@@ -479,10 +479,10 @@
     {
         "question": "I CSS servono a definire:",
         "answers": [
-            "La struttura del contenuto HTML",
             "Il comportamento dinamico delle pagine web",
-            "Il contenuto testuale delle pagine web",
-            "Come il contenuto deve essere presentato all' utente"
+            "La struttura del contenuto HTML",
+            "Come il contenuto deve essere presentato all' utente",
+            "Il contenuto testuale delle pagine web"
         ],
         "correct_answer": "Come il contenuto deve essere presentato all' utente",
         "id": "d2f7a83b-8f15-4a9d-8e45-3c9bcb62a0e7"
@@ -490,10 +490,10 @@
     {
         "question": "Per cosa vengono comunemente utilizzati i cookie di sessione:",
         "answers": [
+            "Per crittografare i dati trasmessi",
             "Per tracciare gli utenti su più siti web",
-            "Per mantenere attiva una sessione utente durante la navigazione",
             "Per memorizzare le preferenze del browser",
-            "Per crittografare i dati trasmessi"
+            "Per mantenere attiva una sessione utente durante la navigazione"
         ],
         "correct_answer": "Per mantenere attiva una sessione utente durante la navigazione",
         "id": "b4d9f91a-5c3e-4f2a-8e9b-7f0a1c3d42ea"
@@ -501,10 +501,10 @@
     {
         "question": "Qual è il nome del livello depennato?",
         "answers": [
-            "Application Layer",
             "Transport Layer",
+            "Session Layer",
             "Physical Layer",
-            "Session Layer"
+            "Application Layer"
         ],
         "correct_answer": "Session Layer",
         "image": "tec5.jpg",
@@ -513,10 +513,10 @@
     {
         "question": "Nella seguente immagine sono state depennate le etichette relative agli elementi dei box model; indicare dalla più esterna alla più interna:",
         "answers": [
-            "content,padding,border,margin",
-            "margin,border,padding,content",
+            "value,padding,border,margin",
             "padding,content,border,margin",
-            "value,padding,border,margin"
+            "content,padding,border,margin",
+            "margin,border,padding,content"
         ],
         "correct_answer": "margin,border,padding,content",
         "image": "tec3.jpg",
@@ -525,10 +525,10 @@
     {
         "question": "L'attributo enctype application/x-www-form-urlencoded:",
         "answers": [
-            "è un tipo di codifica che compone una stringa convertendo tutti i campi della form in una sequenza di associazioni nomecampo=valore",
             "è un tipo di codifica da usarsi soltanto con il metodo post: questa codifica compone ogni campo della form in una o più parti di un documento di tipo MIME",
-            "è una codifica che converte i dati della form in formato JSON prima dell'invio",
-            "è un tipo di codifica utilizzata per inviare dati binari come immagini e file"
+            "è un tipo di codifica che compone una stringa convertendo tutti i campi della form in una sequenza di associazioni nomecampo=valore",
+            "è un tipo di codifica utilizzata per inviare dati binari come immagini e file",
+            "è una codifica che converte i dati della form in formato JSON prima dell'invio"
         ],
         "correct_answer": "è un tipo di codifica che compone una stringa convertendo tutti i campi della form in una sequenza di associazioni nomecampo=valore",
         "id": "9c146f32-9a93-49ad-8093-d0ccce7af7ba"
@@ -536,9 +536,9 @@
     {
         "question": "mongose.model(name, schema, collection, skipinit) cosa rappresenta schema:",
         "answers": [
-            "è lo schema Mongoose utilizzato per definire la struttura dei documenti della collezione",
             "è il nome della collezione su cui operare",
             "è un parametro booleano che indica se inizializzare il modello immediatamente",
+            "è lo schema Mongoose utilizzato per definire la struttura dei documenti della collezione",
             "è la funzione callback eseguita dopo la creazione del modello"
         ],
         "correct_answer": "è lo schema Mongoose utilizzato per definire la struttura dei documenti della collezione",
@@ -547,10 +547,10 @@
     {
         "question": "Data la seguente URL: http://test.it/percorso/index.html \"test.it\" rappresenta:",
         "answers": [
-            "il path",
-            "la risorsa",
+            "il protocollo",
             "l’host",
-            "il protocollo"
+            "il path",
+            "la risorsa"
         ],
         "correct_answer": "l’host",
         "id": "6595e860-f388-4e17-9974-360f32743187"
@@ -558,10 +558,10 @@
     {
         "question": "Il protocollo ICMP è utilizzato nel livello:",
         "answers": [
-            "internet",
             "network access",
-            "transport",
-            "application"
+            "internet",
+            "application",
+            "transport"
         ],
         "correct_answer": "internet",
         "id": "6de07c53-a258-4c96-acb2-8659995d00ae"
@@ -569,10 +569,10 @@
     {
         "question": "Nei messaggi HTTP di tipo request, il <method> non può essere:",
         "answers": [
-            "PUT",
-            "POST",
             "GET",
-            "WHERE"
+            "POST",
+            "WHERE",
+            "PUT"
         ],
         "correct_answer": "WHERE",
         "id": "914927bd-e2e7-4be5-b4e7-a363efff372c"
@@ -580,10 +580,10 @@
     {
         "question": "Il selettore identificato da #id si applica:",
         "answers": [
-            "agli elementi che presentano l'attributo value=\"id\"",
-            "agli elementi che presentano l'attributo class=\"id\"",
             "agli elementi che presentano l'attributo id=\"id\"",
-            "agli elementi che presentano l'attributo set=\"id\""
+            "agli elementi che presentano l'attributo set=\"id\"",
+            "agli elementi che presentano l'attributo class=\"id\"",
+            "agli elementi che presentano l'attributo value=\"id\""
         ],
         "correct_answer": "agli elementi che presentano l'attributo id=\"id\"",
         "id": "ca3536f6-c44f-4bd1-a7ae-bc40ce3da240"
@@ -591,9 +591,9 @@
     {
         "question": "Quando si carica la seguente pagina, cosa viene visualizzato?\n\n<!DOCTYPE html>\n<html>\n<body>\n<div id=\"main\">\n<p>Hello</p>\n<p>World</p>\n</div>\n<p id=\"demo\"></p>\n<script>\nconst x = document.getElementById(\"main\");\nconst y = x.getElementsByTagName(\"p\");\ndocument.getElementById(\"demo\").innerHTML = y.innerHTML\n</script>\n</body>\n</html>",
         "answers": [
+            "HelloWorldHello",
             "HelloWorldundefined",
             "HelloWorld",
-            "HelloWorldHello",
             "HelloWorldWorld"
         ],
         "correct_answer": "HelloWorldundefined",
@@ -602,10 +602,10 @@
     {
         "question": "Quando si carica la seguente pagina, cosa viene visualizzato?\n\n<!DOCTYPE html>\n<html>\n<body>\n<p id=\"demo\"></p>\n<script>\nfunction findValue() {\n  let value = -1;\n  for(let i=0; i < arguments.length; i++) {\n    if (arguments[i] > value) {\n      value = arguments[i];\n    }\n  }\n  return value;\n}\ndocument.getElementById(\"demo\").innerHTML = findValue(4, 15, 6);\n</script>\n</body>\n</html>",
         "answers": [
-            "4",
-            "15",
+            "25",
             "6",
-            "25"
+            "4",
+            "15"
         ],
         "correct_answer": "15",
         "id": "1d52a9b9-6522-4021-baea-4966bf7f402f"
@@ -615,8 +615,8 @@
         "answers": [
             "person1",
             "John Doe",
-            "John Doe Mary Doe",
-            "Mary Doe"
+            "Mary Doe",
+            "John Doe Mary Doe"
         ],
         "correct_answer": "John Doe",
         "id": "13855533-0e2c-4cb9-b868-fa0eebc88559"
@@ -625,8 +625,8 @@
         "question": "Quando si carica la seguente pagina, cosa viene mostrato?\n\n<!DOCTYPE html>\n<html>\n<body>\n<p id=\"demo\"></p>\n<script>\nconst person = {\n  fullName: function() {\n    return this.firstName + \" \" + this.lastName;\n  }\n}\nconst person1 = {\n  firstName: \"John\",\n  lastName: \"Doe\"\n}\nconst person2 = {\n  firstName: \"Mary\",\n  lastName: \"Doe\"\n}\ndocument.getElementById(\"demo\").innerHTML = person.fullName.call(person2);\n</script>\n</body>\n</html>",
         "answers": [
             "John Doe",
-            "Mary Doe",
             "person1",
+            "Mary Doe",
             "John Doe Mary Doe"
         ],
         "correct_answer": "Mary Doe",
@@ -647,8 +647,8 @@
         "question": "Nei messaggi HTTP di tipo response, uno status 404 indica:",
         "answers": [
             "server error response",
-            "successful response",
             "information response",
+            "successful response",
             "client error response"
         ],
         "correct_answer": "client error response",
@@ -657,10 +657,10 @@
     {
         "question": "Data la seguente url: https://www.miosito.it/materiale?a=1\"a=1\" rappresenta:",
         "answers": [
-            "il valore della porta",
             "il numero di protocollo",
-            "il path",
-            "la querystring"
+            "il valore della porta",
+            "la querystring",
+            "il path"
         ],
         "correct_answer": "la querystring",
         "id": "98a233be-b75e-453b-986f-551b28cd8064"
@@ -668,10 +668,10 @@
     {
         "question": "La \"digest authentication\", rispetto alla \"basic\" ha i seguenti campi aggiuntivi nella response:",
         "answers": [
+            "gos, nonce ed opaque",
             "qop, nonce ed opaque",
-            "qop e nonce",
             "qos e nonce",
-            "gos, nonce ed opaque"
+            "qop e nonce"
         ],
         "correct_answer": "qop, nonce ed opaque",
         "id": "dbb1de5d-e62a-4da8-b50c-a20a97b00dce"
@@ -680,9 +680,9 @@
         "question": "Come vengono trasmesse le credenziali nella Basic Access Authentication:",
         "answers": [
             "Codificate in base64",
-            "In chiaro senza alcuna codifica",
+            "Hashate con SHA-256",
             "Crittografate con SSL",
-            "Hashate con SHA-256"
+            "In chiaro senza alcuna codifica"
         ],
         "correct_answer": "Codificate in base64",
         "id": "f1c3a77a-9b42-4a2a-b839-2d2e5dcd1234"
@@ -690,10 +690,10 @@
     {
         "question": "Quale metodo di autenticazione prevede l'invio delle credenziali in chiaro in formato base64:",
         "answers": [
-            "Basic Authentication",
             "Digest Authentication",
+            "JWT (JSON Web Token)",
             "OAuth 2.0",
-            "JWT (JSON Web Token)"
+            "Basic Authentication"
         ],
         "correct_answer": "Basic Authentication",
         "id": "a4f9e271-5b7d-4f69-b1e2-9b273b8c765e"
@@ -701,10 +701,10 @@
     {
         "question": "Caricando tale pagina, cosa compare a video?",
         "answers": [
-            "100+50",
+            "50",
             "150",
             "100",
-            "50"
+            "100+50"
         ],
         "correct_answer": "150",
         "image": "tec6.jpg",
@@ -713,10 +713,10 @@
     {
         "question": "Nel contesto dello sviluppo web, quale termine descrive meglio il livello responsabile della visualizzazione dei contenuti all'utente? (domanda inventata)",
         "answers": [
-            "Autenticazione",
+            "Presentation",
             "Persistenza",
             "Routing",
-            "Presentation"
+            "Autenticazione"
         ],
         "correct_answer": "Presentation",
         "id": "e97d04e1-f93e-4f8b-bce3-0387d22e37cc"
@@ -726,8 +726,8 @@
         "answers": [
             "Application e Presentation",
             "Transport e Session",
-            "Network e Physical",
-            "Internet e Data Access"
+            "Internet e Data Access",
+            "Network e Physical"
         ],
         "correct_answer": "Internet e Data Access",
         "id": "9cbe78d1-f253-403e-9b38-7400a9f3cb7e"
@@ -735,9 +735,9 @@
     {
         "question": "Quale delle seguenti affermazioni descrive correttamente un cookie con il flag HttpOnly? (domanda inventata)",
         "answers": [
-            "È un cookie che viene inviato solo alle richieste HTTPS",
             "È un cookie che può essere modificato tramite JavaScript",
             "È un cookie che scade immediatamente dopo la sessione",
+            "È un cookie che viene inviato solo alle richieste HTTPS",
             "È un cookie che non può essere letto da API client-side come Javascript"
         ],
         "correct_answer": "È un cookie che non può essere letto da API client-side come Javascript",
@@ -747,9 +747,9 @@
         "question": "Cosa si intende per Network eavesdropping?",
         "answers": [
             "Se il canale non è cifrato, un soggetto in ascolto sul canale può eseguire il drop dei pacchetti",
-            "Una rete non protetta",
             "Se il canale non è cifrato, un soggetto in ascolto sul canale può eseguire il drop dei pacchetti",
-            "Se il canale non è cifrato, un soggetto in ascolto sul canale può leggere i cookie in transito per impersonare in seguito un determinato utente"
+            "Se il canale non è cifrato, un soggetto in ascolto sul canale può leggere i cookie in transito per impersonare in seguito un determinato utente",
+            "Una rete non protetta"
         ],
         "correct_answer": "Se il canale non è cifrato, un soggetto in ascolto sul canale può leggere i cookie in transito per impersonare in seguito un determinato utente",
         "id": "d78f19b6-964a-4a2d-b5e0-c16edff66f0b"
@@ -757,10 +757,10 @@
     {
         "question": "In JavaScript, come vengono passati i tipi primitivi quando utilizzati come parametri in una funzione? (domanda inventata)",
         "answers": [
-            "Come riferimento",
+            "Per valore",
             "Come array",
             "Come copia degli originali",
-            "Per valore"
+            "Come riferimento"
         ],
         "correct_answer": "Per valore",
         "id": "a2e9d57c-6b18-4b2e-87c8-f754ef829c14"
@@ -769,9 +769,9 @@
         "question": "Cosa accade quando viene caricata la seguente pagina?(",
         "answers": [
             "Appare Nuovo contenuto e dopo 3 secondi scompare",
+            "Non succede nulla: c'è un errore",
             "Appare immediatamente \"Nuovo contenuto\"",
-            "Inizialmente non c'è nulla ed in 3 secondi compare \"Nuovo contenuto\"",
-            "Non succede nulla: c'è un errore"
+            "Inizialmente non c'è nulla ed in 3 secondi compare \"Nuovo contenuto\""
         ],
         "correct_answer": "Inizialmente non c'è nulla ed in 3 secondi compare \"Nuovo contenuto\"",
         "image": "tec7.jpg",
@@ -780,9 +780,9 @@
     {
         "question": "Nell'URL http://opentutorials.org:3000/main?id=HML&pag=12, cosa rappresenta 'main'?",
         "answers": [
-            "la risorsa",
-            "l'host",
             "il percorso",
+            "l'host",
+            "la risorsa",
             "il metodo della funzione da richiamare"
         ],
         "correct_answer": "il percorso",
@@ -791,10 +791,10 @@
     {
         "question": "Caricando tale pagina, cosa compare a video?",
         "answers": [
+            "200",
             "Non compare nulla",
             "100100",
-            "100",
-            "200"
+            "100"
         ],
         "correct_answer": "100100",
         "image": "tec8.jpg",
@@ -804,9 +804,9 @@
         "question": "Caricando tale pagina, cosa compare a video?",
         "answers": [
             "Non compare nulla",
-            "1001001",
+            "201",
             "100100",
-            "201"
+            "1001001"
         ],
         "correct_answer": "1001001",
         "image": "tec9.jpg",
@@ -815,10 +815,10 @@
     {
         "question": "Caricando tale pagina, cosa compare a video?",
         "answers": [
-            "John Doe is 50 years old.",
-            "John is 50",
+            "Years Old",
             "John is 50 years old.",
-            "Years Old"
+            "John Doe is 50 years old.",
+            "John is 50"
         ],
         "correct_answer": "John is 50 years old.",
         "image": "tec10.jpg",
@@ -827,10 +827,10 @@
     {
         "question": "Quando si carica la seguente pagina, cosa viene visualizzato?",
         "answers": [
-            "HelloWorld",
             "HelloWorldHello",
             "undefined",
-            "Hello"
+            "Hello",
+            "HelloWorld"
         ],
         "correct_answer": "HelloWorldHello",
         "image": "tec11.jpg",
@@ -841,8 +841,8 @@
         "answers": [
             "Rappresenta una form ma l'action non è valido",
             "Rappresenta una form ma contiene degli errori sintattici",
-            "Rappresenta una form corretta",
-            "Rappresenta una form in cui il method specificato deve essere cambiato in mail"
+            "Rappresenta una form in cui il method specificato deve essere cambiato in mail",
+            "Rappresenta una form corretta"
         ],
         "correct_answer": "Rappresenta una form corretta",
         "image": "tec12.jpg",
@@ -851,10 +851,10 @@
     {
         "question": "Il seguente JSON:\n[\n  {\n    \"name\": \"John\"\n  };\n  {\n    \"name\": \"James\"\n  }\n]\nè...",
         "answers": [
-            "può essere usato solo in determinati contesti",
             "è valido",
             "Non è valido",
-            "è valido se il sistema non è case sensitive"
+            "è valido se il sistema non è case sensitive",
+            "può essere usato solo in determinati contesti"
         ],
         "correct_answer": "Non è valido",
         "id": "fbcaa3c6-7b5a-4f35-bf90-3a174b75e75a"
@@ -862,10 +862,10 @@
     {
         "question": "Il seguente JSON:\n[\n  {\n    \"name\": \"john\"\n  },\n  {\n    \"name\": \"james\"\n  },\n]\nè...",
         "answers": [
-            "può essere usato solo in determinati contesti",
             "è valido",
             "Non è valido",
-            "è valido se il sistema non è case sensitive"
+            "è valido se il sistema non è case sensitive",
+            "può essere usato solo in determinati contesti"
         ],
         "correct_answer": "Non è valido",
         "id": "a83b51f4-fba3-42aa-8e6f-4e11e21d6583"
@@ -873,10 +873,10 @@
     {
         "question": "Quando si carica tale pagina, cosa viene visualizzato?",
         "answers": [
-            "Banana,Orange,Apple",
-            "Apple,Mango",
+            "Apple",
             "Mango",
-            "Apple"
+            "Banana,Orange,Apple",
+            "Apple,Mango"
         ],
         "correct_answer": "Mango",
         "image": "tec13.jpg",
@@ -885,10 +885,10 @@
     {
         "question": "Cosa rappresenta 'passport.authenticate('facebook')' in Express:",
         "answers": [
-            "Un middleware per l'autenticazione via Facebook",
             "Una libreria per la gestione dei cookie",
             "Un template engine per rendering HTML",
-            "Un modulo per gestire sessioni utente"
+            "Un modulo per gestire sessioni utente",
+            "Un middleware per l'autenticazione via Facebook"
         ],
         "correct_answer": "Un middleware per l'autenticazione via Facebook",
         "id": "e8a6b3d6-3327-4d2a-8f97-d7f628d456a4"
@@ -896,10 +896,10 @@
     {
         "question": "Qual è lo scopo della classe 'container' in Bootstrap:",
         "answers": [
-            "Creare un contenitore reattivo con padding orizzontale",
-            "Impostare un layout grid a 12 colonne",
             "Aggiungere un bordo ai contenitori",
-            "Creare una barra di navigazione fissa"
+            "Creare una barra di navigazione fissa",
+            "Impostare un layout grid a 12 colonne",
+            "Creare un contenitore reattivo con padding orizzontale"
         ],
         "correct_answer": "Creare un contenitore reattivo con padding orizzontale",
         "id": "0b411422-e0e2-4d0a-97b3-67c4d272a2c2"
@@ -907,10 +907,10 @@
     {
         "question": "In un'app Node.js con Express, cosa rappresenta il controller:",
         "answers": [
-            "La logica di business che gestisce le richieste",
-            "Il database di backend",
+            "Il middleware di autenticazione",
             "Il template per la vista",
-            "Il middleware di autenticazione"
+            "La logica di business che gestisce le richieste",
+            "Il database di backend"
         ],
         "correct_answer": "La logica di business che gestisce le richieste",
         "id": "a0712f70-4c7b-4d18-9e45-5f1640b9f26e"
@@ -918,10 +918,10 @@
     {
         "question": "Perché è consigliato Socket.IO su Replit rispetto ai WebSocket nativi:",
         "answers": [
-            "Perché gestisce automaticamente HTTPS e fallback",
             "Perché ha meno dipendenze",
             "Perché supporta solo connessioni sicure",
-            "Perché è più leggero"
+            "Perché è più leggero",
+            "Perché gestisce automaticamente HTTPS e fallback"
         ],
         "correct_answer": "Perché gestisce automaticamente HTTPS e fallback",
         "id": "d14c9c47-bc4f-4fa0-b05f-52cc9b98c91f"
@@ -929,8 +929,8 @@
     {
         "question": "Quale metodo JavaScript restituisce la lunghezza di un array:",
         "answers": [
-            "array.length",
             "array.size()",
+            "array.length",
             "array.count",
             "array.len"
         ],
@@ -940,9 +940,9 @@
     {
         "question": "Quale innovazione introdotta da HTTP/2 migliora l'efficienza nella trasmissione di più richieste?",
         "answers": [
+            "Separazione dei protocolli HTTP e HTTPS",
             "Supporto per richieste parallele su un'unica connessione",
             "Compressione automatica del corpo della richiesta",
-            "Separazione dei protocolli HTTP e HTTPS",
             "Caching avanzato lato client"
         ],
         "correct_answer": "Supporto per richieste parallele su un'unica connessione",
@@ -951,10 +951,10 @@
     {
         "question": "Quale vantaggio principale ha una chiamata asincrona rispetto a una sincrona:",
         "answers": [
-            "Permette l’esecuzione del codice senza attese",
             "Garantisce l’ordine di esecuzione delle funzioni",
-            "Esegue sempre più velocemente",
-            "Consente l’uso di callback obbligatori"
+            "Consente l’uso di callback obbligatori",
+            "Permette l’esecuzione del codice senza attese",
+            "Esegue sempre più velocemente"
         ],
         "correct_answer": "Permette l’esecuzione del codice senza attese",
         "id": "adf7b82b-734d-464e-9a56-3b8f9f2d1f24"
@@ -962,10 +962,10 @@
     {
         "question": "Perché JSON è considerato migliore di XML per applicazioni AJAX:",
         "answers": [
-            "Perché è più semplice e veloce da analizzare",
             "Perché è un formato binario",
+            "Perché è meno leggibile",
             "Perché supporta più tipi di dati",
-            "Perché è meno leggibile"
+            "Perché è più semplice e veloce da analizzare"
         ],
         "correct_answer": "Perché è più semplice e veloce da analizzare",
         "id": "dcf7d091-bc94-4e2a-a9a3-68822ee5a3a9"
@@ -974,8 +974,8 @@
         "question": "Cosa succede se un certificato HTTPS non è valido:",
         "answers": [
             "Il browser avvisa l'utente e può bloccare la connessione",
-            "La connessione viene sempre stabilita",
             "Il certificato viene aggiornato automaticamente",
+            "La connessione viene sempre stabilita",
             "Il server ignora il certificato"
         ],
         "correct_answer": "Il browser avvisa l'utente e può bloccare la connessione",
@@ -984,10 +984,10 @@
     {
         "question": "Quale attributo di un cookie impone la sua cancellazione alla chiusura del browser:",
         "answers": [
-            "Expires/Max-Age assente",
-            "Secure",
             "HttpOnly",
-            "Domain"
+            "Domain",
+            "Expires/Max-Age assente",
+            "Secure"
         ],
         "correct_answer": "Expires/Max-Age assente",
         "id": "622edda5-7b2d-49d9-9d23-5f1e0c4c1d84"
@@ -996,9 +996,9 @@
         "question": "Quale strategia Passport permette l'autenticazione con username e password:",
         "answers": [
             "Local Strategy",
-            "OAuth Strategy",
             "JWT Strategy",
-            "Google Strategy"
+            "Google Strategy",
+            "OAuth Strategy"
         ],
         "correct_answer": "Local Strategy",
         "id": "547e6f57-96d8-4f1c-b191-4b2bb59ca97f"
@@ -1006,10 +1006,10 @@
     {
         "question": "A cosa serve la classe 'd-flex' in Bootstrap:",
         "answers": [
+            "Per rendere invisibile un elemento",
             "Per abilitare il layout flexbox",
             "Per impostare il colore del testo",
-            "Per aggiungere margini",
-            "Per rendere invisibile un elemento"
+            "Per aggiungere margini"
         ],
         "correct_answer": "Per abilitare il layout flexbox",
         "id": "cb2d7a07-05ae-4d37-8d96-bc799ff14a37"
@@ -1017,9 +1017,9 @@
     {
         "question": "Cosa restituisce il metodo getElementsByClassName:",
         "answers": [
+            "Un valore booleano",
             "Una collezione di elementi",
             "Un singolo elemento",
-            "Un valore booleano",
             "Un oggetto JSON"
         ],
         "correct_answer": "Una collezione di elementi",
@@ -1028,10 +1028,10 @@
     {
         "question": "Qual è la caratteristica principale di un Bearer Token:",
         "answers": [
-            "E' sufficiente possederlo per accedere a una risorsa",
             "Scade dopo 24 ore automaticamente",
+            "E' un tipo di cookie",
             "Si può usare solo con HTTPS",
-            "E' un tipo di cookie"
+            "E' sufficiente possederlo per accedere a una risorsa"
         ],
         "correct_answer": "E' sufficiente possederlo per accedere a una risorsa",
         "id": "d144e513-71ea-44b1-91b1-cc27c21b9e6a"
@@ -1040,9 +1040,9 @@
         "question": "Cosa comporta la proprietà  CSS display: none:",
         "answers": [
             "L'elemento non è visualizzato nè occupa spazio",
-            "L'elemento è nascosto ma occupa spazio",
             "L'elemento diventa trasparente",
-            "L'elemento si posiziona in fondo alla pagina"
+            "L'elemento si posiziona in fondo alla pagina",
+            "L'elemento è nascosto ma occupa spazio"
         ],
         "correct_answer": "L'elemento non è visualizzato nè occupa spazio",
         "id": "f889cdfa-4635-457d-8b69-027b6c4a6c06"
@@ -1050,10 +1050,10 @@
     {
         "question": "Qual è lo scopo del metodo HTTP POST:",
         "answers": [
-            "Inviare dati al server per creare una nuova risorsa",
             "Recuperare dati dal server",
-            "Aggiornare una risorsa esistente",
-            "Eliminare una risorsa"
+            "Eliminare una risorsa",
+            "Inviare dati al server per creare una nuova risorsa",
+            "Aggiornare una risorsa esistente"
         ],
         "correct_answer": "Inviare dati al server per creare una nuova risorsa",
         "id": "0dcd9b4f-e060-4de1-b309-2d2352a1d04f"
@@ -1061,8 +1061,8 @@
     {
         "question": "Nel box model CSS, cosa rappresenta il padding:",
         "answers": [
-            "Lo spazio tra il contenuto e il bordo",
             "Lo spessore del bordo",
+            "Lo spazio tra il contenuto e il bordo",
             "Lo spazio esterno al margine",
             "L'area del contenuto"
         ],
@@ -1084,9 +1084,9 @@
         "question": "Qual è la funzione dell'attributo type=\"hidden\" in un input HTML:",
         "answers": [
             "Non visualizzarlo ma inviarlo al server",
+            "Impedire l'invio del valore",
             "Visualizzarlo come un campo di testo",
-            "Disabilitare l'input",
-            "Impedire l'invio del valore"
+            "Disabilitare l'input"
         ],
         "correct_answer": "Non visualizzarlo ma inviarlo al server",
         "id": "3a702cf3-c47c-4b15-9ad8-4fbe1ff6a3b0"
@@ -1094,10 +1094,10 @@
     {
         "question": "Quali sono i tre componenti principali del pattern MVC:",
         "answers": [
+            "Model, Validator, Component",
             "Model, View, Controller",
-            "Module, Variable, Class",
             "Manager, Validator, Controller",
-            "Model, Validator, Component"
+            "Module, Variable, Class"
         ],
         "correct_answer": "Model, View, Controller",
         "id": "c5190ea0-51b6-41a4-9f72-23e1a86f1b5a"
@@ -1106,9 +1106,9 @@
         "question": "Quale tool consente di rappresentare graficamente la struttura DOM di una pagina HTML:",
         "answers": [
             "DOM Explorer nei browser",
+            "GitHub Desktop",
             "Visual Studio Code",
-            "Postman",
-            "GitHub Desktop"
+            "Postman"
         ],
         "correct_answer": "DOM Explorer nei browser",
         "id": "2e3bc21e-2c4a-4b36-9f7a-b19e5c4825ef"
@@ -1118,8 +1118,8 @@
         "answers": [
             "Imposta il contenitore come flex",
             "Aggiunge un bordo",
-            "Imposta il colore di sfondo",
-            "Imposta la visibilità su nascosta"
+            "Imposta la visibilità su nascosta",
+            "Imposta il colore di sfondo"
         ],
         "correct_answer": "Imposta il contenitore come flex",
         "id": "b3d47b81-9e1b-4b5b-9bca-f25535b255af"
@@ -1127,10 +1127,10 @@
     {
         "question": "Che cos'è un middleware in Express:",
         "answers": [
-            "Una funzione che gestisce la richiesta e risposta HTTP",
             "Un database relazionale",
-            "Un template engine",
-            "Un server web"
+            "Un server web",
+            "Una funzione che gestisce la richiesta e risposta HTTP",
+            "Un template engine"
         ],
         "correct_answer": "Una funzione che gestisce la richiesta e risposta HTTP",
         "id": "baf4a95a-332d-4f92-84d8-f0fef7e77ac3"
@@ -1138,8 +1138,8 @@
     {
         "question": "Cosa consente di fare il protocollo WebSocket:",
         "answers": [
-            "Stabilire una connessione bidirezionale tra client e server",
             "Inviare solo richieste HTTP",
+            "Stabilire una connessione bidirezionale tra client e server",
             "Utilizzare esclusivamente TCP",
             "Autenticare utenti"
         ],
@@ -1149,10 +1149,10 @@
     {
         "question": "Qual è il principale scopo dell'uso del protocollo TLS in HTTPS:",
         "answers": [
-            "Garantire la cifratura e l'integrità  dei dati trasmessi",
             "Aumentare la velocità della connessione",
-            "Autenticare solo il server",
-            "Gestire solo le sessioni client"
+            "Gestire solo le sessioni client",
+            "Garantire la cifratura e l'integrità  dei dati trasmessi",
+            "Autenticare solo il server"
         ],
         "correct_answer": "Garantire la cifratura e l'integrità  dei dati trasmessi",
         "id": "e88f66bc-1c67-4a72-87e9-5a90d522fd52"
@@ -1160,10 +1160,10 @@
     {
         "question": "Cosa accade se la larghezza dello schermo è inferiore a 576px senza classi col-xx:",
         "answers": [
-            "Le colonne vanno in stack verticale",
             "Le colonne si sovrappongono",
-            "Le colonne spariscono",
-            "Le colonne diventano orizzontali"
+            "Le colonne vanno in stack verticale",
+            "Le colonne diventano orizzontali",
+            "Le colonne spariscono"
         ],
         "correct_answer": "Le colonne vanno in stack verticale",
         "id": "a92155a7-c8ed-4b01-8f75-1a7987b282bc"
@@ -1172,8 +1172,8 @@
         "question": "Qual è un rischio legato ai cookie accessibili da JavaScript:",
         "answers": [
             "Possono essere letti da script malevoli (XSS)",
-            "Non possono essere cancellati",
             "Vengono inviati sempre in chiaro",
+            "Non possono essere cancellati",
             "Non funzionano su HTTPS"
         ],
         "correct_answer": "Possono essere letti da script malevoli (XSS)",
@@ -1182,10 +1182,10 @@
     {
         "question": "Perché si preferisce usare async/await rispetto a then nelle chiamate HTTP in Node.js:",
         "answers": [
+            "Non richiede l'uso di promise",
             "Evita problemi di sincronizzazione",
-            "È supportato solo da browser moderni",
             "È più veloce da eseguire",
-            "Non richiede l'uso di promise"
+            "È supportato solo da browser moderni"
         ],
         "correct_answer": "Evita problemi di sincronizzazione",
         "id": "3bcfcdd6-2935-4c84-bc3a-64cae5f4188c"
@@ -1193,10 +1193,10 @@
     {
         "question": "Qual è uno dei principali vantaggi dell'uso di JSON rispetto a XML:",
         "answers": [
-            "E' più semplice da analizzare e convertire in oggetti JavaScript",
             "È un formato binario",
+            "Richiede meno spazio su disco",
             "Non supporta dati annidati",
-            "Richiede meno spazio su disco"
+            "E' più semplice da analizzare e convertire in oggetti JavaScript"
         ],
         "correct_answer": "E' più semplice da analizzare e convertire in oggetti JavaScript",
         "id": "8b345f6d-3a2a-4127-a1a9-d5e5df46e091"
@@ -1204,10 +1204,10 @@
     {
         "question": "Quale componente è coinvolto nella negoziazione del handshake TLS:",
         "answers": [
-            "Entrambi, client e server",
             "Solo il client",
             "Solo il server",
-            "Nessuno, è gestito da un proxy"
+            "Nessuno, è gestito da un proxy",
+            "Entrambi, client e server"
         ],
         "correct_answer": "Entrambi, client e server",
         "id": "33f4b252-2f48-4a49-b899-c34645c4d0af"
@@ -1215,8 +1215,8 @@
     {
         "question": "Come si chiama una funzione senza nome assegnata a una variabile:",
         "answers": [
-            "Funzione anonima",
             "Funzione ricorsiva",
+            "Funzione anonima",
             "Funzione costruttore",
             "Funzione callback"
         ],
@@ -1226,10 +1226,10 @@
     {
         "question": "Cosa fa la classe 'col-md-6' in Bootstrap:",
         "answers": [
-            "Occupa metà  riga su schermi medi",
             "Aggiunge margini interni",
-            "Centra il testo all'interno",
-            "Imposta il colore di sfondo"
+            "Imposta il colore di sfondo",
+            "Occupa metà  riga su schermi medi",
+            "Centra il testo all'interno"
         ],
         "correct_answer": "Occupa metà  riga su schermi medi",
         "id": "1d8794d3-67a2-4ca1-91d1-c6c34b98a183"
@@ -1237,9 +1237,9 @@
     {
         "question": "Quale tag è usato per collegare un file CSS esterno a una pagina HTML:",
         "answers": [
-            "<link>",
             "<script>",
             "<style>",
+            "<link>",
             "<css>"
         ],
         "correct_answer": "<link>",
@@ -1248,10 +1248,10 @@
     {
         "question": "Come si accede al valore della chiave 'nome' in un oggetto JavaScript ottenuto da JSON:",
         "answers": [
-            "obj['nome']",
-            "obj.nome()",
+            "obj->nome",
             "obj.get('nome')",
-            "obj->nome"
+            "obj['nome']",
+            "obj.nome()"
         ],
         "correct_answer": "obj['nome']",
         "id": "14210a8f-f16f-4291-a5ca-876a0f3d506b"
@@ -1259,10 +1259,10 @@
     {
         "question": "Quale metodo permette di rimuovere un elemento figlio dal DOM:",
         "answers": [
-            "removeChild()",
             "deleteNode()",
-            "removeNode()",
-            "detachChild()"
+            "detachChild()",
+            "removeChild()",
+            "removeNode()"
         ],
         "correct_answer": "removeChild()",
         "id": "bd3eaf41-1e89-4b2b-9a63-6afbb7d2b0e4"
@@ -1272,8 +1272,8 @@
         "answers": [
             "justify-content-center",
             "align-items-center",
-            "flex-center",
-            "text-center"
+            "text-center",
+            "flex-center"
         ],
         "correct_answer": "justify-content-center",
         "id": "48d46a97-37ab-4666-b7da-3dfcc798bf00"
@@ -1283,8 +1283,8 @@
         "answers": [
             "'var' ha scope di funzione, 'let' ha scope di blocco",
             "'var' è più veloce di 'let'",
-            "'let' può essere ridefinito, 'var' no",
-            "Non c'è differenza"
+            "Non c'è differenza",
+            "'let' può essere ridefinito, 'var' no"
         ],
         "correct_answer": "'var' ha scope di funzione, 'let' ha scope di blocco",
         "id": "6cc6d3a0-32a2-45be-9f92-3e8d3f0cb14e"
@@ -1292,9 +1292,9 @@
     {
         "question": "Cosa distingue una arrow function da una funzione tradizionale in JavaScript:",
         "answers": [
-            "Ha un this ereditato e non ha arguments",
             "Può essere usata solo come callback",
             "Ha un this proprio e usa arguments",
+            "Ha un this ereditato e non ha arguments",
             "Non può essere anonima"
         ],
         "correct_answer": "Ha un this ereditato e non ha arguments",
@@ -1305,8 +1305,8 @@
         "answers": [
             "Per simulare ed eseguire richieste HTTP",
             "Per validare il codice HTML",
-            "Per creare moduli interattivi",
-            "Per monitorare il traffico web"
+            "Per monitorare il traffico web",
+            "Per creare moduli interattivi"
         ],
         "correct_answer": "Per simulare ed eseguire richieste HTTP",
         "id": "c5a814cd-b9eb-4a1a-8b8d-9d1ea2b0c8f7"
@@ -1314,10 +1314,10 @@
     {
         "question": "Quale metodo DOM restituisce una collezione di elementi con una determinata classe:",
         "answers": [
-            "getElementsByClassName()",
-            "getElementById()",
             "querySelector()",
-            "getElementsByTagName()"
+            "getElementsByTagName()",
+            "getElementsByClassName()",
+            "getElementById()"
         ],
         "correct_answer": "getElementsByClassName()",
         "id": "e84d5d51-4a6d-4c0e-a64e-24f2bc2a4bbf"
@@ -1326,9 +1326,9 @@
         "question": "Cosa accade se non viene specificato alcun attributo 'method' in una form HTML:",
         "answers": [
             "Il metodo predefinito è GET",
+            "Il metodo viene ereditato da un form padre",
             "La form non funziona",
-            "Il metodo predefinito è POST",
-            "Il metodo viene ereditato da un form padre"
+            "Il metodo predefinito è POST"
         ],
         "correct_answer": "Il metodo predefinito è GET",
         "id": "c70d8e36-61a4-4b42-a7cd-3ea0b40c1d74"
@@ -1336,10 +1336,10 @@
     {
         "question": "Nel box model, il padding:",
         "answers": [
-            "indica spazio vuoto tra contenuto e bordo dell’elemento",
-            "è la dimensione del bordo",
             "è lo spazio esterno al margine",
-            "è la larghezza totale dell'elemento"
+            "è la larghezza totale dell'elemento",
+            "è la dimensione del bordo",
+            "indica spazio vuoto tra contenuto e bordo dell’elemento"
         ],
         "correct_answer": "indica spazio vuoto tra contenuto e bordo dell’elemento",
         "id": "921743e5-007b-4d7b-80ee-c2e616d36098"
@@ -1347,9 +1347,9 @@
     {
         "question": "Dato il seguente codice: const persona = { nome: \"Mario\", saluta: function() { console.log(\"Ciao, mi chiamo \" + this.nome); }}; per ottenere come output: \"Ciao, mi chiamo Mario\" occorre eseguire il comando:",
         "answers": [
-            "persona.saluta();",
-            "persona.nome();",
             "console.log(persona.saluta);",
+            "persona.nome();",
+            "persona.saluta();",
             "saluta(persona);"
         ],
         "correct_answer": "persona.saluta();",
@@ -1359,8 +1359,8 @@
         "question": "Quando si carica la seguente pagina, cosa viene visualizzato come risultato finale?",
         "answers": [
             "paragrafo modificato",
-            "pagina bianca",
             "errore JavaScript",
+            "pagina bianca",
             "contenuto originale"
         ],
         "correct_answer": "paragrafo modificato",
@@ -1370,10 +1370,10 @@
     {
         "question": "Qual è il vantaggio principale dei cookie di tipo HttpOnly:",
         "answers": [
-            "Proteggono i cookie da accessi non autorizzati via script lato client",
             "Permettono ai cookie di essere condivisi tra diversi domini",
+            "Abilitano l'accesso ai cookie tramite JavaScript",
             "Consentono di estendere la durata dei cookie oltre la sessione",
-            "Abilitano l'accesso ai cookie tramite JavaScript"
+            "Proteggono i cookie da accessi non autorizzati via script lato client"
         ],
         "correct_answer": "Proteggono i cookie da accessi non autorizzati via script lato client",
         "id": "6e0bf9d6-7398-4f41-81f9-1d2f1e67a234"
@@ -1381,10 +1381,10 @@
     {
         "question": "A cosa serve `z-index` in CSS:",
         "answers": [
-            "Definire l'ordine di sovrapposizione tra elementi",
-            "Impostare la dimensione di un elemento",
             "Specificare il colore di sfondo di un elemento",
-            "Controllare il margine tra gli elementi"
+            "Impostare la dimensione di un elemento",
+            "Controllare il margine tra gli elementi",
+            "Definire l'ordine di sovrapposizione tra elementi"
         ],
         "correct_answer": "Definire l'ordine di sovrapposizione tra elementi",
         "id": "f713bc82-6842-46cd-b5ce-cb1c2f063d6f"
@@ -1392,10 +1392,10 @@
     {
         "question": "Cosa accade se si imposta `box-sizing: border-box` su un elemento:",
         "answers": [
-            "La larghezza include padding e bordo",
             "La larghezza esclude padding e bordo",
             "Il padding viene ignorato nel calcolo della larghezza",
-            "Il bordo viene aggiunto esternamente alla larghezza"
+            "Il bordo viene aggiunto esternamente alla larghezza",
+            "La larghezza include padding e bordo"
         ],
         "correct_answer": "La larghezza include padding e bordo",
         "id": "b3b3b3ed-9c7f-4b84-8d45-8e22fa8d3241"
@@ -1403,9 +1403,9 @@
     {
         "question": "Che cos'è JSON:",
         "answers": [
+            "Un database relazionale",
             "Un formato per lo scambio di dati",
             "Un linguaggio di programmazione",
-            "Un database relazionale",
             "Un framework per lo sviluppo web"
         ],
         "correct_answer": "Un formato per lo scambio di dati",
@@ -1414,10 +1414,10 @@
     {
         "question": "Quale classe viene utilizzata per creare una colonna che occupa 6 colonne virtuali su schermi medi:",
         "answers": [
-            "col-md-6",
             "col-lg-6",
-            "col-sm-6",
-            "col-xs-6"
+            "col-xs-6",
+            "col-md-6",
+            "col-sm-6"
         ],
         "correct_answer": "col-md-6",
         "id": "c8f41cc1-2f44-4c14-b8e0-0bb3e9ef84e2"
@@ -1427,8 +1427,8 @@
         "answers": [
             "rappresenta un'operazione asincrona che potrebbe non essere ancora completata e ci consente di gestire il risultato dell'operazione una volta che è disponibile",
             "è una funzione sincrona che blocca il thread principale",
-            "è un tipo di variabile che memorizza valori numerici",
-            "è un metodo per gestire dati in formato JSON"
+            "è un metodo per gestire dati in formato JSON",
+            "è un tipo di variabile che memorizza valori numerici"
         ],
         "correct_answer": "rappresenta un'operazione asincrona che potrebbe non essere ancora completata e ci consente di gestire il risultato dell'operazione una volta che è disponibile",
         "id": "9d7ab2f9-bc6e-4bd5-82a4-09fdbb0173a3"
@@ -1447,10 +1447,10 @@
     {
         "question": "La caratteristica principale di Flexbox è:",
         "answers": [
-            "consentire la definizione di un sistema di assi (uno orizzontale e uno verticale) e di una serie di proprietà che permettono di definire come gli elementi all'interno di un contenitore debbano essere posizionati e distribuiti lungo questi assi",
-            "definire la dimensione fissa degli elementi in una griglia",
+            "sostituire completamente l'uso di CSS Grid",
             "gestire esclusivamente il posizionamento verticale degli elementi",
-            "sostituire completamente l'uso di CSS Grid"
+            "definire la dimensione fissa degli elementi in una griglia",
+            "consentire la definizione di un sistema di assi (uno orizzontale e uno verticale) e di una serie di proprietà che permettono di definire come gli elementi all'interno di un contenitore debbano essere posizionati e distribuiti lungo questi assi"
         ],
         "correct_answer": "consentire la definizione di un sistema di assi (uno orizzontale e uno verticale) e di una serie di proprietà che permettono di definire come gli elementi all'interno di un contenitore debbano essere posizionati e distribuiti lungo questi assi",
         "id": "7d42d77a-1d42-42a6-8329-9282a7283d05"
@@ -1459,9 +1459,9 @@
         "question": "Una chiamata sincrona:",
         "answers": [
             "è un tipo di chiamata in cui il thread principale di esecuzione del programma viene bloccato fino a quando la chiamata non viene completata",
+            "è una chiamata che avviene solo in ambiente client",
             "è un tipo di chiamata che non blocca mai il thread principale",
-            "è un metodo per eseguire codice in background",
-            "è una chiamata che avviene solo in ambiente client"
+            "è un metodo per eseguire codice in background"
         ],
         "correct_answer": "è un tipo di chiamata in cui il thread principale di esecuzione del programma viene bloccato fino a quando la chiamata non viene completata",
         "id": "b5ef0a37-e7d0-47b0-bc06-5b5d4b7f54bb"
@@ -1469,10 +1469,10 @@
     {
         "question": "Usando l'elemento input con il type=\"password\" si ha la possibilità di creare un campo che permette l'inserimento di dati riservati. Inoltre:",
         "answers": [
-            "questo non ha implicazioni con la sicurezza del trasferimento dei dati: è solo una protezione sullo schermo che il browser può attuare",
             "il campo crittografa automaticamente i dati prima dell'invio",
+            "il campo nasconde il contenuto anche nel codice sorgente della pagina",
             "il campo blocca l'accesso ai dati tramite JavaScript",
-            "il campo nasconde il contenuto anche nel codice sorgente della pagina"
+            "questo non ha implicazioni con la sicurezza del trasferimento dei dati: è solo una protezione sullo schermo che il browser può attuare"
         ],
         "correct_answer": "questo non ha implicazioni con la sicurezza del trasferimento dei dati: è solo una protezione sullo schermo che il browser può attuare",
         "id": "af97877c-8e30-4e6e-a346-74a1b4f09a6b"
@@ -1480,10 +1480,10 @@
     {
         "question": "Una chiamata asincrona:",
         "answers": [
-            "è un tipo di chiamata in cui il thread principale di esecuzione del programma non viene bloccato durante l'esecuzione della chiamata",
             "è una chiamata che blocca l'interfaccia utente fino al completamento",
-            "è un metodo per inviare dati senza risposta",
-            "è un tipo di chiamata che viene eseguita solo su server remoti"
+            "è un tipo di chiamata in cui il thread principale di esecuzione del programma non viene bloccato durante l'esecuzione della chiamata",
+            "è un tipo di chiamata che viene eseguita solo su server remoti",
+            "è un metodo per inviare dati senza risposta"
         ],
         "correct_answer": "è un tipo di chiamata in cui il thread principale di esecuzione del programma non viene bloccato durante l'esecuzione della chiamata",
         "id": "32a59e7a-0a32-4d3d-9b20-b2330c0a6b7e"
@@ -1491,10 +1491,10 @@
     {
         "question": "Quale attributo del tag <form> specifica il metodo di invio dei dati:",
         "answers": [
-            "method",
-            "action",
             "enctype",
-            "name"
+            "name",
+            "action",
+            "method"
         ],
         "correct_answer": "method",
         "id": "471a446e-437e-4c0a-9ae5-43fa75e7a76f"
