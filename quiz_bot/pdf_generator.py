@@ -48,7 +48,7 @@ def generate_pdf_sync(quiz_path: str) -> str:
     title = file_name.replace("_", " ").upper()
     pdf.cell(0, 10, title, align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
-    pdf.set_font("DejaVu", "", 12)
+    pdf.set_font("DejaVu", "", 8)
     letters = ['A', 'B', 'C', 'D']
 
     for i, item in enumerate(data, 1):
