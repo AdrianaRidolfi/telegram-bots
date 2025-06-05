@@ -292,7 +292,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
             return await start_review_quiz(update, context, subjects[0])
 
         keyboard = [[
-            InlineKeyboardButton(subj, callback_data=f"review_subject_{subj}")]
+            InlineKeyboardButton(subj.replace("_", " "), callback_data=f"review_subject_{subj}")]
             for subj in subjects
         ]
         keyboard.append([InlineKeyboardButton("🔙 Indietro", callback_data="change_course")])
@@ -527,7 +527,7 @@ async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
         msg += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
 
     keyboard = []
-    
+
     keyboard.append([
         InlineKeyboardButton("📚 Scegli materia", callback_data="change_course"),
         InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
