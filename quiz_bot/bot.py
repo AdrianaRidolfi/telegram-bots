@@ -14,6 +14,7 @@ from telegram.ext import (
 from contextlib import asynccontextmanager
 from pdf_generator import generate_pdf
 from wrong_answers import WrongAnswersManager
+from user_stats import UserStatsManager
 from firebase_admin import credentials, firestore
 
 # Carica la variabile d'ambiente
@@ -45,6 +46,15 @@ def clear_manager(user_id: int):
     """Rimuove l'istanza manager dopo il commit."""
     user_managers.pop(user_id, None)
 
+#per gestire le statistiche
+stats_managers: Dict[int, UserStatsManager] = {}
+
+def get_stats_manager(user_id: int) -> UserStatsManager:
+    if user_id not in stats_managers:
+        stats_managers[user_id] = UserStatsManager(str(user_id))
+    return stats_managers[user_id]
+
+
 # Inizializzazione bot Telegram
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 if not TOKEN:
@@ -52,7 +62,6 @@ if not TOKEN:
 
 application = ApplicationBuilder().token(TOKEN).build()
 user_states = {}
-user_stats = {}  # Statistiche per utente e per materia
 
 QUIZ_FOLDER = "quizzes"
 JSON = ".json"
@@ -447,20 +456,15 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
 
     percentage = round((score / total) * 100, 2)
 
-    if user_id not in user_stats:
-        user_stats[user_id] = {}
-    stats = user_stats[user_id]
-    if subject not in stats:
-        stats[subject] = {"correct": 0, "total": 0}
+    stats_manager = get_stats_manager(user_id)
+    stats_manager.update_stats(subject, score, total)
 
-    stats[subject]["correct"] += score
-    stats[subject]["total"] += total
-
-    summary = f"Quiz completato! Punteggio: {score} su {total} ({percentage}%)"
-    summary += "\n\n📊 Statistiche:\n"
-    for sub, data in stats.items():
-        perc = round((data["correct"] / data["total"]) * 100, 2)
+    all_stats = stats_manager.get_stats()
+    summary = f"Quiz completato! Punteggio: {score} su {total} ({percentage}%)\n\n📊 Statistiche:\n"
+    for sub, data in all_stats.items():
+        perc = round((data['correct'] / data['total']) * 100, 2)
         summary += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
+
 
     keyboard = []
 
@@ -496,7 +500,8 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
 
 async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
-    stats = user_stats.get(user_id)
+    stats_manager = get_stats_manager(user_id)
+    stats = stats_manager.get_stats()
     if not stats:
         await context.bot.send_message(chat_id=user_id, text="Nessuna statistica disponibile.")
         return
@@ -506,23 +511,14 @@ async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
         perc = round((data["correct"] / data["total"]) * 100, 2)
         msg += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
 
-    keyboard = [
-        [InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-
-    await context.bot.send_message(chat_id=user_id, text=msg, reply_markup=reply_markup)
+    await context.bot.send_message(chat_id=user_id, text=msg)
 
 
 async def reset_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    query = update.callback_query
-    await query.answer()
-    user_id = query.from_user.id
-
-    if user_id in user_stats:
-        user_stats.pop(user_id)
-
-    await context.bot.send_message(chat_id=user_id, text="✅ Statistiche azzerate.")
+    user_id = update.effective_user.id
+    stats_manager = get_stats_manager(user_id)
+    stats_manager.reset()
+    await context.bot.send_message(chat_id=user_id, text="✅ Statistiche azzerate!")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
