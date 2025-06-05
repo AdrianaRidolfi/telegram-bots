@@ -881,5 +881,489 @@
         "correct_answer": "Mango",
         "image": "tec13.jpg",
         "id": "c3d8a7f1-4e55-4e4a-bd39-9e2f0a5a531e"
+    },
+    {
+        "question": "Cosa rappresenta 'passport.authenticate('facebook')' in Express:",
+        "answers": [
+            "Un middleware per l'autenticazione via Facebook",
+            "Una libreria per la gestione dei cookie",
+            "Un template engine per rendering HTML",
+            "Un modulo per gestire sessioni utente"
+        ],
+        "correct_answer": "Un middleware per l'autenticazione via Facebook",
+        "id": "e8a6b3d6-3327-4d2a-8f97-d7f628d456a4"
+    },
+    {
+        "question": "Qual è lo scopo della classe 'container' in Bootstrap:",
+        "answers": [
+            "Creare un contenitore reattivo con padding orizzontale",
+            "Impostare un layout grid a 12 colonne",
+            "Aggiungere un bordo ai contenitori",
+            "Creare una barra di navigazione fissa"
+        ],
+        "correct_answer": "Creare un contenitore reattivo con padding orizzontale",
+        "id": "0b411422-e0e2-4d0a-97b3-67c4d272a2c2"
+    },
+    {
+        "question": "In un'app Node.js con Express, cosa rappresenta il controller:",
+        "answers": [
+            "La logica di business che gestisce le richieste",
+            "Il database di backend",
+            "Il template per la vista",
+            "Il middleware di autenticazione"
+        ],
+        "correct_answer": "La logica di business che gestisce le richieste",
+        "id": "a0712f70-4c7b-4d18-9e45-5f1640b9f26e"
+    },
+    {
+        "question": "Perché è consigliato Socket.IO su Replit rispetto ai WebSocket nativi:",
+        "answers": [
+            "Perché gestisce automaticamente HTTPS e fallback",
+            "Perché ha meno dipendenze",
+            "Perché supporta solo connessioni sicure",
+            "Perché è più leggero"
+        ],
+        "correct_answer": "Perché gestisce automaticamente HTTPS e fallback",
+        "id": "d14c9c47-bc4f-4fa0-b05f-52cc9b98c91f"
+    },
+    {
+        "question": "Quale metodo JavaScript restituisce la lunghezza di un array:",
+        "answers": [
+            "array.length",
+            "array.size()",
+            "array.count",
+            "array.len"
+        ],
+        "correct_answer": "array.length",
+        "id": "0f153ba0-73f8-429a-9ef4-55d247cf9792"
+    },
+    {
+        "question": "Quale innovazione introdotta da HTTP/2 migliora l'efficienza nella trasmissione di più richieste?",
+        "answers": [
+            "Supporto per richieste parallele su un'unica connessione",
+            "Compressione automatica del corpo della richiesta",
+            "Separazione dei protocolli HTTP e HTTPS",
+            "Caching avanzato lato client"
+        ],
+        "correct_answer": "Supporto per richieste parallele su un'unica connessione",
+        "id": "82a9f36d-ea16-4e35-b3c8-c7ef2c6e06af"
+    },
+    {
+        "question": "Quale vantaggio principale ha una chiamata asincrona rispetto a una sincrona:",
+        "answers": [
+            "Permette l’esecuzione del codice senza attese",
+            "Garantisce l’ordine di esecuzione delle funzioni",
+            "Esegue sempre più velocemente",
+            "Consente l’uso di callback obbligatori"
+        ],
+        "correct_answer": "Permette l’esecuzione del codice senza attese",
+        "id": "adf7b82b-734d-464e-9a56-3b8f9f2d1f24"
+    },
+    {
+        "question": "Perché JSON è considerato migliore di XML per applicazioni AJAX:",
+        "answers": [
+            "Perché è più semplice e veloce da analizzare",
+            "Perché è un formato binario",
+            "Perché supporta più tipi di dati",
+            "Perché è meno leggibile"
+        ],
+        "correct_answer": "Perché è più semplice e veloce da analizzare",
+        "id": "dcf7d091-bc94-4e2a-a9a3-68822ee5a3a9"
+    },
+    {
+        "question": "Cosa succede se un certificato HTTPS non è valido:",
+        "answers": [
+            "Il browser avvisa l'utente e può bloccare la connessione",
+            "La connessione viene sempre stabilita",
+            "Il certificato viene aggiornato automaticamente",
+            "Il server ignora il certificato"
+        ],
+        "correct_answer": "Il browser avvisa l'utente e può bloccare la connessione",
+        "id": "e3c24f7a-61c6-4b04-b9f3-27e54f3612c3"
+    },
+    {
+        "question": "Quale attributo di un cookie impone la sua cancellazione alla chiusura del browser:",
+        "answers": [
+            "Expires/Max-Age assente",
+            "Secure",
+            "HttpOnly",
+            "Domain"
+        ],
+        "correct_answer": "Expires/Max-Age assente",
+        "id": "622edda5-7b2d-49d9-9d23-5f1e0c4c1d84"
+    },
+    {
+        "question": "Quale strategia Passport permette l'autenticazione con username e password:",
+        "answers": [
+            "Local Strategy",
+            "OAuth Strategy",
+            "JWT Strategy",
+            "Google Strategy"
+        ],
+        "correct_answer": "Local Strategy",
+        "id": "547e6f57-96d8-4f1c-b191-4b2bb59ca97f"
+    },
+    {
+        "question": "A cosa serve la classe 'd-flex' in Bootstrap:",
+        "answers": [
+            "Per abilitare il layout flexbox",
+            "Per impostare il colore del testo",
+            "Per aggiungere margini",
+            "Per rendere invisibile un elemento"
+        ],
+        "correct_answer": "Per abilitare il layout flexbox",
+        "id": "cb2d7a07-05ae-4d37-8d96-bc799ff14a37"
+    },
+    {
+        "question": "Cosa restituisce il metodo getElementsByClassName:",
+        "answers": [
+            "Una collezione di elementi",
+            "Un singolo elemento",
+            "Un valore booleano",
+            "Un oggetto JSON"
+        ],
+        "correct_answer": "Una collezione di elementi",
+        "id": "b9877a17-eedb-44ee-8d0d-83c1e9287db7"
+    },
+    {
+        "question": "Qual è la caratteristica principale di un Bearer Token:",
+        "answers": [
+            "E' sufficiente possederlo per accedere a una risorsa",
+            "Scade dopo 24 ore automaticamente",
+            "Si può usare solo con HTTPS",
+            "E' un tipo di cookie"
+        ],
+        "correct_answer": "E' sufficiente possederlo per accedere a una risorsa",
+        "id": "d144e513-71ea-44b1-91b1-cc27c21b9e6a"
+    },
+    {
+        "question": "Cosa comporta la proprietà  CSS display: none:",
+        "answers": [
+            "L'elemento non è visualizzato nè occupa spazio",
+            "L'elemento è nascosto ma occupa spazio",
+            "L'elemento diventa trasparente",
+            "L'elemento si posiziona in fondo alla pagina"
+        ],
+        "correct_answer": "L'elemento non è visualizzato nè occupa spazio",
+        "id": "f889cdfa-4635-457d-8b69-027b6c4a6c06"
+    },
+    {
+        "question": "Qual è lo scopo del metodo HTTP POST:",
+        "answers": [
+            "Inviare dati al server per creare una nuova risorsa",
+            "Recuperare dati dal server",
+            "Aggiornare una risorsa esistente",
+            "Eliminare una risorsa"
+        ],
+        "correct_answer": "Inviare dati al server per creare una nuova risorsa",
+        "id": "0dcd9b4f-e060-4de1-b309-2d2352a1d04f"
+    },
+    {
+        "question": "Nel box model CSS, cosa rappresenta il padding:",
+        "answers": [
+            "Lo spazio tra il contenuto e il bordo",
+            "Lo spessore del bordo",
+            "Lo spazio esterno al margine",
+            "L'area del contenuto"
+        ],
+        "correct_answer": "Lo spazio tra il contenuto e il bordo",
+        "id": "f9a317a0-c378-4b17-8899-8b91b6cb96d8"
+    },
+    {
+        "question": "Perchè HTTP è considerato un protocollo stateless:",
+        "answers": [
+            "Perchè ogni richiesta contiene tutte le informazioni necessarie al server",
+            "Perché conserva lo stato della sessione",
+            "Perché usa cookie per la persistenza",
+            "Perché richiede autenticazione continua"
+        ],
+        "correct_answer": "Perchè ogni richiesta contiene tutte le informazioni necessarie al server",
+        "id": "a356832f-69a7-44ea-88f6-4e92b8bbd2d8"
+    },
+    {
+        "question": "Qual è la funzione dell'attributo type=\"hidden\" in un input HTML:",
+        "answers": [
+            "Non visualizzarlo ma inviarlo al server",
+            "Visualizzarlo come un campo di testo",
+            "Disabilitare l'input",
+            "Impedire l'invio del valore"
+        ],
+        "correct_answer": "Non visualizzarlo ma inviarlo al server",
+        "id": "3a702cf3-c47c-4b15-9ad8-4fbe1ff6a3b0"
+    },
+    {
+        "question": "Quali sono i tre componenti principali del pattern MVC:",
+        "answers": [
+            "Model, View, Controller",
+            "Module, Variable, Class",
+            "Manager, Validator, Controller",
+            "Model, Validator, Component"
+        ],
+        "correct_answer": "Model, View, Controller",
+        "id": "c5190ea0-51b6-41a4-9f72-23e1a86f1b5a"
+    },
+    {
+        "question": "Quale tool consente di rappresentare graficamente la struttura DOM di una pagina HTML:",
+        "answers": [
+            "DOM Explorer nei browser",
+            "Visual Studio Code",
+            "Postman",
+            "GitHub Desktop"
+        ],
+        "correct_answer": "DOM Explorer nei browser",
+        "id": "2e3bc21e-2c4a-4b36-9f7a-b19e5c4825ef"
+    },
+    {
+        "question": "Cosa fa la classe 'd-flex' in Bootstrap:",
+        "answers": [
+            "Imposta il contenitore come flex",
+            "Aggiunge un bordo",
+            "Imposta il colore di sfondo",
+            "Imposta la visibilità su nascosta"
+        ],
+        "correct_answer": "Imposta il contenitore come flex",
+        "id": "b3d47b81-9e1b-4b5b-9bca-f25535b255af"
+    },
+    {
+        "question": "Che cos'è un middleware in Express:",
+        "answers": [
+            "Una funzione che gestisce la richiesta e risposta HTTP",
+            "Un database relazionale",
+            "Un template engine",
+            "Un server web"
+        ],
+        "correct_answer": "Una funzione che gestisce la richiesta e risposta HTTP",
+        "id": "baf4a95a-332d-4f92-84d8-f0fef7e77ac3"
+    },
+    {
+        "question": "Cosa consente di fare il protocollo WebSocket:",
+        "answers": [
+            "Stabilire una connessione bidirezionale tra client e server",
+            "Inviare solo richieste HTTP",
+            "Utilizzare esclusivamente TCP",
+            "Autenticare utenti"
+        ],
+        "correct_answer": "Stabilire una connessione bidirezionale tra client e server",
+        "id": "9dfe73f9-9c7a-4295-8f0c-98a9cb013978"
+    },
+    {
+        "question": "Qual è il principale scopo dell'uso del protocollo TLS in HTTPS:",
+        "answers": [
+            "Garantire la cifratura e l'integrità  dei dati trasmessi",
+            "Aumentare la velocità della connessione",
+            "Autenticare solo il server",
+            "Gestire solo le sessioni client"
+        ],
+        "correct_answer": "Garantire la cifratura e l'integrità  dei dati trasmessi",
+        "id": "e88f66bc-1c67-4a72-87e9-5a90d522fd52"
+    },
+    {
+        "question": "Cosa accade se la larghezza dello schermo è inferiore a 576px senza classi col-xx:",
+        "answers": [
+            "Le colonne vanno in stack verticale",
+            "Le colonne si sovrappongono",
+            "Le colonne spariscono",
+            "Le colonne diventano orizzontali"
+        ],
+        "correct_answer": "Le colonne vanno in stack verticale",
+        "id": "a92155a7-c8ed-4b01-8f75-1a7987b282bc"
+    },
+    {
+        "question": "Qual è un rischio legato ai cookie accessibili da JavaScript:",
+        "answers": [
+            "Possono essere letti da script malevoli (XSS)",
+            "Non possono essere cancellati",
+            "Vengono inviati sempre in chiaro",
+            "Non funzionano su HTTPS"
+        ],
+        "correct_answer": "Possono essere letti da script malevoli (XSS)",
+        "id": "7e7868bb-88a2-46d4-8f99-85f50f7940a6"
+    },
+    {
+        "question": "Perché si preferisce usare async/await rispetto a then nelle chiamate HTTP in Node.js:",
+        "answers": [
+            "Evita problemi di sincronizzazione",
+            "È supportato solo da browser moderni",
+            "È più veloce da eseguire",
+            "Non richiede l'uso di promise"
+        ],
+        "correct_answer": "Evita problemi di sincronizzazione",
+        "id": "3bcfcdd6-2935-4c84-bc3a-64cae5f4188c"
+    },
+    {
+        "question": "Qual è uno dei principali vantaggi dell'uso di JSON rispetto a XML:",
+        "answers": [
+            "E' più semplice da analizzare e convertire in oggetti JavaScript",
+            "È un formato binario",
+            "Non supporta dati annidati",
+            "Richiede meno spazio su disco"
+        ],
+        "correct_answer": "E' più semplice da analizzare e convertire in oggetti JavaScript",
+        "id": "8b345f6d-3a2a-4127-a1a9-d5e5df46e091"
+    },
+    {
+        "question": "Quale componente è coinvolto nella negoziazione del handshake TLS:",
+        "answers": [
+            "Entrambi, client e server",
+            "Solo il client",
+            "Solo il server",
+            "Nessuno, è gestito da un proxy"
+        ],
+        "correct_answer": "Entrambi, client e server",
+        "id": "33f4b252-2f48-4a49-b899-c34645c4d0af"
+    },
+    {
+        "question": "Come si chiama una funzione senza nome assegnata a una variabile:",
+        "answers": [
+            "Funzione anonima",
+            "Funzione ricorsiva",
+            "Funzione costruttore",
+            "Funzione callback"
+        ],
+        "correct_answer": "Funzione anonima",
+        "id": "f34943d5-c163-4489-90d8-9c18f5e50f66"
+    },
+    {
+        "question": "Cosa fa la classe 'col-md-6' in Bootstrap:",
+        "answers": [
+            "Occupa metà  riga su schermi medi",
+            "Aggiunge margini interni",
+            "Centra il testo all'interno",
+            "Imposta il colore di sfondo"
+        ],
+        "correct_answer": "Occupa metà  riga su schermi medi",
+        "id": "1d8794d3-67a2-4ca1-91d1-c6c34b98a183"
+    },
+    {
+        "question": "Quale tag è usato per collegare un file CSS esterno a una pagina HTML:",
+        "answers": [
+            "<link>",
+            "<script>",
+            "<style>",
+            "<css>"
+        ],
+        "correct_answer": "<link>",
+        "id": "e0c80287-0f38-4a02-a502-e8ed34e3b62a"
+    },
+    {
+        "question": "Come si accede al valore della chiave 'nome' in un oggetto JavaScript ottenuto da JSON:",
+        "answers": [
+            "obj['nome']",
+            "obj.nome()",
+            "obj.get('nome')",
+            "obj->nome"
+        ],
+        "correct_answer": "obj['nome']",
+        "id": "14210a8f-f16f-4291-a5ca-876a0f3d506b"
+    },
+    {
+        "question": "Quale metodo permette di rimuovere un elemento figlio dal DOM:",
+        "answers": [
+            "removeChild()",
+            "deleteNode()",
+            "removeNode()",
+            "detachChild()"
+        ],
+        "correct_answer": "removeChild()",
+        "id": "bd3eaf41-1e89-4b2b-9a63-6afbb7d2b0e4"
+    },
+    {
+        "question": "Quale classe permette di centrare gli elementi orizzontalmente in Flexbox:",
+        "answers": [
+            "justify-content-center",
+            "align-items-center",
+            "flex-center",
+            "text-center"
+        ],
+        "correct_answer": "justify-content-center",
+        "id": "48d46a97-37ab-4666-b7da-3dfcc798bf00"
+    },
+    {
+        "question": "Qual è la differenza tra 'var' e 'let' nella dichiarazione di variabili in JavaScript:",
+        "answers": [
+            "'var' ha scope di funzione, 'let' ha scope di blocco",
+            "'var' è più veloce di 'let'",
+            "'let' può essere ridefinito, 'var' no",
+            "Non c'è differenza"
+        ],
+        "correct_answer": "'var' ha scope di funzione, 'let' ha scope di blocco",
+        "id": "6cc6d3a0-32a2-45be-9f92-3e8d3f0cb14e"
+    },
+    {
+        "question": "Cosa distingue una arrow function da una funzione tradizionale in JavaScript:",
+        "answers": [
+            "Ha un this ereditato e non ha arguments",
+            "Può essere usata solo come callback",
+            "Ha un this proprio e usa arguments",
+            "Non può essere anonima"
+        ],
+        "correct_answer": "Ha un this ereditato e non ha arguments",
+        "id": "eb61f735-03bb-47a7-8902-1327d073e82f"
+    },
+    {
+        "question": "A cosa serve lo strumento online ReqBin nel contesto dei form HTML:",
+        "answers": [
+            "Per simulare ed eseguire richieste HTTP",
+            "Per validare il codice HTML",
+            "Per creare moduli interattivi",
+            "Per monitorare il traffico web"
+        ],
+        "correct_answer": "Per simulare ed eseguire richieste HTTP",
+        "id": "c5a814cd-b9eb-4a1a-8b8d-9d1ea2b0c8f7"
+    },
+    {
+        "question": "Quale metodo DOM restituisce una collezione di elementi con una determinata classe:",
+        "answers": [
+            "getElementsByClassName()",
+            "getElementById()",
+            "querySelector()",
+            "getElementsByTagName()"
+        ],
+        "correct_answer": "getElementsByClassName()",
+        "id": "e84d5d51-4a6d-4c0e-a64e-24f2bc2a4bbf"
+    },
+    {
+        "question": "Cosa accade se non viene specificato alcun attributo 'method' in una form HTML:",
+        "answers": [
+            "Il metodo predefinito è GET",
+            "La form non funziona",
+            "Il metodo predefinito è POST",
+            "Il metodo viene ereditato da un form padre"
+        ],
+        "correct_answer": "Il metodo predefinito è GET",
+        "id": "c70d8e36-61a4-4b42-a7cd-3ea0b40c1d74"
+    },
+    {
+        "question": "Nel box model, il padding:",
+        "answers": [
+            "indica spazio vuoto tra contenuto e bordo dell’elemento",
+            "è la dimensione del bordo",
+            "è lo spazio esterno al margine",
+            "è la larghezza totale dell'elemento"
+        ],
+        "correct_answer": "indica spazio vuoto tra contenuto e bordo dell’elemento",
+        "id": "921743e5-007b-4d7b-80ee-c2e616d36098"
+    },
+    {
+        "question": "Dato il seguente codice: const persona = { nome: \"Mario\", saluta: function() { console.log(\"Ciao, mi chiamo \" + this.nome); }}; per ottenere come output: \"Ciao, mi chiamo Mario\" occorre eseguire il comando:",
+        "answers": [
+            "persona.saluta();",
+            "persona.nome();",
+            "console.log(persona.saluta);",
+            "saluta(persona);"
+        ],
+        "correct_answer": "persona.saluta();",
+        "id": "a8f74bdc-09d0-44b2-8b32-e01b1b9e819d"
+    },
+    {
+        "question": "Quando si carica la seguente pagina, cosa viene visualizzato come risultato finale?",
+        "answers": [
+            "paragrafo modificato",
+            "pagina bianca",
+            "errore JavaScript",
+            "contenuto originale"
+        ],
+        "correct_answer": "paragrafo modificato",
+        "id": "fa7d35c4-92cc-406e-9b65-1874b00a09e5"
     }
 ]
