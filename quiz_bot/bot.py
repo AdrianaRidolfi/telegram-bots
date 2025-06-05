@@ -459,7 +459,7 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
     stats_manager = get_stats_manager(user_id)
     stats_manager.update_stats(subject, score, total)
 
-    all_stats = stats_manager.get_stats()
+    all_stats = stats_manager.get_summary()
     summary = f"Quiz completato! Punteggio: {score} su {total} ({percentage}%)\n\n📊 Statistiche:\n"
     for sub, data in all_stats.items():
         perc = round((data['correct'] / data['total']) * 100, 2)
@@ -501,7 +501,7 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
 async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
     stats_manager = get_stats_manager(user_id)
-    stats = stats_manager.get_stats()
+    stats = stats_manager.get_summary()
     if not stats:
         await context.bot.send_message(chat_id=user_id, text="Nessuna statistica disponibile.")
         return
