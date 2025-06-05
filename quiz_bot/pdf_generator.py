@@ -40,16 +40,15 @@ def generate_pdf_sync(quiz_path: str) -> str:
     pdf = FPDF()
     pdf.add_page()
 
-    # Registro il font
+    # Font
     pdf.add_font('DejaVu', '', DEJAVU_TTF)
     pdf.add_font('DejaVu', 'B', os.path.join(FONTS_FOLDER, "DejaVuSans-Bold.ttf"))
 
     pdf.set_font("DejaVu", "B", 16)
-    # modifica ln=True con new_x e new_y per evitare deprecazione
-    pdf.cell(0, 10, file_name.upper(), align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    title = file_name.replace("_", " ").upper()
+    pdf.cell(0, 10, title, align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     pdf.set_font("DejaVu", "", 12)
-
     letters = ['A', 'B', 'C', 'D']
 
     for i, item in enumerate(data, 1):
@@ -58,46 +57,56 @@ def generate_pdf_sync(quiz_path: str) -> str:
         correct = item.get("correct_answer") or item.get("correct")
         image_path = item.get("image")
 
-        pdf.set_font("DejaVu", "B", 12)
-        # per evitare "not enough horizontal space" metti larghezza fissa e resetta x
-        pdf.set_x(pdf.l_margin)
-        pdf.multi_cell(pdf.w - 2*pdf.l_margin, 8, f"{i}. {question}")
+        # CALCOLO SPAZIO NECESSARIO PRIMA DI STAMPARE
+        question_lines = pdf.get_string_width(question) // (pdf.w - 2 * pdf.l_margin) + 1
+        question_height = question_lines * 8 + 2
+        answers_height = len(answers) * 10
+        image_height = 0
 
         if image_path:
             img_full_path = os.path.join(IMAGES_FOLDER, image_path)
             if os.path.exists(img_full_path):
-                pdf.set_x(pdf.l_margin)
-                x = pdf.get_x()
-                y = pdf.get_y()
-                max_width = pdf.w - 2 * pdf.l_margin
-                desired_width = min(100, max_width)
-        
-                # Ottieni dimensioni reali immagine
                 with Image.open(img_full_path) as img:
-                    orig_width, orig_height = img.size
-        
-                # Calcola l'altezza mantenendo proporzioni
-                aspect_ratio = orig_height / orig_width
-                desired_height = desired_width * aspect_ratio
-        
-                # Inserisci immagine con dimensioni calcolate
-                pdf.image(img_full_path, x=x, y=y, w=desired_width, h=desired_height)
-                pdf.ln(desired_height + 5)  # salto di riga più un piccolo margine
+                    aspect_ratio = img.height / img.width
+                    image_height = min(100, pdf.w - 2*pdf.l_margin) * aspect_ratio + 5
+
+        total_needed = question_height + answers_height + image_height + 20
+
+        # Se lo spazio non basta, aggiungi pagina
+        if pdf.get_y() + total_needed > pdf.h - pdf.b_margin:
+            pdf.add_page()
+
+
+        pdf.set_font("DejaVu", "B", 12)
+        pdf.set_x(pdf.l_margin)
+        pdf.multi_cell(pdf.w - 2*pdf.l_margin, 8, f"{i}. {question}")
+
+        if image_path and os.path.exists(img_full_path):
+            pdf.set_x(pdf.l_margin)
+            x = pdf.get_x()
+            y = pdf.get_y()
+            max_width = pdf.w - 2 * pdf.l_margin
+            desired_width = min(100, max_width)
+
+            with Image.open(img_full_path) as img:
+                orig_width, orig_height = img.size
+            aspect_ratio = orig_height / orig_width
+            desired_height = desired_width * aspect_ratio
+
+            pdf.image(img_full_path, x=x, y=y, w=desired_width, h=desired_height)
+            pdf.ln(desired_height + 5)
 
         correct_letter = None
-
         for idx, ans in enumerate(answers):
             ans_clean = clean_text(ans)
             letter = letters[idx]
-
             if ans == correct:
-                pdf.set_text_color(0, 128, 0)  # verde
+                pdf.set_text_color(0, 128, 0)
                 correct_letter = letter
             else:
-                pdf.set_text_color(0, 0, 0)    # nero
+                pdf.set_text_color(0, 0, 0)
 
             pdf.set_font("DejaVu", "", 12)
-            # stesso fix per le risposte
             pdf.set_x(pdf.l_margin)
             pdf.multi_cell(pdf.w - 2*pdf.l_margin, 8, f"{letter}. {ans_clean}")
 
@@ -106,16 +115,14 @@ def generate_pdf_sync(quiz_path: str) -> str:
         if correct_letter:
             pdf.set_text_color(0, 128, 0)
             pdf.set_font("DejaVu", "B", 12)
-            # anche qui cambia ln=True come sopra
             pdf.cell(0, 8, f"Answer: {correct_letter}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
             pdf.set_text_color(0, 0, 0)
 
         pdf.ln(5)
 
-        
-
     pdf.output(pdf_path)
     return pdf_path
+
 
 
 async def generate_pdf(quiz_file, bot, user_id):
@@ -129,3 +136,4 @@ async def generate_pdf(quiz_file, bot, user_id):
     finally:
         if os.path.exists(pdf_path):
             os.remove(pdf_path)
+
