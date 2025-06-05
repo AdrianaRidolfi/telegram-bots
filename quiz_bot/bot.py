@@ -166,7 +166,7 @@ async def send_next_question(user_id, context):
         return
 
     if state["index"] >= state["total"]:
-        await show_final_stats(user_id, context, state, is_review_mode=state.get("mode") == "review")
+        await show_final_stats(user_id, context, state, is_review_mode=state.get("is_review", False))
         manager = get_manager(user_id)
         manager.commit_changes()
         user_states.pop(user_id, None) 
