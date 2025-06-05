@@ -77,7 +77,7 @@ def generate_pdf_sync(quiz_path: str) -> str:
             pdf.add_page()
 
 
-        pdf.set_font("DejaVu", "B", 12)
+        pdf.set_font("DejaVu", "B", 8)
         pdf.set_x(pdf.l_margin)
         pdf.multi_cell(pdf.w - 2*pdf.l_margin, 8, f"{i}. {question}")
 
@@ -106,7 +106,7 @@ def generate_pdf_sync(quiz_path: str) -> str:
             else:
                 pdf.set_text_color(0, 0, 0)
 
-            pdf.set_font("DejaVu", "", 12)
+            pdf.set_font("DejaVu", "", 8)
             pdf.set_x(pdf.l_margin)
             pdf.multi_cell(pdf.w - 2*pdf.l_margin, 8, f"{letter}. {ans_clean}")
 
@@ -114,7 +114,7 @@ def generate_pdf_sync(quiz_path: str) -> str:
 
         if correct_letter:
             pdf.set_text_color(0, 128, 0)
-            pdf.set_font("DejaVu", "B", 12)
+            pdf.set_font("DejaVu", "B", 8)
             pdf.cell(0, 8, f"Answer: {correct_letter}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
             pdf.set_text_color(0, 0, 0)
 
