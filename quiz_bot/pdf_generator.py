@@ -4,7 +4,7 @@ from fpdf.enums import XPos, YPos
 import json
 from PIL import Image
 
-
+LINE_HEIGHT = 3.5
 QUIZ_FOLDER = "quizzes"
 IMAGES_FOLDER = "quizzes/images"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -79,7 +79,7 @@ def generate_pdf_sync(quiz_path: str) -> str:
 
         pdf.set_font("DejaVu", "B", 8)
         pdf.set_x(pdf.l_margin)
-        pdf.multi_cell(pdf.w - 2*pdf.l_margin, 8, f"{i}. {question}")
+        pdf.multi_cell(pdf.w - 2*pdf.l_margin, LINE_HEIGHT, f"{i}. {question}")
 
         if image_path and os.path.exists(img_full_path):
             pdf.set_x(pdf.l_margin)
@@ -108,14 +108,14 @@ def generate_pdf_sync(quiz_path: str) -> str:
 
             pdf.set_font("DejaVu", "", 8)
             pdf.set_x(pdf.l_margin)
-            pdf.multi_cell(pdf.w - 2*pdf.l_margin, 8, f"{letter}. {ans_clean}")
+            pdf.multi_cell(pdf.w - 2*pdf.l_margin, LINE_HEIGHT, f"{letter}. {ans_clean}")
 
         pdf.ln(1)
 
         if correct_letter:
             pdf.set_text_color(0, 128, 0)
             pdf.set_font("DejaVu", "B", 8)
-            pdf.cell(0, 8, f"Answer: {correct_letter}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+            pdf.cell(0, LINE_HEIGHT, f"Answer: {correct_letter}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
             pdf.set_text_color(0, 0, 0)
 
         pdf.ln(5)
