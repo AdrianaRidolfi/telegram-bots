@@ -532,7 +532,7 @@ async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def reset_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
     stats_manager = get_stats_manager(user_id)
-    stats_manager.reset()
+    stats_manager.reset_stats()
     await context.bot.send_message(chat_id=user_id, text="✅ Statistiche azzerate!")
 
 @asynccontextmanager
