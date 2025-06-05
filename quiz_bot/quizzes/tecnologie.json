@@ -123,6 +123,17 @@
         "id": "08411dbc-43ca-4b27-a8a7-c4e6b22d46c8"
     },
     {
+        "question": "Quale struttura in JSON rappresenta una raccolta ordinata di valori?",
+        "answers": [
+            "Oggetto",
+            "Dizionario",
+            "Set",
+            "Array"
+        ],
+        "correct_answer": "Array",
+        "id": "e7b35b39-b22f-474e-b304-5589a7c4dbe3"
+    },
+    {
         "question": "Quale errore è presente nel seguente JSON: { 'name': 'john', 'surname': 'red', 'cars': [ 'Ferrari', 'Porsche' 1, 'hobbies': [ 'go - kart', 'bicycle' ] }?",
         "answers": [
             "Le chiavi non devono essere racchiuse in virgolette",
@@ -211,6 +222,83 @@
         "id": "e13021c4-4860-4fda-aeb0-79346bd4b60f"
     },
     {
+        "question": "Qual è lo scopo dell'autenticazione nelle applicazioni web",
+        "answers": [
+            "Limitare l'accesso a risorse riservate",
+            "Garantire l'estetica dell'interfaccia utente",
+            "Velocizzare il caricamento delle pagine",
+            "Controllare il traffico di rete tra server"
+        ],
+        "correct_answer": "Limitare l'accesso a risorse riservate",
+        "id": "0c60a2f1-8d1f-4425-841b-18041589bca0"
+    },
+    {
+        "question": "Cosa rappresenta un token JWT:",
+        "answers": [
+            "Un oggetto JSON firmato digitalmente che contiene informazioni sull'utente",
+            "Un tipo di cookie per la memorizzazione delle sessioni",
+            "Un metodo di crittografia per proteggere i dati",
+            "Un server proxy per la gestione delle richieste"
+        ],
+        "correct_answer": "Un oggetto JSON firmato digitalmente che contiene informazioni sull'utente",
+        "id": "7b5d8f4c-9a1e-4f2a-8c26-3e2fbd15a60d"
+    },
+    {
+        "question": "Quante colonne virtuali compongono la griglia di layout di Bootstrap:",
+        "answers": [
+            "12",
+            "6",
+            "8",
+            "16"
+        ],
+        "correct_answer": "12",
+        "id": "0f92c5a2-3c68-4b12-90bb-2a1d8c579a6e"
+    },
+    {
+        "question": "Quando un cookie viene considerato di terze parti (third-party):",
+        "answers": [
+            "Quando è inviato da un dominio diverso rispetto a quello visitato dall'utente",
+            "Quando contiene dati criptati",
+            "Quando scade dopo la sessione di navigazione",
+            "Quando è salvato solo nel browser"
+        ],
+        "correct_answer": "Quando è inviato da un dominio diverso rispetto a quello visitato dall'utente",
+        "id": "7e68a3f1-9c3d-4b8f-bb42-d1c91741dcee"
+    },
+    {
+        "question": "Quale metodo JavaScript converte un oggetto in una stringa JSON:",
+        "answers": [
+            "JSON.stringify()",
+            "JSON.parse()",
+            "toJSONString()",
+            "JSON.convert()"
+        ],
+        "correct_answer": "JSON.stringify()",
+        "id": "d9e4a59f-7c0d-4b15-8f5e-6e2c3f8a7b12"
+    },
+    {
+        "question": "A cosa serve il tag <head> in un documento HTML:",
+        "answers": [
+            "A contenere metadati e collegamenti a risorse esterne",
+            "A mostrare il contenuto principale della pagina",
+            "A definire il piè di pagina del documento",
+            "A inserire commenti visibili nella pagina"
+        ],
+        "correct_answer": "A contenere metadati e collegamenti a risorse esterne",
+        "id": "f812d7a9-8e44-4d16-a23c-9d2f7b1bfb33"
+    },
+    {
+        "question": "Cosa distingue il metodo POST dal metodo GET nei form HTML:",
+        "answers": [
+            "GET include i dati nell'URL, POST li invia nel corpo della richiesta",
+            "POST include i dati nell'URL, GET li invia nel corpo della richiesta",
+            "Entrambi inviano i dati solo nell'URL",
+            "Entrambi inviano i dati solo nel corpo della richiesta"
+        ],
+        "correct_answer": "GET include i dati nell'URL, POST li invia nel corpo della richiesta",
+        "id": "a2f473bc-c371-4e27-a3d2-092e5f6b6e5a"
+    },
+    {
         "question": "Qual è la principale differenza tra un ciclo do...while e un ciclo while?",
         "answers": [
             "Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, indipendentemente dalla verità della condizione",
@@ -220,6 +308,17 @@
         ],
         "correct_answer": "Il blocco di codice all'interno del ciclo viene eseguito almeno una volta, indipendentemente dalla verità della condizione",
         "id": "1779deb9-78f0-4f14-b086-0bb371244591"
+    },
+    {
+        "question": "Quale funzione svolge il certificato digitale in una connessione HTTPS",
+        "answers": [
+            "Permette al client di verificare l'identità del server",
+            "Controlla la larghezza di banda utilizzata",
+            "Gestisce il layout delle pagine web",
+            "Aumenta la velocità della connessione"
+        ],
+        "correct_answer": "Permette al client di verificare l'identità del server",
+        "id": "b8db4294-3e3e-4c0e-a042-e94f0f4ed36c"
     },
     {
         "question": "Cosa sono i Bearer Token?",
@@ -255,6 +354,17 @@
         "id": "a1eaf0c3-1f6a-485d-b83b-c0c2a160901e"
     },
     {
+        "question": "Cosa accade quando si effettua una richiesta HTTP GET:",
+        "answers": [
+            "Il server modifica la risorsa richiesta",
+            "Il client invia dati nel corpo della richiesta",
+            "La richiesta viene sempre autenticata automaticamente",
+            "Il client richiede una risorsa senza inviare corpo nel messaggio"
+        ],
+        "correct_answer": "Il client richiede una risorsa senza inviare corpo nel messaggio",
+        "id": "f84a3e9d-72b0-4c0a-b40d-4a7651c7b94d"
+    },
+    {
         "question": "Quale delle seguenti modifiche al JSON è corretta per aggiungere un nuovo hobby 'motors' con tre declinazioni?",
         "answers": [
             "{\"name\":\"john\",\"surname\":\"red\",\"cars\":[\"Ferrari\",\"Porsche\"],\"hobbies\":[\"go-kart\",\"bicycle\",\"f1\",\"f2\",\"f3\"]}",
@@ -278,6 +388,39 @@
         "id": "29d5c8ac-ab2c-4700-afbe-ef6647051bee"
     },
     {
+        "question": "Qual è un vantaggio dell’uso della Fetch API rispetto a jQuery.ajax():",
+        "answers": [
+            "Richiede meno permessi di sicurezza",
+            "Supporta tutti i browser legacy",
+            "Offre una maggiore compatibilità con XML",
+            "Usa Promises per una gestione più moderna delle chiamate asincrone"
+        ],
+        "correct_answer": "Usa Promises per una gestione più moderna delle chiamate asincrone",
+        "id": "42c9d2a6-bf18-4f8f-a769-92a28eac7e63"
+    },
+    {
+        "question": "Qual è la differenza tra `inline` e `block` nel contesto di display CSS:",
+        "answers": [
+            "`inline` forza il ritorno a capo, `block` no",
+            "`inline` e `block` sono equivalenti in tutti i browser",
+            "`block` non può contenere altri elementi, `inline` sì",
+            "`inline` non forza il ritorno a capo, `block` sì"
+        ],
+        "correct_answer": "`inline` non forza il ritorno a capo, `block` sì",
+        "id": "c8f3917d-9a14-4e16-858b-7f5aefa46aef"
+    },
+    {
+        "question": "Cosa si intende per 'margin collapsing' in CSS:",
+        "answers": [
+            "Il margine tra due box verticali è il massimo dei due",
+            "Quando due margini si sommano automaticamente",
+            "Quando i margini scompaiono se i box sono vicini",
+            "Quando un margine si applica solo al contenuto interno"
+        ],
+        "correct_answer": "Il margine tra due box verticali è il massimo dei due",
+        "id": "d4128c63-3aef-49c3-a2c7-0f7cf5f7c67c"
+    },
+    {
         "question": "Caricando tale pagina, cosa compare?",
         "answers": [
             "Years Old",
@@ -288,6 +431,72 @@
         "correct_answer": "John Doe is 50 years old.",
         "image": "tec4.jpg",
         "id": "439d4dda-8a5d-4e60-8460-d3581c1ad158"
+    },
+    {
+        "question": "Cosa fa la proprietà CSS 'justify-content: center' in un contenitore flex:",
+        "answers": [
+            "Allinea gli elementi all'inizio del contenitore",
+            "Distribuisce lo spazio uniformemente tra gli elementi",
+            "Allinea gli elementi alla fine del contenitore",
+            "Allinea gli elementi al centro"
+        ],
+        "correct_answer": "Allinea gli elementi al centro",
+        "id": "d2b8f3e7-3c42-4f2a-bf2e-2f47a9eecb8a"
+    },
+    {
+        "question": "Cosa garantisce l'autenticità del certificato in una connessione HTTPS:",
+        "answers": [
+            "La crittografia a chiave pubblica del server",
+            "La firma digitale di un'autorità di certificazione (CA)",
+            "L'uso del protocollo HTTP/2",
+            "La presenza di un firewall attivo"
+        ],
+        "correct_answer": "La firma digitale di un'autorità di certificazione (CA)",
+        "id": "c1e7a234-6b94-4f2e-8a23-97f9a91dbf3c"
+    },
+    {
+        "question": "Qual è lo scopo del metodo 'emit' in Socket.IO:",
+        "answers": [
+            "Ricevere un messaggio dal server o client",
+            "Inizializzare una connessione WebSocket",
+            "Chiudere la connessione con il server",
+            "Inviare un messaggio dal server o client"
+        ],
+        "correct_answer": "Inviare un messaggio dal server o client",
+        "id": "a7e4b2c5-98d7-4f3c-8a29-3c1b7d4f5e11"
+    },
+    {
+        "question": "Nel DOM, qual è la differenza tra nodo ed elemento:",
+        "answers": [
+            "Un nodo è sempre un elemento HTML",
+            "Un elemento può contenere solo testo, mentre un nodo può contenere altri nodi",
+            "Un nodo e un elemento sono sinonimi e indicano la stessa cosa",
+            "Un nodo può essere un elemento, un testo o un commento; un elemento è un tipo specifico di nodo"
+        ],
+        "correct_answer": "Un nodo può essere un elemento, un testo o un commento; un elemento è un tipo specifico di nodo",
+        "id": "f4b1e7c3-2d6a-4e89-9bc8-81d3f2b4a672"
+    },
+    {
+        "question": "I CSS servono a definire:",
+        "answers": [
+            "La struttura del contenuto HTML",
+            "Il comportamento dinamico delle pagine web",
+            "Il contenuto testuale delle pagine web",
+            "Come il contenuto deve essere presentato all' utente"
+        ],
+        "correct_answer": "Come il contenuto deve essere presentato all' utente",
+        "id": "d2f7a83b-8f15-4a9d-8e45-3c9bcb62a0e7"
+    },
+    {
+        "question": "Per cosa vengono comunemente utilizzati i cookie di sessione:",
+        "answers": [
+            "Per tracciare gli utenti su più siti web",
+            "Per mantenere attiva una sessione utente durante la navigazione",
+            "Per memorizzare le preferenze del browser",
+            "Per crittografare i dati trasmessi"
+        ],
+        "correct_answer": "Per mantenere attiva una sessione utente durante la navigazione",
+        "id": "b4d9f91a-5c3e-4f2a-8e9b-7f0a1c3d42ea"
     },
     {
         "question": "Qual è il nome del livello depennato?",
@@ -468,6 +677,28 @@
         "id": "dbb1de5d-e62a-4da8-b50c-a20a97b00dce"
     },
     {
+        "question": "Come vengono trasmesse le credenziali nella Basic Access Authentication:",
+        "answers": [
+            "Codificate in base64",
+            "In chiaro senza alcuna codifica",
+            "Crittografate con SSL",
+            "Hashate con SHA-256"
+        ],
+        "correct_answer": "Codificate in base64",
+        "id": "f1c3a77a-9b42-4a2a-b839-2d2e5dcd1234"
+    },
+    {
+        "question": "Quale metodo di autenticazione prevede l'invio delle credenziali in chiaro in formato base64:",
+        "answers": [
+            "Basic Authentication",
+            "Digest Authentication",
+            "OAuth 2.0",
+            "JWT (JSON Web Token)"
+        ],
+        "correct_answer": "Basic Authentication",
+        "id": "a4f9e271-5b7d-4f69-b1e2-9b273b8c765e"
+    },
+    {
         "question": "Caricando tale pagina, cosa compare a video?",
         "answers": [
             "100+50",
@@ -616,6 +847,28 @@
         "correct_answer": "Rappresenta una form corretta",
         "image": "tec12.jpg",
         "id": "c3d8a7f1-4e55-4e4a-bd39-9e2f0a5a672e"
+    },
+    {
+        "question": "Il seguente JSON:\n[\n  {\n    \"name\": \"John\"\n  };\n  {\n    \"name\": \"James\"\n  }\n]\nè...",
+        "answers": [
+            "può essere usato solo in determinati contesti",
+            "è valido",
+            "Non è valido",
+            "è valido se il sistema non è case sensitive"
+        ],
+        "correct_answer": "Non è valido",
+        "id": "fbcaa3c6-7b5a-4f35-bf90-3a174b75e75a"
+    },
+    {
+        "question": "Il seguente JSON:\n[\n  {\n    \"name\": \"john\"\n  },\n  {\n    \"name\": \"james\"\n  },\n]\nè...",
+        "answers": [
+            "può essere usato solo in determinati contesti",
+            "è valido",
+            "Non è valido",
+            "è valido se il sistema non è case sensitive"
+        ],
+        "correct_answer": "Non è valido",
+        "id": "a83b51f4-fba3-42aa-8e6f-4e11e21d6583"
     },
     {
         "question": "Quando si carica tale pagina, cosa viene visualizzato?",
