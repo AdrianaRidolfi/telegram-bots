@@ -43,16 +43,21 @@ def carica_risposte_json(percorso_json):
     return {normalizza_confronto(item['correct_answer']): item['question'] for item in data}
 
 def leggi_testo_pdf(pdf_path):
-    testo = ""
+    righe_pdf = []
     with fitz.open(pdf_path) as doc:
         for pagina in doc:
-            testo += pagina.get_text()
-    return normalizza_confronto(testo)
+            testo_pagina = pagina.get_text("text")  # Ottieni testo semplice con ritorni a capo
+            for riga in testo_pagina.splitlines():
+                riga_norm = normalizza_confronto(riga)
+                if riga_norm:
+                    righe_pdf.append(riga_norm)
+    return righe_pdf
+
 
 def confronto_completo(txt_path, json_path, pdf_path, output_txt_path):
     domande_txt = carica_domande_txt(txt_path)
     risposte_json = carica_risposte_json(json_path)
-    testo_pdf = leggi_testo_pdf(pdf_path)
+    righe_pdf = leggi_testo_pdf(pdf_path)  # ora è lista di righe normalizzate
 
     finali = []
 
@@ -76,8 +81,13 @@ def confronto_completo(txt_path, json_path, pdf_path, output_txt_path):
             # Risposta non trovata nel json: la salvo così com’è
             finali.append(d)
 
-    # Rimuovo dal risultato finale le risposte trovate anche nel PDF
-    finali_filtrate = [d for d in finali if normalizza_confronto(d['correct']) not in testo_pdf]
+    # Rimuovo dal risultato finale le risposte trovate in qualche riga del PDF (controllo riga per riga)
+    finali_filtrate = []
+    for d in finali:
+        risposta_norm = normalizza_confronto(d['correct'])
+        trovata_in_pdf = any(risposta_norm in riga_pdf for riga_pdf in righe_pdf)
+        if not trovata_in_pdf:
+            finali_filtrate.append(d)
 
     with open(output_txt_path, 'w', encoding='utf-8') as f:
         for d in finali_filtrate:
@@ -93,9 +103,9 @@ def confronto_completo(txt_path, json_path, pdf_path, output_txt_path):
 # -----------------------
 if __name__ == "__main__":
     # 🔧 Inserisci qui i nomi dei file
-    nome_file_txt = "str.txt"
-    nome_file_json = "strategia.json"       # Deve essere in ./quizzes/
-    nome_file_pdf = "soem.pdf"
+    nome_file_txt = "tec.txt"
+    nome_file_json = "tecnologie_web.json"       # Deve essere in ./quizzes/
+    nome_file_pdf = "tecnologie.pdf"
     nome_file_output = "finale_filtrato.txt" # Output finale
 
     percorso_json = os.path.join("quizzes", nome_file_json)

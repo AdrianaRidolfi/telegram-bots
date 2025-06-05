@@ -1366,5 +1366,137 @@
         "correct_answer": "paragrafo modificato",
         "image": "tec1.jpg",
         "id": "fa7d35c4-92cc-406e-9b65-1874b00a09e5"
+    },
+    {
+        "question": "Qual è il vantaggio principale dei cookie di tipo HttpOnly:",
+        "answers": [
+            "Proteggono i cookie da accessi non autorizzati via script lato client",
+            "Permettono ai cookie di essere condivisi tra diversi domini",
+            "Consentono di estendere la durata dei cookie oltre la sessione",
+            "Abilitano l'accesso ai cookie tramite JavaScript"
+        ],
+        "correct_answer": "Proteggono i cookie da accessi non autorizzati via script lato client",
+        "id": "6e0bf9d6-7398-4f41-81f9-1d2f1e67a234"
+    },
+    {
+        "question": "A cosa serve `z-index` in CSS:",
+        "answers": [
+            "Definire l'ordine di sovrapposizione tra elementi",
+            "Impostare la dimensione di un elemento",
+            "Specificare il colore di sfondo di un elemento",
+            "Controllare il margine tra gli elementi"
+        ],
+        "correct_answer": "Definire l'ordine di sovrapposizione tra elementi",
+        "id": "f713bc82-6842-46cd-b5ce-cb1c2f063d6f"
+    },
+    {
+        "question": "Cosa accade se si imposta `box-sizing: border-box` su un elemento:",
+        "answers": [
+            "La larghezza include padding e bordo",
+            "La larghezza esclude padding e bordo",
+            "Il padding viene ignorato nel calcolo della larghezza",
+            "Il bordo viene aggiunto esternamente alla larghezza"
+        ],
+        "correct_answer": "La larghezza include padding e bordo",
+        "id": "b3b3b3ed-9c7f-4b84-8d45-8e22fa8d3241"
+    },
+    {
+        "question": "Che cos'è JSON:",
+        "answers": [
+            "Un formato per lo scambio di dati",
+            "Un linguaggio di programmazione",
+            "Un database relazionale",
+            "Un framework per lo sviluppo web"
+        ],
+        "correct_answer": "Un formato per lo scambio di dati",
+        "id": "392ede76-973a-4a72-9c6b-02bf76b5d9d4"
+    },
+    {
+        "question": "Quale classe viene utilizzata per creare una colonna che occupa 6 colonne virtuali su schermi medi:",
+        "answers": [
+            "col-md-6",
+            "col-lg-6",
+            "col-sm-6",
+            "col-xs-6"
+        ],
+        "correct_answer": "col-md-6",
+        "id": "c8f41cc1-2f44-4c14-b8e0-0bb3e9ef84e2"
+    },
+    {
+        "question": "Una Promise:",
+        "answers": [
+            "rappresenta un'operazione asincrona che potrebbe non essere ancora completata e ci consente di gestire il risultato dell'operazione una volta che è disponibile",
+            "è una funzione sincrona che blocca il thread principale",
+            "è un tipo di variabile che memorizza valori numerici",
+            "è un metodo per gestire dati in formato JSON"
+        ],
+        "correct_answer": "rappresenta un'operazione asincrona che potrebbe non essere ancora completata e ci consente di gestire il risultato dell'operazione una volta che è disponibile",
+        "id": "9d7ab2f9-bc6e-4bd5-82a4-09fdbb0173a3"
+    },
+    {
+        "question": "Quale attributo di un campo input obbliga l'utente a compilare il campo prima dell'invio:",
+        "answers": [
+            "required",
+            "readonly",
+            "disabled",
+            "placeholder"
+        ],
+        "correct_answer": "required",
+        "id": "aaf7fda0-87a1-4a2d-96f4-3a2d69f5766e"
+    },
+    {
+        "question": "La caratteristica principale di Flexbox è:",
+        "answers": [
+            "consentire la definizione di un sistema di assi (uno orizzontale e uno verticale) e di una serie di proprietà che permettono di definire come gli elementi all'interno di un contenitore debbano essere posizionati e distribuiti lungo questi assi",
+            "definire la dimensione fissa degli elementi in una griglia",
+            "gestire esclusivamente il posizionamento verticale degli elementi",
+            "sostituire completamente l'uso di CSS Grid"
+        ],
+        "correct_answer": "consentire la definizione di un sistema di assi (uno orizzontale e uno verticale) e di una serie di proprietà che permettono di definire come gli elementi all'interno di un contenitore debbano essere posizionati e distribuiti lungo questi assi",
+        "id": "7d42d77a-1d42-42a6-8329-9282a7283d05"
+    },
+    {
+        "question": "Una chiamata sincrona:",
+        "answers": [
+            "è un tipo di chiamata in cui il thread principale di esecuzione del programma viene bloccato fino a quando la chiamata non viene completata",
+            "è un tipo di chiamata che non blocca mai il thread principale",
+            "è un metodo per eseguire codice in background",
+            "è una chiamata che avviene solo in ambiente client"
+        ],
+        "correct_answer": "è un tipo di chiamata in cui il thread principale di esecuzione del programma viene bloccato fino a quando la chiamata non viene completata",
+        "id": "b5ef0a37-e7d0-47b0-bc06-5b5d4b7f54bb"
+    },
+    {
+        "question": "Usando l'elemento input con il type=\"password\" si ha la possibilità di creare un campo che permette l'inserimento di dati riservati. Inoltre:",
+        "answers": [
+            "questo non ha implicazioni con la sicurezza del trasferimento dei dati: è solo una protezione sullo schermo che il browser può attuare",
+            "il campo crittografa automaticamente i dati prima dell'invio",
+            "il campo blocca l'accesso ai dati tramite JavaScript",
+            "il campo nasconde il contenuto anche nel codice sorgente della pagina"
+        ],
+        "correct_answer": "questo non ha implicazioni con la sicurezza del trasferimento dei dati: è solo una protezione sullo schermo che il browser può attuare",
+        "id": "af97877c-8e30-4e6e-a346-74a1b4f09a6b"
+    },
+    {
+        "question": "Una chiamata asincrona:",
+        "answers": [
+            "è un tipo di chiamata in cui il thread principale di esecuzione del programma non viene bloccato durante l'esecuzione della chiamata",
+            "è una chiamata che blocca l'interfaccia utente fino al completamento",
+            "è un metodo per inviare dati senza risposta",
+            "è un tipo di chiamata che viene eseguita solo su server remoti"
+        ],
+        "correct_answer": "è un tipo di chiamata in cui il thread principale di esecuzione del programma non viene bloccato durante l'esecuzione della chiamata",
+        "id": "32a59e7a-0a32-4d3d-9b20-b2330c0a6b7e"
+    },
+    {
+        "question": "Quale attributo del tag <form> specifica il metodo di invio dei dati:",
+        "answers": [
+            "method",
+            "action",
+            "enctype",
+            "name"
+        ],
+        "correct_answer": "method",
+        "id": "471a446e-437e-4c0a-9ae5-43fa75e7a76f"
     }
 ]
