@@ -526,7 +526,16 @@ async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
         perc = round((data["correct"] / data["total"]) * 100, 2)
         msg += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
 
-    await context.bot.send_message(chat_id=user_id, text=msg)
+    keyboard = []
+    
+    keyboard.append([
+        InlineKeyboardButton("📚 Scegli materia", callback_data="change_course"),
+        InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
+        ])
+    
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
+    await context.bot.send_message(chat_id=user_id, text=msg, reply_markup=reply_markup)
 
 
 async def reset_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
