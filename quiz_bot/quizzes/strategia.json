@@ -44,7 +44,7 @@
     "id": "b78099bc-07bb-4b9d-a1b1-7e9646796150"
   },
   {
-    "question": "Qual è la definizione di adattamento reciproco?",
+    "question": "L'adattamento reciproco come meccanismo di coordinamento è efficace perché:",
     "answers": [
       "Consente agli operatori di risolvere autonomamente i problemi tramite interazione diretta",
       "Richiede una supervisione costante",
@@ -209,7 +209,7 @@
     "id": "a3428054-78ca-4fc8-9d64-7f77f1c349ed"
   },
   {
-    "question": "Le interdipendenze tra attività possono essere di natura:",
+    "question": "Le interdipendenze tra le attività di un processo aziendale possono essere di natura:",
     "answers": [
       "Sequenziale, reciproca, legata a spazio/tempo o alle risorse",
       "Soltanto sequenziali, reciproche e legate alle risorse",
@@ -308,7 +308,7 @@
     "id": "22b35457-4ecb-42ba-8be5-43f25675b188"
   },
   {
-    "question": "Gli organi di staff hanno il compito di:",
+    "question": "Gli organi di staff in un'organizzazione hanno il compito di:",
     "answers": [
       "Prendere decisioni strategiche per i reparti di produzione",
       "Supportare gli organi di linea senza partecipare direttamente al core business",
@@ -649,7 +649,7 @@
     "id": "cad5926d-89ee-45f4-8de1-eb47c3914806"
   },
   {
-    "question": "Uno svantaggio comune delle strutture divisionali:",
+    "question": "Uno svantaggio comune delle strutture divisionali è:",
     "answers": [
       "Una limitata capacità di adattamento ai cambiamenti del mercato",
       "Una minore autonomia decisionale delle business unit",
@@ -737,7 +737,7 @@
     "id": "cd01aec6-0149-4ed6-932e-659b1014a7bd"
   },
   {
-    "question": "Il valore percepito dall'output di un processo aziendale implica una valutazione in termini di:",
+    "question": "Il valore percepito dall’output di un processo aziendale implica una valutazione in termini di:",
     "answers": [
       "Prezzo di acquisizione, qualità, velocità di acquisizione e tempo di acquisizione",
       "Durata del prodotto, reputazione del marchio e risorse utilizzate",
@@ -847,7 +847,7 @@
     "id": "75fedf1f-2a6c-4adf-8aa9-ae2a02dd2202"
   },
   {
-    "question": "Ampiezza del controllo è:",
+    "question": "L'ampiezza del controllo rappresenta:",
     "answers": [
       "La quantità di funzioni gestite da un singolo manager",
       "La capacità di un manager di prendere decisioni autonome",
@@ -1078,7 +1078,7 @@
     "id": "8a3dee61-d7a4-4ca3-9070-05a1db3b8f64"
   },
   {
-    "question": "Qual è la differenza tra capacità e competenze?",
+    "question": "La principale differenza tra capacità e competenze risiede in:",
     "answers": [
       "La valenza più innata delle capacità rispetto al ruolo dominante di studio e esperienza nelle competenze",
       "Le capacità sono sempre acquisite tramite corsi formali, mentre le competenze sono innate",
@@ -1122,7 +1122,7 @@
     "id": "3dbd039a-46dc-4c66-880a-bef4dbacb5e9"
   },
   {
-    "question": "Le prestazioni (o performance) dei processi quantificano:",
+    "question": "Le prestazioni dei processi in un'azienda orientata ai processi misurano:",
     "answers": [
       "Il numero di riunioni svolte durante un ciclo produttivo",
       "Il livello di motivazione dei dipendenti indipendentemente dai risultati",
@@ -4915,5 +4915,49 @@
       "si ha un'interazione a distanza"
     ],
     "correct_answer": "si decide di trasferire, temporaneamente, alcuni tecnici di un'azienda presso il partner"
+  },
+    {
+    "id": "3e25e78c-979e-4ff1-82df-925c7b67cbe6",
+    "question": "Nel contesto della gerarchia dei processi aziendali, il Macroprocesso rappresenta:",
+    "answers": [
+      "un insieme di task tattici a breve termine",
+      "una struttura temporanea per progetti strategici",
+      "una macro area di attività coincidente con le funzioni organizzative di alto livello",
+      "una sequenza di operazioni ripetitive a livello operativo"
+    ],
+    "correct_answer": "una macro area di attività coincidente con le funzioni organizzative di alto livello"
+  },
+  {
+    "id": "993c35f5-f631-4483-a6ed-5a1d208364b5",
+    "question": "I criteri di raggruppamento orientati agli input portano ad accorpare le attività in base a:",
+    "answers": [
+      "livelli di soddisfazione del cliente",
+      "mezzi utilizzati, come competenze, tecnologie o metodi di lavoro",
+      "output ottenuti dai processi",
+      "relazioni gerarchiche tra dipartimenti"
+    ],
+    "correct_answer": "mezzi utilizzati, come competenze, tecnologie o metodi di lavoro"
+  },
+  {
+    "id": "4a951aaf-54d7-4a8a-a1a9-0617e0fc6970",
+    "question": "I manager integratori, come i product manager e i project manager, hanno il compito di:",
+    "answers": [
+      "monitorare il rispetto delle ferie dei dipendenti",
+      "coordinare unità organizzative per raggiungere obiettivi specifici",
+      "gestire esclusivamente le risorse finanziarie aziendali",
+      "eseguire operazioni contabili e di bilancio"
+    ],
+    "correct_answer": "coordinare unità organizzative per raggiungere obiettivi specifici"
+  },
+  {
+    "id": "b1e7b8a1-3349-43c8-91b1-1c4e2e46df8a",
+    "question": "un'elevata ampiezza sia di controllo che manageriale",
+    "answers": [
+      "la distanza geografica tra le sedi aziendali",
+      "la rotazione periodica del personale",
+      "il numero di livelli gerarchici e la catena di comando",
+      "l’efficacia del sistema di incentivazione economica"
+    ],
+    "correct_answer": "il numero di livelli gerarchici e la catena di comando"
   }
 ]
