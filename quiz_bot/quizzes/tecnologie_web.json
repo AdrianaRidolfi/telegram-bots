@@ -89,7 +89,7 @@
         "id": "acc7abed-cf16-405c-98fb-25c17164a155"
     },
     {
-        "question": "Cosa indica la seguente immagine riguardo ai cookie?",
+        "question": "La seguente immagine ci indica che:",
         "answers": [
             "sono stati settati 2 cookies",
             "è stato settato un solo cookie",
@@ -755,7 +755,7 @@
         "id": "d78f19b6-964a-4a2d-b5e0-c16edff66f0b"
     },
     {
-        "question": "In JavaScript, come vengono passati i tipi primitivi quando utilizzati come parametri in una funzione? (domanda inventata)",
+        "question": "Gli argomenti di una funzione in Javascript sono passati:",
         "answers": [
             "Per valore",
             "Come array",
@@ -1498,5 +1498,126 @@
         ],
         "correct_answer": "method",
         "id": "471a446e-437e-4c0a-9ae5-43fa75e7a76f"
-    }
+    },
+    {
+    "question": "Quale tipo di autenticazione è più adatto per sistemi distribuiti e con accesso da applicazioni terze parti:",
+    "answers": [
+        "Basic Auth",
+        "JWT senza OAuth",
+        "Session ID",
+        "OAuth2"
+    ],
+    "correct_answer": "OAuth2",
+    "id": "0f3c0dc6-0c6a-4210-9cb3-9f4eaf5de3ee"
+},
+    {
+    "question": "Quale proprietà si usa per evitare che un elemento venga affiancato a un altro con float:",
+    "answers": [
+        "reset",
+        "block",
+        "avoid",
+        "clear"
+    ],
+    "correct_answer": "clear",
+    "id": "be0a8df1-2b41-49c0-9d9f-90d0f45b981a"
+},
+    {
+    "question": "Quale attributo della form HTML specifica il tipo di codifica usata per trasmettere i dati:",
+    "answers": [
+        "encoding",
+        "content-type",
+        "charset",
+        "enctype"
+    ],
+    "correct_answer": "enctype",
+    "id": "4c0d9a39-1cde-4b5c-84d9-6ebef634a7f7"
+},
+    {
+    "question": "Quale tra questi è un tipo valido per l'attributo 'type' di un input HTML:",
+    "answers": [
+        "message",
+        "contact",
+        "mailbox",
+        "email"
+    ],
+    "correct_answer": "email",
+    "id": "8e1743dc-4371-44d5-87b2-8826b1d77920"
+},
+    {
+    "question": "Quale tipo di dato NON è valido in JSON:",
+    "answers": [
+        "stringa",
+        "booleano",
+        "numero",
+        "funzione"
+    ],
+    "correct_answer": "funzione",
+    "id": "e24e7de1-bf2f-4f42-8494-1a6cf6d3b41d"
+},
+    {
+    "question": "Quale metodo consente di modificare il contenuto HTML di un elemento:",
+    "answers": [
+        "setHTML",
+        "changeContent",
+        "updateDOM",
+        "innerHTML"
+    ],
+    "correct_answer": "innerHTML",
+    "id": "b1f43d2e-3a38-47c0-a0d5-6c88459e2a1f"
+},
+{
+    "question": "Qual è il tag principale che racchiude l'intero documento HTML:",
+    "answers": [
+        "<head>",
+        "<body>",
+        "<main>",
+        "<html>"
+    ],
+    "correct_answer": "<html>",
+    "id": "3f8d8a62-cb5c-47f4-85f1-8d0db2c4e2d4"
+},
+    {
+    "question": "Nella seguente immagine, quale livello è stato depennato?",
+    "answers": [
+        "Presentation",
+        "Transport",
+        "Network",
+        "Session"
+    ],
+    "correct_answer": "Session",
+    "id": "a1d2c3e4-f567-4890-b123-75d45a9b6c8f"
+},
+    {
+    "question": "Quale metodo viene usato nei middleware per passare al middleware successivo:",
+    "answers": [
+        "forward()",
+        "continue()",
+        "proceed()",
+        "next()"
+    ],
+    "correct_answer": "next()",
+    "id": "9e3f75c2-6b90-4cf0-8e4d-7a4f5f3d2e91"
+},
+    {
+    "question": "Quale libreria Node.js semplifica l’uso dei WebSocket con fallback automatici:",
+    "answers": [
+        "ws",
+        "SockJS",
+        "Engine.IO",
+        "Socket.IO"
+    ],
+    "correct_answer": "Socket.IO",
+    "id": "57a8f4c9-3d21-4e98-bf47-2b8ce1d5e9a3"
+},
+{
+    "question": "Il numero di livelli in un sistema di comunicazione:",
+    "answers": [
+        "è sempre 7",
+        "è sempre 4",
+        "è sempre 3",
+        "è variabile"
+    ],
+    "correct_answer": "è variabile",
+    "id": "d7f5c9a8-1e32-4d6e-9a2a-0a5e7f9b3b4c"
+}
 ]
