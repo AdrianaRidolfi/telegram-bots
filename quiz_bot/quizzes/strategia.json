@@ -11,7 +11,7 @@
     "id": "898609fc-601b-4eb7-b821-451f2cacf139"
   },
   {
-    "question": "I bisogni di appartenenza secondo Maslow riflettono il bisogno di:",
+    "question": "I bisogni di appartenenza, secondo Maslow, riflettono il bisogno di:",
     "answers": [
       "Ottenere riconoscimenti economici e premi di produzione",
       "Essere amati, compresi e sentirsi parte di un gruppo sociale",
@@ -132,7 +132,7 @@
     "id": "ef65317a-b1b0-4d17-86dd-1334e84c0a74"
   },
   {
-    "question": "Qual è la mansione della figura di collegamento?",
+    "question": I ruoli di collegamento nelle imprese sono utilizzati per:",
     "answers": [
       "Facilitare il coordinamento orizzontale tra due unità organizzative",
       "Gestire le risorse finanziarie",
@@ -594,7 +594,7 @@
     "id": "41675307-c257-4ad0-9ebc-6dc1e4f27ac7"
   },
   {
-    "question": "La destinazione tra organi di linea e di staff può risultare complessa quando:",
+    "question": "La distinzione tra organi di linea e di staff può risultare complessa quando:",
     "answers": [
       "Il vertice strategico si occupa di attività operative quotidiane",
       "All'interno della stessa unità sono presenti sia posizioni di linea che di staff",
@@ -803,7 +803,7 @@
     "id": "558445fc-a5b4-4b30-95d8-9e0af322648c"
   },
   {
-    "question": "La progettazione organizzativa nella microstruttura consiste nel:",
+    "question": "La progettazione organizzativa della microstruttura si occupa principalmente di:",
     "answers": [
       "Creare politiche di gestione delle risorse umane a livello strategico",
       "Stabilire la missione e la visione aziendale per le unità organizzative",
@@ -913,7 +913,7 @@
     "id": "18c4eac9-2f1b-4608-81c9-1d1c51e3807f"
   },
   {
-    "question": "La prospettiva sociologica esplora ed interpreta:",
+    "question": "La prospettiva sociologica nell’analisi dell’organizzazione si focalizza su:",
     "answers": [
       "Le performance finanziarie dell'impresa in relazione al mercato azionario",
       "I modelli computazionali per l'ottimizzazione della logistica",
@@ -924,7 +924,7 @@
     "id": "92129535-3361-4def-9159-657ee47fbe4b"
   },
   {
-    "question": "Una delle forze che si oppone alla crescita organizzativa è:",
+    "question": "Il motivo per cui alcune piccole imprese scelgono di non espandersi è:",
     "answers": [
       "La volontà di concentrarsi su un solo prodotto",
       "La paura di perdere la flessibilità e il controllo aziendale",
@@ -4959,5 +4959,337 @@
       "l’efficacia del sistema di incentivazione economica"
     ],
     "correct_answer": "il numero di livelli gerarchici e la catena di comando"
+  },
+  [
+  {
+    "question": "Lo scopo principale della Balanced Scorecard è quello di:",
+    "answers": [
+      "Misurare il livello di soddisfazione dei dipendenti",
+      "Misurare e migliorare le performance aziendali",
+      "Valutare la conformità normativa",
+      "Prevedere l'andamento dei mercati finanziari"
+    ],
+    "correct_answer": "Misurare e migliorare le performance aziendali",
+    "id": "e2f0d9c1-4b3a-4e8f-9a1b-7c5d6e2f0d9c"
+  },
+  {
+    "question": "Secondo il modello del \"garbage can\" (cestino dei rifiuti) applicato ai processi decisionali, i quattro elementi che confluiscono nel \"cestino\" sono:",
+    "answers": [
+      "Obiettivi, risorse, strategie e tattiche",
+      "Regole, procedure, gerarchie e ruoli",
+      "Problemi, potenziali soluzioni, partecipanti e opportunità di scelta",
+      "Vincoli, opportunità, rischi e benefici"
+    ],
+    "correct_answer": "Problemi, potenziali soluzioni, partecipanti e opportunità di scelta",
+    "id": "f8a7c2b0-1d6e-4f9c-8e3d-5a2b1c0d9e7f"
+  },
+  {
+    "question": "Quando un supervisore ha molte posizioni simili sotto la sua gestione, l'unità organizzativa avrà:",
+    "answers": [
+      "Una scarsa ampiezza di controllo ma un'ampia ampiezza manageriale",
+      "Un'ampia ampiezza di controllo e un'ampia ampiezza manageriale",
+      "Un'ampia ampiezza di controllo ma scarsa ampiezza manageriale",
+      "Una scarsa ampiezza di controllo e una scarsa ampiezza manageriale"
+    ],
+    "correct_answer": "un'ampia ampiezza di controllo ma scarsa ampiezza manageriale",
+    "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d"
+  },
+  {
+    "question": "I servizi professionali:",
+    "answers": [
+      "Sono idealmente posizionabili in alto a destra nella matrice prodotto-processo",
+      "Sono idealmente posizionabili in basso a sinistra nella matrice prodotto-processo",
+      "Sono idealmente posizionabili in alto a sinistra nella matrice prodotto-processo",
+      "Sono idealmente posizionabili in basso a destra nella matrice prodotto-processo"
+    ],
+    "correct_answer": "Sono idealmente posizionabili in alto a sinistra nella matrice prodotto-processo",
+    "id": "d0e1f2g3-h4i5-j6k7-l8m9-n0o1p2q3r4s5"
+  },
+  {
+    "question": "L'economia circolare è un modello economico pensato per:",
+    "answers": [
+      "Incrementare la produzione di massa",
+      "Ridurre al minimo gli sprechi e l'uso delle risorse",
+      "Massimizzare il consumo di risorse naturali",
+      "Promuovere il commercio internazionale"
+    ],
+    "correct_answer": "Ridurre al minimo gli sprechi e l'uso delle risorse",
+    "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6e"
+  },
+  {
+    "question": "Secondo Porter, la concorrenza tra imprese esistenti è influenzata da:",
+    "answers": [
+      "Il potere contrattuale dei fornitori",
+      "La minaccia di nuovi entranti",
+      "Il numero e la forza dei concorrenti già presenti nel settore",
+      "Il potere contrattuale degli acquirenti"
+    ],
+    "correct_answer": "Il numero e la forza dei concorrenti già presenti nel settore",
+    "id": "6f7e8d9c-0b1a-2d3e-4f5g-6h7i8j9k0l1m"
+  },
+  {
+    "question": "Il vantaggio principale della digitalizzazione aziendale è:",
+    "answers": [
+      "Aumentare i costi operativi",
+      "Migliorare l'efficienza operativa",
+      "Diminuire la complessità organizzativa",
+      "Rendere obsoleti i processi tradizionali"
+    ],
+    "correct_answer": "Migliorare l'efficienza operativa",
+    "id": "b2a1c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p"
+  },
+  {
+    "question": "La progettazione organizzativa della microstruttura consiste:",
+    "answers": [
+      "Nel definire gli obiettivi strategici aziendali",
+      "Nell'identificare i mercati di riferimento",
+      "Nel definire il complesso di compiti e di mansioni che ogni persona deve svolgere e le relazioni gerarchiche tra esse",
+      "Nell'analizzare il contesto macroeconomico"
+    ],
+    "correct_answer": "Nel definire il complesso di compiti e di mansioni che ogni persona deve svolgere e le relazioni gerarchiche tra esse",
+    "id": "c9b8a7d6-e5f4-3g2h-1i0j-k9l8m7n6o5p4"
+  },
+  {
+    "question": "Lo scopo del Business Process Reengineering (BPR) è quello di:",
+    "answers": [
+      "Mantenere i processi aziendali esistenti",
+      "Riprogettare radicalmente i processi aziendali",
+      "Implementare piccoli miglioramenti incrementali",
+      "Automatizzare i processi attuali"
+    ],
+    "correct_answer": "Riprogettare radicalmente i processi aziendali",
+    "id": "e6f5d4c3-b2a1-0i9j-8h7g-6f5e4d3c2b1a"
+  },
+  {
+    "question": "L'andamento dei costi totali di un processo, intesi come somma dei costi d'esecuzione e di quelli di coordinamento, può essere descritto come:",
+    "answers": [
+      "Una funzione lineare crescente",
+      "Una funzione con andamento a \"U\"",
+      "Una funzione esponenziale",
+      "Una funzione con andamento a \"S\""
+    ],
+    "correct_answer": "Una funzione con andamento a \"U\"",
+    "id": "a9b8c7d6-e5f4-3g2h-1i0j-k9l8m7n6o5p3"
+  },
+  {
+    "question": "Un vantaggio chiave del progetto Team-based Organization (TBO) implementato da Heineken Italia è:",
+    "answers": [
+      "L'aumento del numero di livelli gerarchici",
+      "La centralizzazione del potere decisionale",
+      "La riduzione del numero di livelli gerarchici",
+      "L'incremento delle barriere tra le funzioni"
+    ],
+    "correct_answer": "La riduzione del numero di livelli gerarchici",
+    "id": "1f2e3d4c-5b6a-7c8d-9e0f-1a2b3c4d5e6f"
+  },
+  {
+    "question": "Il principale svantaggio di una struttura organizzativa di tipo funzionale è:",
+    "answers": [
+      "Mancanza di focus su specifici prodotti, clienti, mercati, con conseguente bassa velocità di risposta a domande variegate",
+      "La difficoltà di raggiungere economie di scala",
+      "L'eccessiva flessibilità dei processi",
+      "La scarsa specializzazione delle competenze"
+    ],
+    "correct_answer": "Mancanza di focus su specifici prodotti, clienti, mercati, con conseguente bassa velocità di risposta a domande variegate",
+    "id": "2g3h4i5j-6k7l-8m9n-0o1p-2q3r4s5t6u7v"
+  },
+  {
+    "question": "Per adattamento reciproco si intende:",
+    "answers": [
+      "La standardizzazione dei processi produttivi",
+      "L'implementazione di rigide procedure operative",
+      "La centralizzazione delle decisioni aziendali",
+      "La comunicazione diretta tra le persone coinvolte per risolvere imprevisti e problemi"
+    ],
+    "correct_answer": "La comunicazione diretta tra le persone coinvolte per risolvere imprevisti e problemi",
+    "id": "3w4x5y6z-7a8b-9c0d-1e2f-3g4h5i6j7k8l"
+  },
+  {
+    "question": "Nella fase di introduzione del ciclo di vita di un prodotto, l'obiettivo principale del marketing è quello di:",
+    "answers": [
+      "Massimizzare i profitti",
+      "Ridurre i costi di produzione",
+      "Far conoscere il nuovo prodotto al mercato e spingere i potenziali clienti alla prova o al primo acquisto",
+      "Incrementare la fedeltà dei clienti esistenti"
+    ],
+    "correct_answer": "Far conoscere il nuovo prodotto al mercato e spingere i potenziali clienti alla prova o al primo acquisto",
+    "id": "4m5n6o7p-8q9r-0s1t-2u3v-4w5x6y7z8a9b"
+  },
+  {
+    "question": "Una caratteristica della negoziazione competitiva è:",
+    "answers": [
+      "La ricerca di soluzioni win-win",
+      "La collaborazione tra le parti",
+      "Lo sfruttamento del potere contrattuale",
+      "La costruzione di relazioni a lungo termine"
+    ],
+    "correct_answer": "lo sfruttamento del potere contrattuale",
+    "id": "5c6d7e8f-9g0h-1i2j-3k4l-5m6n7o8p9q0r"
+  },
+  {
+    "question": "Il principio guida del Six Sigma è:",
+    "answers": [
+      "Aumentare la complessità dei processi",
+      "Accelerare i tempi di produzione",
+      "Ridurre la varriabilità dei processi",
+      "Incrementare il numero di difetti"
+    ],
+    "correct_answer": "Ridurre la varriabilità dei processi",
+    "id": "6s7t8u9v-0w1x-2y3z-4a5b-6c7d8e9f0g1h"
+  },
+  {
+    "question": "Il rischio aziendale viene correttamente gestito:",
+    "answers": [
+      "Ignorando le potenziali minacce",
+      "Aumentando l'esposizione al pericolo",
+      "Identificando, analizzando e mitigando i rischi",
+      "Concentrandosi solo sulle opportunità"
+    ],
+    "correct_answer": "Identificando, analizzando e mitigando i rischi",
+    "id": "7i8j9k0l-1m2n-3o4p-5q6r-7s8t9u0v1w2x"
+  },
+  {
+    "question": "L'obiettivo della Resource-Based View è quello di:",
+    "answers": [
+      "Analizzare le strategie dei concorrenti",
+      "Identificare e sfruttare le risorse e le capacità interne di un'azienda",
+      "Valutare le opportunità di mercato esterne",
+      "Minimizzare i costi di produzione"
+    ],
+    "correct_answer": "Identificare e sfruttare le risorse e le capacità interne di un'azienda",
+    "id": "8y9z0a1b-2c3d-4e5f-6g7h-8i9j0k1l2m3n"
+  },
+  {
+    "question": "Le componenti operative della quota di mercato che spiegano la composizione dei volumi di vendita sono:",
+    "answers": [
+      "Prezzo, promozione, posizionamento",
+      "Introduzione, copertura, selettività",
+      "Ricerca, sviluppo, produzione",
+      "Finanza, contabilità, marketing"
+    ],
+    "correct_answer": "Introduzione, copertura, selettività",
+    "id": "9o0p1q2r-3s4t-5u6v-7w8x-9y0z1a2b3c4d"
+  },
+  {
+    "question": "Il concetto di \"job enrichment\" nelle leve organizzative per la gestione dei processi implica:",
+    "answers": [
+      "La riduzione delle responsabilità individuali",
+      "L'attribuzione di responsabilità e mansioni gestionali a chi opera nei processi",
+      "La standardizzazione dei compiti",
+      "L'eliminazione delle mansioni complesse"
+    ],
+    "correct_answer": "L'attribuzione di responsabilità e mansioni gestionali a chi opera nei processi",
+    "id": "0e1f2g3h-4i5j-6k7l-8m9n-0o1p2q3r4s5t"
+  },
+  {
+    "question": "All'aumentare della dimensione dell'impresa, la specializzazione orizzontale:",
+    "answers": [
+      "Diminuisce",
+      "Rimane invariata",
+      "Aumenta",
+      "Dipende dal settore di attività"
+    ],
+    "correct_answer": "Aumenta",
+    "id": "1u2v3w4x-5y6z-7a8b-9c0d-1e2f3g4h5i6j"
+  },
+  {
+    "question": "Le teorie dei processi decisionali spiegano:",
+    "answers": [
+      "Come le organizzazioni gestiscono le risorse finanziarie",
+      "Come le persone, le unità organizzative e le organizzazioni intere prendono le decisioni, individuando alternative e selezionandone una in presenza di risorse scarse e incertezza",
+      "Come si sviluppano le strategie di marketing",
+      "Come si misura l'efficienza produttiva"
+    ],
+    "correct_answer": "Come le persone, le unità organizzative e le organizzazioni intere prendono le decisioni, individuando alternative e selezionandone una in presenza di risorse scarse e incertezza",
+    "id": "2k3l4m5n-6o7p-8q9r-0s1t-2u3v4w5x6y7z"
+  },
+  {
+    "question": "In un sistema organizzativo meccanico:",
+    "answers": [
+      "L'adattamento reciproco è il meccanismo di coordinamento principale",
+      "La standardizzazione dei processi e, in secondo luogo, la supervisione diretta sono i meccanismi di coordinamento principali",
+      "La decentralizzazione del potere è la norma",
+      "La comunicazione informale è predominante"
+    ],
+    "correct_answer": "La standardizzazione dei processi e, in secondo luogo, la supervisione diretta sono i meccanismi di coordinamento principali",
+    "id": "3a4b5c6d-7e8f-9g0h-1i2j-3k4l5m6n7o8p"
+  },
+  {
+    "question": "Uno dei principali punti di forza delle strutture funzionali è:",
+    "answers": [
+      "La flessibilità elevata",
+      "La possibilità di raggiungere economie di scala e di consentire lo sviluppo di conoscenze e capacità specialistiche",
+      "La velocità di risposta ai cambiamenti di mercato",
+      "La focalizzazione su specifici prodotti"
+    ],
+    "correct_answer": "La possibilità di raggiungere economie di scala e di consentire lo sviluppo di conoscenze e capacità specialistiche",
+    "id": "4q5r6s7t-8u9v-0w1x-2y3z-4a5b6c7d8e9f"
+  },
+  {
+    "question": "La differenza principale tra efficienza ed efficacia di un processo è che:",
+    "answers": [
+      "L'efficienza riguarda il raggiungimento degli obiettivi, mentre l'efficacia l'ottimizzazione delle risorse",
+      "L'efficienza si riferisce alla qualità del prodotto, mentre l'efficacia al costo",
+      "L'efficienza riguarda l'ottimizzazione delle risorse, mentre l'efficacia si riferisce al raggiungimento degli obiettivi del processo",
+      "Non c'è differenza tra efficienza ed efficacia"
+    ],
+    "correct_answer": "l’efficienza riguarda l’ottimizzazione delle risorse, mentre l’efficacia si riferisce al raggiungimento degli obiettivi del processo",
+    "id": "5g6h7i8j-9k0l-1m2n-3o4p-5q6r7s8t9u0v"
+  },
+  {
+    "question": "Il punto di break-even è:",
+    "answers": [
+      "Quello in cui i ricavi sono massimizzati",
+      "Quello in cui i costi fissi sono minimizzati",
+      "Quello in cui i ricavi eguagliano i costi fissi e variabili",
+      "Quello in cui si raggiunge la massima produzione"
+    ],
+    "correct_answer": "quello in cui i ricavi eguagliano i costi fissi e variabili",
+    "id": "6w7x8y9z-0a1b-2c3d-4e5f-6g7h8i9j0k1l"
+  },
+  {
+    "question": "Secondo la prospettiva politica, le organizzazioni aiutano a:",
+    "answers": [
+      "Eliminare ogni forma di conflitto",
+      "Ignorare le differenze individuali",
+      "Canalizzare i conflitti e consentire l’esercizio del potere",
+      "Promuovere l'omogeneità dei comportamenti"
+    ],
+    "correct_answer": "canalizzare i conflitti e consentire l’esercizio del potere",
+    "id": "7m8n9o0p-1q2r-3s4t-5u6v-7w8x9y0z1a2b"
+  },
+  {
+    "question": "La struttura divisionale è stata adottata inizialmente per rispondere a:",
+    "answers": [
+      "Eccessiva standardizzazione dei processi",
+      "Difficoltà di coordinamento e controllo nei business diversificati",
+      "Mancanza di gerarchia",
+      "Eccessiva specializzazione funzionale"
+    ],
+    "correct_answer": "difficoltà di coordinamento e controllo nei business diversificati",
+    "id": "8c9d0e1f-2g3h-4i5j-6k7l-8m9n0o1p2q3r"
+  },
+  {
+    "question": "I bisogni di sicurezza, secondo Maslow, includono la necessità di:",
+    "answers": [
+      "Realizzazione personale",
+      "Appartenenza sociale",
+      "Protezione da pericoli e minacce, conoscenza dell’ambiente",
+      "Autostima e riconoscimento"
+    ],
+    "correct_answer": "protezione da pericoli e minacce, conoscenza dell’ambiente",
+    "id": "9s0t1u2v-3w4x-5y6z-7a8b-9c0d1e2f3g4h"
+  },
+  {
+    "question": "La standardizzazione dei processi diventa inefficace quando:",
+    "answers": [
+      "L'ambiente esterno è stabile e prevedibile",
+      "L'ambiente esterno è caratterizzato da turbolenza e imprevedibilità",
+      "La tecnologia è consolidata",
+      "I dipendenti sono altamente specializzati"
+    ],
+    "correct_answer": "l’ambiente esterno è caratterizzato da turbolenza e imprevedibilità",
+    "id": "0i1j2k3l-4m5n-6o7p-8q9r-0s1t2u3v4w5x"
   }
+]
 ]
