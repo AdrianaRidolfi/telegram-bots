@@ -84,8 +84,8 @@ def confronto_completo(txt_path, json_path, pdf_path, output_txt_path):
     # Rimuovo dal risultato finale le risposte trovate in qualche riga del PDF (controllo riga per riga)
     finali_filtrate = []
     for d in finali:
-        risposta_norm = normalizza_confronto(d['correct'])
-        trovata_in_pdf = any(risposta_norm in riga_pdf for riga_pdf in righe_pdf)
+        domanda_norm = normalizza_confronto(d['question'])
+        trovata_in_pdf = any(domanda_norm in riga_pdf for riga_pdf in righe_pdf)
         if not trovata_in_pdf:
             finali_filtrate.append(d)
 
