@@ -195,9 +195,10 @@ async def send_next_question(user_id, context):
     state["quiz"][q_index]["_shuffled_answers"] = new_answers
     state["quiz"][q_index]["_correct_index"] = new_correct_index
 
-    question_text = f"{state['index'] + 1}. {question_data.get('question', 'Domanda mancante')}\n\n"
+    question_text = f"*{state['index'] + 1}. {question_data.get('question', 'Domanda mancante')}*\n\n"
     for i, opt in enumerate(new_answers):
-        question_text += f"{chr(65+i)}. {opt}\n"
+        question_text += f"*{chr(65+i)}.* {opt}\n"
+
 
     keyboard = [
         [InlineKeyboardButton(chr(65 + i), callback_data=f"answer:{i}") for i in range(len(new_answers))]
@@ -219,7 +220,8 @@ async def send_next_question(user_id, context):
                         chat_id=user_id,
                         photo=image_file,
                         caption=question_text,
-                        reply_markup=reply_markup
+                        reply_markup=reply_markup,
+                        parse_mode='Markdown'
                     )
                 return 
             except Exception as e:
@@ -229,7 +231,8 @@ async def send_next_question(user_id, context):
     await context.bot.send_message(
         chat_id=user_id,
         text=question_text,
-        reply_markup=reply_markup
+        reply_markup=reply_markup,
+        parse_mode='Markdown'
     )
 
 
