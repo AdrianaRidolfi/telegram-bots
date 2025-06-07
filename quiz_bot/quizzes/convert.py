@@ -2,7 +2,6 @@ import json
 import urllib.parse
 import re
 import os
-from bs4 import BeautifulSoup
 import uuid
 import xml.etree.ElementTree as ET
 from pathlib import Path
