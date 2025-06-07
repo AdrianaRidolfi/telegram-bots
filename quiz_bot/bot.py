@@ -235,7 +235,7 @@ async def send_next_question(user_id, context):
                         photo=image_file,
                         caption=question_text,
                         reply_markup=reply_markup,
-                        parse_mode='MarkdownV2'
+                        parse_mode='Markdown'
                     )
                 return 
             except Exception as e:
@@ -246,7 +246,7 @@ async def send_next_question(user_id, context):
         chat_id=user_id,
         text=question_text,
         reply_markup=reply_markup,
-        parse_mode='MarkdownV2'
+        parse_mode='Markdown'
     )
 
 
