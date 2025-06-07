@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import random
 import firebase_admin
@@ -160,6 +161,16 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await send_next_question(user_id, context)
 
 
+async def error_handler(update, context):
+    print(f"[ERROR] Exception while handling an update: {context.error}")
+
+
+def escape_markdown(text: str) -> str:
+    if not text:
+        return ""
+    escape_chars = r"_*[]()~`>#+-=|{}.!\\"
+    return re.sub(rf"([{re.escape(escape_chars)}])", r"\\\1", text)
+
 async def send_next_question(user_id, context):
     state = user_states.get(user_id)
     if not state:
@@ -195,9 +206,10 @@ async def send_next_question(user_id, context):
     state["quiz"][q_index]["_shuffled_answers"] = new_answers
     state["quiz"][q_index]["_correct_index"] = new_correct_index
 
-    question_text = f"*{state['index'] + 1}. {question_data.get('question', 'Domanda mancante')}*\n\n"
+    question_text = f"*{state['index'] + 1}. {escape_markdown(question_data.get('question', 'Domanda mancante'))}*\n\n"
     for i, opt in enumerate(new_answers):
-        question_text += f"*{chr(65+i)}.* {opt}\n"
+        question_text += f"*{chr(65+i)}.* {escape_markdown(opt)}\n"
+
 
 
     keyboard = [
@@ -221,7 +233,7 @@ async def send_next_question(user_id, context):
                         photo=image_file,
                         caption=question_text,
                         reply_markup=reply_markup,
-                        parse_mode='Markdown'
+                        parse_mode='MarkdownV2'
                     )
                 return 
             except Exception as e:
@@ -232,7 +244,7 @@ async def send_next_question(user_id, context):
         chat_id=user_id,
         text=question_text,
         reply_markup=reply_markup,
-        parse_mode='Markdown'
+        parse_mode='MarkdownV2'
     )
 
 
@@ -612,6 +624,7 @@ async def lifespan(app: FastAPI):
     application.add_handler(CommandHandler("stats", stats))
     application.add_handler(CommandHandler("download", download))
     application.add_handler(CallbackQueryHandler(handle_callback))
+    application.add_error_handler(error_handler)
     print("✅ Applicazione Telegram inizializzata con successo.")
     yield
 
