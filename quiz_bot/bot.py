@@ -460,13 +460,16 @@ async def show_mistakes(user_id, subject, context: ContextTypes.DEFAULT_TYPE):
     for entry in wrong_qs:
         q_id = entry["id"]
         counter = entry.get("counter", 1)
+
+        if counter < 3:
+            continue
     
         if q_id in base_by_id:
             question = base_by_id[q_id]
             detailed_entry = {
                 "question": question.get("question"),
                 "correct_answer": question.get("correct_answer"), 
-                "times_wrong": counter
+                "times_wrong": counter // 3
             }
             wrong_answers_detailed.append(detailed_entry)
 
