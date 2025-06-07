@@ -339,6 +339,9 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         selected = int(data.split(":")[1])
         await handle_answer_callback(user_id, selected, context)
 
+    elif data.startswith("show_mistakes_"):
+        subject = data.split("show_mistakes_")[1]
+        await show_mistakes(user_id, subject, context)
 
     elif data == "git":
         await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots")
@@ -444,6 +447,49 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_states.pop(user_id, None)
 
 
+async def show_mistakes(user_id, subject, context: ContextTypes.DEFAULT_TYPE):
+
+    manager = get_manager(user_id)
+    wrong_qs = manager.get_for_subject(subject)
+    base = json.load(open(os.path.join(QUIZ_FOLDER, subject + JSON), encoding="utf-8"))
+    base_by_id = {q["id"]: q for q in base}
+    # Nuovo array che conterrà le domande sbagliate con contatore e risposta giusta
+    wrong_answers_detailed = []
+
+    for entry in wrong_qs:
+        q_id = entry["id"]
+        counter = entry.get("counter", 1)
+    
+    if q_id in base_by_id:
+        question = base_by_id[q_id]
+        detailed_entry = {
+            "question": question.get("question"),
+            "correct_answer": question.get("correct_answer"), 
+            "times_wrong": counter
+        }
+        wrong_answers_detailed.append(detailed_entry)
+
+    if not wrong_answers_detailed:
+        await context.bot.send_message(chat_id=user_id, text="✅ Nessun errore trovato! Ottimo lavoro!")
+        return
+
+    full_text = "📋 *Ecco le domande che hai sbagliato:*\n\n"
+
+    for item in wrong_answers_detailed:
+        full_text += (
+            f"❓ *Domanda*: {item['question']}\n"
+            f"✅ *Risposta corretta*: {item['correct_answer']}\n"
+            f"🔁 *Sbagliata*: {item['times_wrong']} volte\n\n"
+        )
+
+    # Attenzione: Telegram ha un limite di 4096 caratteri per messaggio
+    if len(full_text) > 4000:
+        await context.bot.send_message(chat_id=user_id, text="⚠️ Troppe domande da mostrare in un messaggio.")
+    else:
+        await context.bot.send_message(chat_id=user_id, text=full_text, parse_mode='Markdown')
+
+
+
 async def show_final_stats(user_id, context, state, from_stop=False, from_change_course=False, is_review_mode=False):
     
     if not state:
@@ -470,6 +516,8 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
 
     all_stats = stats_manager.get_summary()
     summary = f"Quiz completato! Punteggio: {score} su {total} ({percentage}%)\n\n📊 Statistiche:\n"
+    
+    
     for sub, data in all_stats.items():
         perc = round((data['correct'] / data['total']) * 100, 2)
         summary += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
@@ -500,9 +548,9 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
         ])
 
     manager = get_manager(user_id)
-    
     if manager.has_wrong_answers():
-        keyboard.append([InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors")])
+        keyboard.append([InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors"),
+                              InlineKeyboardButton("🔍 Mostra errori", callback_data=f"show_mistakes_{subject}")])
 
     keyboard.append([
         InlineKeyboardButton("📥 Scarica pdf", callback_data=json.dumps({"cmd": "scarica_inedite", "file": state['quiz_file']})),
@@ -536,6 +584,7 @@ async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await context.bot.send_message(chat_id=user_id, text=msg, reply_markup=reply_markup)
+
 
 
 async def reset_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
