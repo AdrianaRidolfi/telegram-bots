@@ -13,6 +13,7 @@ from telegram.ext import (
 )
 from contextlib import asynccontextmanager
 from pdf_generator import generate_pdf
+from quiz_bot import get_gifs
 from wrong_answers import WrongAnswersManager
 from user_stats import UserStatsManager
 from firebase_admin import credentials, firestore
@@ -460,14 +461,14 @@ async def show_mistakes(user_id, subject, context: ContextTypes.DEFAULT_TYPE):
         q_id = entry["id"]
         counter = entry.get("counter", 1)
     
-    if q_id in base_by_id:
-        question = base_by_id[q_id]
-        detailed_entry = {
-            "question": question.get("question"),
-            "correct_answer": question.get("correct_answer"), 
-            "times_wrong": counter
-        }
-        wrong_answers_detailed.append(detailed_entry)
+        if q_id in base_by_id:
+            question = base_by_id[q_id]
+            detailed_entry = {
+                "question": question.get("question"),
+                "correct_answer": question.get("correct_answer"), 
+                "times_wrong": counter
+            }
+            wrong_answers_detailed.append(detailed_entry)
 
     if not wrong_answers_detailed:
         await context.bot.send_message(chat_id=user_id, text="✅ Nessun errore trovato! Ottimo lavoro!")
@@ -515,7 +516,13 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
     stats_manager.update_stats(subject, score, total)
 
     all_stats = stats_manager.get_summary()
-    summary = f"Quiz completato! Punteggio: {score} su {total} ({percentage}%)\n\n📊 Statistiche:\n"
+
+    if score == 30 and total == 30:
+      
+        await context.bot.send_animation(chat_id=user_id, animation=get_gifs.yay(), caption="Yay!")
+        summary = f"Congratulazioni! Punteggio: {score} su {total} ({percentage}%)\n\n📊 Statistiche:\n"
+    else:
+        summary = f"Quiz completato! Punteggio: {score} su {total} ({percentage}%)\n\n📊 Statistiche:\n"
     
     
     for sub, data in all_stats.items():
