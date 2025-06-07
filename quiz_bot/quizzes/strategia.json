@@ -363,17 +363,6 @@
         "id": "65dcd2ef-fc00-40c8-9179-7159d5261d54"
     },
     {
-        "question": "Qual è il compito principale di una figura di collegamento all'interno di un'organizzazione?",
-        "answers": [
-            "Supervisionare direttamente il lavoro operativo dei team di produzione",
-            "Definire la strategia aziendale a lungo termine",
-            "Facilitare il coordinamento orizzontale tra due unità organizzative",
-            "Gestire in autonomia il budget di tutte le funzioni aziendali"
-        ],
-        "correct_answer": "Facilitare il coordinamento orizzontale tra due unità organizzative",
-        "id": "021e70db-cb21-4c70-8d58-95d94514988d"
-    },
-    {
         "question": "La scelta del criterio di raggruppamento nelle unità organizzative deve considerare il tipo di interdipendenze esistenti, che includono:",
         "answers": [
             "Interdipendenze gerarchiche, conflittuali, autonome, sinergiche",
@@ -515,17 +504,6 @@
         ],
         "correct_answer": "Che variano tra raggruppamenti funzionali e divisionali",
         "id": "a63a9738-2988-4a4b-b3b9-b79d45bda93c"
-    },
-    {
-        "question": "Secondo il principio dell'unicità del comando di Fayol, ogni individuo e unità organizzativa deve:",
-        "answers": [
-            "poter delegare ordini a più responsabili gerarchici",
-            "ricevere ordini da un solo responsabile gerarchico",
-            "ottenere indicazioni da responsabili multipli",
-            "operare senza alcuna supervisione diretta"
-        ],
-        "correct_answer": "ricevere ordini da un solo responsabile gerarchico",
-        "id": "eb1c2c61-6b48-4168-8212-edb1881b733b"
     },
     {
         "question": "I bisogni di autorealizzazione sono quelli legati:",
@@ -724,17 +702,6 @@
         ],
         "correct_answer": "Le task force, anche temporanee",
         "id": "cd01aec6-0149-4ed6-932e-689b1014a7bd"
-    },
-    {
-        "question": "Un meccanismo per migliorare la partecipazione dei dipendenti ai processi decisionali è rappresentato da:",
-        "answers": [
-            "Il coinvolgimento di consulenti esterni",
-            "La supervisione diretta dei capi",
-            "Le task force, anche temporanee",
-            "I singoli contributi dei membri"
-        ],
-        "correct_answer": "Le task force, anche temporanee",
-        "id": "cd01aec6-0149-4ed6-932e-659b1014a7bd"
     },
     {
         "question": "Il valore percepito dall’output di un processo aziendale implica una valutazione in termini di:",
@@ -1043,17 +1010,6 @@
         ],
         "correct_answer": "Il risultato da produrre in termini di quantità e tipologia, senza indicazioni sul metodo di produzione",
         "id": "74f83a2b-cde1-455b-8679-92c9a0b74d82"
-    },
-    {
-        "question": "La capacità, nella progettazione microstrutturale, è definita come:",
-        "answers": [
-            "L'insieme delle attività organizzative richieste per svolgere un compito con successo",
-            "Un sistema di regole e norme che guida il comportamente degli individui nell'organizzazione",
-            "Un processo di adattamento delle competenze a nuove posizioni all'interno dell'azienda",
-            "Una caratteristica intrinseca individuale alla base di una prestazione efficace o superiore in una specifica attività o mansione"
-        ],
-        "correct_answer": "Una caratteristica intrinseca individuale alla base di una prestazione efficace o superiore in una specifica attività o mansione",
-        "id": "7df04230-9ace-4b77-a0c8-cd0081059ae0"
     },
     {
         "question": "Secondo la teoria dei bisogni di Maslow, cosa caratterizza i bisogni di stima? (domanda inventata)",
@@ -5243,7 +5199,7 @@
             "Quello in cui i ricavi eguagliano i costi fissi e variabili",
             "Quello in cui si raggiunge la massima produzione"
         ],
-        "correct_answer": "quello in cui i ricavi eguagliano i costi fissi e variabili",
+        "correct_answer": "Quello in cui i ricavi eguagliano i costi fissi e variabili",
         "id": "6w7x8y9z-0a1b-2c3d-4e5f-6g7h8i9j0k1l"
     },
     {
@@ -5254,7 +5210,7 @@
             "Canalizzare i conflitti e consentire l’esercizio del potere",
             "Promuovere l'omogeneità dei comportamenti"
         ],
-        "correct_answer": "canalizzare i conflitti e consentire l’esercizio del potere",
+        "correct_answer": "Canalizzare i conflitti e consentire l’esercizio del potere",
         "id": "7m8n9o0p-1q2r-3s4t-5u6v-7w8x9y0z1a2b"
     },
     {
@@ -5265,7 +5221,7 @@
             "Mancanza di gerarchia",
             "Eccessiva specializzazione funzionale"
         ],
-        "correct_answer": "difficoltà di coordinamento e controllo nei business diversificati",
+        "correct_answer": "Difficoltà di coordinamento e controllo nei business diversificati",
         "id": "8c9d0e1f-2g3h-4i5j-6k7l-8m9n0o1p2q3r"
     },
     {
@@ -5276,7 +5232,7 @@
             "Protezione da pericoli e minacce, conoscenza dell’ambiente",
             "Autostima e riconoscimento"
         ],
-        "correct_answer": "protezione da pericoli e minacce, conoscenza dell’ambiente",
+        "correct_answer": "Protezione da pericoli e minacce, conoscenza dell’ambiente",
         "id": "9s0t1u2v-3w4x-5y6z-7a8b-9c0d1e2f3g4h"
     },
     {
@@ -5287,7 +5243,7 @@
             "La tecnologia è consolidata",
             "I dipendenti sono altamente specializzati"
         ],
-        "correct_answer": "l’ambiente esterno è caratterizzato da turbolenza e imprevedibilità",
+        "correct_answer": "L’ambiente esterno è caratterizzato da turbolenza e imprevedibilità",
         "id": "0i1j2k3l-4m5n-6o7p-8q9r-0s1t2u3v4w5x"
     }
 ]
