@@ -1,0 +1,4717 @@
+[
+  {
+    "id": "cea858ad-baf2-4715-af43-3e20982fba9d",
+    "question": "La statistica ci offre gli strumenti per:",
+    "answers": [
+      "Organizzare, riassumere, analizzare i dati relativi ad un fenomeno, ottenuti attraverso le misurazioni.",
+      "Organizzare, riassumere, analizzare i dati relativi ad un fenomeno, che sono ottenuti attraverso le misurazioni \ncompiute per fenomeni diversi da esso",
+      "Organizzare e riassumere i dati relativi ad un fenomeno, che sono ottenuti attraverso le misurazioni compiute per \nfenomeni diversi da esso",
+      "Organizzare, riassumere, analizzare gli errori di tipo normativo."
+    ],
+    "correct_answer": "Organizzare, riassumere, analizzare i dati relativi ad un fenomeno, ottenuti attraverso le misurazioni."
+  },
+  {
+    "id": "d4b4c061-4e1e-4459-aacb-0340ef97fc56",
+    "question": "L’Inferenza ha lo scopo di:",
+    "answers": [
+      "Indurre le caratteristiche dall’intera popolazione ai dati raccolti",
+      "Dedurre le caratteristiche dell’intera popolazione a partire da dati raccolti",
+      "Dedurre le caratteristiche del campione",
+      "Inferire gli errori non statistici"
+    ],
+    "correct_answer": "Dedurre le caratteristiche dell’intera popolazione a partire da dati raccolti"
+  },
+  {
+    "id": "1b1f1fd1-0d7b-48e4-8b92-297b2f3797b7",
+    "question": "La statistica descrittiva:",
+    "answers": [
+      "Fa previsioni",
+      "Testa ipotesi",
+      "Organizza e riassume i dati",
+      "Organizza le previsioni per capire quanto sono forti le relazioni osservate"
+    ],
+    "correct_answer": "Organizza e riassume i dati"
+  },
+  {
+    "id": "ffbe0825-57d1-4174-83bf-dff748981400",
+    "question": "La popolazione è:",
+    "answers": [
+      "L’ universo di elementi che forma l’ oggetto di uno studio statistico",
+      "Campionaria",
+      "Sempre ipotetica",
+      "Una previsione"
+    ],
+    "correct_answer": "L’ universo di elementi che forma l’ oggetto di uno studio statistico"
+  },
+  {
+    "id": "4a1036c3-4ebf-4bba-aa22-738ce4686b9d",
+    "question": "Il campione è:",
+    "answers": [
+      "Un sottoinsieme della popolazione",
+      "Un insieme grande quanto la popolazione",
+      "La popolazione",
+      "Sempre grande quanto la popolazione"
+    ],
+    "correct_answer": "Un sottoinsieme della popolazione"
+  },
+  {
+    "id": "27618a14-b8a0-47c0-8283-a940a3fff297",
+    "question": "Il campionamento sistematico è:",
+    "answers": [
+      "A blocchi",
+      "Stratificato",
+      "Con popolazione in sottogruppi",
+      "Caratterizzato dalla selezione di un elemento ogni k elementi successivi"
+    ],
+    "correct_answer": "Caratterizzato dalla selezione di un elemento ogni k elementi successivi"
+  },
+  {
+    "id": "01cd525c-8e8e-4aea-9b21-b92da3430c86",
+    "question": "Il campionamento stratificato è:",
+    "answers": [
+      "A blocchi",
+      "Stratificato",
+      "Caratterizzato da popolazione divisa in sottogruppi omogenei",
+      "Caratterizzato dalla selezione di un elemento ogni k elementi successivi"
+    ],
+    "correct_answer": "Caratterizzato da popolazione divisa in sottogruppi omogenei"
+  },
+  {
+    "id": "c9ff4c22-b891-4021-b2c4-3e156a43c87a",
+    "question": "Il campionamento a blocchi è:",
+    "answers": [
+      "Caratterizzato da cluster",
+      "Stratificato",
+      "Caratterizzato da popolazione divisa in sottogruppi disomogenei",
+      "Caratterizzato dalla selezione di un elemento ogni k elementi successivi"
+    ],
+    "correct_answer": "Caratterizzato da cluster"
+  },
+  {
+    "id": "a7c44ade-63e5-47de-8945-92bd91e88ab4",
+    "question": "La statistica permette di ragionare:",
+    "answers": [
+      "In modo qualitativo",
+      "Dal generale alla popolazione",
+      "Con Induzioni generali",
+      "Facendo deduzioni ed induzioni"
+    ],
+    "correct_answer": "Facendo deduzioni ed induzioni"
+  },
+  {
+    "id": "6a76ac46-1264-440d-a71a-2b9381a752eb",
+    "question": "Le fasi di una indagine statistica si conviene siano le seguenti:",
+    "answers": [
+      "Definizione degli obiettivi della ricerca; Rilevazione dei dati; Elaborazione metodologica; Presentazione ed \ninterpretazione dei risultati; Utilizzazione dei risultati raggiunti.",
+      "Elaborazione metodologica e definizione degli errori campionari",
+      "Analisi dei dati e definizione dei risultati della ricerca",
+      "Definizione degli obiettivi della ricerca; Rilevazione dei campioni; Elaborazione metodologica; Presentazione ed \ninterpretazione dei risultati; Utilizzazione dei risultati raggiunti."
+    ],
+    "correct_answer": "Definizione degli obiettivi della ricerca; Rilevazione dei dati; Elaborazione metodologica; Presentazione ed \ninterpretazione dei risultati; Utilizzazione dei risultati raggiunti."
+  },
+  {
+    "id": "a7fb2b59-0a68-4227-a238-1bb476d285a5",
+    "question": "L’indagine statistica può essere:",
+    "answers": [
+      "Campionaria o di tipo censuario",
+      "Solo relativa alla popolazione",
+      "Solo relativa al campione",
+      "Sulla popolazione o del tipo censimento"
+    ],
+    "correct_answer": "Campionaria o di tipo censuario"
+  },
+  {
+    "id": "8f6a8bb1-f830-43ff-ab70-141ed367db40",
+    "question": "La statistica induttiva:",
+    "answers": [
+      "Fa inferenza",
+      "Trae indicazioni dalla popolazione che siano valide per il campione",
+      "Trae indicazioni precise sull’intera popolazione",
+      "È quella descrittiva"
+    ],
+    "correct_answer": "Fa inferenza"
+  },
+  {
+    "id": "5bf29c84-1dd2-466a-ae80-3488381e6189",
+    "question": "La mutabile è:",
+    "answers": [
+      "Un carattere quantitativo",
+      "Un’unità statistica",
+      "Un carattere qualitativo",
+      "La rilevazione statistica qualitativa"
+    ],
+    "correct_answer": "Un carattere qualitativo"
+  },
+  {
+    "id": "8f6c84ed-5d22-48cc-be20-9051acc78e88",
+    "question": "Il numero di lanci di una moneta è una:",
+    "answers": [
+      "Variabile discreta",
+      "Variabile continua",
+      "Variabile reale",
+      "Variabile dipendente"
+    ],
+    "correct_answer": "Variabile discreta"
+  },
+  {
+    "id": "f37ab755-dde9-4dec-83bb-8aa633ba0eb9",
+    "question": "Consideriamo la relazione y=f(x), dove x è rappresentato dall’inflazione ed y sono i tassi di interesse nell’Euro \nArea:",
+    "answers": [
+      "x è la variabile indipendente",
+      "I tassi di interesse sono la variabile indipendente",
+      "Non vi sono variabili causali in questa relazione",
+      "Vi è un rapporto causa-effetto in cui y è la causa"
+    ],
+    "correct_answer": "x è la variabile indipendente"
+  },
+  {
+    "id": "0268b073-6f59-48a2-b9ed-b1b16c3241fd",
+    "question": "Considera la relazione causa-effetto y = -f(x), calcola la y sapendo che f(x) = -10 ed indica il tipo di relazione:",
+    "answers": [
+      "y = -10; la relazione è lineare",
+      "y = x",
+      "y = 10; la relazione è lineare",
+      "y = 10; la relazione è non lineare"
+    ],
+    "correct_answer": "y = 10; la relazione è lineare"
+  },
+  {
+    "id": "52b4d16e-c5d5-4b35-a23a-f5c1c03e3c1c",
+    "question": "Considera la relazione causa-effetto y=-f(x)2, calcola la y sapendo che f(x)=-10 ed indica il tipo di relazione:",
+    "answers": [
+      "y = -100; la relazione è lineare",
+      "y = x",
+      "y = 100; la relazione è lineare",
+      "y = 100; la relazione è non lineare"
+    ],
+    "correct_answer": "y = 100; la relazione è non lineare"
+  },
+  {
+    "id": "ba0259ba-080a-4b27-a897-4825f3d09f25",
+    "question": "La sommatoria di tutte le frequenze relative di una tabella di frequenza è pari a:",
+    "answers": [
+      "1",
+      "100",
+      "10",
+      "0"
+    ],
+    "correct_answer": "1"
+  },
+  {
+    "id": "1b567aea-3106-47d9-8cd6-d67f9fd95c4e",
+    "question": "Che cosa è l'unità statitistica:",
+    "answers": [
+      "L'unita elementare oggetto di osservazione e di studio",
+      "La componente di un gruppo che si occupa dell'elaborazione di un questionario",
+      "La componente di un gruppo che effettua l'indagine statistica",
+      "L'unita di misura dei fenomeni statistici"
+    ],
+    "correct_answer": "L'unita elementare oggetto di osservazione e di studio"
+  },
+  {
+    "id": "cc434804-59fe-459a-8289-3961264e1c9d",
+    "question": "La popolazione è finita:",
+    "answers": [
+      "Quando non è determinabile il numero di unità che compongono",
+      "Quando è determinabile il numero di unità che compongono",
+      "Quando la successione di unità non ha fine",
+      "Non esiste una popolazione finita"
+    ],
+    "correct_answer": "Quando è determinabile il numero di unità che compongono"
+  },
+  {
+    "id": "ac28c756-9cec-441f-9b99-bfdaa6c9f48c",
+    "question": "Il lancio di una monetà è un esempio di:",
+    "answers": [
+      "Popolazione finita",
+      "Popolazione finita ma non numerabile",
+      "Popolazione infinita",
+      "Popolazione di stato"
+    ],
+    "correct_answer": "Popolazione infinita"
+  },
+  {
+    "id": "3bc1e84e-e9a1-434f-bb4b-792126af9035",
+    "question": "Il carattere sesso è:",
+    "answers": [
+      "Un carattere continuo",
+      "Un carattere trasferibile",
+      "Un carattere discreto",
+      "Carattere qualitativo sconnesso"
+    ],
+    "correct_answer": "Carattere qualitativo sconnesso"
+  },
+  {
+    "id": "7a7083eb-a249-4893-a183-dc96f8357012",
+    "question": "Il carattere età è:",
+    "answers": [
+      "Un carattere continuo",
+      "Un carattere trasferibile",
+      "Un carattere qualitativo ciclico",
+      "Carattere qualitativo sconnesso"
+    ],
+    "correct_answer": "Un carattere continuo"
+  },
+  {
+    "id": "860b31fd-2a75-4627-9d4f-604e0e87b718",
+    "question": "Il carattere stato civile è:",
+    "answers": [
+      "Un carattere continuo",
+      "Un carattere trasferibile",
+      "Un carattere qualitativo rettilineo",
+      "Carattere qualitativo sconnesso"
+    ],
+    "correct_answer": "Carattere qualitativo sconnesso"
+  },
+  {
+    "id": "3418691e-b933-427d-bb82-56e0ba44c033",
+    "question": "Il carattere numero di figli è:",
+    "answers": [
+      "Un carattere qualitativo ciclico",
+      "Un carattere trasferibile",
+      "Un carattere qualitativo rettilineo",
+      "Carattere discreto"
+    ],
+    "correct_answer": "Carattere discreto"
+  },
+  {
+    "id": "a007f3e4-ccd6-4b9a-a46b-8111705b66d7",
+    "question": "Il carattere professione è:",
+    "answers": [
+      "Un carattere continuo",
+      "Un carattere qualitativo sconnesso",
+      "Un carattere qualitativo rettilineo",
+      "Carattere discreto"
+    ],
+    "correct_answer": "Un carattere qualitativo sconnesso"
+  },
+  {
+    "id": "6ea5a3a5-8856-480a-aa63-3827c5ff225d",
+    "question": "Non è una scala di misura delle manifestazioni di un carattere statistico:",
+    "answers": [
+      "La scala nominale",
+      "La scale ordinale",
+      "La scala ad intervalli",
+      "La scala semilogaritmica"
+    ],
+    "correct_answer": "La scala semilogaritmica"
+  },
+  {
+    "id": "b0ba2568-556d-4f73-ade0-6441fbb7658d",
+    "question": "La frequenza assoluta è:",
+    "answers": [
+      "Il numero delle volte ni in cui la modalità xi è stata osservata",
+      "Un numero che varia tra zero e uno",
+      "La misura di un carattare quantitativo",
+      "Il numero di volte in cui una certa modalità non è stata osservata"
+    ],
+    "correct_answer": "Il numero delle volte ni in cui la modalità xi è stata osservata"
+  },
+  {
+    "id": "56294152-683b-465a-b028-21cab0a04682",
+    "question": "La frequenza relativa è uguale:",
+    "answers": [
+      "ni/n",
+      "ni",
+      "Al totale delle frequenze",
+      "Alla somma delle frequenze"
+    ],
+    "correct_answer": "ni/n"
+  },
+  {
+    "id": "d614756d-0642-4328-9209-6c7df13057be",
+    "question": "In una distribuzione statistica, la somma delle frequenze relative:",
+    "answers": [
+      "Dipende dal carattere statistico esaminato",
+      "È sempre uguale a 1",
+      "È compresa tra frequenza massima e quella minima",
+      "È sempre maggiore di 1"
+    ],
+    "correct_answer": "È sempre uguale a 1"
+  },
+  {
+    "id": "2c232ceb-790d-441b-b730-bb734a0c9a4d",
+    "question": "Una classe è aperta:",
+    "answers": [
+      "Se entrambi gli estremi sono inclusi",
+      "Se entrambi gli estremi sono esclusi",
+      "Se solo l'estremo destro è incluso",
+      "Se solo l'estremo sinistro è incluso"
+    ],
+    "correct_answer": "Se entrambi gli estremi sono esclusi"
+  },
+  {
+    "id": "dc9a0179-ad4b-4b72-a270-7ba1003db621",
+    "question": "Una classe è chiusa:",
+    "answers": [
+      "Se entrambi gli estremi sono inclusi",
+      "Se entrambi gli estremi sono esclusi",
+      "Se solo l'estremo destro è escluso",
+      "Se solo l'estremo sinistro è escluso"
+    ],
+    "correct_answer": "Se entrambi gli estremi sono inclusi"
+  },
+  {
+    "id": "2aadbc94-4483-4f3c-9fa8-2376b62c75c0",
+    "question": "La classe è chiusa a sinistra se:",
+    "answers": [
+      "Solo l'estremo sinistro è incluso",
+      "Solo l'estremo destro è incluso",
+      "Solo l'estremo destro è escluso",
+      "Solo l'estremo sinistro è escluso"
+    ],
+    "correct_answer": "Solo l'estremo sinistro è incluso"
+  },
+  {
+    "id": "f892864a-4f1b-4e62-baef-70bf8e5ba1f0",
+    "question": "Il valore centrale è:",
+    "answers": [
+      "La semisomma dei due estremi",
+      "Il rapporto tra i due estremi",
+      "Il prodotto tra i due estremi",
+      "È la somma dei due estremi"
+    ],
+    "correct_answer": "La semisomma dei due estremi"
+  },
+  {
+    "id": "70f312e1-17e0-4939-9069-f3b28f633c7f",
+    "question": "In una tabella doppia se entrambi le variabili sono qualitative, si parla di:",
+    "answers": [
+      "Tabella di correlazione",
+      "Tabella mista",
+      "Tabella di contingenza",
+      "Le variabili non possono essere entrambe qualitative"
+    ],
+    "correct_answer": "Tabella di contingenza"
+  },
+  {
+    "id": "553f4b23-b985-4e81-b95f-e31418bb09a2",
+    "question": "In una tabella doppia se entrambi le variabili sono quantitative, si parla di:",
+    "answers": [
+      "Tabella di correlazione",
+      "Tabella mista",
+      "Tabella di contingenza",
+      "Le variabili non possono essere entrambe quantitative"
+    ],
+    "correct_answer": "Tabella di correlazione"
+  },
+  {
+    "id": "7898b5c3-79d0-4dba-9846-d94f8c81349f",
+    "question": "La rappresentazione grafica di distribuzioni di frequenze che si sviluppa attraverso una serie di rettangoli contigui \nviene chiamata:",
+    "answers": [
+      "Istogramma",
+      "Poligono di frequenza",
+      "Ideogramma",
+      "Cartogramma"
+    ],
+    "correct_answer": "Istogramma"
+  },
+  {
+    "id": "6d6f144c-f2ef-4477-997e-fb34fc7fc5ea",
+    "question": "Le densità di frequenza di un istogramma:",
+    "answers": [
+      "Sono le frequenze relative",
+      "Si ottengono dal rapporto tra la frequenza di una classe e l'ampiezza della classe medesima",
+      "Si ottengono dal rapporto tra ampiezza della classe e frequenza della classe",
+      "Esprimono l'addensamento delle frequenze intorno al valore più alto della classe"
+    ],
+    "correct_answer": "Si ottengono dal rapporto tra la frequenza di una classe e l'ampiezza della classe medesima"
+  },
+  {
+    "id": "0fedc909-8ddc-4363-ada7-9570e1917ff6",
+    "question": "Come viene classificato l'ortogramma:",
+    "answers": [
+      "Solo a nastro",
+      "Solo a colonne",
+      "Sia a nastro sia a colonne",
+      "Ne a nastro ne a colonne"
+    ],
+    "correct_answer": "Sia a nastro sia a colonne"
+  },
+  {
+    "id": "1fe21db8-89ec-412c-bf9e-083f2b426192",
+    "question": "Costituiscono rappresentazioni grafiche adatte per caratteri quantitativi:",
+    "answers": [
+      "I diagrammi circolari",
+      "I cartogrammi",
+      "L'istogramma e box-plot",
+      "Diagramma in coordinate polari"
+    ],
+    "correct_answer": "L'istogramma e box-plot"
+  },
+  {
+    "id": "653a74c4-a1bb-4620-9c03-90524f768a20",
+    "question": "La rappresentazione grafica che si sviluppa attraverso una circonferenza suddivisa in tanti spicchi, viene chiamata:",
+    "answers": [
+      "Diagramma circolare",
+      "Poligono di frequenza",
+      "Cartogramma",
+      "Non esiste una tale rappresentazione grafica"
+    ],
+    "correct_answer": "Diagramma circolare"
+  },
+  {
+    "id": "e069edaa-0983-4c8b-a25f-8f7aa3b901d0",
+    "question": "Il box plot, rappresentato tramite un rettagolo, è diviso al suo interno:",
+    "answers": [
+      "Dal primo quartile",
+      "Dal terzo quartili",
+      "Dalla mediana",
+      "Dal valore minimo"
+    ],
+    "correct_answer": "Dalla mediana"
+  },
+  {
+    "id": "f4ebc4bf-e8e3-4add-8360-f51c6b0f34d5",
+    "question": "Il box plot fornisce informazioni:",
+    "answers": [
+      "Solo sulla variabilità",
+      "Solo sulla presenza di valori anomali",
+      "Solo sulla simmetria/asimmetria della distribuzione",
+      "Sulla variabilità, sulla presenza di valori anomale e sulla simmetria/asimmetria della distribuzione"
+    ],
+    "correct_answer": "Sulla variabilità, sulla presenza di valori anomale e sulla simmetria/asimmetria della distribuzione"
+  },
+  {
+    "id": "8cd8d6cd-c2b0-4dc0-bfcd-4661fdd049bf",
+    "question": "All'interno del rettangolo (box plot) sono contenute:",
+    "answers": [
+      "Il 25% delle osservazioni",
+      "Il 75% delle osservazioni",
+      "Il 50% delle osservazioni",
+      "Il 100% delle osservazioni"
+    ],
+    "correct_answer": "Il 50% delle osservazioni"
+  },
+  {
+    "id": "ab5ea8fa-e0bf-44de-af97-03ffb08e867b",
+    "question": "Costituiscono rappresentazioni grafiche adatte per caratteri qualitativi:",
+    "answers": [
+      "Stereogramma ed istogramma",
+      "Ortogramma e diagramma circolare",
+      "Box-plot",
+      "Diagramma in coordinate cartesiane ortogonali"
+    ],
+    "correct_answer": "Ortogramma e diagramma circolare"
+  },
+  {
+    "id": "688d2139-530e-49cd-87d8-c96baaad2c00",
+    "question": "Tra due variabili vi è indipendenza assoluta se:",
+    "answers": [
+      "Le frequenze osservate sono uguali alle frequenze teoriche",
+      "Frequenze osservate sono diverse da quelle teoriche",
+      "Frequenze osservate sono maggiori delle frequenze teoriche",
+      "Frequenze osservate sono inferiori delle frequenze teoriche"
+    ],
+    "correct_answer": "Le frequenze osservate sono uguali alle frequenze teoriche"
+  },
+  {
+    "id": "609f12e5-8008-4473-a3e9-fbbe2e63fbf9",
+    "question": "Si chiama contingenza:",
+    "answers": [
+      "La differenza tra frequenze osservate e frequenze teoriche",
+      "La somma tra frequenze osservate e frequenze teoriche",
+      "Il rapporto tra frequenze osservate e frequenze teoriche",
+      "Il quadrato della somma tra frequenze osservate e frequenze teoriche"
+    ],
+    "correct_answer": "La differenza tra frequenze osservate e frequenze teoriche"
+  },
+  {
+    "id": "39a09f19-25e2-4cb3-8922-72b2e2d6afd1",
+    "question": "La somma delle contingenze di ciascuna riga e di ciascuna colonna sono:",
+    "answers": [
+      "Pari a 1",
+      "Nulle",
+      "Maggiore di 1",
+      "Inferiore a 1"
+    ],
+    "correct_answer": "Nulle"
+  },
+  {
+    "id": "e6b0ffec-fc34-4720-836c-172b5b9cd4ef",
+    "question": "L'indice chi-quadrato di Pearson (χ<sup>2) \n:</sup>",
+    "answers": [
+      "E' un numero puro",
+      "Dipende dalla dimensione del collettivo",
+      "Si annulla nel caso in cui vi è connessione",
+      "Assume valore 1 se esiste indipendenza tra i caratteri"
+    ],
+    "correct_answer": "Si annulla nel caso in cui vi è connessione"
+  },
+  {
+    "id": "e8c721a2-58cc-4bf7-a928-0cfe623d3aae",
+    "question": "Se si raddoppia la numerosità campionaria, il valore del chi-quadrato:",
+    "answers": [
+      "Resta invariato",
+      "Diminuisce",
+      "Raddoppia",
+      "Diventa negativo"
+    ],
+    "correct_answer": "Raddoppia"
+  },
+  {
+    "id": "e7e43aac-dacb-413a-8f77-3dadd78b8209",
+    "question": "L'indice di contingenza quadratica medio φ<sup>2</sup>è uguale:",
+    "answers": [
+      "χ²/n",
+      "χ²/(n-1)",
+      "χ²/(r-1)(c-1)",
+      "χ²/min(r-1)(c-1)"
+    ],
+    "correct_answer": "χ²/n"
+  },
+  {
+    "id": "a3033647-9993-41ca-953b-68fbc1a82b0f",
+    "question": "L'indice di connessione di Cramer varia:",
+    "answers": [
+      "Tra zero e uno",
+      "Tra -1 e 1",
+      "Tra 0 e più infinito",
+      "Tra meno infinito e più infinito"
+    ],
+    "correct_answer": "Tra zero e uno"
+  },
+  {
+    "id": "ab5e9de6-a188-4667-ba74-c5785eadfd24",
+    "question": "Indice chi-quadrato è un indice:",
+    "answers": [
+      "Asimmetrico",
+      "Negativo",
+      "Simmetrico",
+      "Che misura l'indipendenza in media"
+    ],
+    "correct_answer": "Simmetrico"
+  },
+  {
+    "id": "1b4f0674-28a9-4eeb-8cb3-29d318725809",
+    "question": "Quali di questi indici è relativo:",
+    "answers": [
+      "L'indice del chi-quadrato",
+      "L'indice di connessione di Cramer",
+      "L'indice di contingenza quadratica media",
+      "L'odds ratio"
+    ],
+    "correct_answer": "L'indice di connessione di Cramer"
+  },
+  {
+    "id": "9d9fa74d-bf86-44e2-a4ab-af4cb9f4ac60",
+    "question": "Vengono prelevate 15 compresse da un lotto di produzione, i valori sono: 0,485; 0,442; 0,466; 0,448; 0,419; 0,415; \n0,450; 0,435; 0,443; 0,410; 0,434; 0,450; 0,422; 0,440; 0,464. Calcolare il peso medio:",
+    "answers": [
+      "0.4415",
+      "0.999",
+      "2.67",
+      "11.2"
+    ],
+    "correct_answer": "0.4415"
+  },
+  {
+    "id": "40b084f1-c295-48c8-b3fa-bac6dd2763e8",
+    "question": "Consideriamo i seguenti dati:  \nclasse 10-20 con frequenza 5; classe 20-30 con frequenza 8; classe 30 - 40 con frequenza 12; classe 40 - 50 con \nfrequenza 9; classe 50-60 con frequenza 3 \n Calcolare la media aritmetica:",
+    "answers": [
+      "Non si può calcolare",
+      "124",
+      "201",
+      "34.19"
+    ],
+    "correct_answer": "34.19"
+  },
+  {
+    "id": "fe5c7dde-04a0-41f1-b0b8-2472e64af34d",
+    "question": "La media geometrica è uguale:",
+    "answers": [
+      "Alla radice quadrata della somma dei termini",
+      "Alla radice n-esima della somma dei termini",
+      "Alla radice quadrata dei prodotti dei termini",
+      "Alla radice n-esima del prodotto dei termini"
+    ],
+    "correct_answer": "Alla radice n-esima del prodotto dei termini"
+  },
+  {
+    "id": "5128ff48-2c15-4b21-8f50-559a54392d3d",
+    "question": "Trovare la media geometrica: 3, 5, 6, 6, 7, 10, 12:",
+    "answers": [
+      "12.8",
+      "6.43",
+      "0.02",
+      "10.81"
+    ],
+    "correct_answer": "6.43"
+  },
+  {
+    "id": "aa3e05c0-671c-437d-8b6a-51e5ee707219",
+    "question": "Calcolare la media geometria relativa all'andamento dei prezzi di un dato prodotto: 1,103 1,031 0,939 1,097:",
+    "answers": [
+      "5.65",
+      "1.04",
+      "3.12",
+      "2.3"
+    ],
+    "correct_answer": "1.04"
+  },
+  {
+    "id": "ae4f5132-cafc-4335-a118-43baea94f2b7",
+    "question": "I Voti riportati da uno studente in fisica, statistica e matematica sono: 71, 78, 89 (voti in centesimi). I pesi attribuiti \nalle discipline sono rispettivamente 2, 4, 5. Calcolare la media dei voti:",
+    "answers": [
+      "30",
+      "78",
+      "82",
+      "90"
+    ],
+    "correct_answer": "82"
+  },
+  {
+    "id": "79b0a654-ff09-47a3-9db2-dfdecb883d79",
+    "question": "La media armonica è:",
+    "answers": [
+      "Il reciproco della media aritmetica dei reciproci dei termini",
+      "È il reciproco della media aritmetica dei termini",
+      "La media aritmetica dei reciproci dei termini",
+      "Dal rapporto tra i reciproci dei termini e la media aritmetica"
+    ],
+    "correct_answer": "Il reciproco della media aritmetica dei reciproci dei termini"
+  },
+  {
+    "id": "a4d31a7e-3c82-4d02-b78f-e1bc0487f78b",
+    "question": "Due punti C e D, distano 80 km, un corpo si muove da C a D alla velocità di 80 km/h e da D a C alla velocità di 20 \nkm/h. Determinare la velocità media dell'intero tragitto:",
+    "answers": [
+      "50Km/h",
+      "80km/h",
+      "120km/h",
+      "32km/h"
+    ],
+    "correct_answer": "32km/h"
+  },
+  {
+    "id": "e1d1a18d-6d0e-473c-8eb3-cca82dcebc61",
+    "question": "La media armonica è particolarmente usata:",
+    "answers": [
+      "Quando si mediano rapporti di tempo",
+      "In presenza di tassi di interesse, tassi di crescita, tassi di inflazione",
+      "Se in presenza di valori positivi e negativi, si vogliono elimanare i segni",
+      "In presenza di valori nulli"
+    ],
+    "correct_answer": "Quando si mediano rapporti di tempo"
+  },
+  {
+    "id": "0f542429-8687-472b-86a0-98401c408995",
+    "question": "La media geometrica è particolarmente usata:",
+    "answers": [
+      "Quando i diversi valori vengono per loro natura sommati",
+      "Quando i diversi valori vengono per loro natura sottratti",
+      "Quando i diversi valori vengono per loro natura moltiplicati",
+      "In presenza di valori negativi"
+    ],
+    "correct_answer": "Quando i diversi valori vengono per loro natura moltiplicati"
+  },
+  {
+    "id": "21485cf2-af48-425b-94dc-eeb94ac6ba09",
+    "question": "Calcolare la mediana della seguente serie di voti: 19, 20, 22,18, 26, 30, 28:",
+    "answers": [
+      "22",
+      "24",
+      "23.5",
+      "24.5"
+    ],
+    "correct_answer": "22"
+  },
+  {
+    "id": "03afb9fc-db65-457d-87be-de5ad5f806b2",
+    "question": "Calcolare la mediana della seguente serie: -2, -3, -5, 0, 1, 4, 7:",
+    "answers": [
+      "0",
+      "1",
+      "-2",
+      "4"
+    ],
+    "correct_answer": "0"
+  },
+  {
+    "id": "0e497d20-5140-42e8-b418-e0ae425deac6",
+    "question": "Il secondo quartile coincide con:",
+    "answers": [
+      "La media aritmetica",
+      "La mediana",
+      "La moda",
+      "Il terzo quartile"
+    ],
+    "correct_answer": "La mediana",
+    "image": "sta1.jpg"
+  },
+  {
+    "id": "a9994025-321f-4d9e-9c78-caa48d68d1d9",
+    "question": "Con riferimento alla domanda 4 la mediana:",
+    "answers": [
+      "10.4",
+      "85.3",
+      "61.52",
+      "Non si può calcolare"
+    ],
+    "correct_answer": "61.52"
+  },
+  {
+    "id": "7eaa9715-8aae-42c9-b753-6d783c57b72f",
+    "question": "Il primo quartile:",
+    "answers": [
+      "Quel valore che lascia alla sua destra il 75% delle osservazione e alla sua sinistra il 25% delle osservazioni",
+      "Quel valore che lascia alla sua destra il 25% delle osservazione e alla sua sinistra il 75% delle osservazioni",
+      "La mediana",
+      "Corrisponde al 30°percentile"
+    ],
+    "correct_answer": "Quel valore che lascia alla sua destra il 75% delle osservazione e alla sua sinistra il 25% delle osservazioni"
+  },
+  {
+    "id": "28d08b05-8b9f-468a-ac4c-a5e0af2a2131",
+    "question": "Si consideri la seguente distribuzione in classi:  \n pesi frequenze  \n \n Calcolare il primo quartile:",
+    "answers": [
+      "55.97",
+      "83.21",
+      "49.55",
+      "73.54"
+    ],
+    "correct_answer": "55.97",
+    "image": "sta2.jpg"
+  },
+  {
+    "id": "a60420f4-182f-4db5-ba31-cc976e7584a1",
+    "question": "Si consideri la seguente distribuzione in classi:  \n pesi frequenze \n \nCalcolare il terzo quartile:",
+    "answers": [
+      "40",
+      "69",
+      "90",
+      "77"
+    ],
+    "correct_answer": "69"
+  },
+  {
+    "id": "14aad3ad-8b18-4564-a3d4-c786f4e7178c",
+    "question": "Data una serie di valori numerici, il valore a cui corrisponde la massima frequenza si chiama:",
+    "answers": [
+      "Media ponderata",
+      "Valore massimo",
+      "Moda",
+      "Mediana"
+    ],
+    "correct_answer": "Moda",
+    "image": "sta3.jpg"
+  },
+  {
+    "id": "30e04276-62d0-4bde-835a-b9f2d06235bb",
+    "question": "Cosa si intende variabilità:",
+    "answers": [
+      "E' l'attitudine di un fenomeno quantitativo ad assumere differente modalità",
+      "E' l'attidudine di un fenomeno ad assumere differenti modalità qualitative",
+      "Un cambiamento della numerosità campionaria",
+      "La differenza tra valore minimo e massimo di un carattere"
+    ],
+    "correct_answer": "E' l'attitudine di un fenomeno quantitativo ad assumere differente modalità"
+  },
+  {
+    "id": "cd457e36-8d07-40a2-b899-c12a508e9437",
+    "question": "Quale dei seguenti indici indica la variabilità di una serie dei dati:",
+    "answers": [
+      "Media ponderata",
+      "Frequenza",
+      "Moda",
+      "Scarto quadratico medio"
+    ],
+    "correct_answer": "Scarto quadratico medio"
+  },
+  {
+    "id": "a65b89c5-bb8b-4ea9-93fa-fbcb9e30d019",
+    "question": "La devianza è:",
+    "answers": [
+      "La somma degli scarti dalla media aritmetica al quadrato",
+      "E' la media aritmetica del quadrato degli scarti dalla media",
+      "E' la radice quadrata della varianza",
+      "E' un indice di variabilità relativa"
+    ],
+    "correct_answer": "La somma degli scarti dalla media aritmetica al quadrato"
+  },
+  {
+    "id": "5b8d9f01-9ec8-4d38-a0d8-5049cd526369",
+    "question": "Conoscendo la devianza, lo scarto quadratico medio si ricava calcolando:",
+    "answers": [
+      "Il quadrato della devianza",
+      "La radice quadrata della devianza",
+      "Il quadrato del rapporto tra devianza e numerosità del collettivo",
+      "La radice quadrata del rapporto tra devianza e numerosità del collettivo"
+    ],
+    "correct_answer": "La radice quadrata del rapporto tra devianza e numerosità del collettivo"
+  },
+  {
+    "id": "4955b09a-f8a5-4aab-b9c3-0e944b320757",
+    "question": "Calcolare la varianza dei seguenti numeri: 12,6,7,3,15,10,18,5:",
+    "answers": [
+      "68,89",
+      "23,75",
+      "0,009",
+      "51,84"
+    ],
+    "correct_answer": "23,75"
+  },
+  {
+    "id": "6c958a94-f59a-4783-a192-91dcfc547eb9",
+    "question": "Il coefficiente di variazione è dato dal rapporto, espresso in termini percentuali, tra:",
+    "answers": [
+      "Lo scarto quadratico medio e media aritmetica",
+      "La varianza e media aritmetica",
+      "La devianza e media aritmetica",
+      "Lo scostamento semplice medio e media aritmetica"
+    ],
+    "correct_answer": "Lo scarto quadratico medio e media aritmetica"
+  },
+  {
+    "id": "e5a0647a-bfb7-4922-ab99-eb520dc63e2b",
+    "question": "La differenza interquartile è data dalla:",
+    "answers": [
+      "Differenza tra secondo è terzo quartile",
+      "Tra secondo e primo quartile",
+      "Tra terzo e primo quartile",
+      "Non si può calcolare"
+    ],
+    "correct_answer": "Tra terzo e primo quartile"
+  },
+  {
+    "id": "67dc51c7-47e6-457d-a9b6-05189e3d2663",
+    "question": "Il campo di variazione è dato dalla:",
+    "answers": [
+      "Differenza tra valore massimo e minimo della distribuzione",
+      "Dal rapporto tra valore massimo e minimo della distribuzione",
+      "Non si può calcolare",
+      "Dalla differenza tra secondo e il primo quartile"
+    ],
+    "correct_answer": "Differenza tra valore massimo e minimo della distribuzione"
+  },
+  {
+    "id": "ccd1dee8-b7e1-4624-8757-87991327a614",
+    "question": "La mutabilità è:",
+    "answers": [
+      "L'attitudine di un fenomeno quantitativo ad assumere differente modalità",
+      "L'attitudine di un fenomeno qualitativo ad assumere differente modalità",
+      "La differenza tra valore minimo e massimo di un carattere",
+      "Un cambiamento della numerosità campionaria"
+    ],
+    "correct_answer": "L'attitudine di un fenomeno qualitativo ad assumere differente modalità"
+  },
+  {
+    "id": "14f00962-7bed-43c4-b557-2900b8f247ae",
+    "question": "Dire se la seguente distribuzione è simmetrica: 8,14,16,16,16,21,21:",
+    "answers": [
+      "Si, la moda=mediana=media",
+      "Si, la media=mediana",
+      "Non è simmetrica",
+      "Si, la media=moda"
+    ],
+    "correct_answer": "Non è simmetrica"
+  },
+  {
+    "id": "3a35677a-4fcb-4856-b57e-f69b5fa4074f",
+    "question": "L'asimmetria di una distribuzione denota che:",
+    "answers": [
+      "I valori del caratteri sono distributi con frequenze differenti attorno al suo valore centrale",
+      "La sua media aritmetica coincide con la sua mediana",
+      "La sua media aritmetica coincide con la sua moda",
+      "Le frequenze osservate sono sempre al di sotto di una frequenza massima"
+    ],
+    "correct_answer": "I valori del caratteri sono distributi con frequenze differenti attorno al suo valore centrale"
+  },
+  {
+    "id": "11e5a9d2-4d89-420c-9fd2-cd2444ad337f",
+    "question": "L'asimmetria di una distribuzione può essere:",
+    "answers": [
+      "Nulla, positiva o negativa",
+      "Solo nulla o positiva",
+      "Positiva o negativa, ma non nulla",
+      "Solo nulla o negativa"
+    ],
+    "correct_answer": "Nulla, positiva o negativa"
+  },
+  {
+    "id": "8048baea-6fe6-49a0-9faf-21ee4b0a6d6e",
+    "question": "Se la distribuzione è asimmetria positiva si ha:",
+    "answers": [
+      "Med-Q1 < Q3-Med",
+      "Med-Q1 > Q3-Med",
+      "Med-Q1=Q3-Med",
+      "Media=mediana"
+    ],
+    "correct_answer": "Med-Q1 < Q3-Med"
+  },
+  {
+    "id": "f87b84d0-d3ca-4a20-ab57-5a634bdf56a9",
+    "question": "Se la distribuzione è asimmetria negativa si ha:",
+    "answers": [
+      "Med-Q1 < Q3-Med",
+      "Med-Q1 > Q3-Med",
+      "Med-Q1=Q3-Med",
+      "Media=mediana"
+    ],
+    "correct_answer": "Med-Q1 > Q3-Med"
+  },
+  {
+    "id": "6bc3ae84-eebc-42d8-9ab1-74d322d229df",
+    "question": "La curtosi rappresenta:",
+    "answers": [
+      "Le frequenze massime di una distribuzione bimodale",
+      "La media aritmetica di una distribuzione asimmetrica",
+      "Il grado di schiacciamento di una distribuzione intorno al suo centro di gravità e rispetto alla curva normale",
+      "L'origine di una curva"
+    ],
+    "correct_answer": "Il grado di schiacciamento di una distribuzione intorno al suo centro di gravità e rispetto alla curva normale"
+  },
+  {
+    "id": "f00ec868-46f3-4491-bde5-41a31f625b15",
+    "question": "La distribuzione di dice platicurtica se:",
+    "answers": [
+      "E' più schiacciata rispetto alla normale",
+      "Coincide con la distribuzione normale",
+      "E' più appuntita rispetto alla normale",
+      "Non presenta alcun valore modale"
+    ],
+    "correct_answer": "E' più schiacciata rispetto alla normale"
+  },
+  {
+    "id": "017061c8-89c4-4b5e-9535-74968fdb0687",
+    "question": "La distribuzione di dice leptocurtica se:",
+    "answers": [
+      "E' più schiacciata rispetto alla normale",
+      "Coincide con la distribuzione normale",
+      "E' più appuntita rispetto alla normale",
+      "Non presenta alcun valore modale"
+    ],
+    "correct_answer": "E' più appuntita rispetto alla normale"
+  },
+  {
+    "id": "2a8ca24c-8e86-4966-98ab-81623e58810b",
+    "question": "Il coefficiente di curtosi di Pearson è uguale:",
+    "answers": [
+      "Momento quarto/quadrato della varianza",
+      "Momento terzo/quadrato della varianza",
+      "Come rapporto tra la media aritmetica e la deviazione standard",
+      "Come rapporto tra la moda e la deviazione standard"
+    ],
+    "correct_answer": "Momento quarto/quadrato della varianza"
+  },
+  {
+    "id": "1230f14c-6eb1-4ec5-b46b-1700178b47de",
+    "question": "Si ha indipendenza in media tra due variabili statistiche se:",
+    "answers": [
+      "Le media parziali sono uguali tra di loro ed uguali alla media generale",
+      "Le medie parziali sono uguali tra loro ma diverse dalla media generale",
+      "Le medie parziali sono uguali tra loro e superiori alla media generale",
+      "Le medie parziali sono uguali tra loro e inferiori alla media generale"
+    ],
+    "correct_answer": "Le media parziali sono uguali tra di loro ed uguali alla media generale"
+  },
+  {
+    "id": "a4da4cec-0b43-47db-b603-8e0080c55be2",
+    "question": "L'indipendenza in media:",
+    "answers": [
+      "E' un concetto simmetrico",
+      "Non è un concetto simmetrico",
+      "Implica l'indipendenza statistica",
+      "E' una misura di associazione"
+    ],
+    "correct_answer": "Non è un concetto simmetrico"
+  },
+  {
+    "id": "2882f3ac-3277-47a4-8de1-77f9f1908965",
+    "question": "Il rapporto di correlazione di Pearson varia:",
+    "answers": [
+      "Tra -1 e 1",
+      "Tra 0 e 1",
+      "Tra 0 e più infinito",
+      "Può assumere un qualsiasi valore"
+    ],
+    "correct_answer": "Tra 0 e 1"
+  },
+  {
+    "id": "c320a7b5-9e62-4080-91cc-efcf056eae6b",
+    "question": "Si ha concordanza tra due variabili se:",
+    "answers": [
+      "Cod(X,Y)>0",
+      "Cod(X,Y)",
+      "Cod(X,Y)=0",
+      "Cod (X,Y)=Dev (X)"
+    ],
+    "correct_answer": "Cod(X,Y)>0"
+  },
+  {
+    "id": "704ab4e2-5062-44ec-8794-d3cc78108fcc",
+    "question": "Si ha discordanza tra due variabili se:",
+    "answers": [
+      "Cod(X,Y)>0",
+      "Cod(X,Y)<0",
+      "Cod(X,Y)=0",
+      "Cod (X,Y)=Dev (X)"
+    ],
+    "correct_answer": "Cod(X,Y)<0"
+  },
+  {
+    "id": "5ed26f55-db13-46ee-8dc5-b092ca8c8286",
+    "question": "Due variabili si dicono perfettamente correlate se:",
+    "answers": [
+      "La loro covarianza è uguale alla loro devianza",
+      "Gli scarti rispettivi dalle medie sono uguali",
+      "Il coefficiente di correlazione è pari a 1 in valore assoluto",
+      "Il prodotto delle medie delle due vraiabili è pari a 1"
+    ],
+    "correct_answer": "Il coefficiente di correlazione è pari a 1 in valore assoluto"
+  },
+  {
+    "id": "9bf9a26c-9c4e-413f-bd69-f9efb69d2dd3",
+    "question": "Date le variabili: X(Velocità km/h): 60,80,100,120,130 Y(Consumo in quinta km/litro): 28.8, 24.2,20,18.2,16. La \ncodevianza (X,Y) è:",
+    "answers": [
+      "-577.6",
+      "3280",
+      "38.69",
+      "1444"
+    ],
+    "correct_answer": "-577.6"
+  },
+  {
+    "id": "a270c223-f398-4cd4-9421-e94e126de14f",
+    "question": "La covarianza (X,Y):",
+    "answers": [
+      "E' positiva se prevalgono gli scarti discordi",
+      "E' una misura asimmetrica",
+      "E' una misura simmetrica",
+      "E' utilizzata per variabili qualitative"
+    ],
+    "correct_answer": "E' una misura simmetrica"
+  },
+  {
+    "id": "a9e8ebcb-183b-4e03-b35f-06f4ee2f3ad7",
+    "question": "Il coefficiente di correlazione:",
+    "answers": [
+      "Assume valore 1 se vi è discordanza",
+      "E' un numero puro",
+      "Si annulla nel caso in cui le variabili sono correlate",
+      "Può assumere un qualsiasi valore"
+    ],
+    "correct_answer": "E' un numero puro"
+  },
+  {
+    "id": "fe1fef95-8917-4bc0-a777-2b6c38ce39f7",
+    "question": "Il coefficiente angolare bi rappresenta:",
+    "answers": [
+      "La pendenza della retta",
+      "Il punto in cui la retta interseca l'asse delle ordinate",
+      "Il grado di adattamento",
+      "Un valore teorico"
+    ],
+    "correct_answer": "La pendenza della retta"
+  },
+  {
+    "id": "945fcf94-2f35-4436-bfed-c341c27f063e",
+    "question": "Con il metodo dei minimi quadrati:",
+    "answers": [
+      "Si minimizza la somma dei quadrati degli scarti tra valori osservati e valori teorici",
+      "Si minimizza la devianza di regressione",
+      "Si minimizza la devianza totale",
+      "Si minimizza la somma tra valori osservati e valori teorici"
+    ],
+    "correct_answer": "Si minimizza la somma dei quadrati degli scarti tra valori osservati e valori teorici"
+  },
+  {
+    "id": "86863a12-e812-49c6-98f7-e2654219505e",
+    "question": "Date le variabili: X(Velocità km/h): 60, 80, 100,120,130 Y(Consumo in quinta km/litro): 29.8, 24.2, 20, 18.2, 16,2. \nDeterminare l'equazione della retta:",
+    "answers": [
+      "y^= 39,882-0,1857xi",
+      "y^= 39,69-0,3xi",
+      "y^= 41,628+0,56xi",
+      "y^= 56,76+0,01xi"
+    ],
+    "correct_answer": "y^= 39,882-0,1857xi"
+  },
+  {
+    "id": "5792f734-4a34-4a6a-977b-8146a112a87d",
+    "question": "Date le variabili: X(Velocità km/h): 60, 80, 100,120,130 Y(Consumo in quinta km/litro): 29.8, 24.2, 20, 18.2, 16,2, il \ncoefficiente di determinaziome lineare è:",
+    "answers": [
+      "0,2085",
+      "0,9650",
+      "0,7123",
+      "0,6102"
+    ],
+    "correct_answer": "0,9650"
+  },
+  {
+    "id": "25633699-e8f9-42ab-99fd-56cbac9c4417",
+    "question": "Il coefficiente di determinazione lineare è uguale a 1 se è nulla:",
+    "answers": [
+      "La devianza totale",
+      "La varianza",
+      "La devianza residua",
+      "La devianza di regressione"
+    ],
+    "correct_answer": "La devianza residua"
+  },
+  {
+    "id": "e8deba74-f34c-4510-8916-7cd4e3343b38",
+    "question": "Se la Cod (X,Y)>0:",
+    "answers": [
+      "La retta di regressione è decrescente",
+      "La retta di regressione è crescente",
+      "La retta di regressione è parallela all'asse delle x",
+      "La retta di regressione è parallela all'asse delle y"
+    ],
+    "correct_answer": "La retta di regressione è crescente"
+  },
+  {
+    "id": "63b07bf3-9629-4fad-9da2-ca2a9ba969b6",
+    "question": "Il coefficiente di determinazione lineare è:",
+    "answers": [
+      "Il quadrato della codevianza",
+      "La radice quadrata della codevianza",
+      "Il quadrato del coefficiente di correlazione lineare",
+      "E' il quadrato del prodotto tra la devianza di X e la devianza di Y"
+    ],
+    "correct_answer": "Il quadrato del coefficiente di correlazione lineare"
+  },
+  {
+    "id": "27e30253-faaa-4275-b3ee-3c064f8070e6",
+    "question": "Il coefficiente di determinazione lineare è nullo se è nulla:",
+    "answers": [
+      "La devianza totale",
+      "La varianza",
+      "La devianza di regressione",
+      "La covarianza"
+    ],
+    "correct_answer": "La devianza di regressione"
+  },
+  {
+    "id": "1b7fa0bc-5d5d-4e9a-8b04-1b3380964bfe",
+    "question": "Se il coefficiente di correlazione r=0:",
+    "answers": [
+      "C'è discordanza",
+      "Non c'e correlazione lineare",
+      "C'è concordanza",
+      "C'è perfetta correlazione lineare"
+    ],
+    "correct_answer": "Non c'e correlazione lineare"
+  },
+  {
+    "id": "e1fd2ec6-1111-42f0-ad6c-03f081618406",
+    "question": "Un esperimento casuale è:",
+    "answers": [
+      "Un'operazione il cui risultato può essere previsto con certezza",
+      "Un'operazione il cui risultato non può essere previsto con certezza",
+      "L'individuazione di in insieme di unità statistiche dalla popolazione",
+      "Ciascuno degli elementi di uno spazio campione"
+    ],
+    "correct_answer": "Un'operazione il cui risultato non può essere previsto con certezza"
+  },
+  {
+    "id": "7210a233-88a9-4d1a-9169-03744d5a018e",
+    "question": "Dati i seguenti eventi: A=(1,2,3), B=(2,3,4). Determinare A∪B:",
+    "answers": [
+      "A∪B={1,2,3,4}",
+      "A∪B={1,2,3}",
+      "A∪B={1,2}",
+      "A∪B={3,4}"
+    ],
+    "correct_answer": "A∪B={1,2,3,4}"
+  },
+  {
+    "id": "754cf393-c9ee-480c-b771-25a2638e83be",
+    "question": "Dati i seguenti eventi: A=(1,3,5,7), B=(3,5,9,10), C(1,5,9,10). Determinare A ∪ B ∪ C:",
+    "answers": [
+      "A∪B∪C={1,3,5}",
+      "A∪B∪C={1,3,5,7,9,10}",
+      "A∪B∪C={1,3,5,7}",
+      "A∪B∪C={1,3,5,7,9}"
+    ],
+    "correct_answer": "A∪B∪C={1,3,5,7,9,10}"
+  },
+  {
+    "id": "a3670dca-420e-4a3d-bc30-98b191a5afea",
+    "question": "Dati i seguenti eventi: A=(1,3,5,7), B=(3,5,9,10), C(1,5,9,10). Determinare A∩B:",
+    "answers": [
+      "A∩B={5,7}",
+      "A∩B={3,5}",
+      "A∩B={5,9}",
+      "A∩B={5,10}"
+    ],
+    "correct_answer": "A∩B={3,5}"
+  },
+  {
+    "id": "0c94d98f-b318-4c33-abce-66ec918a16fa",
+    "question": "Dati i seguenti eventi: A=(1,3,5,7), B=(3,5,9,10), C(1,5,9,10). Determinare A∩C:",
+    "answers": [
+      "A∩C={1,5}",
+      "A∩C={3,5}",
+      "A∩C={5,10}",
+      "A∩C={1,3,5,7,9,10}"
+    ],
+    "correct_answer": "A∩C={1,5}"
+  },
+  {
+    "id": "991a0731-31c0-4ff5-8e0a-1941ee8fa9e2",
+    "question": "Dati i seguenti eventi: A=(1,3,5,7), B=(3,5,9,10), C(1,5,9,10). Determinare A∩B∩C:",
+    "answers": [
+      "A∩B∩C={5}",
+      "A∩B∩C={1,3,5,7,9,10}",
+      "A∩B∩C={1,5,9,10}",
+      "A∩B∩C={5,9}"
+    ],
+    "correct_answer": "A∩B∩C={5}"
+  },
+  {
+    "id": "70a9fd4e-b0d0-4db6-b015-38cdbb1a493c",
+    "question": "Per il postulato 2 dell'assiomatizzazione del calcolo delle probabilità, l'evento certo Ω ha probabilità:",
+    "answers": [
+      "P(Ω)",
+      "P(Ω)=1",
+      "P(Ω)=0",
+      "P(Ω)"
+    ],
+    "correct_answer": "P(Ω)=1"
+  },
+  {
+    "id": "4ff3677b-06fb-48a4-b447-31553d78d80e",
+    "question": "La probabilità dell'unione di due eventi A e B non incompatibili:",
+    "answers": [
+      "P(A∪B)= P(A)+P(B)",
+      "P(A∪B)= 0",
+      "P(A∪B)= P(A)+P(B)-P(A∩B)",
+      "P(A∪B)= P(A)+P(B)-P(A∪B)"
+    ],
+    "correct_answer": "P(A∪B)= P(A)+P(B)-P(A∩B)"
+  },
+  {
+    "id": "d0b732f9-778c-452b-b44a-0b2adaec7f43",
+    "question": "Se due eventi A e B sono indipendenti allora:",
+    "answers": [
+      "P(A∩B)= P(A)P(B)",
+      "P(A∩B)= 0",
+      "P(A∩B)= P(A)+P(B|A)",
+      "P(A∩B)= P(A)"
+    ],
+    "correct_answer": "P(A∩B)= P(A)P(B)"
+  },
+  {
+    "id": "b336c3b1-d3f9-4be9-8bda-69bc9746707a",
+    "question": "Una variabile casuale:",
+    "answers": [
+      "E' una funzione definita sullo spazio dei campioni",
+      "E' una funzione definita su eventi",
+      "Può assumere solo valori positivi",
+      "E' una variabile che può assumere prima dell'esperimento casuale un valore noto detto determinazione della v.c"
+    ],
+    "correct_answer": "E' una funzione definita sullo spazio dei campioni"
+  },
+  {
+    "id": "c61f6ee5-ed71-4a19-94af-86261889d063",
+    "question": "La funzione di ripartizione di una variabile casuale:",
+    "answers": [
+      "E' definità solo per variabili casuali continue",
+      "Non è legata da alcuna relazione con la funzione di densità di probabilità della medesima variabile casuale",
+      "Esprime la probabilità che la variabile casuale assuma valori inferiori o uguali ad un valore fissato",
+      "Può assumere valori negativi"
+    ],
+    "correct_answer": "Esprime la probabilità che la variabile casuale assuma valori inferiori o uguali ad un valore fissato"
+  },
+  {
+    "id": "cce77849-1291-44bd-87e3-bcf1d5449979",
+    "question": "Una distribuzione di probabilità di una variabile casuale:",
+    "answers": [
+      "L'insieme di tutti i possibili valori della variabile casuale",
+      "Ciascuno dei possibili valori della variabile casuale",
+      "L'insieme delle coppie probabilità dei diversi valori possibili della variabile casuale",
+      "Ciascuna delle probabilità dei diversi valori possibili della variabile casuale"
+    ],
+    "correct_answer": "L'insieme delle coppie probabilità dei diversi valori possibili della variabile casuale"
+  },
+  {
+    "id": "76e0fc9a-8052-467f-8332-e3cd20b6c154",
+    "question": "La funzione di ripartizione di una variabile casuale discreta:",
+    "answers": [
+      "E' monotona decrescente",
+      "E' una funzioni a gradini non decrescente",
+      "D. \n \n \nAnswer: B \nSection: Variabile casuale discreta \n \n5. Sia data una v.c X, se essa assume valori in corrispondenza di un insieme numerabile allora X è: \nA. Reale \nB. Discreta \nC. Continua",
+      "Simmetrica"
+    ],
+    "correct_answer": "E' una funzioni a gradini non decrescente",
+    "image": "sta5.jpg"
+  },
+  {
+    "id": "52bde487-d811-4402-a5d3-629fac3298d7",
+    "question": "Affinchè una v.c X continua sia ben definità occorre che:",
+    "answers": [
+      "B. \n \nC. \n \nD. \n \n \nAnswer: B \nSection: Variabile casuale continua \n \n8. Il valore atteso E(b+X) è: (b è una costante reale): \nA. E(b+X)=E(b)+E(X)",
+      "E(b+X)=b+E(X)",
+      "E(b+X)=bE(X)",
+      "E(b+X)=b(X)"
+    ],
+    "correct_answer": "E(b+X)=b+E(X)"
+  },
+  {
+    "id": "37b24b93-0200-4990-9d06-5453288bebc8",
+    "question": "Il valore atteso E(X+Y) è: (X e Y sono due varibili casuali):",
+    "answers": [
+      "E(X+Y)= X+Y",
+      "E(X+Y)= E(XY)",
+      "E(X+Y)= E(X)+E(Y)",
+      "E(X+Y)= X+E(Y)"
+    ],
+    "correct_answer": "E(X+Y)= E(X)+E(Y)"
+  },
+  {
+    "id": "db2c18bb-ce72-414c-9f58-360c1489100c",
+    "question": "La Var (aX+b) è: a e b sono due costanti reali:",
+    "answers": [
+      "Var (aX+b)=a²Var (X)",
+      "Var (aX+b)=b²Var (X)",
+      "Var (aX+b)=a Var (X)",
+      "Var (aX+b)=ab Var (X)"
+    ],
+    "correct_answer": "Var (aX+b)=a²Var (X)",
+    "image": "sta10.jpg"
+  },
+  {
+    "id": "84021292-c8fc-42bb-9f50-5a4c58b6b619",
+    "question": "La variabile casuale uniforme discreta:",
+    "answers": [
+      "Viene applicata per caretteri dicotomici",
+      "Assume solo i valori 0 e 1",
+      "Presenta media uguale np e varianza np(1-p)",
+      "E' tale che ogni sua realizzazione è equiprobabile"
+    ],
+    "correct_answer": "E' tale che ogni sua realizzazione è equiprobabile"
+  },
+  {
+    "id": "35654b10-d286-4d59-b45d-a60ead5aa8b3",
+    "question": "La distribuzione della normale standardizzata:",
+    "answers": [
+      "E' asimmetrica",
+      "Ha media uguale a 0 e varianza uguale 1",
+      "Ha media uguale a 1 e varianza uguale 0",
+      "Ha funzione di densità: \n3"
+    ],
+    "correct_answer": "Ha media uguale a 0 e varianza uguale 1"
+  },
+  {
+    "id": "62463f14-2f3d-44c9-9da3-b2b193f7b394",
+    "question": "La distribuzione binomiale:",
+    "answers": [
+      "Non può essere approssimata da una distribuzione normale standardizzata",
+      "E' una distribuzione continua",
+      "Può essere utilizzata per descrivere casi in cui gli esiti possibili di una prova sono solo due",
+      "Rappresenta la distribuzione di probabilità di prove ripetute dipendenti quando i risultati di ciascuna prova sono \nsolo due"
+    ],
+    "correct_answer": "Può essere utilizzata per descrivere casi in cui gli esiti possibili di una prova sono solo due"
+  },
+  {
+    "id": "dc5b6df7-5fba-412d-8a0e-339993b5515b",
+    "question": "La distibuzione normale è:",
+    "answers": [
+      "Una distribuzione discreta",
+      "E' simmetrica rispetto al valor medio",
+      "E' tale per cui quando più x si allontano dal valor medio tanto più la funzione di densità di probabilità cresce",
+      "E' tale per cui il valor medio ne caratterizza la forma"
+    ],
+    "correct_answer": "E' simmetrica rispetto al valor medio"
+  },
+  {
+    "id": "96d88951-8f1c-4bb0-acd0-7fcf8ea3c66b",
+    "question": "A quanto corrisponde l'area sotto la curva normale tra z=0 e z=1,2:",
+    "answers": [
+      "0,3849",
+      "0,6025",
+      "1",
+      "1,5"
+    ],
+    "correct_answer": "0,3849",
+    "image": "sta11.jpg"
+  },
+  {
+    "id": "1cba64ed-bc79-43b7-93dd-2681a54a8fd6",
+    "question": "A quanto corrisponde l'area sotto la curva normale tra z=0 e z=1,4:",
+    "answers": [
+      "1",
+      "0,4192",
+      "0,3849",
+      "-1"
+    ],
+    "correct_answer": "0,4192"
+  },
+  {
+    "id": "82e3259b-5703-4584-b0c3-f6573539e5cf",
+    "question": "A quanto corrisponde l'area sotto la curva normale tra z=0,81 e z=1,94:",
+    "answers": [
+      "0,4738",
+      "0,1828",
+      "0,291",
+      "0,9049"
+    ],
+    "correct_answer": "0,1828"
+  },
+  {
+    "id": "069409a9-90b2-4c69-b565-5e1f240df0fe",
+    "question": "La variabile casuale chi-quadrato:",
+    "answers": [
+      "Non può assumere valori negativi",
+      "Non ha alcuna relazione con la distribuzione normale standardizzata",
+      "Non dipende dai gradi di libertà",
+      "E' una v.c discreta"
+    ],
+    "correct_answer": "Non può assumere valori negativi"
+  },
+  {
+    "id": "ac247ab6-f394-474c-8b0f-3f4b700140fe",
+    "question": "La variabile casuale t di student:",
+    "answers": [
+      "E' asimmetrica",
+      "Deriva dal rapporto di due indipendenti con distribuzione chi-quadrato",
+      "Al tendere di n all'infinito la v.c t di student tende alla normale standardizzata",
+      "Non dipende dai gradi di libertà"
+    ],
+    "correct_answer": "Al tendere di n all'infinito la v.c t di student tende alla normale standardizzata"
+  },
+  {
+    "id": "e3417082-5979-4b98-aa38-a8651eb0d233",
+    "question": "La variabile casuale F di Fisher-Snedecor:",
+    "answers": [
+      "Può assumere valori negativi",
+      "E' simmetrica in m e n",
+      "Non dipende dai gradi di libertà",
+      "Ha valore atteso E(F)= m/(m-2)"
+    ],
+    "correct_answer": "Ha valore atteso E(F)= m/(m-2)"
+  },
+  {
+    "id": "6a0bca65-9c58-4d19-b941-2b605c1dec2a",
+    "question": "Nel campionamento bernoulliano:",
+    "answers": [
+      "Ogni unità statistica può entrare a far parte più volte del campione",
+      "Le unità statistiche sono estratte senza ripetizione",
+      "La probabilità di estrazione è variabile",
+      "Tutte le unità statistiche entrano a far parte del campione"
+    ],
+    "correct_answer": "Ogni unità statistica può entrare a far parte più volte del campione"
+  },
+  {
+    "id": "93a4e3d0-8e15-46a9-9541-dad90a2c2453",
+    "question": "Nel campionamento bernoulliano:",
+    "answers": [
+      "I risultati delle estrazioni sono dipendenti",
+      "I risultati delle estrazioni sono indipendenti",
+      "I risultati delle estrazioni sono gli stessi dello schema di campionamento senza ripetizione",
+      "La probabilità di estrazione è variabile"
+    ],
+    "correct_answer": "I risultati delle estrazioni sono indipendenti"
+  },
+  {
+    "id": "3d6a78f7-cd13-4ba0-9d3a-55b3283fd6ec",
+    "question": "Da una popolazione composta da 5 unità statistiche ( A, B, C, D, E ) si voglia estrarre, con ripetizione, un campione \ncasuale di numerosità 2. Lo spazio campionario è composto da:",
+    "answers": [
+      "25 possibili campioni",
+      "30 possibili campioni",
+      "15 possibili campioni",
+      "20 possibili campioni"
+    ],
+    "correct_answer": "25 possibili campioni"
+  },
+  {
+    "id": "6a75dbf7-9879-46b0-96f7-396e7a5de2b3",
+    "question": "Da una popolazione composta da 4 unità statistiche ( A, B, C, D ) si voglia estrarre, con ripetizione, un campione \ncasuale di numerosità 2. Lo spazio campionario è composto da:",
+    "answers": [
+      "25 possibili campioni",
+      "30 possibili campioni",
+      "16 possibi campioni",
+      "10 possibili campioni"
+    ],
+    "correct_answer": "16 possibi campioni"
+  },
+  {
+    "id": "d6736947-1604-41a7-aa49-27142fb7744e",
+    "question": "Da una popolazione composta da 4 unità statistiche ( A, B, C, D ) si voglia estrarre, con ripetizione, un campione \ncasuale di numerosità 3. Lo spazio campionario è composto da:",
+    "answers": [
+      "26 possibili campioni",
+      "50 possibili campioni",
+      "64 possibili campioni",
+      "32 possibili campioni"
+    ],
+    "correct_answer": "64 possibili campioni"
+  },
+  {
+    "id": "32a8d8be-aba2-4994-bd2e-4040b37c3f7a",
+    "question": "Una distribuzione campionaria è:",
+    "answers": [
+      "La distribuzione di probabilità di un campione osservato",
+      "La distribuzione di probabilità di una statistica",
+      "Il valore osservato di un parametro della popolazione",
+      "L'insieme dei campioni estratti da una popolazione con ripetizione"
+    ],
+    "correct_answer": "La distribuzione di probabilità di una statistica"
+  },
+  {
+    "id": "339f15a1-9f11-4390-8c14-d523d5d52f05",
+    "question": "La media della distribuzione della media campionaria:",
+    "answers": [
+      "E' sempre maggiore della media della popolazione",
+      "Dipende dallo schema di campionamento utilizzato",
+      "Coincide con la media della popolazione",
+      "E' sempre inferiore della media della popolazione"
+    ],
+    "correct_answer": "Coincide con la media della popolazione"
+  },
+  {
+    "id": "6c4afee4-eb76-40bd-810e-1d765f29f43c",
+    "question": "Quando la popolazione è infinita:",
+    "answers": [
+      "La quantità (N-n/N-1) tende 0",
+      "La quantità (N-n/N-1) tende ad infinito",
+      "Lo schema di campiomento con ripetizione coincide con lo schema di campiomaento senza ripetizione",
+      "La quantità (N-n/N-1) tende ad meno infinito"
+    ],
+    "correct_answer": "Lo schema di campiomento con ripetizione coincide con lo schema di campiomaento senza ripetizione"
+  },
+  {
+    "id": "fdddd8db-d189-468c-b6f7-b00d76929267",
+    "question": "Il teorema del limite centrale:",
+    "answers": [
+      "E' valido per un numero sufficientemente grande di variabili casuali dipendenti",
+      "Non è applicabile al caso in cui le variabili casuali, la cui somma è una variabile casuale normale, sono distribuite \nnormalmente",
+      "Afferma che al crescere di n la forma della distribuzione della media campionaria si approssima alla forma normale",
+      "Afferma che al decrescere di n la forma della distribuzione della media campionaria si approssima alla forma \nnormale"
+    ],
+    "correct_answer": "Afferma che al crescere di n la forma della distribuzione della media campionaria si approssima alla forma normale"
+  },
+  {
+    "id": "14853f2a-aab3-41a8-b206-acd50becef9a",
+    "question": "Cosa si intende per stima puntuale:",
+    "answers": [
+      "La stima più attentendibile di un dato parametro della popolazione",
+      "La stima di un parametro in un dato punto dell'universo dei campioni",
+      "La stima attraverso la quale si giunge alla determinazione di un solo valore numerico per uno o più parametri della \npopolazione",
+      "Una funziona di variabili casuali"
+    ],
+    "correct_answer": "La stima attraverso la quale si giunge alla determinazione di un solo valore numerico per uno o più parametri della \npopolazione"
+  },
+  {
+    "id": "c6e76054-e7db-4913-bc54-9fab05a1fbfd",
+    "question": "Cosa si intende per stima intervallare:",
+    "answers": [
+      "La stima di un parametro in un dato punto dell'universo dei campioni",
+      "La stima attraverso la quale si giunge alla determinazione di un solo valore numerico per uno o più parametri della \npopolazione",
+      "La stima attraverso la quale si giunge alla determinazione di un intervallo, che include il parametro stimato, con \nlivello di confidenza 1-",
+      "Una variabile casuale"
+    ],
+    "correct_answer": "La stima attraverso la quale si giunge alla determinazione di un intervallo, che include il parametro stimato, con \nlivello di confidenza 1-"
+  },
+  {
+    "id": "810066c0-1ece-4541-a1e6-2f26a7beaa17",
+    "question": "Lo stimatore di un parametro:",
+    "answers": [
+      "Coincide con la stima del parametro",
+      "È una variabile casuale",
+      "È una funzione dei dati di una popolazione",
+      "È unico"
+    ],
+    "correct_answer": "È una variabile casuale"
+  },
+  {
+    "id": "6255034a-0250-45fc-926c-7882a7d4b29c",
+    "question": "Si definisce stima:",
+    "answers": [
+      "Il valore assunto dallo stimatore prima dell'estrazione del campione",
+      "Il valore assunto dallo stimatore per un dato campione",
+      "Una variabile casuale",
+      "Una funzione di variabili casuali"
+    ],
+    "correct_answer": "Il valore assunto dallo stimatore per un dato campione"
+  },
+  {
+    "id": "85b54949-5e10-461e-86e6-07729ead21a7",
+    "question": "Uno stimatore corretto:",
+    "answers": [
+      "E' tale che il suo valore medio è nullo",
+      "È tale che il suo valore medio coincide con il valore del parametro da stimare",
+      "È tale che l suo valore medio non coincide con il valore del parametro da stimare",
+      "E tale che E(T) = θ^2"
+    ],
+    "correct_answer": "È tale che il suo valore medio coincide con il valore del parametro da stimare"
+  },
+  {
+    "id": "8c572e7c-834e-4713-93d2-e20144bda2cd",
+    "question": "Lo stimatore varianza campionaria corretta:",
+    "answers": [
+      "Ha media inferiore al parametro da stimare",
+      "Ha media pari al parametro da stimare",
+      "Ha media superiore al parametro da stimare",
+      "Nessuna delle precedenti, in quanto si considera lo stimatore varianza campionaria e non lo stimatore varianza \ncampionaria corretta"
+    ],
+    "correct_answer": "Ha media pari al parametro da stimare"
+  },
+  {
+    "id": "cea38628-d6fc-4a95-a39f-7afba3701a47",
+    "question": "Uno stimatore si dice consistente:",
+    "answers": [
+      "Il suo valore medio è il doppio del valore del parametro da stimare",
+      "Il suo valore medio è la metà del valore del parametro da stimare",
+      "Al crescere della numerosità campionaria, tende a concentrarsi sul parametro da stimare",
+      "Il suo EQM è superiore a quello di qualunque altro stimatore"
+    ],
+    "correct_answer": "Al crescere della numerosità campionaria, tende a concentrarsi sul parametro da stimare"
+  },
+  {
+    "id": "f5b4f9fa-b2f6-4f7b-823e-de77b36ef010",
+    "question": "Uno stimatore corretto è più efficiente di un altro stimatore corretto del parametro'teta'non noto se:",
+    "answers": [
+      "Se presenta una varianza maggiore",
+      "Se presenta la stessa varianza",
+      "Se presenta varianza inferiore",
+      "Se presenta EQM maggiore"
+    ],
+    "correct_answer": "Se presenta varianza inferiore"
+  },
+  {
+    "id": "f871f154-837c-46b8-ac3b-7e6e47bc3b00",
+    "question": "Dati due stimatori T1 e T2 di uno stesso parametro:",
+    "answers": [
+      "Si ha che EQM(T1)",
+      "Se il primo è distorto lo è anche il secondo",
+      "se T1 è distorto e T2 è non distorto, il primo è migliore del secondo in termini di EQM per ogni valore del parametro",
+      "Se entrambi sono non distorti, il confronto tra i due stimatori in termini di efficienza può essere effettuato solo sulla \nbase della varianza"
+    ],
+    "correct_answer": "Se entrambi sono non distorti, il confronto tra i due stimatori in termini di efficienza può essere effettuato solo sulla \nbase della varianza"
+  },
+  {
+    "id": "314d19d7-88da-473b-9c76-9a72f9192a85",
+    "question": "Un intervallo di confidenza è:",
+    "answers": [
+      "Un intervallo di valori all'interno del quale è contenuto il coefficiente di correlazione con una prestabilita \"fiducia\"",
+      "Un intervallo di valori che si ritiene contenga il vero parametro della popolazione con una prestabilita \"fiducia\"",
+      "L'intervallo di valori assunti dagli indici normalizzati",
+      "Un intervallo di valori all'interno del quale è contenuta la differenza media con ripetizione con una prestabilita \nfiducia"
+    ],
+    "correct_answer": "Un intervallo di valori che si ritiene contenga il vero parametro della popolazione con una prestabilita \"fiducia\""
+  },
+  {
+    "id": "025899c5-353b-4297-801f-f3c93460c711",
+    "question": "Una quantità pivotale è:",
+    "answers": [
+      "Una quantità che è funzione delle osservazione e del parametro del quale si vuole costruire l'intervallo di \nconfidenza, con la caratteristica che la sua distribuzione non è nota",
+      "Una quantità che è funzione del solo parametro del quale si vuole costruire l'intervallo di confidenza",
+      "Una quantità che è funzione delle osservazione e del parametro del quale si vuole costruire l'intervallo di confidenza, \ncon la caratteristica che la sua distribuzione è nota e non dipende dal parametro in esame",
+      "Non esiste la quantità pivotale"
+    ],
+    "correct_answer": "Una quantità che è funzione delle osservazione e del parametro del quale si vuole costruire l'intervallo di confidenza, \ncon la caratteristica che la sua distribuzione è nota e non dipende dal parametro in esame"
+  },
+  {
+    "id": "1e954917-ed75-4ac1-a7c2-9149df2f5f8e",
+    "question": "L'ampiezza dell'intervallo è tanta più elavata quanto più:",
+    "answers": [
+      "n è grande",
+      "n è piccolo",
+      "σ è piccolo",
+      "Non dipende né da n né da σ"
+    ],
+    "correct_answer": "n è piccolo"
+  },
+  {
+    "id": "84d35b87-4580-4b5c-8e48-ac00ec094286",
+    "question": "Per la determinazione dell'intervallo di confidenza per la media di una popolazione normale con varianza nota, si \nutilizza:",
+    "answers": [
+      "La distribuzione t di student",
+      "La distribuzione normale standardizzata",
+      "La distribuzione chi-quadrato",
+      "La distribuzione F di Fisher-Snedecor"
+    ],
+    "correct_answer": "La distribuzione normale standardizzata"
+  },
+  {
+    "id": "6dcf966e-683a-4481-bf0e-59e9bddee153",
+    "question": "Per la determinazione dell'intervallo di confidenza per la media di una popolazione normale con varianza non \nnota (n",
+    "answers": [
+      "La distribuzione chi-quadrato",
+      "La distribuzione t di student",
+      "Distribuzione normale standardizzata",
+      "La distribuzione F di Fisher-Snedecor"
+    ],
+    "correct_answer": "La distribuzione t di student"
+  },
+  {
+    "id": "f867f6ad-474c-4bbc-b393-31afc33413b4",
+    "question": "Se la popolazione non è normale per il teorema del limite centrale, quando n>30, si può costruire l'intervallo di \nconfidenza:",
+    "answers": [
+      "Basato sulla distribuzione chi-quadrato",
+      "Basato sulla distribuzione normale standardizzata",
+      "Basato sulla distribuzione F",
+      "Basato sulla distribuzione chi-quadrato non centrale"
+    ],
+    "correct_answer": "Basato sulla distribuzione normale standardizzata"
+  },
+  {
+    "id": "1002a401-0036-45b5-a5dc-75c355cf680a",
+    "question": "Per trovare l'intervallo di confidenza per la media di una popolazione normale, si utilizza la t di student, anziché la \nnormale standardizzata perché:",
+    "answers": [
+      "La media della popolazione non è nota",
+      "La distribuzione t di student è più efficiente",
+      "La varianza della popolazione non è nota",
+      "La media del campione è nota"
+    ],
+    "correct_answer": "La varianza della popolazione non è nota"
+  },
+  {
+    "id": "19197bfc-4eed-4877-80e1-ee4cad8da118",
+    "question": "Si effettuano 60 misurazioni sperimentali da cui si evince una media campionaria uguale a 33. Costruire un \nintervallo di confidenza al 90% per la media della popolazione, la quale si distribuisce normalmente con varianza \npari a 115:",
+    "answers": [
+      "IC=[28,727; 36,506]",
+      "IC=[25,235; 40,724]",
+      "IC=[30,723; 35,277]",
+      "IC=[40,722; 45,373]"
+    ],
+    "correct_answer": "IC=[30,723; 35,277]"
+  },
+  {
+    "id": "361137d8-757b-448c-a520-4f1a9e3edb15",
+    "question": "Supponiamo che la perdita di peso di n=16 pezzi di metallo, dopo un certo intervallo di tempo, sia di 3,42 gr con \nvarianza campionaria corretta pari a 0,4624. Costruire un intervallo di confidenza al 99% per la media della \npopolazione di peso dei pezzi di metallo:",
+    "answers": [
+      "IC=[2,16;4;92]",
+      "IC=[2,32;5,63]",
+      "IC=[2,92;3,92]",
+      "IC=[2,05;7,43]"
+    ],
+    "correct_answer": "IC=[2,92;3,92]"
+  },
+  {
+    "id": "adb51e1f-e292-49a6-9272-20b0e3a1d1fc",
+    "question": "Da una partita di bulloni metallici è stato estratto un campione di n=100 elementi e se ne sono trovati 20 \ndifettosi. Costruire un intervallo di confidenza al 95% per la proporzione p dei pezzi difettosi:",
+    "answers": [
+      "IC=[0,1216;0,2784]",
+      "IC=[0,1050;0,3084]",
+      "IC=[0,1150;0,4082]",
+      "IC=[0,1530;0,3910]"
+    ],
+    "correct_answer": "IC=[0,1216;0,2784]"
+  },
+  {
+    "id": "2382c516-d1e6-40fd-b475-bb9a4b1f97fc",
+    "question": "L'ampiezza A dell'intervallo di confidenza per :",
+    "answers": [
+      "B. \n \nC. \n \nD. \n \n \nAnswer: A \nSection: Calcolo della numerosita' campionaria \n \n2. In riferimento alla domanda 1 la numerosità n è uguale: \nA.",
+      "C. \n \nD. \n \n \nAnswer: B \nSection: Calcolo della numerosita' campionaria \n \n3. Quanto dovrebbe essere grande un campione per avere un intervallo di confidenza al 95% per il contenuto medio \ndi nicotina di una data marca di sigarette, se il contenuto di nicotina ha una distribuzione normale con σ=8,5 mg e \nl'ampiezza dell'intervallo deve essere di 6 mg: \nA. n=40 \nB. n=22",
+      "n=31",
+      "n=23"
+    ],
+    "correct_answer": "n=31",
+    "image": "sta19.jpg"
+  },
+  {
+    "id": "e0ed4742-92f3-4965-b4ae-1294a25e77b2",
+    "question": "In rifermento alla domanda 4 si calcoli l'ampiezza di tale intervallo:",
+    "answers": [
+      "0.0175",
+      "0.0112",
+      "0.0135",
+      "0.0124"
+    ],
+    "correct_answer": "0.0124"
+  },
+  {
+    "id": "c0bd2aa5-28a6-496d-8340-d1873f2b7604",
+    "question": "Nel caso di estrazione senza ripetizione la deviazione standard delle frequenze campionarie è:",
+    "answers": [
+      "B. \n \nC. \n \nD. \n \n \nAnswer: C \nSection: Dimensione campionaria per la stima di una proporzione \n \n7. Nel caso di estrazione con ripetizione la deviazione standard delle frequenze campionarie è: \nA.",
+      "",
+      "",
+      ""
+    ],
+    "correct_answer": "",
+    "image": "sta27.jpg"
+  },
+  {
+    "id": "1f1ab094-525c-43aa-9f0a-0385d55b0aae",
+    "question": "L'ampiezza dell'intervallo di confidenza per una proporzione è:",
+    "answers": [
+      "B. \n \nC. \n \nD. \n \n \nAnswer: B \nSection: Dimensione campionaria per la stima di una proporzione \n \n9. Se la popolazione è sufficiente grande, o nel caso di estrazione con ripetizionesi ha che: \nA.",
+      "C. \n \nD. \n \n \nAnswer: B \nSection: Dimensione campionaria per la stima di una proporzione \n \n10. Si vuole conoscere la proporzione di pezzi difettosi prodotti da una macchina. Determinare la numerosità \ncampionaria necessaria affinchè la vera proporzione cada in un intervallo al 90%, tollerando un errore non superiore \nal 3%: \nA. n=751,67 \nB. n= 900",
+      "n=1354,24",
+      "n= 1454, 27"
+    ],
+    "correct_answer": "B. \n \nC. \n \nD. \n \n \nAnswer: B \nSection: Dimensione campionaria per la stima di una proporzione \n \n9. Se la popolazione è sufficiente grande, o nel caso di estrazione con ripetizionesi ha che: \nA.",
+    "image": "sta35.jpg"
+  },
+  {
+    "id": "f6cd9fe0-4f05-4b3e-b85c-0c1d2095e4ee",
+    "question": "Un ipotesi statistica è:",
+    "answers": [
+      "Un affermazione trial distribuzione di probabilità di una variabile casuale",
+      "Un affermazione sulla distribuzione di frequenza di una variabile statistica",
+      "Un affermazione sulla variabilità dei rapporti statistici",
+      "Un affermazione sulla distribuzione congiunta di due caratteri statistici"
+    ],
+    "correct_answer": "Un affermazione trial distribuzione di probabilità di una variabile casuale"
+  },
+  {
+    "id": "0f6b1743-9138-42f5-9636-97cb7f696392",
+    "question": "La verifica delle ipotesi:",
+    "answers": [
+      "Consiste nel calcolare gli scostamenti tra valori osservati e valori teorici della stessa variabile desunti da un' \nosservazione campionaria",
+      "Consiste nel formulare, sulla base di dati campionari, un giudizio che induca ad accettare o rifiutare l'ipotesi nulla, \ncon un prefissato livello di significatività",
+      "Consiste nel formulare, sulla base di considerazioni teoriche, un giudizio che induca ad accettare o a rifiutare \nl'ipotesi nulla",
+      "Consiste nel disporre tutte le osservazioni campionarie in modo da conservare quelle più efficienti"
+    ],
+    "correct_answer": "Consiste nel formulare, sulla base di dati campionari, un giudizio che induca ad accettare o rifiutare l'ipotesi nulla, \ncon un prefissato livello di significatività"
+  },
+  {
+    "id": "8129b52f-2b2b-498b-b37e-d93fdcf8e74c",
+    "question": "L'ipotesi parametrica riguarda:",
+    "answers": [
+      "Riguarda l'indipendenza correlativa tra due variabili",
+      "Riguarda l'indipendenza in media tra due variabili",
+      "I parametri caratteristici di una particolare distribuzione di cui si conosce la forma analitica",
+      "Riguarda l'indipendenza stoscastica tra due variabili"
+    ],
+    "correct_answer": "I parametri caratteristici di una particolare distribuzione di cui si conosce la forma analitica"
+  },
+  {
+    "id": "787d9433-42f7-43b3-8d79-6ec36a055207",
+    "question": "Le ipotesi statistiche:",
+    "answers": [
+      "Posso essere vere entrambe",
+      "Si tratta due ipotesi alternative complementari e logicamente escludentisi",
+      "Possono essere false entrambe",
+      "Sono solo ipotesi semplici"
+    ],
+    "correct_answer": "Si tratta due ipotesi alternative complementari e logicamente escludentisi"
+  },
+  {
+    "id": "4b5f5561-be67-48d0-836c-dd3b1346a819",
+    "question": "L' ipotesi statistica è semplice:",
+    "answers": [
+      "Se si assegna al parametro un valore puntale",
+      "Se si assegna al parametro un insieme più ampio di valori",
+      "Se si afferma che il parametro sia diverso da un particolare valore dello spazio parametrico",
+      "L'ipotesi statistica non è mai semplice"
+    ],
+    "correct_answer": "Se si assegna al parametro un valore puntale"
+  },
+  {
+    "id": "f5f8646f-2a01-4033-acfe-f0186be70165",
+    "question": "Si commette un errore di seconda specie:",
+    "answers": [
+      "Nel rifiutare l'ipotesi nulla quando in realtà è vera",
+      "Nell' accettare l'ipotesi nulla quando in realtà è falsa",
+      "Nel considerare uno stimatore efficiente quando non lo è",
+      "Nel considerare uno stimatore corretto quando non lo è"
+    ],
+    "correct_answer": "Nell' accettare l'ipotesi nulla quando in realtà è falsa"
+  },
+  {
+    "id": "34436dcc-6503-4cad-b577-26058ac88a32",
+    "question": "Cosa indica il livello di significatività:",
+    "answers": [
+      "La probabilità di commettere un errore di seconda specie",
+      "L'errore che si commette nell'accettare l'ipotesi nulla quando essa è falsa",
+      "La probabilità massima con cui accettiamo di rischiare l'errore di prima specie",
+      "La probabilità di accettare l'ipotesi alternativa quando essa è vera"
+    ],
+    "correct_answer": "La probabilità massima con cui accettiamo di rischiare l'errore di prima specie"
+  },
+  {
+    "id": "f99ee945-6d8b-45f9-bf12-1a18ebccd092",
+    "question": "La potenza del test è:",
+    "answers": [
+      "Il grado di attendibilità di un'ipotesi statistica",
+      "Un altro modo per definire la proprietà dell'efficienza dello stimatore",
+      "La probabilità di rigettare l'ipotesi nulla quando è giusto farlo",
+      "La probabilità di ottenere in una sola prova l'evento considerato"
+    ],
+    "correct_answer": "La probabilità di rigettare l'ipotesi nulla quando è giusto farlo"
+  },
+  {
+    "id": "d6e33cc7-a2bb-40da-92ec-ebc5e79ed17f",
+    "question": "Aumentando il livello di significatività:",
+    "answers": [
+      "Diminuisce la probabilità di commettere l'errore di prima specie",
+      "Aumenta la probabilità associata all'errore di seconda specie",
+      "Diminuisce la potenza del test",
+      "Aumenta la potenza del test"
+    ],
+    "correct_answer": "Aumenta la potenza del test"
+  },
+  {
+    "id": "6747fa05-fd28-44f5-9088-905e0e196e18",
+    "question": "Sia data una popolazione normale con varianza nota. Volendo verificare l'ipotesi: \n contro \n. La \nstatistica test da utilizzare è:",
+    "answers": [
+      "B. \n \nC. \n \nD. \n \n \nAnswer: A \nSection: Test sulla media con ianza nota \n \n2. Sia data una popolazione normale con varianza non nota. Volendo verificare l'ipotesi: \ncontro \n. La statistica test da utilizzare è: \nA.",
+      "C. \n \nD. \n \n \nAnswer: A \nSection: Test sulla media con ianza non nota \n \n3. Si vuole sottoporre a verifica l'ipotesi: H0:μ = μ0 contro H1:μ ≠ μ0, usando un livello di significatività dello 0,05. La \nregione di rifiuto per il test Z è: \nA. z>1,645 \nB. z ≥ 1,96 ; z ≤ -1,96",
+      "z < -1,96",
+      "z > 1,96"
+    ],
+    "correct_answer": "C. \n \nD. \n \n \nAnswer: A \nSection: Test sulla media con ianza non nota \n \n3. Si vuole sottoporre a verifica l'ipotesi: H0:μ = μ0 contro H1:μ ≠ μ0, usando un livello di significatività dello 0,05. La \nregione di rifiuto per il test Z è: \nA. z>1,645 \nB. z ≥ 1,96 ; z ≤ -1,96",
+    "image": "sta49.jpg"
+  },
+  {
+    "id": "7957d7ef-4f2b-4db8-92f4-a594ab8126d6",
+    "question": "Si vuole sottoporre a verifica l'ipotesi: \n<immagine> contro \n<immagine> usando un livello di \nsignificatività dello 0,05. La regione di rifiuto per il test T con 16 gradi di libertà è:",
+    "answers": [
+      "t > 1,645",
+      "t < -2,120 o t > 2,120",
+      "-2,120 < t < 2,120",
+      "t < -1,645"
+    ],
+    "correct_answer": "t < -2,120 o t > 2,120"
+  },
+  {
+    "id": "58af0787-d40d-4272-b88d-b256fd2d8255",
+    "question": "Si vuole sottoporre a verifica l'ipotesi: \n<immagine> contro \n<immagine> usando un livello di \nsignificatività dello 0,05. La regione di rifiuto per il test T con 16 gradi di libertà è:",
+    "answers": [
+      "t > 1,746",
+      "t < -1,746",
+      "t < -2,120 o t > 2,120",
+      "t < -2,120"
+    ],
+    "correct_answer": "t > 1,746"
+  },
+  {
+    "id": "7ea6ab30-3a1b-4154-8489-4ac01d814d63",
+    "question": "Si vuole sottoporre a verifica l'ipotesi: \n<immagine> contro \n<immagine> , usando un livello di \nsignificatività dello 0,05. La regione di rifiuto per il test Z è:",
+    "answers": [
+      "z < - 1,645",
+      "z < 1,96",
+      "z > 1,96",
+      "z < - 2,58"
+    ],
+    "correct_answer": "z < - 1,645"
+  },
+  {
+    "id": "23a630f4-d656-492e-b714-173f1a53c750",
+    "question": "Si vuole sottoporre a verifica l'ipotesi: \n<immagine> contro \n<immagine> , usando un livello di \nsignificatività dello 0,01. La regione di rifiuto per il test T con 18 gradi di libertà è: contro:",
+    "answers": [
+      "t < - 2,552",
+      "t > 1,746",
+      "t > 1,96",
+      "t < 1,96"
+    ],
+    "correct_answer": "t < - 2,552",
+    "image": "sta57.jpg"
+  },
+  {
+    "id": "cd5e84a5-eaa5-4b4f-add7-b8b41b7544e6",
+    "question": "Si vuole sottoporre a verifica l'ipotesi: \n<immagine> contro \n<immagine> , usando un livello di \nsignificatività dello 0,01. La regione di rifiuto per il test T con 17 gradi di libertà è:",
+    "answers": [
+      "t < -2,552",
+      "-2,552 < t < 2,552",
+      "t > 2,567",
+      "t < -2,120 o t > 2,120"
+    ],
+    "correct_answer": "t > 2,567"
+  },
+  {
+    "id": "5373d862-81a9-4ea8-89eb-96001cf7c4d6",
+    "question": "Si vuole sottoporre a verifica l'ipotesi: \n<immagine> contro \n<immagine> , usando un livello \ndi significatività dello 0,10. La regione di rifiuto per il test Z è:",
+    "answers": [
+      "z < - 1,96",
+      "z > - 1,96",
+      "z ≤ - 1,28",
+      "z > - 1,96"
+    ],
+    "correct_answer": "z ≤ - 1,28",
+    "image": "sta61.jpg"
+  },
+  {
+    "id": "83d1b3c0-fb42-4b13-9eae-81a539f020bb",
+    "question": "La verifica dell'ipotesi di indipendenza mira a verificare:",
+    "answers": [
+      "L'indipendenza in media",
+      "L'indipendenza correlativa",
+      "L'indipendenza stocastica",
+      "Ipotesi nulla"
+    ],
+    "correct_answer": "L'indipendenza stocastica"
+  },
+  {
+    "id": "7bfa71ec-d39c-4e9c-8d1e-168f43bb156f",
+    "question": "Due variabili sono stocasticamente indipendenti se:",
+    "answers": [
+      "B. \n \nC. \n \nD. \n \n \nAnswer: C \nSection: Verifica dell'ipotesi di indipendenza \n \n3. Effettuando un test di verifica dell'ipotesi di indipendenza su una tabella di contingenza, i gradi di libertà \ncorrispondono: \nA. N[(r-1)(c-1)]",
+      "(r-1)(c-1)",
+      "(r-1)+(c-1)",
+      "Min[(r-1)(c-1)]"
+    ],
+    "correct_answer": "(r-1)(c-1)"
+  },
+  {
+    "id": "28aa5f2d-f0c6-4d05-9e04-02192957a157",
+    "question": "Se il \n<immagine> :",
+    "answers": [
+      "Si rifiuta l'ipotesi di indipendenza stocastica",
+      "Si rifiuta l'ipotesi di indipendenza in distribuzione",
+      "Righe e colonne non sono indipendenti",
+      "Si accetta l'ipotesi di indipendenza stocastica"
+    ],
+    "correct_answer": "Si accetta l'ipotesi di indipendenza stocastica",
+    "image": "sta67.jpg"
+  },
+  {
+    "id": "9a34377e-2513-4f21-a2d2-ecd8fe1609f0",
+    "question": "Effettuando un test di verifica dell'ipotesi di indipendenza su una tabella di contingenza 5x4, i gradi di libertà \ncorrispondono:",
+    "answers": [
+      "4",
+      "5",
+      "12",
+      "20"
+    ],
+    "correct_answer": "12"
+  },
+  {
+    "id": "7309e534-0a17-41d6-8488-bf35d6d29086",
+    "question": "Effettuando un test di verifica dell'ipotesi di indipendenza su una tabella di contingenza 6x6, i gradi di libertà \ncorrispondono:",
+    "answers": [
+      "36",
+      "25",
+      "12",
+      "6"
+    ],
+    "correct_answer": "25"
+  },
+  {
+    "id": "183492cb-6589-461f-854d-e8f141f3057c",
+    "question": "Se il \n<immagine> :",
+    "answers": [
+      "Si rifiuta l'ipotesi di indipendenza stocastica",
+      "Si accetta l'ipotesi di indipendenza stocastica",
+      "Si accetta l'ipotesi di indipendenza in distribuzione",
+      "Righe e colonne sono indipendenti"
+    ],
+    "correct_answer": "Si rifiuta l'ipotesi di indipendenza stocastica"
+  },
+  {
+    "id": "ad1294e5-10e7-4a19-a08c-9a17af7d6e46",
+    "question": "Si vuole verificare l'ipotesi di indipendenza sulla base di una tabella di contingenza 3x3 la cui frequenza totale è \nn=400. Il valore soglia per la statistica test ha distribuzione approssimativamente:",
+    "answers": [
+      "T-student con 399 gradi di libertà",
+      "Chi- quadrato con 4 gradi di libertà",
+      "Chi- quadrato con 3 gradi di libertà",
+      "Chi- quadrato con 9 gradi di libertà"
+    ],
+    "correct_answer": "Chi- quadrato con 4 gradi di libertà",
+    "image": "sta68.jpg"
+  },
+  {
+    "id": "f70c5af1-7bec-4da2-b5fd-f48c4b10e47c",
+    "question": "Nel modello di regressione lineare semplice, quali tra le seguenti ipotesi è definita ipotesi forte:",
+    "answers": [
+      "Ipotesi di indipendenza",
+      "Ipotesi sulla variabile esplicativa",
+      "Ipotesi di normalità",
+      "Ipotesi di varianza costante"
+    ],
+    "correct_answer": "Ipotesi di normalità"
+  },
+  {
+    "id": "c3ac9edb-ce58-4e74-bfd6-4d08f1b37bdd",
+    "question": "Nel modello di regressione lineare semplice, quali tra le seguenti ipotesi è definita ipotesi debole:",
+    "answers": [
+      "Ipotesi di indipendenza",
+      "Ipotesi sulla variabile esplicativa",
+      "Ipotesi di normalità",
+      "Ipotesi di varianza costante"
+    ],
+    "correct_answer": "Ipotesi sulla variabile esplicativa"
+  },
+  {
+    "id": "4895333c-5ab8-43ca-b2e2-e23446be4bb0",
+    "question": "L'ipotesi di indipendenza stabilisce che:",
+    "answers": [
+      "B. \n \nC. \n \nD. \n \n \nAnswer: B \nSection: Ipotesi alla base del modello \n \n4. Con il metodo dei minimi quadrati: \nA. Si minimizza la somma dei quadrati degli scarti tra valori osservati e valori teorici",
+      "Si minimizza la devianza di regressione",
+      "Si minimizza la devianza totale",
+      "Si minimizzano la somma delle differenze al quadrato tra valori teorici della retta ela media di y"
+    ],
+    "correct_answer": "B. \n \nC. \n \nD. \n \n \nAnswer: B \nSection: Ipotesi alla base del modello \n \n4. Con il metodo dei minimi quadrati: \nA. Si minimizza la somma dei quadrati degli scarti tra valori osservati e valori teorici"
+  },
+  {
+    "id": "fcd40cdb-13ed-4196-87e8-d59225413a3c",
+    "question": "Il coefficiente angolare b1 indica:",
+    "answers": [
+      "La pendenza della retta",
+      "Il valore in cui la retta interseca l'asse delle ordinate",
+      "Il grado di adattamento",
+      "Un valore teorico"
+    ],
+    "correct_answer": "La pendenza della retta",
+    "image": "sta72.jpg"
+  },
+  {
+    "id": "abde4795-d8f6-40df-b806-cc255d9794ab",
+    "question": "Il valore atteso dello stimatore b1 è:",
+    "answers": [
+      "E(B1)=0",
+      "E(B1)≠β1",
+      "E(B1)=β1",
+      "Var(B1)=EQM)"
+    ],
+    "correct_answer": "E(B1)=β1"
+  },
+  {
+    "id": "cd8b07e7-959b-4155-9fa4-67c2f3fe353c",
+    "question": "La varianza dello stimatore b1 è:",
+    "answers": [
+      "B. \n \nC. \n \nD. \n \n \nAnswer: A \nSection: ProprietÀ degli stimatori dei minimi quadrati \n \n9. Uno stimatore corretto di σ², con le ipotesi di varianza costante e dell'indipendenza degli errori è il MSE* = \nSSE*/n-2, il cui valore atteso è: \nA. E(MSE*)= σ2",
+      "E(MSE*)= 0",
+      "E(MSE*)≠σ2",
+      "E(MSE*)≠(n-2)σ2"
+    ],
+    "correct_answer": "B. \n \nC. \n \nD. \n \n \nAnswer: A \nSection: ProprietÀ degli stimatori dei minimi quadrati \n \n9. Uno stimatore corretto di σ², con le ipotesi di varianza costante e dell'indipendenza degli errori è il MSE* = \nSSE*/n-2, il cui valore atteso è: \nA. E(MSE*)= σ2"
+  },
+  {
+    "id": "90076d9a-96cf-4303-ab96-b8862ab35d74",
+    "question": "In base al teorema di Gauss Markov, gli stimatori dei minimi quadrati:",
+    "answers": [
+      "Sono i meno efficienti",
+      "Sono i più efficienti",
+      "Hanno varianza maggiore",
+      "Hanno EQM maggiore"
+    ],
+    "correct_answer": "Sono i più efficienti",
+    "image": "sta76.jpg"
+  },
+  {
+    "id": "d6a72ab9-9037-49fa-8d91-e58a4975641b",
+    "question": "Per stimare il parametro:",
+    "answers": [
+      "MSE*= SSE*/n-2",
+      "MSE*= SSE*/n-1",
+      "MSE*= SSE*(n-2)",
+      "MSE*= SSE*(n-1)"
+    ],
+    "correct_answer": "MSE*= SSE*/n-2"
+  },
+  {
+    "id": "7ba18e8d-8119-483e-87e2-0ef140191f3c",
+    "question": "Nel modello di regressione lineare semplice la devianza residua risulta uguale a:",
+    "answers": [
+      "B. \n \nC. \n \nD. \n \n \nAnswer: B \nSection: Il modello di regressione lineare semplice: aspetti inferenziali \n \n3. Sotto l'ipototesi che H0 sia vera la variabile casuale t si distribuisce come: \nA. come una t di Student con n gradi di libertà",
+      "come una t di Student con n-2 gradi di libertà",
+      "come una t di Student con n-1 gradi di libertà",
+      "come una t di Student con n-3 gradi di libertà"
+    ],
+    "correct_answer": "come una t di Student con n-2 gradi di libertà"
+  },
+  {
+    "id": "05283d89-1f59-4c57-aa0c-d9394dab6198",
+    "question": "Il coefficiente di determinazione lineare è:",
+    "answers": [
+      "il quadrato della codevianza",
+      "la radice quadrata della codevianza",
+      "il quadrato del coefficiente di correlazione lineare",
+      "il quadrato del prodotto tra la devianza di X per la devianza di Y"
+    ],
+    "correct_answer": "il quadrato del coefficiente di correlazione lineare"
+  },
+  {
+    "id": "4e901a43-9ade-4247-a8be-c92028fa8b7b",
+    "question": "Il coefficiente di determinazione lineare varia tra:",
+    "answers": [
+      "-1 < R2<1",
+      "0 < R2<1",
+      "0 < R2+∞",
+      "Può assumere qualsiasi valore"
+    ],
+    "correct_answer": "0 < R2<1",
+    "image": "sta80.jpg"
+  },
+  {
+    "id": "35574590-6d5d-419e-a0a5-fad98efa320a",
+    "question": "Il coefficiente di determinazione lineare è nullo se è nulla:",
+    "answers": [
+      "La devianza totale",
+      "la varianza",
+      "la covarianza",
+      "La devianza di regressione"
+    ],
+    "correct_answer": "La devianza di regressione"
+  },
+  {
+    "id": "40f28789-2afa-471c-84ce-e3e9a3902152",
+    "question": "Se il coefficiente di correlazione r= 0:",
+    "answers": [
+      "C'è discordanza",
+      "Non c'e relazione lineare tra X e Y",
+      "C'è concordanza",
+      "C'è perfetta relazione lineare tra X e Y"
+    ],
+    "correct_answer": "Non c'e relazione lineare tra X e Y"
+  },
+  {
+    "id": "e55dc285-a613-450d-bcb8-02e5842e4438",
+    "question": "In riferimento alla tabella che mostra la decomposizione della devianza totale, il rapporto F è uguale:",
+    "answers": [
+      "B. \n \nC. \n \nD. \n \n \nAnswer: B \nSection: Il modello di regressione lineare semplice: aspetti inferenziali \n \n9. Il E(SSR*) è uguale: \nA.",
+      "",
+      "",
+      ""
+    ],
+    "correct_answer": "B. \n \nC. \n \nD. \n \n \nAnswer: B \nSection: Il modello di regressione lineare semplice: aspetti inferenziali \n \n9. Il E(SSR*) è uguale: \nA.",
+    "image": "sta88.jpg"
+  },
+  {
+    "id": "2593f908-1ca9-49c9-88e6-429d3ab871a8",
+    "question": "La distribuzione di frequenza è:",
+    "answers": [
+      "Il calcolo delle frequenze per ciascun valore o categoria della variabile",
+      "Il calcolo delle medie",
+      "La rappresentazione della serie storica",
+      "Il calcolo delle frequenze cumulate"
+    ],
+    "correct_answer": "Il calcolo delle frequenze per ciascun valore o categoria della variabile"
+  },
+  {
+    "id": "89c95bec-3c4f-43e5-a30c-d33528462363",
+    "question": "Una tabella a doppia entrata registra:",
+    "answers": [
+      "La frequenza assoluta, cioè quante volte una coppia di modalità si presenta contemporaneamente per X e per Y",
+      "Le frequenze cumulate della X",
+      "Quante volte una coppia di modalità si presenta contemporaneamente per le variabili dipendenti",
+      "Quante volte una coppia di modalità si presenta contemporaneamente per X"
+    ],
+    "correct_answer": "La frequenza assoluta, cioè quante volte una coppia di modalità si presenta contemporaneamente per X e per Y"
+  },
+  {
+    "id": "07ab9b0c-fa33-4969-8fe5-6184c153570e",
+    "question": "La frequenza cumulata:",
+    "answers": [
+      "È esprimibile solo in livello",
+      "È esprimibile a volte in percentuale",
+      "È sempre uguale alla relativa",
+      "Può essere uguale alla relativa"
+    ],
+    "correct_answer": "Può essere uguale alla relativa"
+  },
+  {
+    "id": "c6d03d8e-b824-41cc-b9de-398db3254ca0",
+    "question": "Per produrre la distribuzione di frequenza percentuale occorre:",
+    "answers": [
+      "Moltiplicare per 10 le frequenza relative",
+      "Moltiplicare per 100 le frequenza relative",
+      "Moltiplicare per 1000 le frequenza relative",
+      "Moltiplicare per 10000 le frequenza relative"
+    ],
+    "correct_answer": "Moltiplicare per 100 le frequenza relative"
+  },
+  {
+    "id": "f6f90b50-2f24-44fd-b4aa-70d425915a00",
+    "question": "Per calcolare le frequenze cumulate relative occorre dividere:",
+    "answers": [
+      "Le frequenze relative per n",
+      "Le frequenze cumulate per n+1",
+      "Le frequenze cumulate per n-1",
+      "Le frequenze cumulate per n"
+    ],
+    "correct_answer": "Le frequenze cumulate per n"
+  },
+  {
+    "id": "67f55b82-0193-4035-86ef-a369c123eedc",
+    "question": "Il numero dei caratteri in una matrice:",
+    "answers": [
+      "È uguale alla numerosità delle unità osservate",
+      "È minore della numerosità delle unità osservate",
+      "È maggiore delle unità osservate",
+      "Non dipende dalla numerosità della popolazione"
+    ],
+    "correct_answer": "Non dipende dalla numerosità della popolazione"
+  },
+  {
+    "id": "354633ee-cc72-4ac7-864d-9cbaab6031cc",
+    "question": "La matrice dei dati è composta:",
+    "answers": [
+      "Da un solo vettore",
+      "Da due vettori",
+      "Da n vettori",
+      "Solo da caratteri qualitativi"
+    ],
+    "correct_answer": "Da n vettori"
+  },
+  {
+    "id": "45651e7a-d2c8-4319-8e77-85f6268c8eae",
+    "question": "L’Istogramma è una:",
+    "answers": [
+      "Serie storica",
+      "Serie territoriale",
+      "Matrice dei dati",
+      "Modalità di rappresentazione della rilevazione statistica"
+    ],
+    "correct_answer": "Modalità di rappresentazione della rilevazione statistica"
+  },
+  {
+    "id": "69bf71c5-ef25-4c62-9627-9c56157e3867",
+    "question": "Le matrici sono composte da:",
+    "answers": [
+      "Righe",
+      "Colonne",
+      "N righe ed n colonne",
+      "N righe e k colonne, con k che può essere eguale o diverso da n"
+    ],
+    "correct_answer": "N righe e k colonne, con k che può essere eguale o diverso da n"
+  },
+  {
+    "id": "af48969f-df80-454e-ae8f-5fe4c8049bbc",
+    "question": "Le misure di posizione hanno l’obiettivo di:",
+    "answers": [
+      "Sintetizzare in un singolo valore numerico l’intera distribuzione di frequenza per effettuare confronti nel tempo, \nnello spazio o tra circostanze differenti",
+      "Sintetizzare in un singolo valore numerico solo una parte della distribuzione di frequenza per effettuare confronti nel \ntempo, nello spazio o tra circostanze differenti",
+      "Sintetizzare in un singolo valore numerico l’intera distribuzione di frequenza per effettuare confronti nel tempo, \nnello spazio o tra circostanze eguali",
+      "Sintetizzare in un singolo valore non numerico l’intera distribuzione di frequenza per effettuare confronti nel tempo, \nnello spazio o tra circostanze differenti"
+    ],
+    "correct_answer": "Sintetizzare in un singolo valore numerico l’intera distribuzione di frequenza per effettuare confronti nel tempo, \nnello spazio o tra circostanze differenti"
+  },
+  {
+    "id": "64ec767a-cd7a-417e-a6f8-7b229a7896a0",
+    "question": "La moda è un:",
+    "answers": [
+      "Indice di variabilità",
+      "Indice di tendenza centrale",
+      "Numero indice",
+      "Tasso di incremento"
+    ],
+    "correct_answer": "Indice di tendenza centrale"
+  },
+  {
+    "id": "5d4a2a5d-36ef-49a5-a43e-38d1b493abdf",
+    "question": "Considera il seguente insieme di osservazioni (2; 14; 13; 15; 6; 1), la media geometrica è pari a:",
+    "answers": [
+      "13",
+      "15,56",
+      "6,66",
+      "5,66"
+    ],
+    "correct_answer": "5,66"
+  },
+  {
+    "id": "7941345b-dd33-455c-812f-8e0a8f2b070f",
+    "question": "Considera il seguente insieme di osservazioni (2; 14; 13; 15; 6; 1), la media aritmetica è pari a:",
+    "answers": [
+      "14",
+      "2",
+      "8,5",
+      "6"
+    ],
+    "correct_answer": "8,5"
+  },
+  {
+    "id": "7b374987-8b3a-4503-a931-cbfcb805ac0f",
+    "question": "Considera il seguente insieme di osservazioni (2; 14; 13; 15; 6; 1), la mediana è pari a:",
+    "answers": [
+      "2",
+      "1",
+      "6",
+      "9,5"
+    ],
+    "correct_answer": "9,5"
+  },
+  {
+    "id": "6e533132-6a0b-4a5a-a0f4-daaa44026458",
+    "question": "Considera il seguente insieme di osservazioni (2; 14; 13; 15; 6; 1;1), la moda è pari a:",
+    "answers": [
+      "2",
+      "1",
+      "6",
+      "9,5"
+    ],
+    "correct_answer": "1"
+  },
+  {
+    "id": "c440b5fe-8a02-41b2-8853-0576158447b9",
+    "question": "Considera il seguente insieme di osservazioni (2; 2; 2; 14; 13; 15; 6; 1;1), la moda è pari a:",
+    "answers": [
+      "2",
+      "1",
+      "6",
+      "9"
+    ],
+    "correct_answer": "2"
+  },
+  {
+    "id": "ba1e4286-ae5e-458b-b947-49c82b40f8b1",
+    "question": "Considera il seguente insieme di osservazioni (2; 2; 2; 14; 13; 15; 6; 1;1), il valore centrale è pari a:",
+    "answers": [
+      "8",
+      "1",
+      "6",
+      "9"
+    ],
+    "correct_answer": "8"
+  },
+  {
+    "id": "aaf7f794-eae1-4aed-ae79-3f1dcae82cfe",
+    "question": "Considera il seguente insieme di osservazioni (-2; -2; -2; -14; -13; -15; -6; -1;-1), il valore massimo è pari a:",
+    "answers": [
+      "8",
+      "-1",
+      "-6",
+      "-15"
+    ],
+    "correct_answer": "-1"
+  },
+  {
+    "id": "8653b480-64c8-4029-9ad9-33cd58f6c559",
+    "question": "Scrivi la funzione excel ed i simboli da digitare nella cella per calcolare la media geometrica:",
+    "answers": [
+      "MEDIA.GEOMETRIC",
+      "=MEDIA.GEOMETRICA",
+      "=M.G.",
+      "MEDIA.GEOM."
+    ],
+    "correct_answer": "=MEDIA.GEOMETRICA"
+  },
+  {
+    "id": "d7d840cd-0f16-4600-ae24-7dfaceed049a",
+    "question": "Si consideri la popolazione di 20 unità statistiche: {-250,2,2,2,2,3,4,6,6,7,7,7,8,8,9,9,9,10,11,250}. Indicare quale \nindice di posizione appare rappresentativo dell'intera distribuzione:",
+    "answers": [
+      "Minimo",
+      "Massimo",
+      "Moda",
+      "Media aritmetica"
+    ],
+    "correct_answer": "Media aritmetica"
+  },
+  {
+    "id": "c20e33f6-bc36-4386-85a1-2517750c7b8f",
+    "question": "Si consideri la popolazione di unità statistiche: {-250,2,2,2,2,3,4,6,6,7,7,7,7,7,7,8,8,9,9,9,10,11,2500}. Indicare \nquale indice di posizione appare rappresentativo dell'intera distribuzione:",
+    "answers": [
+      "Minimo",
+      "Massimo",
+      "Moda",
+      "Campo di variazione"
+    ],
+    "correct_answer": "Moda"
+  },
+  {
+    "id": "b813a5c2-b437-4f5e-832b-518138b4163e",
+    "question": "Si consideri la popolazione: {-,2,2,2,2,3,4,6,6,7,7,7,8,8,9,9,9,9,9, 9,10,11,2500}. Indicare quale indice di posizione \nappare rappresentativo dell'intera distribuzione:",
+    "answers": [
+      "Minimo",
+      "Massimo",
+      "Moda",
+      "Varianza"
+    ],
+    "correct_answer": "Moda"
+  },
+  {
+    "id": "ca570275-2d07-4e2e-84dd-c9f2d4015043",
+    "question": "La proprietà moltiplicativa degli indici di tendenza centrale:",
+    "answers": [
+      "E' identica a quella lineare",
+      "Permette cambiamenti di scala nell'indice",
+      "Non consente la monotonicità degli indici di posizione",
+      "Consente solo relazioni di tipo quadratico tra le variabili"
+    ],
+    "correct_answer": "Permette cambiamenti di scala nell'indice"
+  },
+  {
+    "id": "7fdce03f-b9ae-4155-b9ef-73df9e535661",
+    "question": "La proprietà lineare degli indici di tendenza centrale:",
+    "answers": [
+      "E' identica a quella moltiplicativa",
+      "Permette cambiamenti di scala nell'indice",
+      "Non consente la monotonicità degli indici di posizione",
+      "E' diversa da quella moltiplicativa"
+    ],
+    "correct_answer": "E' diversa da quella moltiplicativa"
+  },
+  {
+    "id": "fc3732dc-5cf5-47c4-adb6-08e5c4d08e69",
+    "question": "La proprietà di monotonicità degli indici di tendenza centrale:",
+    "answers": [
+      "E' identica a quella moltiplicativa",
+      "E' basata sulla comparazione tra le variabili ed i rispettivi indici di posizione",
+      "Non consente la monotonicità degli indici di posizione",
+      "Consente solo relazioni di tipo non quadratico tra le variabili"
+    ],
+    "correct_answer": "E' basata sulla comparazione tra le variabili ed i rispettivi indici di posizione"
+  },
+  {
+    "id": "6aaefcf0-ee3d-4266-83a7-f1f17b4b6c74",
+    "question": "Una variabilità alta in luogo di una variabilità bassa",
+    "answers": [
+      "Aumenta le capacità previsive dei modelli statistici",
+      "Diminuisce le capacità previsive dei modelli statistici",
+      "Non aumenta le capacità previsive dei modelli statistici",
+      "Non offre indicazioni sulle capacità previsive dei modelli statistici"
+    ],
+    "correct_answer": "Diminuisce le capacità previsive dei modelli statistici"
+  },
+  {
+    "id": "78832a99-3845-4b8a-b2ad-d9478b054dd4",
+    "question": "La varianza si calcola:",
+    "answers": [
+      "Per problemi non basati sui campioni",
+      "Per problemi basati solo su campioni",
+      "Per problemi basati sulla popolazione",
+      "Per popolazioni e campioni"
+    ],
+    "correct_answer": "Per popolazioni e campioni"
+  },
+  {
+    "id": "d34f9648-90d3-484c-8680-9aecfcca4ed4",
+    "question": "La varianza del campione è:",
+    "answers": [
+      "Calcolata con i dati dell'intera popolazione",
+      "Calcolata con i dati del campione rappresentativo della popolazione",
+      "Calcolata con dati estratti sempre casualmente dalla popolazione non stratificata",
+      "Sempre maggiore di quella della popolazione"
+    ],
+    "correct_answer": "Calcolata con i dati del campione rappresentativo della popolazione"
+  },
+  {
+    "id": "8736a8fb-d2e1-4526-9f33-be3ed3632afe",
+    "question": "1) \nCalcola il range delle seguenti osservazioni relative agli errori compiuti da ogni alunno nel test con 30 \ndomande: (2,3,4,2,5,4,6,7,7,2,12,0,0,0,0,1,29)",
+    "answers": [
+      "2",
+      "3",
+      "4",
+      "29"
+    ],
+    "correct_answer": "29"
+  },
+  {
+    "id": "79f1eb49-1813-4a2b-9728-18fecac35244",
+    "question": "Calcola il range parziale delle seguenti osservazioni relative agli errori compiuti da ogni alunno nel test con 30 \ndomande: (2,3,4,2,5,4,6,7,7,2,12,0,0,0,0,1,29)",
+    "answers": [
+      "2",
+      "12",
+      "4",
+      "29"
+    ],
+    "correct_answer": "12"
+  },
+  {
+    "id": "2799497b-3832-42af-8d92-c8e4f572aead",
+    "question": "Calcola il range delle seguenti osservazioni relative agli errori compiuti da ogni alunno nel test con 30 domande: \n(2,3,4,2,5,4,6,7,7,2,12,0,0,0,0,1,2)",
+    "answers": [
+      "12",
+      "13",
+      "4",
+      "29"
+    ],
+    "correct_answer": "12"
+  },
+  {
+    "id": "f6fa825c-2c44-4d9e-82b8-fe2ab29c2c49",
+    "question": "Calcola il range parziale delle seguenti osservazioni relative agli errori compiuti da ogni alunno nel test con 30 \ndomande: (2,3,4,2,5,4,6,7,7,2,21,0,0,0,0,1,29)",
+    "answers": [
+      "2",
+      "12",
+      "4",
+      "7"
+    ],
+    "correct_answer": "7"
+  },
+  {
+    "id": "f3053f79-8bcb-46d9-86cb-9956e25f88c1",
+    "question": "Lo scostamento semplice medio riguarda:",
+    "answers": [
+      "La varianza",
+      "La deviazione standard",
+      "Il quartile",
+      "Lo scostamento di ogni valore della distribuzione dalla media, preso in valore assoluto"
+    ],
+    "correct_answer": "Lo scostamento di ogni valore della distribuzione dalla media, preso in valore assoluto"
+  },
+  {
+    "id": "a23cde9a-fdba-4dde-9b37-28bda463b650",
+    "question": "Lo scostamento quadratico medio riguarda:",
+    "answers": [
+      "La media degli scarti al quadrato tra i dati e la M",
+      "La deviazione standard",
+      "Il quartile",
+      "Lo scostamento di ogni valore della distribuzione dalla media"
+    ],
+    "correct_answer": "La media degli scarti al quadrato tra i dati e la M"
+  },
+  {
+    "id": "395e2fe2-e5fc-4161-a1e3-58d129dede3b",
+    "question": "Una variabilità pari al valore 65 in luogo del valore 80, ottenuta eliminando i valori outlier:",
+    "answers": [
+      "Può aumentare le capacità descrittive e previsive del modello statistico",
+      "Diminuisce le capacità descrittive del modello statistico",
+      "Non aumenta le capacità previsive del modello statistico",
+      "Non offre indicazioni sulle capacità previsive del modello statistico"
+    ],
+    "correct_answer": "Può aumentare le capacità descrittive e previsive del modello statistico"
+  },
+  {
+    "id": "c7a894cb-9fb5-46a6-a351-e973d3887383",
+    "question": "Una variabilità pari al valore 80 in luogo del valore 65, ottenuta eliminando i valori outlier:",
+    "answers": [
+      "Può aumentare le capacità descrittive e previsive del modello statistico",
+      "Diminuisce le capacità descrittive del modello statistico",
+      "Non aumenta le capacità previsive del modello statistico",
+      "Indica che è stato commesso qualche errore nei calcoli o nel programma"
+    ],
+    "correct_answer": "Indica che è stato commesso qualche errore nei calcoli o nel programma"
+  },
+  {
+    "id": "9f000c83-92ab-4c8f-93a1-0a411aebce7d",
+    "question": "La varianza fornisce:",
+    "answers": [
+      "La misura sintetica di quanto le unità differiscono dalla media aritmetica",
+      "La misura sintetica di quanto le unità differiscono dalla media geometrica",
+      "La misura sintetica di quanto le unità differiscono dalla mediana",
+      "La misura sintetica di quanto le unità differiscono dal quartile"
+    ],
+    "correct_answer": "La misura sintetica di quanto le unità differiscono dalla media aritmetica"
+  },
+  {
+    "id": "b0e6eb68-e762-49a5-a24e-07deec3de128",
+    "question": "Usando la mediana in luogo della media nel calcolo della varianza:",
+    "answers": [
+      "È bene eliminare i valori anomali ed estremi",
+      "E’ bene eliminare i valori massimi",
+      "E’ bene mantenere tutti gli outlier",
+      "E’ bene mantenere i valori anomali"
+    ],
+    "correct_answer": "È bene eliminare i valori anomali ed estremi"
+  },
+  {
+    "id": "1ce26b49-a69b-4b7f-9586-f4b440513dda",
+    "question": "La Statistica è sinonimo di:",
+    "answers": [
+      "Grafici",
+      "Medie",
+      "Indici",
+      "Scienze statistiche"
+    ],
+    "correct_answer": "Scienze statistiche"
+  },
+  {
+    "id": "59f782d5-5630-4d67-b365-3bca9f459b58",
+    "question": "Il rapporto statistico di derivazione si ottiene:",
+    "answers": [
+      "Dividendo la modalità di un fenomeno per quella corrispondente di un\\'altra distribuzione che, sul piano logico e/o \ntemporale, è correlata in maniera spuria",
+      "Dividendo la modalità di un fenomeno per quella corrispondente di un altro che, sul piano logico e/o temporale, ne \ncostituisce causa o presupposto logico",
+      "Mediante il rapporto tra la frequenza di una modalità rispetto a quella corrispondente di un’altra modalità",
+      "Mediante il rapporto tra la dimensione globale di un fenomeno e quella spaziale a cui esso fa riferimento"
+    ],
+    "correct_answer": "Dividendo la modalità di un fenomeno per quella corrispondente di un altro che, sul piano logico e/o temporale, ne \ncostituisce causa o presupposto logico"
+  },
+  {
+    "id": "a965fbe2-7894-4886-a100-f78f69ffb763",
+    "question": "Il rapporto statistico di coesistenza si ottiene:",
+    "answers": [
+      "Dividendo il valore rilevato in una data circostanza per l’analogo valore rilevato per l’intera popolazione",
+      "Dividendo la modalità di un fenomeno per quella corrispondente di un altro che, sul piano logico e/o temporale, ne \ncostituisce causa o presupposto logico",
+      "Mediante il rapporto tra la frequenza di una modalità rispetto a quella corrispondente di un’altra modalità",
+      "Mediante il rapporto tra la frequenza di una modalità rispetto a quella corrispondente di un’altra statistica"
+    ],
+    "correct_answer": "Mediante il rapporto tra la frequenza di una modalità rispetto a quella corrispondente di un’altra modalità"
+  },
+  {
+    "id": "f851d623-9878-4b05-ae6e-c7f2782415c8",
+    "question": "Il rapporto statistico di composizione si ottiene:",
+    "answers": [
+      "Dividendo il valore rilevato in una data circostanza per l’analogo valore rilevato per l’intera popolazione",
+      "Dividendo la modalità di un fenomeno per quella corrispondente di un altro che, sul piano logico e/o temporale, ne \ncostituisce causa o presupposto logico",
+      "Mediante il rapporto tra la frequenza di una modalità rispetto a quella corrispondente di un’altra modalità",
+      "Mediante il rapporto tra la dimensione globale di un fenomeno e quella spaziale a cui esso fa riferimento"
+    ],
+    "correct_answer": "Dividendo il valore rilevato in una data circostanza per l’analogo valore rilevato per l’intera popolazione"
+  },
+  {
+    "id": "2559be1d-3351-464d-984e-afadff976767",
+    "question": "Il rapporto statistico di densità si ottiene:",
+    "answers": [
+      "Dividendo il valore rilevato in una data circostanza per l’analogo valore rilevato per l’intera popolazione",
+      "Dividendo la modalità di un fenomeno per quella corrispondente di un altro che, sul piano logico e/o temporale, ne \ncostituisce causa o presupposto logico",
+      "Mediante il rapporto tra la frequenza di una modalità rispetto a quella corrispondente di un’altra modalità",
+      "Mediante il rapporto tra la dimensione globale di un fenomeno e quella spaziale a cui esso fa riferimento"
+    ],
+    "correct_answer": "Mediante il rapporto tra la dimensione globale di un fenomeno e quella spaziale a cui esso fa riferimento"
+  },
+  {
+    "id": "bab77dbc-dd89-48e6-b65c-b34138acee37",
+    "question": "I numeri indice sono:",
+    "answers": [
+      "Strumenti non matematici",
+      "Medie",
+      "Indici di dispersione",
+      "Rapporti statistici"
+    ],
+    "correct_answer": "Rapporti statistici"
+  },
+  {
+    "id": "a1f04a5d-ecd6-4c56-bc60-2d392963c6ce",
+    "question": "I numeri indice sono:",
+    "answers": [
+      "Strumenti matematici",
+      "Medie",
+      "Indici di dispersione",
+      "Rapporti non statistici"
+    ],
+    "correct_answer": "Strumenti matematici"
+  },
+  {
+    "id": "7833d79a-9a47-42bd-aaca-2d062ccef636",
+    "question": "Costruendo i numeri indice della serie storica del fatturato per due aziende, vogliamo in particolare:",
+    "answers": [
+      "Confrontare i livelli del fatturato",
+      "Confrontare e comparare ogni anno i livelli del fatturato",
+      "Capire quale delle due unità presenta un andamento migliore",
+      "Aggregare i risultati ottenuti"
+    ],
+    "correct_answer": "Capire quale delle due unità presenta un andamento migliore"
+  },
+  {
+    "id": "c3b09a48-7927-42ca-a53d-ff1624ccc95e",
+    "question": "L’anno con valore pari a 100 nella serie storica dei numeri indice è:",
+    "answers": [
+      "L’anno col valore più basso della variabile oggetto di studio",
+      "L’anno col valore più alto della variabile oggetto di studio",
+      "L’anno base",
+      "L’anno in cui i valori del fatturato per le due aziende coincidono"
+    ],
+    "correct_answer": "L’anno base"
+  },
+  {
+    "id": "14371a05-1ec2-422d-a6e0-a518c48ffd46",
+    "question": "Il valore dell’anno con numero indice pari a 100 nella serie storica osservata è:",
+    "answers": [
+      "Il valore più alto della variabile oggetto di studio",
+      "Il denominatore nel calcolo del numero indice",
+      "Il numeratore nel calcolo del numero indice",
+      "Il numero indice minimo nella serie storica"
+    ],
+    "correct_answer": "Il denominatore nel calcolo del numero indice"
+  },
+  {
+    "id": "0e473dc1-6d07-46dc-a4ee-cbee7af35a2e",
+    "question": "L’inflazione è:",
+    "answers": [
+      "L’aumento del potere di acquisto della moneta",
+      "La diminuzione del potere di acquisto dla moneta",
+      "La variazione del potere di acquisto della moneta",
+      "La variazione della ricchezza"
+    ],
+    "correct_answer": "La diminuzione del potere di acquisto dla moneta"
+  },
+  {
+    "id": "93b3c084-24b2-4138-8ccd-6bfc217953a5",
+    "question": "L’inflazione è:",
+    "answers": [
+      "L'aumento prolungato del livello medio generale dei prezzi di beni e servizi in un dato periodo di tempo",
+      "La diminuzione della ricchezza prodotta",
+      "La variazione del potere di acquisto della moneta",
+      "La diminuzione dei prezzi"
+    ],
+    "correct_answer": "L'aumento prolungato del livello medio generale dei prezzi di beni e servizi in un dato periodo di tempo"
+  },
+  {
+    "id": "92136e18-4edf-4a47-bcf3-fee7bcd94cf7",
+    "question": "La variazione congiunturale riguarda in statistica-economica il confronto con:",
+    "answers": [
+      "L’anno precedente",
+      "Il mese precedente",
+      "Il decennio precedente",
+      "L’anno base"
+    ],
+    "correct_answer": "Il mese precedente"
+  },
+  {
+    "id": "f9f0aaa5-3169-47a5-aea8-867be4a484a2",
+    "question": "La variazione tendenziale riguarda in statistica-economica il confronto con:",
+    "answers": [
+      "L’anno precedente",
+      "Il mese precedente",
+      "Il decennio precedente",
+      "L’anno base"
+    ],
+    "correct_answer": "L’anno precedente"
+  },
+  {
+    "id": "7d48db78-4d7a-47bc-bed2-d39962845780",
+    "question": "Nel calcolo del tasso di inflazione congiunturale al denominatore c’è:",
+    "answers": [
+      "Il numero indice dei prezzi del mese m-1 dell’anno a ed al numeratore il numero indice dei prezzi del mese m \ndell’anno a",
+      "Il numero indice dei prezzi del mese m-1 dell’anno a ed al numeratore il numero indice dei prezzi del mese m \ndell’anno a-1",
+      "Il numero indice dei prezzi del mese m-1 dell’anno a ed al numeratore il numero indice dei prezzi del mese m \ndell’anno a-3",
+      "Il numero indice dei prezzi del mese m-1 dell’anno a ed al numeratore il numero indice dei prezzi del mese m \ndell’anno a-2"
+    ],
+    "correct_answer": "Il numero indice dei prezzi del mese m-1 dell’anno a ed al numeratore il numero indice dei prezzi del mese m \ndell’anno a"
+  },
+  {
+    "id": "324aa802-6948-4f37-91fe-3dd1ea6c2863",
+    "question": "Nel calcolo del tasso di inflazione tendenziale al denominatore c’è:",
+    "answers": [
+      "Il numero indice dei prezzi del mese m dell’anno a-1 ed al numeratore il numero indice dei prezzi del mese m \ndell’anno a",
+      "Il numero indice dei prezzi del mese m-1 dell’anno a ed al numeratore il numero indice dei prezzi del mese m \ndell’anno a-1",
+      "Il numero indice dei prezzi del mese m-1 dell’anno a ed al numeratore il numero indice dei prezzi del mese m \ndell’anno a-3",
+      "Il numero indice dei prezzi del mese m-1 dell’anno a ed al numeratore il numero indice dei prezzi del mese m \ndell’anno a-2"
+    ],
+    "correct_answer": "Il numero indice dei prezzi del mese m dell’anno a-1 ed al numeratore il numero indice dei prezzi del mese m \ndell’anno a"
+  },
+  {
+    "id": "199db5c2-8b2e-407a-a84f-b50897d3188f",
+    "question": "La deflazione si calcola con:",
+    "answers": [
+      "I tassi di variazione",
+      "Le medie",
+      "Le tendenze centrali",
+      "L’inflazione"
+    ],
+    "correct_answer": "I tassi di variazione"
+  },
+  {
+    "id": "b0fd0f6b-6673-473c-a5b8-0dad5a652737",
+    "question": "La deflazione è:",
+    "answers": [
+      "Espressa in percentuale",
+      "Sempre",
+      "Sempre >0",
+      "Sempre >0"
+    ],
+    "correct_answer": "Espressa in percentuale"
+  },
+  {
+    "id": "d4e7c42e-b452-4a4b-a7df-b1be3cb3d33f",
+    "question": "Il rapporto annuo tra tasso di inflazione e deflazione dell’anno x in un paese determinato:",
+    "answers": [
+      "Non esiste",
+      "Concerne l’andamento dell’economia",
+      "È sempre",
+      "E’ calcolabile solo con i numeri indice"
+    ],
+    "correct_answer": "Non esiste"
+  },
+  {
+    "id": "52eb1bfa-2621-4089-954f-e02aee47eefc",
+    "question": "Nel calcolo dei tassi di incremento tra t e t-1 al denominatore vi è:",
+    "answers": [
+      "Il dato dell’anno t-1",
+      "Il dato dell’anno t-2",
+      "Il dato dell’anno t-5",
+      "Il dato dell’anno t"
+    ],
+    "correct_answer": "Il dato dell’anno t-1"
+  },
+  {
+    "id": "e3cdbcda-e804-4598-8441-2923f34f67b1",
+    "question": "La covarianza è positiva quando:",
+    "answers": [
+      "X e Y variano tendenzialmente nella stessa proporzione",
+      "X e Y variano tendenzialmente nella stessa direzione",
+      "X e Y sono positive",
+      "X e Y sono proporzionali a Z che è combinazione lineare di X e Y"
+    ],
+    "correct_answer": "X e Y variano tendenzialmente nella stessa direzione"
+  },
+  {
+    "id": "d5330bb2-0a8e-4021-9d30-38d402571785",
+    "question": "La covarianza è negativa quando:",
+    "answers": [
+      "Al crescere di X la Y tende a diminuire ma non viceversa",
+      "X e Y variano tendenzialmente nella stessa direzione",
+      "Al crescere di X la Y tende a diminuire e viceversa",
+      "X e Y sono proporzionali a Z che è combinazione lineare di X e Y"
+    ],
+    "correct_answer": "Al crescere di X la Y tende a diminuire e viceversa"
+  },
+  {
+    "id": "787195cd-9bad-4d10-8364-18337529eb6f",
+    "question": "La covarianza è nulla quando:",
+    "answers": [
+      "X e Y sono linearmente indipendenti",
+      "X e Y variano tendenzialmente nella stessa direzione",
+      "Al crescere di X la Y tende a diminuire e viceversa",
+      "X e Y sono linearmente dipendenti"
+    ],
+    "correct_answer": "X e Y sono linearmente indipendenti"
+  },
+  {
+    "id": "5f374576-658b-460e-b038-19e2bc02d770",
+    "question": "La covarianza è nulla quando:",
+    "answers": [
+      "X e Y sono dipendenti",
+      "X e Y variano tendenzialmente nella stessa direzione",
+      "Al crescere di X la Y tende a diminuire e viceversa",
+      "X e Y non sono correlate"
+    ],
+    "correct_answer": "X e Y non sono correlate"
+  },
+  {
+    "id": "e05559ce-9b92-4bb4-8ea2-db8641bfd0f9",
+    "question": "La correlazione indica:",
+    "answers": [
+      "Il grado della relazione tra variabili, e per mezzo di essa si cerca di determinare quanto bene un’equazione lineare o \nun’altra equazione qualsiasi descrivano o spieghino tale relazione tra variabili.",
+      "Il grado della relazione tra variabili, e per mezzo di essa si cerca di determinare quanto bene un’equazione non \nlineare descrive tale relazione tra variabili",
+      "Il tipo di relazione tra variabili, e per mezzo di essa si cerca di determinare quanto bene un’equazione lineare o \nun’altra equazione qualsiasi descrivano o spieghino tale concordanza tra variabili",
+      "Il grado della relazione tra variabili, e per mezzo di essa si cerca di determinare quanto bene un’equazione spieghi \ntale relazione non lineare tra variabili"
+    ],
+    "correct_answer": "Il grado della relazione tra variabili, e per mezzo di essa si cerca di determinare quanto bene un’equazione lineare o \nun’altra equazione qualsiasi descrivano o spieghino tale relazione tra variabili."
+  },
+  {
+    "id": "303ec087-a79c-496e-ab1f-568250254873",
+    "question": "Con un coefficiente di correlazione pari a r= -0,8, i valori di una variabile:",
+    "answers": [
+      "Crescono al decrescere dei valori dell’altra",
+      "Decrescono al decrescere dei valori dell’altra",
+      "Crescono al crescere dei valori dell’altra",
+      "Non vi è correlazione"
+    ],
+    "correct_answer": "Crescono al decrescere dei valori dell’altra"
+  },
+  {
+    "id": "0bb58c7a-fdc8-4b2c-8d27-f7a16e340391",
+    "question": "Con un coefficiente di correlazione pari a r= -0,9, i valori di una variabile:",
+    "answers": [
+      "Crescono al decrescere dei valori dell’altra",
+      "Decrescono al decrescere dei valori dell’altra",
+      "Crescono al crescere dei valori dell’altra",
+      "Non vi è correlazione"
+    ],
+    "correct_answer": "Crescono al decrescere dei valori dell’altra"
+  },
+  {
+    "id": "3c688be9-88f2-43f4-bfeb-cdf626832c25",
+    "question": "Con un coefficiente di correlazione pari a r= -0,5, i valori di una variabile:",
+    "answers": [
+      "Tendono a crescere al decrescere dei valori dell’altra, ma in maniera blanda",
+      "Decrescono al decrescere dei valori dell’altra",
+      "Crescono al crescere dei valori dell’altra",
+      "Non vi è correlazione"
+    ],
+    "correct_answer": "Tendono a crescere al decrescere dei valori dell’altra, ma in maniera blanda"
+  },
+  {
+    "id": "6628f822-038a-4235-b1b0-64e751657d33",
+    "question": "Con un coefficiente di correlazione pari a r= +0,8, i valori di una variabile:",
+    "answers": [
+      "Crescono al decrescere dei valori dell’altra",
+      "Decrescono al decrescere dei valori dell’altra",
+      "Crescono al crescere dei valori dell’altra",
+      "Non vi è correlazione"
+    ],
+    "correct_answer": "Crescono al crescere dei valori dell’altra"
+  },
+  {
+    "id": "cfb5df47-ddb3-4716-9e4f-3ade423d8783",
+    "question": "Nella correlazione spuria, si rileva che:",
+    "answers": [
+      "R=0",
+      "R varia tra -1 ed 1 ed è spesso elevato, e le variabili sono legate da un rapporto serio di causalità",
+      "R=1",
+      "R varia tra -1 ed 1 e può essere elevato, ma le variabili non sono legate da un rapporto serio di causalità"
+    ],
+    "correct_answer": "R varia tra -1 ed 1 e può essere elevato, ma le variabili non sono legate da un rapporto serio di causalità"
+  },
+  {
+    "id": "f85fd07e-ed24-4829-9a37-a6e79971cc6d",
+    "question": "Ad un valore elevato di r corrisponde:",
+    "answers": [
+      "Un effettivo legame tra i due caratteri quantitativi considerati",
+      "Un effettivo legame tra i due caratteri qualitativi considerati",
+      "Un falso legame tra i due caratteri quantitativi considerati.",
+      "In diversi casi un effettivo legame tra i due caratteri quantitativi considerati"
+    ],
+    "correct_answer": "In diversi casi un effettivo legame tra i due caratteri quantitativi considerati"
+  },
+  {
+    "id": "cc2be280-f010-486e-8d24-73261feaac21",
+    "question": "Ad un valore basso di r corrisponde:",
+    "answers": [
+      "Un effettivo legame tra i due caratteri quantitativi considerati",
+      "Un effettivo legame tra i due caratteri qualitativi considerati",
+      "Un falso legame tra i due caratteri quantitativi considerati.",
+      "In diversi casi un legame debole tra i due caratteri quantitativi considerati"
+    ],
+    "correct_answer": "In diversi casi un legame debole tra i due caratteri quantitativi considerati"
+  },
+  {
+    "id": "3e06ca66-5d03-4935-8959-556d9e270e09",
+    "question": "Un tipico caso di correlazione non reale comporta che:",
+    "answers": [
+      "R è basso",
+      "R è alto",
+      "R = 0",
+      "Uno dei due caratteri comprende l’altro"
+    ],
+    "correct_answer": "Uno dei due caratteri comprende l’altro"
+  },
+  {
+    "id": "91accc54-41f1-4d9e-b34f-cd486b8ff84a",
+    "question": "Un tipico caso di correlazione non reale comporta che:",
+    "answers": [
+      "R è basso",
+      "R è alto",
+      "I due caratteri sono influenzati da circostanze comuni",
+      "Il solo metodo utilizzabile per analizzare la correlazione reale è la regressione"
+    ],
+    "correct_answer": "I due caratteri sono influenzati da circostanze comuni"
+  },
+  {
+    "id": "7cf50fbd-3520-4397-94e9-d86858c8c091",
+    "question": "Un tipico caso di correlazione non reale comporta che:",
+    "answers": [
+      "R è basso",
+      "Altri fattori variabili influiscono su quelli presi in considerazione",
+      "I due caratteri non sono influenzati da circostanze comuni",
+      "Uno dei due non caratteri comprende l’altro"
+    ],
+    "correct_answer": "Altri fattori variabili influiscono su quelli presi in considerazione"
+  },
+  {
+    "id": "ca09a6b0-d797-4482-aee2-dc57167c73e4",
+    "question": "R deve esprimere correttamente:",
+    "answers": [
+      "il legame di interdipendenza",
+      "Il legame di dipendenza",
+      "L’assenza di legame tra caratteri qualitativi",
+      "L’assenza di legame tra caratteri quantitativi"
+    ],
+    "correct_answer": "il legame di interdipendenza"
+  },
+  {
+    "id": "fe2979ff-d4f7-4ac8-802d-21363eb31086",
+    "question": "Dividendo il numero delle nascite in una comunità durante un periodo di tempo e la quantità della popolazione \nmedia dello stesso periodo si ottiene:",
+    "answers": [
+      "Coefficiente della popolazione",
+      "Coefficiente di mortalità",
+      "Caso di correlazione spuria",
+      "Coefficiente di natalità"
+    ],
+    "correct_answer": "Coefficiente di natalità"
+  },
+  {
+    "id": "ccc254a4-018b-4c17-813e-c406a4c814ba",
+    "question": "Dividendo il numero delle morti in una comunità durante un periodo di tempo e la quantità della popolazione \nmedia dello stesso periodo si ottiene:",
+    "answers": [
+      "Coefficiente della popolazione",
+      "Coefficiente di mortalità",
+      "Caso di correlazione spuria",
+      "Coefficiente di natalità"
+    ],
+    "correct_answer": "Coefficiente di mortalità"
+  },
+  {
+    "id": "916973f5-4c80-4a39-9f07-fc613f725449",
+    "question": "Dividendo il numero delle morti e delle nascite in una comunità durante un periodo di tempo rispettivamente \nper la quantità della popolazione media dello stesso periodo si può ottenere:",
+    "answers": [
+      "Correlazione spuria",
+      "Correlazione spuria se l’andamento della popolazione non è correlato col numero di nati e morti",
+      "R=0 oppure r prossimo a 0",
+      "R=1 o prossimo ad 1"
+    ],
+    "correct_answer": "Correlazione spuria se l’andamento della popolazione non è correlato col numero di nati e morti"
+  },
+  {
+    "id": "da657424-2cff-4397-9744-668c66d24617",
+    "question": "I numeri indice comparano:",
+    "answers": [
+      "I livelli della variabile oggetto di studio per soggetti diversi",
+      "L’andamento dei livelli della variabile nel tempo senza un a base",
+      "Le variazioni dei livelli della variabile nel tempo con riferimento ad una base",
+      "Le variabili"
+    ],
+    "correct_answer": "Le variazioni dei livelli della variabile nel tempo con riferimento ad una base"
+  },
+  {
+    "id": "2f468d9a-1f5b-4411-92da-44c220094c82",
+    "question": "I numeri indice sono:",
+    "answers": [
+      "I livelli della variabile oggetto di studio per soggetti diversi",
+      "L’andamento dei livelli della variabile nel tempo senza una base",
+      "Pari a 100",
+      "Inferiori a 100 se il livello tende a scendere rispetto all’anno base"
+    ],
+    "correct_answer": "Inferiori a 100 se il livello tende a scendere rispetto all’anno base"
+  },
+  {
+    "id": "881cfe25-9bf6-4f2e-a4e4-190d02f82ab7",
+    "question": "I numeri indice sono:",
+    "answers": [
+      "I livelli della variabile oggetto di studio per soggetti diversi",
+      "L’andamento dei livelli della variabile nel tempo senza una base",
+      "Pari a 100",
+      "Superiori a 100 se il livello della variabile tende a crescere rispetto all’anno base"
+    ],
+    "correct_answer": "Superiori a 100 se il livello della variabile tende a crescere rispetto all’anno base"
+  },
+  {
+    "id": "860bbb30-1ec0-468c-8682-78ca7b90d892",
+    "question": "I numeri indice sono:",
+    "answers": [
+      "I livelli della variabile oggetto di studio per soggetti diversi",
+      "Esplicativi dell’andamento dei livelli della variabile nel tempo",
+      "Pari a 100",
+      "Superiori a 100 se il livello della variabile nell’anno x tende a crescere rispetto all’anno precedente"
+    ],
+    "correct_answer": "Esplicativi dell’andamento dei livelli della variabile nel tempo"
+  },
+  {
+    "id": "32e83f87-eaef-427d-a955-11b9d94ee98e",
+    "question": "La formula per calcolare il numero indice tra l’anno t e t-1 per la variabile X in Excel è preceduta da:",
+    "answers": [
+      "Il segno eguale",
+      "Il segno –",
+      "Nessun segno",
+      "T"
+    ],
+    "correct_answer": "Il segno eguale"
+  },
+  {
+    "id": "0a36e904-17d4-4681-9aaf-e60214a165b2",
+    "question": "Se il tasso di incremento tra t e t-1 è pari a 2,2%, allora il numero indice in t, con base t-1 sarà:",
+    "answers": [
+      "102,2",
+      "70",
+      "101,2",
+      "90"
+    ],
+    "correct_answer": "102,2"
+  },
+  {
+    "id": "e01a32e9-043b-4bab-baa1-e4edaab72b8a",
+    "question": "Se il tasso di incremento tra t e t-2 è pari a 1,2%, allora il numero indice in t, con base t-2 sarà:",
+    "answers": [
+      "101",
+      "80",
+      "70",
+      "101,2"
+    ],
+    "correct_answer": "101,2"
+  },
+  {
+    "id": "6360351b-bdd8-45f6-ba34-df9fd8aa64c7",
+    "question": "Se il tasso di decremento tra t e t-1 è pari a -1,2%, allora il numero indice in t, con base t-1 sarà:",
+    "answers": [
+      "98,8",
+      "99",
+      "97,8",
+      "101,2"
+    ],
+    "correct_answer": "98,8"
+  },
+  {
+    "id": "71e85e1d-d3d6-4f74-839f-6dba11d7272a",
+    "question": "Se il tasso di decremento tra t e t-2 è pari a -5,2%, allora il numero indice in t, con base t-2 sarà:",
+    "answers": [
+      "94,8",
+      "80",
+      "100",
+      "101,2"
+    ],
+    "correct_answer": "94,8"
+  },
+  {
+    "id": "8e0cae79-6d99-4ce8-aee6-c01a99a72a10",
+    "question": "Per rappresentare graficamente la forma della relazione tra due variabili X ed Y si utilizza:",
+    "answers": [
+      "L’istogramma",
+      "Il diagramma a dispersione",
+      "L’ogiva",
+      "Il poligono delle frequenze"
+    ],
+    "correct_answer": "Il diagramma a dispersione"
+  },
+  {
+    "id": "dd4ec982-d95f-4507-ae94-6e6efab5dfe7",
+    "question": "Studiare la relazione tra due variabili X ed Y significa:",
+    "answers": [
+      "Studiare la tendenza che X e Y hanno a variare insieme",
+      "Studiare X e Y",
+      "Studiare la tendenza di X e Y",
+      "Studiare la tendenza che Y"
+    ],
+    "correct_answer": "Studiare la tendenza che X e Y hanno a variare insieme"
+  },
+  {
+    "id": "cadda1b0-8473-400e-bb7c-c7a3992d733c",
+    "question": "Il coefficiente di correlazione r di Pearson può essere usato per calcolare la correlazione:",
+    "answers": [
+      "Tra variabili misurate su scale dicotomiche",
+      "Tra variabili misurate su scale categoriche",
+      "Tra variabili misurate su scale ordinali",
+      "Tra variabili misurate su scale a intervalli o a rapporti equivalenti"
+    ],
+    "correct_answer": "Tra variabili misurate su scale a intervalli o a rapporti equivalenti"
+  },
+  {
+    "id": "87f0e6c0-b1c0-4fb4-bdb2-46b697d05adb",
+    "question": "Quando a valori crescenti di X corrispondono valori crescenti di Y si ha:",
+    "answers": [
+      "Una relazione negativa",
+      "Una non relazione",
+      "Una relazione positiva",
+      "Una relazione spuria"
+    ],
+    "correct_answer": "Una relazione positiva"
+  },
+  {
+    "id": "2ae617d7-bf33-487b-a238-9950bb0b8322",
+    "question": "Quando al diminuire dei valori di X corrisponde il diminuire dei valori di Y si ha:",
+    "answers": [
+      "Una relazione negativa",
+      "Una non relazione",
+      "Una relazione positiva",
+      "Una relazione spuria"
+    ],
+    "correct_answer": "Una relazione positiva"
+  },
+  {
+    "id": "ecb62cd6-db89-40b2-a4b9-6bfd695e5d35",
+    "question": "L’equazione di regressione lineare è l’equazione di una:",
+    "answers": [
+      "Polinomiale",
+      "Parabola",
+      "Retta",
+      "Nuvola dei punti"
+    ],
+    "correct_answer": "Retta"
+  },
+  {
+    "id": "74a10277-79cd-49b8-bebd-1421d6db516d",
+    "question": "Date coppie di valori X e Y, la retta di regressione è una:",
+    "answers": [
+      "Qualsiasi delle infinite rette che si possono tracciare tra i punti del diagramma di dispersione generato dalle coppie \nX,Y",
+      "Qualsiasi delle infinite rette che si possono tracciare tra i punti del diagramma di dispersione generato dalle coppie \nZ,Y",
+      "Sola, e ben definita, tra le infinite rette che si possono tracciare tra i punti di un diagramma a dispersione",
+      "È quella retta che massimizza la somma delle distanze, elevata al quadrato, tra le Y osservate e le Y stimate o \npreviste"
+    ],
+    "correct_answer": "Sola, e ben definita, tra le infinite rette che si possono tracciare tra i punti di un diagramma a dispersione"
+  },
+  {
+    "id": "362f1eab-46fb-49b4-84df-bfb9b013c14b",
+    "question": "Se X è la variabile indipendente e Y quella dipendente, considerando l’equazione di regressione è corretto definire \nX come:",
+    "answers": [
+      "Predittore",
+      "Valore osservato",
+      "Valore predetto",
+      "Intercetta"
+    ],
+    "correct_answer": "Predittore"
+  },
+  {
+    "id": "40fac1d8-ac31-4a7e-b4bb-abe9bb58a739",
+    "question": "Se X è la variabile indipendenre e Y quella dipendente, considerando l’equazione di regressione è corretto \ndefinire Y’ come:",
+    "answers": [
+      "Predittore",
+      "Valore osservato",
+      "Valore predetto",
+      "intercetta"
+    ],
+    "correct_answer": "Valore predetto"
+  },
+  {
+    "id": "cfa1b71c-0b31-4353-961c-5bc76a2593c1",
+    "question": "Una serie storica è costituita:",
+    "answers": [
+      "Dal tempo",
+      "Dai dati osservati a intervalli regolari di tempo",
+      "Dai dati non osservati a intervalli regolari di tempo",
+      "dai dati osservati casualmente"
+    ],
+    "correct_answer": "Dai dati osservati a intervalli regolari di tempo"
+  },
+  {
+    "id": "981aeb80-21a0-481b-837f-ceda853905b2",
+    "question": "Una serie storica è costituita:",
+    "answers": [
+      "Dai dati di Y osservati a intervalli regolari secondo la variabile dipendente tempo",
+      "Dalle osservazioni dei dati quantitativi nel tempo, si possono avere serie mensili, giornaliere, annuali",
+      "Dalle osservazioni dei dati quantitativi nel tempo, si possono avere serie mensili o giornaliere",
+      "Dalle osservazioni dei dati quantitativi nel tempo, si possono avere serie mensili, giornaliere, annuali solo per \ncaratteri qualitativi"
+    ],
+    "correct_answer": "Dalle osservazioni dei dati quantitativi nel tempo, si possono avere serie mensili, giornaliere, annuali"
+  },
+  {
+    "id": "8ad216c3-9f15-4cc5-b8f6-0a138d5f65ae",
+    "question": "La media mobile è:",
+    "answers": [
+      "Il prodotto ponderato dei valori della serie storica",
+      "La somma ponderata dei valori della serie storica",
+      "La somma non ponderata dei valori della serie storica",
+      "Il prodotto non ponderato die valori della serie storica"
+    ],
+    "correct_answer": "La somma ponderata dei valori della serie storica"
+  },
+  {
+    "id": "2f0b9fe4-4ab3-4c0f-9287-39a1d61c5678",
+    "question": "La media mobile di ordine n consiste:",
+    "answers": [
+      "In una serie di medie aritmetiche calcolate su n periodi contigui.",
+      "In una serie di medie aritmetiche calcolate su n+2 periodi contigui.",
+      "In una serie di medie aritmetiche calcolate su n+1 periodi non contigui.",
+      "In una serie di medie aritmetiche calcolate su n+k periodi contigui."
+    ],
+    "correct_answer": "In una serie di medie aritmetiche calcolate su n periodi contigui."
+  },
+  {
+    "id": "2f151d60-f330-4651-982b-3d1478a87d10",
+    "question": "Consideriamo la seguente serie storica di valori contigui (3,5,3,4,6,7), quante medie mobili di ordine tre si possono \ncalcolare:",
+    "answers": [
+      "3",
+      "2",
+      "0",
+      "4"
+    ],
+    "correct_answer": "4"
+  },
+  {
+    "id": "59bd5a6d-294d-439e-9fa0-907df102c5db",
+    "question": "Consideriamo la seguente serie storica di valori contigui (3,5,3,4,6,7,0), quante medie mobili di ordine tre si \npossono calcolare:",
+    "answers": [
+      "5",
+      "2",
+      "0",
+      "4"
+    ],
+    "correct_answer": "5"
+  },
+  {
+    "id": "f6aacf3e-3c74-4fee-a6ea-03df26d107e5",
+    "question": "Consideriamo la seguente serie storica di valori contigui (3,5,3,4,6,7), calcola la prima media mobile di ordine tre \ncalcolabile in tempo reale:",
+    "answers": [
+      "1/2",
+      "0",
+      "17/3",
+      "11/3"
+    ],
+    "correct_answer": "11/3"
+  },
+  {
+    "id": "64713dcd-204e-48e9-81c6-0c85f213e27f",
+    "question": "Consideriamo la seguente serie storica di valori contigui (3,5,3,4,6,7), calcola la prima media mobile di ordine \ncinque calcolabile in tempo reale:",
+    "answers": [
+      "21/5",
+      "20/5",
+      "17/5",
+      "1/2"
+    ],
+    "correct_answer": "21/5"
+  },
+  {
+    "id": "41caa98d-1ef0-49b4-b563-3e5631b82682",
+    "question": "Consideriamo la seguente serie storica di valori contigui (2,2,3,5,3,4,6,7), quante medie mobili di pesate di ordine \ntre si possono calcolare:",
+    "answers": [
+      "6",
+      "2",
+      "0",
+      "4"
+    ],
+    "correct_answer": "6"
+  },
+  {
+    "id": "e6f886a9-d454-41ff-bedf-af4654e90cdb",
+    "question": "I dati informatici sono utilizzabili per:",
+    "answers": [
+      "Le analisi statistiche",
+      "Analisi statistiche se strutturati",
+      "Analisi non statistiche se sono semplici",
+      "Analisi quantitative solo con dati complessi"
+    ],
+    "correct_answer": "Le analisi statistiche"
+  },
+  {
+    "id": "53257d4f-8a8c-4a56-af3c-2ad319b7b32b",
+    "question": "Una fotografia è un dato:",
+    "answers": [
+      "Semplice",
+      "Strutturato",
+      "Complesso",
+      "Quantitativo"
+    ],
+    "correct_answer": "Complesso"
+  },
+  {
+    "id": "878c23ec-026a-49fe-9b7d-ff945919f261",
+    "question": "Il tipo di dato elementare 4.5 è:",
+    "answers": [
+      "Intero",
+      "Reale",
+      "Booleano",
+      "Complesso"
+    ],
+    "correct_answer": "Reale"
+  },
+  {
+    "id": "5939251f-3743-4cf1-bb94-4451d275afe7",
+    "question": "Nella somma logica con operando A=1 ed operando B=1, il totale sarà",
+    "answers": [
+      "2",
+      "1",
+      "0",
+      "0,1"
+    ],
+    "correct_answer": "1"
+  },
+  {
+    "id": "ce974392-ba8f-4a0c-a186-52dd2b16f508",
+    "question": "Nella somma logica con operando A=0 ed operando B=0, il totale sarà:",
+    "answers": [
+      "2",
+      "1",
+      "0",
+      "0,1"
+    ],
+    "correct_answer": "0"
+  },
+  {
+    "id": "f592ee02-839f-4f0f-a39b-e43c46bb162c",
+    "question": "Nel prodotto logico con operando A=VERO ed operando B=FALSO, il totale sarà:",
+    "answers": [
+      "F",
+      "V",
+      "0",
+      "0,1"
+    ],
+    "correct_answer": "F"
+  },
+  {
+    "id": "d07362ea-d906-4275-9f60-1cf922ef030f",
+    "question": "Nel prodotto logico con operando A=VERO ed operando B=VERO, il totale sarà:",
+    "answers": [
+      "1",
+      "F,V",
+      "V",
+      "F"
+    ],
+    "correct_answer": "V"
+  },
+  {
+    "id": "1779da71-7f8f-4659-89eb-03e2977c58ce",
+    "question": "La negazione logica dell’operando A=0 è:",
+    "answers": [
+      "0",
+      "V",
+      "F",
+      "1"
+    ],
+    "correct_answer": "1"
+  },
+  {
+    "id": "c39a929e-3bfe-40f8-be09-e801dc744a3f",
+    "question": "Nella congiunzione tra insiemi si valuta:",
+    "answers": [
+      "Quando gli insiemi si verificano separati",
+      "Quando i due eventi si realizzano entrambi",
+      "Quando i due eventi non si realizzano",
+      "Quando i due eventi sono negativi"
+    ],
+    "correct_answer": "Quando i due eventi si realizzano entrambi"
+  },
+  {
+    "id": "5f50b86b-c1be-43e7-b333-7914f131e2c3",
+    "question": "La probabilità che si verifichi un evento può assumere valori",
+    "answers": [
+      "Tra 0 ed 1",
+      "Tra 2 e 3",
+      "Minori di 2",
+      "Minori di 3"
+    ],
+    "correct_answer": "Tra 0 ed 1"
+  },
+  {
+    "id": "682e3de7-cb56-4e95-b130-9240fe5569b8",
+    "question": "Due eventi sono indipendenti quando:",
+    "answers": [
+      "Si escludono a vicenda",
+      "Il verificarsi dell’uno non modifica la probabilità di verificarsi dell’altro",
+      "Il verificarsi dell’uno modifica la probabilità di verificarsi dell’altro",
+      "Il verificarsi dell’uno rende impossibile il verificarsi dell’altro"
+    ],
+    "correct_answer": "Il verificarsi dell’uno non modifica la probabilità di verificarsi dell’altro"
+  },
+  {
+    "id": "7a6656dd-d614-474c-aaf6-53a7f947664a",
+    "question": "La probabilità del verificarsi di due eventi che si escludono a vicenda è data dal:",
+    "answers": [
+      "Prodotto della probabilità dell’uno per la probabilità dell’altro",
+      "Somma delle probabilità del verificarsi di ciascuno dei due eventi",
+      "Somma delle probabilità del non verificarsi di ciascuno dei due eventi",
+      "Prodotto delle probabilità del non verificarsi di ciascuno dei due eventi"
+    ],
+    "correct_answer": "Somma delle probabilità del verificarsi di ciascuno dei due eventi"
+  },
+  {
+    "id": "2de820ba-a221-42e2-91e0-60e4da18f353",
+    "question": "La somma delle probabilità di eventi che si escludono a vicenda ed esaustivi è:",
+    "answers": [
+      "Uguale ad 1",
+      "Minore di 1",
+      "Maggiore di 1",
+      "0"
+    ],
+    "correct_answer": "Uguale ad 1"
+  },
+  {
+    "id": "99f63458-713c-486c-8134-9bb43c7cac7b",
+    "question": "Due eventi non sono indipendenti quando:",
+    "answers": [
+      "Possono verificarsi contemporaneamente",
+      "Sono rari",
+      "Il verificarsi dell’uno modifica la probabilità del verificarsi dell’altro",
+      "Il verificarsi dell’uno non modifica la probabilità del verificarsi dell’altro"
+    ],
+    "correct_answer": "Il verificarsi dell’uno modifica la probabilità del verificarsi dell’altro"
+  },
+  {
+    "id": "c2d46312-967e-4a2d-ad0d-ce910351a936",
+    "question": "Se si effettua una estrazione senza reimmissione la probabilità di estrarre un altro elemento:",
+    "answers": [
+      "Viene modificata",
+      "Non viene modificata",
+      "È pari a 0",
+      "È pari ad 1"
+    ],
+    "correct_answer": "Viene modificata"
+  },
+  {
+    "id": "773461bf-d602-4084-af6c-73672aa3531d",
+    "question": "Da un mazzo di 40 carte viene estratta una carta. Calcolare la probabilità di ottenere un asso:",
+    "answers": [
+      "0,2",
+      "0,3",
+      "0,5",
+      "0,1"
+    ],
+    "correct_answer": "0,1"
+  },
+  {
+    "id": "36715ab1-3d16-42b9-9dec-af150fc09a44",
+    "question": "Da un mazzo di 40 carte viene estratta una carta. Calcolare la probabilità di ottenere una carta di bastoni:",
+    "answers": [
+      "0,2",
+      "0,3",
+      "0,5",
+      "0,25"
+    ],
+    "correct_answer": "0,25"
+  },
+  {
+    "id": "94233d13-a1ac-4484-852c-23b4a4aa5126",
+    "question": "Da un mazzo di carte viene estratta una carta. Calcolare la probabilità di ottenere una figura:",
+    "answers": [
+      "10/40",
+      "11/40",
+      "13/40",
+      "12/40"
+    ],
+    "correct_answer": "12/40"
+  },
+  {
+    "id": "fb3ed1d0-5c3b-4386-bf7e-7605074d86c8",
+    "question": "Dato un mazzo di 40 carte viene estratta una carta. Calcolare la probabilità di ottenere un fante o un re:",
+    "answers": [
+      "8/40",
+      "4/40",
+      "2/40",
+      "1/40"
+    ],
+    "correct_answer": "8/40"
+  },
+  {
+    "id": "092c91a8-66ea-49db-9fde-146e08f89a48",
+    "question": "Dato un mazzo di 40 carte viene estratta una carta. Calcolare la probabilità di ottenere una figura o una carta \ninferiore a 6:",
+    "answers": [
+      "12/40",
+      "20/40",
+      "32/40",
+      "10/40"
+    ],
+    "correct_answer": "32/40"
+  },
+  {
+    "id": "e47379d7-5eea-4964-a4c9-e165d7c11d88",
+    "question": "Dato un mazzo di 40 carte calcolare la probabilità di ottenere in due estrazioni con reimmissione un re alla prima \nestrazione e una carta di coppe alla seconda:",
+    "answers": [
+      "1/10",
+      "1/40",
+      "1/4",
+      "0,20"
+    ],
+    "correct_answer": "1/40"
+  },
+  {
+    "id": "4ae08aad-f049-484f-b9b1-9da5097df9c6",
+    "question": "Dato un mazzo di 40 carte calcolare la probabilità di ottenere in due estrazioni con reimmissione un re e un asso:",
+    "answers": [
+      "1/10",
+      "2/10",
+      "2/100",
+      "1/100"
+    ],
+    "correct_answer": "2/100"
+  },
+  {
+    "id": "565a1318-eb91-466f-b063-6691f151cc82",
+    "question": "Si consideri come successo l’evento “faccia con il numero sei” nel lancio di un dado. Calcolare la probabilità di \nsuccesso in un lancio:",
+    "answers": [
+      "1/6",
+      "2/6",
+      "6/6",
+      "5/6"
+    ],
+    "correct_answer": "1/6"
+  },
+  {
+    "id": "966348fe-be95-421f-9446-b7a52204baf9",
+    "question": "Dieci adolescenti hanno ottenuto i seguenti in una prova di abilità spaziale (2,7,9,2,1,7,5,4,6,2), estraendo a caso \nun punteggio quale è la probabilità di ottenere un numero pari e inferiore a 6:",
+    "answers": [
+      "3/10",
+      "4/10",
+      "5/10",
+      "1"
+    ],
+    "correct_answer": "4/10"
+  },
+  {
+    "id": "f8d3bca0-cf12-47ee-bae6-118a3d789d9b",
+    "question": "Dieci adolescenti hanno ottenuto i seguenti in una prova di abilità spaziale (2,7,9,2,1,7,5,4,6,2). Estraendo a caso \nun punteggio quale è la probabilità di ottenere un numero pari o inferiore a 6:",
+    "answers": [
+      "3/10",
+      "0.7",
+      "5/10",
+      "0.8"
+    ],
+    "correct_answer": "0.7"
+  },
+  {
+    "id": "225c991b-5d43-46dc-98ae-f6ec75ef849e",
+    "question": "Dieci adolescenti hanno ottenuto i seguenti in una prova di abilità spaziale (2,7,9,2,1,7,5,4,6,2). Estraendo a caso \ndue punteggi con reimmissione, quale è la probabilità di ottenere almeno un 7 alla prima estrazione:",
+    "answers": [
+      "0.2",
+      "0.3",
+      "0.4",
+      "0.5"
+    ],
+    "correct_answer": "0.2"
+  },
+  {
+    "id": "eaa1e1e3-1147-4857-a721-24342d595e2e",
+    "question": "Dieci adolescenti hanno ottenuto i seguenti in una prova di abilità spaziale (2,7,9,2,1,7,5,4,6,2). Estraendo a caso \ndue punteggi con reimmissione, quale è la probabilità di ottenere due punteggi la cui somma sia 9:",
+    "answers": [
+      "10/100",
+      "15/100",
+      "30/100",
+      "14/100"
+    ],
+    "correct_answer": "14/100"
+  },
+  {
+    "id": "83fff71f-a15c-4156-9483-c6ba4ecc325d",
+    "question": "Il numero di cuori negli esseri viventi ed il numero di battiti cardiaci al minuto possono entrambi essere definiti:",
+    "answers": [
+      "Soggetti",
+      "Variabili",
+      "Caratteristiche",
+      "Il numero di battiti solamente può essere definito variabile"
+    ],
+    "correct_answer": "Il numero di battiti solamente può essere definito variabile"
+  },
+  {
+    "id": "5da6a121-a708-4967-aa0f-16b43f1e70df",
+    "question": "Si supponga di avere la seguente distribuzione di 10 individui secondo la nazionalità: Italiani n.3, Francesi n.4, \nSpagnoli n.3. La caratteristica nazionalità è misurata su scala:",
+    "answers": [
+      "Nominale",
+      "Ordinale",
+      "A intervalli equivalenti",
+      "Non nominale"
+    ],
+    "correct_answer": "Nominale"
+  },
+  {
+    "id": "001eea63-d99b-4b91-837c-c901f3cd6317",
+    "question": "Le frequenze percentuali di una distribuzione si calcolano facendo:",
+    "answers": [
+      "Il rapporto tra ciascuna frequenza ed il totale delle frequenze e moltiplicando per 100 il risultato",
+      "Il rapporto tra ciascuna frequenza ed il totale delle frequenze",
+      "Il rapporto tra ciascuna frequenza ed il totale delle frequenze e moltiplicando per 1000 il risultato",
+      "Il rapporto il totale delle frequenze e ciascuna frequenza e moltiplicando per 100 il risultato"
+    ],
+    "correct_answer": "Il rapporto tra ciascuna frequenza ed il totale delle frequenze e moltiplicando per 100 il risultato"
+  },
+  {
+    "id": "e3754b3a-8c62-4e29-9e94-9f709381274f",
+    "question": "Quando si calcolano le frequenze cumulate percentuali, l'ultimo valore che si ottiene, cioè il più elevato, è:",
+    "answers": [
+      "1000",
+      "100",
+      "N",
+      "N-1"
+    ],
+    "correct_answer": "100"
+  },
+  {
+    "id": "43c424b6-33d6-424c-94e4-3cc8b957d1c5",
+    "question": "La mediana è:",
+    "answers": [
+      "La frequenza cumulata al di sopra e al di sotto della quale cade un ugual numero di casi",
+      "La frequenza relativa (per scale nominali e rapporti) al di sopra e al di sotto della quale cade un ugual numero di casi",
+      "La frequenza cumulata (per scale nominali e ordinali) al di sotto della quale cade un ugual numero di casi",
+      "La categoria o il punteggio al di sopra e al di sotto del quale cade un ugual numero di casi"
+    ],
+    "correct_answer": "La categoria o il punteggio al di sopra e al di sotto del quale cade un ugual numero di casi"
+  },
+  {
+    "id": "0be07c1e-aba3-47d1-aa08-452e1c014f8f",
+    "question": "La media:",
+    "answers": [
+      "E' sensibile ai valori estremi",
+      "Non è sensibile ai valori estremi",
+      "Non è sensibile agli outlier",
+      "E' sensibile alla Mediana"
+    ],
+    "correct_answer": "E' sensibile ai valori estremi"
+  },
+  {
+    "id": "5ff1cba3-687a-4817-9c2f-e2be998fad23",
+    "question": "Un test fornisce punteggi compresi tra 0 e 120. La media del test, calcolata su un campione, risulta 142,9. Il \nrisultato è:",
+    "answers": [
+      "Corretto",
+      "Probabilmente sbagliato",
+      "Sicuramente sbagliato",
+      "Il valore massimo"
+    ],
+    "correct_answer": "Sicuramente sbagliato"
+  },
+  {
+    "id": "2b558d5d-2cc9-4f41-834b-67bded4f0f0b",
+    "question": "Un test fornisce sicuramente punteggi compresi tra 0 e 120. La mediana del test, calcolata da un ricercatore su un \ncampione, risulta 142,9. Il punteggio massimo ottenibile è:",
+    "answers": [
+      "120",
+      "142,9",
+      "0",
+      "Non calcolabile"
+    ],
+    "correct_answer": "120"
+  },
+  {
+    "id": "fce56ea1-a2fd-427c-89ad-b811d60f05b2",
+    "question": "In una distribuzione di frequenza si può ottenere:",
+    "answers": [
+      "Solo una moda",
+      "Più di una varianza",
+      "Più di una moda",
+      "Più di una mediana"
+    ],
+    "correct_answer": "Più di una moda"
+  },
+  {
+    "id": "acf4b28a-cbe5-431e-a239-0b441914de4c",
+    "question": "Nella retta di regressione Y’=aY+bYX il termine ay:",
+    "answers": [
+      "Rappresenta la distanza tra il punto zero (origine) dell’asse delle ascisse e il punto in cui la retta taglia l’asse delle \nordinate",
+      "Rappresenta la distanza tra il punto zero (origine) dell’asse delle ordinate e il punto in cui la retta taglia l’asse delle \nascisse",
+      "Rappresenta la distanza tra il punto zero (origine) dell’asse delle ordinate e il punto in cui la retta taglia l’asse delle \nordinate",
+      "Rappresenta la distanza tra il punto 1 (origine) dell’asse delle ascisse e il punto in cui la retta taglia l’asse delle \nordinate"
+    ],
+    "correct_answer": "Rappresenta la distanza tra il punto zero (origine) dell’asse delle ascisse e il punto in cui la retta taglia l’asse delle \nordinate"
+  },
+  {
+    "id": "a83555b3-06c5-4b6b-aed5-c0ac9ad43b1a",
+    "question": "Quando la correlazione tra X ed Y è molto elevata, pari ad rxy=0.92, i valori di Y ed Y’:",
+    "answers": [
+      "Differiscono",
+      "Coincidono",
+      "Possono coincidere",
+      "Sono pari ad 1"
+    ],
+    "correct_answer": "Differiscono"
+  },
+  {
+    "id": "41fa04d8-b160-483c-b664-122bbd092c54",
+    "question": "Quando la correlazione tra X ed Y è molto bassa, pari ad rxy=0.22, i valori di Y ed Y’:",
+    "answers": [
+      "Differiscono",
+      "Coincidono",
+      "Possono coincidere",
+      "Sono pari ad 1"
+    ],
+    "correct_answer": "Differiscono"
+  },
+  {
+    "id": "52afbcd2-8782-4bc8-9f08-bf6a71dd1f7e",
+    "question": "Quando la correlazione tra X ed Y è pari ad rxy=+1, i valori di Y ed Y’:",
+    "answers": [
+      "Differiscono",
+      "Coincidono",
+      "Possono coincidere",
+      "Sono pari ad 1"
+    ],
+    "correct_answer": "Coincidono"
+  },
+  {
+    "id": "b06e8d1c-cb25-44fa-88ba-9f6b9ad04ff4",
+    "question": "Quando la correlazione tra X ed Y è pari ad rxy=-1, i valori di Y ed Y’:",
+    "answers": [
+      "Differiscono",
+      "Coincidono",
+      "Possono coincidere",
+      "Sono l’uno l’opposto dell’altro"
+    ],
+    "correct_answer": "Coincidono"
+  },
+  {
+    "id": "8f59b867-eac4-410a-af9a-bb78d4908180",
+    "question": "Prova anche a realizzare in Excel i grafici che seguono. Quando rxy = 0, le due rette di regressione Y’=ay+byX e X’= \nax+bxY sono:",
+    "answers": [
+      "Perpendicolari tra loro",
+      "Parallele",
+      "Coincidono",
+      "Sono polinomiali"
+    ],
+    "correct_answer": "Perpendicolari tra loro"
+  },
+  {
+    "id": "fbe08a64-76f5-481e-98ac-dfd555df93b5",
+    "question": "Prova anche a realizzare in excel i grafici che seguono. Quando rxy = -1, le due rette di regressione Y’=ay+byX e X’= \nax+bxY sono:",
+    "answers": [
+      "Perpendicolari tra loro",
+      "Parallele",
+      "Coincidono",
+      "Sono polinomiali"
+    ],
+    "correct_answer": "Coincidono"
+  },
+  {
+    "id": "555390c2-0852-4acf-b17d-9c42f7b79dea",
+    "question": "Prova anche a realizzare in excel i grafici che seguono. Quando rxy = +1, le due rette di regressione Y’=ay+byX e X’= \nax+bxY sono:",
+    "answers": [
+      "Perpendicolari tra loro",
+      "Parallele",
+      "Coincidono",
+      "Sono polinomiali"
+    ],
+    "correct_answer": "Coincidono"
+  },
+  {
+    "id": "62eadd8f-c6f9-48e5-a8dd-1988058b0cd5",
+    "question": "Tra X= ”abilità manuali” ed Y= ”abilità tecniche” vi è una relazione lineare, sapendo che il coefficiente di \ncorrelazione è uguale a 0.76, il coefficiente di determinazione sarà pari a:",
+    "answers": [
+      "0.53",
+      "0.43",
+      "0.33",
+      "0.58"
+    ],
+    "correct_answer": "0.58"
+  },
+  {
+    "id": "76f16315-fe9d-4537-a539-49df091cb2d7",
+    "question": "Tra X= ”abilità manuali” ed Y= ”abilità tecniche” vi è una relazione non lineare, sapendo che il coefficiente di \ndeterminazione è uguale a -1, il coefficiente di correlazione sarà pari a:",
+    "answers": [
+      "1",
+      "-1",
+      "Non è possibile calcolarlo con i dati a disposizione che non sono corretti",
+      "Non è possibile calcolarlo con i dati a disposizione che sono corretti"
+    ],
+    "correct_answer": "Non è possibile calcolarlo con i dati a disposizione che non sono corretti"
+  },
+  {
+    "id": "4eed6dbe-8a8e-4f8c-8fe6-4b4535672cb3",
+    "question": "La media mobile di ordine 5 permette di:",
+    "answers": [
+      "Calcolare le serie storiche",
+      "Calcolare le varianze",
+      "Eliminare valori erratici",
+      "Eliminare valori negativi"
+    ],
+    "correct_answer": "Eliminare valori erratici"
+  },
+  {
+    "id": "c6476642-32ab-43f9-a39a-2ffcf1e512eb",
+    "question": "La media mobile di ordine 3 permette di:",
+    "answers": [
+      "Calcolare le serie storiche",
+      "Calcolare le varianze",
+      "Eliminare valori anomali",
+      "Eliminare valori positivi e negativi"
+    ],
+    "correct_answer": "Eliminare valori anomali"
+  },
+  {
+    "id": "8b399895-8eaf-48ef-b305-a9c7ca1ebbad",
+    "question": "La media mobile di ordine 3 permette di:",
+    "answers": [
+      "Effettuare lo smoothing delle serie storiche",
+      "Calcolare le serie storiche",
+      "Calcolare le varianze",
+      "Eliminare valori ridondanti"
+    ],
+    "correct_answer": "Effettuare lo smoothing delle serie storiche"
+  },
+  {
+    "id": "5ca7232b-7469-46f9-b704-25d42154970e",
+    "question": "Nella serie ordinata secondo il tempo t e con valori (100,200,350,500,600) le medie mobili di ordine 3 con 2 cifre \ndecimali sono:",
+    "answers": [
+      "100.50 e 200.00",
+      "200.30; 400.00; 500.50",
+      "300.50; 400.50; 600.00; 650.00",
+      "216.67; 350.00; 483.33"
+    ],
+    "correct_answer": "216.67; 350.00; 483.33"
+  },
+  {
+    "id": "3c2094ca-af0f-4c27-acae-1208ff642764",
+    "question": "Nella serie ordinata secondo il tempo t e con valori(10,100,200,350,500,600) le medie mobili di ordine 5 sono:",
+    "answers": [
+      "100 e 202",
+      "200, 400, 500, 550",
+      "300, 400, 600, 650",
+      "232 e 350"
+    ],
+    "correct_answer": "232 e 350"
+  },
+  {
+    "id": "ade1c92a-795e-4d80-9102-85c8ad9b11fa",
+    "question": "La funzione TENDENZA in Excel serve per:",
+    "answers": [
+      "Calcolare una varianza",
+      "Rappresentare graficamente una funzione stimata",
+      "Calcolare il valore di una funzione stimata",
+      "Calcolare le frequenze"
+    ],
+    "correct_answer": "Calcolare il valore di una funzione stimata"
+  },
+  {
+    "id": "d839106d-f1d6-4fd7-b1a4-9dbc506093e9",
+    "question": "La funzione TENDENZA in Excel serve per:",
+    "answers": [
+      "Prevedere le serie storiche",
+      "Calcolare la varianza di una funzione stimata",
+      "Calcolare il valore di una funzione stimata di tipo esponenziale",
+      "Calcolare le frequenze"
+    ],
+    "correct_answer": "Prevedere le serie storiche"
+  },
+  {
+    "id": "46f3a571-b626-4fed-b6ce-463c2c39687f",
+    "question": "La funzione TENDENZA in Excel serve per:",
+    "answers": [
+      "Prevedere una varianza",
+      "Prevedere una funzione y*",
+      "Prevedere il valore al tempo t in una funzione stimata y*",
+      "Calcolare le frequenze previste"
+    ],
+    "correct_answer": "Prevedere il valore al tempo t in una funzione stimata y*"
+  },
+  {
+    "id": "467f071f-9aeb-4ae1-948c-848369d76e94",
+    "question": "La funzione TENDENZA in Excel serve per:",
+    "answers": [
+      "Calcolare una varianza al tempo t",
+      "Calcolare il valore di una funzione stimata y* di tipo polinomiale al tempo t",
+      "Calcolare il valore stimato al tempo t in relazione ad una funzione di regressione y*",
+      "Calcolare le frequenze stimate al tempo t"
+    ],
+    "correct_answer": "Calcolare il valore stimato al tempo t in relazione ad una funzione di regressione y*"
+  },
+  {
+    "id": "06d348fd-c152-45c6-a680-f64ebbfd992b",
+    "question": "La stima del parametro è:",
+    "answers": [
+      "Corretta",
+      "Efficiente",
+      "Consistente",
+      "Un concetto diverso da quello di stimatore"
+    ],
+    "correct_answer": "Un concetto diverso da quello di stimatore"
+  },
+  {
+    "id": "3cc4517d-0c27-47fd-977b-81a12f8a06c3",
+    "question": "La stima del parametro nella popolazione è:",
+    "answers": [
+      "Corretta",
+      "Efficiente",
+      "Calcolata attraverso i dati campionari",
+      "Calcolata con metodi non inferenziali"
+    ],
+    "correct_answer": "Calcolata attraverso i dati campionari"
+  },
+  {
+    "id": "c108cda5-1951-42a1-9036-24c81f22d309",
+    "question": "La stima del parametro nel campione è:",
+    "answers": [
+      "Convergente in probabilità",
+      "Efficiente",
+      "Consistente",
+      "Non è opportuno definire la stima del parametro nel campione, ma nella popolazione"
+    ],
+    "correct_answer": "Non è opportuno definire la stima del parametro nel campione, ma nella popolazione"
+  },
+  {
+    "id": "d05ebbc1-ed4f-4cf5-ac63-e3e8f37f8b57",
+    "question": "La stima del parametro nella popolazione è:",
+    "answers": [
+      "Un concetto eguale a quello di stimatore del parametro nella popolazione",
+      "Un concetto eguale a quello di stimatore del campione",
+      "Convergente",
+      "Relativa ai valori che può assumere lo stimatore"
+    ],
+    "correct_answer": "Relativa ai valori che può assumere lo stimatore"
+  },
+  {
+    "id": "84a231b9-d583-491b-b82b-233b8ef332ba",
+    "question": "La stima del campione è:",
+    "answers": [
+      "Un concetto eguale a quello di stimatore del parametro nella popolazione",
+      "Un concetto eguale a quello di stimatore del campione",
+      "Convergente",
+      "Un concetto diverso da quello di stimatore"
+    ],
+    "correct_answer": "Un concetto diverso da quello di stimatore"
+  },
+  {
+    "id": "ec35b906-5e9b-416c-8963-9e4621b31a61",
+    "question": "Si supponga di aver compiuto una rilevazione campionaria su 2000 pazienti e che 500 siano risultati sensibili ad un \ndeterminato farmaco. Indicare quale è la proporzione campionaria di persone sensibili al farmaco:",
+    "answers": [
+      "0,25",
+      "0,30",
+      "0,50",
+      "0,2"
+    ],
+    "correct_answer": "0,25"
+  },
+  {
+    "id": "e33fe73a-fcfb-40c3-aa35-837cb4ef8799",
+    "question": "Si supponga di aver compiuto una rilevazione campionaria su 2000 pazienti e che 1000 siano risultati sensibili ad \nun determinato farmaco. Indicare quale è la proporzione nella popolazione di persone sensibili al farmaco:",
+    "answers": [
+      "Non si può sapere",
+      "0,35",
+      "0,50",
+      "0,2"
+    ],
+    "correct_answer": "Non si può sapere"
+  },
+  {
+    "id": "87b81ce8-1f01-4a54-99b8-96216d818678",
+    "question": "Si supponga di aver compiuto una rilevazione campionaria su 2000 pazienti e che 500 siano risultati sensibili ad un \ndeterminato farmaco. Indicare quale è la proporzione campionaria di persone non sensibili al farmaco:",
+    "answers": [
+      "0,25",
+      "0,30",
+      "0,75",
+      "0,2"
+    ],
+    "correct_answer": "0,75"
+  },
+  {
+    "id": "05dc3946-58da-4bd5-b0b3-ee0645ae2377",
+    "question": "Si supponga di aver compiuto una rilevazione campionaria su 2000 pazienti e che 500 siano risultati sensibili ad \nun determinato farmaco. Con un grado di fiducia del 95%, stimiamo che la proporzione della popolazione sensibile al \nfarmaco deve essere compresa tra:",
+    "answers": [
+      "0,24 e 0,28",
+      "0,23 e 0,29",
+      "0,50 e 0,90",
+      "0,23 e 0,27"
+    ],
+    "correct_answer": "0,23 e 0,27"
+  },
+  {
+    "id": "18ca7d89-51be-49ad-90ea-a7ca46f2981f",
+    "question": "La proporzione di varianza comune a X e Y è espressa da r2xy che è denominato:",
+    "answers": [
+      "Varianza",
+      "Devianza",
+      "Devianza",
+      "Coefficiente di determinazione"
+    ],
+    "correct_answer": "Coefficiente di determinazione"
+  },
+  {
+    "id": "8f8f56c0-12f1-431c-b75d-39a6a4872703",
+    "question": "La proporzione di varianza comune a X e Y è espressa da r2xy che esprime:",
+    "answers": [
+      "La varianza spiegata",
+      "La varianza residua",
+      "Il Coefficiente di correlazione",
+      "Il Coefficiente di regressione"
+    ],
+    "correct_answer": "La varianza spiegata"
+  },
+  {
+    "id": "012d4134-4a50-4917-8c07-3dbecec976a6",
+    "question": "La quantità espressa da 1-r2xy con r2xy che indica la proporzione di varianza comune a X e Y è denominata::",
+    "answers": [
+      "Varianza",
+      "Devianza",
+      "Varianza residua",
+      "Varianza spiegata"
+    ],
+    "correct_answer": "Varianza residua"
+  },
+  {
+    "id": "49cda566-f996-45ef-8e3b-52b8e0c9602a",
+    "question": "Il coefficiente di correlazione di Pearson tra X= “abilità manuali” ed Y= ”abilità tecniche” è pari a 0,76. \nConsiderando una relazione lineare tra X ed Y, dove quest’ultima è la variabile dipendente, il coefficiente di \ndeterminazione sarà pari a:",
+    "answers": [
+      "0,78",
+      "0,58",
+      "0,38",
+      "0,28"
+    ],
+    "correct_answer": "0,58"
+  },
+  {
+    "id": "107c3cb4-3dfc-412c-bb83-1e784e724037",
+    "question": "Il coefficiente di correlazione di Pearson tra X= “quantità di grassi saturi assunte” ed Y= ”speranza di vita” è pari \nad -1. Considerando una relazione lineare tra X ed Y, dove X è la variabile dipendente ed Y quella indipendente, il \ncoefficiente di determinazione sarà pari a:",
+    "answers": [
+      "1",
+      "0,58",
+      "0,38",
+      "0,28"
+    ],
+    "correct_answer": "1"
+  },
+  {
+    "id": "74979714-841b-4ac3-a335-a9af6ed5344a",
+    "question": "Il coefficiente di correlazione di Pearson tra X= “abilità manuali” ed Y= ”abilità tecniche” è pari a 0,76. \nConsiderando una relazione lineare tra X ed Y, dove quest’ultima è la variabile dipendente, la varianza residua sarà \npari a:",
+    "answers": [
+      "78%",
+      "42%",
+      "58%",
+      "28%"
+    ],
+    "correct_answer": "42%"
+  },
+  {
+    "id": "6c4fcf97-ba31-43c3-b7fb-715ce13f5c66",
+    "question": "Il coefficiente di correlazione di Pearson tra X= “abilità manuali” ed Y= ”abilità tecniche” è pari a 0,76. \nConsiderando una relazione lineare tra X ed Y, dove quest’ultima è la variabile dipendente, la varianza comune sarà \npari a:",
+    "answers": [
+      "58%",
+      "78%",
+      "38%",
+      "28%"
+    ],
+    "correct_answer": "58%"
+  },
+  {
+    "id": "7b1f199c-2bb7-4e90-b5b2-7e837e4582af",
+    "question": "In una scuola superiore 70 ragazzi sono iscritti ad un corso di Inglese specialistico. All’inizio del corso ai 70 alunni \nviene somministrato un test attitudinale per l’Inglese che fornisce punteggi in termini di risposte corrette (da 1 a 40). \nAlla fine del corso si valuta l’apprendimento dell’inglese per ogni ragazzo con un test di profitto (da 0 a 100). Viene \nutilizzato il punteggio al test attitudinale per prevedere il livello di apprendimento dell’inglese raggiunto a fine \ncorso, e si ottengono i seguenti risultati: Y’=10+2X: r2=0,64; se=2,5. Indicare quale è la variabile indipendente::",
+    "answers": [
+      "Livello di apprendimento dell’inglese",
+      "Punteggi al test di profitto",
+      "Attitudine all’Inglese",
+      "Non c’è alcuna variabile indipendente"
+    ],
+    "correct_answer": "Attitudine all’Inglese"
+  },
+  {
+    "id": "7ca3faa6-55aa-4a8e-a4c4-13147891fe9c",
+    "question": "In una scuola superiore 70 ragazzi sono iscritti ad un corso di Inglese specialistico. All’inizio del corso ai 70 alunni \nviene somministrato un test attitudinale per l’Inglese che fornisce punteggi in termini di risposte corrette (da 1 a 40). \nAlla fine del corso si valuta l’apprendimento dell’inglese per ogni ragazzo con un test di profitto (da 0 a 100). Viene \nutilizzato il punteggio al test attitudinale per prevedere il livello di apprendimento dell’inglese raggiunto a fine \ncorso, e si ottengono i seguenti risultati: Y’=10+2X: r2=0,64; se=2,5. Indicare quale punteggio dovrebbe ottenere al \ntest di profitto un ragazzo che sbaglia tutte le domande al test attitudinale:",
+    "answers": [
+      "20",
+      "30",
+      "40",
+      "10"
+    ],
+    "correct_answer": "10"
+  },
+  {
+    "id": "665316c8-648b-461c-9bef-02bbbb451282",
+    "question": "Per ogni risposta corretta in più al test \nattitudinale indicare di quanti punti aumenta il punteggio al test di profitto:",
+    "answers": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correct_answer": "2"
+  },
+  {
+    "id": "fd7030ed-beb3-47f1-9e3f-19809fcbc457",
+    "question": "In una scuola superiore 70 ragazzi sono iscritti ad un corso di Informatica specialistico. All’inizio del corso ai 70 \nalunni viene somministrato un test attitudinale per l’Informatica che fornisce punteggi in termini di risposte corrette \n(da 1 a 40). Alla fine del corso si valuta l’apprendimento dell’Informatica per ogni ragazzo con un test di profitto (da \n0 a 100). Viene utilizzato il punteggio al test attitudinale per prevedere il livello di apprendimento dell’informatica \nraggiunto a fine corso, e si ottengono i seguenti risultati: Y’=15+2X: r2=0,74; se=3,5. Indicare di quanti punti è \nl’errore medio di previsione:",
+    "answers": [
+      "3,8",
+      "4,0",
+      "3,5",
+      "3,1"
+    ],
+    "correct_answer": "3,5"
+  },
+  {
+    "id": "cdf744cb-0864-493c-b91b-b4c85cf62ca7",
+    "question": "In una scuola superiore 70 ragazzi sono iscritti ad un corso di Informatica specialistico. All’inizio del corso ai 70 \nalunni viene somministrato un test attitudinale per l’Informatica che fornisce punteggi in termini di risposte corrette \n(da 1 a 40). Alla fine del corso si valuta l’apprendimento dell’Informatica per ogni ragazzo con un test di profitto (da \n0 a 100). Viene utilizzato il punteggio al test attitudinale per prevedere il livello di apprendimento dell’informatica \nraggiunto a fine corso, e si ottengono i seguenti risultati: Y’=15+3X: r2=0,74; se=3,5. Indicare per ogni risposta \ncorretta al test attitudinale di quanti punti aumenta il punteggio al test di profitto e come si chiama questo \nparametro:",
+    "answers": [
+      "15, intercetta",
+      "3, coefficiente di regressione",
+      "3, intercetta",
+      "3.5; errore medio di previsione"
+    ],
+    "correct_answer": "3, coefficiente di regressione"
+  },
+  {
+    "id": "a3f9b839-dfb1-4e03-b86f-16fbe5456ab2",
+    "question": "Tra i punteggi ad un test di letteratura inglese e i punteggi ad un test di abilità matematica (numero di risposte \ncorrette in entrambi i casi) si calcola un coefficiente di correlazione di Pearson pari a -0,88. Sulla base del risultato \nottenuto si può evidenziare che:",
+    "answers": [
+      "La correlazione tra le due variabili è debole",
+      "Le due variabili sono correlate positivamente",
+      "Le persone molto brave in letteratura inglese risultano molto abili anche in matematica",
+      "Le persone con punteggi bassi in matematica hanno buone prestazioni in letteratura inglese"
+    ],
+    "correct_answer": "Le persone con punteggi bassi in matematica hanno buone prestazioni in letteratura inglese"
+  },
+  {
+    "id": "c2fb6d13-4337-444a-9bc4-3376786f518d",
+    "question": "Tra i punteggi ad un test di letteratura inglese e i punteggi ad un test di abilità matematica (numero di risposte \ncorrette in entrambi i casi) si calcola un coefficiente di correlazione di Pearson pari a -0,88. Sulla base del risultato \nottenuto si può evidenziare che:",
+    "answers": [
+      "Le persone molto brave in matematica risultano molto abili anche in letteratura",
+      "Le due variabili sono correlate positivamente",
+      "Le persone molto brave in letteratura inglese risultano molto abili anche in matematica",
+      "Le due variabili sono correlate negativamente"
+    ],
+    "correct_answer": "Le due variabili sono correlate negativamente"
+  },
+  {
+    "id": "c83cf4aa-3022-4a99-846e-c63a55014aad",
+    "question": "L’indice r misura relazioni di tipo:",
+    "answers": [
+      "Esponenziale",
+      "Polinomiale",
+      "Lineare",
+      "Non lineare"
+    ],
+    "correct_answer": "Lineare"
+  },
+  {
+    "id": "48e65170-dfea-4587-a23f-dbfee262bc57",
+    "question": "Si ha discordanza tra caratteri se:",
+    "answers": [
+      "Ai valori più piccoli di una delle due variabili corrispondono generalmente i più piccoli dell’altra, e se ai valori più \ngrandi corrispondono in genere i più grandi;",
+      "Ai valori più piccoli di una delle due variabili corrispondono generalmente i più grandi dell’altra, e se ai valori più \ngrandi corrispondono in genere i più piccoli;",
+      "Vi è dipendenza tra caratteri",
+      "Vi è differenza tra i caratteri"
+    ],
+    "correct_answer": "Ai valori più piccoli di una delle due variabili corrispondono generalmente i più grandi dell’altra, e se ai valori più \ngrandi corrispondono in genere i più piccoli;"
+  },
+  {
+    "id": "09134d31-7595-45b5-8cf9-a92af9a2bf81",
+    "question": "La codevianza è una misura:",
+    "answers": [
+      "Assoluta di concordanza",
+      "Relativa di concordanza che permette di fare confronti",
+      "Relativa di discordanza che permette di fare confronti",
+      "Relativa di discordanza che non permette di fare confronti"
+    ],
+    "correct_answer": "Assoluta di concordanza"
+  },
+  {
+    "id": "c8bc87c4-1c07-4b20-9757-5d48b3bc936b",
+    "question": "La correlazione:",
+    "answers": [
+      "A differenza della regressione, non richiede di stabilire quale variabile sia antecedente all’altra (in termini di \ndipendenza)",
+      "Richiede di stabilire quale variabile sia antecedente all’altra (in termini di dipendenza)",
+      "Non richiede di stabilire quale variabile sia antecedente all’altra (in termini di interdipendenza)",
+      "A differenza della regressione, non richiede di stabilire quale frequenza sia antecedente all’altra (in termini di \ndipendenza)"
+    ],
+    "correct_answer": "A differenza della regressione, non richiede di stabilire quale variabile sia antecedente all’altra (in termini di \ndipendenza)"
+  },
+  {
+    "id": "4ecb5279-e573-4a93-8dc3-692399823711",
+    "question": "Relazioni di discordanza significative tra variabili implicano:",
+    "answers": [
+      "Un coefficiente di correlazione negativo",
+      "Rapporti causa-effetto",
+      "Dipendenza",
+      "Dipendenza"
+    ],
+    "correct_answer": "Un coefficiente di correlazione negativo"
+  },
+  {
+    "id": "c3af9cbf-466d-4957-9faf-a9f7b46f17c4",
+    "question": "Se il coefficiente di correlazione è uguale a 0 vi è:",
+    "answers": [
+      "Indipendenza",
+      "Dipendenza",
+      "Casualità",
+      "Assenza di concordanza o discordanza"
+    ],
+    "correct_answer": "Assenza di concordanza o discordanza"
+  },
+  {
+    "id": "bfcb2058-707e-4b9d-b514-5b0b02de700f",
+    "question": "La funzione di ripartizione di una variabile casuale X a valori reali è:",
+    "answers": [
+      "La funzione che associa a ciascun valore x la probabilità dell‘evento “la variabile casuale X assume valori maggiori di \nx”",
+      "La funzione che associa a ciascun valore x la probabilità dell‘evento “la variabile casuale X assume valori minori o \nuguali ad x”",
+      "La funzione che associa a ciascun valore x la probabilità dell‘evento “la variabile casuale X assume valori minori di x”",
+      "La funzione che associa a ciascun valore x la probabilità dell‘evento “la variabile casuale X assume valori uguali ad x”"
+    ],
+    "correct_answer": "La funzione che associa a ciascun valore x la probabilità dell‘evento “la variabile casuale X assume valori minori o \nuguali ad x”"
+  },
+  {
+    "id": "843a5b3d-946d-4d76-b1bc-c743511605d1",
+    "question": "La funzione di densità di probabilità della distribuzione Normale è asintotica di X verso -∞ e +∞, cioè:",
+    "answers": [
+      "Si avvicina all’asse delle Y",
+      "Si avvicina all’asse delle ascisse",
+      "Si avvicina all’asse delle ascisse senza mai toccarla",
+      "Si avvicina all’asse delle ordinate senza mai toccarlo"
+    ],
+    "correct_answer": "Si avvicina all’asse delle ascisse senza mai toccarla"
+  },
+  {
+    "id": "2d7055e2-a314-46d5-8a30-f81e7572ef44",
+    "question": "I valori attesi nella variabile casuale Normale sono:",
+    "answers": [
+      "Media; mediana",
+      "Moda; Varianza;",
+      "Media; Varianza;",
+      "Media; Forma campanulare"
+    ],
+    "correct_answer": "Media; Varianza;"
+  },
+  {
+    "id": "7ca72fbd-0b1f-4b0c-a561-e06961af0151",
+    "question": "Per 10 bimestri un ricercatore ha rilevato la temperatura media (variabile X, espressa in gradi centigradi) e \nl’importo pagato per la bolletta elettrica (variabile Y, espressa in euro): xi : 10, 18, 23, 32, 21, 15, 12, 16, 24, 27 yi : \n50, 48, 45, 60, 40, 48, 50, 45, 55, 65 Il valore 24 riportato nella prima riga della tabella rappresenta:",
+    "answers": [
+      "Una frequenza",
+      "Una modalità del carattere",
+      "L’unità statistica di riferimento",
+      "Il posto d’ordine"
+    ],
+    "correct_answer": "Una modalità del carattere"
+  },
+  {
+    "id": "3c574de7-d28c-4f53-937b-11a6ab762259",
+    "question": "1) \nPer 10 bimestri un ricercatore ha rilevato la temperatura media (variabile X, espressa in gradi centigradi) e \nl’importo pagato per la bolletta elettrica (variabile Y, espressa in euro): xi : 10, 18, 23, 32, 21, 15, 12, 16, 24, 27 yi : \n50, 48, 45, 60, 40, 48, 50, 45, 55, 65 Il valore della funzione di ripartizione empirica in corrispondenza di una \ntemperatura media pari a 25 gradi, che ipotizziamo essere una v.c distribuita normalmente, è:",
+    "answers": [
+      "0,7",
+      "0,8",
+      "0,9",
+      "0,1"
+    ],
+    "correct_answer": "0,8"
+  },
+  {
+    "id": "8c89002d-921e-427f-b644-870c3bdeff23",
+    "question": "Indicare la percentuale di bollette con importi inferiori a 60 euro, tra i bimestri con temperatura media superiore \na 20°:",
+    "answers": [
+      "2/5",
+      "1/5",
+      "3/5",
+      "4/5"
+    ],
+    "correct_answer": "3/5"
+  },
+  {
+    "id": "6ad6b815-81c6-48c7-90b8-0ecadbc12746",
+    "question": "La funzione f(X) raggiunge il suo punto più alto in corrispondenza di:",
+    "answers": [
+      "Xi = media",
+      "Xi = 1",
+      "Xi = varianza",
+      "Xi = deviazione standard"
+    ],
+    "correct_answer": "Xi = media"
+  },
+  {
+    "id": "a1fe9372-f004-4df3-a06b-d8cf2d585956",
+    "question": "Poiché nella v.c. Normale la funzione f(X) raggiunge il suo punto più alto in corrispondenza di Xi = µ, ciò comporta \nche media, mediana e moda:",
+    "answers": [
+      "Siano diverse",
+      "Media",
+      "Moda>Media>Mediana",
+      "Coincidano"
+    ],
+    "correct_answer": "Coincidano"
+  },
+  {
+    "id": "8876f7c5-8495-4cea-8497-697cae672738",
+    "question": "Si ricorre ad una distribuzione normale quando:",
+    "answers": [
+      "Una variabile casuale continua è distribuita normalmente o quasi.",
+      "Una variabile casuale continua è distribuita non normalmente.",
+      "Una variabile non casuale è distribuita normalmente",
+      "Una variabile casuale continua è distribuita solo normalmente."
+    ],
+    "correct_answer": "Una variabile casuale continua è distribuita normalmente o quasi."
+  },
+  {
+    "id": "540f586a-0a7a-452b-ac57-e5349d02ed88",
+    "question": "Nella teoria statistica i termini campione e popolazione sono:",
+    "answers": [
+      "Sinonimi",
+      "Indifferenti",
+      "Non sono sinonimi",
+      "Convergenti"
+    ],
+    "correct_answer": "Non sono sinonimi"
+  },
+  {
+    "id": "2274ee17-bf79-4be3-8265-0fa4c8385fc9",
+    "question": "I simboli μ e σ si riferiscono alla media ed allo scarto quadratico medio del:",
+    "answers": [
+      "Campione",
+      "Popolazione",
+      "Sottoinsieme",
+      "Campione a valanga"
+    ],
+    "correct_answer": "Popolazione"
+  },
+  {
+    "id": "d1d91e86-ac4a-4a56-b907-5adfa3bd259a",
+    "question": "I simboli e S si riferiscono alla media ed allo scarto quadratico medio del:",
+    "answers": [
+      "Campione",
+      "Popolazione",
+      "Sottoinsieme",
+      "Campione a valanga"
+    ],
+    "correct_answer": "Campione"
+  },
+  {
+    "id": "08a276c0-aa35-4f09-a573-a5a3e5ac920b",
+    "question": "La distribuzione di probabilità di z è costruita:",
+    "answers": [
+      "Empiricamente estraendo ripetuti campioni da una popolazione",
+      "Empiricamente estraendo ripetute popolazioni da un campione",
+      "E’ una funzione teorica espressa con regole matematiche relative a un insieme infinito di dati",
+      "E’ una funzione teorica espressa con regole matematiche relative a un insieme finito di dati"
+    ],
+    "correct_answer": "E’ una funzione teorica espressa con regole matematiche relative a un insieme infinito di dati"
+  },
+  {
+    "id": "634192ba-d53c-4f5d-8d61-1beb49b091b5",
+    "question": "La curva normale a differenza delle altre curve è:",
+    "answers": [
+      "Simmetrica e unimodale",
+      "Definita da un’equazione particolare che permette di calcolare, data un’ordinata, porzioni di area sottese alla curva \nstessa",
+      "Simmetrica e bimodale",
+      "Bimodale"
+    ],
+    "correct_answer": "Definita da un’equazione particolare che permette di calcolare, data un’ordinata, porzioni di area sottese alla curva \nstessa"
+  },
+  {
+    "id": "dc3a25b8-b141-45df-b4ef-2d42855a7a7e",
+    "question": "La curva normale standardizzata è caratterizzata dal fatto di avere:",
+    "answers": [
+      "Media= 0 e deviazione standard=0.,5",
+      "Deviazione standard= 1",
+      "Media =0 e deviazione standard=1",
+      "Caratteristiche bimodali"
+    ],
+    "correct_answer": "Media =0 e deviazione standard=1"
+  },
+  {
+    "id": "93652da1-fbae-40a0-988a-1e4b801b1b3b",
+    "question": "La curva normale standardizzata è caratterizzata dal fatto di avere:",
+    "answers": [
+      "Media= 0 e deviazione standard=0.,5",
+      "Deviazione standard= 1",
+      "I punteggi sono espressi in punti z",
+      "Caratteristiche bimodali"
+    ],
+    "correct_answer": "I punteggi sono espressi in punti z"
+  },
+  {
+    "id": "d4016253-7a9c-429f-b88c-bb9c217de68d",
+    "question": "Valori estremi, cioè posizionati verso le code di una distribuzione di probabilità, hanno una probabilità di \nverificarsi per caso:",
+    "answers": [
+      "Superiore rispetto ai valori centrali",
+      "Nulla",
+      "Inferiore rispetto ai valori centrali",
+      "Uguale ai valori centrali"
+    ],
+    "correct_answer": "Inferiore rispetto ai valori centrali"
+  },
+  {
+    "id": "423f8be3-231a-4296-8342-433498858cbb",
+    "question": "Utilizzando la tavola della curva normale standardizzata si individueranno i punti z:",
+    "answers": [
+      "Nella colonna di sinistra con una cifra decimale; la seconda cifra decimale è situata nella prima riga in alto della \nstessa tavola",
+      "Nella colonna di sinistra con una cifra decimale; la terza cifra decimale è situata nella prima riga in alto della stessa \ntavola",
+      "Nella colonna destra con una cifra decimale; la seconda cifra decimale è situata nella prima riga in alto della stessa \ntavola",
+      "Nella colonna centrale con una cifra decimale; la seconda cifra decimale è situata nella prima riga in alto della stessa \ntavola"
+    ],
+    "correct_answer": "Nella colonna di sinistra con una cifra decimale; la seconda cifra decimale è situata nella prima riga in alto della \nstessa tavola"
+  },
+  {
+    "id": "7ebab51c-5dcf-421a-931c-bb4fc2016ca0",
+    "question": "Una variabile dicotomica può assumere:",
+    "answers": [
+      "Due o più valori",
+      "Al massimo due valori",
+      "Solo due valori",
+      "Tre valori"
+    ],
+    "correct_answer": "Solo due valori"
+  },
+  {
+    "id": "c21df8ce-bba7-46ac-8a91-e9ab552d1ac1",
+    "question": "Se una variabile è dicotomica:",
+    "answers": [
+      "La probabilità che si verifichi l’evento favorevole è uguale alla probabilità che non si verifichi l’evento sfavorevole",
+      "La probabilità che si verifichi l’evento favorevole è uguale alla probabilità che non si verifichi l’evento favorevole",
+      "Può assumere solo due valori, indipendentemente dalla probabilità di ottenere uno o l’altro dei due valori",
+      "Può assumere solo una probabilità=0 od 1"
+    ],
+    "correct_answer": "Può assumere solo due valori, indipendentemente dalla probabilità di ottenere uno o l’altro dei due valori"
+  },
+  {
+    "id": "6e047aa9-63a1-4fe9-ba88-9e87c409036a",
+    "question": "La seguente ipotesi è nulla:",
+    "answers": [
+      "La popolazione da cui il campione è estratto ha media 58",
+      "C’è un diverso numero di cattolici tra uomini e donne",
+      "La probabilità di incontrare a caso un bambino con problemi di apprendimento tra le classi sociali svantaggiate è \nsuperiore al 30%",
+      "La media dei tempi di reazione dei maschi è inferiore a quella delle femmine"
+    ],
+    "correct_answer": "La popolazione da cui il campione è estratto ha media 58"
+  },
+  {
+    "id": "30ef4ff7-8d9f-43cd-9a19-98c9b78a0cd1",
+    "question": "La seguente ipotesi è nulla:",
+    "answers": [
+      "Non esiste nessuna relazione tra classe sociale e alcolismo",
+      "C’è un diverso numero di cattolici tra uomini e donne",
+      "La probabilità di incontrare a caso un bambino con problemi di apprendimento tra le classi sociali svantaggiate è \nsuperiore al 30%",
+      "La media dei tempi di reazione dei maschi è inferiore a quella delle femmine"
+    ],
+    "correct_answer": "Non esiste nessuna relazione tra classe sociale e alcolismo"
+  },
+  {
+    "id": "516867c8-ba9e-44db-badf-f8b038509660",
+    "question": "La seguente ipotesi è nulla:",
+    "answers": [
+      "C’è un diverso numero di cattolici tra uomini e donne",
+      "La probabilità di incontrare a caso un bambino con problemi di apprendimento tra le classi sociali svantaggiate è \nsuperiore al 60%",
+      "La media dei tempi di reazione dei maschi è inferiore a quella delle femmine",
+      "Le medie dei gruppi A,B,C non differiscono tra loro in modo significativo"
+    ],
+    "correct_answer": "Le medie dei gruppi A,B,C non differiscono tra loro in modo significativo"
+  },
+  {
+    "id": "2e6a2b20-7993-4863-98cb-2a3b00131b39",
+    "question": "La seguente ipotesi è nulla:",
+    "answers": [
+      "Il farmaco C ha un effetto diverso dal farmaco D",
+      "La probabilità di incontrare a caso un bambino con problemi di apprendimento tra le classi sociali svantaggiate è \nsuperiore al 50%",
+      "La media dei tempi di reazione dei maschi è inferiore a quella delle femmine",
+      "Le medie dei gruppi A,B,C non differiscono tra loro in modo significativo"
+    ],
+    "correct_answer": "Le medie dei gruppi A,B,C non differiscono tra loro in modo significativo"
+  },
+  {
+    "id": "35516d93-dbbe-4ae3-90d0-fadb0075028f",
+    "question": "La seguente ipotesi è nulla:",
+    "answers": [
+      "Il farmaco C non ha un effetto diverso dal farmaco D",
+      "La probabilità di incontrare a caso un bambino con problemi di apprendimento tra le classi sociali svantaggiate è \nsuperiore al 50%",
+      "La media dei tempi di reazione dei maschi è inferiore a quella delle femmine",
+      "Le medie dei gruppi A,B,C differiscono tra loro in modo significativo"
+    ],
+    "correct_answer": "Il farmaco C non ha un effetto diverso dal farmaco D"
+  },
+  {
+    "id": "8c7adff5-eb17-409c-8351-6eaab5c2d581",
+    "question": "La seguente ipotesi è nulla:",
+    "answers": [
+      "Il farmaco C ha un effetto diverso dal farmaco D",
+      "La probabilità di incontrare a caso un bambino con problemi di apprendimento tra le classi sociali svantaggiate è \nsuperiore al 50%",
+      "La media dei tempi di reazione dei maschi è uguale a quella delle femmine",
+      "Le medie dei gruppi A,B,C differiscono tra loro in modo significativo"
+    ],
+    "correct_answer": "La media dei tempi di reazione dei maschi è uguale a quella delle femmine"
+  },
+  {
+    "id": "47ffaf07-f8c0-41e2-9fe9-8384ba399da0",
+    "question": "La seguente ipotesi è nulla:",
+    "answers": [
+      "C’è una relazione significativa tra reddito delle persone e livello di istruzione",
+      "La probabilità di incontrare a caso un bambino con problemi di apprendimento tra le classi sociali svantaggiate è \ninferiore al 50%",
+      "La media dei tempi di reazione dei maschi è inferiore a quella delle femmine",
+      "Le medie dei gruppi A,B,T differiscono tra loro in modo significativo"
+    ],
+    "correct_answer": "C’è una relazione significativa tra reddito delle persone e livello di istruzione"
+  },
+  {
+    "id": "ac208c58-b876-49a1-98d0-4693c4a170e4",
+    "question": "La seguente ipotesi: “C’è una minore astensione dal lavoro nel reparto A rispetto al reparto B di una fabbrica” è:",
+    "answers": [
+      "Nulla",
+      "Monodirezionale sinistra",
+      "Monodirezionale destra",
+      "Bidirezionale"
+    ],
+    "correct_answer": "Monodirezionale sinistra"
+  },
+  {
+    "id": "56a661df-e9fe-4032-945a-96a9f17f1112",
+    "question": "La seguente ipotesi: “Il punteggio medio ad un test di statistica di due gruppi di individui è significativamente \ndiverso” è:",
+    "answers": [
+      "Nulla",
+      "Monodirezionale sinistra",
+      "Monodirezionale destra",
+      "Bidirezionale"
+    ],
+    "correct_answer": "Bidirezionale"
+  },
+  {
+    "id": "ef32cb05-0903-40b7-a790-1124b0ffee5d",
+    "question": "La seguente ipotesi: “La media della popolazione da cui deriva un certo campione non è 200”",
+    "answers": [
+      "Nulla",
+      "Monodirezionale sinistra",
+      "Monodirezionale destra",
+      "Bidirezionale"
+    ],
+    "correct_answer": "Bidirezionale"
+  },
+  {
+    "id": "4b88358c-ba60-423d-9b6e-13fd522ec3a3",
+    "question": "La seguente ipotesi: “La probabilità di ottenere croce lanciando una certa moneta è superiore a 0,5” è:",
+    "answers": [
+      "Nulla",
+      "Monodirezionale sinistra",
+      "Monodirezionale destra",
+      "Bidirezionale"
+    ],
+    "correct_answer": "Monodirezionale destra"
+  },
+  {
+    "id": "c5f93e2e-2c35-4f78-9f36-fa5b0ec0e13f",
+    "question": "La seguente ipotesi: “Un giocatore scommette sull’uscita della faccia con il numero 4 di un dado, e vince un \nnumero elevato di volte. Sospettiamo che il dado sia truccato” è:",
+    "answers": [
+      "Nulla",
+      "Monodirezionale sinistra",
+      "Monodirezionale destra",
+      "Bidirezionale"
+    ],
+    "correct_answer": "Monodirezionale destra"
+  },
+  {
+    "id": "25f8a364-468a-48af-8e0a-f62f68d43f17",
+    "question": "La seguente ipotesi: “Un giocatore scommette sull’uscita della faccia con il numero 4 di un dado, e vince un \nnumero elevato di volte. Sospettiamo che il dado sia truccato”. La probabilità sotto l’ipotesi nulla, cioè se le vincite \nsono dovute al caso è:",
+    "answers": [
+      "2/6",
+      "3/6",
+      "1/6",
+      "0"
+    ],
+    "correct_answer": "1/6"
+  },
+  {
+    "id": "b117a5c8-647f-4bd1-9906-c93a3e15050a",
+    "question": "La seguente ipotesi: “Il punteggio medio ad un test di statistica di due gruppi di individui è significativamente \ndiverso” ha il seguente segno del valore critico:",
+    "answers": [
+      "+",
+      "–",
+      "-, -",
+      "±"
+    ],
+    "correct_answer": "±"
+  },
+  {
+    "id": "f62c61de-36fe-4305-8d8f-50e3a691dea0",
+    "question": "Quale probabilità si ha di commettere l’errore di I tipo se si rifiuta l’ipotesi nulla avendo scelto un livello di \nsignificatività del 5%:",
+    "answers": [
+      "1%",
+      "10%",
+      "5%",
+      "2%"
+    ],
+    "correct_answer": "5%"
+  },
+  {
+    "id": "9dc4e57c-d4d8-4983-bda5-f277e52e8ac9",
+    "question": "Ponendo ed H1 monodirezionale destra, indicare quando è possibile rifiutare l’ipotesi nulla; ciò accade nel caso \nin cui il risultato del test effettuato lasci alla sua destra:",
+    "answers": [
+      "Il 4% dei casi",
+      "Il 5,5% dei casi",
+      "Il 7% dei casi",
+      "Il 8% dei casi"
+    ],
+    "correct_answer": "Il 4% dei casi"
+  }
+]
