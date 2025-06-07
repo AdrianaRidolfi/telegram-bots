@@ -168,7 +168,7 @@ async def error_handler(update, context):
 def escape_markdown(text: str) -> str:
     if not text:
         return ""
-    escape_chars = r"_*[]()~`>#+-=|{}!\\"
+    escape_chars = r"_*[]()`"
     return re.sub(rf"([{re.escape(escape_chars)}])", r"\\\1", text)
 
 async def send_next_question(user_id, context):
