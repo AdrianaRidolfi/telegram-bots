@@ -13,7 +13,7 @@ from telegram.ext import (
 )
 from contextlib import asynccontextmanager
 from pdf_generator import generate_pdf
-from quiz_bot import get_gifs
+from get_gifs import yay
 from wrong_answers import WrongAnswersManager
 from user_stats import UserStatsManager
 from firebase_admin import credentials, firestore
@@ -519,7 +519,7 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
 
     if score == 30 and total == 30:
       
-        await context.bot.send_animation(chat_id=user_id, animation=get_gifs.yay(), caption="Yay!")
+        await context.bot.send_animation(chat_id=user_id, animation=yay(), caption="Yay!")
         summary = f"Congratulazioni! Punteggio: {score} su {total} ({percentage}%)\n\n📊 Statistiche:\n"
     else:
         summary = f"Quiz completato! Punteggio: {score} su {total} ({percentage}%)\n\n📊 Statistiche:\n"
