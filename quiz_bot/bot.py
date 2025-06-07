@@ -526,8 +526,8 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
 
     if score == 30 and total == 30:
         await context.bot.send_animation(chat_id=user_id, animation=yay(), caption="30!")
-    else:
-        summary = f"Quiz completato! Punteggio: {score} su {total} ({percentage}%)\n\n📊 Statistiche:\n"
+    
+    summary = f"Quiz completato! Punteggio: {score} su {total} ({percentage}%)\n\n📊 Statistiche:\n"
     
     
     for sub, data in all_stats.items():
