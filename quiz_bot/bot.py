@@ -481,13 +481,14 @@ async def show_mistakes(user_id, subject, context: ContextTypes.DEFAULT_TYPE):
         return
 
     full_text = "📋 *Ecco le domande che hai sbagliato:*\n\n"
-
     for item in wrong_answers_detailed:
+        times = item['times_wrong']
+        label = "volta" if times == 1 else "volte"
         full_text += (
             f"❓ *Domanda*: {item['question']}\n"
             f"✅ *Risposta corretta*: {item['correct_answer']}\n"
-            f"🔁 *Sbagliata*: {item['times_wrong']} volte\n\n"
-        )
+            f"🔁 *Sbagliata*: {times} {label}\n\n"
+            )
 
     # Attenzione: Telegram ha un limite di 4096 caratteri per messaggio
     if len(full_text) > 4000:
