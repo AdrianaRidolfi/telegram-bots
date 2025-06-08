@@ -13,11 +13,13 @@ def add_ids_to_quiz_file(file_path):
             return
 
     if not isinstance(quiz_data, list):
-        print(f"❌ Il file {file_path} non contiene una lista.")
+        print(f"Il file {file_path} non contiene una lista.")
         return
 
     updated = False
+    counter = 0
     for question in quiz_data:
+        counter += 1
         if "id" not in question:
             question["id"] = str(uuid.uuid4())
             updated = True
@@ -27,7 +29,9 @@ def add_ids_to_quiz_file(file_path):
             json.dump(quiz_data, f, indent=2, ensure_ascii=False)
         print(f"Aggiunti ID a {file_path}")
     else:
-        print(f"ℹNessun aggiornamento necessario per {file_path}")
+        print(f"Nessun aggiornamento necessario per {file_path}")
+    
+    print(f"Totale domande: {counter}")
 
 def process_all_quizzes():
     for file_name in os.listdir(QUIZ_DIR):
