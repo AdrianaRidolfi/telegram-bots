@@ -124,24 +124,24 @@ def mescola_risposte(domande_json):
 # -----------------------
 if __name__ == "__main__":
     # 🔧 Inserisci qui i nomi dei file
-    nome_file_txt = "tec.txt"
-    nome_file_json = "tecnologie_web.json"       # Deve essere in ./quizzes/
-    nome_file_pdf = "tecnologie.pdf"
+    nome_file_txt = "str.txt"
+    nome_file_json = "strategia.json"       # Deve essere in ./quizzes/
+    nome_file_pdf = "SOEM.pdf"
     nome_file_output = "finale_filtrato.txt" # Output finale
 
     percorso_json = os.path.join("quizzes", nome_file_json)
 
-    # Carico il JSON
-    with open(percorso_json, "r", encoding="utf-8") as f:
-        domande = json.load(f)
+    # # Carico il JSON
+    # with open(percorso_json, "r", encoding="utf-8") as f:
+    #     domande = json.load(f)
 
-    # Mescolo le risposte
-    domande_miscelate = mescola_risposte(domande)
+    # # Mescolo le risposte
+    # domande_miscelate = mescola_risposte(domande)
 
-    # Sovrascrivo il file JSON con il contenuto aggiornato
-    with open(percorso_json, "w", encoding="utf-8") as f:
-        json.dump(domande_miscelate, f, ensure_ascii=False, indent=4)
+    # # Sovrascrivo il file JSON con il contenuto aggiornato
+    # with open(percorso_json, "w", encoding="utf-8") as f:
+    #     json.dump(domande_miscelate, f, ensure_ascii=False, indent=4)
 
     # Eseguo il confronto
-    #confronto_completo(nome_file_txt, percorso_json, nome_file_pdf, nome_file_output)
+    confronto_completo(nome_file_txt, percorso_json, nome_file_pdf, nome_file_output)
 

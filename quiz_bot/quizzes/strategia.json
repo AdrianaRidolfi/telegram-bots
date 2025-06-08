@@ -5245,5 +5245,357 @@
         ],
         "correct_answer": "L’ambiente esterno è caratterizzato da turbolenza e imprevedibilità",
         "id": "0i1j2k3l-4m5n-6o7p-8q9r-0s1t2u3v4w5x"
+    },
+    {
+        "id": "e0a4d3f2-1c7b-4e8a-9f6c-8d2a1b0c7e5f",
+        "question": "Le imprese globali si caratterizzano per:",
+        "answers": [
+            "un forte coordinamento centrale per massimizzare le economie di scala",
+            "una gestione decentralizzata per adattarsi ai mercati locali",
+            "la focalizzazione su un unico prodotto per nicchie di mercato",
+            "l'assenza di gerarchie per favorire l'innovazione"
+        ],
+        "correct_answer": "un forte coordinamento centrale per massimizzare le economie di scala"
+    },
+    {
+        "id": "b1c8e7a6-2d9f-4b0c-8e1a-3c5d7f9b1e0d",
+        "question": "Il vantaggio principale di un sistema ERP è:",
+        "answers": [
+            "Garantire una maggiore integrazione tra processi aziendali",
+            "Ridurre i costi di marketing",
+            "Aumentare la produttività individuale dei dipendenti",
+            "Automatizzare la gestione del magazzino"
+        ],
+        "correct_answer": "Garantire una maggiore integrazione tra processi aziendali"
+    },
+    {
+        "id": "a9f1b0c8-3e2d-4f5a-7b8c-9d0e1f2a3b4c",
+        "question": "La caratteristica chiave della pianificazione strategica è:",
+        "answers": [
+            "Definire gli obiettivi a lungo termine",
+            "Gestire le operazioni quotidiane",
+            "Ottimizzare la forza lavoro interna",
+            "Monitorare le performance finanziarie trimestrali"
+        ],
+        "correct_answer": "Definire gli obiettivi a lungo termine"
+    },
+    {
+        "id": "c7d5e9f1-4a3b-5c6d-8e9f-0a1b2c3d4e5f",
+        "question": "Uno degli obiettivi distintivi degli SDGs (Sustainable Development Goals), rispetto agli MDGs (Millennium Development Goals), è:",
+        "answers": [
+            "Adottare un approccio più integrato tra questioni sociali, economiche e ambientali",
+            "Concentrarsi esclusivamente sulla riduzione della povertà",
+            "Promuovere lo sviluppo economico a discapito dell'ambiente",
+            "Focalizzarsi solo sui paesi in via di sviluppo"
+        ],
+        "correct_answer": "Adottare un approccio più integrato tra questioni sociali, economiche e ambientali"
+    },
+    {
+        "id": "f2a6b4c8-5d7e-6f9a-1b2c-3d4e5f6a7b8c",
+        "question": "Le tre prospettive di analisi dell’organizzazione sono:",
+        "answers": [
+            "manageriale, sociologica e politica",
+            "finanziaria, legale e tecnica",
+            "produttiva, distributiva e commerciale",
+            "tecnologica, economica e ambientale"
+        ],
+        "correct_answer": "manageriale, sociologica e politica"
+    },
+    {
+        "id": "d3e7f1a9-6b8c-7d0e-9f1a-2b3c4d5e6f7a",
+        "question": "Il criterio di fondo nella progettazione di un'unità organizzativa è:",
+        "answers": [
+            "Raggruppare tra loro posizioni e ruoli fortemente interdipendenti",
+            "Separare le funzioni per evitare conflitti di interesse",
+            "Creare dipartimenti di pari dimensioni per equità",
+            "Assegnare ruoli in base all'anzianità dei dipendenti"
+        ],
+        "correct_answer": "Raggruppare tra loro posizioni e ruoli fortemente interdipendenti"
+    },
+    {
+        "id": "e4f8g2b0-7c9d-8e1f-2a3b-4c5d6e7f8a9b",
+        "question": "Il Customer Relationship Management (CRM) è:",
+        "answers": [
+            "Una strategia per migliorare la gestione dei clienti",
+            "Un software per la contabilità aziendale",
+            "Una metodologia per la produzione di beni",
+            "Un sistema di controllo qualità interno"
+        ],
+        "correct_answer": "Una strategia per migliorare la gestione dei clienti"
+    },
+    {
+        "id": "a5b9c3d1-8e0f-9a1b-3c4d-5e6f7a8b9c0d",
+        "question": "Il ruolo del Process Owner nell'organizzazione per processi è quello di:",
+        "answers": [
+            "Definire gli obiettivi di processo e monitorarne le prestazioni",
+            "Eseguire materialmente tutte le fasi del processo",
+            "Gestire le risorse umane del dipartimento",
+            "Occuparsi della manutenzione dei sistemi informatici"
+        ],
+        "correct_answer": "Definire gli obiettivi di processo e monitorarne le prestazioni"
+    },
+    {
+        "id": "b6c0d4e2-9f1a-0b2c-4d5e-6f7a8b9c0d1e",
+        "question": "Per outsourcing si intende:",
+        "answers": [
+            "L’affidamento di attività aziendali a terze parti",
+            "La fusione con un'altra azienda",
+            "La vendita di prodotti all'estero",
+            "L'internalizzazione di nuove competenze"
+        ],
+        "correct_answer": "L’affidamento di attività aziendali a terze parti"
+    },
+    {
+        "id": "c7d1e5f3-0a2b-1c3d-5e6f-7a8b9c0d1e2f",
+        "question": "Uno degli obiettivi fondamentali della Lean Organization è quello di:",
+        "answers": [
+            "Eliminare sprechi e inefficienze",
+            "Aumentare la burocrazia interna",
+            "Incrementare i tempi di consegna",
+            "Massimizzare le scorte di magazzino"
+        ],
+        "correct_answer": "Eliminare sprechi e inefficienze"
+    },
+    {
+        "id": "d8e2f6a4-1b3c-2d4e-6f7a-8b9c0d1e2f3a",
+        "question": "Un potente fattore di stimolo alla crescita per le imprese è:",
+        "answers": [
+            "Lo sfruttamento delle economie di scala",
+            "La riduzione degli investimenti in ricerca e sviluppo",
+            "L'aumento della complessità organizzativa",
+            "L'isolamento dai mercati internazionali"
+        ],
+        "correct_answer": "Lo sfruttamento delle economie di scala"
+    },
+    {
+        "id": "e9f3a7b5-2c4d-3e5f-7a8b-9c0d1e2f3a4b",
+        "question": "Un obiettivo fondamentale del Just in Time (JIT) è:",
+        "answers": [
+            "Minimizzare gli sprechi e ottimizzare le scorte",
+            "Aumentare i tempi di attesa della produzione",
+            "Incrementare i costi di produzione",
+            "Dipendere da grandi lotti di produzione"
+        ],
+        "correct_answer": "Minimizzare gli sprechi e ottimizzare le scorte"
+    },
+    {
+        "id": "f0a4b8c6-3d5e-4f6a-8b9c-0d1e2f3a4b5c",
+        "question": "Il principale obiettivo della gestione del cambiamento organizzativo è quello di:",
+        "answers": [
+            "Rendere le aziende più adattabili alle trasformazioni del mercato",
+            "Mantenere lo status quo aziendale",
+            "Ignorare le tendenze del mercato",
+            "Focalizzarsi esclusivamente sui risultati finanziari a breve termine"
+        ],
+        "correct_answer": "Rendere le aziende più adattabili alle trasformazioni del mercato"
+    },
+    {
+        "id": "1b5c9d7e-4f6a-5b7c-9d0e-1f2a3b4c5d6e",
+        "question": "Il benchmarking è:",
+        "answers": [
+            "Un confronto sistematico con aziende concorrenti per migliorare le performance",
+            "Un metodo per valutare la soddisfazione dei dipendenti",
+            "Un processo di certificazione di qualità del prodotto",
+            "Una tecnica di previsione delle vendite"
+        ],
+        "correct_answer": "Un confronto sistematico con aziende concorrenti per migliorare le performance"
+    },
+    {
+        "id": "2c6d0e8f-5a7b-6c8d-0e1f-2a3b4c5d6e7f",
+        "question": "Il Total Quality Management (TQM) è:",
+        "answers": [
+            "Una metodologia per migliorare la qualità aziendale",
+            "Un sistema di gestione del personale",
+            "Una strategia di marketing digitale",
+            "Un modello di business per startup"
+        ],
+        "correct_answer": "Una metodologia per migliorare la qualità aziendale"
+    },
+    {
+        "id": "3d7e1f9a-6b8c-7d9e-1f2a-3b4c5d6e7f8a",
+        "question": "La funzione principale della Supply Chain Management è quella di:",
+        "answers": [
+            "Ottimizzare il flusso di materiali, informazioni e risorse",
+            "Gestire le risorse umane dell'azienda",
+            "Sviluppare nuove strategie di vendita",
+            "Controllare la contabilità interna"
+        ],
+        "correct_answer": "Ottimizzare il flusso di materiali, informazioni e risorse"
+    },
+    {
+        "id": "4e8f2a0b-7c9d-8e0f-2a3b-4c5d6e7f8a9b",
+        "question": "La linea gerarchica in un'organizzazione è collegata al principio che stabilisce:",
+        "answers": [
+            "l'unicità del comando per garantire chiarezza organizzativa",
+            "la molteplicità dei capi per favorire la creatività",
+            "l'assenza di supervisione diretta per incentivare l'autonomia",
+            "la suddivisione dei poteri in base alla funzione"
+        ],
+        "correct_answer": "l'unicità del comando per garantire chiarezza organizzativa"
+    },
+    {
+        "id": "5f9a3b1c-8d0e-9f1a-3b4c-5d6e7f8a9b0c",
+        "question": "Il principale beneficio della metodologia Agile è quello di:",
+        "answers": [
+            "Migliorare la flessibilità e adattabilità ai cambiamenti",
+            "Rendere i processi più rigidi e standardizzati",
+            "Ritardare la consegna dei progetti",
+            "Aumentare la documentazione burocratica"
+        ],
+        "correct_answer": "Migliorare la flessibilità e adattabilità ai cambiamenti"
+    },
+    {
+        "id": "6a0b4c2d-9e1f-0a2b-4c5d-6e7f8a9b0c1d",
+        "question": "Uno dei principali fattori che spinge un'azienda ad adottare un orientamento ai processi è:",
+        "answers": [
+            "l’importanza di soddisfare le esigenze del cliente e di personalizzare prodotti e servizi",
+            "la riduzione dei costi operativi a scapito della qualità",
+            "l'introduzione di nuove tecnologie senza un piano strategico",
+            "la standardizzazione di tutti i prodotti per il mercato di massa"
+        ],
+        "correct_answer": "l’importanza di soddisfare le esigenze del cliente e di personalizzare prodotti e servizi"
+    },
+    {
+        "id": "7b1c5d3e-0f2a-1b3c-5d6e-7f8a9b0c1d2e",
+        "question": "L’obiettivo principale della strategia di distribuzione è quello di:",
+        "answers": [
+            "Rendere il prodotto disponibile al cliente nel modo più efficace",
+            "Aumentare i costi di trasporto",
+            "Ridurre la visibilità del prodotto sul mercato",
+            "Limitare l'accesso dei clienti ai punti vendita"
+        ],
+        "correct_answer": "Rendere il prodotto disponibile al cliente nel modo più efficace"
+    },
+    {
+        "id": "8c2d6e4f-1a3b-2c4d-6e7f-8a9b0c1d2e3f",
+        "question": "La Selettività (S) è pari a:",
+        "answers": [
+            "Q / (I '\" C)",
+            "Q * I / C",
+            "Q + I - C",
+            "Q - (I / C)"
+        ],
+        "correct_answer": "Q / (I '\" C)"
+    },
+    {
+        "id": "9d3e7f5a-2b4c-3d5e-7f8a-9b0c1d2e3f4a",
+        "question": "L'acronimo KPI significa:",
+        "answers": [
+            "Key Performance Indicator",
+            "Key Process Integration",
+            "Knowledge Process Improvement",
+            "Known Project Initiative"
+        ],
+        "correct_answer": "Key Performance Indicator"
+    },
+    {
+        "id": "a0e4f8b6-3c5d-4e6f-8a9b-0c1d2e3f4a5b",
+        "question": "La differenza principale tra efficienza ed efficacia di un processo è che:",
+        "answers": [
+            "l’efficienza riguarda l’ottimizzazione delle risorse, mentre l’efficacia si riferisce al raggiungimento degli obiettivi del processo",
+            "l'efficienza è la capacità di raggiungere gli obiettivi, mentre l'efficacia è l'uso ottimale delle risorse",
+            "non c'è alcuna differenza significativa tra efficienza ed efficacia",
+            "l'efficienza è legata alla rapidità, mentre l'efficacia alla quantità prodotta"
+        ],
+        "correct_answer": "l’efficienza riguarda l’ottimizzazione delle risorse, mentre l’efficacia si riferisce al raggiungimento degli obiettivi del processo"
+    },
+    {
+        "id": "b1f5c9d7-4d6e-5f7a-9b0c-1d2e3f4a5b6c",
+        "question": "Un esempio di struttura organizzativa basata sull’area geografica è:",
+        "answers": [
+            "un'unità produttiva per ciascuna grande area territoriale di attività",
+            "una divisione basata sulle funzioni aziendali",
+            "un team di progetto interdisciplinare",
+            "una gerarchia piramidale con un unico centro decisionale"
+        ],
+        "correct_answer": "un'unità produttiva per ciascuna grande area territoriale di attività"
+    },
+    {
+        "id": "c2g6d0e8-5e7f-6a8b-0c1d-2e3f4a5b6c7d",
+        "question": "Un meccanismo per migliorare la partecipazione dei dipendenti ai processi decisionali è rappresentato da:",
+        "answers": [
+            "le task force, anche temporanee",
+            "la creazione di un'unica linea di comando",
+            "la riduzione delle opportunità di feedback",
+            "l'implementazione di processi decisionali top-down"
+        ],
+        "correct_answer": "le task force, anche temporanee"
+    },
+    {
+        "id": "d3h7e1f9-6f8a-7b9c-1d2e-3f4a5b6c7d8e",
+        "question": "Nelle strutture funzionali, il principale meccanismo di coordinamento utilizzato è:",
+        "answers": [
+            "la standardizzazione degli obiettivi",
+            "la comunicazione informale tra i dipartimenti",
+            "la supervisione diretta dei project manager",
+            "la decentralizzazione completa delle decisioni"
+        ],
+        "correct_answer": "la standardizzazione degli obiettivi"
+    },
+    {
+        "id": "e4i8f2a0-7a9b-8c0d-2e3f-4a5b6c7d8e9f",
+        "question": "Tra i seguenti autori, chi è noto per aver sviluppato teorie sull’organizzazione scientifica del lavoro?",
+        "answers": [
+            "Frederick W. Taylor",
+            "Abraham Maslow",
+            "Peter F. Drucker",
+            "Michael Porter"
+        ],
+        "correct_answer": "Frederick W. Taylor"
+    },
+    {
+        "id": "f5j9g3b1-8b0c-9d1e-3f4a-5b6c7d8e9f0a",
+        "question": "Le strutture organizzative funzionali si caratterizzano principalmente per la gestione delle attività in base a:",
+        "answers": [
+            "la funzione comune",
+            "l'area geografica di operazione",
+            "i progetti specifici",
+            "i clienti serviti"
+        ],
+        "correct_answer": "la funzione comune"
+    },
+    {
+        "id": "g6k0h4c2-9c1d-0e2f-4a5b-6c7d8e9f0a1b",
+        "question": "Secondo il principio dell'unicità del comando di Fayol, ogni individuo e unità organizzativa deve:",
+        "answers": [
+            "ricevere ordini da un solo responsabile gerarchico",
+            "ricevere ordini da molteplici responsabili",
+            "prendere decisioni autonomamente senza supervisione",
+            "collaborare solo con colleghi dello stesso livello"
+        ],
+        "correct_answer": "ricevere ordini da un solo responsabile gerarchico"
+    },
+    {
+        "id": "h7l1i5d3-0d2e-1f3a-5b6c-7d8e9f0a1b2c",
+        "question": "La struttura organizzativa a matrice è caratterizzata da:",
+        "answers": [
+            "la presenza di una pluralità di linee gerarchiche, che rispondono a criteri di raggruppamento multipli come funzione e area geografica",
+            "una singola linea gerarchica centralizzata",
+            "l'assenza di qualsiasi struttura gerarchica",
+            "una divisione del lavoro basata solo sulle competenze individuali"
+        ],
+        "correct_answer": "la presenza di una pluralità di linee gerarchiche, che rispondono a criteri di raggruppamento multipli come funzione e area geografica"
+    },
+    {
+        "id": "i8m2j6e4-1e3f-2a4b-6c7d-8e9f0a1b2c3d",
+        "question": "La capacità, nella progettazione microstrutturale, è definita come:",
+        "answers": [
+            "una caratteristica intrinseca individuale alla base di una prestazione efficace o superiore in una specifica attività o mansione",
+            "la quantità massima di produzione che un'azienda può raggiungere",
+            "il livello di competenza richiesto per un ruolo dirigenziale",
+            "la disponibilità di risorse finanziarie per investimenti futuri"
+        ],
+        "correct_answer": "una caratteristica intrinseca individuale alla base di una prestazione efficace o superiore in una specifica attività o mansione"
+    },
+    {
+        "id": "j9n3k7f5-2f4a-3b5c-7d8e-9f0a1b2c3d4e",
+        "question": "La dimensione verticale di un'organizzazione si riferisce a:",
+        "answers": [
+            "il numero di livelli gerarchici e la catena di comando",
+            "la specializzazione delle attività tra i dipartimenti",
+            "la distanza fisica tra le diverse sedi aziendali",
+            "il numero di prodotti offerti dall'azienda"
+        ],
+        "correct_answer": "il numero di livelli gerarchici e la catena di comando"
     }
 ]

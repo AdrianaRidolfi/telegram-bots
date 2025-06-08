@@ -12,8 +12,8 @@ import fitz  # PyMuPDF
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Nome del file da convertire
-input_file = "reti_di_calcolatori.pdf"  # Cambia questo con il file da elaborare
-output_json = "reti_di_calcolatori.json"
+input_file = "SOEM.pdf"  # Cambia questo con il file da elaborare
+output_json = "green_economy.json"
 
 def convert_txt_to_json(txt_path, json_path):
     with open(txt_path, "r", encoding="utf-8") as f:
@@ -224,6 +224,83 @@ def convert_pdf_to_json(pdf_path, json_path):
 
     print(f"{len(final_questions)} nuove domande aggiunte. Totale: {len(merged)}.")
 
+def convert_pdf_with_green_answers_to_json(pdf_path, json_path):
+    doc = fitz.open(pdf_path)
+    questions = []
+    image_dir = os.path.join(BASE_DIR, "images")
+    os.makedirs(image_dir, exist_ok=True)
+    json_basename = Path(json_path).stem[:3].lower()
+    image_counter = 1
+
+    current_question = None
+
+    for page in enumerate(doc):
+        blocks = page.get_text("dict")["blocks"]
+
+        for block in blocks:
+            for line in block.get("lines", []):
+                line_text = ""
+                line_spans = []
+
+                for span in line.get("spans", []):
+                    text = span["text"].strip()
+                    if not text:
+                        continue
+
+                    line_text += text + " "
+                    line_spans.append(span)
+
+                line_text = line_text.strip()
+
+                # Nuova domanda
+                if re.match(r"^\d+\.\s+", line_text):
+                    if current_question:
+                        questions.append(current_question)
+                    question_text = re.sub(r"^\d+\.\s+", "", line_text)
+                    current_question = {
+                        "id": str(uuid.uuid4()),
+                        "question": question_text,
+                        "answers": [],
+                        "correct_answer": None,
+                        "image": None
+                    }
+
+                # Opzioni A-D
+                elif re.match(r"^[A-Da-d]\.\s+", line_text) and current_question:
+                    match = re.match(r"^([A-Da-d])\.\s+(.*)", line_text)
+                    if match:
+                        letter = match.group(1).upper()
+                        option_text = match.group(2).strip()
+                        is_correct = any(is_green(span) for span in line_spans)
+                        current_question["answers"].append(option_text)
+                        if is_correct:
+                            current_question["correct_answer"] = option_text
+
+    if current_question:
+        questions.append(current_question)
+
+    for q in questions:
+        if q.get("correct_answer") is None and q["answers"]:
+            q["correct_answer"] = q["answers"][0]  # fallback
+        if not q.get("image"):
+            q.pop("image", None)
+
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(questions, f, indent=2, ensure_ascii=False)
+
+    print(f"{len(questions)} domande salvate in: {json_path}")
+
+def is_green(span):
+    color_int = span["color"]
+    r = (color_int >> 16) & 255
+    g = (color_int >> 8) & 255
+    b = color_int & 255
+    # Normalizza tra 0 e 1
+    r /= 255
+    g /= 255
+    b /= 255
+    return g > 0.5 and r < 0.3 and b < 0.3
+
 
 def convert_quiz(input_file, json_file):
     input_path = os.path.join(BASE_DIR, input_file)
@@ -242,3 +319,7 @@ def convert_quiz(input_file, json_file):
 
 if __name__ == "__main__":
     convert_quiz(input_file, output_json)
+    # input_path = os.path.join(BASE_DIR, input_file)  
+    # json_path = os.path.join(BASE_DIR, output_json)
+
+    # convert_pdf_with_green_answers_to_json(input_path, json_path) #se il pdf ha segnalate solo con il verde le risposte giuste
