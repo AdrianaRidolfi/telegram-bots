@@ -508,7 +508,9 @@ async def show_mistakes(user_id, subject, context: ContextTypes.DEFAULT_TYPE):
     if len(full_text) > 4000:
         await context.bot.send_message(chat_id=user_id, text="⚠️ Troppe domande da mostrare in un messaggio.")
     else:
-        await context.bot.send_message(chat_id=user_id, text=full_text, parse_mode='Markdown')
+        keyboard = ([InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors")])
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await context.bot.send_message(chat_id=user_id, text=full_text, parse_mode='Markdown', reply_markup=reply_markup)
 
 
 
