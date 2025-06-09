@@ -123,7 +123,7 @@ def mescola_risposte(domande_json):
 # MAIN
 # -----------------------
 if __name__ == "__main__":
-    # 🔧 Inserisci qui i nomi dei file
+    # Inserisci qui i nomi dei file che devi mettere nella stessa cartella dove si trova questo file
     nome_file_txt = "str.txt"
     nome_file_json = "strategia.json"       # Deve essere in ./quizzes/
     nome_file_pdf = "SOEM.pdf" # file paniere 
