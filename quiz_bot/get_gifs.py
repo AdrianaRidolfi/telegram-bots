@@ -14,7 +14,11 @@ yay_gif_urls = [
     "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXMxNHdnYmd1ZTMwODVhbXNwdzJneHA1ODNha2p6MzIzcThrem5kMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/FpKKILCKqNIgIE1GZf/giphy.gif",
     "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXMxNHdnYmd1ZTMwODVhbXNwdzJneHA1ODNha2p6MzIzcThrem5kMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/VhWVAa7rUtT3xKX6Cd/giphy.gif",
     "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MXBjZjVzYXJiYTk0NjNxdjN4eTd5OTBuNGkxbnRvbndycWc2YWZkayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oEjI5VtIhHvK37WYo/giphy.gif",
-    "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3NnFhY3Z0Y3FueWFpNWx4Mncza2FyejBwcXZpcTBlZm41Nzc4OWdnYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/oV66MEGU2oW0qunjAN/giphy.gif"
+    "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3NnFhY3Z0Y3FueWFpNWx4Mncza2FyejBwcXZpcTBlZm41Nzc4OWdnYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/oV66MEGU2oW0qunjAN/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2VvbWxtbDFhZm05YjZjN3E4dHh0c2RkOHk2cDdzc3N2N3gzNTV1MSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qIXVd1RoKGqlO/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExamhueGxiYzlvN2twcnIyd3NudHFwempleWdvbmZsbmJlamtobG9tOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xT5LMHxhOfscxPfIfm/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWVvaGR3a2k0NWpycTdhbmN4dnN1aGxodzMxeGNlbTRucmF6ZGg2MyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/d4uMMisS8f3x6F9ox8/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXd1dHlkZTg3d2thMHpwZTNnZjBzYzJpdDJvaDZycGNydDhrY2NidiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26DOoDwdNGKAg6UKI/giphy.gif"
 ]
 
 def yay():
