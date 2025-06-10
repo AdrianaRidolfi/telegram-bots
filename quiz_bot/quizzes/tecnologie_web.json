@@ -1608,5 +1608,1911 @@
         ],
         "correct_answer": "è variabile",
         "id": "d7f5c9a8-1e32-4d6e-9a2a-0a5e7f9b3b4c"
+    },
+    {
+        "question": "HTML5 è introdotto nel:",
+        "answers": [
+            "2004",
+            "2008",
+            "2014",
+            "2010"
+        ],
+        "correct_answer": "2014",
+        "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef"
+    },
+    {
+        "question": "I blocchi \"span\":",
+        "answers": [
+            "vanno a capo",
+            "possono andare a capo a seconda del CSS",
+            "non vanno a capo",
+            "sono elementi block-level"
+        ],
+        "correct_answer": "non vanno a capo",
+        "id": "b2c3d4e5-f6a7-8901-2345-67890abcdef0"
+    },
+    {
+        "question": "Cosa si intende per MIME:",
+        "answers": [
+            "un tipo di file di immagine",
+            "un protocollo di sicurezza",
+            "il tipo di una risorsa",
+            "un linguaggio di programmazione"
+        ],
+        "correct_answer": "il tipo di una risorsa",
+        "id": "c3d4e5f6-a7b8-9012-3456-7890abcdef01"
+    },
+    {
+        "question": "In CSS1 i richiami tra i due codici HTML e CSS venivano effettuati tramite due particolari attributi:",
+        "answers": [
+            "id ed class",
+            "style ed link",
+            "src ed href",
+            "class ed ID"
+        ],
+        "correct_answer": "class ed ID",
+        "id": "d4e5f6a7-b8c9-0123-4567-890abcdef012"
+    },
+    {
+        "question": "Il modello ISO/OSI:",
+        "answers": [
+            "è un protocollo di comunicazione di rete",
+            "è stato progettato per creare uno standard per offrire una base per gli standard di comunicazione indipendentemente dai fornitori",
+            "è un framework per lo sviluppo di applicazioni web",
+            "è un linguaggio di markup"
+        ],
+        "correct_answer": "è stato progettato per creare uno standard per offrire una base per gli standard di comunicazione indipendentemente dai fornitori",
+        "id": "e5f6a7b8-c9d0-1234-5678-90abcdef0123"
+    },
+    {
+        "question": "Qual è il ruolo del parametro 'nonce' nella Digest Access Authentication:",
+        "answers": [
+            "Fornire il nome utente",
+            "Specificare l'algoritmo di hash",
+            "Indicare la risorsa richiesta",
+            "Prevenire attacchi di replay"
+        ],
+        "correct_answer": "Prevenire attacchi di replay",
+        "id": "f6a7b8c9-d0e1-2345-6789-0abcdef01234"
+    },
+    {
+        "question": "Quale funzione JavaScript converte una stringa JSON in un oggetto:",
+        "answers": [
+            "JSON.stringify()",
+            "JSON.convert()",
+            "JSON.toObject()",
+            "JSON.parse()"
+        ],
+        "correct_answer": "JSON.parse()",
+        "id": "a7b8c9d0-e1f2-3456-7890-abcdef012345"
+    },
+    {
+        "question": "L'evento associato al fatto che il cursore del mouse entra in un elemento è:",
+        "answers": [
+            "mouseover",
+            "mouseneter",
+            "mousemove",
+            "mouseenter"
+        ],
+        "correct_answer": "mouseenter",
+        "id": "b8c9d0e1-f2a3-4567-8901-bcdef0123456"
+    },
+    {
+        "question": "Nei messaggi HTTP di ripo request, il non può essere:",
+        "answers": [
+            "GET",
+            "POST",
+            "PUT",
+            "SET"
+        ],
+        "correct_answer": "SET",
+        "id": "c9d0e1f2-a3b4-5678-9012-cdef01234567"
+    },
+    {
+        "question": "Linguaggio nato per definire il modo in cui vanno visualizzati i vari elementi di un documento scritto in un linguaggio di markup:",
+        "answers": [
+            "HTML",
+            "JavaScript",
+            "XML",
+            "css"
+        ],
+        "correct_answer": "css",
+        "id": "d0e1f2a3-b4c5-6789-0123-def012345678"
+    },
+    {
+        "question": "In HTML, l'header contiene:",
+        "answers": [
+            "il contenuto principale della pagina",
+            "script JavaScript",
+            "informazioni di servizio",
+            "elementi visibili della pagina"
+        ],
+        "correct_answer": "informazioni di servizio",
+        "id": "e1f2a3b4-c5d6-7890-1234-ef0123456789"
+    },
+    {
+        "question": "In Angularjs, quando si parla di direttiva si intende:",
+        "answers": [
+            "una funzione JavaScript",
+            "un attributo HTML che aggiunge funzionalità",
+            "un'etichetta HTML che definisce il comportamento della vista e permette di estendere le funzionalità degli elementi HTML",
+            "un elemento di styling CSS"
+        ],
+        "correct_answer": "un'etichetta HTML che definisce il comportamento della vista e permette di estendere le funzionalità degli elementi HTML",
+        "id": "f2a3b4c5-d6e7-8901-2345-f0123456789a"
+    },
+    {
+        "question": "I dispositivi che operano a questo livello sono switch e bridge:",
+        "answers": [
+            "Network Layer",
+            "Physical Layer",
+            "Application Layer",
+            "Data Link Layer"
+        ],
+        "correct_answer": "Data Link Layer",
+        "id": "a3b4c5d6-e7f8-9012-3456-0123456789ab"
+    },
+    {
+        "question": "È utilizzato per inviare informazioni al server per la creazione o l'aggiornamento di una risorsa:",
+        "answers": [
+            "GET",
+            "DELETE",
+            "PUT",
+            "POST"
+        ],
+        "correct_answer": "POST",
+        "id": "b4c5d6e7-f8a9-0123-4567-123456789abc"
+    },
+    {
+        "question": "Cosa accade quando si usa position: fixed su un elemento:",
+        "answers": [
+            "L'elemento si sposta in base allo scorrimento della pagina",
+            "L'elemento rimane nel flusso normale del documento",
+            "L'elemento viene nascosto",
+            "L'elemento resta fisso rispetto alla finestra del browser"
+        ],
+        "correct_answer": "L'elemento resta fisso rispetto alla finestra del browser",
+        "id": "c5d6e7f8-a9b0-1234-5678-23456789abcd"
+    },
+    {
+        "question": "Nella comunicazione in rete:",
+        "answers": [
+            "il canale di trasmissione delle informazioni è limitato alle reti locali",
+            "il canale di trasmissione delle informazioni è internet",
+            "la comunicazione avviene solo tramite cavo",
+            "la comunicazione è sempre unidirezionale"
+        ],
+        "correct_answer": "il canale di trasmissione delle informazioni è internet",
+        "id": "d6e7f8a9-b0c1-2345-6789-3456789abcde"
+    },
+    {
+        "question": "Nel CSS, con float:",
+        "answers": [
+            "l'elemento si posiziona sempre al centro",
+            "è possibile estrarre un elemento dal normale flusso del documento e spostarlo su uno dei lati (destro o sinistro) del suo elemento contenitore",
+            "l'elemento viene nascosto",
+            "l'elemento diventa un blocco"
+        ],
+        "correct_answer": "è possibile estrarre un elemento dal normale flusso del documento e spostarlo su uno dei lati (destro o sinistro) del suo elemento contenitore",
+        "id": "e7f8a9b0-c1d2-3456-7890-456789abcdef"
+    },
+    {
+        "question": "La richiesta HTTP inviata dall'oggetto XMLHttpRequest al server non può essere:",
+        "answers": [
+            "GET",
+            "POST",
+            "PUT",
+            "POP"
+        ],
+        "correct_answer": "POP",
+        "id": "f8a9b0c1-d2e3-4567-8901-56789abcdef0"
+    },
+    {
+        "question": "In cosa differisce un Bearer Token da un JSON Web Token (JWT):",
+        "answers": [
+            "Sono la stessa cosa",
+            "Bearer è un tipo di crittografia, JWT un formato di token",
+            "Bearer indica l’autorizzazione, JWT è un formato di rappresentazione",
+            "JWT è deprecato, Bearer è lo standard attuale"
+        ],
+        "correct_answer": "Bearer indica l’autorizzazione, JWT è un formato di rappresentazione",
+        "id": "a9b0c1d2-e3f4-5678-9012-6789abcdef01"
+    },
+    {
+        "question": "La TLS:",
+        "answers": [
+            "è un protocollo per l'invio di email",
+            "garantisce l'integrità dei dati ma non l'autenticazione",
+            "autentica e verifica che il server a cui si sta effettuando la connessione sia sicuro",
+            "è un linguaggio di programmazione"
+        ],
+        "correct_answer": "autentica e verifica che il server a cui si sta effettuando la connessione sia sicuro",
+        "id": "c1d2e3f4-a5b6-7890-1234-89abcdef0123"
+    },
+    {
+        "question": "Cosa consente di fare AJAX:",
+        "answers": [
+            "Creare animazioni complesse",
+            "Gestire il layout della pagina",
+            "Caricare dati in modo asincrono senza ricaricare la pagina",
+            "Comprimere file"
+        ],
+        "correct_answer": "Caricare dati in modo asincrono senza ricaricare la pagina",
+        "id": "d2e3f4a5-b6c7-8901-2345-9abcdef01234"
+    },
+    {
+        "question": "Un oggetto JSON:",
+        "answers": [
+            "è una serie ordinata di valori",
+            "è un tipo di database",
+            "è un linguaggio di programmazione",
+            "è una serie non ordinata di nomi/valori"
+        ],
+        "correct_answer": "è una serie non ordinata di nomi/valori",
+        "id": "e3f4a5b6-c7d8-9012-3456-abcdef012345"
+    },
+    {
+        "question": "JSON è basato su due strutture:",
+        "answers": [
+            "un insieme di array e oggetti",
+            "un insieme di coppie chiave/valore e liste non ordinate",
+            "un insieme di stringhe e numeri",
+            "un insieme di coppie nome/valore ed un elenco ordinato di valori"
+        ],
+        "correct_answer": "un insieme di coppie nome/valore ed un elenco ordinato di valori",
+        "id": "f4a5b6c7-d8e9-0123-4567-bcdef0123456"
+    },
+    {
+        "question": "In un cookie è possibile specificare più di una coppia nome/valore:",
+        "answers": [
+            "no, solo una",
+            "solo se sono dello stesso tipo",
+            "dipende dal browser",
+            "si"
+        ],
+        "correct_answer": "si",
+        "id": "a5b6c7d8-e9f0-1234-5678-cdef01234567"
+    },
+    {
+        "question": "Qual è il metodo JavaScript per selezionare un elemento con un ID specifico:",
+        "answers": [
+            "querySelector()",
+            "getElementByName()",
+            "getElementById",
+            "getElementsByClassName()"
+        ],
+        "correct_answer": "getElementById",
+        "id": "b6c7d8e9-f0a1-2345-6789-def012345678"
+    },
+    {
+        "question": "Nella fase web 3.0:",
+        "answers": [
+            "è stato introdotto Flash",
+            "è stato introdotto HTML",
+            "è stato introdotto Angularjs",
+            "è stata introdotta la realtà virtuale"
+        ],
+        "correct_answer": "è stato introdotto angularjs",
+        "id": "c7d8e9f0-a1b2-3456-7890-ef0123456789"
+    },
+    {
+        "question": "Un secure cookie:",
+        "answers": [
+            "si usa solo con il protocollo FTP",
+            "può essere letto solo da un utente autenticato",
+            "si usa solo in presenza di HTTPs",
+            "non scade mai"
+        ],
+        "correct_answer": "si usa solo in presenza di HTTPs",
+        "id": "d8e9f0a1-b2c3-4567-8901-f0123456789a"
+    },
+    {
+        "question": "L'elemento style va inserito:",
+        "answers": [
+            "nel body",
+            "alla fine del documento",
+            "in un file esterno",
+            "nell'head"
+        ],
+        "correct_answer": "nell'head",
+        "id": "e9f0a1b2-c3d4-5678-9012-0123456789ab"
+    },
+    {
+        "question": "Quale metodo permette di aggiungere un elemento alla fine di un array:",
+        "answers": [
+            "pop()",
+            "shift()",
+            "unshift()",
+            "push()"
+        ],
+        "correct_answer": "push()",
+        "id": "f0a1b2c3-d4e5-6789-0123-123456789abc"
+    },
+    {
+        "question": "La direttiva ng-bind:",
+        "answers": [
+            "permette di modificare il modello dalla vista",
+            "permette solo di visualizzare il valore del modello nella vista",
+            "lega un evento a un elemento HTML",
+            "crea un ciclo"
+        ],
+        "correct_answer": "permette solo di visualizzare il valore del modello nella vista",
+        "id": "a1b2c3d4-e5f6-7890-1234-23456789abcd"
+    },
+    {
+        "question": "La fruizione di una pagina web in termini di funzionalità:",
+        "answers": [
+            "è sempre dipendente dal CSS",
+            "non è dipendente dal CSS",
+            "dipende dal browser",
+            "dipende dalla versione di HTML"
+        ],
+        "correct_answer": "non è dipendente dal CSS",
+        "id": "b2c3d4e5-f6a7-8901-2345-3456789abcde"
+    },
+    {
+        "question": "L'utilizzo di await:",
+        "answers": [
+            "blocca l'esecuzione della funzione asincrona fino al completamento della Promise",
+            "sospende l'esecuzione della funzione asincrona in attesa del completamento della Promise",
+            "genera un errore se la Promise non è risolta",
+            "crea una nuova Promise"
+        ],
+        "correct_answer": "sospende l'esecuzione della funzione asincrona in attesa del completamento della Promise",
+        "id": "c3d4e5f6-a7b8-9012-3456-456789abcdef"
+    },
+    {
+        "question": "In HTML gli elementi di una ordered list sono indicati con:",
+        "answers": [
+            "<ol>",
+            "<ul>",
+            "<item>",
+            "<li>"
+        ],
+        "correct_answer": "<li>",
+        "id": "d4e5f6a7-b8c9-0123-4567-56789abcdef0"
+    },
+    {
+        "question": "Nei messaggi HTTP di tipo response, lo nel range (200-299) indica:",
+        "answers": [
+            "client error",
+            "server error",
+            "redirection",
+            "successful responses"
+        ],
+        "correct_answer": "successful responses",
+        "id": "e5f6a7b8-c9d0-1234-5678-6789abcdef01"
+    },
+    {
+        "question": "Il metodo $.post():",
+        "answers": [
+            "richiede l'URL, e la funzione di callback",
+            "richiede solo l'URL della risorsa da richiedere",
+            "richiede solo l'URL e i dati da inviare",
+            "richiede solo l'URL della risorsa da richiedere, i dati da inviare al server e una funzione di callback per gestire la risposta"
+        ],
+        "correct_answer": "richiede solo l'URL della risorsa da richiedere, i dati da inviare al server e una funzione di callback per gestire la risposta",
+        "id": "f6a7b8c9-d0e1-2345-6789-789abcdef012"
+    },
+    {
+        "question": "Quale metodo jQuery semplifica una richiesta GET che restituisce JSON:",
+        "answers": [
+            "$.post()",
+            "$.ajax()",
+            "$.get()",
+            "$.getJSON()"
+        ],
+        "correct_answer": "$.getJSON()",
+        "id": "a7b8c9d0-e1f2-3456-7890-89abcdef0123"
+    },
+    {
+        "question": "Lo switch è un dispositivo di livello:",
+        "answers": [
+            "3",
+            "1",
+            "4",
+            "2"
+        ],
+        "correct_answer": "2",
+        "id": "b8c9d0e1-f2a3-4567-8901-9abcdef01234"
+    },
+    {
+        "question": "Quale classe allinea verticalmente al centro gli elementi in un flex container:",
+        "answers": [
+            "align-items-start",
+            "justify-content-center",
+            "align-self-center",
+            "align-items-center"
+        ],
+        "correct_answer": "align-items-center",
+        "id": "c9d0e1f2-a3b4-5678-9012-abcdef012345"
+    },
+    {
+        "question": "Il settaggio del viewport width=device-width:",
+        "answers": [
+            "imposta la larghezza del viewport a un valore fisso",
+            "disabilita il ridimensionamento del viewport",
+            "imposta la larghezza del viewport pari a quella del dispositivo",
+            "imposta la larghezza del viewport a 100%"
+        ],
+        "correct_answer": "imposta la larghezza del viewport pari a quella del dispositivo",
+        "id": "d0e1f2a3-b4c5-6789-0123-bcdef0123456"
+    },
+    {
+        "question": "Cosa permette di fare il metodo JSON.parse() nel contesto del file users.json:",
+        "answers": [
+            "Inviare dati JSON al server",
+            "Validare la sintassi JSON",
+            "Scrivere dati su un file JSON",
+            "Ottenere un array di oggetti da una stringa JSON"
+        ],
+        "correct_answer": "Ottenere un array di oggetti da una stringa JSON",
+        "id": "e1f2a3b4-c5d6-7890-1234-cdef01234567"
+    },
+    {
+        "question": "Il linguaggio CSS:",
+        "answers": [
+            "è touring completo",
+            "è un linguaggio di programmazione",
+            "non è touring completo",
+            "è un linguaggio di scripting"
+        ],
+        "correct_answer": "non è touring completo",
+        "id": "f2a3b4c5-d6e7-8901-2345-def012345678"
+    },
+    {
+        "question": "Come si accede al valore della proprietà 'nome' in un oggetto JavaScript:",
+        "answers": [
+            "obj['nome']",
+            "obj->nome",
+            "obj.get('nome')",
+            "obj.nome"
+        ],
+        "correct_answer": "obj.nome",
+        "id": "a3b4c5d6-e7f8-9012-3456-ef0123456789"
+    },
+    {
+        "question": "Con display:none:",
+        "answers": [
+            "l'elemento è visibile ma occupa spazio",
+            "l'elemento viene trattato come se non ci fosse",
+            "l'elemento è trasparente",
+            "l'elemento viene nascosto ma occupa spazio"
+        ],
+        "correct_answer": "l'elemento viene trattato come se non ci fosse",
+        "id": "b4c5d6e7-f8a9-0123-4567-f0123456789a"
+    },
+    {
+        "question": "In una richiesta JSONP, il server di destinazione:",
+        "answers": [
+            "restituisce un errore se la funzione di callback non è definita",
+            "restituisce i dati JSON in un formato binario",
+            "restituisce un file XML",
+            "restituisce quindi i dati JSON incapsulati nella funzione specificata nella callback"
+        ],
+        "correct_answer": "restituisce quindi i dati JSON incapsulati nella funzione specificata nella callback",
+        "id": "c5d6e7f8-a9b0-1234-5678-0123456789ab"
+    },
+    {
+        "question": "Il selettore identificato dal simbolo * indica:",
+        "answers": [
+            "il selettore di classe",
+            "il selettore di ID",
+            "il selettore di elemento",
+            "il selettore universale"
+        ],
+        "correct_answer": "il selettore universale",
+        "id": "d6e7f8a9-b0c1-2345-6789-123456789abc"
+    },
+    {
+        "question": "Cosa identifica l'attributo 'data-bs-toggle=\"modal\"' in un bottone Bootstrap:",
+        "answers": [
+            "Apre un menu a tendina",
+            "Attiva una tooltip",
+            "Attiva un accordion",
+            "Attiva un modale"
+        ],
+        "correct_answer": "Attiva un modale",
+        "id": "e7f8a9b0-c1d2-3456-7890-23456789abcd"
+    },
+    {
+        "question": "Il service-user è:",
+        "answers": [
+            "il fornitore del servizio",
+            "chi gestisce il server",
+            "uno sviluppatore",
+            "chi usufruisce del servizio"
+        ],
+        "correct_answer": "chi usufruisce del servizio",
+        "id": "f8a9b0c1-d2e3-4567-8901-3456789abcde"
+    },
+    {
+        "question": "Il metodo della Fat Url prevede che:",
+        "answers": [
+            "l'URL contenga solo parametri di query",
+            "l'URL sia molto breve",
+            "sia inserito un ID univoco su tutti gli URL di una certa web application",
+            "l'URL non contenga alcun parametro"
+        ],
+        "correct_answer": "sia inserito un ID univoco su tutti gli URL di una certa web application",
+        "id": "a9b0c1d2-e3f4-5678-9012-456789abcdef"
+    },
+    {
+        "question": "Quale attributo limita l'invio di cookie solo su connessioni sicure:",
+        "answers": [
+            "HttpOnly",
+            "SameSite",
+            "Expires",
+            "Secure"
+        ],
+        "correct_answer": "Secure",
+        "id": "b0c1d2e3-f4a5-6789-0123-56789abcdef0"
+    },
+    {
+        "question": "Input type file è:",
+        "answers": [
+            "un campo di testo per l'inserimento di nomi file",
+            "un campo per la selezione di date",
+            "un controllo che consente di caricare un file",
+            "un bottone di reset"
+        ],
+        "correct_answer": "un controllo che consente di caricare un file",
+        "id": "c1d2e3f4-a5b6-7890-1234-6789abcdef01"
+    },
+    {
+        "question": "Quale porta viene comunemente utilizzata dal protocollo HTTP:",
+        "answers": [
+            "443",
+            "21",
+            "22",
+            "80"
+        ],
+        "correct_answer": "80",
+        "id": "d2e3f4a5-b6c7-8901-2345-789abcdef012"
+    },
+    {
+        "question": "L'HTTP si colloca sul livello:",
+        "answers": [
+            "Transport",
+            "Network",
+            "Data Link",
+            "Application"
+        ],
+        "correct_answer": "Application",
+        "id": "e3f4a5b6-c7d8-9012-3456-89abcdef0123"
+    },
+    {
+        "question": "Il Content-Type: application/x-www-form-urlencoded può essere usato per:",
+        "answers": [
+            "inviare file",
+            "inviare dati JSON",
+            "accedere ad una URL",
+            "inviare dati XML"
+        ],
+        "correct_answer": "accedere ad una URL",
+        "id": "f4a5b6c7-d8e9-0123-4567-9abcdef01234"
+    },
+    {
+        "question": "UTF-8 è un sistema di codifica a:",
+        "answers": [
+            "16bit",
+            "32bit",
+            "64bit",
+            "8bit"
+        ],
+        "correct_answer": "8bit",
+        "id": "a5b6c7d8-e9f0-1234-5678-abcdef012345"
+    },
+    {
+        "question": "Il web adotta principalmente",
+        "answers": [
+            "HTTP/1.0 e HTTP/1.1",
+            "HTTP/2 e HTTP/3",
+            "HTTP/1.1 ed HTTP/2",
+            "HTTP/1.0 e HTTP/2"
+        ],
+        "correct_answer": "HTTP/1.1 ed HTTP/2",
+        "id": "b6c7d8e9-f0a1-2345-6789-bcdef0123456"
+    },
+    {
+        "question": "In HTML l'annidamento è:",
+        "answers": [
+            "non permesso",
+            "permesso solo per alcuni tag",
+            "permesso con restrizioni",
+            "permesso"
+        ],
+        "correct_answer": "permesso",
+        "id": "c7d8e9f0-a1b2-3456-7890-cdef01234567"
+    },
+    {
+        "question": "Offre un servizio di controllo della correttezza sintattica e semantica delle informazioni scambiate; i principali compito sono la traslazioni, crittografia e compressione:",
+        "answers": [
+            "Application Layer",
+            "Session Layer",
+            "Transport Layer",
+            "Presentation Layer"
+        ],
+        "correct_answer": "Presentation Layer",
+        "id": "d8e9f0a1-b2c3-4567-8901-def012345678"
+    },
+    {
+        "question": "Input type submit è:",
+        "answers": [
+            "un campo di testo",
+            "un checkbox",
+            "un radio button",
+            "bottone per trasmettere il contenuto del form"
+        ],
+        "correct_answer": "bottone per trasmettere il contenuto del form",
+        "id": "e9f0a1b2-c3d4-5678-9012-ef0123456789"
+    },
+    {
+        "question": "Un proxy server:",
+        "answers": [
+            "è un server di database",
+            "è un server che fornisce solo servizi di hosting",
+            "è un server intermedio che agisce come un ponte tra il client e il server di destinazione",
+            "è un server che esegue calcoli complessi"
+        ],
+        "correct_answer": "è un server intermedio che agisce come un ponte tra il client e il server di destinazione",
+        "id": "f0a1b2c3-d4e5-6789-0123-f0123456789a"
+    },
+    {
+        "question": "Il display è una proprietà che determina:",
+        "answers": [
+            "il colore di sfondo di un elemento",
+            "la visibilità di un elemento",
+            "come un elemento viene visualizzato sulla pagina",
+            "la dimensione del font di un elemento"
+        ],
+        "correct_answer": "come un elemento viene visualizzato sulla pagina",
+        "id": "a1b2c3d4-e5f6-7890-1234-0123456789ab"
+    },
+    {
+        "question": "Il Web 4.0 potrebbe essere descritto come:",
+        "answers": [
+            "rete semantica",
+            "rete sociale",
+            "rete simbiotica",
+            "rete mobile"
+        ],
+        "correct_answer": "rete simbiotica",
+        "id": "b2c3d4e5-f6a7-8901-2345-123456789abc"
+    },
+    {
+        "question": "Nel box model del CSS con margin si intende:",
+        "answers": [
+            "lo spazio tra il contenuto e il bordo",
+            "lo spazio all'interno del bordo",
+            "il bordo dell'elemento",
+            "lo spazio vuoto tra l' elemento e gli altri adiacenti"
+        ],
+        "correct_answer": "lo spazio vuoto tra l' elemento e gli altri adiacenti",
+        "id": "c3d4e5f6-a7b8-9012-3456-23456789abcd"
+    },
+    {
+        "question": "Qual è il tag principale che racchiude l'intero documento HTML:",
+        "answers": [
+            "<head>",
+            "<body>",
+            "<main>",
+            "<html>"
+        ],
+        "correct_answer": "<html>",
+        "id": "d4e5f6a7-b8c9-0123-4567-3456789abcde"
+    },
+    {
+        "question": "Nel CSS Il selettore serve:",
+        "answers": [
+            "per definire nuovi tag HTML",
+            "per creare funzioni JavaScript",
+            "per collegare uno stile agli elementi a cui deve essere applicato",
+            "per validare il codice HTML"
+        ],
+        "correct_answer": "per collegare uno stile agli elementi a cui deve essere applicato",
+        "id": "e5f6a7b8-c9d0-1234-5678-456789abcdef"
+    },
+    {
+        "question": "Nel box model, se non si imposta specificamente il valore width:",
+        "answers": [
+            "l'elemento si adatta al contenuto",
+            "l'elemento occupa sempre l'intera larghezza disponibile",
+            "la dimensione del contenuto viene stabilita automaticamente dal browser",
+            "l'elemento non viene visualizzato"
+        ],
+        "correct_answer": "la dimensione del contenuto viene stabilita automaticamente dal browser",
+        "id": "f6a7b8c9-d0e1-2345-6789-56789abcdef0"
+    },
+    {
+        "question": "Dato + elaborazione:",
+        "answers": [
+            "output",
+            "sistema",
+            "input",
+            "informazione"
+        ],
+        "correct_answer": "informazione",
+        "id": "a7b8c9d0-e1f2-3456-7890-6789abcdef01"
+    },
+    {
+        "question": "Le funzioni di callback:",
+        "answers": [
+            "sono eseguite prima dell'azione principale",
+            "ci consentono di eseguire azioni dopo che un'azione jQuery è stata completata",
+            "sono usate per gestire gli errori",
+            "bloccano l'esecuzione del codice"
+        ],
+        "correct_answer": "ci consentono di eseguire azioni dopo che un'azione jQuery è stata completata",
+        "id": "b8c9d0e1-f2a3-4567-8901-789abcdef012"
+    },
+    {
+        "question": "Nell'head, definisce come vengono gestiti i riferimenti relativi nei link:",
+        "answers": [
+            "meta",
+            "link",
+            "script",
+            "base"
+        ],
+        "correct_answer": "base",
+        "id": "c9d0e1f2-a3b4-5678-9012-89abcdef0123"
+    },
+    {
+        "question": "Le funzionalità per la interconnessione fisica tra un sistema elaborativo e un sistema di telecomunicazione sono realizzate nei livelli:",
+        "answers": [
+            "Application - Presentation - Session",
+            "Transport - Session - Data Link",
+            "Network - Data Link - Physical",
+            "Network - Physical - Application"
+        ],
+        "correct_answer": "Network - Data Link - Physical",
+        "id": "d0e1f2a3-b4c5-6789-0123-9abcdef01234"
+    },
+    {
+        "question": "Si riferisce si riferisce a una specifica area di funzionalità o a un insieme di responsabilità:",
+        "answers": [
+            "protocollo",
+            "interfaccia",
+            "livello",
+            "servizio"
+        ],
+        "correct_answer": "livello",
+        "id": "e1f2a3b4-c5d6-7890-1234-abcdef012345"
+    },
+    {
+        "question": "Questa proprietà restituisce o imposta il testo contenuto in un elemento, ignorando eventuali tag HTML al suo interno:",
+        "answers": [
+            "innerHTML",
+            "outerHTML",
+            "value",
+            "textContent"
+        ],
+        "correct_answer": "textContent",
+        "id": "f2a3b4c5-d6e7-8901-2345-bcdef0123456"
+    },
+    {
+        "question": "In una pagina HTML un elemento:",
+        "answers": [
+            "è contraddistinto da un ID univoco",
+            "è sempre un blocco",
+            "è contraddistinto da un tag",
+            "non può contenere altri elementi"
+        ],
+        "correct_answer": "è contraddistinto da un tag",
+        "id": "a3b4c5d6-e7f8-9012-3456-cdef01234567"
+    },
+    {
+        "question": "Display inline in CSS indica:",
+        "answers": [
+            "che l'elemento occupa l'intera larghezza disponibile",
+            "che l'elemento è nascosto",
+            "che l'elemento diventa di tipo blocco",
+            "che l'elemento diventa di tipo inline"
+        ],
+        "correct_answer": "che l'elemento diventa di tipo inline",
+        "id": "b4c5d6e7-f8a9-0123-4567-def012345678"
+    },
+    {
+        "question": "In questo livello viene utilizzato il protocollo ICMP:",
+        "answers": [
+            "Transport Layer",
+            "Application Layer",
+            "Data Link Layer",
+            "Internet Layer"
+        ],
+        "correct_answer": "Internet Layer",
+        "id": "c5d6e7f8-a9b0-1234-5678-ef0123456789"
+    },
+    {
+        "question": "In CSS2 viene gestito per la prima volta il problema:",
+        "answers": [
+            "della compatibilità tra browser",
+            "della velocità di caricamento delle pagine",
+            "degli smartphone e palmari",
+            "della sicurezza"
+        ],
+        "correct_answer": "degli smartphone e palmari",
+        "id": "d6e7f8a9-b0c1-2345-6789-f0123456789a"
+    },
+    {
+        "question": "Quanto si parla di Remote API:",
+        "answers": [
+            "ci stiamo riferendo ad API che operano solo in locale",
+            "ci stiamo riferendo ad API progettate per interagire attraverso una rete di comunicazione",
+            "ci stiamo riferendo ad API per la gestione di hardware",
+            "ci stiamo riferendo ad API per la programmazione desktop"
+        ],
+        "correct_answer": "ci stiamo riferendo ad API progettate per interagire attraverso una rete di comunicazione",
+        "id": "e7f8a9b0-c1d2-3456-7890-0123456789ab"
+    },
+    {
+        "question": "Gli elementi block-level : costituiscono un blocco attorno a sé, e di conseguenza:",
+        "answers": [
+            "non vanno a capo",
+            "possono essere visualizzati solo in linea",
+            "vanno a capo",
+            "sono sempre nascosti"
+        ],
+        "correct_answer": "vanno a capo",
+        "id": "f8a9b0c1-d2e3-4567-8901-123456789abc"
+    },
+    {
+        "question": "Collega l'input dell'utente all'applicazione AngularJS, creando un collegamento bidirezionale tra il modello e la UI:",
+        "answers": [
+            "ng-click",
+            "ng-show",
+            "ng-hide",
+            "ng-model"
+        ],
+        "correct_answer": "ng-model",
+        "id": "b0c1d2e3-f4a5-6789-0123-3456789abcde"
+    },
+    {
+        "question": "I blocchi \"div\":",
+        "answers": [
+            "non vanno a capo",
+            "sono elementi inline",
+            "vanno a capo",
+            "possono essere solo allineati a destra"
+        ],
+        "correct_answer": "vanno a capo",
+        "id": "c1d2e3f4-a5b6-7890-1234-456789abcdef"
+    },
+    {
+        "question": "Quante colonne ha una riga nella griglia di layout di Bootstrap:",
+        "answers": [
+            "8",
+            "10",
+            "16",
+            "12"
+        ],
+        "correct_answer": "12",
+        "id": "d2e3f4a5-b6c7-8901-2345-56789abcdef0"
+    },
+    {
+        "question": "HTTP è un protocollo di tipo request-response:",
+        "answers": [
+            "pensato originariamente solo per le immagini",
+            "pensato originariamente per l'interscambio di ipertesti",
+            "pensato originariamente per la gestione dei database",
+            "pensato originariamente per lo streaming video"
+        ],
+        "correct_answer": "pensato originariamente per l' interscambio di ipertesti",
+        "id": "e3f4a5b6-c7d8-9012-3456-6789abcdef01"
+    },
+    {
+        "question": "In un cookie, oltre a nome e valore:",
+        "answers": [
+            "sono sempre obbligatori l'attributo path e domain",
+            "sono sempre obbligatori tutti gli attributi",
+            "non sono obbligatori altri attributi",
+            "è obbligatorio l'attributo expires"
+        ],
+        "correct_answer": "non sono obbligatori altri attributi",
+        "id": "f4a5b6c7-d8e9-0123-4567-789abcdef012"
+    },
+    {
+        "question": "Una HTTP response del tipo HTTP/1.1 401 Unauthorized indica:",
+        "answers": [
+            "che la risorsa non è stata trovata",
+            "che il server non è disponibile",
+            "che la richiesta è stata rifiutata dal server",
+            "che l'utente non è autenticato"
+        ],
+        "correct_answer": "che l'utente non è autenticato",
+        "id": "a5b6c7d8-e9f0-1234-5678-89abcdef0123"
+    },
+    {
+        "question": "ASCII è una codifica a:",
+        "answers": [
+            "8bit",
+            "16bit",
+            "32bit",
+            "7bit"
+        ],
+        "correct_answer": "7bit",
+        "id": "b6c7d8e9-f0a1-2345-6789-9abcdef01234"
+    },
+    {
+        "question": "Un file XML ha una struttura:",
+        "answers": [
+            "lineare",
+            "a grafo",
+            "a rete",
+            "ad albero"
+        ],
+        "correct_answer": "ad albero",
+        "id": "c7d8e9f0-a1b2-3456-7890-abcdef012345"
+    },
+    {
+        "question": "In Node.js, le operazioni di I/O sono:",
+        "answers": [
+            "sempre sincrone",
+            "bloccanti per il thread principale",
+            "dipendono dal sistema operativo",
+            "sempre asincrone"
+        ],
+        "correct_answer": "sempre asincrone",
+        "id": "d8e9f0a1-b2c3-4567-8901-bcdef0123456"
+    },
+    {
+        "question": "Se in un cookie, l' attributo domain è presente:",
+        "answers": [
+            "il cookie sarà inviato a qualsiasi dominio",
+            "il cookie sarà inviato solo al dominio di origine",
+            "il cookie sarà inviato soltanto per risorse richieste a quel dominio",
+            "il cookie non sarà inviato"
+        ],
+        "correct_answer": "il cookie sarà inviato soltanto per risorse richieste a quel dominio",
+        "id": "e9f0a1b2-c3d4-5678-9012-cdef01234567"
+    },
+    {
+        "question": "Il seguente oggetto { name : Mario }:",
+        "answers": [
+            "non è corretto, manca una virgola",
+            "non è corretto, la chiave dovrebbe essere tra virgolette",
+            "è corretto",
+            "non è corretto, il valore dovrebbe essere un numero"
+        ],
+        "correct_answer": "è corretto",
+        "id": "f0a1b2c3-d4e5-6789-0123-def012345678"
+    },
+    {
+        "question": "In HTML, il body può avere come attributo:",
+        "answers": [
+            "src",
+            "href",
+            "class",
+            "background"
+        ],
+        "correct_answer": "background",
+        "id": "a1b2c3d4-e5f6-7890-1234-ef0123456789"
+    },
+    {
+        "question": "È una versione compressa di jQuery che rimuove tutti i commenti e gli spazi vuoti dal codice:",
+        "answers": [
+            "debug",
+            "development",
+            "uncompressed",
+            "minified"
+        ],
+        "correct_answer": "minified",
+        "id": "b2c3d4e5-f6a7-8901-2345-f0123456789a"
+    },
+    {
+        "question": "TCP/IP è stato progettato:",
+        "answers": [
+            "per la comunicazione su reti locali",
+            "per le esigenze specifiche della comunicazione su Internet",
+            "per la gestione di database",
+            "per lo sviluppo di applicazioni desktop"
+        ],
+        "correct_answer": "per le esigenze specifiche della comunicazione su Internet",
+        "id": "c3d4e5f6-a7b8-9012-3456-0123456789ab"
+    },
+    {
+        "question": "Un certificato digitale è firmato da:",
+        "answers": [
+            "il proprietario del sito web",
+            "il browser",
+            "il sistema operativo",
+            "una terza parte"
+        ],
+        "correct_answer": "una terza parte",
+        "id": "e5f6a7b8-c9d0-1234-5678-23456789abcd"
+    },
+    {
+        "question": "L'evento hover:",
+        "answers": [
+            "viene eseguito solo quando si clicca sull'elemento",
+            "viene eseguito quando si posiziona il mouse sopra o fuori da un elemento",
+            "viene eseguito quando l'elemento viene caricato",
+            "viene eseguito quando il mouse esce dall'elemento"
+        ],
+        "correct_answer": "viene eseguito quando si posiziona il mouse sopra o fuori da un elemento",
+        "id": "f6a7b8c9-d0e1-2345-6789-3456789abcde"
+    },
+    {
+        "question": "L'accesso ad un database MongoDB:",
+        "answers": [
+            "è sempre pubblico",
+            "può essere limitato sulla base di un set di IP",
+            "è limitato solo dalla password",
+            "non ha restrizioni di accesso"
+        ],
+        "correct_answer": "può essere limitato sulla base di un set di IP",
+        "id": "a7b8c9d0-e1f2-3456-7890-456789abcdef"
+    },
+    {
+        "question": "Il seguente json:[ { \"name\": \"john\" }, { \"name\": \"james\" },]",
+        "answers": [
+            "è valido",
+            "è valido se contiene solo stringhe",
+            "è valido ma non è un JSON standard",
+            "non è valido"
+        ],
+        "correct_answer": "non è valido",
+        "id": "b8c9d0e1-f2a3-4567-8901-56789abcdef0"
+    },
+    {
+        "question": "Sia JSON che XML sono:",
+        "answers": [
+            "linguaggi di programmazione",
+            "dipendenti dal sistema operativo",
+            "linguaggi di scripting",
+            "autodescrittivi"
+        ],
+        "correct_answer": "autodescrittivi",
+        "id": "c9d0e1f2-a3b4-5678-9012-6789abcdef01"
+    },
+    {
+        "question": "In questo livello viene utilizzato il protocollo UDP:",
+        "answers": [
+            "Application Layer",
+            "Network Layer",
+            "Data Link Layer",
+            "Transport Layer"
+        ],
+        "correct_answer": "Transport Layer",
+        "id": "d0e1f2a3-b4c5-6789-0123-789abcdef012"
+    },
+    {
+        "question": "Il comando use :",
+        "answers": [
+            "crea un nuovo utente",
+            "elimina un database",
+            "seleziona il database su cui si desidera lavorare",
+            "visualizza i database esistenti"
+        ],
+        "correct_answer": "seleziona il database su cui si desidera lavorare",
+        "id": "e1f2a3b4-c5d6-7890-1234-89abcdef0123"
+    },
+    {
+        "question": "È possibile raggruppare le regole che hanno dichiarazioni uguali in una unica regola:",
+        "answers": [
+            "solo se sono della stessa classe",
+            "mai",
+            "solo se sono dello stesso ID",
+            "sempre"
+        ],
+        "correct_answer": "sempre",
+        "id": "f2a3b4c5-d6e7-8901-2345-9abcdef01234"
+    },
+    {
+        "question": "La firma digitale:",
+        "answers": [
+            "garantisce la riservatezza del documento",
+            "consente al sottoscrittore di rendere manifesta l' autenticità del documento informatico",
+            "crittografa il documento",
+            "nasconde il contenuto del documento"
+        ],
+        "correct_answer": "consente al sottoscrittore di rendere manifesta l' autenticità del documento informatico",
+        "id": "a3b4c5d6-e7f8-9012-3456-abcdef012345"
+    },
+    {
+        "question": "Quale struttura in JSON rappresenta una raccolta ordinata di valori:",
+        "answers": [
+            "Object",
+            "String",
+            "Number",
+            "Array"
+        ],
+        "correct_answer": "Array",
+        "id": "b4c5d6e7-f8a9-0123-4567-bcdef0123456"
+    },
+    {
+        "question": "Con position static si intende:",
+        "answers": [
+            "il posizionamento fisso rispetto al viewport",
+            "il posizionamento relativo rispetto al contenitore",
+            "il posizionamento assoluto",
+            "il posizionamento naturale nel flusso"
+        ],
+        "correct_answer": "il posizionamento naturale nel flusso",
+        "id": "c5d6e7f8-a9b0-1234-5678-cdef01234567"
+    },
+    {
+        "question": "In questo livello viene utilizzato il protocollo IP:",
+        "answers": [
+            "Transport Layer",
+            "Application Layer",
+            "Data Link Layer",
+            "Internet Layer"
+        ],
+        "correct_answer": "Internet Layer",
+        "id": "d6e7f8a9-b0c1-2345-6789-def012345678"
+    },
+    {
+        "question": "Il linguaggio HTML:",
+        "answers": [
+            "è touring completo",
+            "è un linguaggio di programmazione",
+            "non è touring completo",
+            "è un linguaggio di scripting"
+        ],
+        "correct_answer": "non è touring completo",
+        "id": "e7f8a9b0-c1d2-3456-7890-ef0123456789"
+    },
+    {
+        "question": "I modelli OSI e TCP/IP hanno rispettivamente il seguente numero di livelli:",
+        "answers": [
+            "5, 4",
+            "6, 5",
+            "7, 4",
+            "4, 7"
+        ],
+        "correct_answer": "7, 4",
+        "id": "f8a9b0c1-d2e3-4567-8901-f0123456789a"
+    },
+    {
+        "question": "Nel box model, il border:",
+        "answers": [
+            "indica lo spazio vuoto tra l'elemento e gli altri adiacenti",
+            "indica un bordo che circonda il padding e il contenuto",
+            "indica lo spazio tra il contenuto e il bordo",
+            "indica la dimensione del contenuto"
+        ],
+        "correct_answer": "indica un bordo che circonda il padding e il contenuto",
+        "id": "a9b0c1d2-e3f4-5678-9012-0123456789ab"
+    },
+    {
+        "question": "In CSS3 sono stati introdotti:",
+        "answers": [
+            "soltanto flex",
+            "nessuno dei due",
+            "soltanto grid",
+            "flex e grid"
+        ],
+        "correct_answer": "flex e grid",
+        "id": "b0c1d2e3-f4a5-6789-0123-123456789abc"
+    },
+    {
+        "question": "La PDU è composta da:",
+        "answers": [
+            "dati e intestazione",
+            "payload e footer",
+            "PCI ed SDU",
+            "header e trailer"
+        ],
+        "correct_answer": "PCI ed SDU",
+        "id": "c1d2e3f4-a5b6-7890-1234-23456789abcd"
+    },
+    {
+        "question": "Usando l'elemento input con il type=\"password\":",
+        "answers": [
+            "il testo inserito è visibile in chiaro",
+            "si ha la possibilità di creare un campo che permette l'inserimento di dati riservati",
+            "il campo accetta solo numeri",
+            "il campo è disabilitato"
+        ],
+        "correct_answer": "si ha la possibilità di creare un campo che permette l'inserimento di dati riservati",
+        "id": "d2e3f4a5-b6c7-8901-2345-3456789abcde"
+    },
+    {
+        "question": "Un certificato digitale è emesso:",
+        "answers": [
+            "dal browser",
+            "dal sistema operativo",
+            "da una Certification Authority (CA)",
+            "dall'utente finale"
+        ],
+        "correct_answer": "da una Certification Authority (CA)",
+        "id": "e3f4a5b6-c7d8-9012-3456-456789abcdef"
+    },
+    {
+        "question": "Nella digest authentication, il campo qop indica:",
+        "answers": [
+            "quality of service",
+            "quantity of packets",
+            "query of protocol",
+            "quality of protection"
+        ],
+        "correct_answer": "quality of protection",
+        "id": "f4a5b6c7-d8e9-0123-4567-56789abcdef0"
+    },
+    {
+        "question": "Il Web 3.0 può essere descritto come:",
+        "answers": [
+            "read-only web",
+            "read-write web",
+            "social web",
+            "read-write-execute web"
+        ],
+        "correct_answer": "read-write-execute web",
+        "id": "a5b6c7d8-e9f0-1234-5678-6789abcdef01"
+    },
+    {
+        "question": "Il JSONP è una tecnica:",
+        "answers": [
+            "utilizzata per inviare dati al server in formato JSON",
+            "utilizzata per effettuare richieste AJAX a un server di destinazione che non supporta il CORS",
+            "utilizzata per convertire JSON in XML",
+            "utilizzata per crittografare dati JSON"
+        ],
+        "correct_answer": "utilizzata per effettuare richieste AJAX a un server di destinazione che non supporta il CORS",
+        "id": "b6c7d8e9-f0a1-2345-6789-789abcdef012"
+    },
+    {
+        "question": "Le RESTful API si basano sull'utilizzo di standard:",
+        "answers": [
+            "FTP",
+            "SMTP",
+            "TCP/IP",
+            "HTTP"
+        ],
+        "correct_answer": "HTTP",
+        "id": "c7d8e9f0-a1b2-3456-7890-89abcdef0123"
+    },
+    {
+        "question": "I messaggi HTTP sono di tipo request e:",
+        "answers": [
+            "acknowledge",
+            "confirm",
+            "error",
+            "response"
+        ],
+        "correct_answer": "response",
+        "id": "d8e9f0a1-b2c3-4567-8901-9abcdef01234"
+    },
+    {
+        "question": "Nella basic-authentication le credenziali sono inviate:",
+        "answers": [
+            "crittografate",
+            "in plain text",
+            "tramite un token",
+            "criptate con hash"
+        ],
+        "correct_answer": "in plain text",
+        "id": "e9f0a1b2-c3d4-5678-9012-abcdef012345"
+    },
+    {
+        "question": "Application/x-www-form-urlencoded è un possibile valore di:",
+        "answers": [
+            "method",
+            "action",
+            "name",
+            "enctype"
+        ],
+        "correct_answer": "enctype",
+        "id": "f0a1b2c3-d4e5-6789-0123-bcdef0123456"
+    },
+    {
+        "question": "Il protocollo IP:",
+        "answers": [
+            "è responsabile della traduzione dei nomi di dominio",
+            "è responsabile della gestione delle sessioni",
+            "è responsabile dell'inoltro dei pacchetti di dati sulla rete, utilizzando indirizzi di rete per indirizzare i pacchetti verso la destinazione",
+            "è responsabile della crittografia dei dati"
+        ],
+        "correct_answer": "è responsabile dell'inoltro dei pacchetti di dati sulla rete, utilizzando indirizzi di rete per indirizzare i pacchetti verso la destinazione",
+        "id": "b2c3d4e5-f6a7-8901-2345-def012345678"
+    },
+    {
+        "question": "Il selettore identificato da #myid si applica:",
+        "answers": [
+            "agli elementi con la classe \"myid\"",
+            "a tutti gli elementi del documento",
+            "agli elementi che presentano l'attributo id=\"myid\"",
+            "agli elementi con il tag \"myid\""
+        ],
+        "correct_answer": "agli elementi che presentano l'attributo id=\"myid\"",
+        "id": "c3d4e5f6-a7b8-9012-3456-ef0123456789"
+    },
+    {
+        "question": "Uno stateless server:",
+        "answers": [
+            "mantiene lo stato di ogni cliente",
+            "tratta ogni richiesta come una transazione indipendente da ogni precedente richiesta",
+            "memorizza le informazioni sui client",
+            "richiede autenticazione ad ogni richiesta"
+        ],
+        "correct_answer": "tratta ogni richiesta come una transazione indipendente da ogni precedente richiesta",
+        "id": "d4e5f6a7-b8c9-0123-4567-f0123456789a"
+    },
+    {
+        "question": "Nella crittografia simmetrica:",
+        "answers": [
+            "si usano due chiavi diverse",
+            "non si usano chiavi",
+            "si usa una sola chiave",
+            "la chiave di cifratura è pubblica"
+        ],
+        "correct_answer": "si usa una sola chiave",
+        "id": "e5f6a7b8-c9d0-1234-5678-0123456789ab"
+    },
+    {
+        "question": "Uno stile in linea:",
+        "answers": [
+            "ha la priorità più bassa",
+            "è ignorato dal browser",
+            "ha la massima priorità e sovrascriverà gli stili interni ed esterni e le impostazioni predefinite del browser",
+            "viene applicato solo a elementi specifici"
+        ],
+        "correct_answer": "ha la massima priorità e sovrascriverà gli stili interni ed esterni e le impostazioni predefinite del browser",
+        "id": "f6a7b8c9-d0e1-2345-6789-123456789abc"
+    },
+    {
+        "question": "Un web adattabile ai diversi dispositivi:",
+        "answers": [
+            "static web design",
+            "fluid web design",
+            "responsive web design",
+            "fixed web design"
+        ],
+        "correct_answer": "responsive web design",
+        "id": "a7b8c9d0-e1f2-3456-7890-23456789abcd"
+    },
+    {
+        "question": "La creazione di un cluster su MongoDB Atlas prevede \"almeno\":",
+        "answers": [
+            "l'acquisto di hardware dedicato",
+            "la configurazione manuale di tutti i servizi",
+            "scelta del provider di cloud, della regione e della dimensione del cluster",
+            "l'installazione di un sistema operativo"
+        ],
+        "correct_answer": "scelta del provider di cloud, della regione e della dimensione del cluster",
+        "id": "b8c9d0e1-f2a3-4567-8901-3456789abcde"
+    },
+    {
+        "question": "XMLHttpRequest e Fetch API:",
+        "answers": [
+            "sono librerie di terze parti",
+            "sono dei metodi \"nativi\" perchè direttamente implementati nel browser",
+            "sono protocolli di rete",
+            "sono linguaggi di programmazione"
+        ],
+        "correct_answer": "sono dei metodi \"nativi\" perchè direttamente implementati nel browser",
+        "id": "c9d0e1f2-a3b4-5678-9012-456789abcdef"
+    },
+    {
+        "question": "La scadenza del cookie:",
+        "answers": [
+            "è sempre obbligatoria",
+            "deve essere impostata a 24 ore",
+            "non può essere modificata",
+            "è opzionale"
+        ],
+        "correct_answer": "è opzionale",
+        "id": "d0e1f2a3-b4c5-6789-0123-56789abcdef0"
+    },
+    {
+        "question": "La parte path in una url rappresenta:",
+        "answers": [
+            "il nome del protocollo",
+            "il nome del server",
+            "la porta di comunicazione",
+            "il nome (locale) della risorsa sul server"
+        ],
+        "correct_answer": "il nome (locale) della risorsa sul server",
+        "id": "e1f2a3b4-c5d6-7890-1234-6789abcdef01"
+    },
+    {
+        "question": "In Angularjs, quando si parla di $scope si intende:",
+        "answers": [
+            "un modulo Angular",
+            "un servizio Angular",
+            "un oggetto che rappresenta il contesto di esecuzione del controller",
+            "un componente Angular"
+        ],
+        "correct_answer": "un oggetto che rappresenta il contesto di esecuzione del controller",
+        "id": "f2a3b4c5-d6e7-8901-2345-789abcdef012"
+    },
+    {
+        "question": "Well formed indica che:",
+        "answers": [
+            "il documento è valido",
+            "il documento è correttamente formattato",
+            "ogni tag aperto deve essere chiuso",
+            "il documento è ben strutturato"
+        ],
+        "correct_answer": "ogni tag aperto deve essere chiuso",
+        "id": "a3b4c5d6-e7f8-9012-3456-89abcdef0123"
+    },
+    {
+        "question": "In Javascript, per scrivere un messaggio sulla console si usa la sintassi:",
+        "answers": [
+            "print(\"TESTO DA INSERIRE\");",
+            "alert(\"TESTO DA INSERIRE\");",
+            "document.write(\"TESTO DA INSERIRE\");",
+            "console.log(\"TESTO DA INSERIRE\");"
+        ],
+        "correct_answer": "console.log(\"TESTO DA INSERIRE\");",
+        "id": "b4c5d6e7-f8a9-0123-4567-9abcdef01234"
+    },
+    {
+        "question": "Identifica una risorsa in base al posto in cui si trova:",
+        "answers": [
+            "URN",
+            "URI",
+            "UUID",
+            "URL"
+        ],
+        "correct_answer": "URL",
+        "id": "d6e7f8a9-b0c1-2345-6789-bcdef0123456"
+    },
+    {
+        "question": "WebSocket e Socket.IO sono le tecnologie principali per gestire:",
+        "answers": [
+            "la comunicazione unidirezionale",
+            "la comunicazione solo dal server al client",
+            "la comunicazione bidirezionale in tempo reale tra client e server",
+            "la comunicazione offline"
+        ],
+        "correct_answer": "la comunicazione bidirezionale in tempo reale tra client e server",
+        "id": "e7f8a9b0-c1d2-3456-7890-cdef01234567"
+    },
+    {
+        "question": "La versione compressa di jQuery:",
+        "answers": [
+            "è indata per lo sviluppo",
+            "è indata per la distribuzione in produzione",
+            "contiene tutti i commenti",
+            "è di dimensioni maggiori"
+        ],
+        "correct_answer": "è indata per la distribuzione in produzione",
+        "id": "f8a9b0c1-d2e3-4567-8901-def012345678"
+    },
+    {
+        "question": "Nel set-up della sessione TCP:",
+        "answers": [
+            "non avviene alcun handshake",
+            "avviene il two way handshake",
+            "avviene il five way handshake",
+            "avviene il three way handshake"
+        ],
+        "correct_answer": "avviene il three way handshake",
+        "id": "b0c1d2e3-f4a5-6789-0123-f0123456789a"
+    },
+    {
+        "question": "La seguente sequenza di istruzioni: let x = \"John Doe\";let x = 0;",
+        "answers": [
+            "è ammessa e x diventa 0",
+            "è ammessa ma x rimane \"John Doe\"",
+            "è ammessa e x diventa \"John Doe\"0",
+            "non è ammessa"
+        ],
+        "correct_answer": "non è ammessa",
+        "id": "c1d2e3f4-a5b6-7890-1234-0123456789ab"
+    },
+    {
+        "question": "Un input può essere disabilitato agendo sull'attributo:",
+        "answers": [
+            "readonly",
+            "hidden",
+            "enabled",
+            "disabled"
+        ],
+        "correct_answer": "disabled",
+        "id": "d2e3f4a5-b6c7-8901-2345-123456789abc"
+    },
+    {
+        "question": "Nella seguente immagine sono stati depennati (dall'alto verso il basso) i livelli:",
+        "answers": [
+            "Application, Presentation",
+            "Network, Data Link",
+            "Physical, Data Link",
+            "Transport, Internet"
+        ],
+        "correct_answer": "Transport, Internet",
+        "id": "e3f4a5b6-c7d8-9012-3456-23456789abcd",
+        "image": "tec15.jpg"
+    },
+    {
+        "question": "In bootstrap vale il paradigma:",
+        "answers": [
+            "desktop-first",
+            "tablet-first",
+            "mobile-first",
+            "print-first"
+        ],
+        "correct_answer": "mobile-first",
+        "id": "f4a5b6c7-d8e9-0123-4567-3456789abcde"
+    },
+    {
+        "question": "La proprietà flex-direction non può assumere il seguente valore:",
+        "answers": [
+            "row",
+            "column",
+            "row-reverse",
+            "reverse"
+        ],
+        "correct_answer": "reverse",
+        "id": "b6c7d8e9-f0a1-2345-6789-56789abcdef0"
+    },
+    {
+        "question": "Quale dei seguenti non è un metodo ammesso:",
+        "answers": [
+            "GET",
+            "POST",
+            "DELETE",
+            "createAndAppend"
+        ],
+        "correct_answer": "createAndAppend",
+        "id": "c7d8e9f0-a1b2-3456-7890-6789abcdef01"
+    },
+    {
+        "question": "Nei messaggi HTTP di tipo response, lo nel range (400-499) indica:",
+        "answers": [
+            "server error responses",
+            "successful responses",
+            "redirection messages",
+            "client error responses"
+        ],
+        "correct_answer": "client error responses",
+        "id": "d8e9f0a1-b2c3-4567-8901-789abcdef012"
+    },
+    {
+        "question": "serve come nome univoco per la risorsa, indipendentemente da dove si trova",
+        "answers": [
+            "URL",
+            "URI",
+            "UUID",
+            "URN"
+        ],
+        "correct_answer": "URN",
+        "id": "f0a1b2c3-d4e5-6789-0123-9abcdef01234"
+    },
+    {
+        "question": "Permette di spostare la logica dell' applicazione dal server al client:",
+        "answers": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "ajax"
+        ],
+        "correct_answer": "ajax",
+        "id": "a1b2c3d4-e5f6-7890-1234-abcdef012345"
+    },
+    {
+        "question": "HTTP è un protocollo di tipo:",
+        "answers": [
+            "asincrono",
+            "stateless",
+            "connectionless",
+            "sincrono"
+        ],
+        "correct_answer": "sincrono",
+        "id": "b2c3d4e5-f6a7-8901-2345-bcdef0123456"
+    },
+    {
+        "question": "Data la seguente url: http://www.miosito.it/percorso/index.html\"http\" rappresenta:",
+        "answers": [
+            "l'host",
+            "la porta",
+            "il percorso",
+            "lo schema"
+        ],
+        "correct_answer": "lo schema",
+        "id": "c3d4e5f6-a7b8-9012-3456-cdef01234567"
+    },
+    {
+        "question": "Il metodo $.ajaxSetup():",
+        "answers": [
+            "reimposta le opzioni AJAX ai valori predefiniti",
+            "esegue una singola richiesta AJAX",
+            "consente di impostare opzioni di default per tutte le richieste AJAX effettuate con jQuery",
+            "non è un metodo jQuery valido"
+        ],
+        "correct_answer": "consente di impostare opzioni di default per tutte le richieste AJAX effettuate con jQuery",
+        "id": "f6a7b8c9-d0e1-2345-6789-f0123456789a"
+    },
+    {
+        "question": "La seguente risposta del server indica:",
+        "answers": [
+            "Che la risorsa è stata creata",
+            "Che la richiesta è stata completata con successo",
+            "Che il server non è disponibile",
+            "Che il client non è autenticato ed è richiesta una autenticazione \"basic\""
+        ],
+        "correct_answer": "Che il client non è autenticato ed è richiesta una autenticazione \"basic\"",
+        "id": "a7b8c9d0-e1f2-3456-7890-0123456789ab",
+        "image": "tec16.jpg"
+    },
+    {
+        "question": "Con la regola del cascading si intende che:",
+        "answers": [
+            "la prima regola definita ha la priorità",
+            "la regola più specifica viene scelta",
+            "la regola con più dichiarazioni ha la priorità",
+            "le regole sono applicate in ordine casuale"
+        ],
+        "correct_answer": "la regola più specifica viene scelta",
+        "id": "b8c9d0e1-f2a3-4567-8901-123456789abc"
+    },
+    {
+        "question": "enctype=application/x-www-form-urlencoded indica:",
+        "answers": [
+            "un tipo di codifica per inviare file binari",
+            "un tipo di codifica per inviare dati JSON",
+            "un tipo di codifica che compone una stringa convertendo tutti i campi della form in una sequenza di associazioni nomecampo=valore",
+            "un tipo di codifica per inviare dati XML"
+        ],
+        "correct_answer": "un tipo di codifica che compone una stringa convertendo tutti i campi della form in una sequenza di associazioni nomecampo=valore",
+        "id": "c9d0e1f2-a3b4-5678-9012-23456789abcd"
+    },
+    {
+        "question": "Ci dice chi è connesso al nostro host e su quali porte:",
+        "answers": [
+            "ping",
+            "ipconfig",
+            "traceroute",
+            "netstat"
+        ],
+        "correct_answer": "netstat",
+        "id": "d0e1f2a3-b4c5-6789-0123-3456789abcde"
+    },
+    {
+        "question": "Il campo WWW-Authenticate è usato:",
+        "answers": [
+            "nella digest authentication",
+            "nella basic authentication",
+            "nella OAuth",
+            "nella session authentication"
+        ],
+        "correct_answer": "nella basic authentication",
+        "id": "a3b4c5d6-e7f8-9012-3456-6789abcdef01"
+    },
+    {
+        "question": "Sono pacchetti di codice che possono essere pubblicati su un registro pubblico e scaricati da altri sviluppatori per essere utilizzati nei propri progetti Node.js:",
+        "answers": [
+            "Librerie di sistema",
+            "Framework Node.js",
+            "Moduli core di Node.js",
+            "moduli NPM"
+        ],
+        "correct_answer": "moduli NPM",
+        "id": "b4c5d6e7-f8a9-0123-4567-789abcdef012"
+    },
+    {
+        "question": "Una CDN:",
+        "answers": [
+            "è un tipo di server di database",
+            "è un software per la creazione di siti web",
+            "fornisce una copia del file ospitata su un server remoto",
+            "è un linguaggio di programmazione"
+        ],
+        "correct_answer": "fornisce una copia del file ospitata su un server remoto",
+        "id": "c5d6e7f8-a9b0-1234-5678-89abcdef0123"
+    },
+    {
+        "question": "Max-age va specificato in termini di:",
+        "answers": [
+            "numero di giorni",
+            "numero di ore",
+            "data e ora",
+            "numero di secondi"
+        ],
+        "correct_answer": "numero di secondi",
+        "id": "d6e7f8a9-b0c1-2345-6789-9abcdef01234"
+    },
+    {
+        "question": "L'header \"referer\" in una request http indica:",
+        "answers": [
+            "il tipo di contenuto della richiesta",
+            "la dimensione della richiesta",
+            "la lingua preferita dal client",
+            "La pagina sorgente da cui il client proviene per mezzo di un link"
+        ],
+        "correct_answer": "La pagina sorgente da cui il client proviene per mezzo di un link",
+        "id": "e7f8a9b0-c1d2-3456-7890-abcdef012345"
+    },
+    {
+        "question": "La seguente coppia {\"key\":\"value\"} può essere usata come body per una:",
+        "answers": [
+            "HTTP GET request",
+            "HTTP DELETE request",
+            "HTTP HEAD request",
+            "HTTP post in json"
+        ],
+        "correct_answer": "HTTP post in json",
+        "id": "b0c1d2e3-f4a5-6789-0123-def012345678"
+    },
+    {
+        "question": "Il seguente json:{ \"name\": \"john\", \"surname\": \"red\", \"cars\": [ \"Ferrari\", \"Porsche\" ], \"hobbies\": [ \"go-kart\", \"bicycle\" ]}",
+        "answers": [
+            "non è valido",
+            "è valido solo se le chiavi sono numeri",
+            "è valido ma non è un JSON standard",
+            "è corretto"
+        ],
+        "correct_answer": "è corretto",
+        "id": "c1d2e3f4-a5b6-7890-1234-ef0123456789"
+    },
+    {
+        "question": "Nella seguente immagine, i livelli che sono stati depennati sono (dall'alto verso il basso):",
+        "answers": [
+            "Application, Presentation, Session",
+            "Physical, Data Link, Network",
+            "Transport, Network, Data",
+            "Session, Transport, Network"
+        ],
+        "correct_answer": "Transport, Network, Data",
+        "id": "e3f4a5b6-c7d8-9012-3456-0123456789ab",
+        "image":"tec14.jpg"
+    },
+    {
+        "question": "La possibilità di selezionare un elemento in base alla presenza di un attributo o in base alla presenza di particolari stringhe al suo interno è tipica del:",
+        "answers": [
+            "CSS1",
+            "CSS2",
+            "HTML5",
+            "CSS3"
+        ],
+        "correct_answer": "CSS3",
+        "id": "f4a5b6c7-d8e9-0123-4567-123456789abc"
+    },
+    {
+        "question": "Il set-up della sessione TCP è:",
+        "answers": [
+            "a due vie",
+            "a quattro vie",
+            "a una via",
+            "a tre vie"
+        ],
+        "correct_answer": "a tre vie",
+        "id": "b6c7d8e9-f0a1-2345-6789-3456789abcde"
+    },
+    {
+        "question": "L'insieme di regole che definisce la presentazione di un documento è definito:",
+        "answers": [
+            "framework",
+            "linguaggio di scripting",
+            "protocollo",
+            "stylesheet"
+        ],
+        "correct_answer": "stylesheet",
+        "id": "d8e9f0a1-b2c3-4567-8901-56789abcdef0"
+    },
+    {
+        "question": "Un HttpOnly cookie",
+        "answers": [
+            "è un cookie che può essere letto solo da Javascript",
+            "è un cookie che non può essere letto da API client-side come Javascript",
+            "è un cookie che non può essere inviato al server",
+            "è un cookie che scade immediatamente"
+        ],
+        "correct_answer": "è un cookie che non può essere letto da API client-side come Javascript",
+        "id": "e9f0a1b2-c3d4-5678-9012-6789abcdef01"
+    },
+    {
+        "question": "Il router è un dispositivo di livello:",
+        "answers": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ],
+        "correct_answer": "3",
+        "id": "f0a1b2c3-d4e5-6789-0123-789abcdef012"
+    },
+    {
+        "question": "L'attributo HttpOnly:",
+        "answers": [
+            "consente al client di accedere alle informazioni del cookie tramite Javascript",
+            "se impostato, non consente al client di accedere alle informazioni del cookie tramite Javascript",
+            "cripta le informazioni del cookie",
+            "rende il cookie visibile solo al server"
+        ],
+        "correct_answer": "se impostato, non consente al client di accedere alle informazioni del cookie tramite Javascript",
+        "id": "a1b2c3d4-e5f6-7890-1234-89abcdef0123"
+    },
+    {
+        "question": "Il dato è:",
+        "answers": [
+            "un'informazione elaborata",
+            "il risultato di un'analisi",
+            "un valore grezzo",
+            "un report"
+        ],
+        "correct_answer": "un valore grezzo",
+        "id": "b2c3d4e5-f6a7-8901-2345-9abcdef01234"
+    },
+    {
+        "question": "Data la seguente url: http://test.it/percorso/index.html\"test.it\" rappresenta:",
+        "answers": [
+            "il protocollo",
+            "la porta",
+            "il percorso",
+            "l'host"
+        ],
+        "correct_answer": "l'host",
+        "id": "c3d4e5f6-a7b8-9012-3456-abcdef012345"
+    },
+    {
+        "question": "Una regola marcata come !important:",
+        "answers": [
+            "ha la priorità più bassa",
+            "viene ignorata dal browser",
+            "ha sempre precedenza sulle altre",
+            "viene applicata solo se non ci sono altre regole"
+        ],
+        "correct_answer": "ha sempre precedenza sulle altre",
+        "id": "e5f6a7b8-c9d0-1234-5678-cdef01234567"
+    },
+    {
+        "question": "Il settaggio del viewport initial-scale=1.0:",
+        "answers": [
+            "ingrandisce la pagina del 10%",
+            "riduce la pagina del 10%",
+            "fa si che pagina venga visualizzata con uno zoom iniziale",
+            "fa si che pagina venga visualizzata senza alcun ingrandimento o ridimensionamento iniziale"
+        ],
+        "correct_answer": "fa si che pagina venga visualizzata senza alcun ingrandimento o ridimensionamento iniziale",
+        "id": "a7b8c9d0-e1f2-3456-7890-ef0123456789"
+    },
+    {
+        "question": "Gli eventi in JavaScript:",
+        "answers": [
+            "sono sempre bloccanti",
+            "sono solo azioni dell'utente",
+            "rappresentano azioni o comportamenti che si verificano nella pagina web",
+            "sono funzioni predefinite del browser"
+        ],
+        "correct_answer": "rappresentano azioni o comportamenti che si verificano nella pagina web",
+        "id": "c9d0e1f2-a3b4-5678-9012-0123456789ab"
+    },
+    {
+        "question": "Quando si carica la seguente pagina, cosa viene visualizzato? ***",
+        "answers": [
+            "0",
+            "\"\"",
+            "undefined",
+            "8"
+        ],
+        "correct_answer": "8",
+        "id": "d0e1f2a3-b4c5-6789-0123-123456789abc"
+    },
+    {
+        "question": "Dato il seguente codice: if (time < 12) { saluto = \"Buongiorno\";} else if (time < 18) { saluto = \"Buon pomeriggio\";} else { saluto = \"Buonasera\";} se time =10",
+        "answers": [
+            "saluto=\"Buon pomeriggio\"",
+            "saluto=\"Buonasera\"",
+            "saluto=\"Buonanotte\"",
+            "saluto=\"Buongiorno\""
+        ],
+        "correct_answer": "saluto=\"Buongiorno\"",
+        "id": "f2a3b4c5-d6e7-8901-2345-3456789abcde"
+    },
+    {
+        "question": "Data la seguente url: http://miosito.it:80/test/index.html\"80\" rappresenta:",
+        "answers": [
+            "il protocollo",
+            "il nome del file",
+            "l'host",
+            "la porta"
+        ],
+        "correct_answer": "la porta",
+        "id": "b4c5d6e7-f8a9-0123-4567-56789abcdef0"
+    },
+    {
+        "question": "In presenza di un forward proxy:",
+        "answers": [
+            "il client invia le richieste direttamente al server di destinazione",
+            "tutti i client inviano le loro richieste al forward proxy e questo invierà le richieste del client verso l' esterno",
+            "il server di destinazione invia le risposte direttamente al client",
+            "il proxy server non agisce da ponte"
+        ],
+        "correct_answer": "tutti i client inviano le loro richieste al forward proxy e questo invierà le richieste del client verso l' esterno",
+        "id": "c5d6e7f8-a9b0-1234-5678-6789abcdef01"
     }
 ]
