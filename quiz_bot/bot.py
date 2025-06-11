@@ -72,6 +72,44 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
     user_id = update.effective_user.id
     # Inizializzo il manager per l'utente, pronto a raccogliere errori
     manager = get_manager(user_id)
+
+    msg = (
+        "*📚 Quiz disponibili:*\n\n"
+        "• comunicazione digitale e social media - _solo inedite_ - ultimo aggiornamento `28/05`\n"
+        "• diritto per le aziende digitali - _solo inedite_ - ultimo aggiornamento `28/05`\n"
+        "• ingegneria del software - _solo inedite_ - ultimo aggiornamento `28/05`\n"
+        "• corporate planning e valore d'impresa - _solo paniere_ - ultimo aggiornamento `04/06`\n"
+        "• reti di calcolatori e cybersecurity - _solo paniere_ - ultimo aggiornamento `28/05`\n"
+        "• programmazione 2 - _solo inedite_ - ultimo aggiornamento `28/05`\n"
+        "• calcolo delle probabilità e statistica - _solo paniere_ - ultimo aggiornamento `05/06`\n"
+        "• strategia, organizzazione e marketing - _paniere e inedite_ - ultimo aggiornamento `08/06`\n"
+        "• tecnologie web - _inedite e domande da examsync_ - ultimo aggiornamento `11/06`"
+    )
+
+    keyboard = InlineKeyboardMarkup(row_width=1)
+    keyboard.add(
+        InlineKeyboardButton(text="📖 Scegli materia", callback_data="_choose_subject_")
+    )
+
+    #se l'utente ha errori aggiungo il bottone
+    if manager.has_wrong_answers():
+        keyboard.append([InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors")])
+
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
+    if not show_intro_text_only:
+        pass
+
+    await context.bot.send_message(
+        chat_id=user_id,
+        text=msg,
+        reply_markup=reply_markup,
+    )
+
+async def choose_subject(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    
+    user_id = update.effective_user.id
+
     try:
         files = [f for f in os.listdir(QUIZ_FOLDER) if f.endswith(JSON)]
     except Exception as e:
@@ -87,20 +125,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         for f in files
     ]
 
-    #se l'utente ha errori aggiungo il bottone
-    if manager.has_wrong_answers():
-        keyboard.append([InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors")])
-
     reply_markup = InlineKeyboardMarkup(keyboard)
-
-    if not show_intro_text_only:
-        pass
 
     await context.bot.send_message(
         chat_id=user_id,
-        text="Scegli la materia del quiz:",
+        text="📖 Scegli materia",
         reply_markup=reply_markup,
     )
+
 
 async def download(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
@@ -348,7 +380,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await reset_stats(update, context)
 
     elif data == "__choose_subject__":
-        await start(update, context)  # mostra direttamente le materie
+        await choose_subject(update, context)  
 
     elif data == "repeat_quiz":
         await repeat_quiz(user_id, context)
@@ -626,6 +658,7 @@ async def lifespan(app: FastAPI):
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("stats", stats))
     application.add_handler(CommandHandler("download", download))
+    application.add_handler(CommandHandler("choose_subject", choose_subject))
     application.add_handler(CallbackQueryHandler(handle_callback))
     application.add_error_handler(error_handler)
     print("✅ Applicazione Telegram inizializzata con successo.")
