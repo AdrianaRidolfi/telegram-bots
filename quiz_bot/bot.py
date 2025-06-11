@@ -75,18 +75,19 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
 
     msg = (
         "*📚 Quiz disponibili:*\n\n"
-        "• comunicazione digitale e social media - _solo inedite_ - ultimo aggiornamento `28/05`\n"
-        "• diritto per le aziende digitali - _solo inedite_ - ultimo aggiornamento `28/05`\n"
-        "• ingegneria del software - _solo inedite_ - ultimo aggiornamento `28/05`\n"
-        "• corporate planning e valore d'impresa - _solo paniere_ - ultimo aggiornamento `04/06`\n"
-        "• reti di calcolatori e cybersecurity - _solo paniere_ - ultimo aggiornamento `28/05`\n"
-        "• programmazione 2 - _solo inedite_ - ultimo aggiornamento `28/05`\n"
-        "• calcolo delle probabilità e statistica - _solo paniere_ - ultimo aggiornamento `05/06`\n"
-        "• strategia, organizzazione e marketing - _paniere e inedite_ - ultimo aggiornamento `08/06`\n"
-        "• tecnologie web - _inedite e domande da examsync_ - ultimo aggiornamento `11/06`"
+        "• *comunicazione digitale e social media* - _solo inedite_ - ultimo aggiornamento `28/05`\n\n"
+        "• *diritto per le aziende digitali* - _solo inedite_ - ultimo aggiornamento `28/05`\n\n"
+        "• *ingegneria del software* - _solo inedite_ - ultimo aggiornamento `28/05`\n\n"
+        "• *corporate planning e valore d'impresa* - _solo paniere_ - ultimo aggiornamento `04/06`\n\n"
+        "• *reti di calcolatori e cybersecurity* - _solo paniere_ - ultimo aggiornamento `28/05`\n\n"
+        "• *programmazione 2* - _solo inedite_ - ultimo aggiornamento `28/05`\n\n"
+        "• *calcolo delle probabilità e statistica* - _solo paniere_ - ultimo aggiornamento `05/06`\n\n"
+        "• *strategia, organizzazione e marketing* - _paniere e inedite_ - ultimo aggiornamento `08/06`\n\n"
+        "• *tecnologie web* - _inedite e domande da examsync_ - ultimo aggiornamento `11/06`\n\n"
     )
 
     keyboard = []
+    keyboard.append([InlineKeyboardButton("🌐 Controlla su Git", url="https://github.com/AdrianaRidolfi/telegram-bots")])
     keyboard.append([InlineKeyboardButton(text="📚 Scegli materia", callback_data="_choose_subject_")])
 
     #se l'utente ha errori aggiungo il bottone
@@ -128,7 +129,7 @@ async def choose_subject(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await context.bot.send_message(
         chat_id=user_id,
-        text="📚 Materie disponibi:",
+        text="📚 Materie disponibili:",
         reply_markup=reply_markup,
     )
 
