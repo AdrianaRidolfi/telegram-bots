@@ -86,7 +86,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         "• tecnologie web - _inedite e domande da examsync_ - ultimo aggiornamento `11/06`"
     )
 
-    keyboard = InlineKeyboardMarkup(row_width=1)
+    keyboard = []
     keyboard.add(
         InlineKeyboardButton(text="📖 Scegli materia", callback_data="_choose_subject_")
     )
