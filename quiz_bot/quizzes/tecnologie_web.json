@@ -3472,17 +3472,6 @@
         "id": "c9d0e1f2-a3b4-5678-9012-0123456789ab"
     },
     {
-        "question": "Quando si carica la seguente pagina, cosa viene visualizzato? ***",
-        "answers": [
-            "0",
-            "\"\"",
-            "undefined",
-            "8"
-        ],
-        "correct_answer": "8",
-        "id": "d0e1f2a3-b4c5-6789-0123-123456789abc"
-    },
-    {
         "question": "Dato il seguente codice: if (time < 12) { saluto = \"Buongiorno\";} else if (time < 18) { saluto = \"Buon pomeriggio\";} else { saluto = \"Buonasera\";} se time =10",
         "answers": [
             "saluto=\"Buon pomeriggio\"",
