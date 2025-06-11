@@ -87,7 +87,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
     )
 
     keyboard = []
-    keyboard.append([InlineKeyboardButton(text="📖 Scegli materia", callback_data="_choose_subject_")])
+    keyboard.append([InlineKeyboardButton(text="📚 Scegli materia", callback_data="_choose_subject_")])
 
     #se l'utente ha errori aggiungo il bottone
     if manager.has_wrong_answers():
@@ -102,6 +102,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         chat_id=user_id,
         text=msg,
         reply_markup=reply_markup,
+        parse_mode='Markdown'
     )
 
 async def choose_subject(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -127,7 +128,7 @@ async def choose_subject(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await context.bot.send_message(
         chat_id=user_id,
-        text="📖 Scegli materia",
+        text="📚 Materie disponibi:",
         reply_markup=reply_markup,
     )
 
@@ -377,7 +378,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif data == "reset_stats":
         await reset_stats(update, context)
 
-    elif data == "__choose_subject__":
+    elif data == "_choose_subject_":
         await choose_subject(update, context)  
 
     elif data == "repeat_quiz":
