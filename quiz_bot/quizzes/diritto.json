@@ -1,1003 +1,1487 @@
 [
   {
-    "question": "Qual è il fondamento giuridico principale individuato per il diritto all'identità personale?",
+    "question": "Quali sono i principi normativi mirati ad affrontare i problemi nell'utilizzo dei dati personali secondo la normativa europea?",
+    "id": "3f1a27a5-7caa-49c5-a2c6-e334a3d737c3",
     "answers": [
-      "Si ritrova direttamente nell'articolo 2 della costituzione",
-      "È esclusivamente basato sull'articolo 6 del Codice civile",
-      "Non ha alcun fondamento legale specifico",
-      "Si basa unicamente sulla legge speciale sulla privacy."
+      "Leggi vincolanti applicabili a enti pubblici e privati con garanzie di diritti individuali e controlli da parte di autorità specifiche",
+      "Si applicano solo a enti pubblici e non a soggetti privati o cittadini",
+      "Sono norme di indirizzo generale che non prevedono controlli specifici da parte delle autorità competenti",
+      "Riguardano esclusivamente i diritti economici"
     ],
-    "correct_answer": "Si ritrova direttamente nell'articolo 2 della costituzione",
-    "id": "d9994522-0f74-4540-9b81-cf524ac23a13"
+    "correct_answer": "Leggi vincolanti applicabili a enti pubblici e privati con garanzie di diritti individuali e controlli da parte di autorità specifiche"
+  },
+  {
+    "question": "In quale articolo della Costituzione tedesca è contemplata esplicitamente la protezione dei dati?",
+    "id": "24a4d94f-b0ba-47eb-984c-6a8b3d96efc6",
+    "answers": [
+      "Articolo 10",
+      "Articolo 2 (1)",
+      "Articolo 5",
+      "Articolo 8"
+    ],
+    "correct_answer": "Articolo 2 (1)"
   },
   {
     "question": "Qual è il fondamento della tutela dei diritti della personalità?",
+    "id": "262e1c6a-4ebf-4994-bcf7-47c57ea63c1f",
     "answers": [
       "Il Codice penale",
-      "La Costituzione",
       "La tipicità dei diritti",
+      "La Costituzione",
       "Il diritto soggettivo"
     ],
-    "correct_answer": "La Costituzione",
-    "id": "8de6d109-aa7d-45a8-8f89-b2afee45bd6d"
+    "correct_answer": "La Costituzione"
+  },
+  {
+    "question": "A chi si applica il Regolamento generale per la protezione dei dati personali (GDPR) in termini di titolari e responsabili del trattamento?",
+    "id": "9eb76bf2-e949-410d-bbdd-d08ed89e6afd",
+    "answers": [
+      "Per i soli Stati membri dell'Unione europea",
+      "A tutti i responsabili del trattamento stabiliti nell'Unione Europea",
+      "A un solo titolare o responsabile del trattamento stabilito nell'Unione Europea",
+      "A tutti i titolari e responsabili del trattamento stabiliti nell'Unione Europea"
+    ],
+    "correct_answer": "A tutti i titolari e responsabili del trattamento stabiliti nell'Unione Europea"
+  },
+  {
+    "question": "Qual è il fondamento giuridico principale individuato per il diritto all'identità personale?",
+    "id": "5dfb2164-e66b-41aa-bf78-436b105519d4",
+    "answers": [
+      "Si ritrova direttamente nell'articolo 2 della Costituzione",
+      "Si basa unicamente sulla legge speciale sulla privacy",
+      "È esclusivamente basato sull'articolo 6 del Codice civile",
+      "Non ha alcun fondamento legale specifico"
+    ],
+    "correct_answer": "Si ritrova direttamente nell'articolo 2 della Costituzione"
+  },
+  {
+    "question": "L'investigatore munito di licenza, per incarichi in altre città è:",
+    "id": "49921c25-4e83-4ca0-ac5b-1519727f0d7c",
+    "answers": [
+      "interessato",
+      "responsabile",
+      "titolare",
+      "incaricato"
+    ],
+    "correct_answer": "responsabile"
+  },
+  {
+    "question": "Chi è il collaboratore per incarichi investigativi elementari?",
+    "id": "9622e954-3072-417a-bc5e-66b60b913ffc",
+    "answers": [
+      "responsabile",
+      "interessato",
+      "incaricato",
+      "titolare"
+    ],
+    "correct_answer": "incaricato"
+  },
+  {
+    "question": "Qual è uno dei principali obiettivi del Decreto Legislativo n. 101 del 10 agosto 2018?",
+    "id": "b22e124c-de85-445c-bf80-5b8c04f1f538",
+    "answers": [
+      "Semplificare il trattamento dei dati personali per le grandi imprese",
+      "Limitare il consenso dei minori per i servizi online",
+      "Estendere il diritto alla privacy solo nel settore sanitario",
+      "Armonizzare la normativa nazionale con il regolamento europeo sulla protezione dei dati."
+    ],
+    "correct_answer": "Armonizzare la normativa nazionale con il regolamento europeo sulla protezione dei dati."
+  },
+  {
+    "question": "Quando viene tutelato il diritto alla vita del nascituro secondo la legge italiana?",
+    "id": "ed75a18f-42f9-4d2a-a6e7-a862aa48268d",
+    "answers": [
+      "Dal concepimento",
+      "Dal quarto mese di gravidanza",
+      "Dal sesto mese di gravidanza",
+      "Dopo la nascita"
+    ],
+    "correct_answer": "Dal concepimento"
+  },
+  {
+    "question": "Qual è il Regolamento dell'Unione Europea che riguarda l'identificazione elettronica e i servizi fiduciari per le transazioni elettroniche?",
+    "id": "abe0a6a9-6a70-4ded-a660-29367ea5641d",
+    "answers": [
+      "Regolamento UE n. 128/2016",
+      "Regolamento UE n. 910/2014",
+      "Regolamento UE n. 2916/679",
+      "Regolamento UE n. 150/2000"
+    ],
+    "correct_answer": "Regolamento UE n. 910/2014"
+  },
+  {
+    "question": "Cosa indica la prescrittibilità di un diritto?",
+    "id": "16847dc4-7ea7-44cc-84fa-cefb93ac2197",
+    "answers": [
+      "La possibilità di non far valere il diritto dopo un certo periodo di tempo",
+      "La possibilità di far valere il diritto dopo un certo periodo di tempo",
+      "L'impossibilità di far valere il diritto dopo un certo periodo di tempo",
+      "L'impossibilità di non far valere il diritto a tempo indeterminato"
+    ],
+    "correct_answer": "L'impossibilità di far valere il diritto dopo un certo periodo di tempo"
+  },
+  {
+    "question": "Qual è un esempio di diritto della personalità?",
+    "id": "cf8de7e2-e570-4df8-8b33-3d76fd8bb9ee",
+    "answers": [
+      "Proprietà di un terreno",
+      "Proprietà di una casa",
+      "Proprietà di un'azienda",
+      "Diritto di voto"
+    ],
+    "correct_answer": "Diritto di voto"
+  },
+  {
+    "question": "Cosa rappresenta la differenza principale tra il diritto alla privacy e il diritto alla protezione dei dati personali?",
+    "id": "f50eed28-3c8d-4021-a186-9a2b3896a573",
+    "answers": [
+      "Il diritto alla privacy si riferisce alla vita privata, mentre il diritto ai dati personali garantisce il controllo sulla circolazione dei dati",
+      "Il diritto alla privacy si applica alle persone pubbliche, mentre il diritto ai dati personali riguarda esclusivamente le aziende",
+      "Il diritto alla privacy è garantito solo offline, mentre il diritto ai dati personali si applica solo alle attività Online",
+      "Il diritto alla privacy protegge i dati finanziari, mentre il diritto ai dati personali protegge i dati sanitari"
+    ],
+    "correct_answer": "Il diritto alla privacy si riferisce alla vita privata, mentre il diritto ai dati personali garantisce il controllo sulla circolazione dei dati"
+  },
+  {
+    "question": "Qual è la principale fonte di rischio per la riservatezza e l'identità personale nell'era delle nuove tecnologie?",
+    "id": "3c066eb6-c0ea-484f-bc91-18282efb77ed",
+    "answers": [
+      "Telefoni cellulari",
+      "Computer e banche dati",
+      "Social media",
+      "Dispositivi indossabili"
+    ],
+    "correct_answer": "Computer e banche dati"
+  },
+  {
+    "question": "Qual è l'obbligo principale imposto dal decreto sicurezza bis (n. 138 del 14 giugno 2019) in relazione al codice della privacy?",
+    "id": "da4e1f87-8b5f-4c88-80bb-c4d593f638fd",
+    "answers": [
+      "Eliminare i dati non più necessari",
+      "Consentire l'accesso ai dati da parte di terzi",
+      "Regolamentare il trattamento dei dati personali per le finalità di polizia",
+      "Rendere pubblici i dati sensibili"
+    ],
+    "correct_answer": "Regolamentare il trattamento dei dati personali per le finalità di polizia"
+  },
+  {
+    "question": "In quale anno gli Stati negoziano la Convenzione di Strasburgo per garantire il rispetto del diritto alla vita privata in relazione all'elaborazione automatizzata dei dati personali?",
+    "id": "70b5de8e-88e9-45cc-bb54-8cd852c15dd2",
+    "answers": [
+      "1966",
+      "1960",
+      "1974",
+      "1981"
+    ],
+    "correct_answer": "1981"
+  },
+  {
+    "question": "Qual è un esempio di diritto patrimoniale?",
+    "id": "6ed6f49c-0c0b-48bd-87d0-0da73539e2ce",
+    "answers": [
+      "Proprietà di una casa",
+      "Diritto di voto",
+      "Diritto alla privacy",
+      "Diritto di espressione"
+    ],
+    "correct_answer": "Proprietà di una casa"
+  },
+  {
+    "question": "Qual è la sanzione per la violazione della privacy secondo il GDPR?",
+    "id": "4f51e213-b121-4c17-8963-15a55cc4ff7a",
+    "answers": [
+      "Fino a 20 milioni di euro o il 4% del fatturato annuo",
+      "Fino a 10 milioni di euro",
+      "Solo avvertimenti",
+      "Nessuna sanzione"
+    ],
+    "correct_answer": "Fino a 20 milioni di euro o il 4% del fatturato annuo"
+  },
+  {
+    "question": "Qual è l'obiettivo principale della normativa che regola la protezione dei dati personali ?",
+    "id": "6bed0f6e-4da6-4e92-abf1-5f5b2a49a337",
+    "answers": [
+      "Eliminare ogni regolamentazione sulla gestione dei dati personali per agevolare il mercato",
+      "Salvaguardare un equilibrio tra interessi individuali e comunitari, proteggendo i dati personali con leggi vincolanti e garanzie di diritti individuali",
+      "Rendere i dati personali completamente pubblici per favorire la trasparenza",
+      "Limitare esclusivamente l'accesso ai dati personali da parte dello Stato"
+    ],
+    "correct_answer": "Salvaguardare un equilibrio tra interessi individuali e comunitari, proteggendo i dati personali con leggi vincolanti e garanzie di diritti individuali"
+  },
+  {
+    "question": "Qual è il principio che si oppone alle concezioni del diritto alla salute basata sulla libertà individuale estrema?",
+    "id": "8ccbe77f-1641-46b8-bb7b-0ee8d63df0b0",
+    "answers": [
+      "Principio di responsabilità",
+      "Principio di equità",
+      "Principio Inviolabile",
+      "Principio di solidarietà"
+    ],
+    "correct_answer": "Principio di solidarietà"
+  },
+  {
+    "question": "Quale aspetto non è tutelato dal diritto all'integrità fisica e alla salute?",
+    "id": "f4f43864-1e0c-4149-b5c5-437d2c32a002",
+    "answers": [
+      "Discriminazione per motivi di razza o religione",
+      "Trattamenti medici obbligatori senza consenso",
+      "Interventi sperimentali non autorizzati sul corpo umano",
+      "Donazione di organi senza limitazioni"
+    ],
+    "correct_answer": "Donazione di organi senza limitazioni"
+  },
+  {
+    "question": "Quali sono i principali diritti tutelati dall'articolo 595 del codice penale italiano?",
+    "id": "7faedf2e-29e9-4031-a29e-dba16641d61c",
+    "answers": [
+      "Onore, decoro e reputazione",
+      "Libertà di parola",
+      "Diritto alla privacy",
+      "Diritto di manifestazione"
+    ],
+    "correct_answer": "Onore, decoro e reputazione"
+  },
+  {
+    "question": "Cosa prevede l'approccio del GDPR in relazione al trattamento dei dati di minori rispetto a quelli degli adulti? (possibile domanda)",
+    "id": "458543c1-d1c2-4e03-aab1-108cc02aa170",
+    "answers": [
+      "Considera più rischioso il trattamento dei dati dei minori rispetto agli adulti (risk based)",
+      "Considera meno rischioso il trattamento dei dati dei minori rispetto agli adulti (risk based)",
+      "Solo in situazioni di emergenza",
+      "Considera più o meno rischioso il trattamento dei dati dei minori rispetto agli adulti (risk based)"
+    ],
+    "correct_answer": "Considera meno rischioso il trattamento dei dati dei minori rispetto agli adulti (risk based)"
+  },
+  {
+    "question": "In base a quale criterio la legge italiana determina il cognome di un figlio nato nel matrimonio?",
+    "id": "96447241-9ab7-4a8c-996d-1faabf6ab333",
+    "answers": [
+      "Cognome della madre",
+      "Ordine alfabetico dei cognomi dei genitori",
+      "Cognome del padre",
+      "Scelta casuale"
+    ],
+    "correct_answer": "Cognome del padre"
+  },
+  {
+    "question": "II trattamento dei dati relativi a reati o condanne penali o misure di sicurezza connesse:",
+    "id": "201a65f5-eec8-44c5-8333-c637a7889dcd",
+    "answers": [
+      "è sempre consentito",
+      "necessita di autorizzazione del Garante",
+      "non può mai avvenire",
+      "è consentito nei casi previsti da norme riguardanti le investigazioni"
+    ],
+    "correct_answer": "è consentito nei casi previsti da norme riguardanti le investigazioni"
+  },
+  {
+    "question": "Qual è uno dei diritti garantiti dal GDPR agli individui?",
+    "id": "151a45b4-bc7a-43b7-bf8d-b55dd3919e56",
+    "answers": [
+      "Il diritto all'oblio",
+      "Il diritto di ignorare le normative",
+      "Il diritto di vendere i propri dati",
+      "Il diritto di accedere solo ai dati pubblici"
+    ],
+    "correct_answer": "Il diritto all'oblio"
+  },
+  {
+    "question": "Qual è una delle cause dell'evoluzione della nozione di privacy?",
+    "id": "0e9d2c57-17a9-4684-9517-34b67107df47",
+    "answers": [
+      "L'aumento della popolazione",
+      "L'evoluzione tecnologica e la diffusione dei contenuti digitali in rete",
+      "La globalizzazione",
+      "Il cambiamento climatico"
+    ],
+    "correct_answer": "L'evoluzione tecnologica e la diffusione dei contenuti digitali in rete"
+  },
+  {
+    "question": "Cosa implica il diritto all'identità personale anche se la rappresentazione della personalità è positiva?",
+    "id": "c24e29dd-6bda-46ad-a9de-4284b8787b0c",
+    "answers": [
+      "Quando la rappresentazione corrisponde esattamente alla verità",
+      "Quando la rappresentazione non incide sulla reputazione della persona",
+      "Viola il diritto all'identità personale anche se la rappresentazione è positiva, se non corrisponde al vero",
+      "Quando la rappresentazione è autorizzata dalla persona interessata"
+    ],
+    "correct_answer": "Viola il diritto all'identità personale anche se la rappresentazione è positiva, se non corrisponde al vero"
+  },
+  {
+    "question": "Cosa distingue l'incaricato del trattamento dal responsabile del trattamento?",
+    "id": "fb4a8ed3-ffdb-4b16-96b2-a3acf8d2c70f",
+    "answers": [
+      "L'incaricato non opera sotto la diretta autorità del titolare o del responsabile",
+      "L'incaricato opera sotto la diretta autorità del titolare o del responsabile",
+      "L'incaricato deve operare sotto la diretta autorità del responsabile",
+      "L'incaricato deve operare sotto la diretta autorità del titolare o del responsabile"
+    ],
+    "correct_answer": "L'incaricato deve operare sotto la diretta autorità del titolare o del responsabile"
+  },
+  {
+    "question": "QUANDO È ENTRATO IN VIGORE IL REGOLAMENTO GENERALE PER LA PROTEZIONE DEI DATI PERSONALI (GDPR)",
+    "id": "4e9ae6ee-71ef-4893-8055-147929022049",
+    "answers": [
+      "24 maggio 2016",
+      "4 maggio 2016",
+      "3 giugno 2016",
+      "24 luglio 2016"
+    ],
+    "correct_answer": "24 maggio 2016"
+  },
+  {
+    "question": "Quando è stata proclamata la carta dei diritti fondamentali dell'unione europea?",
+    "id": "7995e99e-71e8-4ed2-bbc2-ba723d4b774f",
+    "answers": [
+      "1 gennaio 2000",
+      "7 dicembre 2000",
+      "1 maggio 2004",
+      "1 gennaio 2007"
+    ],
+    "correct_answer": "7 dicembre 2000"
+  },
+  {
+    "question": "Quale delle seguenti affermazioni è vera riguardo alla protezione dei dati?",
+    "id": "7daad68a-0755-4278-948c-1080365284d8",
+    "answers": [
+      "I dati possono essere condivisi liberamente",
+      "I dati devono essere conservati indefinitamente",
+      "I dati devono essere trattati in modo lecito e trasparente",
+      "I dati non devono essere protetti"
+    ],
+    "correct_answer": "I dati devono essere trattati in modo lecito e trasparente"
+  },
+  {
+    "question": "Con quale sentenza la Suprema Corte di Cassazione ha affermato per la prima volta la necessità di bilanciare il diritto alla privacy e il diritto di cronaca?",
+    "id": "09899bea-37e3-43a1-9504-4634f67b1cd1",
+    "answers": [
+      "Sentenza n. 1212 del 1967",
+      "Sentenza n. 2129 del 27 maggio 1975",
+      "Sentenza n. 3000 del 1980",
+      "Sentenza n. 4487 del 1956"
+    ],
+    "correct_answer": "Sentenza n. 4487 del 1956"
+  },
+  {
+    "question": "Qual è il diritto protetto dal Garante nel settore giornalistico?",
+    "id": "e1994dd0-627f-4602-8dbc-8deb3054d692",
+    "answers": [
+      "Il diritto alla privacy dei cittadini, il diritto all'uso dell'immagine, il diritto alla libertà di stampa",
+      "Il diritto all'accesso ai documenti amministrativi, il diritto alla salute e il diritto alla libera concorrenza",
+      "Il diritto alla proprietà privata, il diritto al voto e il diritto alla segretezza bancaria",
+      "Il diritto alla sicurezza stradale, il diritto al lavoro e il diritto all'oblio"
+    ],
+    "correct_answer": "Il diritto alla privacy dei cittadini, il diritto all'uso dell'immagine, il diritto alla libertà di stampa"
+  },
+  {
+    "question": "Cosa rappresenta la terza stagione nell'evoluzione dei diritti legati alla riservatezza e protezione dei dati personali?",
+    "id": "5235e761-2bcd-465b-bf6b-a573ec6a7f25",
+    "answers": [
+      "Diritto alla libera espressione",
+      "Limite all'uso e alla commercializzazione dei dati personali",
+      "Diritto alla proprietà privata",
+      "Esenzione dal trattamento fiscale obbligatorio"
+    ],
+    "correct_answer": "Limite all'uso e alla commercializzazione dei dati personali"
+  },
+  {
+    "question": "Qual è la sanzione massima prevista dal GDPR per le violazioni?",
+    "id": "09a5dcc4-785e-491a-aed9-609bc8ab9880",
+    "answers": [
+      "5 milioni di euro",
+      "10 milioni di euro o il 2% del fatturato annuo",
+      "20 milioni di euro o il 4% del fatturato annuo",
+      "1 milione di euro"
+    ],
+    "correct_answer": "20 milioni di euro o il 4% del fatturato annuo"
+  },
+  {
+    "question": "In che modo il diritto alla riservatezza è disciplinato nella normativa italiana?",
+    "id": "bcd5865b-b26f-4935-a310-d6a3bd2160ee",
+    "answers": [
+      "È disciplinato da disposizioni sparse in vari codici e leggi speciali",
+      "Non è disciplinato",
+      "È regolato da un unico codice",
+      "È disciplinato solo a livello europeo"
+    ],
+    "correct_answer": "È disciplinato da disposizioni sparse in vari codici e leggi speciali"
+  },
+  {
+    "question": "In quale anno la Corte Costituzionale tedesca enuncia il diritto di \"autodeterminazione informativa\"?",
+    "id": "74918c8c-6305-4338-803d-4306902a0ca4",
+    "answers": [
+      "1990",
+      "1983",
+      "1975",
+      "2000"
+    ],
+    "correct_answer": "1983"
+  },
+  {
+    "question": "Cosa indica la Commissione per i diritti e i doveri relativi ad Internet a tutela del diritto all'identità personale?",
+    "id": "225b685a-10e3-47a8-a441-b7f26fa90e3a",
+    "answers": [
+      "Il divieto di uso di algoritmi e tecniche probabilistiche",
+      "La limitazione della libertà di costruire la propria personalità in Rete",
+      "La possibilità di fornire solo dati strettamente necessari per adempimenti legali",
+      "L'obbligo di cessione di tutti i dati personali richiesti dai servizi online"
+    ],
+    "correct_answer": "La possibilità di fornire solo dati strettamente necessari per adempimenti legali"
+  },
+  {
+    "question": "Qual è l'obiettivo principale del GDPR?",
+    "id": "56e7c38c-c274-4525-a70e-9e3c3542412e",
+    "answers": [
+      "Aumentare la fiducia dei cittadini nella società",
+      "Aumentare la fiducia dei cittadini nel prossimo",
+      "Aumentare la fiducia dei cittadini sia nella società digitale che nel prossimo",
+      "Aumentare la fiducia dei cittadini nella società digitale"
+    ],
+    "correct_answer": "Aumentare la fiducia dei cittadini nella società digitale"
+  },
+  {
+    "question": "Quale affermazione è vera riguardo ai diritti inviolabili dell'uomo?",
+    "id": "95b88d64-1a77-4e53-8098-a730f43b9a53",
+    "answers": [
+      "Sono unicamente quelli indicati nell'art. 2 cost",
+      "Sono espressamente elencati nel Codice civile e in quello penale",
+      "Non trovano riconoscimento nelle norme europee",
+      "Sono garantiti solo in Italia"
+    ],
+    "correct_answer": "Sono unicamente quelli indicati nell'art. 2 cost"
+  },
+  {
+    "question": "Quali informazioni possono essere considerate \"dati personali\" secondo il Codice della privacy?",
+    "id": "abee3391-db3e-4245-894a-6d807b318b32",
+    "answers": [
+      "Qualsiasi informazione di natura qualunque",
+      "Qualsiasi informazione relativa a una persona fisica identificabile, anche indirettamente",
+      "Qualsiasi informazione relativa a una persona fisica identificabile",
+      "Qualsiasi informazione relativa a un oggetto identificabile, anche indirettamente"
+    ],
+    "correct_answer": "Qualsiasi informazione relativa a una persona fisica identificabile, anche indirettamente"
+  },
+  {
+    "question": "In quale caso l'uso dell'immagine altrui è lecito senza consenso?",
+    "id": "423f2665-bd52-4e27-ba2b-572d82445cf6",
+    "answers": [
+      "Quando l'immagine viene utilizzata per scopi di intrattenimento pubblico",
+      "Quando l'immagine è di dominio pubblico",
+      "Quando l'immagine è stata ripresa in occasione di avvenimenti pubblici",
+      "Quando l'immagine è stata modificata"
+    ],
+    "correct_answer": "Quando l'immagine è stata ripresa in occasione di avvenimenti pubblici"
+  },
+  {
+    "question": "Qual è la natura del diritto all'immagine?",
+    "id": "55268e4a-d2b3-4085-b175-a85d17133e48",
+    "answers": [
+      "Il diritto all'immagine è inalienabile e non può essere oggetto di scambio",
+      "Il diritto all'immagine è completamente separato da altre componenti della personalità umana",
+      "Il diritto all'immagine è considerato un diritto esclusivamente patrimoniale",
+      "Esistono varie interpretazioni, alcune lo collegano al diritto alla riservatezza altre all'identità personale"
+    ],
+    "correct_answer": "Esistono varie interpretazioni, alcune lo collegano al diritto alla riservatezza altre all'identità personale"
+  },
+  {
+    "question": "Quale principio dell'art. 2 Cost. promuove doveri inderogabili economici, politici e sociali? (possibile domanda)",
+    "id": "c965c5b9-5a57-4dcc-bd03-9e10746c5e62",
+    "answers": [
+      "Principio di solidarietà",
+      "Principio legale",
+      "Principio giuridico",
+      "Principio solenne"
+    ],
+    "correct_answer": "Principio di solidarietà"
+  },
+  {
+    "question": "Cosa prevede il D.Lgs. 30 giugno 2003 n. 196 riguardo ai dati genetici e biometrici?",
+    "id": "4e6877c7-9b35-423a-bb3c-c71228436989",
+    "answers": [
+      "Li equipara ai dati sensibili e ne vieta qualsiasi trattamento anche per finalità di ricerca.",
+      "Stabilisce misure di garanzia per il loro trattamento",
+      "Li considera dati comuni e non prevede alcuna tutela specifica.",
+      "Dispone l'obbligo di comunicazione automatica alle forze dell'ordine in caso di raccolta o analisi biometriche."
+    ],
+    "correct_answer": "Stabilisce misure di garanzia per il loro trattamento"
+  },
+  {
+    "question": "Qual è la sanzione prevista per la violazione del GDPR?",
+    "id": "9034846a-a5de-4635-80ae-6b92428b2d0b",
+    "answers": [
+      "Solo una multa simbolica",
+      "Nessuna sanzione prevista",
+      "Fino a 20 milioni di euro o il 4% del fatturato annuo",
+      "Solo la sospensione temporanea dell'attività"
+    ],
+    "correct_answer": "Fino a 20 milioni di euro o il 4% del fatturato annuo"
+  },
+  {
+    "question": "In quale delle seguenti legislazioni è espressamente prevista la protezione dei dati personali:",
+    "id": "d155b62a-4d92-408b-a6ba-cdca4559012c",
+    "answers": [
+      "Italiana",
+      "Francese",
+      "Tedesca, italiana, francese",
+      "Francese, tedesca, italiana"
+    ],
+    "correct_answer": "Francese, tedesca, italiana"
+  },
+  {
+    "question": "Quando è entrato in vigore il Regolamento Generale sulla Protezione dei Dati (GDPR) dell'Unione Europea?",
+    "id": "5a24bfc5-3a10-458e-b70a-0bb01eadf138",
+    "answers": [
+      "2018",
+      "2014",
+      "2000",
+      "2016"
+    ],
+    "correct_answer": "2018"
+  },
+  {
+    "question": "Cosa significa che i diritti della personalità sono indisponibili?",
+    "id": "873bf77f-df40-478e-8ea5-7639392ba8f8",
+    "answers": [
+      "Possono essere venduti",
+      "Non possono essere oggetto di transazione economica",
+      "Possono essere ereditati",
+      "Possono essere ceduti"
+    ],
+    "correct_answer": "Non possono essere oggetto di transazione economica"
+  },
+  {
+    "question": "Secondo la legge, in quali circostanze non è necessario Quando l'immagine viene utilizzata per scopi di intrattenimento pubblicoil consenso per pubblicare l'immagine di una persona?",
+    "id": "4cc8727b-e7d9-4763-9082-6cd646668cc9",
+    "answers": [
+      "Quando la riproduzione non è giustificata dalla notorietà o dalla carica pubblica della persona ritratta",
+      "Quando la riproduzione è giustificata dalla notorietà E dalla carica pubblica della persona ritratta",
+      "Quando la riproduzione è giustificata dalla notorietà o dalla carica pubblica della persona ritratta",
+      "Quando la riproduzione non è giustificata né dalla notorietà né dalla carica pubblica della persona ritratta"
+    ],
+    "correct_answer": "Quando la riproduzione è giustificata dalla notorietà o dalla carica pubblica della persona ritratta"
+  },
+  {
+    "question": "Qual è il diritto considerato il primo dei diritti inviolabili dell'uomo dalla Corte costituzionale italiana?",
+    "id": "a0477958-d13e-4df2-834e-ed46dc05b8c7",
+    "answers": [
+      "Diritto alla libertà di espressione",
+      "Diritto alla privacy",
+      "Diritto alla proprietà",
+      "Diritto alla vita"
+    ],
+    "correct_answer": "Diritto alla vita"
+  },
+  {
+    "question": "Quale azione si può intraprendere nel caso di contestazione del nome di una persona?",
+    "id": "a8a85287-040e-443b-aaeb-a5e0af8d77ef",
+    "answers": [
+      "Azione di reclamo all'uso esclusivo del proprio nome",
+      "Azione di risarcimento",
+      "Azione penale",
+      "Azione inibitoria"
+    ],
+    "correct_answer": "Azione di reclamo all'uso esclusivo del proprio nome"
   },
   {
     "question": "Qual è il principale conflitto che può emergere in campo economico in relazione al diritto alla riservatezza?",
+    "id": "b190ade5-5c57-4068-997f-f625f4dd006c",
     "answers": [
       "Il conflitto tra il diritto alla riservatezza e il diritto al lavoro",
       "Il conflitto tra il diritto alla riservatezza e il diritto all'informazione",
       "Il conflitto tra le leggi nazionali e quelle internazionali",
       "Il conflitto tra il diritto alla riservatezza e il diritto alla proprietà privata"
     ],
-    "correct_answer": "Il conflitto tra il diritto alla riservatezza e il diritto all'informazione",
-    "id": "7df05a15-c0c5-4a88-b3d5-87d719f5080b"
+    "correct_answer": "Il conflitto tra il diritto alla riservatezza e il diritto all'informazione"
   },
   {
-    "question": "Quale azione si può intraprendere nel caso di contestazione del nome di una persona?",
+    "question": "A quali diritti il principio di reciprocità non può essere opposto secondo la Costituzione italiana? (possibile domanda)",
+    "id": "b5d466b1-b57c-4db7-bcba-997434028c8c",
     "answers": [
-      "Azione di risarcimento",
-      "Azione di reclamo all'uso esclusivo del proprio nome",
-      "Azione inibitoria",
-      "Azione penale"
+      "Si applica solo ai diritti non fondamentali della persona",
+      "Si applica sia ai diritti fondamentali della persona che ai diritti non fondamentali della persona",
+      "Si applica anche ai diritti fondamentali della persona",
+      "Per lasciare margine di libertà ai diritti della persona"
     ],
-    "correct_answer": "Azione di reclamo all'uso esclusivo del proprio nome",
-    "id": "1ba7a01b-e7b8-4a28-88c9-1e7d3b2c9095"
+    "correct_answer": "Si applica anche ai diritti fondamentali della persona"
   },
   {
-    "question": "In quale articolo della Costituzione tedesca è contemplata esplicitamente la protezione dei dati:\r",
+    "question": "Qual è il problema principale derivante dall'esposizione dell'identità nel mondo virtuale?",
+    "id": "a15e8eea-6493-42ae-84bd-c5807f599a4f",
     "answers": [
-      "Articolo 8",
-      "Articolo 2 (1)",
-      "Articolo 10",
-      "Articolo 5"
+      "La necessità di aumentare la visibilità degli articoli online",
+      "L'obbligo di aggiornare regolarmente i contenuti web",
+      "Il diritto di chiunque a modificare articoli pubblicati da altri",
+      "Il rischio di lesione dei diritti personali da comportamenti illegali di terzi"
     ],
-    "correct_answer": "Articolo 2 (1)",
-    "id": "00d93b4b-70eb-4043-a967-198062ef7e3f"
+    "correct_answer": "Il rischio di lesione dei diritti personali da comportamenti illegali di terzi"
   },
   {
-    "question": "Cosa indica la Commissione per i diritti e i doveri relativi ad Internet a tutela del diritto all'identità personale?",
+    "question": "Chi è il soggetto designato come \"responsabile del trattamento\" secondo l'articolo 29?",
+    "id": "ab056ea4-ddc6-4606-9079-9fb22e21a8e5",
     "answers": [
-      "La possibilità di fornire solo dati strettamente necessari per adempimenti legali",
-      "L'obbligo di cessione di tutti i dati personali richiesti dai servizi online",
-      "Il divieto di uso di algoritmi e tecniche probabilistiche",
-      "La limitazione della libertà di costruire la propria personalità in Rete"
+      "Un soggetto esterno alla struttura del titolare",
+      "Un dipendente interno dell'azienda titolare del trattamento",
+      "Il titolare del trattamento",
+      "Un cliente dell'azienda titolare del trattamento"
     ],
-    "correct_answer": "La possibilità di fornire solo dati strettamente necessari per adempimenti legali",
-    "id": "80d7761e-b6d1-44c6-9c13-a6608b5fb261"
+    "correct_answer": "Un soggetto esterno alla struttura del titolare"
+  },
+  {
+    "question": "Perché è stato implementato il DPR 15 gennaio 2018 n 15? Risposta non sicura",
+    "id": "e87bc636-81f4-4325-93b5-939a85f358a4",
+    "answers": [
+      "Aumentare la sicurezza informatica",
+      "Regolamentare il trattamento dei dati personali per le finalità di polizia",
+      "Per proteggere i dati sensibili",
+      "Migliorare la trasparenza dei dati"
+    ],
+    "correct_answer": "Regolamentare il trattamento dei dati personali per le finalità di polizia"
+  },
+  {
+    "question": "Qual è la sanzione massima prevista dal GDPR per le aziende in caso di violazioni delle norme?",
+    "id": "4e673718-9483-4ecf-bd07-86fb44eb4660",
+    "answers": [
+      "2% del fatturato globale",
+      "10% del fatturato globale",
+      "4% del fatturato globale",
+      "1 milione di euro"
+    ],
+    "correct_answer": "4% del fatturato globale"
+  },
+  {
+    "question": "Qual è uno degli elementi richiesti per l'uso legittimo dell'immagine altrui?",
+    "id": "acba3af1-55ff-4610-bf34-6d2d0dfd182d",
+    "answers": [
+      "L'assenza di consenso dell'interessato",
+      "L'uso a scopo di lucro senza limitazioni",
+      "La modifica dell'immagine per renderla irriconoscibile",
+      "Interesse pubblico o sociale"
+    ],
+    "correct_answer": "Interesse pubblico o sociale"
   },
   {
     "question": "In quale campo giuridico è stato riconosciuto il diritto alla riservatezza in Italia?",
+    "id": "ddfb5d82-2337-426c-996a-40b126a87ee7",
     "answers": [
-      "Nel campo del diritto commerciale",
-      "Nel campo del diritto delle telecomunicazioni",
+      "Nel campo del diritto civile",
       "Nel campo del diritto penale",
-      "Nel campo del diritto civile"
+      "Nel campo del diritto commerciale",
+      "Nel campo del diritto delle telecomunicazioni"
     ],
-    "correct_answer": "Nel campo del diritto civile",
-    "id": "016a11f0-b89c-458a-82b3-db1628b1bbfd"
-  },
-  {
-    "question": "Quali sono i requisiti richiesti per designare un responsabile del trattamento?",
-    "answers": [
-      "Deve essere un dipendente del titolare",
-      "Deve essere una persona fisica",
-      "Deve essere un cittadino italiano",
-      "Deve possedere esperienza, capacità ed affidabilità nel campo della protezione dei dati personali"
-    ],
-    "correct_answer": "Deve possedere esperienza, capacità ed affidabilità nel campo della protezione dei dati personali",
-    "id": "38387d1e-d02c-4068-b056-68ed96be0f02"
+    "correct_answer": "Nel campo del diritto civile"
   },
   {
     "question": "Qual è l'importanza della protezione dei dati personali nell'economia digitale?",
+    "id": "9e94b945-ebf2-4fef-ab1f-3c151ffa400e",
     "answers": [
-      "Non è rilevante nelle relazioni sociali online.",
-      "Ha un ruolo minore nell'economia digitale.",
+      "Non è rilevante nelle relazioni sociali online",
       "Assicura l'autodeterminazione decisionale e il controllo sulla circolazione dei dati",
-      "Garantisce la libertà fisica delle persone."
+      "Ha un ruolo minore nell'economia digitale",
+      "Garantisce la libertà fisica delle persone"
     ],
-    "correct_answer": "Assicura l'autodeterminazione decisionale e il controllo sulla circolazione dei dati",
-    "id": "48fe4c0b-42a6-4196-a773-a2ed7a48da68"
+    "correct_answer": "Assicura l'autodeterminazione decisionale e il controllo sulla circolazione dei dati"
   },
   {
-    "question": "Qual è uno dei diritti introdotti dal GDPR per i cittadini in relazione ai loro dati personali?",
+    "question": "Principio generale per la conservazione:",
+    "id": "a80bd0d6-d429-4672-946b-cb7e02a05afb",
     "answers": [
-      "Il diritto di richiedere la cancellazione dei propri dati (diritto all'oblio)",
-      "Il diritto di impedire alle aziende di utilizzare i propri dati",
-      "Il diritto di ricevere una notifica ogni volta che i loro dati vengono utilizzati",
-      "Il diritto di accesso esclusivo ai propri dati"
+      "Devono essere distrutti",
+      "Devono essere archiviati per 10 anni",
+      "A fine indagine materiali sono consegnati al cliente",
+      "Possono essere utilizzati per future indagini"
     ],
-    "correct_answer": "Il diritto di richiedere la cancellazione dei propri dati (diritto all'oblio)",
-    "id": "b47a8acb-ed38-4ed6-85ae-a610477d4d83"
+    "correct_answer": "A fine indagine materiali sono consegnati al cliente"
   },
   {
-    "question": "Qual è il principale interesse sottolineato dall'art. 32 della Costituzione?",
+    "question": "Cosa prevede il principio di necessità del trattamento dei dati nel codice privacy?",
+    "id": "b25550e4-3679-4094-966b-4e2362b2d7a0",
     "answers": [
-      "Autonomia decisionale del medico",
-      "Diritto alla vita",
-      "Tutela della salute come diritto individuale e interesse collettivo",
-      "Diritto all'autopsia"
+      "La possibilità di trattare dati senza consenso",
+      "La protezione dei dati sensibili",
+      "L'obbligo di informare i cittadini sui dati trattati",
+      "L'obbligo di utilizzare dati personali solo quando strettamente necessario"
     ],
-    "correct_answer": "Tutela della salute come diritto individuale e interesse collettivo",
-    "id": "5b2639f8-8e75-4f2e-90f9-3064bf0f4b49"
+    "correct_answer": "L'obbligo di utilizzare dati personali solo quando strettamente necessario"
   },
   {
-    "question": "In quali circostanze un figlio nato fuori dal matrimonio può assumere il cognome del padre?\r\n",
+    "question": "Qual è uno degli svantaggi dell'approccio risk based nel GDPR",
+    "id": "1f3919f8-e5af-418b-9309-24b01c7edc94",
     "answers": [
-      "Solo se il padre lo riconosce prima della madre",
-      "In base alla decisione del giudice in base all'interesse del minore",
-      "Solo se il padre lo riconosce dopo la madre",
-      "Solo se il figlio è maggiorenne"
+      "Rende più difficili le contestazioni in caso di violazioni, considera più rischioso il trattamento dei dati dei minori rispetto agli adulti",
+      "Non fa alcuna distinzione tra il trattamento dei dati dei minori e degli adulti",
+      "Semplifica le contestazioni in caso di violazioni e riduce il livello di rischio per i dati dei minori",
+      "Rende il trattamento dei dati personali dei minori sempre meno regolamentato rispetto a quello degli adulti"
     ],
-    "correct_answer": "In base alla decisione del giudice in base all'interesse del minore",
-    "id": "cff4479c-c3e0-4277-9252-cff05519a332"
+    "correct_answer": "Rende più difficili le contestazioni in caso di violazioni, considera più rischioso il trattamento dei dati dei minori rispetto agli adulti"
   },
   {
-    "question": "Come è evoluta la concezione del diritto all'identità personale nel tempo?\r\n",
+    "question": "Come viene definito il diritto alla salute nell'ordinamento giuridico italiano?",
+    "id": "56d56422-a474-4786-85d6-65df3507cbf0",
     "answers": [
-      "È rimasto costantemente invariato nel suo significato",
+      "Come diritto solo all'integrità fisica",
+      "Come diritto a uno stato di benessere fisico e psicofisico",
+      "Come diritto solo all'integrità psicofisica",
+      "Come diritto a uno stato di benessere fisico"
+    ],
+    "correct_answer": "Come diritto a uno stato di benessere fisico e psicofisico"
+  },
+  {
+    "question": "L'atto di incarico deve menzionare in maniera specifica:",
+    "id": "3f45e29f-7b93-4b14-a526-41405737dd28",
+    "answers": [
+      "il reato perseguito",
+      "il ruolo privacy dell'investigatore",
+      "il diritto che si intende far valere in sede giudiziaria",
+      "il responsabile"
+    ],
+    "correct_answer": "il diritto che si intende far valere in sede giudiziaria"
+  },
+  {
+    "question": "Il data breach:",
+    "id": "a24412f8-4f29-4afa-9e0f-94a1ed7b8280",
+    "answers": [
+      "Deve essere sempre comunicato agli interessati",
+      "Deve essere comunicato al DPO che provvede alla risoluzione della relativa problematica",
+      "Non comporta alcun obbligo o onere per il titolare del trattamento",
+      "Deve essere comunicato al Garante Privacy entro 72 ore dall'evento a meno che non vi sia rischio per i dati personali"
+    ],
+    "correct_answer": "Deve essere comunicato al Garante Privacy entro 72 ore dall'evento a meno che non vi sia rischio per i dati personali"
+  },
+  {
+    "question": "Cosa stabilisce l'art. 5 del Codice Civile riguardo al corpo umano?",
+    "id": "515971b2-7cd8-433e-a20e-31d62c29fe8f",
+    "answers": [
+      "Vieta atti di disposizione contrari alla legge, all'ordine pubblico o al buon costume",
+      "Permette tutti gli atti di disposizione del proprio corpo, purché non siano a titolo gratuito",
+      "Consente qualsiasi atto di disposizione, senza limitazioni legate alla legge, all'ordine pubblico o al buon costume",
+      "Vieta esclusivamente gli atti che comportano un vantaggio economico per il disponente"
+    ],
+    "correct_answer": "Vieta atti di disposizione contrari alla legge, all'ordine pubblico o al buon costume"
+  },
+  {
+    "question": "L'investigatore privato con mini-licenza è:",
+    "id": "4fb8477f-f6a1-415d-b0fe-f836fecca6b7",
+    "answers": [
+      "titolare",
+      "incaricato",
+      "interessato",
+      "responsabile"
+    ],
+    "correct_answer": "incaricato"
+  },
+  {
+    "question": "Come si è evoluta la concezione del diritto all'identità personale nel tempo?",
+    "id": "1edb82c7-fe09-4eaf-8dfc-28763fd888ea",
+    "answers": [
       "È stato definitivamente abbandonato dalla giurisprudenza",
+      "È rimasto costantemente invariato nel suo significato",
       "Si è ampliato, includendo non solo l'immagine, ma anche i tratti caratteriali e ideologici della persona",
-      "si è legato in modo esclusivo all'immagine della persona"
+      "Si è legato in modo esclusivo all'immagine della persona"
     ],
-    "correct_answer": "Si è ampliato, includendo non solo l'immagine, ma anche i tratti caratteriali e ideologici della persona",
-    "id": "a45b5d5f-1431-4cc1-9058-04ba5ca06ad9"
+    "correct_answer": "Si è ampliato, includendo non solo l'immagine, ma anche i tratti caratteriali e ideologici della persona"
   },
   {
-    "question": "In base a quale criterio la legge italiana determina il cognome di un figlio nato nel matrimonio?\r\n",
+    "question": "Quali sono le tre forme di tutela esperibili innanzi al garante della protezione dei dati personali?",
+    "id": "048a37dc-b888-4d25-b2b4-a1201927cdd5",
     "answers": [
-      "Ordine alfabetico dei cognomi dei genitori",
-      "Cognome del padre",
-      "Cognome della madre",
-      "Scelta casuale"
+      "La denuncia, il reclamo e la richiesta di risarcimento",
+      "Il ricorso, la segnalazione e l'appello",
+      "Il reclamo, la petizione e la segnalazione",
+      "Il reclamo circostanziato, la segnalazione e il ricorso"
     ],
-    "correct_answer": "Cognome del padre",
-    "id": "4536a6b2-ca93-4b5d-b6b9-ffe952f68c16"
+    "correct_answer": "Il reclamo circostanziato, la segnalazione e il ricorso"
+  },
+  {
+    "question": "Il Regolamento generale per la protezione dei dati o GDPR fu applicato? (possibile domanda)",
+    "id": "e19564d5-d054-4a33-bbb0-a61c05649c7e",
+    "answers": [
+      "25 maggio 2018",
+      "7 aprile 2011",
+      "2 maggio 2016",
+      "17 gennaio 2019"
+    ],
+    "correct_answer": "25 maggio 2018"
+  },
+  {
+    "question": "Chi è la persona sottoposta a indagine?",
+    "id": "7ba41e71-2c96-4ee0-bb0b-ab8a44181df5",
+    "answers": [
+      "titolare",
+      "interessato",
+      "responsabile",
+      "DPO"
+    ],
+    "correct_answer": "interessato"
+  },
+  {
+    "question": "Perché in Italia è stato difficile implementare il diritto di privacy?",
+    "id": "c1aee4ab-6668-4385-b523-b760e7517409",
+    "answers": [
+      "Mancanza di interesse pubblico",
+      "Eccessiva burocrazia",
+      "Conflitto tra leggi nazionali e internazionali",
+      "Semplice ignoranza delle leggi"
+    ],
+    "correct_answer": "Conflitto tra leggi nazionali e internazionali"
   },
   {
     "question": "Cosa riguarda principalmente l'art. 2043 del Codice civile?",
+    "id": "0c4c5e4f-7f58-4fa7-b811-d296af8d14b2",
     "answers": [
       "Tutela della libertà di movimento",
-      "Azione inibitoria contro atti lesivi della persona",
-      "Responsabilità penale",
-      "Azione di risarcimento per equivalente del danno arrecato"
+      "Diritto alla privacy",
+      "Responsabilità civile per danni",
+      "Azione inibitoria contro atti lesivi della persona"
     ],
-    "correct_answer": "Azione inibitoria contro atti lesivi della persona",
-    "id": "4ef6121f-6205-4657-87ec-52dea691865e"
+    "correct_answer": "Azione inibitoria contro atti lesivi della persona"
   },
   {
-    "question": "Quando può essere concessa la modifica del proprio nome in Italia?\r\n",
+    "question": "Qualora l'interessato pubblichi di sua iniziativa i propri dati, quale diritto può essere esercitato?",
+    "id": "c96be667-c750-410f-a8b0-8d0923e3864a",
     "answers": [
-      "In qualsiasi momento a discrezione del richiedente",
-      "Con decreto del Prefetto per motivi gravi",
-      "Solo se il nome attuale è ridicolo o vergognoso",
-      "Solo se non si ha un nome di battesimo"
+      "il diritto alla portabilità",
+      "il diritto di accesso",
+      "il diritto all'oblio può essere sempre esercitato",
+      "il diritto di rettifica"
     ],
-    "correct_answer": "Con decreto del Prefetto per motivi gravi",
-    "id": "a19a10ca-9804-401d-b756-7154937b1274"
+    "correct_answer": "il diritto alla portabilità"
   },
   {
-    "question": "Qual è il ruolo del Titolare del trattamento dei dati personali secondo il codice della privacy?\r\n",
+    "question": "Qual è l'organo collegiale responsabile della protezione dei dati personali in Italia?",
+    "id": "16eea695-db0c-4a4e-8d7d-c7bf22e0aa44",
     "answers": [
-      "Il titolare non ha alcun ruolo specifico nel trattamento dei dati.",
-      "Il titolare è responsabile della sicurezza dei dati personali.",
-      "Il titolare è responsabile della consultazione dei dati personali.",
-      "Il titolare stabilisce le finalità e le modalità del trattamento dei dati."
-    ],
-    "correct_answer": "Il titolare stabilisce le finalità e le modalità del trattamento dei dati.",
-    "id": "b1b8886e-a3cf-4a6b-b359-d0d252587118"
-  },
-  {
-    "question": "Qual è uno dei principali obiettivi del Decreto Legislativo n. 101 del 10 agosto 2018?\r\n",
-    "answers": [
-      "Armonizzare la normativa nazionale con il regolamento europeo sulla protezione dei dati.",
-      "Limitare il consenso dei minori per i servizi online",
-      "Estendere il diritto alla privacy solo nel settore sanitario",
-      "Semplificare il trattamento dei dati personali per le grandi imprese"
-    ],
-    "correct_answer": "Armonizzare la normativa nazionale con il regolamento europeo sulla protezione dei dati.",
-    "id": "0c70de20-a3c5-4b3a-b78d-76dc267ba92c"
-  },
-  {
-    "question": "Quali basi giuridiche sono previste dal GDPR per il trattamento dei dati personali?\r\n",
-    "answers": [
-      "Solo il contratto con l'interessato",
-      "Solo il legittimo interesse del titolare",
-      "Solo il consenso dell'interessato",
-      "Diverse basi giuridiche, tra cui il consenso, il legittimo interesse e l'adempimento di un obbligo legale"
-    ],
-    "correct_answer": "Diverse basi giuridiche, tra cui il consenso, il legittimo interesse e l'adempimento di un obbligo legale",
-    "id": "edbe15bb-f484-4a57-acaf-83df6d5d3335"
-  },
-  {
-    "question": "Qual è la natura del diritto all'immagine?\r\n",
-    "answers": [
-      "Il diritto all'immagine è considerato un diritto esclusivamente patrimoniale",
-      "Il diritto all'immagine è completamente separato da altre componenti della personalità umana",
-      "Esistono varie interpretazioni, alcune lo collegano al diritto alla riservatezza altre all'identità personale",
-      "Il diritto all'immagine è inalienabile e non può essere oggetto di scambio"
-    ],
-    "correct_answer": "Esistono varie interpretazioni, alcune lo collegano al diritto alla riservatezza altre all'identità personale",
-    "id": "23cdee8d-3af6-4673-8013-604b05ca98ee"
-  },
-  {
-    "question": "Qual è la fonte giuridica primaria del diritto alla riservatezza?\r\n",
-    "answers": [
-      "Articolo 2 Costituzione Italiana",
-      "Convenzione di Nizza",
-      "Articolo 5 Codice civile",
-      "i decreti legislativi"
-    ],
-    "correct_answer": "Articolo 2 Costituzione Italiana",
-    "id": "25efb69e-9cce-4423-9ccf-9e75d4a64479"
-  },
-  {
-    "question": "In che cosa consiste il diritto all'identità personale, rispetto al diritto alla riservatezza?\r\n",
-    "answers": [
-      "Il diritto all'identità personale mira a evitare rappresentazioni false della personalità",
-      "Il diritto alla riservatezza riguarda solo la veridicità dei fatti attribuiti alla persona",
-      "Il diritto alla riservatezza è il diritto a non essere giudicati negativamente",
-      "Il diritto all'identità personale riguarda esclusivamente la vita privata"
-    ],
-    "correct_answer": "Il diritto all'identità personale mira a evitare rappresentazioni false della personalità",
-    "id": "ecd5e890-d8c9-4c56-b03f-4796960294bc"
-  },
-  {
-    "question": "Qual è il trattato europeo che prescrive il rispetto dei diritti della persona come principi generali del diritto comunitario?",
-    "answers": [
-      "Trattato sull'Unione europea",
-      "Trattato di Nizza ",
-      "Trattato di Roma",
-      "Trattato di Lisbona"
-    ],
-    "correct_answer": "Trattato sull'Unione europea",
-    "id": "fdf3b487-fbf1-4405-ba7f-360ea0470dae"
-  },
-  {
-    "question": "L'investigatore privato può avvalersi di altri investigatori:\r\n",
-    "answers": [
-      "solo se sono indicati nominalmente nell'atto di incarico",
-      "solo se non sono indicati nominalmente nell'atto di incarico",
-      "solo su richiesta dell'interessato",
-      "solo su richiesta del responsabile"
-    ],
-    "correct_answer": "solo se sono indicati nominalmente nell'atto di incarico",
-    "id": "916ee62a-ff34-4dcd-8a28-06e7648cb579"
-  },
-  {
-    "question": "Base giuridica del trattamento da parte dell'investigatore può essere:\r\n",
-    "answers": [
-      "tutela della sicurezza pubblica",
-      "consenso dell'interessato",
-      "esecuzione di pubblico potere",
-      "legittimo interesse del cliente"
-    ],
-    "correct_answer": "legittimo interesse del cliente",
-    "id": "ff44824e-41d0-485d-a872-dfa6ba59bf39"
-  },
-  {
-    "question": "In quale sentenza la Corte di Cassazione ha trattato il caso Caruso, riguardante la protezione dei diritti della personalità?\r\n",
-    "answers": [
-      "Sentenza n. 4487 del 1956",
-      "Sentenza n. 2129 del 27 maggio 1975",
-      "Sentenza n. 1212 del 1967",
-      "Sentenza n. 1001 del 1980"
-    ],
-    "correct_answer": "Sentenza n. 4487 del 1956",
-    "id": "053c2022-5d87-475f-a7dc-3c32da02c91f"
-  },
-  {
-    "question": "Dopo quando viene tutelato il diritto alla vita del nascituro secondo la legge italiana?\r\n",
-    "answers": [
-      "Dal concepimento",
-      "Dal quarto mese di gravidanza",
-      "Dal sesto mese di gravidanza",
-      "Dal nono mese di gravidanza"
-    ],
-    "correct_answer": "Dal concepimento",
-    "id": "45e454ef-cb90-4a17-9e40-f594db39a233"
-  },
-  {
-    "question": "Qual è il ruolo della corte di giustizia dell'unione europea riguardo ai diritti fondamentali della persona?",
-    "answers": [
-      "Li garantisce come principi generali del diritto comunitario",
-      "Li garantisce solo se sono specificamente previsti dalla legislazione europea",
-      "Non ha alcun ruolo nella loro tutela",
-      "Li applica solo in situazioni di emergenza"
-    ],
-    "correct_answer": "Li garantisce come principi generali del diritto comunitario",
-    "id": "a0ee1eec-9fbf-4545-9cc5-9321d687ba78"
-  },
-  {
-    "question": "Qual è la sanzione massima prevista dal GDPR per le aziende in caso di violazioni delle norme?\"\r\n",
-    "answers": [
-      "4% del fatturato globale",
-      "2% del fatturato globale",
-      "6% del fatturato globale",
-      "10% del fatturato globale"
-    ],
-    "correct_answer": "4% del fatturato globale",
-    "id": "48cbdfaa-265c-4729-b03a-78e0c9fddfc7"
-  },
-  {
-    "question": "In quale caso l'uso dell'immagine altrui è lecito senza consenso?\r\n",
-    "answers": [
-      "Quando l'immagine è stata ripresa in occasione di avvenimenti pubblici",
-      "Quando l'immagine viene utilizzata per scopi di intrattenimento pubblico",
-      "Quando l'immagine viene utilizzata per scopi commerciali senza alcun limite",
-      "Quando l'immagine è utilizzata da enti pubblici per finalità istituzionali"
-    ],
-    "correct_answer": "Quando l'immagine è stata ripresa in occasione di avvenimenti pubblici",
-    "id": "9e41664b-7810-49a2-8fa0-7ba982a99ba6"
-  },
-  {
-    "question": "Qual è la principale fonte di rischio per la riservatezza e l'identità personale nell'era delle nuove tecnologie?",
-    "answers": [
-      "Computer e banche dati",
-      "Telefoni cellulari",
-      "La stampa cartacea",
-      "I dispositivi di archiviazione esterni"
-    ],
-    "correct_answer": "Computer e banche dati",
-    "id": "fca9fa39-50bf-4ecd-b6b4-9fbaf7129a9b"
-  },
-  {
-    "question": "Quali sono gli effetti negativi della digitalizzazione sulla società?",
-    "answers": [
-      "Creazione di nuovi emarginati digitali",
-      "Miglioramento dell'accesso ai servizi online",
-      "Aumento della disuguaglianza sociale",
-      "Rischio di perdita della privacy"
-    ],
-    "correct_answer": "Creazione di nuovi emarginati digitali",
-    "id": "0dade924-e4f7-4f1a-9156-bdcb894d5d5f"
-  },
-  {
-    "question": "In che modo il diritto alla riservatezza è disciplinato nella normativa italiana?",
-    "answers": [
-      "È disciplinato da disposizioni sparse in vari codici e leggi speciali",
-      "È disciplinato in modo esaustivo da specifiche leggi sulla privacy",
-      "È garantito solo in relazione ai dati sensibili",
-      "È regolato unicamente dal Codice civile"
-    ],
-    "correct_answer": "È disciplinato da disposizioni sparse in vari codici e leggi speciali",
-    "id": "8190653f-c8dc-4fb1-ac1f-b11e4981bcd9"
-  },
-  {
-    "question": "Qualora l'interessato pubblichi di sua iniziativa i propri dati:\r",
-    "answers": [
-      "Il diritto alla portabilità può essere esercitato",
-      "Il diritto all'oblio può essere sempre esercitato",
-      "I dati diventano di pubblico dominio",
-      "L'interessato perde ogni diritto sui propri dati"
-    ],
-    "correct_answer": "Il diritto alla portabilità può essere esercitato",
-    "id": "9fd12b80-0d23-4bcc-a3cc-8b8577ec18f5"
-  },
-  {
-    "question": "Qual è il principio che si oppone alle concezioni del diritto alla salute basata sulla libertà individuale estrema?",
-    "answers": [
-      "principio di autonomia e di proprietà",
-      "principio di solidarietà sociale",
-      "principio di libertà individuale",
-      "principio di sicurezza nazionale"
-    ],
-    "correct_answer": "principio di solidarietà sociale",
-    "id": "d6ea3a35-d60b-4585-bc61-17f096a3e144"
-  },
-  {
-    "question": "Quali sono le lesioni del diritto al nome secondo l'articolo 7 del Codice civile?\r\n",
-    "answers": [
-      "Contestazione e usurpazione",
-      "Violazione della privacy e danno patrimoniale",
-      "Diffusione non autorizzata dell'immagine",
-      "Modifica senza consenso del nome in documenti ufficiali"
-    ],
-    "correct_answer": "Contestazione e usurpazione",
-    "id": "fb5b484e-b5c4-4c06-988c-ddfa4b34eefd"
-  },
-  {
-    "question": "In merito alla richiesta di tutela dei diritti di Umberto Veronesi, come sono andati i giudizi?\r\n",
-    "answers": [
-      "La richiesta di tutela è stata accolta sia in primo che in secondo grado",
-      "La richiesta di tutela è stata respinta in ogni grado di giudizio",
-      "La richiesta di tutela è stata accolta solo in primo grado",
-      "La richiesta di tutela è stata accolta solo in secondo grado"
-    ],
-    "correct_answer": "La richiesta di tutela è stata accolta sia in primo che in secondo grado",
-    "id": "ef7ef9c2-e362-4c1f-810c-dc271cee0afb"
-  },
-  {
-    "question": "Qual è l'organo collegiale responsabile della protezione dei dati personali in Italia?\r\n",
-    "answers": [
-      "Il Garante per la Privacy",
       "Il Ministero della Giustizia",
-      "Il Consiglio Nazionale delle Comunicazioni",
-      "L'Autorità per le Garanzie nelle Comunicazioni"
+      "Il Garante per la privacy",
+      "Il Consiglio di Stato",
+      "Il Parlamento Italiano"
     ],
-    "correct_answer": "Il Garante per la Privacy",
-    "id": "2754c530-153f-4b90-af2f-ce0e36f0a092"
+    "correct_answer": "Il Garante per la privacy"
   },
   {
-    "question": "Quali sono i principali diritti tutelati dall'articolo 595 del Codice penale italiano?",
+    "question": "In quale anno è stata sollevata la questione della privacy con l'aumento dell'automazione e delle banche dati?",
+    "id": "44d38217-26de-4f65-9ec3-5c965a5736f9",
     "answers": [
-      "Onore, decoro e reputazione",
-      " Onore, dignità e buon nome",
-      "Reputazione, immagine e onore",
-      "Onore, buona fede e decoro"
+      "1999",
+      "1980",
+      "1973",
+      "1985"
     ],
-    "correct_answer": "Onore, decoro e reputazione",
-    "id": "0a716aa3-445a-42a2-98d1-dd92bca3b70c"
+    "correct_answer": "1973"
   },
   {
-    "question": "Quando è stata proclamata la Carta dei diritti fondamentali dell'unione europea?",
+    "question": "Quando può essere concessa la modifica del proprio nome in Italia?",
+    "id": "4da7e492-8d50-490b-89e1-c578953f8e86",
     "answers": [
-      "7 dicembre 2000",
-      "10 novembre 1999",
-      "12 gennaio 2002",
-      "1° maggio 2001"
+      "Solo in caso di matrimonio",
+      "In qualsiasi momento",
+      "Solo per motivi di lavoro",
+      "Con il decreto del Prefetto per motivi gravi"
     ],
-    "correct_answer": "7 dicembre 2000",
-    "id": "e7801424-3ef5-4c47-9b3d-f42fc83ab3c4"
+    "correct_answer": "Con il decreto del Prefetto per motivi gravi"
   },
   {
-    "question": "Qual è il diritto considerato il primo dei diritti inviolabili dell'uomo della Corte costituzionale italiana?",
-    "answers": [
-      "Diritto alla vita",
-      "Diritto alla libertà personale",
-      "Diritto all'autodeterminazione",
-      "Diritto alla dignità"
-    ],
-    "correct_answer": "Diritto alla vita",
-    "id": "d2fb8aad-d0f1-4b6d-b123-9de5973397db"
-  },
-  {
-    "question": "Cosa prevede il principio di necessità del trattamento dei dati nel codice privacy?\r\n",
-    "answers": [
-      "L'obbligo di utilizzare dati personali solo quando strettamente necessario",
-      "Il trattamento dei dati deve essere effettuato solo con il consenso esplicito dell'interessato",
-      "I dati devono essere trattati solo per scopi commerciali e pubblicitari",
-      "Il trattamento dei dati è permesso senza limiti di tempo, purché avvenga in modo trasparente"
-    ],
-    "correct_answer": "L'obbligo di utilizzare dati personali solo quando strettamente necessario",
-    "id": "234d00b1-cace-4655-ba39-5f358db9c883"
-  },
-  {
-    "question": "Qual è una delle cause dell'evoluzione della nozione di privacy?\r\n",
-    "answers": [
-      "L'evoluzione tecnologica e la diffusione dei contenuti digitali in rete",
-      "L'adozione di nuove leggi sulla proprietà intellettuale",
-      "L'introduzione di trattamenti dati meno rischiosi per le persone",
-      "Il legittimo interesse del titolare nel trattamento dei dati"
-    ],
-    "correct_answer": "L'evoluzione tecnologica e la diffusione dei contenuti digitali in rete",
-    "id": "d421b8f6-8bfb-4b15-9cb4-45ebfbdd8aaa"
-  },
-  {
-    "question": "Come si sposta il focus della normativa con l'introduzione del GDPR?\r\n",
-    "answers": [
-      "Dalla protezione dell'interessato alla responsabilità del titolare e dei responsabili del trattamento",
-      "Dalla protezione dei dati personali alla libertà di circolazione delle informazioni",
-      "Dalla responsabilità del titolare alla protezione dei diritti economici",
-      "Dalla protezione dei dati alla promozione della trasparenza nelle comunicazioni"
-    ],
-    "correct_answer": "Dalla protezione dell'interessato alla responsabilità del titolare e dei responsabili del trattamento",
-    "id": "b08399db-8fcb-4565-b0b4-52336d97f091"
-  },
-  {
-    "question": "In base al principio di autodeterminazione, quando possono essere previsti accertamenti e trattamenti sanitari obbligatori?\r\n",
-    "answers": [
-      "Solo nel rispetto della dignità della persona e dei diritti civili e politici",
-      "Solo in situazioni di emergenza sanitaria",
-      "Quando vi è un interesse pubblico prevalente",
-      "Quando è necessario per la protezione della salute pubblica"
-    ],
-    "correct_answer": "Solo nel rispetto della dignità della persona e dei diritti civili e politici",
-    "id": "f6c5cf44-d64e-4017-ada0-5f1468f034a6"
-  },
-  {
-    "question": "Qual è l'obiettivo principale del GDPR?\r\n",
-    "answers": [
-      "Aumentare la fiducia dei cittadini nella società digitale",
-      "Favorire la libera circolazione dei dati personali",
-      "Limitare l'accesso ai dati personali",
-      "Garantire il diritto di proprietà intellettuale sui dati"
-    ],
-    "correct_answer": "Aumentare la fiducia dei cittadini nella società digitale",
-    "id": "0f770de0-925d-47cc-ace3-92820f5176fc"
-  },
-  {
-    "question": "Diritti fondamentali:\r\n",
-    "answers": [
-      "Sono legati strettamente alla persona",
-      "Sono sempre alienabili",
-      "Possono essere trasferiti ad altri soggetti",
-      "Possono essere valutati economicamente"
-    ],
-    "correct_answer": "Sono legati strettamente alla persona",
-    "id": "045ba0d2-8b75-42c6-a84e-e7efea097bd2"
-  },
-  {
-    "question": "Perché è stato implementato il DPR 15 gennaio 2018 n.15: \r\n",
-    "answers": [
-      "Regolamentare il trattamento dei dati personali per le finalità di polizia",
-      "Promuovere l'uso dei dati personali per finalità commerciali",
-      "Garantire l'accesso libero ai dati personali da parte delle forze di sicurezza",
-      "Stabilire un sistema di controllo sui dati sensibili per proteggere la sicurezza nazionale"
-    ],
-    "correct_answer": "Regolamentare il trattamento dei dati personali per le finalità di polizia",
-    "id": "e7fe103a-a395-4dda-8ab9-5381ac321326"
-  },
-  {
-    "question": "Cosa prevede il principio della trasparenza secondo il GDPR? \r\n",
-    "answers": [
-      "La documentazione degli scopi del trattamento",
-      "La comunicazione ai cittadini sulla possibilità di cedere i propri dati a terzi",
-      "La garanzia che i dati non vengano mai modificati senza il consenso dell'interessato",
-      "L'obbligo di informare l'interessato solo in caso di violazione dei dati"
-    ],
-    "correct_answer": "La documentazione degli scopi del trattamento",
-    "id": "460abbd8-8774-4c94-923b-f431a10344f3"
-  },
-  {
-    "question": "Cosa significa che i diritti della personalità sono indisponibili? \r\n",
-    "answers": [
-      "Non possono essere oggetto di transazione economica",
-      "Non possono essere ceduti a terzi per motivi commerciali",
-      "Possono essere trasferiti solo con atto notarile",
-      "Possono essere alienati solo in situazioni di emergenza"
-    ],
-    "correct_answer": "Non possono essere oggetto di transazione economica",
-    "id": "5cb35d10-82b7-4a90-877c-50f2ee07e830"
-  },
-  {
-    "question": "Cosa caratterizza i diritti non patrimoniali?\r\n",
-    "answers": [
-      "Sono legati strettamente alla persona",
-      "Possono essere trasferiti a terzi a scopi economici",
-      "Sono suscettibili di valutazione economica",
-      "Possono essere oggetto di trattative commerciali"
-    ],
-    "correct_answer": "Sono legati strettamente alla persona",
-    "id": "08280283-a194-456b-a736-44780650a7e0"
-  },
-  {
-    "question": "Qual è un esempio di diritto patrimoniale?\r\n",
-    "answers": [
-      "Proprietà di una casa",
-      "Diritto d'autore",
-      "Diritto di usufrutto",
-      "Diritto alla privacy"
-    ],
-    "correct_answer": "Proprietà di una casa",
-    "id": "a6cda1f6-3f92-4702-806f-445e2a57c5a0"
-  },
-  {
-    "question": "Qual è l'obbligo principale imposto dal decreto sicurezza bis (n. 138 del 14 giugno 2019) in relazione al codice della privacy?",
-    "answers": [
-      "Regolamentare il trattamento dei dati personali per le finalità di polizia",
-      "Imporre restrizioni sulla circolazione dei dati personali tra enti pubblici ",
-      "Consentire l'accesso illimitato ai dati personali da parte delle autorità governative",
-      "Stabilire l'obbligo di conservazione dei dati per un periodo illimitato"
-    ],
-    "correct_answer": "Regolamentare il trattamento dei dati personali per le finalità di polizia",
-    "id": "6b170897-6f1d-40a7-a18f-5287b70fbece"
-  },
-  {
-    "question": "Qual è stata la causa principale del ritardo nel riconoscimento del diritto alla riservatezza in Italia?\r\n",
+    "question": "Qual è stata la causa principale del ritardo nel riconoscimento del diritto alla riservatezza in Italia?",
+    "id": "671c1eae-791f-4029-921b-3a32b4fc5105",
     "answers": [
       "Il principio della tipicità dei diritti della personalità",
-      "La mancanza di una normativa specifica sui dati personali ",
-      "La prevalenza del diritto alla libertà di informazione",
-      "Il rifiuto di riconoscere i dati personali come parte del diritto alla privacy"
+      "La mancanza di leggi specifiche",
+      "L'ignoranza della popolazione",
+      "La resistenza delle istituzioni"
     ],
-    "correct_answer": "Il principio della tipicità dei diritti della personalità",
-    "id": "f9813e11-9883-4e01-8eb1-c9027d509e26"
+    "correct_answer": "Il principio della tipicità dei diritti della personalità"
   },
   {
-    "question": "Cosa distingue l'incaricato del trattamento dal responsabile del trattamento?\r\n",
+    "question": "Quali giuristi hanno pubblicato sulla rivista Harvard Law Review un articolo che ha introdotto per la prima volta il concetto di diritto alla privacy?",
+    "id": "288006a4-16d8-49d1-9f75-dbc38dad855b",
     "answers": [
-      "L'incaricato deve operare sotto la diretta autorità del titolare o del responsabile",
-      "L'incaricato ha il potere di prendere decisioni autonome sul trattamento dei dati",
-      "Il responsabile del trattamento non è obbligato a firmare un contratto di incarico",
-      "L'incaricato può trattare i dati senza limiti di tempo o di scopo"
+      "Hans Kelsen",
+      "Samuel Warren e Louis Brandeis",
+      "Rudolf von Jhering",
+      "Cesare Beccaria"
     ],
-    "correct_answer": "L'incaricato deve operare sotto la diretta autorità del titolare o del responsabile",
-    "id": "2c4ca5ea-ecf8-4914-977b-09f734e07c0f"
-  },
-  {
-    "question": "Quali sono le tre forme di tutela esperibili innanzi al Garante per la protezione dei dati personali? \r\n",
-    "answers": [
-      "Il reclamo circostanziato, la segnalazione e il ricorso.",
-      "L'azione civile, la diffida e la conciliazione",
-      "Il ricorso amministrativo, la denuncia e la richiesta di risarcimento",
-      "L'esposto, la richiesta di accesso ai dati e la conciliazione"
-    ],
-    "correct_answer": "Il reclamo circostanziato, la segnalazione e il ricorso.",
-    "id": "597f3899-55cd-4e59-a9b5-e8be0111c0c8"
-  },
-  {
-    "question": "Perché il GDPR non richiede un recepimento da parte degli Stati membri dell'Unione Europea? \r\n",
-    "answers": [
-      "Perché Trattandosi di un regolamento, non necessita di recepimento da parte degli Stati - Perché è entrato in vigore automaticamente",
-      "Perché il regolamento è vincolante solo per le autorità pubbliche e non per i privati",
-      "Perché si applica solo ai paesi che hanno aderito successivamente all'Unione Europea",
-      "Perché il regolamento è direttamente applicabile in tutti gli Stati membri senza necessità di modifiche legislative nazionali"
-    ],
-    "correct_answer": "Perché Trattandosi di un regolamento, non necessita di recepimento da parte degli Stati - Perché è entrato in vigore automaticamente",
-    "id": "2aec4db5-0ff5-467a-af0a-c5a1e13d8c85"
-  },
-  {
-    "question": "Qual è il principio fondamentale per cui una notizia lesiva può essere pubblicata?\r\n",
-    "answers": [
-      "La verità della notizia",
-      "L'assenso dell'avente diritto",
-      "L'interesse pubblico della notizia",
-      "La tutela della libertà di espressione"
-    ],
-    "correct_answer": "La verità della notizia",
-    "id": "87dc348c-e38d-4a31-9563-71cac64c4146"
-  },
-  {
-    "question": "Cosa prevede il GDPR in relazione al trattamento dei dati personali?",
-    "answers": [
-      "Stabilisce misure di garanzia per il loro trattamento",
-      "Richiede un consenso specifico per il trattamento",
-      "Consente il trattamento dei dati senza limiti di tempo",
-      "Non impone alcun obbligo per le aziende che trattano dati personali"
-    ],
-    "correct_answer": "Stabilisce misure di garanzia per il loro trattamento",
-    "id": "b2d6f62b-531c-42ee-a368-04ec11ae5596"
-  },
-  {
-    "question": "Cosa prevede il diritto all'immagine in relazione al suo utilizzo?",
-    "answers": [
-      "Il diritto all'immagine può essere sfruttato anche a titolo oneroso",
-      "Il diritto all'immagine non può mai essere sfruttato a fini economici",
-      "Il diritto all'immagine è esclusivamente un diritto patrimoniale",
-      "Il diritto all'immagine è limitato solo alle rappresentazioni in ambito pubblico"
-    ],
-    "correct_answer": "Il diritto all'immagine può essere sfruttato anche a titolo oneroso",
-    "id": "fe2af933-988a-458d-a903-f972a7db008e"
-  },
-  {
-    "question": "Quali sono i principali ordinamenti giuridici che, in relazione al diritto d'autore, si basano sul sistema del \"droit d'auteur\"?",
-    "answers": [
-      "Francese, tedesca, italiana",
-      "Francese",
-      "Tedesca, italiana, spagnola",
-      "Italiana, portoghese, francese"
-    ],
-    "correct_answer": "Francese, tedesca, italiana",
-    "id": "04b6ca99-049d-45e4-85b5-bc566ba6db24"
-  },
-  {
-    "question": "A quale ambito si applica il GDPR?",
-    "answers": [
-      "Si applica anche ai diritti fondamentali della persona",
-      "Si applica solo ai diritti non fondamentali della persona",
-      "Si applica esclusivamente ai diritti patrimoniali",
-      "Si applica solo ai diritti economici e commerciali"
-    ],
-    "correct_answer": "Si applica anche ai diritti fondamentali della persona",
-    "id": "2d76679c-b851-493f-9eaf-5b136807167e"
-  },
-  {
-    "question": "Qual è il regolamento europeo che stabilisce le norme per l'identificazione elettronica e i servizi fiduciari per le transazioni elettroniche nel mercato interno?",
-    "answers": [
-      "Regolamento UE n. 910/2014",
-      "Regolamento UE n. 128/2016",
-      "Regolamento UE n. 204/2018",
-      "Regolamento UE n. 1200/2015"
-    ],
-    "correct_answer": "Regolamento UE n. 910/2014",
-    "id": "0f99a1c3-d215-45a7-bd94-f14e1c32d658"
-  },
-  {
-    "question": "Quali sono i principi fondamentali che giustificano la pubblicazione di una notizia lesiva per la reputazione di una persona?",
-    "answers": [
-      "Corrispondenza alla verità, interesse pubblico, correttezza formale",
-      "Interesse pubblico, continenza, corrispondenza alla verità",
-      "Veridicità, rispetto della persona, interesse personale",
-      " Pubblicazione per scopi giornalistici, correttezza formale, pubblica utilità"
-    ],
-    "correct_answer": "Corrispondenza alla verità, interesse pubblico, correttezza formale",
-    "id": "3fadbaa8-6e00-47df-a567-96defbc1968f"
-  },
-  {
-    "question": "Quali sono i principi fondamentali previsti dal GDPR in relazione al trattamento dei dati personali?",
-    "answers": [
-      "Principio di necessità del trattamento e principio di raccolta illimitata",
-      "Principio di protezione dei dati personali e principio di pubblicazione obbligatoria",
-      "Principio di minimizzazione dei dati e principio di trasparenza",
-      "Principio di esattezza dei dati e principio di rettifica"
-    ],
-    "correct_answer": "Principio di necessità del trattamento e principio di raccolta illimitata",
-    "id": "9cf7913c-93c2-4f90-97a7-1edbea2dbd15"
-  },
-  {
-    "question": "Qual è la data in cui è stato applicato il Regolamento (UE) 2016/679 (GDPR)?",
-    "answers": [
-      "25 maggio 2018",
-      "24 maggio 2016",
-      "4 maggio 2016",
-      "16 dicembre 1966"
-    ],
-    "correct_answer": "25 maggio 2018",
-    "id": "fe3a2f42-44d9-4af7-a96c-5a7ccffed4d4"
-  },
-  {
-    "question": "Quali sono i principali destinatari del GDPR?",
-    "answers": [
-      "Solo alle persone fisiche",
-      "A tutti i titolari e responsabili del trattamento stabiliti nell'Unione Europea ",
-      "Solo alle aziende che trattano dati sensibili",
-      "Solo agli enti pubblici"
-    ],
-    "correct_answer": "A tutti i titolari e responsabili del trattamento stabiliti nell'Unione Europea ",
-    "id": "9f95da15-669f-490c-a51b-1b3bb0e48920"
-  },
-  {
-    "question": " Qual è la finalità del principio di minimizzazione dei dati nel GDPR?",
-    "answers": [
-      " Raccogliere dati in modo da permettere una valutazione economica",
-      "Garantire la raccolta illimitata di dati",
-      "Raccogliere solo i dati strettamente necessari per il trattamento",
-      "Limitare l'accesso ai dati personali"
-    ],
-    "correct_answer": "Raccogliere solo i dati strettamente necessari per il trattamento",
-    "id": "8b7bd623-849c-4a21-80d0-431634a71929"
-  },
-  {
-    "question": "In quale ambito si applicano le misure di protezione dei dati più stringenti, secondo il GDPR?",
-    "answers": [
-      "Settore industriale",
-      "Settore educativo",
-      "Settore finanziario",
-      "Settore sanitario"
-    ],
-    "correct_answer": "Settore sanitario",
-    "id": "8e6f8872-4929-42e2-a311-8320b276152f"
-  },
-  {
-    "question": "Qual è il principale conflitto che può emergere tra il diritto all'immagine e altre normative?",
-    "answers": [
-      " Il diritto all'immagine è sempre vincolato dal consenso scritto",
-      "Il diritto all'immagine può essere utilizzato solo per scopi educativi",
-      "Il diritto all'immagine può essere sfruttato anche a titolo oneroso ",
-      " Il diritto all'immagine è sempre subordinato al diritto alla privacy"
-    ],
-    "correct_answer": "Il diritto all'immagine può essere sfruttato anche a titolo oneroso ",
-    "id": "c437d71c-9267-4da4-b45c-a9cd0f62802e"
-  },
-  {
-    "question": "Qual è l'interpretazione prevalente del concetto di “privacy” nel contesto legale?",
-    "answers": [
-      "Esistono varie interpretazioni, alcune lo collegano al diritto alla riservatezza, altre all'identità personale",
-      "È esclusivamente un diritto alla protezione dei dati personali",
-      "È solo un diritto legato alla riservatezza in ambito lavorativo",
-      "È un diritto che riguarda esclusivamente la protezione della vita privata"
-    ],
-    "correct_answer": "Esistono varie interpretazioni, alcune lo collegano al diritto alla riservatezza, altre all'identità personale",
-    "id": "0062982f-7cbf-424b-83db-d0bd1e9c4cce"
-  },
-  {
-    "question": "Qual è l'effetto della revoca del consenso al trattamento dei dati personali?",
-    "answers": [
-      "La revoca è efficace solo se comunicata tramite un avviso formale",
-      "Il consenso revocato non ha alcuna efficacia legale",
-      "La revoca del consenso non ha alcun effetto sul trattamento dei dati",
-      "Il consenso può essere revocato in qualsiasi momento, anche se formalmente concesso in un contratto"
-    ],
-    "correct_answer": "Il consenso può essere revocato in qualsiasi momento, anche se formalmente concesso in un contratto",
-    "id": "64c31aaf-3225-4f41-b9a7-dfd30e9ee8b5"
-  },
-  {
-    "question": "Quale tra le seguenti affermazioni riguardo il trattamento dei dati personali è corretta secondo il GDPR?",
-    "answers": [
-      "Il trattamento deve essere effettuato in modo lecito, corretto e trasparente rispetto agli interessati",
-      "La raccolta dei dati deve essere illimitata per garantire la loro integrità",
-      "Il trattamento deve essere fatto solo per scopi legati alla proprietà intellettuale",
-      "I dati personali possono essere trattati solo da soggetti pubblici"
-    ],
-    "correct_answer": "Il trattamento deve essere effettuato in modo lecito, corretto e trasparente rispetto agli interessati",
-    "id": "f7303873-d19c-420f-b6c5-642e2fc45c2c"
-  },
-  {
-    "question": "La persona sottoposta a indagine è:",
-    "answers": [
-      "titolare",
-      "responsabile",
-      "DPO",
-      "interessato"
-    ],
-    "correct_answer": "interessato",
-    "id": "f8419831-ce8f-4d16-a351-9c32f1ca80e3"
-  },
-  {
-    "question": "L'atto di incarico deve menzionare in maniera specifica",
-    "answers": [
-      "il diritto che si intende far valere in sede giudiziaria",
-      "il ruolo privacy dell'investigatore",
-      "il reato perseguito",
-      "il responsabile"
-    ],
-    "correct_answer": "il diritto che si intende far valere in sede giudiziaria",
-    "id": "cd1fd6b8-cb28-4009-b9f7-fb34a115d79d"
+    "correct_answer": "Samuel Warren e Louis Brandeis"
   },
   {
     "question": "L'informativa all'interessato deve essere fornita:",
+    "id": "9f4db34f-9fc9-4a22-8917-2ff6dba70035",
     "answers": [
       "sempre",
       "mai",
       "salvo che rischi di pregiudicare gravemente l'attività investigativa",
       "quando serve per le finalità di trattamento"
     ],
-    "correct_answer": "salvo che rischi di pregiudicare gravemente l'attività investigativa",
-    "id": "477f4eb6-d375-4d66-b7f9-8f21f753aac2"
+    "correct_answer": "salvo che rischi di pregiudicare gravemente l'attività investigativa"
   },
   {
-    "question": "L'investigatore munito di licenza, per incarichi in altre città è:",
+    "question": "Qual è il principale interesse sottolineato dall'art. 32 della Costituzione?",
+    "id": "1d7d3033-0ddd-4197-a76f-d5807a74cda4",
     "answers": [
-      "incaricato",
-      "interessato",
-      "responsabile",
-      "titolare"
+      "Diritto alla vita",
+      "Diritto all'autopsia",
+      "Autonomia decisionale del medico",
+      "Tutela della salute come diritto individuale e interesse collettivo"
     ],
-    "correct_answer": "responsabile",
-    "id": "dd142a4d-a8ac-4544-b391-777a2c0b5d6b"
+    "correct_answer": "Tutela della salute come diritto individuale e interesse collettivo"
   },
   {
-    "question": "L'investigatore privato con mini-licenza è:",
+    "question": "Quali sono i requisiti richiesti per designare un responsabile del trattamento?",
+    "id": "add21462-ef3a-456a-96cb-bea212e8d438",
     "answers": [
-      "incaricato",
-      "interessato",
-      "titolare",
-      "responsabile"
+      "Deve possedere esperienza, capacità ed affidabilità nel campo della protezione dei dati personali",
+      "Deve essere una persona fisica",
+      "Deve essere un dipendente del titolare",
+      "Deve essere un cittadino italiano"
     ],
-    "correct_answer": "incaricato",
-    "id": "46ba5a3b-6ec2-4e87-8721-f03ef37ef84b"
+    "correct_answer": "Deve possedere esperienza, capacità ed affidabilità nel campo della protezione dei dati personali"
   },
   {
-    "question": "Il collaboratore per incarichi investigativi elementari è:",
+    "question": "Qual è uno dei diritti introdotti dal GDPR per i cittadini in relazione ai loro dati personali?",
+    "id": "60773325-9c77-4c0c-a591-28a2915b641a",
     "answers": [
-      "responsabile",
-      "interessato",
-      "titolare",
-      "incaricato"
+      "Il diritto di ricevere una notifica ogni volta che i loro dati vengono utilizzati",
+      "Il diritto di richiedere la cancellazione dei propri dati (diritto all'oblio)",
+      "Il diritto di impedire alle aziende di utilizzare i propri dati",
+      "Il diritto di accesso esclusivo ai propri dati"
     ],
-    "correct_answer": "incaricato",
-    "id": "a5434071-093f-42b1-a76c-1a5ab4bf455c"
+    "correct_answer": "Il diritto di richiedere la cancellazione dei propri dati (diritto all'oblio)"
   },
   {
-    "question": "Principio generale per la conservazione",
+    "question": "Qual è la principale funzione del Garante per la protezione dei dati personali?",
+    "id": "f78fc45e-5491-4d4a-946c-74b0dc608384",
     "answers": [
-      "a fine indagine i materiali sono consegnati al cliente",
-      "i dati sono conservati per 10 anni",
-      "a fine indagine i materiali sono distrutti",
-      "i dati sono cancellati immediatamente"
+      "Promuovere l'uso dei dati",
+      "Regolare il mercato dei dati",
+      "Proteggere i dati sensibili dei cittadini",
+      "Sanzionare le aziende"
     ],
-    "correct_answer": "a fine indagine i materiali sono consegnati al cliente",
-    "id": "24e4ddf2-b66e-4ae0-96d5-f9fa4c54966f"
+    "correct_answer": "Proteggere i dati sensibili dei cittadini"
   },
   {
-    "question": "II trattamento dei dati relativi a reati o condanne penali o misure di sicurezza connesse:",
+    "question": "In che modo è stato trattato il caso del medico oncologo Veronesi dalla giurisprudenza?",
+    "id": "9738b3a8-0887-4bb4-ba88-8d8586f6ba8d",
     "answers": [
-      "necessita di autorizzazione del Garante",
-      "non può mai avvenire",
-      "è consentito nei casi previsti da norme riguardanti le investigazioni",
-      "è sempre consentito"
+      "La richiesta di tutela è stata accolta in primo grado ma non in secondo grado",
+      "La richiesta di tutela è stata respinta in ogni grado di giudizio",
+      "La richiesta di tutela è stata accolta in secondo grado",
+      "La richiesta di tutela è stata accolta sia in primo che in secondo grado"
     ],
-    "correct_answer": "è consentito nei casi previsti da norme riguardanti le investigazioni",
-    "id": "39b997fa-0450-4858-8fa2-9d89c480a24e"
+    "correct_answer": "La richiesta di tutela è stata accolta sia in primo che in secondo grado"
   },
   {
-    "question": "Quale ambito economico entra facilmente in contrasto con il diritto alla privacy?",
+    "question": "In quali circostanze un figlio nato fuori dal matrimonio può assumere il cognome del padre?",
+    "id": "d74bd2c8-b8fe-4407-b3fa-f3d54bf026a9",
     "answers": [
-      "Il conflitto tra il diritto alla riservatezza e il diritto all'informazione",
-      "Il diritto alla proprietà intellettuale",
-      "Il diritto alla concorrenza leale",
-      "Il diritto alla libertà di espressione"
+      "In base alla decisione del giudice in base all'interesse del minore",
+      "Solo se il padre lo riconosce dopo la madre",
+      "Solo se il padre lo riconosce prima della madre",
+      "Solo se il figlio è maggiorenne"
     ],
-    "correct_answer": "Il conflitto tra il diritto alla riservatezza e il diritto all'informazione",
-    "id": "6bca9a15-a8c0-46f5-a047-a9eb322690a4"
+    "correct_answer": "In base alla decisione del giudice in base all'interesse del minore"
   },
   {
-    "question": "Obiettivo della cooperazione è:",
+    "question": "Chi è il soggetto designato come responsabile del trattamento secondo l'articolo 29?",
+    "id": "0dde0700-fc79-4f1b-86c7-68fd9a7b8c32",
     "answers": [
-      "Raggiungere un accordo tra autorità capofila e autorità interessate",
-      "Migliorare la trasparenza tra i soggetti coinvolti",
-      "Garantire la protezione esclusiva dei dati personali",
-      "Ridurre il numero di conflitti tra autorità nazionali e internazionali"
+      "Il Responsabile della sicurezza",
+      "Il Titolare del trattamento",
+      "Il Garante della privacy",
+      "Il Consulente legale"
     ],
-    "correct_answer": "Raggiungere un accordo tra autorità capofila e autorità interessate",
-    "id": "bf685bdb-61c9-4b09-85fb-8f91c0d9eb36"
+    "correct_answer": "Il Titolare del trattamento"
   },
   {
-    "question": "Qual è un esempio di diritto della personalità?",
+    "question": "Quali sono gli effetti negativi della digitalizzazione:",
+    "id": "80a383c9-33e4-4ba8-9abc-2f5f5c5fc972",
     "answers": [
-      "Diritto di voto",
-      "Diritto alla privacy",
-      "Diritto alla proprietà",
-      "Diritto all'assistenza sanitaria"
+      "Creazione di nuovi emarginati digitali",
+      "Miglioramento dell'accesso ai servizi online",
+      "Aumento della privacy",
+      "Riduzione della burocrazia"
     ],
-    "correct_answer": "Diritto di voto",
-    "id": "bc9b7212-8c94-4f5e-a64a-795b87ca1235"
+    "correct_answer": "Creazione di nuovi emarginati digitali"
   },
   {
-    "question": "Quando è entrato in vigore il Regolamento Generale sulla Protezione dei Dati (GDPR)?",
+    "question": "Qual è il ruolo del Titolare del trattamento dei dati personali secondo il codice della privacy?",
+    "id": "5f6467b2-7dff-4690-b5cd-c91be8c0bbf9",
     "answers": [
-      "Il 24 maggio 2016",
-      "Il 25 maggio 2018",
-      "Il 1° gennaio 2017",
-      "Il 15 giugno 2017"
+      "Il titolare è responsabile della sicurezza dei dati personali",
+      "Il titolare stabilisce le finalità e le modalità del trattamento dei dati",
+      "Il titolare non ha alcun ruolo specifico nel trattamento dei dati",
+      "Il titolare è responsabile della consultazione dei dati personali"
     ],
-    "correct_answer": "Il 24 maggio 2016",
-    "id": "383c8257-68a1-4a65-9393-2644b6c29564"
+    "correct_answer": "Il titolare stabilisce le finalità e le modalità del trattamento dei dati"
   },
   {
-    "question": "Qual è la concezione del diritto alla salute nella Costituzione Italiana?",
+    "question": "In che cosa consiste il diritto all'identità personale, rispetto al diritto alla riservatezza?",
+    "id": "2f8d2a4d-58b4-4824-88c2-eb3083e5ebfa",
     "answers": [
-      "Come diritto a uno stato di benessere fisico e psicofisico",
-      "Come diritto esclusivamente alla cura delle malattie",
-      "Come diritto limitato alla protezione della salute mentale",
-      "Come diritto esclusivamente alla protezione fisica contro le malattie"
+      "Il diritto alla riservatezza è il diritto a non essere giudicati negativamente",
+      "Il diritto alla riservatezza riguarda solo la veridicità dei fatti attribuiti alla persona",
+      "Il diritto all'identità personale mira a evitare rappresentazioni false della personalità",
+      "Il diritto all'identità è un diritto esclusivamente patrimoniale"
     ],
-    "correct_answer": "Come diritto a uno stato di benessere fisico e psicofisico",
-    "id": "ecf239e7-2229-49d7-9298-57aac8de5224"
+    "correct_answer": "Il diritto all'identità personale mira a evitare rappresentazioni false della personalità"
   },
   {
-    "question": "Secondo il Regolamento (UE) 2016/679 (GDPR) e la legislazione italiana sulla privacy, quale delle seguenti definizioni corrisponde a \"dato personale\"?",
+    "question": "Il data breach:",
+    "id": "f5e495aa-9d79-42eb-a36e-d2a427279c9a",
     "answers": [
-      "Qualsiasi informazione relativa a una persona fisica identificabile, anche indirettamente",
-      "Solo le informazioni relative a una persona giuridica",
-      "Dati relativi esclusivamente alla salute di una persona",
-      "Informazioni che riguardano solo i cittadini italiani"
+      "E' causato da un accesso abusivo ai sistemi informatici",
+      "E' integrato solo in caso di violazione dei dati personali",
+      "Attiene solo a questioni tecnico informatiche",
+      "Si realizza con una divulgazione di dati all'interno di un ambiente (fisico o informatico) privo di misure di sicurezza"
     ],
-    "correct_answer": "Qualsiasi informazione relativa a una persona fisica identificabile, anche indirettamente",
-    "id": "30a5cf23-62b3-487a-8502-1bacbee9ebfc"
+    "correct_answer": "Si realizza con una divulgazione di dati all'interno di un ambiente (fisico o informatico) privo di misure di sicurezza"
   },
   {
-    "question": "Qual è una delle principali caratteristiche dei diritti patrimoniali rispetto ai diritti non patrimoniali, secondo la legislazione vigente?",
+    "question": "Qual è uno dei settori interessati dal Decreto Legislativo n.101 riguardante la protezione dei dati personali?",
+    "id": "3f9ad647-a911-4d04-94ba-bdd47905225d",
     "answers": [
-      "L'impossibilità di far valere il diritto dopo un certo periodo di tempo",
-      "L'indisponibilità e l'inalienabilità dei diritti patrimoniali",
-      "L'esercizio esclusivo da parte del titolare",
-      "L'assenza di valore economico per i diritti patrimoniali"
+      "Settore sanitario",
+      "Settore edilizio",
+      "Industria estrattiva",
+      "Commercio al dettaglio"
     ],
-    "correct_answer": "L'impossibilità di far valere il diritto dopo un certo periodo di tempo",
-    "id": "b4d64efa-8d94-43fb-a031-7246cbdd7c5a"
+    "correct_answer": "Settore sanitario"
   },
   {
-    "question": "Qual è il principio che giustifica le limitazioni all'autodeterminazione individuale in relazione alla salute e alla vita, come previsto dalla normativa costituzionale e speciale?",
+    "question": "Quali principi fondamentali sono enunciati nel Codice Privacy menzionato nel testo?",
+    "id": "b6990a2a-57e1-461a-b425-2254a0b81aa2",
     "answers": [
-      "Principio di solidarietà",
-      "Principio di autonomia assoluta",
-      "Principio di uguaglianza",
-      "Principio di libertà religiosa"
+      "Pone meno attenzione al trattamento di grandi insiemi di dati",
+      "Principio di necessità del trattamento e principio di raccolta illimitata",
+      "Principio di protezione dei dati personali e principio di pubblicazione obbligatoria",
+      "Favorire la libera circolazione dei dati personali"
     ],
-    "correct_answer": "Principio di solidarietà",
-    "id": "eb541994-e19a-4b4b-962c-9fa1e0a2160d"
+    "correct_answer": "Principio di necessità del trattamento e principio di raccolta illimitata"
   },
   {
-    "question": "In che anno gli Stati negoziano la Convenzione di Strasburgo con lo scopo di garantire il\r\nrispetto dei diritti e delle libertà fondamentali?",
+    "question": "Come si sposta il focus della normativa con l'introduzione del GDPR?",
+    "id": "e172d092-8722-4a74-9cd8-dc93c4f4dbd7",
     "answers": [
-      "1981",
-      "1945",
-      "2000",
-      "2016"
+      "Dalla protezione dell'interessato alla responsabilità dell'interessato",
+      "Dalla protezione del titolare alla responsabilità dell'interessato",
+      "Dalla protezione dell'interessato alla responsabilità del titolare e dei responsabili del trattamento",
+      "Dalla protezione della responsabilità dell'interessato alla responsabilità del titolare e dei responsabili del trattamento"
     ],
-    "correct_answer": "1981",
-    "id": "fe329847-41d8-49bb-bde0-3754f689cc66"
+    "correct_answer": "Dalla protezione dell'interessato alla responsabilità del titolare e dei responsabili del trattamento"
   },
   {
-    "question": "Chi sono i giuristi che, con la loro opera \"The Right to Privacy. The Implicit Made Explicit.\", hanno per la prima volta considerato la riservatezza come un bene giuridico autonomo e tutelabile?",
+    "question": "Come viene trattato il diritto all'immagine in relazione agli interessi economici?",
+    "id": "9ec417b4-344d-4986-9eca-2b9d20111cdc",
     "answers": [
-      "Samuel Warren e Louis Brandeis",
-      "Edward Snowden e Julian Assange",
-      "Alan Turing e Vannevar Bush",
-      "Mark Zuckerberg e Tim Berners-Lee"
+      "L'uso dell'immagine da parte di terzi è sempre gratuito",
+      "Il diritto all'immagine può essere trasferito per scopi personali",
+      "Il titolare non può consentire mai l'uso della propria immagine a terzi",
+      "Il diritto all'immagine può essere sfruttato anche a titolo oneroso"
     ],
-    "correct_answer": "Samuel Warren e Louis Brandeis",
-    "id": "b4963dd3-da9f-4571-9f05-d1c332c638f3"
+    "correct_answer": "Il diritto all'immagine può essere sfruttato anche a titolo oneroso"
+  },
+  {
+    "question": "In base al principio di autodeterminazione, quando possono essere previsti accertamenti e trattamenti sanitari obbligatori?",
+    "id": "820750d0-388a-4ee0-b5db-beb11ec0810c",
+    "answers": [
+      "Solo nel rispetto della dignità della persona e dei diritti civili e politici",
+      "Nel rispetto della dignità della persona",
+      "Nel rispetto dei diritti civili",
+      "Nel rispetto dei diritti politici"
+    ],
+    "correct_answer": "Solo nel rispetto della dignità della persona e dei diritti civili e politici"
+  },
+  {
+    "question": "Cosa afferma la giurisprudenza riguardo al diritto di rettifica in relazione all'identità digitale?",
+    "id": "b72becbe-36db-4483-a523-918b0f2e81bb",
+    "answers": [
+      "È un diritto patrimoniale regolato esclusivamente dal codice civile",
+      "È un diritto fondamentale utile alla correttezza dell'informazione anche online",
+      "È un diritto subordinato alle esigenze dello Stato e non tutelato nei rapporti tra privati",
+      "È un principio di carattere economico legato alla libertà di mercato"
+    ],
+    "correct_answer": "È un diritto fondamentale utile alla correttezza dell'informazione anche online"
+  },
+  {
+    "question": "Cosa rappresenta l'identità digitale nel contesto della rete?",
+    "id": "4721a458-9ca2-4e85-8b79-1eafed967208",
+    "answers": [
+      "Solo le informazioni patrimoniali registrate nei database bancari",
+      "Esclusivamente i dati anagrafici presenti nei documenti ufficiali",
+      "Tutte le informazioni relative all'identità personale richieste per accedere alla rete",
+      "Informazioni generiche senza rilevanza personale"
+    ],
+    "correct_answer": "Tutte le informazioni relative all'identità personale richieste per accedere alla rete"
+  },
+  {
+    "question": "Perché il GDPR non richiede un recepimento da parte degli Stati membri dell'Unione Europea?",
+    "id": "77c2e973-01f7-4580-82b1-33390ac210bd",
+    "answers": [
+      "Perché trattandosi di un regolamento, non necessita di recepimento da parte degli Stati",
+      "Perché è una direttiva",
+      "Perché è stato approvato da tutti gli Stati membri",
+      "Perché è entrato in vigore automaticamente"
+    ],
+    "correct_answer": "Perché è entrato in vigore automaticamente"
+  },
+  {
+    "question": "Cosa prevede il principio della trasparenza secondo il GDPR?",
+    "id": "32dc2fe1-db5d-4878-a5e8-4ef6fdf9e34f",
+    "answers": [
+      "La documentazione degli scopi del trattamento",
+      "Il trattamento degli scopi del documento",
+      "La rilevazione dei documenti degli scopi del trattamento",
+      "La registrazione degli scopi del trattamento"
+    ],
+    "correct_answer": "La documentazione degli scopi del trattamento"
+  },
+  {
+    "question": "Qual è il presupposto principale per la pubblicazione legittima di notizie lesive dell'integrità morale di una persona?",
+    "id": "c6d34a23-5e12-41d3-a2e2-df426471f804",
+    "answers": [
+      "L'interesse pubblico",
+      "La verità della notizia",
+      "La falsità della notizia",
+      "Il consenso della persona interessata"
+    ],
+    "correct_answer": "La verità della notizia"
+  },
+  {
+    "question": "Qual è il ruolo della Corte di Giustizia dell'Unione Europea riguardo ai diritti fondamentali della persona?",
+    "id": "ef6384c8-12e9-40dc-ba9a-25601b5c6861",
+    "answers": [
+      "Li garantisce solo se sono specificamente previsti dalla legislazione europea",
+      "Non ha alcun ruolo nella loro tutela",
+      "Li garantisce come principi generali del diritto comunitario",
+      "Li limita in base alle normative nazionali"
+    ],
+    "correct_answer": "Li garantisce come principi generali del diritto comunitario"
+  },
+  {
+    "question": "Qual è la fonte giuridica primaria del diritto alla riservatezza?",
+    "id": "297430dd-3e74-4531-8910-28956038e89e",
+    "answers": [
+      "Articolo 5 - Codice civile",
+      "Convenzione di Nizza",
+      "I decreti legislativi",
+      "Articolo 2 - Costituzione Italiana"
+    ],
+    "correct_answer": "Articolo 2 - Costituzione Italiana"
+  },
+  {
+    "question": "Quali sono i requisiti individuati dalla giurisprudenza per escludere il pregiudizio all'onore ed alla riservatezza in ambito di cronaca e critica?",
+    "id": "4542389e-5c74-4951-a173-6c25a9f22ca6",
+    "answers": [
+      "Corrispondenza alla verità, interesse pubblico, correttezza formale",
+      "Interesse pubblico, continenza, corrispondenza alla verità",
+      "Solo se c'è un interesse pubblico",
+      "Il solo diritto alla libertà di stampa"
+    ],
+    "correct_answer": "Corrispondenza alla verità, interesse pubblico, correttezza formale"
+  },
+  {
+    "question": "Quali misure può adottare il giudice in caso di violazione del diritto all'immagine? (possibile domanda)",
+    "id": "8f17a8ef-bb3b-407a-809d-c50faef83115",
+    "answers": [
+      "Il giudice deve attendere la richiesta dell'interessato prima di intervenire",
+      "Il giudice può disporre qualsiasi provvedimento per impedire la prosecuzione dell'illecito",
+      "Il giudice può solo imporre una sanzione pecuniaria senza altri provvedimenti",
+      "Il giudice può solo imporre un risarcimento danni senza poter impedire la prosecuzione dell'illecito"
+    ],
+    "correct_answer": "Il giudice può disporre qualsiasi provvedimento per impedire la prosecuzione dell'illecito"
+  },
+  {
+    "question": "Qual è l'organismo che, in Italia, si occupa della tutela dei dati personali e del rispetto della privacy? (possibile domanda)",
+    "id": "ed9391ed-d2ed-4c78-af22-5986aefb487c",
+    "answers": [
+      "L'Agenzia per la sicurezza nazionale",
+      "Il Ministero della Giustizia",
+      "L'Autorità per l'informatica e la protezione dei dati personali",
+      "L'Ufficio per la protezione civile"
+    ],
+    "correct_answer": "L'Autorità per l'informatica e la protezione dei dati personali"
+  },
+  {
+    "question": "Qual è la durata massima del trattamento dei dati personali secondo il GDPR?",
+    "id": "79f349d5-97de-47ef-8411-7c4d0e9f54fe",
+    "answers": [
+      "Fino a 5 anni",
+      "Fino a 10 anni",
+      "Fino a 20 anni",
+      "Fino a quando è necessario per le finalità"
+    ],
+    "correct_answer": "Fino a quando è necessario per le finalità"
+  },
+  {
+    "question": "Cosa caratterizza i diritti non patrimoniali?",
+    "id": "16ee6b17-61fb-4f68-b60f-a4c56dff8f62",
+    "answers": [
+      "Sono legati strettamente alla persona",
+      "Possono essere trasferiti",
+      "Hanno un valore economico",
+      "Sono limitati nel tempo"
+    ],
+    "correct_answer": "Sono legati strettamente alla persona"
+  },
+  {
+    "question": "Cosa afferma la legge in merito al consenso per la pubblicazione dell'immagine di una persona?",
+    "id": "bbc942c0-2f8a-49c5-b07e-57976d2f2d99",
+    "answers": [
+      "Il consenso diventa irrevocabile una volta concesso formalmente in un contratto",
+      "Il consenso può essere revocato in qualsiasi momento, anche se formalmente concesso in un contratto",
+      "Il consenso può essere revocato solo entro un termine massimo di 30 giorni dalla concessione",
+      "La revoca del consenso è valida solo se approvata dalla controparte del contratto"
+    ],
+    "correct_answer": "Il consenso può essere revocato in qualsiasi momento, anche se formalmente concesso in un contratto"
+  },
+  {
+    "question": "Quali basi giuridiche sono previste dal GDPR per il trattamento dei dati personali?",
+    "id": "47b4b996-2f27-4e6c-9741-aee9305fd015",
+    "answers": [
+      "Solo il contratto con l'interessato",
+      "Solo il consenso dell'interessato",
+      "Diverse basi giuridiche, tra cui il consenso, il legittimo interesse e l'adempimento di un obbligo legale",
+      "Solo il legittimo interesse del titolare"
+    ],
+    "correct_answer": "Diverse basi giuridiche, tra cui il consenso, il legittimo interesse e l'adempimento di un obbligo legale"
+  },
+  {
+    "question": "Quali sono le lesioni del diritto al nome secondo l'articolo 7 del codice civile?",
+    "id": "12f570b4-0a79-4497-8c38-447617f0873e",
+    "answers": [
+      "Violazione della privacy",
+      "Diffamazione e calunnia",
+      "Frode e inganno",
+      "Contestazione e usurpazione"
+    ],
+    "correct_answer": "Contestazione e usurpazione"
+  },
+  {
+    "question": "Qual è il trattato europeo che prescrive il rispetto dei diritti della persona come principi generali del diritto comunitario?",
+    "id": "114774ad-0758-4483-b096-839851614e39",
+    "answers": [
+      "Trattato sull'Unione europea",
+      "Trattato di Lisbona",
+      "Trattato di Nizza",
+      "Trattato di Roma"
+    ],
+    "correct_answer": "Trattato sull'Unione europea"
+  },
+  {
+    "question": "Se il titolare decide di respoingere la rettifica dei dati:",
+    "id": "ad4db2e4-c30e-4cb0-801a-225aeb93cece",
+    "answers": [
+      "può ignorare la richiesta senza obbligo di comunicazione, purché ne informi verbalmente l'interessato entro sessanta giorni.",
+      "deve rispondere all'interessato entro trenta giorni informandolo delle motivazioni del diniego e della possibilità di proporre reclamo all'Autorità",
+      "deve rettificare comunque i dati e notificare le modifiche a tutti i terzi che li hanno ricevuti.",
+      "è tenuto a devolvere il reclamo direttamente al Garante senza fornire alcuna motivazione."
+    ],
+    "correct_answer": "deve rispondere all'interessato entro trenta giorni informandolo delle motivazioni del diniego e della possibilità di proporre reclamo all'Autorità"
+  },
+  {
+    "question": "L'uso illegittimo dell'immagine del congiunto:",
+    "id": "bc1592b0-862f-490f-8b3a-b31de0a5e205",
+    "answers": [
+      "legittima ad agire solo il coniuge del soggetto ritratto, esclusi gli altri familiari",
+      "non prevede alcuna tutela per i familiari: può agire soltanto il soggetto effigiato in proprio",
+      "se arreca pregiudizio, ad esempio, all'onore, al decoro e alla reputazione dell'intero gruppo familiare, legittima ad agire, oltre all'effigiato, ciascuno dei familiari",
+      "attribuisce l'azione risarcitoria unicamente al genitore più anziano, a prescindere dal grado di parentela"
+    ],
+    "correct_answer": "se arreca pregiudizio, ad esempio, all'onore, al decoro e alla reputazione dell'intero gruppo familiare, legittima ad agire, oltre all'effigiato, ciascuno dei familiari"
+  },
+  {
+    "question": "Il codice della privacy:",
+    "id": "35440999-0a88-4eed-b9b4-d43a8c7e2c77",
+    "answers": [
+      "è un regolamento europeo direttamente applicabile in tutti gli Stati membri",
+      "si applica esclusivamente nel settore delle comunicazioni elettroniche",
+      "è contenuto unicamente in un decreto ministeriale senza valore di legge",
+      "è disciplinato da leggi speciali"
+    ],
+    "correct_answer": "è disciplinato da leggi speciali"
+  },
+  {
+    "question": "A seguito dell'esercizio del diritto all'oblio da parte dell'interessato:",
+    "id": "588ed5b5-ac72-44fb-939b-a50f53478dbe",
+    "answers": [
+      "il titolare deve cancellare i dati in suo possesso e, qualora sia stati resi pubblici, deve informare ogni altro titolare che stia trattando quei dati del dovere di cancellare qualsiasi link, copia o",
+      "il titolare è tenuto solo a sospendere temporaneamente l'accesso ai dati senza obbligo di cancellazione definitiva",
+      "il titolare deve chiedere all'interessato un'autorizzazione formale per comunicare la richiesta di cancellazione ad altri titolari",
+      "il titolare può limitarsi a oscurare i dati sul proprio sito, senza alcun obbligo verso altri soggetti che li abbiano pubblicati"
+    ],
+    "correct_answer": "il titolare deve cancellare i dati in suo possesso e, qualora sia stati resi pubblici, deve informare ogni altro titolare che stia trattando quei dati del dovere di cancellare qualsiasi link, copia o"
+  },
+  {
+    "question": "L'art. 2 Cost.:",
+    "id": "323aa3c0-fd24-4824-b892-08e74da0ba0d",
+    "answers": [
+      "sancisce esclusivamente il principio della uguaglianza formale tra cittadini, senza prevedere tutela per le situazioni concrete",
+      "esprime un principio fondamentale il cui contenuto non si limita ad abbracciare i diritti tipicamente previsti da altre disposizioni della costituzione, bensì estende la tutela alle situazioni atipich",
+      "riconosce soltanto diritti economici e sociali, tralasciando qualsiasi riferimento ai diritti civili e politici",
+      "afferma il dovere della solidarietà solo tra le istituzioni pubbliche, escludendo ogni riferimento ai rapporti tra cittadini"
+    ],
+    "correct_answer": "esprime un principio fondamentale il cui contenuto non si limita ad abbracciare i diritti tipicamente previsti da altre disposizioni della costituzione, bensì estende la tutela alle situazioni atipich"
+  },
+  {
+    "question": "L'identità digitale di una persona:",
+    "id": "19351b6e-0232-4bae-82b9-5f55181175cd",
+    "answers": [
+      "È il complesso di credenziali (username e password) utilizzate per accedere ai servizi online",
+      "È il documento digitale rilasciato dallo Stato che sostituisce la carta d'identità tradizionale",
+      "è l'insieme delle risorse digitali associate in maniera univoca ad una persona fisica che la identifica, rappresentandone la volontà, durante le sue attività digitali.",
+      "È l'insieme dei dati biometrici utilizzati dalle piattaforme per autenticare l'utente"
+    ],
+    "correct_answer": "è l'insieme delle risorse digitali associate in maniera univoca ad una persona fisica che la identifica, rappresentandone la volontà, durante le sue attività digitali."
+  },
+  {
+    "question": "Per postare sui social foto ritraenti minori di anni quattordici:",
+    "id": "69575618-d0eb-442f-8a38-be8b30f78a9e",
+    "answers": [
+      "è sufficiente il consenso di un solo genitore esercente la responsabilità genitoriale",
+      "non è richiesto alcun consenso se le foto sono pubblicate in un gruppo chiuso o privato",
+      "è necessario solo il consenso del minore se ha compiuto almeno dodici anni",
+      "è necessario il preventivo ed esplicito consenso di entrambi i genitori"
+    ],
+    "correct_answer": "è necessario il preventivo ed esplicito consenso di entrambi i genitori"
+  },
+  {
+    "question": "Nell'ipotesi di esercizio del diritto di opposizione:",
+    "id": "84321096-1103-428f-8d05-7f73653cd56a",
+    "answers": [
+      "Il titolare deve rispondere alla richiesta di opposizione senza ingiustificato ritardo e, comunque, entro un mese, prorogabile di altri due mesi nei casi in cui ciò sia necessario",
+      "Il titolare può sospendere il trattamento fino a quando non riceve istruzioni dal Garante, senza obbligo di fornire risposta all'interessato",
+      "Il titolare è tenuto a rispondere entro quindici giorni, senza possibilità di proroga, comunicando solo l'avvenuta presa in carico della richiesta",
+      "Il titolare non deve fornire alcuna risposta formale, purché interrompa il trattamento dei dati oggetto di opposizione"
+    ],
+    "correct_answer": "Il titolare deve rispondere alla richiesta di opposizione senza ingiustificato ritardo e, comunque, entro un mese, prorogabile di altri due mesi nei casi in cui ciò sia necessario"
+  },
+  {
+    "question": "Per esercitare il diritto di accesso:",
+    "id": "27570638-9324-4e44-b14e-f2ffea71bfaa",
+    "answers": [
+      "Deve essere presentata esclusivamente utilizzando il modulo ufficiale messo a disposizione dal titolare del trattamento",
+      "non sono previste formalità particolari, poiché l'interessato può esercitarlo verbalmente, per iscritto o telematicamente",
+      "È necessaria l'allegazione di una copia autenticata del documento di identità dell'interessato insieme alla richiesta",
+      "Può essere esercitato unicamente tramite raccomandata A/R indirizzata al Garante, corredata da firma digitale"
+    ],
+    "correct_answer": "non sono previste formalità particolari, poiché l'interessato può esercitarlo verbalmente, per iscritto o telematicamente"
+  },
+  {
+    "question": "Il registro delle attività di trattamento:",
+    "id": "b9fb6ac1-5224-47ba-9bef-a2155c5f9974",
+    "answers": [
+      "è un elenco pubblico consultabile da chiunque per verificare i dettagli dei trattamenti effettuati",
+      "è un documento facoltativo che il titolare può tenere solo per scopi interni di marketing",
+      "è un documento contenente le principali informazioni inerenti le operazioni di trattamento svolte dal titolare e, se nominato, dal responsabile del trattamento",
+      "è un registro unicamente riservato alle operazioni di trasferimento internazionale dei dati"
+    ],
+    "correct_answer": "è un documento contenente le principali informazioni inerenti le operazioni di trattamento svolte dal titolare e, se nominato, dal responsabile del trattamento"
+  },
+  {
+    "question": "L'autorizzazione del titolare del trattamento circa la nomina di un sub responsabile del procedimento:",
+    "id": "cc8e3596-89ca-4a56-baa5-ba5b5b08cd6a",
+    "answers": [
+      "è generica se consente al responsabile di nominare qualsiasi sub-responsabile senza indicarne nel dettaglio le funzioni",
+      "è tacita quando non viene espressa per iscritto ma desunta dal comportamento delle parti",
+      "è globale se autorizza la nomina di tutti i sub-responsabili per l'intero ciclo di trattamento",
+      "è specifica se riconosce la facoltà al responsabile di nominare un determinato soggetto"
+    ],
+    "correct_answer": "è specifica se riconosce la facoltà al responsabile di nominare un determinato soggetto"
+  },
+  {
+    "question": "I diritti della personalità:",
+    "id": "f7989d33-ebe2-46bc-a519-7e8f7181b1b2",
+    "answers": [
+      "sono situazioni soggettive non patrimoniali",
+      "sono diritti patrimoniali trasferibili a terzi",
+      "si estinguono automaticamente con il decesso dell'interessato",
+      "riguardano esclusivamente ambiti legali e giudiziari, escludendo la sfera morale e sociale"
+    ],
+    "correct_answer": "sono situazioni soggettive non patrimoniali"
+  },
+  {
+    "question": "Sono vietati come atti di disposizione del proprio corpo:",
+    "id": "c260b988-1c1b-4299-ab47-b03b6ed72ed1",
+    "answers": [
+      "sono vietati soltanto gli atti che richiedono un'autorizzazione amministrativa preventiva, indipendentemente dalla loro natura invasiva.",
+      "quelli che causano una diminuzione permanente dell'integrità fisica e gli atti contrari alla legge, all'ordine pubblico o al buon costume.",
+      "sono vietati unicamente gli atti terapeutici, mentre quelli estetici possono essere liberamente effettuati anche se comportano danni permanenti.",
+      "sono vietati esclusivamente gli atti praticati da personale non sanitario, anche se non causano alcuna lesione permanente."
+    ],
+    "correct_answer": "quelli che causano una diminuzione permanente dell'integrità fisica e gli atti contrari alla legge, all'ordine pubblico o al buon costume."
+  },
+  {
+    "question": "La privacy è:",
+    "id": "ee9c31b4-783f-428c-816c-eb6fb49ac3a0",
+    "answers": [
+      "il diritto esclusivo di impedire qualsiasi raccolta di dati da parte di terzi, anche quando ciò sia necessario per l'esecuzione di un contratto.",
+      "la prerogativa di controllare unicamente la diffusione di immagini personali, senza estendersi ai dati e alle informazioni scritte.",
+      "il diritto alla riservatezza della propria vita privata, dei propri dati personali e di decidere come gli altri possono usare i propri dati.",
+      "un concetto non riconosciuto dalla normativa italiana, ma frutto di prassi aziendali volontarie."
+    ],
+    "correct_answer": "il diritto alla riservatezza della propria vita privata, dei propri dati personali e di decidere come gli altri possono usare i propri dati."
+  },
+  {
+    "question": "L'informativa privacy deve essere:",
+    "id": "2a993972-d710-4241-8309-a3d078d739b6",
+    "answers": [
+      "dettagliata, completa di tutti i riferimenti normativi e redatta in linguaggio strettamente tecnico",
+      "pubblicata esclusivamente in formato cartaceo e su supporto informatico, senza necessità di resa disponibile online",
+      "fornita unicamente su richiesta dell'interessato, senza obbligo di presentazione preventiva",
+      "concisa, trasparente, intelligibile"
+    ],
+    "correct_answer": "concisa, trasparente, intelligibile"
+  },
+  {
+    "question": "Nel caso di danno cagionato dal trattamento dei dati per fatto dell'incaricato:",
+    "id": "5a403ea2-d7bf-44ba-8801-c1c38241c1ce",
+    "answers": [
+      "è responsabile il titolare che ha un obbligo generale di formare tutti gli incaricati che operano per suo conto",
+      "è responsabile esclusivamente l'incaricato, poiché agendo per conto del titolare è l'unico a rispondere dei danni",
+      "spetta al responsabile del trattamento rispondere in solido insieme all'incaricato, mentre il titolare è esonerato da ogni responsabilità",
+      "nessuno è direttamente responsabile se l'incaricato ha seguito pedissequamente le procedure interne, anche in caso di danno"
+    ],
+    "correct_answer": "è responsabile il titolare che ha un obbligo generale di formare tutti gli incaricati che operano per suo conto"
+  },
+  {
+    "question": "Il consenso:",
+    "id": "47e4364b-9a2b-4178-a57a-df5688cfbda4",
+    "answers": [
+      "è sempre richiesto in ogni caso di riproduzione, anche per finalità giornalistiche o di cronaca",
+      "non è richiesto se la riproduzione è giustificata dalla notorietà o dalla carica pubblica della persona ritratta",
+      "può essere sostituito da un'autorizzazione generica rilasciata da un'associazione di categoria",
+      "è richiesto solo se la persona ritratta invia una diffida formale prima della pubblicazione"
+    ],
+    "correct_answer": "non è richiesto se la riproduzione è giustificata dalla notorietà o dalla carica pubblica della persona ritratta"
+  },
+  {
+    "question": "Qual è il diritto della personalità che ha una posizione preminente tra i diritti umani?",
+    "id": "fcef3ce5-c6a5-4da9-9800-ded32f4257d2",
+    "answers": [
+      "Diritto alla libertà personale",
+      "Diritto alla salute",
+      "Diritto alla vita",
+      "Diritto alla dignità umana"
+    ],
+    "correct_answer": "Diritto alla vita"
+  },
+  {
+    "question": "In caso di violazione dei dati personali:",
+    "id": "47d9393b-1f2b-442a-ad6b-e3fd7024e830",
+    "answers": [
+      "Si può ricorrere contemporaneamente sia al Garante che all'Autorità giudiziaria per massimizzare le probabilità di successo",
+      "È necessario prendere prima un provvedimento giudiziario e solo successivamente presentare un reclamo al Garante",
+      "L'unica via percorribile è quella giudiziaria: non è possibile contattare direttamente il Garante",
+      "Si può ricorrere al Garante Privacy oppure all'Autorità giudiziaria in via alternativa"
+    ],
+    "correct_answer": "Si può ricorrere al Garante Privacy oppure all'Autorità giudiziaria in via alternativa"
+  },
+  {
+    "question": "In base alla normativa che regolamenta il diritto alla protezione dei dati personali, cosa può pretendere ogni individuo?",
+    "id": "93e4b23e-7f7c-43b2-9c4c-56614241420b",
+    "answers": [
+      "Che i suoi dati personali siano raccolti e trattati nel rispetto delle leggi",
+      "Che i propri dati siano conservati indefinitamente, a prescindere dalla finalità per cui sono stati raccolti",
+      "Che i dati personali siano accessibili pubblicamente, salvo esplicito divieto dell'interessato",
+      "Che il trattamento dei dati avvenga anche senza informativa, se effettuato da soggetti privati"
+    ],
+    "correct_answer": "Che i suoi dati personali siano raccolti e trattati nel rispetto delle leggi"
   }
 ]
