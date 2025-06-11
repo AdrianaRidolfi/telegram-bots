@@ -76,7 +76,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
     msg = (
         "*📚 Quiz disponibili:*\n\n"
         "• *comunicazione digitale e social media* - _inedite_ - ultimo aggiornamento `28/05`\n\n"
-        "• *diritto per le aziende digitali* - _inedite_ - ultimo aggiornamento `28/05`\n\n"
+        "• *diritto per le aziende digitali* - _inedite_ - ultimo aggiornamento `11/06`\n\n"
         "• *ingegneria del software* - _inedite_ - ultimo aggiornamento `28/05`\n\n"
         "• *corporate planning e valore d'impresa* - _solo paniere_ - ultimo aggiornamento `04/06`\n\n"
         "• *reti di calcolatori e cybersecurity* - _paniere_ - ultimo aggiornamento `28/05`\n\n"
