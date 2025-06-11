@@ -87,9 +87,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
     )
 
     keyboard = []
-    keyboard.add(
-        InlineKeyboardButton(text="📖 Scegli materia", callback_data="_choose_subject_")
-    )
+    keyboard.append([InlineKeyboardButton(text="📖 Scegli materia", callback_data="_choose_subject_")])
 
     #se l'utente ha errori aggiungo il bottone
     if manager.has_wrong_answers():
