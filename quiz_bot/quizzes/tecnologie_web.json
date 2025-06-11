@@ -3514,5 +3514,148 @@
         ],
         "correct_answer": "tutti i client inviano le loro richieste al forward proxy e questo invierà le richieste del client verso l' esterno",
         "id": "c5d6e7f8-a9b0-1234-5678-6789abcdef01"
-    }
+    },
+      {
+    "question": "Cosa restituisce una funzione JavaScript se non ha istruzioni return",
+    "answers": [
+        "null", 
+        "undefined", 
+        "0", 
+        "NaN"
+    ],
+    "correct_answer": "undefined",
+    "id": "b3124a6c-768d-4078-9ffd-5f3f3716f732"
+  },
+  {
+    "question": "I CSS hanno lo scopo fondamentale di",
+    "answers": [
+        "rendere le pagine più dinamiche", 
+        "proteggere i dati utente", 
+        "separare contenuto e presentazione nelle pagine Web", 
+        "gestire i database web"
+    ],
+    "correct_answer": "separare contenuto e presentazione nelle pagine Web",
+    "id": "0068bb7b-b372-423c-b3b5-7910f0950262"
+  },
+  {
+    "question": "Quando una funzione viene chiamata, il programma si ferma finché la funzione non ha completato l'operazione e restituito un risultato; stiamo parlando di",
+    "answers": [
+        "programmazione sincrona", 
+        "programmazione asincrona", 
+        "programmazione concorrente", 
+        "programmazione parallela"
+    ],
+    "correct_answer": "programmazione sincrona",
+    "id": "93e4d4d7-65d0-4d5c-ba44-f0975206aa2a"
+  },
+  {
+    "question": "Qual è la posizione più sicura per inserire uno script JavaScript in HTML per accedere a tutti gli elementi della pagina",
+    "answers": [
+        "Subito prima della chiusura del tag <body>", 
+        "dopo il tag <html>", 
+        "dentro un tag <div> qualsiasi", 
+        "all'inizio del tag <head>"
+    ],
+    "correct_answer": "Subito prima della chiusura del tag <body>",
+    "id": "8ce2dc46-3525-4bb4-82ab-09a512391156"
+  },
+  {
+    "question": "Il dispositivo che opera a questo livello è il router",
+    "answers": [
+        "Physical Layer", 
+        "Network Layer", 
+        "Application Layer", 
+        "Data Link Layer"
+    ],
+    "correct_answer": "Network Layer",
+    "id": "2c9c9022-2856-4d49-9778-3f506a966502"
+  },
+  {
+    "question": "La coppia di tag <BR></BR> è analoga a",
+    "answers": [
+        "<nl/>",
+        "<br/>", 
+        "<newline/>", 
+        "<linebreak/>"
+    ],
+    "correct_answer": "<br/>",
+    "id": "fb251d85-71c8-4660-9c87-7b268535b274"
+  },
+  {
+    "question": "A cosa serve la funzione serializeUser di Passport",
+    "answers": [
+        "Cripta la password utente", 
+        "Converte l'oggetto utente in un identificatore", 
+        "Crea una sessione utente temporanea", 
+        "Autentica l'utente con OAuth"
+    ],
+    "correct_answer": "Converte l'oggetto utente in un identificatore",
+    "id": "38449f0e-e640-4935-bf66-c8b5fc6ffd38"
+  },
+  {
+    "question": "L'impaginazione mediante ??? (da examsync, forse manca un'immagine)",
+    "answers": [
+        "è sempre obbligatoria",
+        "non è considerata una buona pratica",
+        "è consigliata da tutti i framework moderni",
+        "viene gestita automaticamente da HTML"
+    ],
+    "correct_answer": "non è considerata una buona pratica",
+    "id": "6b3d55df-6756-44af-ac0c-a73559415c2e"
+  },
+  {
+    "question": "Per full-duplex si intende",
+    "answers": [
+        "serve a gestire il bilanciamento del carico",
+        "si può solo ricevere dati",
+        "è possibile trasmettere dati una sola volta",
+        "sulla stessa connessione si può trasmettere e ricevere"
+    ],
+    "correct_answer": "sulla stessa connessione si può trasmettere e ricevere",
+    "id": "674cbe96-5dfc-4184-bc8e-cdcd3909dbed"
+  },
+  {
+    "question": "I database NoSQL",
+    "answers": [
+        "funzionano solo in modalità standalone",
+        "non supportano query complesse",
+        "possono scalare orizzontalmente",
+        "usano solo schema relazionale"
+    ],
+    "correct_answer": "possono scalare orizzontalmente",
+    "id": "4924d40c-957d-4fd3-81d2-53ef5fd0fb2c"
+  },
+  {
+    "question": "La Cacheability",
+    "answers": [
+        "viene usata solo nei database",
+        "richiede sempre l'accesso al server",
+        "può eliminare la necessità di alcune interazioni Client-Server",
+        "aumenta la latenza delle richieste"
+    ],
+    "correct_answer": "può eliminare la necessità di alcune interazioni Client-Server",
+    "id": "6bb5e8e4-09ce-4c39-ae63-9956998689f3"
+  },
+  {
+    "question": "Se non ci sei non esisti è una frase che identifica",
+    "answers": [
+        "internet of things",
+        "web 2.0", 
+        "web 3.0",
+        "web 1.0"
+    ],
+    "correct_answer": "web 1.0",
+    "id": "452c8b4e-cfe7-4d51-baff-8767735ec9b7"
+  },
+  {
+    "question": "Node.js è basato",
+    "answers": [
+        "su thread paralleli come in Java", 
+        "su un modello di programmazione lineare", 
+        "su un ciclo di polling continuo", 
+        "su un modello di eventi non bloccanti e un'architettura asincrona"
+    ],
+    "correct_answer": "su un modello di eventi non bloccanti e un'architettura asincrona",
+    "id": "8a302ae1-99e7-4c59-ba63-85da629f0144"
+  }
 ]
