@@ -2261,10 +2261,10 @@
     {
         "question": "Il Web 4.0 potrebbe essere descritto come:",
         "answers": [
-            "rete semantica",
-            "rete sociale",
+            "rete alternativa",
+            "rete ricorsiva",
             "rete simbiotica",
-            "rete mobile"
+            "rete neurale"
         ],
         "correct_answer": "rete simbiotica",
         "id": "b2c3d4e5-f6a7-8901-2345-123456789abc"
@@ -3264,9 +3264,9 @@
     {
         "question": "Sono pacchetti di codice che possono essere pubblicati su un registro pubblico e scaricati da altri sviluppatori per essere utilizzati nei propri progetti Node.js:",
         "answers": [
-            "Librerie di sistema",
-            "Framework Node.js",
-            "Moduli core di Node.js",
+            "Moduli NPS",
+            "Moduli MPN",
+            "Moduli JSON",
             "moduli NPM"
         ],
         "correct_answer": "moduli NPM",
