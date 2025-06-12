@@ -468,12 +468,12 @@
     {
         "question": "I CSS servono a definire:",
         "answers": [
-            "Il comportamento dinamico delle pagine web",
-            "La struttura del contenuto HTML",
-            "Come il contenuto deve essere presentato all' utente",
-            "Il contenuto testuale delle pagine web"
+            "il colore dei contenuti",
+            "l'head della pagina",
+            "come il contenuto deve essere presentato all' utente",
+            "il body della pagina"
         ],
-        "correct_answer": "Come il contenuto deve essere presentato all' utente",
+        "correct_answer": "come il contenuto deve essere presentato all' utente",
         "id": "d2f7a83b-8f15-4a9d-8e45-3c9bcb62a0e7"
     },
     {
@@ -1026,7 +1026,7 @@
         "id": "d144e513-71ea-44b1-91b1-cc27c21b9e6a"
     },
     {
-        "question": "Cosa comporta la proprietà  CSS display: none:",
+        "question": "Cosa comporta la proprietà CSS display: none:",
         "answers": [
             "L'elemento non è visualizzato nè occupa spazio",
             "L'elemento diventa trasparente",
@@ -1645,10 +1645,10 @@
     {
         "question": "Il modello ISO/OSI:",
         "answers": [
-            "è un protocollo di comunicazione di rete",
+            "tratta della complessità",
             "è stato progettato per creare uno standard per offrire una base per gli standard di comunicazione indipendentemente dai fornitori",
-            "è un framework per lo sviluppo di applicazioni web",
-            "è un linguaggio di markup"
+            "è stato progettato per offrire una base ai fornitori",
+            "dipende dal fornitore"
         ],
         "correct_answer": "è stato progettato per creare uno standard per offrire una base per gli standard di comunicazione indipendentemente dai fornitori",
         "id": "e5f6a7b8-c9d0-1234-5678-90abcdef0123"
@@ -2063,10 +2063,10 @@
     {
         "question": "Con display:none:",
         "answers": [
-            "l'elemento è visibile ma occupa spazio",
+            "l'elemento è posto a null",
             "l'elemento viene trattato come se non ci fosse",
-            "l'elemento è trasparente",
-            "l'elemento viene nascosto ma occupa spazio"
+            "l'elemento viene cancellato",
+            "l'elemento viene visualizzato on top"
         ],
         "correct_answer": "l'elemento viene trattato come se non ci fosse",
         "id": "b4c5d6e7-f8a9-0123-4567-f0123456789a"
@@ -2228,9 +2228,9 @@
     {
         "question": "Input type submit è:",
         "answers": [
-            "un campo di testo",
-            "un checkbox",
-            "un radio button",
+            "una casella testuale",
+            "un input numerico di bit",
+            "bottone per inserire input hidden",
             "bottone per trasmettere il contenuto del form"
         ],
         "correct_answer": "bottone per trasmettere il contenuto del form",
@@ -2250,10 +2250,10 @@
     {
         "question": "Il display è una proprietà che determina:",
         "answers": [
-            "il colore di sfondo di un elemento",
-            "la visibilità di un elemento",
+            "la posizione di un elemento rispetto ai suoi elementi fratelli o rispetto al suo contenitore",
+            "se un elemento viene visualizzato sulla pagina",
             "come un elemento viene visualizzato sulla pagina",
-            "la dimensione del font di un elemento"
+            "dove un elemento viene visualizzato sulla pagina"
         ],
         "correct_answer": "come un elemento viene visualizzato sulla pagina",
         "id": "a1b2c3d4-e5f6-7890-1234-0123456789ab"
@@ -2932,10 +2932,10 @@
     {
         "question": "Uno stile in linea:",
         "answers": [
-            "ha la priorità più bassa",
-            "è ignorato dal browser",
+            "ha priorità solo sulle impostazioni del browser",
+            "ha la minima priorità e non sovrascriverà gli stili interni ed esterni e le impostazioni predefinite del browser",
             "ha la massima priorità e sovrascriverà gli stili interni ed esterni e le impostazioni predefinite del browser",
-            "viene applicato solo a elementi specifici"
+            "non ha la massima priorità e non sovrascriverà gli stili interni ed esterni e le impostazioni predefinite del browser"
         ],
         "correct_answer": "ha la massima priorità e sovrascriverà gli stili interni ed esterni e le impostazioni predefinite del browser",
         "id": "f6a7b8c9-d0e1-2345-6789-123456789abc"
@@ -3086,8 +3086,8 @@
     {
         "question": "Un input può essere disabilitato agendo sull'attributo:",
         "answers": [
-            "readonly",
-            "hidden",
+            "managed",
+            "visible",
             "enabled",
             "disabled"
         ],
@@ -3397,10 +3397,10 @@
     {
         "question": "L'attributo HttpOnly:",
         "answers": [
-            "consente al client di accedere alle informazioni del cookie tramite Javascript",
+            "se impostato, consente al client di accedere alle informazioni del cookie tramite Javascript",
             "se impostato, non consente al client di accedere alle informazioni del cookie tramite Javascript",
-            "cripta le informazioni del cookie",
-            "rende il cookie visibile solo al server"
+            "se impostato, consente al client di accedere alle informazioni del cookie tramite HTML",
+            "non consente il set-cookie"
         ],
         "correct_answer": "se impostato, non consente al client di accedere alle informazioni del cookie tramite Javascript",
         "id": "a1b2c3d4-e5f6-7890-1234-89abcdef0123"
