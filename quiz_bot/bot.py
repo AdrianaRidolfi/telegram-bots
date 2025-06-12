@@ -202,7 +202,7 @@ async def error_handler(update, context):
 def escape_markdown(text: str) -> str:
     if not text:
         return ""
-    escape_chars = r"_*`"
+    escape_chars = r"_*`[]"
     return re.sub(rf"([{re.escape(escape_chars)}])", r"\\\1", text)
 
 async def send_next_question(user_id, context):
@@ -240,8 +240,8 @@ async def send_next_question(user_id, context):
     state["quiz"][q_index]["_shuffled_answers"] = new_answers
     state["quiz"][q_index]["_correct_index"] = new_correct_index
 
-    question_index = escape_markdown(f"{state['index'] + 1}.")
-    question_text = f"*{question_index} {escape_markdown(question_data.get('question', 'Domanda mancante'))}*\n\n"
+    question_index = f"{state['index'] + 1}."
+    question_text = f"*{question_index} {question_data.get('question', 'Domanda mancante')}*\n\n"
     
     for i, opt in enumerate(new_answers):
         question_text += f"*{chr(65+i)}.* {escape_markdown(opt)}\n"
