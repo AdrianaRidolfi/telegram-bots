@@ -33,14 +33,14 @@
         "id": "ced509ed-e6e1-45d3-8c4a-e08df757b80c"
     },
     {
-        "question": "Quale affermazione è vera riguardo all'input di tipo password?",
+        "question": "Usando l'elemento input con il type=\"password\" si ha la possibilità di creare un campo che permette l'inserimento di dati riservati. Inoltre:",
         "answers": [
-            "Cifra i dati durante la trasmissione",
-            "Non ha implicazioni con la sicurezza del trasferimento dei dati",
-            "Protegge solo i dati visibili",
-            "Non ha alcuna protezione sullo schermo"
+            "questo non ha implicazioni con la sicurezza del trasferimento dei dati: è solo una protezione sullo schermo che il browser può attuare",
+            "questo ha implicazioni con la sicurezza del trasferimento dei dati: i dati vengono infatti cifrati nella trasmissione",
+            "questo non ha implicazioni con la sicurezza del trasferimento dei dati perché questi dati sono conservati nel cookies",
+            "questo ha implicazioni con la sicurezza del trasferimento dei dati a patto che sia specificato anche l'algoritmo di cifratura"
         ],
-        "correct_answer": "Non ha implicazioni con la sicurezza del trasferimento dei dati",
+        "correct_answer": "questo non ha implicazioni con la sicurezza del trasferimento dei dati: è solo una protezione sullo schermo che il browser può attuare",
         "id": "0bf6b569-8270-4d3f-9512-19b567e4a6df"
     },
     {
@@ -134,14 +134,14 @@
         "id": "e7b35b39-b22f-474e-b304-5589a7c4dbe3"
     },
     {
-        "question": "Quale errore è presente nel seguente JSON: { 'name': 'john', 'surname': 'red', 'cars': [ 'Ferrari', 'Porsche' 1, 'hobbies': [ 'go - kart', 'bicycle' ] }?",
+        "question": "Quale errore è presente nel seguente JSON: { 'name': 'john', 'surname': 'red', 'cars': [ 'Ferrari', 'Porsche' ], 'hobbies': [ 'go - kart', 'bicycle' ] }?",
         "answers": [
-            "Non è possibile avere due array all'interno",
-            "Le chiavi non devono essere racchiuse in virgolette",
-            "La sezione 'hobbies' è corretta",
-            "Manca una virgola dopo 'Porsche'"
+            "non è corretto: \"cars\" ed \"hobbies\" non devono essere racchiusi in \"",
+            "non è corretto: occorre completare la sezione \"hobbies\" con una \".",
+            "non è corretto; non è possibile avere 2 array all'interno",
+            "è corretto"
         ],
-        "correct_answer": "Non è possibile avere due array all'interno",
+        "correct_answer": "è corretto",
         "id": "a721333b-fd95-4145-955f-e04b4ac4d11a"
     },
     {
@@ -1448,9 +1448,9 @@
         "question": "Una chiamata sincrona:",
         "answers": [
             "è un tipo di chiamata in cui il thread principale di esecuzione del programma viene bloccato fino a quando la chiamata non viene completata",
-            "è una chiamata che avviene solo in ambiente client",
-            "è un tipo di chiamata che non blocca mai il thread principale",
-            "è un metodo per eseguire codice in background"
+            "è un tipo di chiamata in cui il thread principale di esecuzione del programma non viene bloccato durante l'esecuzione della chiamata",
+            "è un tipo di chiamata in cui il thread principale di esecuzione del programma può essere bloccato se il tempo di completamento è basso",
+            "è un tipo di chiamata in cui il thread principale di esecuzione del programma viene bloccato solo se il thread ha un tempo di esecuzione basso"
         ],
         "correct_answer": "è un tipo di chiamata in cui il thread principale di esecuzione del programma viene bloccato fino a quando la chiamata non viene completata",
         "id": "b5ef0a37-e7d0-47b0-bc06-5b5d4b7f54bb"
@@ -1766,10 +1766,10 @@
     {
         "question": "Nella comunicazione in rete:",
         "answers": [
-            "il canale di trasmissione delle informazioni è limitato alle reti locali",
+            "il canale di trasmissione delle informazioni è irrilevante",
             "il canale di trasmissione delle informazioni è internet",
-            "la comunicazione avviene solo tramite cavo",
-            "la comunicazione è sempre unidirezionale"
+            "il canale di trasmissione delle informazioni è virtuale",
+            "il canale di trasmissione delle informazioni è nascosto"
         ],
         "correct_answer": "il canale di trasmissione delle informazioni è internet",
         "id": "d6e7f8a9-b0c1-2345-6789-3456789abcde"
@@ -1899,7 +1899,7 @@
         "question": "L'elemento style va inserito:",
         "answers": [
             "nel body",
-            "alla fine del documento",
+            "nel tag meta",
             "in un file esterno",
             "nell'head"
         ],
@@ -1931,10 +1931,10 @@
     {
         "question": "La fruizione di una pagina web in termini di funzionalità:",
         "answers": [
-            "è sempre dipendente dal CSS",
+            "è fortemente dipendente dal CSS",
             "non è dipendente dal CSS",
-            "dipende dal browser",
-            "dipende dalla versione di HTML"
+            "richiede che sia definito il CSS",
+            "risiede nel CSS"
         ],
         "correct_answer": "non è dipendente dal CSS",
         "id": "b2c3d4e5-f6a7-8901-2345-3456789abcde"
@@ -2888,10 +2888,10 @@
     {
         "question": "Il protocollo IP:",
         "answers": [
-            "è responsabile della traduzione dei nomi di dominio",
-            "è responsabile della gestione delle sessioni",
+            "è responsabile dell'indirizzamento dei pacchetti verso la destinazione",
+            "è responsabile del trasporto dei frames",
             "è responsabile dell'inoltro dei pacchetti di dati sulla rete, utilizzando indirizzi di rete per indirizzare i pacchetti verso la destinazione",
-            "è responsabile della crittografia dei dati"
+            "gestisce la parte applicativa della comunicazione"
         ],
         "correct_answer": "è responsabile dell'inoltro dei pacchetti di dati sulla rete, utilizzando indirizzi di rete per indirizzare i pacchetti verso la destinazione",
         "id": "b2c3d4e5-f6a7-8901-2345-def012345678"
@@ -3551,10 +3551,10 @@
     {
         "question": "La coppia di tag <BR></BR> è analoga a",
         "answers": [
-            "<nl/>",
+            "<br>",
             "<br/>",
-            "<newline/>",
-            "<linebreak/>"
+            "</br>",
+            "</br/>"
         ],
         "correct_answer": "<br/>",
         "id": "fb251d85-71c8-4660-9c87-7b268535b274"
@@ -3674,7 +3674,7 @@
         "answers": [
             "un <div>",
             "un <span>",
-            "un <input>",
+            "un'ancora",
             "un <img>"
         ],
         "correct_answer": "un <div>",
@@ -3684,9 +3684,9 @@
         "question": "Persone e i contenuti sono i due temi chiave del:",
         "answers": [
             "web 2.0",
-            "sistema operativo",
-            "linguaggio di markup",
-            "web semantico"
+            "web 3.0",
+            "web 1.0",
+            "web 4.0"
         ],
         "correct_answer": "web 2.0",
         "id": "b3c7a8ce-8cfa-4a53-b878-2789851cfe47"
@@ -3761,9 +3761,9 @@
         "question": "L'obiettivo del WHAT era di:",
         "answers": [
             "aiutare lo sviluppo di un web più orientato alle applicazioni che ai documenti",
-            "standardizzare le API per database",
-            "sviluppare protocolli di sicurezza",
-            "sostituire l'HTML con XML"
+            "aiutare lo sviluppo di un web più orientato ai documenti che alle applicazioni",
+            "aiutare lo sviluppo di un web più orientato al multimediale",
+            "aiutare lo sviluppo di un web più orientato alle immagini"
         ],
         "correct_answer": "aiutare lo sviluppo di un web più orientato alle applicazioni che ai documenti",
         "id": "7f4b8b7e-2896-470f-90b1-f7053044df43"

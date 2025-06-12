@@ -74,20 +74,25 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
     manager = get_manager(user_id)
 
     msg = (
-        "*📚 Quiz disponibili:*\n\n"
-        "• *tecnologie web* - _inedite e domande da examsync_ - ultimo aggiornamento `12/06`\n\n"
-        "• *diritto per le aziende digitali* - _inedite_ - ultimo aggiornamento `11/06`\n\n"
-        "• *strategia, organizzazione e marketing* - _paniere e inedite_ - ultimo aggiornamento `08/06`\n\n"
-        "• *corporate planning e valore d'impresa* - _solo paniere_ - ultimo aggiornamento `04/06`\n\n"
-        "• *calcolo delle probabilità e statistica* - _paniere_ - ultimo aggiornamento `05/06`\n\n"
-        "• *comunicazione digitale e social media* - _inedite_ - ultimo aggiornamento `28/05`\n\n"
-        "• *ingegneria del software* - _inedite_ - ultimo aggiornamento `28/05`\n\n"
-        "• *reti di calcolatori e cybersecurity* - _paniere_ - ultimo aggiornamento `28/05`\n\n"
-        "• *programmazione 2* - _inedite_ - ultimo aggiornamento `28/05`\n\n"
+        "*👋 Ciao!*\n"
+        "Questo bot ti aiuta a esercitarti con domande d’esame. Puoi anche scaricare i PDF con tutte le domande e risposte corrette.\n"
+        "Accanto a ogni materia trovi la *data dell’ultimo aggiornamento del quiz*.\n"
+        "Vuoi contribuire? Clicca su GitHub e segui la guida!\n\n"
+
+        "*📚 Quiz disponibili:*\n"
+        "• *Tecnologie web* - _esamsync + inedite_ - `12/06`\n"
+        "• *Diritto aziende digitali* - _inedite_ - `11/06`\n"
+        "• *Strategia e marketing* - _paniere + inedite_ - `08/06`\n"
+        "• *Corporate planning* - _solo paniere_ - `04/06`\n"
+        "• *Statistica* - _paniere_ - `05/06`\n"
+        "• *Comunicazione digitale* - _inedite_ - `28/05`\n"
+        "• *Software engineering* - _inedite_ - `28/05`\n"
+        "• *Reti e cybersecurity* - _paniere_ - `28/05`\n"
+        "• *Programmazione 2* - _inedite_ - `28/05`\n"
     )
 
     keyboard = []
-    keyboard.append([InlineKeyboardButton("🌐 Controlla su Git", url="https://github.com/AdrianaRidolfi/telegram-bots")])
+    keyboard.append([InlineKeyboardButton("🌐 GitHub", url="https://github.com/AdrianaRidolfi/telegram-bots")])
     keyboard.append([InlineKeyboardButton(text="📚 Scegli materia", callback_data="_choose_subject_")])
 
     #se l'utente ha errori aggiungo il bottone
@@ -95,9 +100,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         keyboard.append([InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors")])
 
     reply_markup = InlineKeyboardMarkup(keyboard)
-
-    if not show_intro_text_only:
-        pass
 
     await context.bot.send_message(
         chat_id=user_id,
