@@ -373,7 +373,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
             clear_manager(user_id)
 
         await show_final_stats(user_id, context, state, from_change_course=True)
-        await choose_subject(update, context, show_intro_text_only=True)
+        await choose_subject(update, context)
 
     elif data.endswith(JSON):
         await select_quiz(update, context)
