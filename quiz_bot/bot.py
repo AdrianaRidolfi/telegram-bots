@@ -75,15 +75,15 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
 
     msg = (
         "*📚 Quiz disponibili:*\n\n"
-        "• *comunicazione digitale e social media* - _inedite_ - ultimo aggiornamento `28/05`\n\n"
+        "• *tecnologie web* - _inedite e domande da examsync_ - ultimo aggiornamento `12/06`\n\n"
         "• *diritto per le aziende digitali* - _inedite_ - ultimo aggiornamento `11/06`\n\n"
-        "• *ingegneria del software* - _inedite_ - ultimo aggiornamento `28/05`\n\n"
+        "• *strategia, organizzazione e marketing* - _paniere e inedite_ - ultimo aggiornamento `08/06`\n\n"
         "• *corporate planning e valore d'impresa* - _solo paniere_ - ultimo aggiornamento `04/06`\n\n"
+        "• *calcolo delle probabilità e statistica* - _paniere_ - ultimo aggiornamento `05/06`\n\n"
+        "• *comunicazione digitale e social media* - _inedite_ - ultimo aggiornamento `28/05`\n\n"
+        "• *ingegneria del software* - _inedite_ - ultimo aggiornamento `28/05`\n\n"
         "• *reti di calcolatori e cybersecurity* - _paniere_ - ultimo aggiornamento `28/05`\n\n"
         "• *programmazione 2* - _inedite_ - ultimo aggiornamento `28/05`\n\n"
-        "• *calcolo delle probabilità e statistica* - _paniere_ - ultimo aggiornamento `05/06`\n\n"
-        "• *strategia, organizzazione e marketing* - _paniere e inedite_ - ultimo aggiornamento `08/06`\n\n"
-        "• *tecnologie web* - _inedite e domande da examsync_ - ultimo aggiornamento `11/06`\n\n"
     )
 
     keyboard = []
@@ -200,7 +200,7 @@ async def error_handler(update, context):
 def escape_markdown(text: str) -> str:
     if not text:
         return ""
-    escape_chars = r"_*[]`"
+    escape_chars = r"_*`"
     return re.sub(rf"([{re.escape(escape_chars)}])", r"\\\1", text)
 
 async def send_next_question(user_id, context):
