@@ -21,5 +21,22 @@ yay_gif_urls = [
     "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXd1dHlkZTg3d2thMHpwZTNnZjBzYzJpdDJvaDZycGNydDhrY2NidiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26DOoDwdNGKAg6UKI/giphy.gif"
 ]
 
+yikes_gif_urls = [
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExem53ajkzcmM2aWJuam9yc2FjcTl0cmE4MnBqdmwzN3RzdXhjdWszNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kD6GfKDucNyvyLgFtg/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExem53ajkzcmM2aWJuam9yc2FjcTl0cmE4MnBqdmwzN3RzdXhjdWszNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/228WzCuRqsrO3DdUc2/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExczVpdzJ6bHgzMTVydjFoOGJhdG5iYmJmZzdoNjl6bWp2ZTY2MDBrdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MZAC7yfuKPSQ8kgFav/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExczVpdzJ6bHgzMTVydjFoOGJhdG5iYmJmZzdoNjl6bWp2ZTY2MDBrdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ge0VHLx5Tb2aGkIHtu/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExczVpdzJ6bHgzMTVydjFoOGJhdG5iYmJmZzdoNjl6bWp2ZTY2MDBrdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/57MN9dLjLCV2JwtWlS/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExczVpdzJ6bHgzMTVydjFoOGJhdG5iYmJmZzdoNjl6bWp2ZTY2MDBrdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gn0NGwznwsRMc9s4YQ/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjR1Zjc2dWpwMjFtbTJydjhxemVoYWdpdWVremhnNDQxZG9meWJkbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/80TEu4wOBdPLG/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjR1Zjc2dWpwMjFtbTJydjhxemVoYWdpdWVremhnNDQxZG9meWJkbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dB12mOQb99BwDlM83I/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjR1Zjc2dWpwMjFtbTJydjhxemVoYWdpdWVremhnNDQxZG9meWJkbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/sG4PBWRjI4GSVCDXEq/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjR1Zjc2dWpwMjFtbTJydjhxemVoYWdpdWVremhnNDQxZG9meWJkbiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WRMq4MMApzBeg/giphy.gif",
+    "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3dDFic2psbDBycTd4czNpYXk1dnJsaXVrZWZwN29nd2cza3psMGQ3OCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/NCE9migrL4u7XygaAE/giphy.gif"
+]
+
 def yay():
     return random.choice(yay_gif_urls)
+
+def yikes():
+    return random.choice(yikes_gif_urls)

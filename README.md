@@ -17,24 +17,28 @@ Questo repository contiene [bot Telegram](https://core.telegram.org/bots/api) pe
 ## Struttura del repository
 
 ```bash
+
 telegram-bots/
 ├── quiz_bot
-│   ├── bot.py                 # codice Python del bot
-│   ├── pdf_generator.py       # script per generare PDF
-│   ├── Procfile               # comando per il deploy su Render o simili
+│   ├── bot.py                         # codice Python del bot
+│   ├── get_gifs.py
+│   ├── pdf_generator.py               # script per generare PDF
+│   ├── Procfile                       # comando per il deploy su Render o simili
 │   ├── quizzes
-│   │   ├── diritto.json               # quiz in formato JSON
-│   │   ├── convert.py                 # utility per convertire in JSON
 │   │   ├── add_ids.py                 # utility per aggiungere gli id a un json
+│   │   ├── comunicazione_digital.json # quiz in formato JSON
+│   │   ├── convert.py                 # utility per convertire in JSON
 │   │   ├── fonts                      # cartella per i font usati nei PDF
 │   │   │   └── [file di font vari]
 │   │   ├── images                     # cartella per le immagini usate nei quiz
 │   │   │   └── [immagini .jpg]
-│   │   └── tecnologie.json            # altro quiz in formato JSON
+│   │   └── [test .json]
 │   ├── requirements.txt               # dipendenze Python
 │   ├── test_firestore.py              # script di test per Firestore
+│   ├── trova_inedite.py               # utility per trovare domande assenti nel json
+│   ├── user_stats.py                  # gestione statistiche utente
 │   └── wrong_answers.py               # gestione risposte errate
-└── README.md                         # file di documentazione principale
+└── README.md                          # TU SEI QUI                     
 ```
 
 ## Dipendenze e installazione
@@ -55,7 +59,7 @@ Puoi contribuire aggiungendo nuovi quiz in formato `.json`.
 
 ### 1. Fai un fork del progetto
 
-Clicca su **Fork** in alto a destra per creare una copia nel tuo account.
+Per iniziare, devi creare una tua copia personale di questo progetto. Per farlo, clicca sul pulsante **Fork** che trovi in alto a destra su questa pagina GitHub. Questo creerà una copia del progetto nel tuo account, sulla quale potrai lavorare liberamente.
 
 ### 2. Aggiungi il tuo quiz
 
@@ -64,16 +68,27 @@ Clicca su **Fork** in alto a destra per creare una copia nel tuo account.
 ```json
 [
   {
-    "question": "Testo della domanda",
+    "question": "Testo della domanda 1?",
     "answers": [
-      "Risposta 1",
-      "Risposta 2",
-      "Risposta 3",
-      "Risposta 4"
+      "Risposta A",
+      "Risposta B",
+      "Risposta C",
+      "Risposta D"
     ],
-    "correct_answer": "Risposta 2",
-    "image": "image.jpg",
+    "correct_answer": "Risposta B",
+    "image": "immagine_quiz1.jpg",
     "id": "86c42b34-d157-4eef-981b-8d7ee94c929f"
+  },
+  {
+    "question": "Testo della domanda 2?",
+    "answers": [
+      "Opzione 1",
+      "Opzione 2",
+      "Opzione 3",
+      "Opzione 4"
+    ],
+    "correct_answer": "Opzione 3",
+    "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef"
   }
 ]
 ```
@@ -82,18 +97,17 @@ Clicca su **Fork** in alto a destra per creare una copia nel tuo account.
 - **answers**: lista delle possibili risposte
 - **correct_answer**: la risposta corretta
 - **image**: eventuale immagine jpg, deve in quel caso essere aggiunta nella cartella images
-- **id**: identificativo univoco
+- **id**: identificativo univoco, puoi utilizzare [add_ids.py](/quiz_bot/quizzes/add_ids.py) per aggiungere gli **id** alle tue domande in maniera automatica.
 
 
 - Assicurati che:
     - il file sia un json valido.
+    - l'immagine, se presente, sia in formato jpg e inserita dentro quiz_bot/quizzes/images
     - correct_answer corrisponda esattamente a una delle risposte elencate in answers.
 
-**NB.** se vuoi aggiungere un'immagine relativa alla domanda puoi aggiungere il campo image con il nome dell'immagine e salvarla dentro la cartella images. L'immagine DEVE essere in formato jpg.
 
 - Salva il file nella cartella quiz_bot/quizzes/ e dagli un nome descrittivo, ad esempio storia.json.
 
-Puoi utilizzare [add_ids.py](/quiz_bot/quizzes/add_ids.py) per aggiungere gli **id**
 
 3. Fai una pull request. Una volta aggiunto il file e fatto il commit sul tuo fork:
 
@@ -111,11 +125,11 @@ Formati supportati:
 
   - **.txt**: con blocchi DOMANDE e RISPOSTE, vedi [tecnologie.txt](/quiz_bot/quizzes/tecnologie.txt) per un esempio
 
-  - **.qwz** XML prodotto per [Question Writer](https://www.questionwriter.com/download.html)  
+  - **.qwz**: file XML prodotto da [Question Writer](https://www.questionwriter.com/download.html)  
 
-  - **.pdf** 
+  - **.pdf**: richiedono una struttura specifica per essere letti dallo script.
 
-Come dev'essere strutturato un PDF per la conversione:
+**Come dev'essere strutturato un PDF per la conversione:**
 
 Il testo del PDF deve seguire questa struttura per ciascuna domanda:
 
@@ -193,10 +207,19 @@ Questo approccio consente di:
 ```code
     /start
 ```
-Avvia la sessione quiz in chat privata con l'utente che ha inviato il comando.
-Il bot inizia a fare le domande una ad una.
+Avvia il bot mostrando un messaggio di benvenuto, le informazioni sui quiz presenti ed i bottoni per iniziare con i test.
 
 ```code
     /stats
 ```
 Mostra le statistiche dell'utente.
+
+```code
+    /download
+```
+Mostra i bottoni con i quiz presenti per decidere quale scaricare in formato PDF, il bot crea il file sul momento quindi non c'è rischio non sia allineato con i quiz presenti.
+
+```code
+    /choose_subject
+```
+Mostra i bottoni con i quiz presenti per iniziare con lo studio

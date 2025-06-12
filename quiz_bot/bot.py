@@ -14,7 +14,7 @@ from telegram.ext import (
 )
 from contextlib import asynccontextmanager
 from pdf_generator import generate_pdf
-from get_gifs import yay
+from get_gifs import yay, yikes
 from wrong_answers import WrongAnswersManager
 from user_stats import UserStatsManager
 from firebase_admin import credentials, firestore
@@ -554,7 +554,6 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
 
     subject = state.get("subject")
     if subject is None:
-        # Se non c’è subject, puoi saltare questa parte o mostrare un messaggio generico
         await context.bot.send_message(chat_id=user_id, text="Nessun corso selezionato.")
         return
 
@@ -575,6 +574,9 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
 
     if score == 30 and total == 30:
         await context.bot.send_animation(chat_id=user_id, animation=yay())
+
+    if score < 18 and total == 30:
+        await context.bot.send_animation(chat_id=user_id, animation=yikes())
     
     summary = f"Quiz completato! Punteggio: {score} su {total} ({percentage}%)\n\n📊 Statistiche:\n"
     
