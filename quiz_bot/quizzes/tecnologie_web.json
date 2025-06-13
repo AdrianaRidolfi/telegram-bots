@@ -3789,5 +3789,49 @@
         ],
         "correct_answer": "Token + PIN",
         "id": "1e3745f7-1854-4346-b130-1677c644bcfd"
+    },
+    {
+        "question": "Il protocollo TCP:",
+        "answers": [
+            "non è responsabile del trasporto affidabile dei dati sulla rete",
+            "È responsabile dell'inoltro dei pacchetti di dati sulla rete, utilizzando indirizzi di rete per indirizzare i pacchetti verso la destinazione",
+            "È responsabile dell'indirizzamento dei pacchetti verso la destinazione",
+            "È responsabile del trasporto affidabile dei dati sulla rete"
+        ],
+        "correct_answer": "È responsabile del trasporto affidabile dei dati sulla rete",
+        "id": "1e3745f7-1854-4346-b130-2677c644bcfd"
+    },
+    {
+        "question": "Per usare un pacchetto NPM installato occorre inserire nel codice la direttiva:",
+        "answers": [
+            "use",
+            "manage",
+            "require",
+            "include"
+        ],
+        "correct_answer": "require",
+        "id": "1e3745f7-1854-4346-b130-3677c644bcfd"
+    },
+    {
+        "question": "L'ufficio postale:",
+        "answers": [
+            "offre servizi ma non usufruisce di servizi",
+            "non offre servizi",
+            "offre un solo servizio",
+            "offre servizi ed usufruisce di servizi"
+        ],
+        "correct_answer": "offre servizi ed usufruisce di servizi",
+        "id": "1e3745f7-1854-4346-b130-4677c644bcfd"
+    },
+    {
+        "question": "Nella fase web 1.0:",
+        "answers": [
+            "È stato introdotto angularjs",
+            "È stato introdotto nodejs",
+            "È stato introdotto l'html",
+            "È stato introdotto mongodb"
+        ],
+        "correct_answer": "È stato introdotto l'html",
+        "id": "1e3745f7-1854-4346-b130-5677c644bcfd"
     }
 ]
