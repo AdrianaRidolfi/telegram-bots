@@ -124,6 +124,7 @@ def generate_pdf_sync(quiz_path: str) -> str:
     return pdf_path
 
 def generate_exam_pdf_sync(responses, subject):
+
     file_name = "esame " + subject
     pdf_path = file_name.replace(" ", "_") + ".pdf"
     pdf = FPDF()
@@ -132,59 +133,85 @@ def generate_exam_pdf_sync(responses, subject):
     # Font
     pdf.add_font('DejaVu', '', DEJAVU_TTF)
     pdf.add_font('DejaVu', 'B', os.path.join(FONTS_FOLDER, "DejaVuSans-Bold.ttf"))
-    pdf.set_font("DejaVu", "B", 16)
     
-    title = file_name.upper()
-    pdf.cell(0, 10, title, align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-    pdf.set_font("DejaVu", "", 8)
+    # Header
+    pdf.set_font("DejaVu", "B", 18)
+    pdf.set_text_color(0, 0, 0)
+    title = f"ESAME: {subject.upper()}"
+    pdf.cell(0, 12, title, align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    pdf.ln(5)
     
-    parsed = []
+    # Info riassuntiva
+    correct_count = sum(1 for r in responses if r.get("point") == 1)
+    total_questions = len(responses)
+    percentage = (correct_count / total_questions * 100) if total_questions > 0 else 0
+    
+    pdf.set_font("DejaVu", "", 12)
+    pdf.cell(0, 8, f"Domande corrette: {correct_count}/{total_questions} ({percentage:.1f}%)", 
+             align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    pdf.ln(10)
+    
+    # Linea separatrice
+    pdf.set_draw_color(128, 128, 128)
+    pdf.line(pdf.l_margin, pdf.get_y(), pdf.w - pdf.r_margin, pdf.get_y())
+    pdf.ln(10)
     
     for i, response in enumerate(responses):
         question_text = response.get("question", "")
         user_answer = response.get("answer", "")
         is_correct = response.get("point") == 1
         
-        parsed.append({
-            "text": question_text,
-            "user_answer": user_answer,
-            "correct": is_correct
-        })
+        # Calcolo spazio
+        pdf.set_font("DejaVu", "B", 11)
+        question_height = pdf.get_string_width(f"{i+1}. {question_text}") / (pdf.w - 2*pdf.l_margin) * 6 + 12
         
-        # Calcola spazio necessario
-        question_lines = pdf.get_string_width(question_text) // (pdf.w - 2 * pdf.l_margin) + 1
-        question_height = question_lines * 8 + 2
-        answers_height = len(user_answer) * 10  
-        total_needed = question_height + answers_height + 20
+        pdf.set_font("DejaVu", "", 10)
+        answer_height = pdf.get_string_width(f"Risposta: {user_answer}") / (pdf.w - 2*pdf.l_margin - 15) * 6 + 10
         
-        # Se lo spazio non basta, aggiungi pagina
-        if pdf.get_y() + total_needed > pdf.h - pdf.b_margin:
+        total_height = question_height + answer_height + 25
+        
+        # Nuova pagina se necessario
+        if pdf.get_y() + total_height > pdf.h - pdf.b_margin - 15:
             pdf.add_page()
         
-        # Stampa domanda
-        pdf.set_font("DejaVu", "B", 8)
-        pdf.set_text_color(0, 0, 0)  # Reset colore a nero
-        pdf.set_x(pdf.l_margin)
-        pdf.multi_cell(pdf.w - 2*pdf.l_margin, LINE_HEIGHT, f"{i+1}. {question_text}")
+        # Box per ogni domanda 
+        pdf.set_draw_color(200, 200, 200)
+        pdf.rect(pdf.l_margin, pdf.get_y(), pdf.w - 2*pdf.l_margin, total_height - 5)
         
-        # Stampa risposta con colore appropriato
+        # Domanda
+        pdf.set_font("DejaVu", "B", 11)
+        pdf.set_text_color(0, 0, 0)
+        pdf.set_x(pdf.l_margin + 2)
+        pdf.multi_cell(pdf.w - 2*pdf.l_margin - 4, 6, f"{i+1}. {question_text}")
+        pdf.ln(6)
+        
+        # Risposta
+        pdf.set_font("DejaVu", "", 10)
+        pdf.set_x(pdf.l_margin + 15)
+        pdf.multi_cell(pdf.w - 2*pdf.l_margin - 17, 5, f"Risposta: {user_answer}")
+        pdf.ln(4)
+        
+        # Stato
+        pdf.set_x(pdf.l_margin + 15)
         if is_correct:
-            pdf.set_text_color(0, 128, 0)  # Verde
+            pdf.set_text_color(0, 150, 0)
+            status_text = "✓ CORRETTO"
         else:
-            pdf.set_text_color(255, 0, 0)  # Rosso
+            pdf.set_text_color(200, 50, 50)
+            status_text = "✗ ERRATO"
             
-        pdf.set_font("DejaVu", "", 8)
-        pdf.set_x(pdf.l_margin)
-        pdf.multi_cell(pdf.w - 2*pdf.l_margin, LINE_HEIGHT, user_answer)
-        pdf.ln(5)
+        pdf.set_font("DejaVu", "B", 10)
+        pdf.cell(0, 6, status_text, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+        pdf.ln(12)  # Spazio maggiore tra le domande
+        
+        # Reset
+        pdf.set_text_color(0, 0, 0)
     
     pdf.output(pdf_path)
     return pdf_path
 
 async def generate_exam_pdf(responses, subject, bot, user_id):
-    """
-    Versione asincrona che chiama la funzione sincrona per generare il PDF
-    """
+  
     pdf_path = None
     try:
         # Chiama la versione sincrona (senza await perché non è async)
