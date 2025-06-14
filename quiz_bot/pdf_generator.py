@@ -123,7 +123,78 @@ def generate_pdf_sync(quiz_path: str) -> str:
     pdf.output(pdf_path)
     return pdf_path
 
+async def generate_exam_pdf_sync(responses, subject):
+        
+    file_name = "esame " + subject
+    pdf_path = f"{file_name.replace(" ", "_")}.pdf"
 
+    pdf = FPDF()
+    pdf.add_page()
+
+    # Font
+    pdf.add_font('DejaVu', '', DEJAVU_TTF)
+    pdf.add_font('DejaVu', 'B', os.path.join(FONTS_FOLDER, "DejaVuSans-Bold.ttf"))
+
+    pdf.set_font("DejaVu", "B", 16)
+    title = file_name.upper()
+    pdf.cell(0, 10, title, align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+
+    pdf.set_font("DejaVu", "", 8)
+    letters = ['A', 'B', 'C', 'D']
+
+
+    parsed = []
+
+    for i,response in enumerate(responses):
+        question_text = response.get("question", "")
+        user_answer = response.get("answer", "")
+        is_correct = response.get("point") == 1
+            
+        parsed.append({
+            "text": question_text,
+            "user_answer": user_answer,
+            "correct": is_correct
+        })
+            
+        question_lines = pdf.get_string_width(question_text) // (pdf.w - 2 * pdf.l_margin) + 1
+        question_height = question_lines * 8 + 2
+        answers_height = user_answer * 10
+        total_needed = question_height + answers_height + 20
+        
+        # Se lo spazio non basta, aggiungi pagina
+        if pdf.get_y() + total_needed > pdf.h - pdf.b_margin:
+            pdf.add_page()
+        
+        pdf.set_font("DejaVu", "B", 8)
+        pdf.set_x(pdf.l_margin)
+        pdf.multi_cell(pdf.w - 2*pdf.l_margin, LINE_HEIGHT, f"{i}. {question_text}")
+        
+        if is_correct:
+            pdf.set_text_color(0, 128, 0)
+        else:
+            pdf.set_text_color(255, 0, 0)
+
+        pdf.set_font("DejaVu", "", 8)
+        pdf.set_x(pdf.l_margin)
+        pdf.multi_cell(pdf.w - 2*pdf.l_margin, LINE_HEIGHT, user_answer)
+        
+        pdf.ln(5)
+
+
+    pdf.output(pdf_path)
+    return pdf_path
+
+
+async def generate_exam_pdf(responses, subject, bot, user_id):
+    try:
+        pdf_path = generate_exam_pdf_sync(responses, subject)
+        with open(pdf_path, "rb") as pdf_file:
+            await bot.send_document(chat_id=user_id, document=pdf_file, filename=os.path.basename(pdf_path))
+    except Exception as e:
+        await bot.send_message(chat_id=user_id, text=f"❌ Errore nella generazione o invio del PDF: {e}")
+    finally:
+        if os.path.exists(pdf_path):
+            os.remove(pdf_path)
 
 async def generate_pdf(quiz_file, bot, user_id):
     quiz_path = os.path.join(QUIZ_FOLDER, quiz_file)

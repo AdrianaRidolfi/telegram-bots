@@ -1,6 +1,7 @@
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import ContextTypes
 from exams_sync import ExamSync, ExamSyncError
+from pdf_generator import generate_exam_pdf
 
 
 EXAMS = ["Matematica Discreta", "Analisi matematica", "Calcolo delle probabilità e statistica", "Programmazione 1",
@@ -119,6 +120,8 @@ async def handle_exam_selection(update: Update, context: ContextTypes.DEFAULT_TY
             text=msg,
             parse_mode="Markdown"
         )
+        await generate_exam_pdf(responses, subject, context.bot, user_id)
+
         
     except ExamSyncError as e:
         await context.bot.send_message(chat_id=user_id, text=f"❌ Errore: {str(e)}")
