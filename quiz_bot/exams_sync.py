@@ -110,7 +110,7 @@ class ExamSync:
     def save_exam_to_db(self, subject: str, questions: List[Dict], max_answers: int = 10):
     
         try:
-            subject_ref = self.db.collection("exams").document(subject)  # ✅ CORRETTO: self.db
+            subject_ref = self.db.collection("exams").document(subject)  
             doc = subject_ref.get()
             existing_data = doc.to_dict() if doc.exists else {}
             
@@ -168,3 +168,52 @@ class ExamSync:
                 return exam
                 
         return None
+    
+    def get_all_subjects(self):
+        try:
+            docs = self.db.collection("exams").stream()
+            subjects = [doc.id for doc in docs]
+            return subjects
+        except Exception as e:
+            print(f"Errore nel recuperare le materie: {e}")
+        return []
+
+    def download_all_from_db(self, subject):
+      try:
+            # Accedi al documento della materia
+            subject_doc = self.db.collection("exams").document(subject).get()
+        
+            if not subject_doc.exists:
+                print(f"Materia '{subject}' non trovata")
+                return []
+            
+            # Ottieni tutti i dati della materia (tutte le domande)
+            subject_data = subject_doc.to_dict()
+            
+            questions = []
+            
+            # Itera attraverso ogni domanda nel documento
+            for question_text, answers_list in subject_data.items():
+                if not isinstance(answers_list, list):
+                    continue
+                    
+                # Per ogni risposta nella lista
+                for i, answer_info in enumerate(answers_list):
+                    question_display = f"{question_text}"
+                    if len(answers_list) > 1:
+                        question_display += f" (Tentativo {i+1}/{len(answers_list)})"
+                    
+                    questions.append({
+                        "question": question_display,
+                        "answer": answer_info.get("answer", ""),
+                        "point": 1 if answer_info.get("correct", False) else 0,
+                        "is_multiple": len(answers_list) > 1,
+                        "attempt_number": i + 1,
+                        "total_attempts": len(answers_list)
+                    })
+            
+            return questions
+            
+      except Exception as e:
+        print(f"Errore nel download dal database Firebase: {e}")
+        return []

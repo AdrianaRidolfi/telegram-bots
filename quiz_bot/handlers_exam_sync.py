@@ -3,12 +3,20 @@ from telegram.ext import ContextTypes
 from exams_sync import ExamSync, ExamSyncError
 from pdf_generator import generate_exam_pdf
 import time
+import re
 
 
 EXAMS = ["Matematica Discreta", "Analisi matematica", "Calcolo delle probabilità e statistica", "Programmazione 1",
               "Algoritmi e strutture dati", "Architettura dei calcolatori", "Diritto per le aziende digitali", "Reti di calcolatori e Cybersecurity",
               "Programmazione 2", "Ingegneria del software", "Tecnologie Web", "Programmazione distribuita e cloud computing",
               "Strategia, organizzazione e marketing", "Corporate planning e valore d'impresa"]
+
+def escape_markdown(text):
+    if not text:
+        return ""
+    # Caratteri da escapare: _ * [ ] ( ) ~ ` > # + - = | { } . !
+    special_chars = r'([_*\[\]()~`>#+=|{}.!\\])'
+    return re.sub(special_chars, r'\\\1', str(text))
 
 async def sync_exam_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
@@ -37,7 +45,6 @@ async def sync_exam_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         context.user_data["sync_state"] = "awaiting_username"
 
 async def show_exam_selection(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Mostra la selezione degli esami"""
     user_id = update.effective_user.id
     keyboard = [
         [InlineKeyboardButton(name, callback_data=f"select_exam_{name}")]
@@ -54,7 +61,6 @@ async def show_exam_selection(update: Update, context: ContextTypes.DEFAULT_TYPE
     )
 
 async def get_valid_token(context: ContextTypes.DEFAULT_TYPE):
-    """Ottiene un token valido, usando quello salvato o facendo login se necessario"""
     token_info = context.user_data.get("auth_token", {})
     token = token_info.get("token")
     token_timestamp = token_info.get("timestamp", 0)
@@ -130,6 +136,99 @@ async def handle_exam_sync_flow(update: Update, context: ContextTypes.DEFAULT_TY
             await context.bot.send_message(chat_id=user_id, text=f"❌ Errore di login: {str(e)}\n\n🔐 Inserisci nuovamente il tuo username:")
             context.user_data["sync_state"] = "awaiting_username"
 
+async def show_post_sync_menu(update: Update, context: ContextTypes.DEFAULT_TYPE, subject: str):
+    user_id = update.effective_user.id if update.effective_user else update.callback_query.from_user.id
+    
+    keyboard = [
+        [InlineKeyboardButton("📥 Carica altro esame", callback_data="load_another_exam")],
+        [InlineKeyboardButton("🎯 Torna alle esercitazioni", callback_data="_choose_subject_")],
+       # [InlineKeyboardButton("📁 Scarica tutto dal DB", callback_data="download_all_db")]
+    ]
+    
+    await context.bot.send_message(
+        chat_id=user_id,
+        text="Cosa vuoi fare?",
+        reply_markup=InlineKeyboardMarkup(keyboard)
+    )
+
+async def handle_post_sync_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    
+    if query.data == "load_another_exam":
+        # Richiama il comando sync_exam
+        await sync_exam_start(update, context)
+    elif query.data == "_choose_subject_":
+        pass
+    elif query.data == "download_all_db":
+        await show_db_subjects_selection(update, context)
+
+async def show_db_subjects_selection(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = update.callback_query.from_user.id
+    
+    try:
+        syncer = context.user_data.get("exam_sync", ExamSync())
+        subjects = syncer.get_subjects_from_db()
+        
+        if not subjects:
+            await context.bot.send_message(
+                chat_id=user_id, 
+                text="❌ Nessuna materia trovata nel database."
+            )
+            return
+        
+        keyboard = [
+            [InlineKeyboardButton(subject, callback_data=f"download_db_{subject}")]
+            for subject in subjects
+        ]
+        
+        await update.callback_query.edit_message_text(
+            text="📁 Seleziona la materia da scaricare:",
+            reply_markup=InlineKeyboardMarkup(keyboard)
+        )
+        
+    except Exception as e:
+        await context.bot.send_message(
+            chat_id=user_id, 
+            text=f"❌ Errore nel recupero delle materie: {str(e)}"
+        )
+
+async def handle_db_download(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    user_id = query.from_user.id
+    
+    if query.data.startswith("download_db_"):
+        subject = query.data.replace("download_db_", "")
+        
+        await query.edit_message_text(f"📁 Sto preparando il download per *{escape_markdown(subject)}*...", parse_mode="MarkdownV2")
+        
+        try:
+            syncer = context.user_data.get("exam_sync", ExamSync())
+            all_questions = syncer.download_all_from_db(subject)
+            
+            if not all_questions:
+                await context.bot.send_message(
+                    chat_id=user_id, 
+                    text=f"❌ Nessuna domanda trovata per {subject}"
+                )
+                return
+            
+            # Genera PDF con tutte le domande
+           # await generate_all_pdf(all_questions, f"{subject} - Completo", context.bot, user_id)
+            
+            await context.bot.send_message(
+                chat_id=user_id,
+                text=f"✅ Download completato per *{escape_markdown(subject)}*\n📊 Totale domande: {len(all_questions)}",
+                parse_mode="MarkdownV2"
+            )
+            
+        except Exception as e:
+            await context.bot.send_message(
+                chat_id=user_id, 
+                text=f"❌ Errore durante il download: {str(e)}"
+            )
+
 async def handle_exam_selection(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     await query.answer()
@@ -151,7 +250,7 @@ async def handle_exam_selection(update: Update, context: ContextTypes.DEFAULT_TY
         subject = query.data.replace("select_exam_", "")
         context.user_data["sync_exam"]["subject"] = subject
         
-        await query.edit_message_text(f"🧠 Sto sincronizzando l'esame *{subject}*...", parse_mode="Markdown")
+        await query.edit_message_text(f"🧠 Sto sincronizzando l'esame *{escape_markdown(subject)}*...", parse_mode="MarkdownV2")
         
         syncer = context.user_data.get("exam_sync", ExamSync())
         
@@ -197,9 +296,14 @@ async def handle_exam_selection(update: Update, context: ContextTypes.DEFAULT_TY
             
             # Processa le risposte
             parsed = []
-            msg = f"*📊 {test_info.get('name_exam', subject)}*\n"
-            msg += f"*Stato:* {test_info.get('status_name', 'N/A')}\n"
-            msg += f"*Punteggio:* {test_info.get('points', 'N/A')}/30\n\n"
+            # Costruisci il messaggio con caratteri escapati
+            exam_name = escape_markdown(test_info.get('name_exam', subject))
+            status_name = escape_markdown(test_info.get('status_name', 'N/A'))
+            points = escape_markdown(str(test_info.get('points', 'N/A')))
+            
+            msg = f"*📊 {exam_name}*\n"
+            msg += f"*Stato:* {status_name}\n"
+            msg += f"*Punteggio:* {points}/30\n\n"
             
             for i, response in enumerate(responses):
                 question_text = response.get("question", "")
@@ -214,24 +318,32 @@ async def handle_exam_selection(update: Update, context: ContextTypes.DEFAULT_TY
                 
                 # Mostra solo le prime 3 domande nel messaggio
                 if i < 3:
-                    msg += f"*{i+1}.* {question_text[:80]}{'...' if len(question_text) > 80 else ''}\n"
-                    msg += f"*Risposta:* {user_answer} {'✅' if is_correct else '❌'}\n\n"
+                    question_preview = escape_markdown(question_text[:80] + ('...' if len(question_text) > 80 else ''))
+                    answer_preview = escape_markdown(user_answer)
+                    
+                    msg += f"*{i+1}\\.* {question_preview}\n"
+                    msg += f"*Risposta:* {answer_preview} {'✅' if is_correct else '❌'}\n\n"
             
             if len(responses) > 3:
-                msg += f"... e altre {len(responses) - 3} domande\n\n"
+                msg += f"\\.\\.\\. e altre {len(responses) - 3} domande\n\n"
             
             # Salva nel database
             syncer.save_exam_to_db(subject, parsed)
             
-            msg += f"*✅ Sincronizzazione completata!*\n"
+            msg += f"*✅ Sincronizzazione completata\\!*\n"
             msg += f"*Totale domande salvate:* {len(parsed)}"
             
             await context.bot.send_message(
                 chat_id=user_id,
                 text=msg,
-                parse_mode="Markdown"
+                parse_mode="MarkdownV2"
             )
+            
+            # Genera PDF
             await generate_exam_pdf(responses, subject, context.bot, user_id)
+            
+            # Mostra il menu post-sincronizzazione
+            await show_post_sync_menu(update, context, subject)
 
             
         except ExamSyncError as e:

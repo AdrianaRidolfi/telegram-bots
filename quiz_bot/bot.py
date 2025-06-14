@@ -3,7 +3,9 @@ import re
 import json
 import random
 import firebase_admin
-from handlers_exam_sync import sync_exam_start, handle_exam_sync_flow, handle_exam_selection
+from handlers_exam_sync import (
+    sync_exam_start, handle_exam_sync_flow, handle_exam_selection,
+    handle_post_sync_menu, show_db_subjects_selection, handle_db_download)
 from typing import Dict
 from fastapi import FastAPI, Request, HTTPException
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -669,7 +671,10 @@ async def lifespan(app: FastAPI):
     application.add_handler(CommandHandler("sync_exam", sync_exam_start))
     
     # Handler specifici PRIMA di quelli generici
-    application.add_handler(CallbackQueryHandler(handle_exam_selection, pattern=r"^select_exam_"))
+    application.add_handler(CallbackQueryHandler(handle_post_sync_menu, pattern="^(load_another_exam|download_all_db)$"))
+    application.add_handler(CallbackQueryHandler(show_db_subjects_selection, pattern="^download_all_db$"))
+    application.add_handler(CallbackQueryHandler(handle_db_download, pattern="^download_db_"))
+    application.add_handler(CallbackQueryHandler(handle_exam_selection, pattern="^(select_exam_|renew_token)$"))
     application.add_handler(CallbackQueryHandler(handle_callback))  # Generico alla fine
     
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_exam_sync_flow))

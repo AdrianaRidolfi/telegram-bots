@@ -174,19 +174,15 @@ def generate_exam_pdf_sync(responses, subject):
         if pdf.get_y() + total_height > pdf.h - pdf.b_margin - 15:
             pdf.add_page()
         
-        # Box per ogni domanda 
-        pdf.set_draw_color(200, 200, 200)
-        pdf.rect(pdf.l_margin, pdf.get_y(), pdf.w - 2*pdf.l_margin, total_height - 5)
-        
         # Domanda
-        pdf.set_font("DejaVu", "B", 11)
+        pdf.set_font("DejaVu", "B", 8)
         pdf.set_text_color(0, 0, 0)
         pdf.set_x(pdf.l_margin + 2)
         pdf.multi_cell(pdf.w - 2*pdf.l_margin - 4, 6, f"{i+1}. {question_text}")
         pdf.ln(6)
         
         # Risposta
-        pdf.set_font("DejaVu", "", 10)
+        pdf.set_font("DejaVu", "", 8)
         pdf.set_x(pdf.l_margin + 15)
         pdf.multi_cell(pdf.w - 2*pdf.l_margin - 17, 5, f"Risposta: {user_answer}")
         pdf.ln(4)
