@@ -1,5 +1,4 @@
 # exam_sync.py
-
 import requests
 import os
 from firebase_admin import firestore
@@ -9,7 +8,6 @@ import logging
 logger = logging.getLogger(__name__)
 
 class ExamSyncError(Exception):
-    """Eccezione personalizzata per errori di ExamSync"""
     pass
 
 class ExamSync:
@@ -23,6 +21,7 @@ class ExamSync:
             raise ExamSyncError("CLIENT_SECRET non trovato nelle variabili d'ambiente")
     
     def login(self, username: str, password: str) -> str:
+        """Effettua il login e restituisce il token di accesso"""
         try:
             response = requests.post(
                 f"{self.BASE_URL}/oauth/token",
@@ -62,12 +61,19 @@ class ExamSync:
             
             data = response.json()
             
-            # Verifica che la risposta sia una lista
-            if not isinstance(data, list):
-                logger.warning(f"Formato esami non atteso: {type(data)}")
+            # La struttura è: { "data": [ { "id": "123", "name_exam": "Nome" } ] }
+            if isinstance(data, dict) and "data" in data:
+                return data["data"]
+            else:
+                logger.warning(f"Struttura risposta esami inaspettata: {data}")
                 return []
                 
-            return data
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Errore durante il recupero esami: {e}")
+            raise ExamSyncError(f"Errore di connessione durante il recupero esami: {str(e)}")
+        except ValueError as e:
+            logger.error(f"Errore parsing JSON esami: {e}")
+            raise ExamSyncError("Formato risposta non valido dal server")
             
         except requests.exceptions.RequestException as e:
             logger.error(f"Errore durante il recupero esami: {e}")
@@ -87,13 +93,13 @@ class ExamSync:
             
             data = response.json()
             
-            # Verifica che ci siano le chiavi attese
-            if "questions" not in data:
-                logger.warning("Campo 'questions' non trovato nella risposta")
-                data["questions"] = []
+            # La struttura è: { "data": { "test": {...}, "responses": [...] } }
+            if isinstance(data, dict) and "data" in data:
+                return data["data"]
+            else:
+                logger.warning(f"Struttura risposta risultati inaspettata: {data}")
+                return {"responses": [], "test": {}}
                 
-            return data
-            
         except requests.exceptions.RequestException as e:
             logger.error(f"Errore durante il recupero risultati: {e}")
             raise ExamSyncError(f"Errore di connessione durante il recupero risultati: {str(e)}")
@@ -101,10 +107,10 @@ class ExamSync:
             logger.error(f"Errore parsing JSON risultati: {e}")
             raise ExamSyncError("Formato risposta non valido dal server")
     
-    def save_exam_to_db(self, subject: str, questions: List[Dict], max_answers: int = 4):
-
+    def save_exam_to_db(self, subject: str, questions: List[Dict], max_answers: int = 10):
+    
         try:
-            subject_ref = self.db.collection("exams").document(subject) 
+            subject_ref = self.db.collection("exams").document(subject)  # ✅ CORRETTO: self.db
             doc = subject_ref.get()
             existing_data = doc.to_dict() if doc.exists else {}
             
@@ -152,9 +158,10 @@ class ExamSync:
             raise ExamSyncError(f"Errore durante il salvataggio nel database: {str(e)}")
     
     def get_exam_by_subject(self, subject: str, exams: List[Dict]) -> Optional[Dict]:
+       
         for exam in exams:
-            # Confronto case-insensitive e gestione di possibili variazioni del nome
-            exam_name = exam.get("name", "").strip().lower()
+            # La struttura è: { "id": "123", "name_exam": "Nome dell'esame" }
+            exam_name = exam.get("name_exam", "").strip().lower()
             subject_lower = subject.strip().lower()
             
             if exam_name == subject_lower or subject_lower in exam_name:
