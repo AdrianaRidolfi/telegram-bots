@@ -126,7 +126,7 @@ def generate_pdf_sync(quiz_path: str) -> str:
 async def generate_exam_pdf_sync(responses, subject):
         
     file_name = "esame " + subject
-    pdf_path = f"{file_name.replace(" ", "_")}.pdf"
+    pdf_path = file_name.replace(" ", "_") + ".pdf"
 
     pdf = FPDF()
     pdf.add_page()
