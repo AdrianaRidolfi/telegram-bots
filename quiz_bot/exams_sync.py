@@ -3,10 +3,11 @@
 import requests
 from firebase_admin import firestore
 
-db = firestore.client()
-
 class ExamSync:
     BASE_URL = "https://app-api.pegaso.multiversity.click"
+
+    def __init__(self):
+        self.db = firestore.client()
 
     def login(self, username: str, password: str) -> str:
         response = requests.post(
