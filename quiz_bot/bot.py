@@ -666,12 +666,15 @@ async def lifespan(app: FastAPI):
     application.add_handler(CommandHandler("stats", stats))
     application.add_handler(CommandHandler("download", download))
     application.add_handler(CommandHandler("choose_subject", choose_subject))
-    application.add_handler(CallbackQueryHandler(handle_callback))
-    application.add_error_handler(error_handler)
     application.add_handler(CommandHandler("sync_exam", sync_exam_start))
-    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_exam_sync_flow))
+    
+    # Handler specifici PRIMA di quelli generici
     application.add_handler(CallbackQueryHandler(handle_exam_selection, pattern=r"^select_exam_"))
-
+    application.add_handler(CallbackQueryHandler(handle_callback))  # Generico alla fine
+    
+    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_exam_sync_flow))
+    application.add_error_handler(error_handler)
+    
     print("✅ Applicazione Telegram inizializzata con successo.")
     yield
 

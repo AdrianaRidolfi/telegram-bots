@@ -16,6 +16,9 @@ async def sync_exam_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["sync_state"] = "awaiting_username"
 
 async def handle_exam_sync_flow(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if "sync_state" not in context.user_data:
+        return  # Non fare nulla se non siamo nel flusso
+    
     user_id = update.effective_user.id
     state = context.user_data.get("sync_state")
     text = update.message.text
