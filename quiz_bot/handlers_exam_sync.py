@@ -11,6 +11,7 @@ EXAMS = ["Matematica Discreta", "Analisi matematica", "Calcolo delle probabilit�
 async def sync_exam_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
     context.user_data["sync_exam"] = {}
+    context.user_data["exam_sync"] = ExamSync()
     await context.bot.send_message(chat_id=user_id, text="🔐 Inserisci il tuo username:")
     context.user_data["sync_state"] = "awaiting_username"
 
@@ -46,7 +47,7 @@ async def handle_exam_selection(update: Update, context: ContextTypes.DEFAULT_TY
     await query.edit_message_text(f"🧠 Sto sincronizzando l'esame *{subject}*...", parse_mode="Markdown")
 
     data = context.user_data["sync_exam"]
-    syncer = ExamSync()
+    syncer =context.user_data["exam_sync"]
 
     try:
         token = syncer.login(data["username"], data["password"])
