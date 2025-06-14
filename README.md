@@ -12,6 +12,7 @@ Questo repository contiene [bot Telegram](https://core.telegram.org/bots/api) pe
 - [Come contribuire con nuovi test](#come-contribuire-con-nuovi-test)
 - [Conversione e preparazione dei file json](#conversione-e-preparazione-dei-file-json)
 - [Ripasso](#ripasso-degli-errori)
+- [Sincronizzazione esami](#sincronizzazione-esami)
 - [Comandi del bot](#comandi-del-bot)
 
 ## Struttura del repository
@@ -202,6 +203,30 @@ Questo approccio consente di:
   - Costruire una memoria a lungo termine attraverso la ripetizione distribuita
   - Ogni volta che una risposta è stata sbagliata l'utente dovrà rispondere correttamente 3 volte affinché sparisca dal ripasso
 
+## Sincronizzazione esami
+
+È ora possibile sincronizzare i risultati degli esami sostenuti direttamente nel bot.
+
+### Come funziona
+
+- Digita il comando /sync_exam
+
+- Inserisci le tue credenziali Pegaso (username e password)
+
+- Seleziona la materia da una lista
+
+- Il bot recupererà l'ultimo esame disponibile, mostrerà tutte le domande con le risposte date e salverà i dati nel database Firebase
+
+### Come vengono salvati i dati
+
+- Le domande sono archiviate nella collection exams/<materia>
+
+- Ogni domanda può contenere al massimo 4 risposte possibili
+
+- Viene salvata per ogni risposta anche l’informazione se era corretta o sbagliata
+
+- Se una risposta è già presente, non viene duplicata
+
 ## Comandi del bot
 
 ```code
@@ -223,3 +248,8 @@ Mostra i bottoni con i quiz presenti per decidere quale scaricare in formato PDF
     /choose_subject
 ```
 Mostra i bottoni con i quiz presenti per iniziare con lo studio
+
+```code
+    /sync_exam
+```
+Consente di salvare le domande e risposte degli esami sostenuti su un database
