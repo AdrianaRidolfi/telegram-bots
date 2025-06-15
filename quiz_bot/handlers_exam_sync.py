@@ -19,7 +19,7 @@ def escape_markdown(text):
     """Escape dei caratteri speciali per MarkdownV2"""
     if not text:
         return ""
-    special_chars = r'([_*\[\]()~`>#+=|{}.!\\])'
+    special_chars = r'([_*\[\]()~`>#+=|{}.!\\-])'  
     return re.sub(special_chars, r'\\\1', str(text))
 
 
@@ -322,7 +322,7 @@ async def display_exam_results(context: ContextTypes.DEFAULT_TYPE, user_id: int,
             msg += f"*Risposta:* {answer_preview} {'✅' if is_correct else '❌'}\n\n"
     
     if len(responses) > 3:
-        msg += f"\\.\\.\\. e altre {len(responses) - 3} domande\n\n"
+        msg += f"\\.\\.\\. e altre {escape_markdown(str(len(responses) - 3))} domande\n\n"
     
     # Salva nel database in background
     syncer.save_exam_to_db(subject, parsed_questions)
