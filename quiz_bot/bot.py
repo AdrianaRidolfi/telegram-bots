@@ -5,8 +5,7 @@ import random
 import firebase_admin
 from handlers_exam_sync import (
     analyze_exam_start, handle_exam_selection,
-    clear_session, handle_exam_analyze_flow,
-    token_info, handle_post_analyze_menu)
+     handle_exam_analyze_flow, handle_post_analyze_menu)
 from typing import Dict
 from fastapi import FastAPI, Request, HTTPException
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -404,6 +403,14 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif data == "git":
         await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots")
 
+    # Gestione callbacks per analisi esami
+    elif data.startswith("select_exam_"):
+        await handle_exam_selection(update, context)
+    elif data == "renew_token":
+        await handle_exam_selection(update, context)
+    elif data == "analyze_another_exam":
+        await handle_post_analyze_menu(update, context)
+
 async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, subject: str):
     
     user_id = update.effective_user.id
@@ -672,13 +679,6 @@ async def lifespan(app: FastAPI):
     application.add_handler(CommandHandler("download", download))
     application.add_handler(CommandHandler("choose_subject", choose_subject))
     application.add_handler(CommandHandler("analyze_exam", analyze_exam_start))
-    application.add_handler(CommandHandler("token_info", token_info))
-    application.add_handler(CommandHandler("clear_session", clear_session))
-    
-    # Add specific callback handlers
-    application.add_handler(CallbackQueryHandler(handle_post_analyze_menu, pattern="^(analyze_another_exam|_choose_subject_)$"))
-    application.add_handler(CallbackQueryHandler(handle_exam_selection, pattern="^select_exam_"))
-    application.add_handler(CallbackQueryHandler(handle_exam_selection, pattern="^renew_token$"))
     
     # Add the generic callback handler LAST
     application.add_handler(CallbackQueryHandler(handle_callback))
