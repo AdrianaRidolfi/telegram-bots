@@ -677,7 +677,8 @@ async def lifespan(app: FastAPI):
     
     # Handler specifici PRIMA di quelli generici - PATTERN CORRETTI
     application.add_handler(CallbackQueryHandler(handle_post_analyze_menu, pattern="^(analyze_another_exam|_choose_subject_)$"))
-    application.add_handler(CallbackQueryHandler(handle_exam_selection, pattern="^(select_exam_|renew_token)$"))
+    application.add_handler(CallbackQueryHandler(handle_exam_selection, pattern="^select_exam_"))
+    application.add_handler(CallbackQueryHandler(handle_exam_selection, pattern="^renew_token$"))
     
     # Handler generico alla fine
     application.add_handler(CallbackQueryHandler(handle_callback))
