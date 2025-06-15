@@ -3571,7 +3571,7 @@
         "id": "38449f0e-e640-4935-bf66-c8b5fc6ffd38"
     },
     {
-        "question": "L'impaginazione mediante ??? (da examsync, forse manca un'immagine)",
+        "question": "L'impaginazione mediante <table>",
         "answers": [
             "è sempre obbligatoria",
             "non è considerata una buona pratica",
@@ -3833,5 +3833,687 @@
         ],
         "correct_answer": "È stato introdotto l'html",
         "id": "1e3745f7-1854-4346-b130-5677c644bcfd"
+    },
+    {
+        "question": "L'header set-cookie:",
+        "answers": [
+            "è utilizzato dal server per chiedere al client di memorizzare un generico token",
+            "è utilizzato dal client per chiedere al server di memorizzare un generico token",
+            "è obsoleto",
+            "elimina il cookie se presente"
+        ],
+        "correct_answer": "è utilizzato dal server per chiedere al client di memorizzare un generico token",
+        "id": "c93f3be8-6a89-4f38-99e9-6bcf3d885b84"
+    },
+    {
+        "question": "HTML 4.01 introduce:",
+        "answers": [
+            "la separazione tra client e server",
+            "l'utilizzo del nosql",
+            "la separazione del livello di presentazione della formattazione in un'entità separata dall'HTML (i CSS)",
+            "forms, img, responsiveness"
+        ],
+        "correct_answer": "la separazione del livello di presentazione della formattazione in un'entità separata dall'HTML (i CSS)",
+        "id": "9feaa9c6-17db-4b10-b0e5-3fda1fa0efc3"
+    },
+    {
+        "question": "In basic-authentication la concatenazione avviene tramite:",
+        "answers": [
+            "i due punti",
+            "il punto",
+            "il punto e virgola",
+            "la virgola"
+        ],
+        "correct_answer": "i due punti",
+        "id": "ed56b10e-89a2-4f47-89d5-9e99c9edaa5c"
+    },
+    {
+        "question": "Un persistent cookie:",
+        "answers": [
+            "ha durata limitata al ciclo di vita del browser",
+            "ha durata stabilita dal server",
+            "ha durata fissa pari a 24 ore",
+            "si usa solo in presenza di HTTPs"
+        ],
+        "correct_answer": "ha durata stabilita dal server",
+        "id": "a540cbbe-45a9-4031-8093-2072fa5203d1"
+    },
+    {
+        "question": "Per scorrere un documento XML, AJAX:",
+        "answers": [
+            "usa la funzione parse",
+            "usa la funzione stringify",
+            "usa il DOM XML",
+            "usa Xpath"
+        ],
+        "correct_answer": "usa il DOM XML",
+        "id": "dfe98760-3df8-4e53-b536-780835144e57"
+    },
+    {
+        "question": "In CSS le shorthand properties consentono:",
+        "answers": [
+            "di abbreviare il nome di una property",
+            "di usare css esterni",
+            "di definire un insieme di aspetti, correlati fra di loro usando una sola proprietà",
+            "di usare css esterni abbreviando i nomi delle properties"
+        ],
+        "correct_answer": "di definire un insieme di aspetti, correlati fra di loro usando una sola proprietà",
+        "id": "75aef5bb-9679-4702-b640-cdcf8ae3a0ef"
+    },
+    {
+        "question": "Il settaggio del viewport width=device-width:",
+        "answers": [
+            "imposta la larghezza del viewport pari a quella del dispositivo",
+            "imposta la larghezza ed altezza del viewport pari a quella del dispositivo",
+            "imposta l'altezza del viewport pari a quella del dispositivo",
+            "indica il valore della larghezza delle pagine"
+        ],
+        "correct_answer": "imposta la larghezza del viewport pari a quella del dispositivo",
+        "id": "31ac0892-1593-4e3e-b179-09f27e0b5a34"
+    },
+    {
+        "question": "In jQuery, il metodo:",
+        "answers": [
+            "è il simbolo che indica l'utilizzo della libreria",
+            "è un'istruzione che indica l'elemento HTML su cui eseguire l'azione",
+            "è l'azione che vogliamo eseguire sull'elemento selezionato",
+            "è un parametro opzionale che possiamo utilizzare per fornire ulteriori informazioni all'azione che stiamo eseguendo"
+        ],
+        "correct_answer": "è l'azione che vogliamo eseguire sull'elemento selezionato",
+        "id": "fd58d89e-d553-4a3a-b491-648b90e6df55"
+    },
+    {
+        "question": "L'elemento style va inserito:",
+        "answers": [
+            "nel body",
+            "nell'head",
+            "in un file esterno",
+            "nel tag meta"
+        ],
+        "correct_answer": "nell'head",
+        "id": "b3e541db-57fa-4d17-9bc6-e3916c1c71b9"
+    },
+    {
+        "question": "Le funzionalità per la interconnessione fisica tra un sistema elaborativo e un sistema di telecomunicazione sono realizzate nei livelli:",
+        "answers": [
+            "Application - Presentation - Session - Transport",
+            "Application - Presentation - Session",
+            "Network - Data Link - Physical",
+            "Physical"
+        ],
+        "correct_answer": "Network - Data Link - Physical",
+        "id": "d9cc3a79-73e2-4cb4-9492-f5ff8266d6a1"
+    },
+    {
+        "question": "Nella fase web 3.0:",
+        "answers": [
+            "è stato introdotto il css",
+            "è stato introdotto l'html",
+            "è stato introdotto angularjs",
+            "è stato introdotto ajax"
+        ],
+        "correct_answer": "è stato introdotto angularjs",
+        "id": "f7c6d048-6e14-4f8b-a3eb-10b73c0413ef"
+    },
+    {
+        "question": "L'HTTP si colloca sul livello:",
+        "answers": [
+            "Network",
+            "Transport",
+            "Data Link",
+            "Application"
+        ],
+        "correct_answer": "Application",
+        "id": "fe901b74-14e9-4cd6-9d86-7b9f94fd7b7c"
+    },
+    {
+        "question": "Nel modello OSI, il livello di rete:",
+        "answers": [
+            "si occupa di stabilire, gestire e terminare le sessioni tra le applicazioni sui sistemi remoti",
+            "si occupa di tradurre i dati tra le diverse rappresentazioni utilizzate dalle applicazioni",
+            "si occupa di fornire le interfacce per le applicazioni per accedere alle funzionalità della rete",
+            "si occupa di inoltrare i pacchetti su una rete, utilizzando indirizzi di rete per indirizzare i pacchetti verso la destinazione"
+        ],
+        "correct_answer": "si occupa di inoltrare i pacchetti su una rete, utilizzando indirizzi di rete per indirizzare i pacchetti verso la destinazione",
+        "id": "6d2274b7-37b1-4424-a2d8-8b73313808f4"
+    },
+    {
+        "question": "La comunicazione è un processo relazionale, in cui due o più individui:",
+        "answers": [
+            "si affidano ad un terzo come arbitro",
+            "negoziano NFTs di significati condivisi",
+            "negoziano un sotto-insieme di significati condivisi",
+            "negoziano un insieme di significati condivisi"
+        ],
+        "correct_answer": "negoziano un insieme di significati condivisi",
+        "id": "847e7a52-9334-4bc1-9f92-5c80dfb6ed45"
+    },
+    {
+        "question": "Uno dei suoi compiti è segmentare e ri-assemblare:",
+        "answers": [
+            "Network Layer",
+            "Data Link Layer",
+            "Transport Layer",
+            "Application Layer"
+        ],
+        "correct_answer": "Transport Layer",
+        "id": "b9c9225e-168e-4ed8-8b9e-6d6462a5be1c"
+    },
+    {
+        "question": "Packet è il nome della PDU nel livello:",
+        "answers": [
+            "Transport",
+            "Network",
+            "Data Link",
+            "Physical"
+        ],
+        "correct_answer": "Network",
+        "id": "f4d23b78-e63f-4a06-bdc6-5beed61e2fe6"
+    },
+    {
+        "question": "In questo livello viene utilizzato il protocollo ARP:",
+        "answers": [
+            "Network Access Layer",
+            "Internet Layer",
+            "Transport Layer",
+            "Application Layer"
+        ],
+        "correct_answer": "Internet Layer",
+        "id": "4aa6c34c-4bb7-4e2f-8b2e-3c9fe1b7cc0f"
+    },
+    {
+        "question": "In questo livello viene utilizzato il protocollo ICMP:",
+        "answers": [
+            "Network Access Layer",
+            "Internet Layer",
+            "Transport Layer",
+            "Application Layer"
+        ],
+        "correct_answer": "Internet Layer",
+        "id": "a52b6d84-3102-4f29-b08b-cddbb3ddf030"
+    },
+    {
+        "question": "Il repeater è un dispositivo di livello:",
+        "answers": [
+            "4",
+            "1",
+            "3",
+            "2"
+        ],
+        "correct_answer": "1",
+        "id": "1ff1c7f3-cd03-41e5-b157-07d30d97f32d"
+    },
+    {
+        "question": "E' stato sviluppato come un modello di riferimento generale per la comunicazione di rete:",
+        "answers": [
+            "il modello OSI",
+            "il modello TCP/IP",
+            "entrambi i modelli OSI e TCP/IP",
+            "il modello ibrido"
+        ],
+        "correct_answer": "il modello OSI",
+        "id": "f3316d98-c34c-4f74-9cae-0d6a2cc79a88"
+    },
+    {
+        "question": "Le tecnologie che compongono MEAN sono:",
+        "answers": [
+            "mongodb, express, angular e node",
+            "mongodb, express, ajax e node",
+            "mysql, express, angular e node",
+            "mysql, express, ajax e node"
+        ],
+        "correct_answer": "mongodb, express, angular e node",
+        "id": "e26f5c36-c909-4b5f-9e6d-278dcfa1e586"
+    },
+    {
+        "question": "Questa versione di HTTP introduce il supporto per le richieste multiple in parallelo sulla stessa connessione:",
+        "answers": [
+            "HTTP/1.0",
+            "HTTP/1.1",
+            "HTTP/2.0",
+            "HTTP/3.0"
+        ],
+        "correct_answer": "HTTP/2.0",
+        "id": "a7e9c8f3-bf88-4e70-a7b0-fd183b3f1c9d"
+    },
+    {
+        "question": "In una pagina HTML un nodo:",
+        "answers": [
+            "può essere sia un tag che un testo",
+            "può essere solo un tag",
+            "può essere solo un testo",
+            "può essere solo uno script"
+        ],
+        "correct_answer": "può essere sia un tag che un testo",
+        "id": "1f3216f1-f860-460f-8c3d-3a78e4286b3f"
+    },
+    {
+        "question": "Nell'head, definisce come vengono gestiti i riferimenti relativi nei link:",
+        "answers": [
+            "link",
+            "base",
+            "script",
+            "meta"
+        ],
+        "correct_answer": "base",
+        "id": "5d82a79d-522f-4d61-bb94-9d9a87e98c39"
+    },
+    {
+        "question": "Con position fixed si intende:",
+        "answers": [
+            "che l'elemento viene posizionato relativamente al box che l'elemento avrebbe occupato nel normale flusso del documento",
+            "il posizionamento naturale nel flusso",
+            "il posizionamento rispetto al viewport",
+            "che il box dell'elemento viene rimosso dal flusso ed è posizionato rispetto al box contenitore del primo elemento antenato «posizionato», ovvero non static"
+        ],
+        "correct_answer": "il posizionamento rispetto al viewport",
+        "id": "0f90e430-08fa-4a8b-8b4d-cd99a09cf92e"
+    },
+    {
+        "question": "L'interprete Javascript:",
+        "answers": [
+            "è più efficiente di un programma compilato",
+            "è meno efficiente di un programma compilato",
+            "può essere meno efficiente di un programma compilato",
+            "è più efficiente di un programma compilato sono in alcune circostanze"
+        ],
+        "correct_answer": "può essere meno efficiente di un programma compilato",
+        "id": "d34cf4bc-fb33-4a87-9912-279bdb5b1b3d"
+    },
+    {
+        "question": "Lo script Javascript non può essere inserito:",
+        "answers": [
+            "nell'head",
+            "nel body",
+            "in un file esterno",
+            "in un file css"
+        ],
+        "correct_answer": "in un file css",
+        "id": "ce2d857e-1a76-4e5e-8b4e-0a50c19eec8c"
+    },
+    {
+        "question": "Quale delle seguenti non è una proprietà di Flexbox:",
+        "answers": [
+            "display",
+            "flex-direction",
+            "display-items",
+            "align-items"
+        ],
+        "correct_answer": "display-items",
+        "id": "f51b3f0c-d7f4-4a64-a37c-20ea3b8e9b31"
+    },
+    {
+        "question": "Questa proprietà definisce l'asse principale di un contenitore Flexbox e il modo in cui gli elementi al suo interno debbano essere posizionati lungo questo asse:",
+        "answers": [
+            "display",
+            "flex-direction",
+            "display-items",
+            "align-items"
+        ],
+        "correct_answer": "flex-direction",
+        "id": "7b90e4bb-7e14-4cb4-a659-e06520aa010a"
+    },
+    {
+        "question": "Di default, il box model di CSS calcola le dimensioni di un elemento:",
+        "answers": [
+            "includendo solo la sua larghezza e altezza, escludendo il padding e il bordo",
+            "includendo larghezza, altezza, padding e bordo",
+            "includendo solo la sua larghezza, escludendo il altezza, padding e il bordo",
+            "includendo solo la sua altezza, escludendo il padding, la larghezza ed il bordo"
+        ],
+        "correct_answer": "includendo solo la sua larghezza e altezza, escludendo il padding e il bordo",
+        "id": "e84993da-54e8-4c62-9338-4d9dff7a8c25"
+    },
+    {
+        "question": "La classe di breakpoint per dispositivi con larghezza dello schermo inferiore a 576px:",
+        "answers": [
+            ".col-md",
+            ".col-sm",
+            ".col",
+            ".col-lg"
+        ],
+        "correct_answer": ".col",
+        "id": "e7cb0196-f5a1-4e2f-9180-0e4f99aa6943"
+    },
+    {
+        "question": "Il contenuto del modale è definito all'interno di un div con classe 'modal-content', che contiene:",
+        "answers": [
+            "intestazione e corpo",
+            "titolo e corpo",
+            "intestazione, titolo, corpo e piè di pagina",
+            "intestazione, corpo e piè di pagina"
+        ],
+        "correct_answer": "intestazione, corpo e piè di pagina",
+        "id": "6e36f2b7-35f0-4c8d-ae7f-6edc9c3094db"
+    },
+    {
+        "question": "Viene utilizzato per mostrare messaggi temporanei all'utente, come ad esempio notifiche di successo, errori, avvisi; si tratta di:",
+        "answers": [
+            "bottone",
+            "carosello",
+            "toast",
+            "progress bar"
+        ],
+        "correct_answer": "toast",
+        "id": "9a4f3e6d-12a7-4062-8bfc-6c5a8651dfb0"
+    },
+    {
+        "question": "Costituito da un contenitore che può includere un'immagine o un'icona, un titolo e un testo descrittivo; si tratta di:",
+        "answers": [
+            "bottone",
+            "carosello",
+            "toast",
+            "progress bar"
+        ],
+        "correct_answer": "toast",
+        "id": "7e3d75dc-65f0-4b79-8e31-08e76a9ddf1a"
+    },
+    {
+        "question": "In jQuery, il selettore:",
+        "answers": [
+            "È il simbolo che indica l'utilizzo della libreria",
+            "È un'istruzione che indica l'elemento HTML su cui eseguire l'azione",
+            "È l'azione che vogliamo eseguire sull'elemento selezionato",
+            "È un parametro opzionale che possiamo utilizzare per fornire ulteriori informazioni all'azione che stiamo eseguendo"
+        ],
+        "correct_answer": "È un'istruzione che indica l'elemento HTML su cui eseguire l'azione",
+        "id": "f6c1f9e4-7e34-4b1d-9e9d-fbcb80b2f8f4"
+    },
+    {
+        "question": "Il JSONP è una tecnica:",
+        "answers": [
+            "utilizzata per effettuare richieste AJAX all'interno della LAN",
+            "utilizzata per effettuare richieste AJAX ad un client",
+            "utilizzata per effettuare richieste AJAX a un server di destinazione che non supporta il CORS",
+            "utilizzata per effettuare richieste AJAX a un server di destinazione che supporta il CORS"
+        ],
+        "correct_answer": "utilizzata per effettuare richieste AJAX a un server di destinazione che non supporta il CORS",
+        "id": "b4f8c94f-d1a9-4b6d-9ec4-bac198c71697"
+    },
+    {
+        "question": "Il campo Upgrade nell'header della richiesta HTTP per la connessione WebSocket:",
+        "answers": [
+            "contiene un timestamp generico",
+            "è impostato a 'WebSocket'",
+            "è importato a 'socket'",
+            "non è significativo"
+        ],
+        "correct_answer": "è impostato a 'WebSocket'",
+        "id": "49b91ec4-3bf1-4b2a-8d1f-72e34c38cdd9"
+    },
+    {
+        "question": "Per importare un modulo nel nostro codice, possiamo utilizzare la funzione:",
+        "answers": [
+            "import",
+            "require",
+            "call",
+            "set"
+        ],
+        "correct_answer": "require",
+        "id": "bb6b6429-f840-4cbb-943b-13a2352b9ac3"
+    },
+    {
+        "question": "Data una istruzione res.render('hello', { name }); se volessimo usare 'name' all'interno della nostra view usando EJS dovremmo inserire:",
+        "answers": [
+            "<%= name %>",
+            "<=? name %>",
+            "< name >",
+            "res.name"
+        ],
+        "correct_answer": "<%= name %>",
+        "id": "1f2dcb96-8715-4b67-8e0e-675b3b0dbd94"
+    },
+    {
+        "question": "Se volessi passare dei valori contenuti nelle variabili 'a', 'b' e 'c' ad una view, dovrei usare come parametri nella chiamata res.render('myView', :",
+        "answers": [
+            "{a,b,c}",
+            "<a, b, c>",
+            "<% a, b, c %>",
+            "[a,b,c]"
+        ],
+        "correct_answer": "{a,b,c}",
+        "id": "60b667d1-3eaa-4f2e-b0e4-14d78b3d0539"
+    },
+    {
+        "question": "Un middleware non può essere utilizzato per:",
+        "answers": [
+            "validazione dati",
+            "autenticazione",
+            "logging",
+            "renderizzazione pagine"
+        ],
+        "correct_answer": "renderizzazione pagine",
+        "id": "ab29c79f-7281-4b5d-9c2d-7bf332a7a563"
+    },
+    {
+        "question": "I middleware sono eseguiti:",
+        "answers": [
+            "in cascata",
+            "in parallelo",
+            "in maniera concorrente",
+            "in ordine inverso di scrittura"
+        ],
+        "correct_answer": "in cascata",
+        "id": "9ef0b469-3a57-4bb1-9f92-7b8cc41e8ef8"
+    },
+    {
+        "question": "Passport utilizzerà per gestire l'autenticazione con Facebook:",
+        "answers": [
+            "una variabile di sessione",
+            "una url di callback",
+            "un metodo proprietario",
+            "una libreria di funzioni"
+        ],
+        "correct_answer": "una url di callback",
+        "id": "2b3c6e9d-05f3-4a2a-ae3b-17991efb8904"
+    },
+    {
+        "question": "Passport utilizzerà per gestire l'autenticazione con Google:",
+        "answers": [
+            "una variabile di sessione",
+            "una url di callback",
+            "un metodo proprietario",
+            "una libreria di funzioni"
+        ],
+        "correct_answer": "una url di callback",
+        "id": "58c7c8e2-d8a1-4fc8-a20d-0a22e5a41c6f"
+    },
+    {
+        "question": "Vuejs si basa su pattern:",
+        "answers": [
+            "MVC",
+            "MVVC",
+            "MVVM",
+            "MVCM"
+        ],
+        "correct_answer": "MVVM",
+        "id": "cf9a3172-1a0c-4a36-9b14-1b8d7f6a5b4e"
+    },
+    {
+        "question": "Se un'applicazione prevede una forte interazione tra la vista e il modello, è preferibile il pattern:",
+        "answers": [
+            "MVC",
+            "MVVM",
+            "MVVC",
+            "MVCM"
+        ],
+        "correct_answer": "MVVM",
+        "id": "dd00a9b8-7ee9-4a41-9e77-1d84d6f2d1d2"
+    },
+    {
+        "question": "Se l'applicazione prevede una forte separazione tra la logica di presentazione e la logica di business, è preferibile il pattern:",
+        "answers": [
+            "MVC",
+            "MVVM",
+            "MVVC",
+            "MVCM"
+        ],
+        "correct_answer": "MVC",
+        "id": "6a7e9b6d-229f-4a5e-8f49-f430b8c0a902"
+    },
+    {
+        "question": "Il metodo mounted() è un metodo del ciclo di vita di un componente in Vue.js:",
+        "answers": [
+            "che viene chiamato quando il DOM è caricato",
+            "che viene chiamato tramite una chiamata Javascript",
+            "che viene chiamato automaticamente quando si usa Axios",
+            "che viene chiamato automaticamente quando il componente viene montato nel DOM"
+        ],
+        "correct_answer": "che viene chiamato automaticamente quando il componente viene montato nel DOM",
+        "id": "fe2f6d0f-63d9-4231-a7a0-5a7493c7f827"
+    },
+    {
+        "question": "Lo scope è l'oggetto JavaScript che rappresenta:",
+        "answers": [
+            "una variabile generica in Angularjs",
+            "il modello dell'applicazione in AngularJS",
+            "il valore dell'applicazione in AngularJS",
+            "un generico stato dell'applicazione in Angularjs"
+        ],
+        "correct_answer": "il modello dell'applicazione in AngularJS",
+        "id": "c8826c4a-f9c0-4ed6-94e4-3951b4b14b11"
+    },
+    {
+        "question": "La seguente direttiva non è valida:",
+        "answers": [
+            "ng-click",
+            "ng-dblclick",
+            "ng-clicked",
+            "ng-cut"
+        ],
+        "correct_answer": "ng-clicked",
+        "id": "170e5bc2-235f-4a99-a1d1-3be2a0ed2a40"
+    },
+    {
+        "question": "L'utilizzo delle callbacks consente ai componenti figli di comunicare con i componenti genitori:",
+        "answers": [
+            "usando WebSockets",
+            "passando loro delle funzioni di callback come stati",
+            "gestendo lo stato dei genitori",
+            "passando loro delle funzioni di callback come props"
+        ],
+        "correct_answer": "passando loro delle funzioni di callback come props",
+        "id": "3d1439ef-0c91-4e60-95c4-64bc7a67d2ea"
+    },
+    {
+        "question": "In React, props e state sono caratteristiche importanti:",
+        "answers": [
+            "dei componenti",
+            "degli eventi",
+            "degli oggetti",
+            "del Javascript"
+        ],
+        "correct_answer": "dei componenti",
+        "id": "bc91cc56-06fa-4a8f-9c73-85053914ed45"
+    },
+    {
+        "question": "Le props sono proprietà:",
+        "answers": [
+            "che non possono essere passate da un componente genitore a un componente figlio ma possono essere utilizzate per personalizzare il comportamento e l'aspetto di un componente",
+            "che vengono passate da un componente genitore a un componente figlio e possono essere utilizzate per personalizzare il comportamento e l'aspetto di un componente",
+            "che non possono essere passate da un componente genitore a un componente figlio e non possono essere utilizzate per personalizzare il comportamento e l'aspetto di un componente",
+            "proprietà generiche di un componente React"
+        ],
+        "correct_answer": "che vengono passate da un componente genitore a un componente figlio e possono essere utilizzate per personalizzare il comportamento e l'aspetto di un componente",
+        "id": "1efbe7c9-3b67-4d5e-a95e-8a3ff3199f45"
+    },
+    {
+        "question": "Consente di evitare il rendering di un componente finché non sono stati caricati tutti i dati necessari:",
+        "answers": [
+            "sospensione del rendering",
+            "rendering detachment",
+            "intelligent rendering",
+            "no rendering tecnique"
+        ],
+        "correct_answer": "sospensione del rendering",
+        "id": "8f9ce412-268e-4979-8a6e-b4f1346ef7a1"
+    },
+    {
+        "question": "Tra i fattori che possono rallentare un'applicazione React non vi sono:",
+        "answers": [
+            "rendering dei componenti",
+            "aggiornamenti del DOM",
+            "rendering condizionale",
+            "memoization"
+        ],
+        "correct_answer": "memoization",
+        "id": "b15dc83d-8b87-468c-a6a5-212b3dcbd9f6"
+    },
+    {
+        "question": "In React, lo stato di un componente può essere gestito utilizzando:",
+        "answers": [
+            "setState() ed handleState()",
+            "setState() e useState()",
+            "setState() e getState()",
+            "manageState()"
+        ],
+        "correct_answer": "setState() e useState()",
+        "id": "91ec087f-72de-41f5-82a7-56fd8b6dfab9"
+    },
+    {
+        "question": "Per quanto riguarda lo styling, in React Native si utilizza:",
+        "answers": [
+            "si utilizza una combinazione di CSS e inline styling",
+            "unicamente CSS",
+            "uno stile basato sulla sintassi di JavaScript",
+            "uno stile che non fa uso di Javascript"
+        ],
+        "correct_answer": "uno stile basato sulla sintassi di JavaScript",
+        "id": "d470a5e6-8b43-4f5f-9cfd-17c4415cd1be"
+    },
+    {
+        "question": "Al tag HTML <span> corrisponde tipicamente il componente nativo di React Native:",
+        "answers": [
+            "View",
+            "TextInput",
+            "Text",
+            "Image"
+        ],
+        "correct_answer": "Text",
+        "id": "a207dffc-25b7-41b0-b68f-2949d2c1bc04"
+    },
+    {
+        "question": "In React Native:",
+        "answers": [
+            "i componenti sono creati utilizzando l'HTML e i CSS",
+            "i componenti non sono creati utilizzando componenti nativi",
+            "i componenti sono creati utilizzando componenti nativi",
+            "i componenti sono creati utilizzando unicamente HTML"
+        ],
+        "correct_answer": "i componenti sono creati utilizzando componenti nativi",
+        "id": "c7b370d2-471f-4a3e-a61f-949eaf9fbb1e"
+    },
+    {
+        "question": "Supporta solo la navigazione basata su stack, ma offre un'esperienza di navigazione molto fluida e veloce grazie al rendering nativo dei componenti:",
+        "answers": [
+            "React Navigation",
+            "React Native Router Flux",
+            "Native Navigation",
+            "React Full Navigation"
+        ],
+        "correct_answer": "Native Navigation",
+        "id": "1c041a80-9eae-4c90-8ad5-90ff946d6935"
+    },
+    {
+        "question": "Quando si preme il pulsante \"Indietro\", la schermata corrente viene rimossa dalla pila e si ritorna alla schermata precedente; è tipico di:",
+        "answers": [
+            "Stack Navigator",
+            "Tab Navigator",
+            "Drawer Navigator",
+            "Queue Navigator"
+        ],
+        "correct_answer": "Stack Navigator",
+        "id": "8e33cf96-c182-49c2-a6c4-2de61ff5d8d6"
+    },
+    {
+        "question": "Se l'applicazione ha un flusso di lavoro lineare, il navigator migliore è:",
+        "answers": [
+            "Stack Navigator",
+            "Tab Navigator",
+            "Drawer Navigator",
+            "Queue Navigator"
+        ],
+        "correct_answer": "Stack Navigator",
+        "id": "d7c2e779-8ad4-45f7-9f9e-b3ab9cf9f7f0"
     }
 ]
