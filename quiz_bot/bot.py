@@ -665,28 +665,30 @@ async def reset_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     await application.initialize()
+    
+    # Add command handlers
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("stats", stats))
     application.add_handler(CommandHandler("download", download))
     application.add_handler(CommandHandler("choose_subject", choose_subject))
     application.add_handler(CommandHandler("analyze_exam", analyze_exam_start))
-    
-    # Aggiungi i nuovi comandi per debug/utilità
     application.add_handler(CommandHandler("token_info", token_info))
     application.add_handler(CommandHandler("clear_session", clear_session))
     
-    # Handler specifici PRIMA di quelli generici - PATTERN CORRETTI
+    # Add specific callback handlers
     application.add_handler(CallbackQueryHandler(handle_post_analyze_menu, pattern="^(analyze_another_exam|_choose_subject_)$"))
     application.add_handler(CallbackQueryHandler(handle_exam_selection, pattern="^select_exam_"))
     application.add_handler(CallbackQueryHandler(handle_exam_selection, pattern="^renew_token$"))
     
-    # Handler generico alla fine
+    # Add the generic callback handler LAST
     application.add_handler(CallbackQueryHandler(handle_callback))
     
-    # Handler per i messaggi di testo - NOME FUNZIONE CORRETTO
+    # Add message handler
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_exam_analyze_flow))
     
+    # Add error handler
     application.add_error_handler(error_handler)
+    
     print("✅ Applicazione Telegram inizializzata con successo.")
     yield
 
