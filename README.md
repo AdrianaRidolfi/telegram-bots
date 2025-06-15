@@ -250,6 +250,6 @@ Mostra i bottoni con i quiz presenti per decidere quale scaricare in formato PDF
 Mostra i bottoni con i quiz presenti per iniziare con lo studio
 
 ```code
-    /sync_exam
+    /analize_exam
 ```
-Consente di salvare le domande e risposte degli esami sostenuti su un database
+Consente di analizzare il proprio esame e scaricare un pdf con tutte le domande e risposte date
