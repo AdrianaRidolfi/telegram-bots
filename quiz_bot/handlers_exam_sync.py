@@ -219,8 +219,8 @@ async def process_exam_analysis(query, context: ContextTypes.DEFAULT_TYPE, subje
     context.user_data["analyze_exam"]["subject"] = subject
     
     await query.edit_message_text(
-        f"📊 Sto caricando l'esame *{escape_markdown(subject)}*...", 
-        parse_mode="MarkdownV2"
+        f"📊 Sto caricando l'esame <b>{subject}</b>...",
+        parse_mode="HTML"
     )
     
     syncer = context.user_data.get("exam_sync", ExamSync())
