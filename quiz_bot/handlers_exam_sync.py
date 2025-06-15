@@ -159,9 +159,20 @@ async def handle_exam_analyze_flow(update: Update, context: ContextTypes.DEFAULT
             context.user_data["analyze_state"] = "awaiting_username"
 
 
-async def show_post_analyze_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Mostra il menu dopo l'analisi dell'esame"""
-    user_id = update.effective_user.id if update.effective_user else update.callback_query.from_user.id
+async def show_post_analyze_menu(update_or_query, context: ContextTypes.DEFAULT_TYPE):
+    # Gestisci sia Update che CallbackQuery
+    if hasattr(update_or_query, 'effective_user'):
+        # È un Update
+        user_id = update_or_query.effective_user.id
+    elif hasattr(update_or_query, 'from_user'):
+        # È un CallbackQuery
+        user_id = update_or_query.from_user.id
+    else:
+        # Fallback - prova a estrarre l'user_id in altro modo
+        user_id = getattr(update_or_query, 'user_id', None)
+        if not user_id:
+            print(f"Errore: impossibile determinare user_id da {type(update_or_query)}")
+            return
     
     keyboard = [
         [InlineKeyboardButton("📚 Analizza altro esame", callback_data="analyze_another_exam")],
@@ -219,7 +230,7 @@ async def process_exam_analysis(query, context: ContextTypes.DEFAULT_TYPE, subje
     context.user_data["analyze_exam"]["subject"] = subject
     
     await query.edit_message_text(
-        f"📊 Sto caricando l'esame <b>{subject}</b>...",
+        f"👀 Sto caricando l'esame <b>{subject}</b>...",
         parse_mode="HTML"
     )
     
@@ -272,7 +283,7 @@ async def process_exam_analysis(query, context: ContextTypes.DEFAULT_TYPE, subje
         # Genera PDF
         await generate_exam_pdf(responses, subject, context.bot, user_id)
         
-        # Mostra il menu post-analisi
+        # Passa il CallbackQuery invece di Update
         await show_post_analyze_menu(query, context)
         
     except ExamSyncError as e:
@@ -283,7 +294,6 @@ async def process_exam_analysis(query, context: ContextTypes.DEFAULT_TYPE, subje
             chat_id=user_id, 
             text=f"❌ Errore durante l'analisi:\n{str(e)}"
         )
-
 
 async def display_exam_results(context: ContextTypes.DEFAULT_TYPE, user_id: int, 
                               test_info: dict, responses: list, subject: str, syncer: ExamSync):
