@@ -162,10 +162,10 @@ def generate_exam_pdf_sync(responses, subject):
         is_correct = response.get("point") == 1
         
         # Calcolo spazio
-        pdf.set_font("DejaVu", "B", 11)
+        pdf.set_font("DejaVu", "B", 9)
         question_height = pdf.get_string_width(f"{i+1}. {question_text}") / (pdf.w - 2*pdf.l_margin) * 6 + 12
         
-        pdf.set_font("DejaVu", "", 10)
+        pdf.set_font("DejaVu", "", 9)
         answer_height = pdf.get_string_width(f"Risposta: {user_answer}") / (pdf.w - 2*pdf.l_margin - 15) * 6 + 10
         
         total_height = question_height + answer_height + 25

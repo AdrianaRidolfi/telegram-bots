@@ -1,4 +1,4 @@
-# exam_sync.py
+# exams_sync.py
 import requests
 import os
 from firebase_admin import firestore
@@ -7,10 +7,15 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+
 class ExamSyncError(Exception):
+    """Eccezione personalizzata per errori di sincronizzazione esami"""
     pass
 
+
 class ExamSync:
+    """Classe per la sincronizzazione e gestione degli esami"""
+    
     BASE_URL = "https://app-api.pegaso.multiversity.click"
     
     def __init__(self):
@@ -33,7 +38,7 @@ class ExamSync:
                     "client_secret": self.client_secret,
                     "scope": "*"
                 },
-                timeout=30  # Timeout di 30 secondi
+                timeout=30
             )
             response.raise_for_status()
             
@@ -51,6 +56,7 @@ class ExamSync:
             raise ExamSyncError("Formato risposta non valido dal server")
     
     def get_exams(self, token: str) -> List[Dict]:
+        """Recupera la lista degli esami disponibili"""
         try:
             response = requests.get(
                 f"{self.BASE_URL}/api/exam-online/sost",
@@ -74,15 +80,9 @@ class ExamSync:
         except ValueError as e:
             logger.error(f"Errore parsing JSON esami: {e}")
             raise ExamSyncError("Formato risposta non valido dal server")
-            
-        except requests.exceptions.RequestException as e:
-            logger.error(f"Errore durante il recupero esami: {e}")
-            raise ExamSyncError(f"Errore di connessione durante il recupero esami: {str(e)}")
-        except ValueError as e:
-            logger.error(f"Errore parsing JSON esami: {e}")
-            raise ExamSyncError("Formato risposta non valido dal server")
     
     def get_exam_result(self, token: str, exam_id: str) -> Dict:
+        """Recupera i risultati di un esame specifico"""
         try:
             response = requests.get(
                 f"{self.BASE_URL}/api/exam-online/test/result/{exam_id}",
@@ -108,9 +108,9 @@ class ExamSync:
             raise ExamSyncError("Formato risposta non valido dal server")
     
     def save_exam_to_db(self, subject: str, questions: List[Dict], max_answers: int = 10):
-    
+        """Salva le domande e risposte dell'esame nel database Firebase"""
         try:
-            subject_ref = self.db.collection("exams").document(subject)  
+            subject_ref = self.db.collection("exams").document(subject)
             doc = subject_ref.get()
             existing_data = doc.to_dict() if doc.exists else {}
             
@@ -158,7 +158,7 @@ class ExamSync:
             raise ExamSyncError(f"Errore durante il salvataggio nel database: {str(e)}")
     
     def get_exam_by_subject(self, subject: str, exams: List[Dict]) -> Optional[Dict]:
-       
+        """Trova un esame specifico nella lista degli esami disponibili"""
         for exam in exams:
             # La struttura è: { "id": "123", "name_exam": "Nome dell'esame" }
             exam_name = exam.get("name_exam", "").strip().lower()
@@ -169,51 +169,74 @@ class ExamSync:
                 
         return None
     
-    def get_all_subjects(self):
-        try:
-            docs = self.db.collection("exams").stream()
-            subjects = [doc.id for doc in docs]
-            return subjects
-        except Exception as e:
-            print(f"Errore nel recuperare le materie: {e}")
-        return []
-
-    def download_all_from_db(self, subject):
-      try:
-            # Accedi al documento della materia
-            subject_doc = self.db.collection("exams").document(subject).get()
+    def debug_print_subject_questions(self, subject: str):
+        """
+        Metodo di debug per stampare tutte le domande e risposte di una materia.
+        Non viene mai chiamato dal bot, solo per uso manuale/debug.
         
-            if not subject_doc.exists:
-                print(f"Materia '{subject}' non trovata")
-                return []
+        Args:
+            subject (str): Nome della materia da stampare
+        """
+        try:
+            subject_doc = self.db.collection("exams").document(subject).get()
             
-            # Ottieni tutti i dati della materia (tutte le domande)
+            if not subject_doc.exists:
+                print(f"❌ Materia '{subject}' non trovata nel database")
+                return
+            
             subject_data = subject_doc.to_dict()
             
-            questions = []
+            if not subject_data:
+                print(f"❌ Nessun dato trovato per la materia '{subject}'")
+                return
             
-            # Itera attraverso ogni domanda nel documento
+            print(f"\n{'='*80}")
+            print(f"📚 MATERIA: {subject.upper()}")
+            print(f"{'='*80}")
+            print(f"📊 Totale domande: {len(subject_data)}")
+            print(f"{'='*80}\n")
+            
+            question_number = 1
+            
             for question_text, answers_list in subject_data.items():
                 if not isinstance(answers_list, list):
                     continue
+                
+                print(f"🔸 DOMANDA {question_number}:")
+                print(f"   {question_text}")
+                print(f"   📝 Risposte salvate: {len(answers_list)}")
+                print()
+                
+                for i, answer_info in enumerate(answers_list, 1):
+                    answer = answer_info.get("answer", "N/A")
+                    is_correct = answer_info.get("correct", False)
+                    status_icon = "✅" if is_correct else "❌"
                     
-                # Per ogni risposta nella lista
-                for i, answer_info in enumerate(answers_list):
-                    question_display = f"{question_text}"
-                    if len(answers_list) > 1:
-                        question_display += f" (Tentativo {i+1}/{len(answers_list)})"
-                    
-                    questions.append({
-                        "question": question_display,
-                        "answer": answer_info.get("answer", ""),
-                        "point": 1 if answer_info.get("correct", False) else 0,
-                        "is_multiple": len(answers_list) > 1,
-                        "attempt_number": i + 1,
-                        "total_attempts": len(answers_list)
-                    })
+                    print(f"      {i}. {answer} {status_icon}")
+                
+                print(f"   {'-'*60}")
+                print()
+                question_number += 1
             
-            return questions
+            # Statistiche finali
+            total_answers = sum(len(answers) for answers in subject_data.values() if isinstance(answers, list))
+            correct_answers = sum(
+                sum(1 for answer in answers if answer.get("correct", False))
+                for answers in subject_data.values() 
+                if isinstance(answers, list)
+            )
             
-      except Exception as e:
-        print(f"Errore nel download dal database Firebase: {e}")
-        return []
+            print(f"{'='*80}")
+            print(f"📈 STATISTICHE FINALI:")
+            print(f"   • Domande totali: {len(subject_data)}")
+            print(f"   • Risposte totali: {total_answers}")
+            print(f"   • Risposte corrette: {correct_answers}")
+            print(f"   • Risposte sbagliate: {total_answers - correct_answers}")
+            if total_answers > 0:
+                accuracy = (correct_answers / total_answers) * 100
+                print(f"   • Percentuale successo: {accuracy:.1f}%")
+            print(f"{'='*80}\n")
+            
+        except Exception as e:
+            print(f"❌ Errore durante il recupero dei dati: {e}")
+            logger.error(f"Errore in debug_print_subject_questions: {e}")

@@ -2083,7 +2083,7 @@
         "id": "c5d6e7f8-a9b0-1234-5678-0123456789ab"
     },
     {
-        "question": "Il selettore identificato dal simbolo * indica:",
+        "question": "Il selettore identificato dal simbolo [ASTERISCO] indica:",
         "answers": [
             "il selettore di classe",
             "il selettore di ID",

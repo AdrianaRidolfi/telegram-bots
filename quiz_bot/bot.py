@@ -4,8 +4,9 @@ import json
 import random
 import firebase_admin
 from handlers_exam_sync import (
-    sync_exam_start, handle_exam_sync_flow, handle_exam_selection,
-    handle_post_sync_menu, show_db_subjects_selection, handle_db_download)
+    analyze_exam_start, handle_exam_selection,
+    clear_session, handle_exam_analyze_flow,
+    token_info, handle_post_analyze_menu)
 from typing import Dict
 from fastapi import FastAPI, Request, HTTPException
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -668,18 +669,23 @@ async def lifespan(app: FastAPI):
     application.add_handler(CommandHandler("stats", stats))
     application.add_handler(CommandHandler("download", download))
     application.add_handler(CommandHandler("choose_subject", choose_subject))
-    application.add_handler(CommandHandler("sync_exam", sync_exam_start))
+    application.add_handler(CommandHandler("analyze_exam", analyze_exam_start))
     
-    # Handler specifici PRIMA di quelli generici
-    application.add_handler(CallbackQueryHandler(handle_post_sync_menu, pattern="^(load_another_exam|download_all_db)$"))
-    application.add_handler(CallbackQueryHandler(show_db_subjects_selection, pattern="^download_all_db$"))
-    application.add_handler(CallbackQueryHandler(handle_db_download, pattern="^download_db_"))
+    # Aggiungi i nuovi comandi per debug/utilità
+    application.add_handler(CommandHandler("token_info", token_info))
+    application.add_handler(CommandHandler("clear_session", clear_session))
+    
+    # Handler specifici PRIMA di quelli generici - PATTERN CORRETTI
+    application.add_handler(CallbackQueryHandler(handle_post_analyze_menu, pattern="^(analyze_another_exam|_choose_subject_)$"))
     application.add_handler(CallbackQueryHandler(handle_exam_selection, pattern="^(select_exam_|renew_token)$"))
-    application.add_handler(CallbackQueryHandler(handle_callback))  # Generico alla fine
     
-    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_exam_sync_flow))
+    # Handler generico alla fine
+    application.add_handler(CallbackQueryHandler(handle_callback))
+    
+    # Handler per i messaggi di testo - NOME FUNZIONE CORRETTO
+    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_exam_analyze_flow))
+    
     application.add_error_handler(error_handler)
-    
     print("✅ Applicazione Telegram inizializzata con successo.")
     yield
 
