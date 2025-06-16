@@ -10,7 +10,7 @@ EXAMS = ["Matematica Discreta", "Analisi matematica", "Calcolo delle probabilit√
          "Algoritmi e strutture dati", "Architettura dei calcolatori", "Diritto per le aziende digitali", 
          "Reti di calcolatori e Cybersecurity", "Programmazione 2", "Ingegneria del software", 
          "Tecnologie Web", "Programmazione distribuita e cloud computing", 
-         "Strategia, organizzazione e marketing", "Corporate planning e valore d'impresa"]
+         "Strategia, organizzazione e marketing", "Corporate planning e valore d'impresa", "Basi di dati"]
 
 TOKEN_VALIDITY = 3600  # 1 ora in secondi
 
