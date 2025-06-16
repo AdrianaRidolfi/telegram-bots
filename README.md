@@ -203,15 +203,15 @@ Questo approccio consente di:
   - Costruire una memoria a lungo termine attraverso la ripetizione distribuita
   - Ogni volta che una risposta è stata sbagliata l'utente dovrà rispondere correttamente 3 volte affinché sparisca dal ripasso
 
-## Sincronizzazione esami
+## Analizza esami
 
-È ora possibile sincronizzare i risultati degli esami sostenuti direttamente nel bot.
+È ora possibile analizzare i risultati degli esami sostenuti direttamente nel bot.
 
 ### Come funziona
 
-- Digita il comando /sync_exam
+- Digita il comando /analyze_exam
 
-- Inserisci le tue credenziali Pegaso (username e password)
+- Inserisci le tue credenziali Pegaso (username e password). Non preoccuparti, nessun altro le vede!
 
 - Seleziona la materia da una lista
 
@@ -250,6 +250,6 @@ Mostra i bottoni con i quiz presenti per decidere quale scaricare in formato PDF
 Mostra i bottoni con i quiz presenti per iniziare con lo studio
 
 ```code
-    /analize_exam
+    /analyze_exam
 ```
 Consente di analizzare il proprio esame e scaricare un pdf con tutte le domande e risposte date
