@@ -3,9 +3,6 @@ import re
 import json
 import random
 import firebase_admin
-from handlers_exam_sync import (
-    analyze_exam_start, handle_exam_selection,
-     handle_exam_analyze_flow, handle_post_analyze_menu)
 from typing import Dict
 from fastapi import FastAPI, Request, HTTPException
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -403,13 +400,6 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif data == "git":
         await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots")
 
-    # Gestione callbacks per analisi esami
-    elif data.startswith("select_exam_"):
-        await handle_exam_selection(update, context)
-    elif data == "renew_token":
-        await handle_exam_selection(update, context)
-    elif data == "analyze_another_exam":
-        await handle_post_analyze_menu(update, context)
 
 async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, subject: str):
     
@@ -678,13 +668,9 @@ async def lifespan(app: FastAPI):
     application.add_handler(CommandHandler("stats", stats))
     application.add_handler(CommandHandler("download", download))
     application.add_handler(CommandHandler("choose_subject", choose_subject))
-    # application.add_handler(CommandHandler("analyze_exam", analyze_exam_start))
     
     # Add the generic callback handler LAST
     application.add_handler(CallbackQueryHandler(handle_callback))
-    
-    # Add message handler
-    # application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_exam_analyze_flow))
     
     # Add error handler
     application.add_error_handler(error_handler)
