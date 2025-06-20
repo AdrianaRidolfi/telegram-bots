@@ -66,7 +66,7 @@
     "id": "9cc472c2-fc37-460e-8d89-cab2641add1d"
   },
   {
-    "question": "Il seguente frammento di codice S= “Asso” Print(s[s.find(‘z’)+1]) Visualizza a schermo:",
+    "question": "Il seguente frammento di codice S= 'Asso' Print(s[s.find(‘z’)+1]) Visualizza a schermo:",
     "answers": [
       "a",
       "tutti i campi di s",
@@ -187,7 +187,7 @@
     "id": "fdd8c406-8548-406f-bfd6-519ff220e1c1"
   },
   {
-    "question": "La definizione migliore di quantificatore ingordo /goloso come “*” e “+” è:",
+    "question": "La definizione migliore di quantificatore ingordo /goloso come '*' e '+' è:",
     "answers": [
       "cerca solo la prima corrispondenza possibile per il pattern dato",
       "cerca la corrispondenza più lunga possibile per il pattern dato",
@@ -462,7 +462,7 @@
     "id": "d06f444f-4f17-42c6-a9cf-d522b8b6c523"
   },
   {
-    "question": "Il codice import re s= “Ciao mondo” print(re.search(“n*ondo”,s).group()) produce a schermo: 1",
+    "question": "Il codice import re s= 'Ciao mondo' print(re.search('n*ondo',s).group()) produce a schermo: 1",
     "answers": [
       "ondo",
       "Un messaggio di errore di Traceback",
