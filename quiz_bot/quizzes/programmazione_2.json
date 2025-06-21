@@ -574,12 +574,12 @@
   {
     "question": "La funzione group() é un metodo di oggetto di :",
     "answers": [
-      "",
-      "",
-      "",
-      ""
+      "<class 're.Match'>",
+      "<class 'NoneType'>",
+      "<class 're.Search'>",
+      "<class 'str'>"
     ],
-    "correct_answer": "",
+    "correct_answer": "<class 're.Match'>",
     "id": "e464f26b-0e64-4a1f-89e2-52fb6a129c68"
   },
   {
