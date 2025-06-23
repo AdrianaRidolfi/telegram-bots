@@ -243,8 +243,15 @@ async def send_next_question(user_id, context):
     state["quiz"][q_index]["_correct_index"] = new_correct_index
 
     question_index = f"{state['index'] + 1}."
-    question_text = f"*{question_index} {question_data.get('question', 'Domanda mancante')}*\n\n"
-    
+    question_raw = question_data.get('question', 'Domanda mancante')
+    escaped_question = escape_markdown(question_raw)
+
+    if '*' in question_raw:
+    # niente grassetto se c'è un asterisco
+        question_text = f"{question_index} {escaped_question}\n\n"
+    else:
+        question_text = f"*{question_index} {escaped_question}*\n\n"
+
     for i, opt in enumerate(new_answers):
         question_text += f"*{chr(65+i)}.* {escape_markdown(opt)}\n"
 
