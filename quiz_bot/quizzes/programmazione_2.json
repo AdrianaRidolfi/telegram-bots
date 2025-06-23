@@ -1155,7 +1155,7 @@
     "id": "d8d6d087-c0d2-4dcd-a75b-9e405870a4e6"
   },
   {
-    "question": "Domanda (?)",
+    "question": "Le classi di operazioni che possono essere applicate sugli RDD sono: ",
     "answers": [
       "solo operazioni di estrazioni",
       "operazioni di Map e operazioni di Reduce",
