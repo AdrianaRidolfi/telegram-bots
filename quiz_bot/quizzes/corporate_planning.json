@@ -751,12 +751,12 @@
         "id": "6338d18c-179e-42db-8809-9cb3e769d686",
         "question": "Le principali finalità assegnabili al calcolo del capitale economico sono:",
         "answers": [
-            "1) l'esigenza di conoscere il valore assegnabile al com¬plesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegna¬to al capitale di funzionamento",
-            "1) l'esigenza di conoscere il valore assegnabile al com¬plesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegna¬to al capitale di liquidazione",
-            "1) l'esigenza di conoscere il valore assegnabile al com¬plesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegna¬to ai crediti di funzionamento",
-            "1) l'esigenza di conoscere il valore assegnabile al com¬plesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegna¬to ai debiti di funzionamento"
+            "1) l'esigenza di conoscere il valore assegnabile al complesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegnato al capitale di funzionamento",
+            "1) l'esigenza di conoscere il valore assegnabile al complesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegnato al capitale di liquidazione",
+            "1) l'esigenza di conoscere il valore assegnabile al complesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegnato ai crediti di funzionamento",
+            "1) l'esigenza di conoscere il valore assegnabile al complesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegnato ai debiti di funzionamento"
         ],
-        "correct_answer": "1) l'esigenza di conoscere il valore assegnabile al com¬plesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegna¬to al capitale di funzionamento"
+        "correct_answer": "1) l'esigenza di conoscere il valore assegnabile al complesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegnato al capitale di funzionamento"
     },
     {
         "id": "0af790e5-9839-4b62-9a54-a50bae2d514f",
@@ -1929,9 +1929,9 @@
         "question": "Il fenomeno dell'obsolescenza economica:",
         "answers": [
             "potrebbe colpire direttamente il singolo fattore produttivo, ovvero abbattersi su tutta o parte dell'organizzazione aziendale o, ancora, sui prodotti/servizi aziendali",
-            "colpisce esclusivamente e direttamente il singolo fattore produttivo",
+            "potrebbe colpire direttamente tutti i fattori produttivi, ovvero abbattersi su tutta o parte dell'organizzazione aziendale o, ancora, sui prodotti/servizi aziendali",
             "colpisce esclusivamente e direttamente tutta o parte dell'organizzazione aziendale",
-            "può colpire esclusivamente le risorse materiali"
+            "potrebbe colpire indirettamente il singolo fattore produttivo, ovvero abbattersi su tutta o parte dell'organizzazione aziendale o, ancora, sui prodotti/servizi aziendali"
         ],
         "correct_answer": "potrebbe colpire direttamente il singolo fattore produttivo, ovvero abbattersi su tutta o parte dell'organizzazione aziendale o, ancora, sui prodotti/servizi aziendali"
     },
@@ -1939,12 +1939,12 @@
         "id": "cdd206de-7644-45cf-a414-9e88f59fa832",
         "question": "Le principali finalità assegnabili al calcolo del capitale economico sono:",
         "answers": [
-            "1) l esigenza di conoscere il valore assegnabile al com¬plesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegna¬to al capitale di funzionamento",
-            "1) l esigenza di conoscere il valore assegnabile al com¬plesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegna¬to al capitale di liquidazione",
-            "1) l esigenza di conoscere il valore assegnabile al com¬plesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegna¬to ai crediti di funzionamento",
-            "1) l esigenza di conoscere il valore assegnabile al com¬plesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegna¬to ai debiti di funzionamento"
+            "1) l esigenza di conoscere il valore assegnabile al complesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegnato al capitale di funzionamento",
+            "1) l esigenza di conoscere il valore assegnabile al complesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegnato al capitale di liquidazione",
+            "1) l esigenza di conoscere il valore assegnabile al complesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegnato ai crediti di funzionamento",
+            "1) l esigenza di conoscere il valore assegnabile al complesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegnato ai debiti di funzionamento"
         ],
-        "correct_answer": "1) l esigenza di conoscere il valore assegnabile al com¬plesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegna¬to al capitale di funzionamento"
+        "correct_answer": "1) l esigenza di conoscere il valore assegnabile al complesso aziendale in occasione di transazioni che lo abbiano a oggetto; 2) la funzione di «collaudo» della correttezza del valore assegnato al capitale di funzionamento"
     },
     {
         "id": "0c9917f4-ff01-4648-9538-665f690e8c87",
@@ -2282,8 +2282,8 @@
         "answers": [
             "una variazione finanziaria presunta negativa, in quanto l'azienda ha già usufruito di un servizio ma il pagamento non è ancora stato effettuato",
             "debiti certi nell'ammontare e nella scadenza verso fornitori di beni",
-            "accantonamenti per rischi futuri relativi a contenziosi legali",
-            "quote di costi pluriennali da ripartire su più esercizi"
+            "una variazione finanziaria presunta positiva, in quanto l'azienda ha già usufruito di un servizio ma il pagamento non è ancora stato effettuato",
+            "una variazione finanziaria presunta, in quanto l'azienda ha già usufruito di un servizio ma il pagamento non è ancora stato effettuato"
         ],
         "correct_answer": "una variazione finanziaria presunta negativa, in quanto l'azienda ha già usufruito di un servizio ma il pagamento non è ancora stato effettuato"
     },
@@ -2418,5 +2418,16 @@
             "unicamente le spese generali di amministrazione e vendita"
         ],
         "correct_answer": "i valori degli accantonamenti per rischi futuri e per spese future"
+    },
+    {
+        "id": "x4y5z6a7-b8c9-0123-xyza-456789012346",
+        "question": "L'avvio del circuito dei finanziamenti attinti a titolo di capitale di credito comporta:",
+        "answers":[
+            "una variazione finanziaria neutrale (+ cassa) che si compensa con una variazione finanziaria negativa (+ debiti di finanziamento)",
+            "una variazione finanziaria negativa (+ cassa) che si compensa con una variazione finanziaria positiva (+ debiti di finanziamento)",
+            "una variazione finanziaria positiva (+ cassa) che si compensa con una variazione finanziaria positiva (+ debiti di finanziamento)",
+            "una variazione finanziaria positiva (+ cassa) che si compensa con una variazione finanziaria negativa (+ debiti di finanziamento)"
+        ],
+        "correct_answer": "una variazione finanziaria positiva (+ cassa) che si compensa con una variazione finanziaria negativa (+ debiti di finanziamento)"
     }
 ]
