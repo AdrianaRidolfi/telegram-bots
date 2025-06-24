@@ -2870,4 +2870,510 @@
     "correct_answer": "2 componenti",
     "id": "38a0ddb8-4f29-4788-95ed-c99a22e3c07c"
   }
+  {
+    "question": "Per sostituire la prima occorrenza dell'elemento e con l'elemento e1 in una lista l, il miglior frammento di",
+    "answers": [
+      "codice python da utilizzare è?:",
+      "if e in l: I[l.index(e)] = e1",
+      "if e in l: l.insert(l.index(e), e1)"
+    ],
+    "id": "db89808c-09ae-48e5-b2c7-027dd46aeb4e",
+    "correct_answer": "codice python da utilizzare è?:"
+  },
+  {
+    "question": "Dato il seguente frammento di codice: import re S=\"<H1>title</H1>\" Il commando corretto per produrre la lista contenente i tag HTML di apertura e chiusura è:",
+    "answers": [
+      "l=re.findall(r'<,+>'s)",
+      "l=re.findall(r'<.+?>',s)",
+      "l=re.findall(r'<.?*>'s)",
+      "l=re.findall(r'<.?+>',s)"
+    ],
+    "id": "09f4c0c3-f023-430b-bf5f-f5161db6f963",
+    "correct_answer": "l=re.findall(r'<.+?>',s)"
+  },
+  {
+    "question": "Il seguente frammento di codice import numpy as np v=np.arange(1,10,dtype=np.int32) print (v) np.insert(v,4,-1) print(\"v\",v):",
+    "answers": [
+      "v= [1 2 3 4 5 6 7 8 -1]",
+      "v= [1 2 3 -1 5 6 7 8 9]",
+      "v= [1 2 3 4 5 6 7 8 9]",
+      "v= [1 2 3 4 -1 6 7 8 9]"
+    ],
+    "id": "9f85e150-3670-419d-8e19-a04c06d17c7f",
+    "correct_answer": "v= [1 2 3 4 5 6 7 8 9]"
+  },
+  {
+    "question": "Lo stato di un oggetto può essere consultato :",
+    "answers": [
+      "attraverso l'interfaccia e anche direttamente per gli attributi pubblici",
+      "",
+      "",
+      ""
+    ],
+    "id": "3041de58-9b9c-4750-9b3c-9f7843553256",
+    "correct_answer": "attraverso l'interfaccia e anche direttamente per gli attributi pubblici"
+  },
+  {
+    "question": "I widget (contenitore) utilizzabili in un formper raggruppare insieme altri widget logicamente consistente sono:",
+    "answers": [
+      "Ttk.LabelFrame, Ttk.NoteBook, Tkinter.PanedWindows",
+      "",
+      "",
+      ""
+    ],
+    "id": "8efbb403-f2cf-4ca5-8957-8e8ac01d7112",
+    "correct_answer": "Ttk.LabelFrame, Ttk.NoteBook, Tkinter.PanedWindows"
+  },
+  {
+    "question": "Il Codice S='2°' Print(s.isalnum()) Visualizza a schermo:",
+    "answers": [
+      "True",
+      "Traceback StrError durante l'esecuzione",
+      "False",
+      "Un errore di sintassi prima dell'esecuzione per il carattere"
+    ],
+    "id": "939cce71-a303-42f8-aab9-fcccd63faf24",
+    "correct_answer": "False"
+  },
+  {
+    "question": "Quale frammento di codice è equivalente a: import numpy as np m=np.linspace(1,10,num=10):",
+    "answers": [
+      "m=np.arange(1,11,dtype=np.float64)",
+      "",
+      "",
+      ""
+    ],
+    "id": "bf1705b2-4718-4c79-8630-7c5965b884ee",
+    "correct_answer": "m=np.arange(1,11,dtype=np.float64)"
+  },
+  {
+    "question": "Il seguente frammento di codice d={\"Asse di picche”:] \"Regina di quadri\":10, \"Re di quadri\":10, \"3 di cuori\":3, \"10 di cuori\":10 } sk=set (d.keys())sv=set (d.values()) print (len (sk), len (sv)) produce a video:",
+    "answers": [
+      "5*3",
+      "5*5",
+      "5*10",
+      "3*5"
+    ],
+    "id": "8e06ed16-041f-4aa3-9e99-78d615737497",
+    "correct_answer": "5*3"
+  },
+  {
+    "question": "La Query SQL: SELECT * FROM Products WHERE Price BETWEEN (SELECTMIN(Price) FROMProducts) AND (SELECT AVG(Price) FROMProducts):",
+    "answers": [
+      "contiene due query annidate",
+      "contiene una query annidata",
+      "",
+      ""
+    ],
+    "id": "3402b194-7f56-49ba-8880-ccf4db464dc1",
+    "correct_answer": "contiene due query annidate"
+  },
+  {
+    "question": "Il seguente frammento di codice: soup=beautifulSoup(html_doc, html.parser ) for t in soup.findAll",
+    "answers": [
+      "(table')|0:]: for tr in t.findAIl('tr')[0:}: print (tr) produce a video:",
+      "il testo HTML di tutte le righe della prima tabella contenuta nel html_doc",
+      "il testo HTML di tutte le righe di tutte le tabelle contenute nel html_doc",
+      "",
+      ""
+    ],
+    "id": "86460f1b-b00e-482f-af14-d7419c32c66c",
+    "correct_answer": "il testo HTML di tutte le righe della prima tabella contenuta nel html_doc"
+  },
+  {
+    "question": "Ogni nodo di un grafo Networkx si comporta come un dizionario Python dove gli attributi dei nodi",
+    "answers": [
+      "rappresentano le chiavi:",
+      "attributo dei nodi",
+      "",
+      "",
+      ""
+    ],
+    "id": "a10420ff-0aa1-4665-991c-9ac41dcc6fd9",
+    "correct_answer": "rappresentano le chiavi:"
+  },
+  {
+    "question": "Il linguaggio DDL di SQL, oltre al comando CREATE, prevede altri tre comandi principali per la modifica dei DB:",
+    "answers": [
+      "ALTER; 2. RENAME; 3. DROP"
+    ],
+    "id": "470d55e8-6698-4271-830d-773510874126",
+    "correct_answer": "ALTER; 2. RENAME; 3. DROP"
+  },
+  {
+    "question": "DML:",
+    "answers": [
+      "select insert delete update",
+      "",
+      "",
+      ""
+    ],
+    "id": "acc8e886-588d-4b03-9f21-ad21ea1e7450",
+    "correct_answer": "select insert delete update"
+  },
+  {
+    "question": "Quale query prende i dati dei prodotti il cui prezzo èmaggiore dellamedia dei prezzi?",
+    "answers": [
+      "SELECT * FROMP roducts WHERE Price >= 10 OR Price <= 15",
+      "SELECT * FROM Products WHERE Price > (SELECT AVG(Price) FROM Products)",
+      "SELECT * FROM Products WHERE Price >(SELECT Price, AVG(Price)FROM Products GROUP BY Price)",
+      "SELECT * FROM Products WHERE Price > (SELECT ProductID, AVG(Price) FROM Products);"
+    ],
+    "id": "88d4c5d3-735f-4421-b7e2-4cfb4c84fa90",
+    "correct_answer": "SELECT * FROM Products WHERE Price > (SELECT AVG(Price) FROM Products)"
+  },
+  {
+    "question": "Fasi principali della progettazione di un DB?",
+    "answers": [
+      "Analisi del progetto, modellazione concettuale, modellazione logica",
+      "",
+      "",
+      ""
+    ],
+    "id": "30fe8e5a-74a1-4499-8f93-d3ca3a156b34",
+    "correct_answer": "Analisi del progetto, modellazione concettuale, modellazione logica"
+  },
+  {
+    "question": "Sia df un DataFrame, l'espressione: df[['Nome','Regione','Popolazione']] permette di:",
+    "answers": [
+      "Creare 3 Series una per ciascuna delle colonne elencate",
+      "Creare un nuovo DataFrame formato dallo stesso numero di righe di df ma con sole 3 colonne",
+      "elencate",
+      "Creare 3 liste una per ciascuna delle colonne elencate",
+      "Creare 3 NumArray uno per ciascuna delle colonne elencate"
+    ],
+    "id": "53b9f884-3d3a-4a80-814e-22fc40b59320",
+    "correct_answer": "Creare un nuovo DataFrame formato dallo stesso numero di righe di df ma con sole 3 colonne"
+  },
+  {
+    "question": "import modulo_originale as alias",
+    "answers": [
+      "si usa as per importare con alias",
+      "",
+      "",
+      ""
+    ],
+    "id": "0c90f3cc-c45a-45e1-a395-76c6438b5c42",
+    "correct_answer": "si usa as per importare con alias"
+  },
+  {
+    "question": "Aimetodi groupBy()/mapValues() dell'RDD puó essere passata:",
+    "answers": [
+      "solo una espressione lamba",
+      "solo una funzione già presente in python o un'espressione lambda",
+      "solo una funzione di PySpark",
+      "una funzione creata dal programmatore, una funzione già presente in python o un'espressione lambda"
+    ],
+    "id": "59ac7020-211a-497b-83bc-75eac882ca57",
+    "correct_answer": "una funzione creata dal programmatore, una funzione già presente in python o un'espressione lambda"
+  },
+  {
+    "question": "l=[0,1,2,3,4] a=np.cumprod(l) print(a):",
+    "answers": [
+      "un nuovo array con lo stesso numero di elementi",
+      "",
+      "",
+      ""
+    ],
+    "id": "ae1c11a3-c590-48ba-9ccf-5c915733239a",
+    "correct_answer": "un nuovo array con lo stesso numero di elementi"
+  },
+  {
+    "question": "In un dizionario:",
+    "answers": [
+      "è uguale al numero di chiavi contenute nel dizionario",
+      "è uguale al numero di valori distinti contenuti nel dizionario",
+      "",
+      ""
+    ],
+    "id": "3b3ec311-6f0b-4c37-b6e1-87381e5f7f2d",
+    "correct_answer": "è uguale al numero di chiavi contenute nel dizionario"
+  },
+  {
+    "question": "Il metodo di gestione della geometria grid() permette di:",
+    "answers": [
+      "posizionare widget nell'oggetto parent utilizzando righe e colonne come se fosse un foglio",
+      "Excel",
+      "creare nell'oggetto widget una griglia di righe per simulare un foglio Exel",
+      "posizionare un widget nel suo oggetto contenitore utilizzando righe e colonne",
+      "disegnare nell'oggetto contenitore del widget una griglia per simulare un foglio Excel"
+    ],
+    "id": "916c0b29-8295-4585-b71c-0e38f9f0fffd",
+    "correct_answer": "posizionare widget nell'oggetto parent utilizzando righe e colonne come se fosse un foglio"
+  },
+  {
+    "question": "Da cosa è formato unWidget LabelInput?",
+    "answers": [
+      "un widget Label + unwidget di input",
+      "un widget Label + un Frame",
+      "",
+      ""
+    ],
+    "id": "20dca20c-2120-497a-ae7d-f129b7ac1d6d",
+    "correct_answer": "un widget Label + unwidget di input"
+  },
+  {
+    "question": "a= -1 def cambia(a): a=a*-1 return a def main(): cambia(a) print(a) main() Cosa stampa?",
+    "answers": [
+      "a = -1",
+      "un errore",
+      "",
+      ""
+    ],
+    "id": "5b3be6d8-61e4-4725-b927-35a643f61513",
+    "correct_answer": "a = -1"
+  },
+  {
+    "question": "Le 3 strutture del teorema di Bohm-Jacopini:",
+    "answers": [
+      "sequenza, selezione ed iterazione",
+      "",
+      "",
+      ""
+    ],
+    "id": "836c582a-a4ab-422e-ab81-48b2efcb81f1",
+    "correct_answer": "sequenza, selezione ed iterazione"
+  },
+  {
+    "question": "Cosa si intende per Polimorfismo?",
+    "answers": [
+      "un meccanismo dell'OOP che consente la riscrittura di un metodo ereditato dalla classe base per ottenere un comportamento diverso negli oggetti della classe derivata",
+      "un meccanismo dell'OOP che consente la riscrittura di un metodo ereditato dalla classe derivata per ottenere un comportamento diverso negli oggetti della classe base",
+      "",
+      ""
+    ],
+    "id": "1c295e51-edd4-4dab-9640-81a5743f94b9",
+    "correct_answer": "un meccanismo dell'OOP che consente la riscrittura di un metodo ereditato dalla classe base per ottenere un comportamento diverso negli oggetti della classe derivata"
+  },
+  {
+    "question": "Cosa serve per trovare ilmassimo in una lista bidimensionale?",
+    "answers": [
+      "utilizzare due cicli nidificati e due indici",
+      "",
+      "",
+      ""
+    ],
+    "id": "2fad8e48-ab0e-4d5b-bf74-764b4f276741",
+    "correct_answer": "utilizzare due cicli nidificati e due indici"
+  },
+  {
+    "question": "Come si simulano 100 lanci di un dado a 6 facce? La forma corretta per generare il risultato di 100 lanci di un dado a 6 facce è:",
+    "answers": [
+      "import numpy.randomas rnd x = rnd.randint(low=1,high=7, size=100)",
+      "import numpy.randomas rnd x = rnd.randint(low=1,high=6, size=100)",
+      "import numpy.randomas rnd x = rnd.randint(low=0,high=6, size=100)",
+      "import numpy.randomas rnd x = rnd.randint(low=0,high=100, size=6)"
+    ],
+    "id": "6af89fe6-6220-4875-9498-30cc76c235ff",
+    "correct_answer": "import numpy.randomas rnd x = rnd.randint(low=1,high=7, size=100)"
+  },
+  {
+    "question": "Crea un arraymcontenente i numeri da 1.0 a 10.0 (incluso 1.0ma escluso 11.0) con incrementi di 1.0, tutti rappresentati come numeri in virgola mobile a 64 bit:",
+    "answers": [
+      "Array([ 1., 2., 3., 4., 5., 6., 7., 8., 9., 10.])",
+      "",
+      "",
+      ""
+    ],
+    "id": "06a68456-1bab-4e81-8991-51170a52865a",
+    "correct_answer": "Array([ 1., 2., 3., 4., 5., 6., 7., 8., 9., 10.])"
+  },
+  {
+    "question": "Il comando X = rdn.uniform(low=0, high=1, size=10) Produce:",
+    "answers": [
+      "Un array contenente 10 valori numerici tra 0 e 1 tutti ugualmente equiparabili",
+      "Un valore casuale tra 10 valori equamente distribuiti tra 0 e 1",
+      "una sequenza casuale di 10 bit",
+      "un oggetto lista contenente 10 valori di probabilità"
+    ],
+    "id": "87846804-e116-4943-ae59-8644806d0632",
+    "correct_answer": "Un array contenente 10 valori numerici tra 0 e 1 tutti ugualmente equiparabili"
+  },
+  {
+    "question": "Pickle.dump(obj, file)",
+    "answers": [
+      "serializza obj e lo scrive in binario sul file",
+      "",
+      "",
+      ""
+    ],
+    "id": "f00fb57a-5570-4324-9ba3-3591bef09ef8",
+    "correct_answer": "serializza obj e lo scrive in binario sul file"
+  },
+  {
+    "question": "Il frammento di codice: import re t=\"Qui\\nQuo\\nQua\" print(re.findall(r'Qu[aio]$',t)) stampa a video:",
+    "answers": [
+      "['Qua']",
+      "['Qui', 'Quo']",
+      "['Qui','Quo','Qua']",
+      "['Qui']"
+    ],
+    "id": "bdc001ce-12d6-412f-b5a3-a1a48beae8c3",
+    "correct_answer": "['Qua']"
+  },
+  {
+    "question": "Per definire la struttura dei dati ed amministrare un database relazionale si usa:",
+    "answers": [
+      "l'insieme dei comandi SQL classificati come DDL (Data Definition Language)",
+      "l'insieme dei comandi SQL classificati come ADL (Architectural Design Language)",
+      "l'insieme dei comandi SQL classificati come QL (Query Language)",
+      "l'insieme dei comandi SQL classificati come DML (DataManipulation Language)"
+    ],
+    "id": "54173877-f43e-47e4-bb0d-ef077b68f1d2",
+    "correct_answer": "l'insieme dei comandi SQL classificati come DDL (Data Definition Language)"
+  },
+  {
+    "question": "La libreria Tkinter rende disponibile tremetodi per la gestione della geometria, il piú semplice é:",
+    "answers": [
+      "la funzione Entry()",
+      "la funzione pack()",
+      "la funzione mainloop",
+      "lafunzione Tk()"
+    ],
+    "id": "9d6d8c4c-daa4-4c33-abf8-99cc785f1ba3",
+    "correct_answer": "la funzione pack()"
+  },
+  {
+    "question": "La funzione str(df) permette di:",
+    "answers": [
+      "trasformare un dataframe in una stringa di testo",
+      "estrarre le variabili di Class : character dal dataframe",
+      "analizzare/visualizzare la struttura di un dataframe",
+      "convertire tutte le variabili del dataframe in stringhe"
+    ],
+    "id": "23f0ffd6-32d4-4b8a-8180-a5751b7b8a6c",
+    "correct_answer": "analizzare/visualizzare la struttura di un dataframe"
+  },
+  {
+    "question": "In un linguaggio di programmazione orientata agli oggetti permodellare la soluzione di un problema:",
+    "answers": [
+      "è sufficiente identificare solo le caratteristiche di un oggettO",
+      "è sufficiente identificare solo gli attributi di un oggetto",
+      "bisogna identificare le entità denominate 'oggetti'",
+      "è sufficiente identificare solo imetodi/operazioni di un oggetto"
+    ],
+    "id": "1b275609-2273-4f19-b7b5-d2eb3d4d996a",
+    "correct_answer": "bisogna identificare le entità denominate 'oggetti'"
+  },
+  {
+    "question": "La Query SQL per conoscere dai dati della tabella OrderDetails, per ciascun prodotto, il numero di truple e la quantità totale ordinata è:",
+    "answers": [
+      "SELECT ProductID, COUNT(*), SUM(Quantity) FROM OrderDetails GROUP BY ProductID",
+      "SELECT ProductID, COUNT(ProductID), SUM (*) FROM OrderDetails GROUP BY ProductID",
+      "",
+      ""
+    ],
+    "id": "71e6a77a-79f1-49e7-af78-654b8bdd9dfb",
+    "correct_answer": "SELECT ProductID, COUNT(*), SUM(Quantity) FROM OrderDetails GROUP BY ProductID"
+  },
+  {
+    "question": "Il seguente frammento di codice Int=35//2 Print(int) Produce come risultato:",
+    "answers": [
+      "17",
+      "17.5",
+      "0",
+      "un messaggio di errore"
+    ],
+    "id": "c529741f-e5e6-428a-9e9e-c7918c1f52b0",
+    "correct_answer": "17"
+  },
+  {
+    "question": "L'istruzione return, ritorna al chiamante:",
+    "answers": [
+      "una variabile",
+      "un valore",
+      "un oggetto",
+      "un riferimento ad una variabile"
+    ],
+    "id": "82a1903a-209e-4565-a3be-dbae436a0536",
+    "correct_answer": "un valore"
+  },
+  {
+    "question": "Per una GUI, i motivi per preferire i tipi di dato offerti dalla libreria Tkinter rispetto ai tipi di dati built-in di Python sono:",
+    "answers": [
+      "con le variabili di tipo offerti da Tkinter le variazioni ai valori delle variabili: sono propagate in modo automatico a tutti i widget che le riferiscono, generano sempre un evento",
+      "con le variabili di tipo built-in di Python le variazioni delle variabili: sono propagate in modo automatico a tutti i widget che le riferiscono; generano sempre un evento",
+      "le variabili di tipo offerti da Tkinter generano automaticamente un widget associato",
+      "le variabili di tipo built-in di Python sono associabiil solo ai widget non modificabili e che non generano eventi"
+    ],
+    "id": "4d34d952-142c-4dbd-9a6c-0af6d3a3deea",
+    "correct_answer": "con le variabili di tipo offerti da Tkinter le variazioni ai valori delle variabili: sono propagate in modo automatico a tutti i widget che le riferiscono, generano sempre un evento"
+  },
+  {
+    "question": "complete_graph() è:",
+    "answers": [
+      "un metodo di networkx per creare un grafo completo non orientato",
+      "una funzione di networkx per creare un grafo completo orientato",
+      "una funzione di networkx per creare un grafo completo non orientato",
+      "un metodo di networkx per creare un grafo completo orientato"
+    ],
+    "id": "18199577-14b4-448b-ae1c-989d5551f51e",
+    "correct_answer": "una funzione di networkx per creare un grafo completo non orientato"
+  },
+  {
+    "question": "Per rinominare i nomi delle colonne nella tabella risultato di una query:",
+    "answers": [
+      "Si usa la parola chiave TO",
+      "Si usa la parola chiave AS",
+      "Si usa la parola chiave FROM TO",
+      "Non è possibile rinominare le colonne"
+    ],
+    "id": "d22e5616-4b59-437c-85a8-b6c19e2d4c91",
+    "correct_answer": "Si usa la parola chiave AS"
+  },
+  {
+    "question": "qual è la differenza tra l'uso di findAll e FindALL (img) in un  contesto di scraping??",
+    "answers": [
+      "findAll(\"img\")",
+      "findAll(img)",
+      "",
+      ""
+    ],
+    "id": "e9af8e90-4bea-4bd2-ae68-906d833d99d2",
+    "correct_answer": "findAll(\"img\")"
+  },
+  {
+    "question": "come applicare un filtro su un DataFrame in Pandas in cui la population è maggiore di 1000000 ?",
+    "answers": [
+      "df[df['Population']>1000000]",
+      "df[('Population')>1000000]",
+      "",
+      ""
+    ],
+    "id": "b3cd87a3-f345-4bbb-ba6e-fc8e038dd33f",
+    "correct_answer": "df[df['Population']>1000000]"
+  },
+  {
+    "question": "Metodo glom in PySpark e quando si usa?",
+    "answers": [
+      "restituisce un oggetto di <class 'str'>",
+      "riaggrega le partizioni in un unico RDD",
+      "",
+      ""
+    ],
+    "id": "7c6c64a7-48d4-485f-bf9f-00fd78920d35",
+    "correct_answer": "riaggrega le partizioni in un unico RDD"
+  },
+  {
+    "question": "A seguito dell' esecuzione del seguente frammento di codice in una cartella in cui il file alfa.txt esiste: s1='' s2='Ciao' infile=open('alfa.txt','r') for linea in infile: s1 += linea s2=infile.read() otterremo:",
+    "answers": [
+      "che la variabile s1 sarà valorizzata con il contenuto del file 'alfa.txt', mentre la variabile s2 conterrà una stringa vuota",
+      "le variabili s1 e s2 saranno valorizzate ambedue con il contenuto del file 'alfa.txt'",
+      "un errore di Traceback",
+      "un errore di compilazione"
+    ],
+    "id": "1addcbb0-c2f9-4fe7-84a6-f52f65d68202",
+    "correct_answer": "che la variabile s1 sarà valorizzata con il contenuto del file 'alfa.txt', mentre la variabile s2 conterrà una stringa vuota"
+  },
+  {
+    "question": "La funzione best_partition() del modulo community applicata ad un grafo, restituisce:",
+    "answers": [
+      "un dizionario (CORRETTA)",
+      "un DataFrame",
+      "una lista",
+      "una Series"
+    ],
+    "id": "09736053-1f5b-4356-9ef9-889ca18463a0",
+    "correct_answer": "un dizionario (CORRETTA)"
+  }
 ]
