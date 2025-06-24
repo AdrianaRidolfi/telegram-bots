@@ -3368,12 +3368,12 @@
   {
     "question": "La funzione best_partition() del modulo community applicata ad un grafo, restituisce:",
     "answers": [
-      "un dizionario (CORRETTA)",
+      "un dizionario",
       "un DataFrame",
       "una lista",
       "una Series"
     ],
     "id": "09736053-1f5b-4356-9ef9-889ca18463a0",
-    "correct_answer": "un dizionario (CORRETTA)"
+    "correct_answer": "un dizionario"
   }
 ]
