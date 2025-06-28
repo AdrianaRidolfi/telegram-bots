@@ -10,9 +10,7 @@ from telegram.ext import (
     ApplicationBuilder,
     CommandHandler,
     CallbackQueryHandler,
-    ContextTypes,
-    MessageHandler,
-    filters
+    ContextTypes
 )
 from contextlib import asynccontextmanager
 from pdf_generator import generate_pdf
@@ -82,6 +80,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         "Vuoi contribuire? Clicca su GitHub e segui la guida!\n\n"
 
         "*📚 Quiz disponibili:*\n"
+        "• *Programmazione 2* - _inedite_ - `23/05`\n"
         "• *Corporate planning* - _paniere + inedite_ - `17/06`\n"
         "• *Tecnologie web* - _esamsync + inedite_ - `15/06`\n"
         "• *Statistica* - _paniere_ - `13/06`\n"
@@ -90,7 +89,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         "• *Comunicazione digitale* - _inedite_ - `28/05`\n"
         "• *Ingegneria del software* - _inedite_ - `28/05`\n"
         "• *Reti di calcolatori e cybersecurity* - _paniere_ - `28/05`\n"
-        "• *Programmazione 2* - _inedite_ - `28/05`\n"
     )
 
     keyboard = []
@@ -217,7 +215,6 @@ async def send_next_question(user_id, context):
         await show_final_stats(user_id, context, state, is_review_mode=state.get("is_review", False))
         manager = get_manager(user_id)
         manager.commit_changes()
-        user_states.pop(user_id, None) 
         return
 
 
@@ -382,9 +379,11 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
             clear_manager(user_id)
 
         await show_final_stats(user_id, context, state, from_change_course=True)
+        user_states.pop(user_id, None) 
         await choose_subject(update, context)
 
     elif data.endswith(JSON):
+        user_states.pop(user_id, None) 
         await select_quiz(update, context)
 
     elif data == "reset_stats":
