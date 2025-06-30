@@ -12,7 +12,7 @@
     },
     {
         "id": "4e6ee1c0-bc89-4141-b7b7-ad8e4a8d6c25",
-        "question": "Quale, tra i seguenti, non può essere classificato come un sub-sistema ambientale \"specifico\":",
+        "question": "Quale, tra i seguenti, non può essere classificato come un sub-sistema ambientale 'specifico':",
         "answers": [
             "ambiente politico",
             "mercato del lavoro",
@@ -91,12 +91,12 @@
         "id": "c803fb65-de63-49be-9add-5be960b74100",
         "question": "L'Economia Aziendale:",
         "answers": [
-            "studia l'azienda \"dall'interno\" e si interessa di fatti e fenomeni concreti",
+            "studia l'azienda 'dall'interno' e si interessa di fatti e fenomeni concreti",
             "studia i comportamenti collettivi e i loro effetti aggregati a livello nazionale o sovranazionale",
             "studia scelte e comportamenti delle singole unità economiche guardate dall'esterno, nei riflessi sul sistema economico generale",
             "studia l'organizzazione produttiva dei settori, le politiche delle imprese che ne fanno parte e la struttura e il funzionamento dei relativi mercati"
         ],
-        "correct_answer": "studia l'azienda \"dall'interno\" e si interessa di fatti e fenomeni concreti"
+        "correct_answer": "studia l'azienda 'dall'interno' e si interessa di fatti e fenomeni concreti"
     },
     {
         "id": "4580ed1e-01ef-4056-aeb4-e1848d6b1f79",
@@ -1169,12 +1169,12 @@
         "id": "dbb83c87-79a6-41ca-998a-efd88dccd249",
         "question": "L'Economia Aziendale:",
         "answers": [
-            "studia l'azienda \"dall'interno\" e si interessa di fatti e fenomeni concreti",
+            "studia l'azienda 'dall'interno' e si interessa di fatti e fenomeni concreti",
             "studia i comportamenti collettivi e i loro effetti aggregati a livello nazionale o sovranazionale",
             "studia scelte e comportamenti delle singole unità economiche guardate dall'esterno, nei riflessi sul sistema economico generale",
             "studia l'organizzazione produttiva dei settori, le politiche delle imprese che ne fanno parte e la struttura e il funzionamento dei relativi mercati"
         ],
-        "correct_answer": "studia l'azienda \"dall'interno\" e si interessa di fatti e fenomeni concreti"
+        "correct_answer": "studia l'azienda 'dall'interno' e si interessa di fatti e fenomeni concreti"
     },
     {
         "id": "708ef9ac-02b8-40bb-9aa9-121edd6a967e",
@@ -1640,7 +1640,7 @@
     },
     {
         "id": "50c9c921-ad25-457c-baaf-d51bd61aeeed",
-        "question": "Quale, tra i seguenti, non può essere classificato come un sub-sistema ambientale \"specifico\":",
+        "question": "Quale, tra i seguenti, non può essere classificato come un sub-sistema ambientale 'specifico':",
         "answers": [
             "ambiente politico",
             "mercato del lavoro",
@@ -2443,7 +2443,7 @@
     },
     {
         "id": "a3e2c546-e4d9-4e7c-93ab-4b93f2f8306d",
-        "question": "Cosa si intende, prima di tutto, per \"visione sistemica\" all'interno di un'azienda?",
+        "question": "Cosa si intende, prima di tutto, per 'visione sistemica' all'interno di un'azienda?",
         "answers": [
             "Un insieme di procedure operative standardizzate",
             "Un atteggiamento mentale di tutti coloro che partecipano alla vita dell'azienda",
@@ -2454,7 +2454,7 @@
     },
     {
         "id": "53c3ac44-8c84-42d9-bf65-cd5fa1672c6f",
-        "question": "Cosa significa che l'azienda è un \"sistema aperto\"?",
+        "question": "Cosa significa che l'azienda è un 'sistema aperto'?",
         "answers": [
             "Che non ha confini definiti e può incorporare qualsiasi elemento esterno",
             "Che è inserita in un ambiente con cui costantemente interagisce, ricevendo input e fornendo output",
@@ -2476,7 +2476,7 @@
     },
     {
         "id": "37e35eb2-eed9-4f9f-8d6e-9837cfda0f41",
-        "question": "Cosa distingue un'azienda \"proattiva\" o \"anticipativa\" da una \"reattiva\" riguardo all'ambiente?",
+        "question": "Cosa distingue un'azienda 'proattiva' o 'anticipativa' da una 'reattiva' riguardo all'ambiente?",
         "answers": [
             "La capacità di adattare i processi produttivi ai mutamenti ambientali, senza influenzarli",
             "La tendenza a ripiegare temporaneamente su se stessa per favorire l'assestamento interno",
@@ -2542,7 +2542,7 @@
     },
     {
         "id": "3e5a2323-504e-4a4a-9d5d-0188efb91e7a",
-        "question": "Cosa significa il termine \"fondo di valori\" nel contesto del capitale di funzionamento?",
+        "question": "Cosa significa il termine 'fondo di valori' nel contesto del capitale di funzionamento?",
         "answers": [
             "Che il capitale di funzionamento è un valore unico e indivisibile",
             "Che accoglie elementi distinti (attività e passività) che sono letti secondo un forte profilo di omogeneità data la loro comune finalizzazione ai processi produttivi",
@@ -2586,7 +2586,7 @@
     },
     {
         "id": "49c11471-cd02-4e36-a95d-b182a6be8504",
-        "question": "Come si giudica la \"ragionevolezza\" dei valori attribuiti alle attività e passività del capitale aziendale nel modello dei cicli conclusi?",
+        "question": "Come si giudica la 'ragionevolezza' dei valori attribuiti alle attività e passività del capitale aziendale nel modello dei cicli conclusi?",
         "answers": [
             "In base alla loro distanza dai valori nominali di mercato",
             "In rapporto alla loro capacità di garantire la salvaguardia dell'integrità del capitale",
@@ -2597,7 +2597,7 @@
     },
     {
         "id": "ac61602a-59cf-4e47-b12b-f15c2f3d50a1",
-        "question": "Come viene determinato il \"valore di presumibile realizzo diretto\" per le rimanenze di prodotti finiti nel modello dei cicli conclusi?",
+        "question": "Come viene determinato il 'valore di presumibile realizzo diretto' per le rimanenze di prodotti finiti nel modello dei cicli conclusi?",
         "answers": [
             "Stimando i ricavi futuri e applicando una percentuale riferita ai costi di produzione delle rimanenze",
             "Coincide sempre con il costo storico di acquisto",
@@ -2608,7 +2608,7 @@
     },
     {
         "id": "38f4644a-c0a4-42f0-b3c4-5ef9a1a1be95",
-        "question": "Qual è una delle principali conseguenze dell'utilizzo di valori \"irragionevoli\" nella valutazione delle attività aziendali?",
+        "question": "Qual è una delle principali conseguenze dell'utilizzo di valori 'irragionevoli' nella valutazione delle attività aziendali?",
         "answers": [
             "Un aumento del capitale di risparmio non giustificato",
             "La possibilità di compromettere l'integrità del capitale e pregiudicare la continuazione dell'attività",
@@ -2619,7 +2619,7 @@
     },
     {
         "id": "62c0038a-4524-41f8-ae01-bb0cba05a3f9",
-        "question": "Nel modello dei cicli in corso di svolgimento, come viene intesa la \"prudenza\" valutativa?",
+        "question": "Nel modello dei cicli in corso di svolgimento, come viene intesa la 'prudenza' valutativa?",
         "answers": [
             "Come una regola comportamentale rigida che vieta l'anticipazione di utili sperati",
             "Come un atteggiamento di cautela che porta ad assegnare valori dotati di un'adeguata probabilità di verificazione, anche anticipando porzioni di utili sperati",
@@ -2630,7 +2630,7 @@
     },
     {
         "id": "91c6d0c1-1083-46c4-b328-7c2e4d8fdce5",
-        "question": "Qual è stata una delle principali critiche mosse al \"fair value\" dopo la crisi economica globale del 2008?",
+        "question": "Qual è stata una delle principali critiche mosse al 'fair value' dopo la crisi economica globale del 2008?",
         "answers": [
             "Che non teneva sufficientemente conto della trasparenza informativa",
             "Che innescherebbe effetti prociclici, amplificando gli impatti negativi delle crisi",
@@ -2641,7 +2641,7 @@
     },
     {
         "id": "9827bfa7-5bcd-4745-a622-72e3e9176044",
-        "question": "Qual è una differenza fondamentale tra il \"capitale economico\" e il \"capitale di funzionamento\"?",
+        "question": "Qual è una differenza fondamentale tra il 'capitale economico' e il 'capitale di funzionamento'?",
         "answers": [
             "Il capitale economico considera le prospettive reddituali nella loro totale misura attesa, mentre il capitale di funzionamento guarda solo ai processi in corso, escludendo i contributi positivi e includendo i negativi",
             "Il capitale di funzionamento è sempre superiore al capitale economico",
@@ -2652,7 +2652,7 @@
     },
     {
         "id": "d53ed9d3-c477-4f10-b255-4e37b9a21164",
-        "question": "Nella metafora dell'albero delle risorse aziendali, cosa simboleggiano le \"radici\"?",
+        "question": "Nella metafora dell'albero delle risorse aziendali, cosa simboleggiano le 'radici'?",
         "answers": [
             "Le risorse misurabili che compongono il capitale di funzionamento",
             "Gli elementi intangibili che l'azienda ha sviluppato nel tempo, che producono la linfa vitale e assicurano la crescita",
@@ -2674,7 +2674,7 @@
     },
     {
         "id": "c8727ba0-7db4-4fa3-a6b3-03f918d8f222",
-        "question": "Perché la remunerazione del capitale proprio è considerata un \"costo opportunità\" o \"figurativo\" e non è inclusa nel calcolo del reddito?",
+        "question": "Perché la remunerazione del capitale proprio è considerata un 'costo opportunità' o 'figurativo' e non è inclusa nel calcolo del reddito?",
         "answers": [
             "Perché è una spesa non ricorrente",
             "Perché il capitale di proprietà viene remunerato con la distribuzione del risultato d'esercizio e non ha una manifestazione finanziaria esplicita come interesse",
@@ -2707,7 +2707,7 @@
     },
     {
         "id": "5dcdde37-594a-4d4f-b3c2-4592f0f83562",
-        "question": "Qual è la principale caratteristica della classificazione dei costi \"per destinazione\"?",
+        "question": "Qual è la principale caratteristica della classificazione dei costi 'per destinazione'?",
         "answers": [
             "Raggruppa i costi in base alla loro natura (es. materie prime, personale)",
             "Suddivide i costi della gestione caratteristica in base all'appartenenza alle diverse aree funzionali dell'impresa (es. produzione, commerciale, amministrativa)",
