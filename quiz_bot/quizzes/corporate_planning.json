@@ -2422,12 +2422,342 @@
     {
         "id": "x4y5z6a7-b8c9-0123-xyza-456789012346",
         "question": "L'avvio del circuito dei finanziamenti attinti a titolo di capitale di credito comporta:",
-        "answers":[
+        "answers": [
             "una variazione finanziaria neutrale (+ cassa) che si compensa con una variazione finanziaria negativa (+ debiti di finanziamento)",
             "una variazione finanziaria negativa (+ cassa) che si compensa con una variazione finanziaria positiva (+ debiti di finanziamento)",
             "una variazione finanziaria positiva (+ cassa) che si compensa con una variazione finanziaria positiva (+ debiti di finanziamento)",
             "una variazione finanziaria positiva (+ cassa) che si compensa con una variazione finanziaria negativa (+ debiti di finanziamento)"
         ],
         "correct_answer": "una variazione finanziaria positiva (+ cassa) che si compensa con una variazione finanziaria negativa (+ debiti di finanziamento)"
+    },
+    {
+        "id": "f7c9f11d-7b45-4305-8170-4ae0a3f2f7e0",
+        "question": "Quale immagine assume l'azienda attraverso la coordinazione sistemica?",
+        "answers": [
+            "L'immagine di un insieme armonico in grado di generare valore e utilità",
+            "L'immagine di un sistema chiuso e autoreferenziale",
+            "L'immagine di una sommatoria di elementi distinti e indipendenti",
+            "L'immagine di un mero aggregato di risorse finanziarie"
+        ],
+        "correct_answer": "L'immagine di un insieme armonico in grado di generare valore e utilità"
+    },
+    {
+        "id": "a3e2c546-e4d9-4e7c-93ab-4b93f2f8306d",
+        "question": "Cosa si intende, prima di tutto, per \"visione sistemica\" all'interno di un'azienda?",
+        "answers": [
+            "Un insieme di procedure operative standardizzate",
+            "Un atteggiamento mentale di tutti coloro che partecipano alla vita dell'azienda",
+            "Una serie di indicatori di performance finanziaria",
+            "La capacità di prevedere perfettamente i mutamenti futuri del mercato"
+        ],
+        "correct_answer": "Un atteggiamento mentale di tutti coloro che partecipano alla vita dell'azienda"
+    },
+    {
+        "id": "53c3ac44-8c84-42d9-bf65-cd5fa1672c6f",
+        "question": "Cosa significa che l'azienda è un \"sistema aperto\"?",
+        "answers": [
+            "Che non ha confini definiti e può incorporare qualsiasi elemento esterno",
+            "Che è inserita in un ambiente con cui costantemente interagisce, ricevendo input e fornendo output",
+            "Che è accessibile a qualsiasi soggetto economico per il prelievo di risorse",
+            "Che le sue decisioni sono raramente influenzate da fattori extraeconomici"
+        ],
+        "correct_answer": "Che è inserita in un ambiente con cui costantemente interagisce, ricevendo input e fornendo output"
+    },
+    {
+        "id": "b46486fd-0089-4024-9d50-7353cb1222cb",
+        "question": "Il principio di economicità, in sintesi, comporta che una condotta aziendale avveduta includa:",
+        "answers": [
+            "Massimizzazione del profitto a qualsiasi costo",
+            "Solo l'equilibrio monetario immediato",
+            "Condizione di equilibrio non provvisorio in tutti gli aspetti, adeguata remunerazione dei fattori, efficacia strategica ed efficienza operativa",
+            "Esclusiva attenzione ai risultati di bilancio a breve termine"
+        ],
+        "correct_answer": "Condizione di equilibrio non provvisorio in tutti gli aspetti, adeguata remunerazione dei fattori, efficacia strategica ed efficienza operativa"
+    },
+    {
+        "id": "37e35eb2-eed9-4f9f-8d6e-9837cfda0f41",
+        "question": "Cosa distingue un'azienda \"proattiva\" o \"anticipativa\" da una \"reattiva\" riguardo all'ambiente?",
+        "answers": [
+            "La capacità di adattare i processi produttivi ai mutamenti ambientali, senza influenzarli",
+            "La tendenza a ripiegare temporaneamente su se stessa per favorire l'assestamento interno",
+            "La capacità di indirizzare l'ambiente verso i cambiamenti più congeniali alle proprie competenze e conoscenze",
+            "La pura e semplice ricezione di impulsi dall'ambiente esterno senza alcuna risposta attiva"
+        ],
+        "correct_answer": "La capacità di indirizzare l'ambiente verso i cambiamenti più congeniali alle proprie competenze e conoscenze"
+    },
+    {
+        "id": "482e9e2a-d2e8-4b0d-913c-1cbbdf09cc44",
+        "question": "Nelle aziende di grandi dimensioni, qual è lo scopo principale dell'istituzione di meccanismi e procedure interne in relazione all'autonomia?",
+        "answers": [
+            "Assicurare che le decisioni siano prese esclusivamente dalla proprietà",
+            "Limitare le azioni arbitrarie e impedire condotte devianti",
+            "Garantire la massima flessibilità delle strutture aziendali",
+            "Accentuare il calcolo economico come unico criterio decisionale"
+        ],
+        "correct_answer": "Limitare le azioni arbitrarie e impedire condotte devianti"
+    },
+    {
+        "id": "5f105be5-007f-4078-8704-03a178f98f88",
+        "question": "Cosa presuppone principalmente l'autonomia di un'attività economica?",
+        "answers": [
+            "La subordinazione sistematica al ricevimento di risorse da terze economie",
+            "L'indipendenza economica, cioè la capacità di riavviare i processi produttivi grazie al riafflusso delle risorse impiegate",
+            "La dipendenza dalle relazioni che l'azienda è in grado di istituire con altre aziende",
+            "La garanzia di interventi di sostegno sistematici da parte di altre economie"
+        ],
+        "correct_answer": "L'indipendenza economica, cioè la capacità di riavviare i processi produttivi grazie al riafflusso delle risorse impiegate"
+    },
+    {
+        "id": "4bd53748-9643-44be-bf85-8636490a29d4",
+        "question": "Come viene definita la remunerazione del capitale di proprietà alla cessazione dell'azienda?",
+        "answers": [
+            "Viene restituito esattamente l'ammontare conferito inizialmente",
+            "Si incrementa o decrementa in base alla nuova ricchezza creata o distrutta dalla gestione",
+            "È un importo fisso predeterminato contrattualmente",
+            "Dipende esclusivamente dalla liquidità disponibile in quel momento"
+        ],
+        "correct_answer": "Si incrementa o decrementa in base alla nuova ricchezza creata o distrutta dalla gestione"
+    },
+    {
+        "id": "7ae8e276-19aa-4c9e-b6b2-3c1ac04b7a1e",
+        "question": "Cosa determina principalmente la remunerazione per il capitale di credito?",
+        "answers": [
+            "È decisa periodicamente dalla proprietà in relazione all'andamento aziendale",
+            "È un importo eventuale e variabile, legato al risultato economico",
+            "È fissata dalle condizioni contrattuali e prescinde dai risultati dell'attività produttiva",
+            "È pari al costo opportunità delle somme investite dai finanziatori"
+        ],
+        "correct_answer": "È fissata dalle condizioni contrattuali e prescinde dai risultati dell'attività produttiva"
+    },
+    {
+        "id": "ac7e2d8a-4168-4079-b5dc-0cf4bc9e13bc",
+        "question": "Qual è la funzione principale del circuito dei finanziamenti in un'impresa?",
+        "answers": [
+            "Generare ricavi attraverso la vendita dei prodotti",
+            "Rendere disponibili i mezzi monetari che vengono investiti nell'acquisizione di fattori produttivi e nella concessione di prestiti a terzi",
+            "Trasformare fisicamente le materie prime in prodotti finiti",
+            "Compensare le variazioni economiche negative del reddito"
+        ],
+        "correct_answer": "Rendere disponibili i mezzi monetari che vengono investiti nell'acquisizione di fattori produttivi e nella concessione di prestiti a terzi"
+    },
+    {
+        "id": "3e5a2323-504e-4a4a-9d5d-0188efb91e7a",
+        "question": "Cosa significa il termine \"fondo di valori\" nel contesto del capitale di funzionamento?",
+        "answers": [
+            "Che il capitale di funzionamento è un valore unico e indivisibile",
+            "Che accoglie elementi distinti (attività e passività) che sono letti secondo un forte profilo di omogeneità data la loro comune finalizzazione ai processi produttivi",
+            "Che rappresenta un aggregato di valori monetari non omogenei",
+            "Che il suo valore è determinato direttamente dalle correnti reddituali prospettiche"
+        ],
+        "correct_answer": "Che accoglie elementi distinti (attività e passività) che sono letti secondo un forte profilo di omogeneità data la loro comune finalizzazione ai processi produttivi"
+    },
+    {
+        "id": "0f6bc58d-64e8-4c72-83a0-6a8373b7bc58",
+        "question": "In che modo l'inflazione compromette la capacità segnaletica del reddito totale?",
+        "answers": [
+            "Rende il calcolo del reddito totale eccessivamente complesso",
+            "Fa sì che includa grandezze formate in epoche diverse con differente potere d'acquisto della moneta",
+            "Impossibilita la completa vendita dei beni al termine della vita dell'impresa",
+            "Genera costi figurativi che non sono inclusi nel calcolo"
+        ],
+        "correct_answer": "Fa sì che includa grandezze formate in epoche diverse con differente potere d'acquisto della moneta"
+    },
+    {
+        "id": "d9e74d1b-8459-4a9e-9d3e-10a199728ea0",
+        "question": "Perché il modello dei cicli conclusi conferisce al differenziale di ricchezza una tendenziale oggettività?",
+        "answers": [
+            "Perché si basa su stime soggettive dei costi e ricavi futuri",
+            "Perché i costi e i ricavi che concorrono alla sua formazione coincidono con i prezzi di negoziazioni già avvenute sui mercati",
+            "Perché considera la ricchezza formata in un unico istante, quello dello scambio",
+            "Perché esclude completamente le operazioni di gestione interna"
+        ],
+        "correct_answer": "Perché i costi e i ricavi che concorrono alla sua formazione coincidono con i prezzi di negoziazioni già avvenute sui mercati"
+    },
+    {
+        "id": "e0c7d83c-942a-493f-8c85-d3e37a3fa0a0",
+        "question": "Qual è il principale scopo dell'integrazione dei costi stimati (accantonamenti) nel calcolo del reddito di periodo?",
+        "answers": [
+            "Aumentare arbitrariamente il reddito dell'esercizio",
+            "Rispettare il principio di competenza economica e garantire la salvaguardia dell'integrità del capitale",
+            "Posticipare il riconoscimento delle perdite temute",
+            "Rendere il bilancio più flessibile alle esigenze del management"
+        ],
+        "correct_answer": "Rispettare il principio di competenza economica e garantire la salvaguardia dell'integrità del capitale"
+    },
+    {
+        "id": "49c11471-cd02-4e36-a95d-b182a6be8504",
+        "question": "Come si giudica la \"ragionevolezza\" dei valori attribuiti alle attività e passività del capitale aziendale nel modello dei cicli conclusi?",
+        "answers": [
+            "In base alla loro distanza dai valori nominali di mercato",
+            "In rapporto alla loro capacità di garantire la salvaguardia dell'integrità del capitale",
+            "Esclusivamente in base alla probabilità di manifestazione degli utili sperati",
+            "Tramite una metodologia che anticipa le perdite sperate"
+        ],
+        "correct_answer": "In rapporto alla loro capacità di garantire la salvaguardia dell'integrità del capitale"
+    },
+    {
+        "id": "ac61602a-59cf-4e47-b12b-f15c2f3d50a1",
+        "question": "Come viene determinato il \"valore di presumibile realizzo diretto\" per le rimanenze di prodotti finiti nel modello dei cicli conclusi?",
+        "answers": [
+            "Stimando i ricavi futuri e applicando una percentuale riferita ai costi di produzione delle rimanenze",
+            "Coincide sempre con il costo storico di acquisto",
+            "È calcolato come la differenza tra ricavi stimati e costi di commercializzazione futuri",
+            "Si ottiene attraverso l'analisi dei soli flussi di cassa passati"
+        ],
+        "correct_answer": "Stimando i ricavi futuri e applicando una percentuale riferita ai costi di produzione delle rimanenze"
+    },
+    {
+        "id": "38f4644a-c0a4-42f0-b3c4-5ef9a1a1be95",
+        "question": "Qual è una delle principali conseguenze dell'utilizzo di valori \"irragionevoli\" nella valutazione delle attività aziendali?",
+        "answers": [
+            "Un aumento del capitale di risparmio non giustificato",
+            "La possibilità di compromettere l'integrità del capitale e pregiudicare la continuazione dell'attività",
+            "La creazione di riserve occulte permanenti",
+            "Una maggiore flessibilità nella gestione finanziaria"
+        ],
+        "correct_answer": "La possibilità di compromettere l'integrità del capitale e pregiudicare la continuazione dell'attività"
+    },
+    {
+        "id": "62c0038a-4524-41f8-ae01-bb0cba05a3f9",
+        "question": "Nel modello dei cicli in corso di svolgimento, come viene intesa la \"prudenza\" valutativa?",
+        "answers": [
+            "Come una regola comportamentale rigida che vieta l'anticipazione di utili sperati",
+            "Come un atteggiamento di cautela che porta ad assegnare valori dotati di un'adeguata probabilità di verificazione, anche anticipando porzioni di utili sperati",
+            "Esclusivamente come la scelta dei valori più bassi per le attività e più alti per le passività",
+            "Come un principio che favorisce la sottostima deliberata delle attività"
+        ],
+        "correct_answer": "Come un atteggiamento di cautela che porta ad assegnare valori dotati di un'adeguata probabilità di verificazione, anche anticipando porzioni di utili sperati"
+    },
+    {
+        "id": "91c6d0c1-1083-46c4-b328-7c2e4d8fdce5",
+        "question": "Qual è stata una delle principali critiche mosse al \"fair value\" dopo la crisi economica globale del 2008?",
+        "answers": [
+            "Che non teneva sufficientemente conto della trasparenza informativa",
+            "Che innescherebbe effetti prociclici, amplificando gli impatti negativi delle crisi",
+            "Che non era applicabile agli investimenti intangibili",
+            "Che ostacolava la standardizzazione delle informazioni aziendali"
+        ],
+        "correct_answer": "Che innescherebbe effetti prociclici, amplificando gli impatti negativi delle crisi"
+    },
+    {
+        "id": "9827bfa7-5bcd-4745-a622-72e3e9176044",
+        "question": "Qual è una differenza fondamentale tra il \"capitale economico\" e il \"capitale di funzionamento\"?",
+        "answers": [
+            "Il capitale economico considera le prospettive reddituali nella loro totale misura attesa, mentre il capitale di funzionamento guarda solo ai processi in corso, escludendo i contributi positivi e includendo i negativi",
+            "Il capitale di funzionamento è sempre superiore al capitale economico",
+            "Il capitale economico si determina per elementi distinti, mentre il capitale di funzionamento è un valore unico",
+            "Il capitale di funzionamento non è influenzato dal principio di prudenza"
+        ],
+        "correct_answer": "Il capitale economico considera le prospettive reddituali nella loro totale misura attesa, mentre il capitale di funzionamento guarda solo ai processi in corso, escludendo i contributi positivi e includendo i negativi"
+    },
+    {
+        "id": "d53ed9d3-c477-4f10-b255-4e37b9a21164",
+        "question": "Nella metafora dell'albero delle risorse aziendali, cosa simboleggiano le \"radici\"?",
+        "answers": [
+            "Le risorse misurabili che compongono il capitale di funzionamento",
+            "Gli elementi intangibili che l'azienda ha sviluppato nel tempo, che producono la linfa vitale e assicurano la crescita",
+            "I ricavi periodici generati dalle operazioni",
+            "I debiti e i crediti dell'azienda"
+        ],
+        "correct_answer": "Gli elementi intangibili che l'azienda ha sviluppato nel tempo, che producono la linfa vitale e assicurano la crescita"
+    },
+    {
+        "id": "2cf290cb-339e-4c92-8e4b-c35163593852",
+        "question": "Come viene convenzionalmente misurato il valore dell'avviamento di un'azienda?",
+        "answers": [
+            "Come la somma algebrica dei valori di bilancio di tutti gli elementi espliciti del capitale",
+            "Come la distanza quantitativa che separa il valore economico del capitale dalla somma algebrica dei valori degli elementi espliciti del suo capitale isolatamente considerati",
+            "Esclusivamente in base ai redditi passati che l'azienda ha prodotto",
+            "Come il valore attuale dei flussi di cassa futuri senza considerare la sua vita pregressa"
+        ],
+        "correct_answer": "Come la distanza quantitativa che separa il valore economico del capitale dalla somma algebrica dei valori degli elementi espliciti del suo capitale isolatamente considerati"
+    },
+    {
+        "id": "c8727ba0-7db4-4fa3-a6b3-03f918d8f222",
+        "question": "Perché la remunerazione del capitale proprio è considerata un \"costo opportunità\" o \"figurativo\" e non è inclusa nel calcolo del reddito?",
+        "answers": [
+            "Perché è una spesa non ricorrente",
+            "Perché il capitale di proprietà viene remunerato con la distribuzione del risultato d'esercizio e non ha una manifestazione finanziaria esplicita come interesse",
+            "Perché è un costo che si manifesta solo in caso di squilibrio economico",
+            "Perché è un onere che viene sempre recuperato attraverso i ricavi di vendita"
+        ],
+        "correct_answer": "Perché il capitale di proprietà viene remunerato con la distribuzione del risultato d'esercizio e non ha una manifestazione finanziaria esplicita come interesse"
+    },
+    {
+        "id": "8728f8e4-87f3-4ee4-b457-f97d933a3d61",
+        "question": "Qual è l'obiettivo ultimo del raggiungimento dell'equilibrio economico per un'impresa?",
+        "answers": [
+            "La semplice copertura dei costi con i ricavi",
+            "Il conseguimento di un utile, indipendentemente dalla sua entità",
+            "Riuscire a coprire i costi (offrendo giusto riconoscimento a tutti i contributori) e garantire una remunerazione adeguata al capitale di rischio",
+            "Aumentare il ROI al di sopra del costo del debito"
+        ],
+        "correct_answer": "Riuscire a coprire i costi (offrendo giusto riconoscimento a tutti i contributori) e garantire una remunerazione adeguata al capitale di rischio"
+    },
+    {
+        "id": "cd0b5b9b-4aa6-466a-9bbf-197ec5a1cf69",
+        "question": "Qual è la principale significatività del Margine Operativo Lordo (MOL o EBITDA) nell'analisi della redditività?",
+        "answers": [
+            "Rappresenta il reddito netto disponibile per la distribuzione agli azionisti",
+            "Indica il flusso di Capitale Circolante Netto prodotto dalla gestione caratteristica corrente, fungendo da fonte spontanea di risorse finanziarie",
+            "Misura la redditività della sola gestione accessoria",
+            "È un indicatore fortemente influenzato dagli oneri finanziari"
+        ],
+        "correct_answer": "Indica il flusso di Capitale Circolante Netto prodotto dalla gestione caratteristica corrente, fungendo da fonte spontanea di risorse finanziarie"
+    },
+    {
+        "id": "5dcdde37-594a-4d4f-b3c2-4592f0f83562",
+        "question": "Qual è la principale caratteristica della classificazione dei costi \"per destinazione\"?",
+        "answers": [
+            "Raggruppa i costi in base alla loro natura (es. materie prime, personale)",
+            "Suddivide i costi della gestione caratteristica in base all'appartenenza alle diverse aree funzionali dell'impresa (es. produzione, commerciale, amministrativa)",
+            "Si basa sulla loro incidenza sui flussi di cassa futuri",
+            "È di facile applicazione per soggetti esterni all'impresa"
+        ],
+        "correct_answer": "Suddivide i costi della gestione caratteristica in base all'appartenenza alle diverse aree funzionali dell'impresa (es. produzione, commerciale, amministrativa)"
+    },
+    {
+        "id": "e03b2e38-c9ef-4fe2-9913-cd74008f3c33",
+        "question": "Nella determinazione del fabbisogno finanziario per le nuove operazioni, quale approccio è generalmente adottato riguardo alle dilazioni di pagamento?",
+        "answers": [
+            "Si considerano solo gli effetti delle dilazioni concesse ai clienti, escludendo quelle ottenute dai fornitori",
+            "Si ignorano completamente gli effetti dei crediti e debiti di funzionamento",
+            "Si includono sia gli effetti delle dilazioni ottenute che di quelle concesse fin dalla determinazione del fabbisogno",
+            "Si considera il fabbisogno in funzione esclusivamente degli incassi e pagamenti monetari"
+        ],
+        "correct_answer": "Si considerano solo gli effetti delle dilazioni concesse ai clienti, escludendo quelle ottenute dai fornitori"
+    },
+    {
+        "id": "9e08cd01-1f28-4db1-9602-922a8d8fc72e",
+        "question": "Perché il Trattamento di Fine Rapporto (TFR) è un elemento peculiare nella riclassificazione finanziaria del capitale di funzionamento?",
+        "answers": [
+            "Perché è sempre un debito di breve termine con scadenza fissa",
+            "Perché può essere scomposto in una parte assimilabile al capitale permanente e una parte a passivo temporaneo, a seconda della sua fisiologica ricostituzione o meno",
+            "Perché non comporta mai un costo di competenza dell'esercizio",
+            "Perché è una passività che non ha mai un impatto sui flussi di cassa"
+        ],
+        "correct_answer": "Perché può essere scomposto in una parte assimilabile al capitale permanente e una parte a passivo temporaneo, a seconda della sua fisiologica ricostituzione o meno"
+    },
+    {
+        "id": "92dfe321-09e5-4b67-a44f-360742f8994b",
+        "question": "Cosa rappresenta il Capitale Circolante Netto (CCN) nel contesto delle risorse finanziarie?",
+        "answers": [
+            "Solo il denaro a disposizione dell'azienda",
+            "La somma algebrica di attività e passività a breve termine, includendo il denaro e ciò che può agevolmente o nel breve periodo diventare denaro",
+            "L'ammontare totale dei crediti di finanziamento",
+            "Il capitale permanente dell'impresa"
+        ],
+        "correct_answer": "La somma algebrica di attività e passività a breve termine, includendo il denaro e ciò che può agevolmente o nel breve periodo diventare denaro"
+    },
+    {
+        "id": "f02f3d56-8d5f-47ec-92e6-f531a8f33ae9",
+        "question": "È concretamente praticabile per un'impresa non soddisfare le aspettative di remunerazione dei finanziatori di capitale di rischio?",
+        "answers": [
+            "Sì, se il risultato economico è negativo e non consente la distribuzione di utili",
+            "Sì, poiché la loro remunerazione è facoltativa e non incide sul reddito",
+            "No, poiché la non soddisfazione delle aspettative può provocare danni così gravi da relegare tale ipotesi tra quelle non concretamente praticabili",
+            "Solo se l'impresa ha accesso a fonti di finanziamento alternative a basso costo"
+        ],
+        "correct_answer": "No, poiché la non soddisfazione delle aspettative può provocare danni così gravi da relegare tale ipotesi tra quelle non concretamente praticabili"
     }
 ]
