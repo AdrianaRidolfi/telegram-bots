@@ -80,7 +80,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         "Vuoi contribuire? Clicca su GitHub e segui la guida!\n\n"
 
         "*📚 Quiz disponibili:*\n"
-        "• *Corporate planning* - _paniere + inedite + 60 da AI_ - `01/07`\n"
+        "• *Corporate planning* - _paniere + inedite + 78 da AI_ - `01/07`\n"
         "• *Programmazione 2* - _inedite_ - `23/06`\n"
         "• *Tecnologie web* - _esamsync + inedite_ - `15/06`\n"
         "• *Statistica* - _paniere_ - `13/06`\n"

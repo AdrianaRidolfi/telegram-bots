@@ -2761,333 +2761,531 @@
         "correct_answer": "No, poiché la non soddisfazione delle aspettative può provocare danni così gravi da relegare tale ipotesi tra quelle non concretamente praticabili"
     },
     {
-    "id": "e0b0b301-4c6c-48a8-b64d-961f32a7e701",
-    "question": "Le scelte economiche, in quanto scelte umane, sono influenzate da quali fattori?",
-    "answers": [
-      "Esclusivamente da fattori economico-finanziari oggettivi e razionali",
-      "Solo da fattori legati alla dimensione aziendale e alla quota di mercato",
-      "Fattori extraeconomici di natura culturale, etica, religiosa, sociale, ideologica, esperienza, preferenze individuali o convinzioni politiche",
-      "Principalmente da vincoli normativi e regolamentari esterni all'azienda"
-    ],
-    "correct_answer": "Fattori extraeconomici di natura culturale, etica, religiosa, sociale, ideologica, esperienza, preferenze individuali o convinzioni politiche"
-  },
-  {
-    "id": "2d1b74f3-a3d8-4a61-9c12-32a7e701f8d4",
-    "question": "Quali comportamenti caratterizzano le unità economiche che svolgono attività economica?",
-    "answers": [
-      "Orientamento esclusivo alla massimizzazione dei profitti nel breve periodo",
-      "Tesi a minimizzare l'uso delle risorse per raggiungere risultati dati, o a massimizzare i risultati impiegando al meglio le risorse disponibili",
-      "Predominante focus sull'acquisizione di beni non economici in quantità illimitata",
-      "Comportamenti passivi, limitandosi a reagire ai mutamenti del mercato"
-    ],
-    "correct_answer": "Tesi a minimizzare l'uso delle risorse per raggiungere risultati dati, o a massimizzare i risultati impiegando al meglio le risorse disponibili"
-  },
-  {
-    "id": "1a9b6c00-d4d0-45e0-8a7c-32a7e701f8d4",
-    "question": "Qual è l'obiettivo fondamentale delle unità economiche complesse e organizzate, identificate come aziende?",
-    "answers": [
-      "La sola massimizzazione del profitto per i proprietari",
-      "L'acquisizione illimitata di beni non economici per soddisfare i bisogni interni",
-      "Apprestare beni economici da cedere ad altri soggetti affinché questi possano soddisfare i propri bisogni",
-      "La riduzione al minimo dei costi, a prescindere dalla qualità dei beni prodotti"
-    ],
-    "correct_answer": "Apprestare beni economici da cedere ad altri soggetti affinché questi possano soddisfare i propri bisogni"
-  },
-  {
-    "id": "f5e9a8d2-3b7c-40c1-8f9d-32a7e701f8d4",
-    "question": "Qual è la condizione d'esistenza fondamentale ed essenziale che consente all'azienda di conservare la propria natura nel tempo?",
-    "answers": [
-      "Il costante incremento dei ricavi netti di vendita su base annuale",
-      "La durabilità, ovvero la continuità del suo funzionamento in prospettiva nel tempo",
-      "La capacità di adattarsi a qualsiasi contesto ambientale senza necessità di pianificazione a lungo termine",
-      "La piena autonomia da qualsiasi fattore esterno o condizionamento"
-    ],
-    "correct_answer": "La durabilità, ovvero la continuità del suo funzionamento in prospettiva nel tempo"
-  },
-  {
-    "id": "c1f7a0b8-2a9d-4e5c-9b8e-32a7e701f8d4",
-    "question": "Nell'ambito della coordinazione sistemica, su cosa deve basarsi la scelta di ogni elemento o fattore che entra a far parte di un'azienda?",
-    "answers": [
-      "Esclusivamente sul loro costo di acquisizione, per minimizzare le uscite",
-      "Su valutazioni che tengono conto della compatibilità di ciascuno con tutti gli altri che partecipano alla combinazione produttiva, per assicurare un insieme armonico",
-      "Sulla capacità di generare il massimo valore in isolamento dagli altri elementi",
-      "Sulla loro disponibilità immediata, senza considerare le interdipendenze"
-    ],
-    "correct_answer": "Su valutazioni che tengono conto della compatibilità di ciascuno con tutti gli altri che partecipano alla combinazione produttiva, per assicurare un insieme armonico"
-  },
-  {
-    "id": "d0e2b4c6-5f10-47a3-8c4d-32a7e701f8d4",
-    "question": "L'azienda, come sistema, è descritta come?",
-    "answers": [
-      "Un sistema di tipo chiuso e statico",
-      "Un sistema di tipo chiuso ma dinamico",
-      "Un sistema di tipo aperto",
-      "Un sistema di tipo isolato e autosufficiente"
-    ],
-    "correct_answer": "Un sistema di tipo aperto"
-  },
-  {
-    "id": "a6f8b9d0-1e3c-42b5-9d7f-32a7e701f8d4",
-    "question": "Qual è l'obiettivo di fondo perseguito dalle aziende di ogni specie?",
-    "answers": [
-      "La crescita illimitata della dimensione aziendale",
-      "L'ottenimento di un reddito positivo in ogni singolo esercizio amministrativo",
-      "Il mantenimento di un monopolio naturale sul mercato di riferimento",
-      "Operare in una stabile condizione di equilibrio"
-    ],
-    "correct_answer": "Operare in una stabile condizione di equilibrio"
-  },
-  {
-    "id": "b3d5c7e9-7a1b-4f2d-8e0c-32a7e701f8d4",
-    "question": "Cosa tende a compromettere la condizione di equilibrio di un'azienda, una volta acquisita?",
-    "answers": [
-      "La scarsità di beni non economici disponibili",
-      "La staticità del contesto di riferimento e l'assenza di innovazioni",
-      "Il dinamismo sia dell'ambiente sia dello stesso sistema aziendale, con ostacoli, interferenze, fattori ed eventi contrari",
-      "L'eccessiva fiducia nella capacità previsionale dell'uomo"
-    ],
-    "correct_answer": "Il dinamismo sia dell'ambiente sia dello stesso sistema aziendale, con ostacoli, interferenze, fattori ed eventi contrari"
-  },
-  {
-    "id": "f8c4d6a1-0e2b-49f3-8a7c-32a7e701f8d4",
-    "question": "Quali qualità sono richieste per una condotta avveduta da parte dei responsabili del governo aziendale?",
-    "answers": [
-      "Rigidità decisionale e aderenza a piani predefiniti, indipendentemente dai mutamenti",
-      "Consapevolezza dell'incertezza, capacità di percepire e fronteggiare i rischi, competenza nell'individuare carenze e disfunzioni, e volontà di assumere decisioni rapide e flessibili",
-      "Focalizzazione esclusiva sul calcolo economico e sulla massimizzazione dei risultati a breve termine",
-      "La capacità di evitare qualsiasi rischio, anche a costo di limitare le opportunità di crescita"
-    ],
-    "correct_answer": "Consapevolezza dell'incertezza, capacità di percepire e fronteggiare i rischi, competenza nell'individuare carenze e disfunzioni, e volontà di assumere decisioni rapide e flessibili"
-  },
-  {
-    "id": "e7d1c0b3-9f8a-4d2c-7b6a-32a7e701f8d4",
-    "question": "Qual è la differenza tra aziende \"reattive\" e \"proattive\" (o anticipative) in relazione all'ambiente?",
-    "answers": [
-      "Le aziende reattive anticipano i cambiamenti ambientali, mentre le proattive si limitano ad adeguarsi",
-      "Le aziende reattive si adeguano ai mutamenti ambientali, mentre quelle proattive riescono a indirizzare l'ambiente verso cambiamenti più congeniali alle proprie competenze, creando vantaggi competitivi",
-      "Le aziende reattive operano solo su mercati stabili, mentre le proattive cercano l'incertezza per innovare",
-      "Le aziende proattive evitano del tutto l'interazione con l'ambiente esterno"
-    ],
-    "correct_answer": "Le aziende reattive si adeguano ai mutamenti ambientali, mentre quelle proattive riescono a indirizzare l'ambiente verso cambiamenti più congeniali alle proprie competenze, creando vantaggi competitivi"
-  },
-  {
-    "id": "a9b8c7d6-f5e4-4a3b-2c1d-32a7e701f8d4",
-    "question": "Quali elementi sono considerati rientranti nel concetto di economicità?",
-    "answers": [
-      "Solo l'efficienza operativa e la minimizzazione dei costi",
-      "Condizione di equilibrio (non provvisorio), adeguata remunerazione dei fattori produttivi acquisiti, efficacia strategica ed efficienza operativa nell'uso delle risorse",
-      "Esclusivamente la capacità di generare profitto e dividendi elevati per i soci",
-      "La soddisfazione dei bisogni primari dell'uomo, indipendentemente dalla scarsità delle risorse"
-    ],
-    "correct_answer": "Condizione di equilibrio (non provvisorio), adeguata remunerazione dei fattori produttivi acquisiti, efficacia strategica ed efficienza operativa nell'uso delle risorse"
-  },
-  {
-    "id": "f2c4e6a8-1b3d-4c5e-9f0a-32a7e701f8d4",
-    "question": "La valutazione di un'adeguata economicità nella gestione aziendale può essere limitata all'analisi dei soli dati economico-finanziari o dei risultati di bilancio?",
-    "answers": [
-      "Sì, poiché i risultati di bilancio sono l'unico indicatore oggettivo dell'economicità",
-      "No, in quanto l'economicità si riferisce solo all'aspetto monetario della gestione",
-      "No, perché la presenza di un'adeguata economicità non può essere valutata limitandosi ai soli dati economico-finanziari o ai risultati di bilancio, poiché un risultato positivo a breve termine non la garantisce",
-      "Sì, ma solo per le aziende che operano in regime di monopolio naturale"
-    ],
-    "correct_answer": "No, perché la presenza di un'adeguata economicità non può essere valutata limitandosi ai soli dati economico-finanziari o ai risultati di bilancio, poiché un risultato positivo a breve termine non la garantisce"
-  },
-  {
-    "id": "d9e8b7c5-a1f3-4e2d-7c8b-32a7e701f8d4",
-    "question": "In che modo le relazioni con altre aziende possono influenzare l'autonomia di un'azienda nell'epoca odierna?",
-    "answers": [
-      "In nessun modo, poiché l'autonomia aziendale è un carattere immutabile",
-      "Solo attraverso acquisizioni dirette o fusioni",
-      "Possono determinare condizionamenti attraverso intese, alleanze e reti, che creano interdipendenza e permettono lo scambio di risorse, know-how, capacità e conoscenze",
-      "Esclusivamente limitando la disponibilità di beni non economici"
-    ],
-    "correct_answer": "Possono determinare condizionamenti attraverso intese, alleanze e reti, che creano interdipendenza e permettono lo scambio di risorse, know-how, capacità e conoscenze"
-  },
-  {
-    "id": "b1c3d5e7-9a0b-4f1c-8e2a-32a7e701f8d4",
-    "question": "Nei gruppi aziendali, dove è collocato il soggetto economico e quali sono le conseguenze per l'autonomia delle singole aziende del gruppo?",
-    "answers": [
-      "È distribuito equamente tra tutte le aziende del gruppo, garantendo piena autonomia",
-      "È accentrato presso ogni singola azienda del gruppo, indipendentemente dalla capogruppo",
-      "Il soggetto economico è accentrato presso la capogruppo, limitando l'autonomia decisionale della singola azienda in misura variabile",
-      "È delegato a consulenti esterni che determinano gli indirizzi di fondo"
-    ],
-    "correct_answer": "Il soggetto economico è accentrato presso la capogruppo, limitando l'autonomia decisionale della singola azienda in misura variabile"
-  },
-  {
-    "id": "f7e6d5c4-a3b2-41e0-8d9c-32a7e701f8d4",
-    "question": "Qual è la visione dell'impresa che si deve condividere, oltre la semplice massimizzazione del profitto?",
-    "answers": [
-      "Una visione che ponga la massimizzazione del profitto come unico obiettivo, anche a costo di penalizzare gli stakeholder",
-      "Una visione più «sociale» e «plurifinalistica», che implichi la remunerazione equa di tutti i soggetti che contribuiscono all'attività e una condotta eticamente e socialmente responsabile per la sopravvivenza duratura",
-      "Una visione che privilegi l'espansione della produzione di risorse immateriali senza limiti",
-      "Una visione che escluda il rischio economico-generale attraverso la sola innovazione tecnologica"
-    ],
-    "correct_answer": "Una visione più «sociale» e «plurifinalistica», che implichi la remunerazione equa di tutti i soggetti che contribuiscono all'attività e una condotta eticamente e socialmente responsabile per la sopravvivenza duratura"
-  },
-  {
-    "id": "c3b5a7e9-0d1f-42e3-8b7a-32a7e701f8d4",
-    "question": "Quali sono alcune tipologie di imprese che si distinguono in base all'attività produttiva svolta?",
-    "answers": [
-      "Imprese individuali, società di persone, società di capitali",
-      "Imprese manifatturiere, commerciali (all'ingrosso o al dettaglio) e di servizi",
-      "Imprese con capitale proprio e imprese con capitale di credito",
-      "Imprese reattive e imprese proattive"
-    ],
-    "correct_answer": "Imprese manifatturiere, commerciali (all'ingrosso o al dettaglio) e di servizi"
-  },
-  {
-    "id": "e0a2d4f6-8c9b-41d3-7e5a-32a7e701f8d4",
-    "question": "Qual è la condizione fondamentale per la sopravvivenza delle fondazioni e associazioni (organizzazioni non profit)?",
-    "answers": [
-      "La capacità di generare un profitto netto positivo da distribuire ai membri",
-      "Che il valore (l'utilità) dell'output erogato sia maggiore del valore degli input consumati",
-      "La dipendenza esclusiva da finanziamenti pubblici e donazioni private",
-      "L'assenza totale di scambi di mercato per input e output"
-    ],
-    "correct_answer": "Che il valore (l'utilità) dell'output erogato sia maggiore del valore degli input consumati"
-  },
-  {
-    "id": "a5c7e9b1-3d2f-40e8-9c1a-32a7e701f8d4",
-    "question": "In che modo le pubbliche amministrazioni misurano la loro economicità, dato che non si basano sui valori di scambio?",
-    "answers": [
-      "Esclusivamente attraverso l'analisi dei bilanci finanziari autorizzatori",
-      "Confrontando i costi di produzione con i prezzi stabiliti dal governo centrale",
-      "Ricorrendo ad altri indicatori, come la misurazione della soddisfazione degli utenti dei servizi, in assenza di prezzi di mercato competitivi",
-      "Valutando la rapidità di erogazione dei servizi, senza considerare la qualità"
-    ],
-    "correct_answer": "Ricorrendo ad altri indicatori, come la misurazione della soddisfazione degli utenti dei servizi, in assenza di prezzi di mercato competitivi"
-  },
-  {
-    "id": "b8f0a2d4-e6c7-49b1-8a3f-32a7e701f8d4",
-    "question": "In che termini viene concepita l'interdipendenza tra impresa e ambiente?",
-    "answers": [
-      "Solo come un rapporto di dipendenza unilaterale dell'impresa dall'ambiente",
-      "In termini di relazioni input-output tra sistemi (sistema impresa e sistema ambiente)",
-      "Come un insieme di circostanze positive e negative affrontate in un singolo esercizio",
-      "Esclusivamente in termini di impatto dei fattori economici sui costi di produzione"
-    ],
-    "correct_answer": "In termini di relazioni input-output tra sistemi (sistema impresa e sistema ambiente)"
-  },
-  {
-    "id": "d1e3f5a7-9b0c-48d2-7e6a-32a7e701f8d4",
-    "question": "Come può essere definito il rischio aziendale?",
-    "answers": [
-      "La probabilità di ottenere un reddito superiore alle aspettative",
-      "Il potenziale verificarsi di eventi che siano in contrasto con gli obiettivi che l'azienda si pone",
-      "La certezza di un risultato economico positivo nel lungo periodo",
-      "La capacità di adattarsi rapidamente ai cambiamenti del mercato"
-    ],
-    "correct_answer": "Il potenziale verificarsi di eventi che siano in contrasto con gli obiettivi che l'azienda si pone"
-  },
-  {
-    "id": "c6a8b0d2-f4e5-43a1-7c9b-32a7e701f8d4",
-    "question": "Come può essere inteso il rischio economico-generale di un'azienda?",
-    "answers": [
-      "Come la possibilità che l'azienda aumenti la sua capacità di generare ricavi straordinari",
-      "Come la perdita della sua condizione di autonomia decisionale rispetto alla capogruppo",
-      "Come la possibilità che l'azienda perda la sua stabilizzata attitudine a remunerare congruamente i soggetti che forniscono i fattori produttivi indispensabili",
-      "Come la riduzione della complessità dei processi produttivi e dell'incertezza ambientale"
-    ],
-    "correct_answer": "Come la possibilità che l'azienda perda la sua stabilizzata attitudine a remunerare congruamente i soggetti che forniscono i fattori produttivi indispensabili"
-  },
-  {
-    "id": "f9e0a1b3-4c5d-4e7f-8a9b-32a7e701f8d4",
-    "question": "Come possono essere classificate le politiche aziendali volte a influenzare l'entità dei rischi?",
-    "answers": [
-      "Solo azioni volte a massimizzare i profitti in periodi di incertezza",
-      "Esclusivamente azioni volte a migliorare la reputazione aziendale",
-      "Azioni volte ad attenuare l'entità del rischio agendo sulle cause, e azioni volte a controllare gli effetti dannosi del rischio tramite il trasferimento nello spazio e nel tempo",
-      "Azioni che mirano unicamente alla concentrazione della struttura aziendale su un nucleo circoscritto"
-    ],
-    "correct_answer": "Azioni volte ad attenuare l'entità del rischio agendo sulle cause, e azioni volte a controllare gli effetti dannosi del rischio tramite il trasferimento nello spazio e nel tempo"
-  },
-  {
-    "id": "e2d4f6a8-1b3c-4d5e-9f0a-32a7e701f8d4",
-    "question": "Come è definito il grado di \"vulnerabilità\" del sistema d'azienda secondo E. Cavalieri?",
-    "answers": [
-      "La capacità di generare valore economico in assenza di rischi",
-      "La rigidità delle strutture organizzative che impedisce il cambiamento",
-      "Come l'ampiezza (quantitativa e temporale) dell'impatto delle variazioni ambientali sulle performance economiche dell'impresa",
-      "La misura della coerenza tra entrate e uscite monetarie in un dato periodo"
-    ],
-    "correct_answer": "Come l'ampiezza (quantitativa e temporale) dell'impatto delle variazioni ambientali sulle performance economiche dell'impresa"
-  },
-  {
-    "id": "a0f1b2c3-4d5e-4f6a-7b8c-32a7e701f8d4",
-    "question": "Secondo la concezione di Cavalieri, da cosa nasce il rischio in un'azienda?",
-    "answers": [
-      "Dall'illimitata capacità previsionale dell'uomo",
-      "Dalla costante armonia tra variabilità ambientale e flessibilità strutturale",
-      "Dalla contraddizione tra la variabilità ambientale e la rigidità strutturale dell'azienda",
-      "Dall'eccessivo ricorso a risorse immateriali prive di valore di mercato"
-    ],
-    "correct_answer": "Dalla contraddizione tra la variabilità ambientale e la rigidità strutturale dell'azienda"
-  },
-  {
-    "id": "c5d7e9b0-1f2a-43b4-8c9d-32a7e701f8d4",
-    "question": "Qual è stata l'intuizione fondamentale di Zappa riguardo la ragioneria e la nascita dell'Economia Aziendale?",
-    "answers": [
-      "Che la ragioneria doveva focalizzarsi unicamente sulla rilevazione delle modificazioni patrimoniali",
-      "Che la ragioneria da sola non avrebbe potuto elevarsi a scienza se non componendo, con altre discipline economiche, un sistema di conoscenze collegate e ordinate",
-      "Che l'Economia Aziendale doveva studiare l'azienda unicamente dal punto di vista finanziario",
-      "Che il reddito era un indicatore secondario rispetto al patrimonio iniziale"
-    ],
-    "correct_answer": "Che la ragioneria da sola non avrebbe potuto elevarsi a scienza se non componendo, con altre discipline economiche, un sistema di conoscenze collegate e ordinate"
-  },
-  {
-    "id": "f0e1c3d5-7a8b-4c9d-e0f1-32a7e701f8d4",
-    "question": "Come va intesa la produzione in senso più ampio nell'attività aziendale?",
-    "answers": [
-      "Solo come la trasformazione fisico-tecnica di materie prime in prodotto finito",
-      "Come creazione di utilità economica, non solo come lavorazione fisico-tecnica della materia prima",
-      "Come il processo di acquisizione di beni e servizi da cedere senza modifiche",
-      "Esclusivamente come la cessione di output sul mercato di sbocco"
-    ],
-    "correct_answer": "Come creazione di utilità economica, non solo come lavorazione fisico-tecnica della materia prima"
-  },
-  {
-    "id": "a2b4c6e8-0d1f-42e3-8a9b-32a7e701f8d4",
-    "question": "Qual è l'andamento delle operazioni di gestione nel tempo?",
-    "answers": [
-      "Lineare e prevedibile, senza interruzioni o cicli",
-      "Hanno un andamento statico, con fasi di gestione isolate",
-      "Hanno un andamento ciclico: alla fase di provvista segue la trasformazione e a questa lo scambio di mercato, riattivandosi poi con una nuova fase di provvista",
-      "Sono raramente coordinate tra loro, sia nel tempo che nello spazio"
-    ],
-    "correct_answer": "Hanno un andamento ciclico: alla fase di provvista segue la trasformazione e a questa lo scambio di mercato, riattivandosi poi con una nuova fase di provvista"
-  },
-  {
-    "id": "b5c7d9e1-3f4a-4c5b-8e9d-32a7e701f8d4",
-    "question": "Qual è la caratteristica principale dei fattori a fecondità ripetuta (FFR) in relazione ai circuiti produttivi e al recupero monetario?",
-    "answers": [
-      "Sono interamente consumati nel momento in cui vengono utilizzati e il loro valore si recupera immediatamente",
-      "Permangono a disposizione per una pluralità di circuiti produttivi e il recupero dei mezzi monetari investiti avviene indirettamente, tramite il collocamento dei prodotti/servizi",
-      "Il loro recupero monetario avviene direttamente tramite la loro dismissione prima del termine della vita tecnica",
-      "Non conservano le proprie caratteristiche funzionali nel tempo e non contribuiscono alla generazione di ricavi"
-    ],
-    "correct_answer": "Permangono a disposizione per una pluralità di circuiti produttivi e il recupero dei mezzi monetari investiti avviene indirettamente, tramite il collocamento dei prodotti/servizi"
-  },
-  {
-    "id": "d0e2f4a6-8b9c-41d3-7e5f-32a7e701f8d4",
-    "question": "Qual è la differenza principale tra gli accantonamenti per rischi futuri e gli accantonamenti per spese future?",
-    "answers": [
-      "Gli accantonamenti per rischi futuri sono certi nell'evento, mentre quelli per spese future sono incerti in tutto",
-      "Gli accantonamenti per rischi futuri si riferiscono a oneri figurativi, mentre quelli per spese future a oneri espliciti",
-      "Gli accantonamenti per rischi futuri sono incerti anche nell'evento che li origina, mentre quelli per spese future riguardano oneri il cui pagamento avrà sicuramente luogo ma con importi o tempi incerti",
-      "Gli accantonamenti per spese future sono sempre legati a processi produttivi in corso, mentre quelli per rischi futuri solo a processi conclusi"
-    ],
-    "correct_answer": "Gli accantonamenti per rischi futuri sono incerti anche nell'evento che li origina, mentre quelli per spese future riguardano oneri il cui pagamento avrà sicuramente luogo ma con importi o tempi incerti"
-  },
-  {
-    "id": "e4f6a8b0-1c2d-43e5-9f0b-32a7e701f8d4",
-    "question": "Come possono essere collocate le diverse configurazioni di capitale (economico, di funzionamento, di liquidazione) lungo un continuum logico?",
-    "answers": [
-      "In ordine crescente di aggregazione: di liquidazione, di funzionamento, economico",
-      "Dal capitale economico come interpretazione pienamente integrata e unitaria, al capitale di funzionamento come intermedia, fino al capitale di liquidazione come del tutto disaggregata",
-      "Dal capitale di funzionamento come punto di partenza, verso il capitale economico e di liquidazione come derivazioni",
-      "In ordine di importanza per la valutazione aziendale: di liquidazione, economico, di funzionamento"
-    ],
-    "correct_answer": "Dal capitale economico come interpretazione pienamente integrata e unitaria, al capitale di funzionamento come intermedia, fino al capitale di liquidazione come del tutto disaggregata"
-  }
+        "id": "e0b0b301-4c6c-48a8-b64d-961f32a7e701",
+        "question": "Le scelte economiche, in quanto scelte umane, sono influenzate da quali fattori?",
+        "answers": [
+            "Esclusivamente da fattori economico-finanziari oggettivi e razionali",
+            "Solo da fattori legati alla dimensione aziendale e alla quota di mercato",
+            "Fattori extraeconomici di natura culturale, etica, religiosa, sociale, ideologica, esperienza, preferenze individuali o convinzioni politiche",
+            "Principalmente da vincoli normativi e regolamentari esterni all'azienda"
+        ],
+        "correct_answer": "Fattori extraeconomici di natura culturale, etica, religiosa, sociale, ideologica, esperienza, preferenze individuali o convinzioni politiche"
+    },
+    {
+        "id": "2d1b74f3-a3d8-4a61-9c12-32a7e701f8d4",
+        "question": "Quali comportamenti caratterizzano le unità economiche che svolgono attività economica?",
+        "answers": [
+            "Orientamento esclusivo alla massimizzazione dei profitti nel breve periodo",
+            "Tesi a minimizzare l'uso delle risorse per raggiungere risultati dati, o a massimizzare i risultati impiegando al meglio le risorse disponibili",
+            "Predominante focus sull'acquisizione di beni non economici in quantità illimitata",
+            "Comportamenti passivi, limitandosi a reagire ai mutamenti del mercato"
+        ],
+        "correct_answer": "Tesi a minimizzare l'uso delle risorse per raggiungere risultati dati, o a massimizzare i risultati impiegando al meglio le risorse disponibili"
+    },
+    {
+        "id": "1a9b6c00-d4d0-45e0-8a7c-32a7e701f8d4",
+        "question": "Qual è l'obiettivo fondamentale delle unità economiche complesse e organizzate, identificate come aziende?",
+        "answers": [
+            "La sola massimizzazione del profitto per i proprietari",
+            "L'acquisizione illimitata di beni non economici per soddisfare i bisogni interni",
+            "Apprestare beni economici da cedere ad altri soggetti affinché questi possano soddisfare i propri bisogni",
+            "La riduzione al minimo dei costi, a prescindere dalla qualità dei beni prodotti"
+        ],
+        "correct_answer": "Apprestare beni economici da cedere ad altri soggetti affinché questi possano soddisfare i propri bisogni"
+    },
+    {
+        "id": "f5e9a8d2-3b7c-40c1-8f9d-32a7e701f8d4",
+        "question": "Qual è la condizione d'esistenza fondamentale ed essenziale che consente all'azienda di conservare la propria natura nel tempo?",
+        "answers": [
+            "Il costante incremento dei ricavi netti di vendita su base annuale",
+            "La durabilità, ovvero la continuità del suo funzionamento in prospettiva nel tempo",
+            "La capacità di adattarsi a qualsiasi contesto ambientale senza necessità di pianificazione a lungo termine",
+            "La piena autonomia da qualsiasi fattore esterno o condizionamento"
+        ],
+        "correct_answer": "La durabilità, ovvero la continuità del suo funzionamento in prospettiva nel tempo"
+    },
+    {
+        "id": "c1f7a0b8-2a9d-4e5c-9b8e-32a7e701f8d4",
+        "question": "Nell'ambito della coordinazione sistemica, su cosa deve basarsi la scelta di ogni elemento o fattore che entra a far parte di un'azienda?",
+        "answers": [
+            "Esclusivamente sul loro costo di acquisizione, per minimizzare le uscite",
+            "Su valutazioni che tengono conto della compatibilità di ciascuno con tutti gli altri che partecipano alla combinazione produttiva, per assicurare un insieme armonico",
+            "Sulla capacità di generare il massimo valore in isolamento dagli altri elementi",
+            "Sulla loro disponibilità immediata, senza considerare le interdipendenze"
+        ],
+        "correct_answer": "Su valutazioni che tengono conto della compatibilità di ciascuno con tutti gli altri che partecipano alla combinazione produttiva, per assicurare un insieme armonico"
+    },
+    {
+        "id": "d0e2b4c6-5f10-47a3-8c4d-32a7e701f8d4",
+        "question": "L'azienda, come sistema, è descritta come?",
+        "answers": [
+            "Un sistema di tipo chiuso e statico",
+            "Un sistema di tipo chiuso ma dinamico",
+            "Un sistema di tipo aperto",
+            "Un sistema di tipo isolato e autosufficiente"
+        ],
+        "correct_answer": "Un sistema di tipo aperto"
+    },
+    {
+        "id": "a6f8b9d0-1e3c-42b5-9d7f-32a7e701f8d4",
+        "question": "Qual è l'obiettivo di fondo perseguito dalle aziende di ogni specie?",
+        "answers": [
+            "La crescita illimitata della dimensione aziendale",
+            "L'ottenimento di un reddito positivo in ogni singolo esercizio amministrativo",
+            "Il mantenimento di un monopolio naturale sul mercato di riferimento",
+            "Operare in una stabile condizione di equilibrio"
+        ],
+        "correct_answer": "Operare in una stabile condizione di equilibrio"
+    },
+    {
+        "id": "b3d5c7e9-7a1b-4f2d-8e0c-32a7e701f8d4",
+        "question": "Cosa tende a compromettere la condizione di equilibrio di un'azienda, una volta acquisita?",
+        "answers": [
+            "La scarsità di beni non economici disponibili",
+            "La staticità del contesto di riferimento e l'assenza di innovazioni",
+            "Il dinamismo sia dell'ambiente sia dello stesso sistema aziendale, con ostacoli, interferenze, fattori ed eventi contrari",
+            "L'eccessiva fiducia nella capacità previsionale dell'uomo"
+        ],
+        "correct_answer": "Il dinamismo sia dell'ambiente sia dello stesso sistema aziendale, con ostacoli, interferenze, fattori ed eventi contrari"
+    },
+    {
+        "id": "f8c4d6a1-0e2b-49f3-8a7c-32a7e701f8d4",
+        "question": "Quali qualità sono richieste per una condotta avveduta da parte dei responsabili del governo aziendale?",
+        "answers": [
+            "Rigidità decisionale e aderenza a piani predefiniti, indipendentemente dai mutamenti",
+            "Consapevolezza dell'incertezza, capacità di percepire e fronteggiare i rischi, competenza nell'individuare carenze e disfunzioni, e volontà di assumere decisioni rapide e flessibili",
+            "Focalizzazione esclusiva sul calcolo economico e sulla massimizzazione dei risultati a breve termine",
+            "La capacità di evitare qualsiasi rischio, anche a costo di limitare le opportunità di crescita"
+        ],
+        "correct_answer": "Consapevolezza dell'incertezza, capacità di percepire e fronteggiare i rischi, competenza nell'individuare carenze e disfunzioni, e volontà di assumere decisioni rapide e flessibili"
+    },
+    {
+        "id": "e7d1c0b3-9f8a-4d2c-7b6a-32a7e701f8d4",
+        "question": "Qual è la differenza tra aziende \"reattive\" e \"proattive\" (o anticipative) in relazione all'ambiente?",
+        "answers": [
+            "Le aziende reattive anticipano i cambiamenti ambientali, mentre le proattive si limitano ad adeguarsi",
+            "Le aziende reattive si adeguano ai mutamenti ambientali, mentre quelle proattive riescono a indirizzare l'ambiente verso cambiamenti più congeniali alle proprie competenze, creando vantaggi competitivi",
+            "Le aziende reattive operano solo su mercati stabili, mentre le proattive cercano l'incertezza per innovare",
+            "Le aziende proattive evitano del tutto l'interazione con l'ambiente esterno"
+        ],
+        "correct_answer": "Le aziende reattive si adeguano ai mutamenti ambientali, mentre quelle proattive riescono a indirizzare l'ambiente verso cambiamenti più congeniali alle proprie competenze, creando vantaggi competitivi"
+    },
+    {
+        "id": "a9b8c7d6-f5e4-4a3b-2c1d-32a7e701f8d4",
+        "question": "Quali elementi sono considerati rientranti nel concetto di economicità?",
+        "answers": [
+            "Solo l'efficienza operativa e la minimizzazione dei costi",
+            "Condizione di equilibrio (non provvisorio), adeguata remunerazione dei fattori produttivi acquisiti, efficacia strategica ed efficienza operativa nell'uso delle risorse",
+            "Esclusivamente la capacità di generare profitto e dividendi elevati per i soci",
+            "La soddisfazione dei bisogni primari dell'uomo, indipendentemente dalla scarsità delle risorse"
+        ],
+        "correct_answer": "Condizione di equilibrio (non provvisorio), adeguata remunerazione dei fattori produttivi acquisiti, efficacia strategica ed efficienza operativa nell'uso delle risorse"
+    },
+    {
+        "id": "f2c4e6a8-1b3d-4c5e-9f0a-32a7e701f8d4",
+        "question": "La valutazione di un'adeguata economicità nella gestione aziendale può essere limitata all'analisi dei soli dati economico-finanziari o dei risultati di bilancio?",
+        "answers": [
+            "Sì, poiché i risultati di bilancio sono l'unico indicatore oggettivo dell'economicità",
+            "No, in quanto l'economicità si riferisce solo all'aspetto monetario della gestione",
+            "No, perché la presenza di un'adeguata economicità non può essere valutata limitandosi ai soli dati economico-finanziari o ai risultati di bilancio, poiché un risultato positivo a breve termine non la garantisce",
+            "Sì, ma solo per le aziende che operano in regime di monopolio naturale"
+        ],
+        "correct_answer": "No, perché la presenza di un'adeguata economicità non può essere valutata limitandosi ai soli dati economico-finanziari o ai risultati di bilancio, poiché un risultato positivo a breve termine non la garantisce"
+    },
+    {
+        "id": "d9e8b7c5-a1f3-4e2d-7c8b-32a7e701f8d4",
+        "question": "In che modo le relazioni con altre aziende possono influenzare l'autonomia di un'azienda nell'epoca odierna?",
+        "answers": [
+            "In nessun modo, poiché l'autonomia aziendale è un carattere immutabile",
+            "Solo attraverso acquisizioni dirette o fusioni",
+            "Possono determinare condizionamenti attraverso intese, alleanze e reti, che creano interdipendenza e permettono lo scambio di risorse, know-how, capacità e conoscenze",
+            "Esclusivamente limitando la disponibilità di beni non economici"
+        ],
+        "correct_answer": "Possono determinare condizionamenti attraverso intese, alleanze e reti, che creano interdipendenza e permettono lo scambio di risorse, know-how, capacità e conoscenze"
+    },
+    {
+        "id": "b1c3d5e7-9a0b-4f1c-8e2a-32a7e701f8d4",
+        "question": "Nei gruppi aziendali, dove è collocato il soggetto economico e quali sono le conseguenze per l'autonomia delle singole aziende del gruppo?",
+        "answers": [
+            "È distribuito equamente tra tutte le aziende del gruppo, garantendo piena autonomia",
+            "È accentrato presso ogni singola azienda del gruppo, indipendentemente dalla capogruppo",
+            "Il soggetto economico è accentrato presso la capogruppo, limitando l'autonomia decisionale della singola azienda in misura variabile",
+            "È delegato a consulenti esterni che determinano gli indirizzi di fondo"
+        ],
+        "correct_answer": "Il soggetto economico è accentrato presso la capogruppo, limitando l'autonomia decisionale della singola azienda in misura variabile"
+    },
+    {
+        "id": "f7e6d5c4-a3b2-41e0-8d9c-32a7e701f8d4",
+        "question": "Qual è la visione dell'impresa che si deve condividere, oltre la semplice massimizzazione del profitto?",
+        "answers": [
+            "Una visione che ponga la massimizzazione del profitto come unico obiettivo, anche a costo di penalizzare gli stakeholder",
+            "Una visione più «sociale» e «plurifinalistica», che implichi la remunerazione equa di tutti i soggetti che contribuiscono all'attività e una condotta eticamente e socialmente responsabile per la sopravvivenza duratura",
+            "Una visione che privilegi l'espansione della produzione di risorse immateriali senza limiti",
+            "Una visione che escluda il rischio economico-generale attraverso la sola innovazione tecnologica"
+        ],
+        "correct_answer": "Una visione più «sociale» e «plurifinalistica», che implichi la remunerazione equa di tutti i soggetti che contribuiscono all'attività e una condotta eticamente e socialmente responsabile per la sopravvivenza duratura"
+    },
+    {
+        "id": "c3b5a7e9-0d1f-42e3-8b7a-32a7e701f8d4",
+        "question": "Quali sono alcune tipologie di imprese che si distinguono in base all'attività produttiva svolta?",
+        "answers": [
+            "Imprese individuali, società di persone, società di capitali",
+            "Imprese manifatturiere, commerciali (all'ingrosso o al dettaglio) e di servizi",
+            "Imprese con capitale proprio e imprese con capitale di credito",
+            "Imprese reattive e imprese proattive"
+        ],
+        "correct_answer": "Imprese manifatturiere, commerciali (all'ingrosso o al dettaglio) e di servizi"
+    },
+    {
+        "id": "e0a2d4f6-8c9b-41d3-7e5a-32a7e701f8d4",
+        "question": "Qual è la condizione fondamentale per la sopravvivenza delle fondazioni e associazioni (organizzazioni non profit)?",
+        "answers": [
+            "La capacità di generare un profitto netto positivo da distribuire ai membri",
+            "Che il valore (l'utilità) dell'output erogato sia maggiore del valore degli input consumati",
+            "La dipendenza esclusiva da finanziamenti pubblici e donazioni private",
+            "L'assenza totale di scambi di mercato per input e output"
+        ],
+        "correct_answer": "Che il valore (l'utilità) dell'output erogato sia maggiore del valore degli input consumati"
+    },
+    {
+        "id": "a5c7e9b1-3d2f-40e8-9c1a-32a7e701f8d4",
+        "question": "In che modo le pubbliche amministrazioni misurano la loro economicità, dato che non si basano sui valori di scambio?",
+        "answers": [
+            "Esclusivamente attraverso l'analisi dei bilanci finanziari autorizzatori",
+            "Confrontando i costi di produzione con i prezzi stabiliti dal governo centrale",
+            "Ricorrendo ad altri indicatori, come la misurazione della soddisfazione degli utenti dei servizi, in assenza di prezzi di mercato competitivi",
+            "Valutando la rapidità di erogazione dei servizi, senza considerare la qualità"
+        ],
+        "correct_answer": "Ricorrendo ad altri indicatori, come la misurazione della soddisfazione degli utenti dei servizi, in assenza di prezzi di mercato competitivi"
+    },
+    {
+        "id": "b8f0a2d4-e6c7-49b1-8a3f-32a7e701f8d4",
+        "question": "In che termini viene concepita l'interdipendenza tra impresa e ambiente?",
+        "answers": [
+            "Solo come un rapporto di dipendenza unilaterale dell'impresa dall'ambiente",
+            "In termini di relazioni input-output tra sistemi (sistema impresa e sistema ambiente)",
+            "Come un insieme di circostanze positive e negative affrontate in un singolo esercizio",
+            "Esclusivamente in termini di impatto dei fattori economici sui costi di produzione"
+        ],
+        "correct_answer": "In termini di relazioni input-output tra sistemi (sistema impresa e sistema ambiente)"
+    },
+    {
+        "id": "d1e3f5a7-9b0c-48d2-7e6a-32a7e701f8d4",
+        "question": "Come può essere definito il rischio aziendale?",
+        "answers": [
+            "La probabilità di ottenere un reddito superiore alle aspettative",
+            "Il potenziale verificarsi di eventi che siano in contrasto con gli obiettivi che l'azienda si pone",
+            "La certezza di un risultato economico positivo nel lungo periodo",
+            "La capacità di adattarsi rapidamente ai cambiamenti del mercato"
+        ],
+        "correct_answer": "Il potenziale verificarsi di eventi che siano in contrasto con gli obiettivi che l'azienda si pone"
+    },
+    {
+        "id": "c6a8b0d2-f4e5-43a1-7c9b-32a7e701f8d4",
+        "question": "Come può essere inteso il rischio economico-generale di un'azienda?",
+        "answers": [
+            "Come la possibilità che l'azienda aumenti la sua capacità di generare ricavi straordinari",
+            "Come la perdita della sua condizione di autonomia decisionale rispetto alla capogruppo",
+            "Come la possibilità che l'azienda perda la sua stabilizzata attitudine a remunerare congruamente i soggetti che forniscono i fattori produttivi indispensabili",
+            "Come la riduzione della complessità dei processi produttivi e dell'incertezza ambientale"
+        ],
+        "correct_answer": "Come la possibilità che l'azienda perda la sua stabilizzata attitudine a remunerare congruamente i soggetti che forniscono i fattori produttivi indispensabili"
+    },
+    {
+        "id": "f9e0a1b3-4c5d-4e7f-8a9b-32a7e701f8d4",
+        "question": "Come possono essere classificate le politiche aziendali volte a influenzare l'entità dei rischi?",
+        "answers": [
+            "Solo azioni volte a massimizzare i profitti in periodi di incertezza",
+            "Esclusivamente azioni volte a migliorare la reputazione aziendale",
+            "Azioni volte ad attenuare l'entità del rischio agendo sulle cause, e azioni volte a controllare gli effetti dannosi del rischio tramite il trasferimento nello spazio e nel tempo",
+            "Azioni che mirano unicamente alla concentrazione della struttura aziendale su un nucleo circoscritto"
+        ],
+        "correct_answer": "Azioni volte ad attenuare l'entità del rischio agendo sulle cause, e azioni volte a controllare gli effetti dannosi del rischio tramite il trasferimento nello spazio e nel tempo"
+    },
+    {
+        "id": "e2d4f6a8-1b3c-4d5e-9f0a-32a7e701f8d4",
+        "question": "Come è definito il grado di \"vulnerabilità\" del sistema d'azienda secondo E. Cavalieri?",
+        "answers": [
+            "La capacità di generare valore economico in assenza di rischi",
+            "La rigidità delle strutture organizzative che impedisce il cambiamento",
+            "Come l'ampiezza (quantitativa e temporale) dell'impatto delle variazioni ambientali sulle performance economiche dell'impresa",
+            "La misura della coerenza tra entrate e uscite monetarie in un dato periodo"
+        ],
+        "correct_answer": "Come l'ampiezza (quantitativa e temporale) dell'impatto delle variazioni ambientali sulle performance economiche dell'impresa"
+    },
+    {
+        "id": "a0f1b2c3-4d5e-4f6a-7b8c-32a7e701f8d4",
+        "question": "Secondo la concezione di Cavalieri, da cosa nasce il rischio in un'azienda?",
+        "answers": [
+            "Dall'illimitata capacità previsionale dell'uomo",
+            "Dalla costante armonia tra variabilità ambientale e flessibilità strutturale",
+            "Dalla contraddizione tra la variabilità ambientale e la rigidità strutturale dell'azienda",
+            "Dall'eccessivo ricorso a risorse immateriali prive di valore di mercato"
+        ],
+        "correct_answer": "Dalla contraddizione tra la variabilità ambientale e la rigidità strutturale dell'azienda"
+    },
+    {
+        "id": "c5d7e9b0-1f2a-43b4-8c9d-32a7e701f8d4",
+        "question": "Qual è stata l'intuizione fondamentale di Zappa riguardo la ragioneria e la nascita dell'Economia Aziendale?",
+        "answers": [
+            "Che la ragioneria doveva focalizzarsi unicamente sulla rilevazione delle modificazioni patrimoniali",
+            "Che la ragioneria da sola non avrebbe potuto elevarsi a scienza se non componendo, con altre discipline economiche, un sistema di conoscenze collegate e ordinate",
+            "Che l'Economia Aziendale doveva studiare l'azienda unicamente dal punto di vista finanziario",
+            "Che il reddito era un indicatore secondario rispetto al patrimonio iniziale"
+        ],
+        "correct_answer": "Che la ragioneria da sola non avrebbe potuto elevarsi a scienza se non componendo, con altre discipline economiche, un sistema di conoscenze collegate e ordinate"
+    },
+    {
+        "id": "f0e1c3d5-7a8b-4c9d-e0f1-32a7e701f8d4",
+        "question": "Come va intesa la produzione in senso più ampio nell'attività aziendale?",
+        "answers": [
+            "Solo come la trasformazione fisico-tecnica di materie prime in prodotto finito",
+            "Come creazione di utilità economica, non solo come lavorazione fisico-tecnica della materia prima",
+            "Come il processo di acquisizione di beni e servizi da cedere senza modifiche",
+            "Esclusivamente come la cessione di output sul mercato di sbocco"
+        ],
+        "correct_answer": "Come creazione di utilità economica, non solo come lavorazione fisico-tecnica della materia prima"
+    },
+    {
+        "id": "a2b4c6e8-0d1f-42e3-8a9b-32a7e701f8d4",
+        "question": "Qual è l'andamento delle operazioni di gestione nel tempo?",
+        "answers": [
+            "Lineare e prevedibile, senza interruzioni o cicli",
+            "Hanno un andamento statico, con fasi di gestione isolate",
+            "Hanno un andamento ciclico: alla fase di provvista segue la trasformazione e a questa lo scambio di mercato, riattivandosi poi con una nuova fase di provvista",
+            "Sono raramente coordinate tra loro, sia nel tempo che nello spazio"
+        ],
+        "correct_answer": "Hanno un andamento ciclico: alla fase di provvista segue la trasformazione e a questa lo scambio di mercato, riattivandosi poi con una nuova fase di provvista"
+    },
+    {
+        "id": "b5c7d9e1-3f4a-4c5b-8e9d-32a7e701f8d4",
+        "question": "Qual è la caratteristica principale dei fattori a fecondità ripetuta (FFR) in relazione ai circuiti produttivi e al recupero monetario?",
+        "answers": [
+            "Sono interamente consumati nel momento in cui vengono utilizzati e il loro valore si recupera immediatamente",
+            "Permangono a disposizione per una pluralità di circuiti produttivi e il recupero dei mezzi monetari investiti avviene indirettamente, tramite il collocamento dei prodotti/servizi",
+            "Il loro recupero monetario avviene direttamente tramite la loro dismissione prima del termine della vita tecnica",
+            "Non conservano le proprie caratteristiche funzionali nel tempo e non contribuiscono alla generazione di ricavi"
+        ],
+        "correct_answer": "Permangono a disposizione per una pluralità di circuiti produttivi e il recupero dei mezzi monetari investiti avviene indirettamente, tramite il collocamento dei prodotti/servizi"
+    },
+    {
+        "id": "d0e2f4a6-8b9c-41d3-7e5f-32a7e701f8d4",
+        "question": "Qual è la differenza principale tra gli accantonamenti per rischi futuri e gli accantonamenti per spese future?",
+        "answers": [
+            "Gli accantonamenti per rischi futuri sono certi nell'evento, mentre quelli per spese future sono incerti in tutto",
+            "Gli accantonamenti per rischi futuri si riferiscono a oneri figurativi, mentre quelli per spese future a oneri espliciti",
+            "Gli accantonamenti per rischi futuri sono incerti anche nell'evento che li origina, mentre quelli per spese future riguardano oneri il cui pagamento avrà sicuramente luogo ma con importi o tempi incerti",
+            "Gli accantonamenti per spese future sono sempre legati a processi produttivi in corso, mentre quelli per rischi futuri solo a processi conclusi"
+        ],
+        "correct_answer": "Gli accantonamenti per rischi futuri sono incerti anche nell'evento che li origina, mentre quelli per spese future riguardano oneri il cui pagamento avrà sicuramente luogo ma con importi o tempi incerti"
+    },
+    {
+        "id": "e4f6a8b0-1c2d-43e5-9f0b-32a7e701f8d4",
+        "question": "Come possono essere collocate le diverse configurazioni di capitale (economico, di funzionamento, di liquidazione) lungo un continuum logico?",
+        "answers": [
+            "In ordine crescente di aggregazione: di liquidazione, di funzionamento, economico",
+            "Dal capitale economico come interpretazione pienamente integrata e unitaria, al capitale di funzionamento come intermedia, fino al capitale di liquidazione come del tutto disaggregata",
+            "Dal capitale di funzionamento come punto di partenza, verso il capitale economico e di liquidazione come derivazioni",
+            "In ordine di importanza per la valutazione aziendale: di liquidazione, economico, di funzionamento"
+        ],
+        "correct_answer": "Dal capitale economico come interpretazione pienamente integrata e unitaria, al capitale di funzionamento come intermedia, fino al capitale di liquidazione come del tutto disaggregata"
+    },
+    {
+        "id": "1a2b3c4d-5e6f-7890-1234-567890abcdef",
+        "question": "Qual è la principale utilità informativa del reddito di periodo, a differenza del reddito totale?",
+        "answers": [
+            "Fornire una stima completa e oggettiva della ricchezza aziendale per tutta la sua durata.",
+            "Consentire alla direzione aziendale di prendere decisioni operative quotidiane.",
+            "Misurare l'andamento finanziario complessivo dell'impresa dalla sua costituzione.",
+            "Offrire informazioni puntuali sulla ricchezza creata o distrutta in un intervallo temporale circoscritto, utile per diverse categorie di interessati, inclusa la direzione aziendale per la sopravvivenza e l'evoluzione dell'azienda."
+        ],
+        "correct_answer": "Offrire informazioni puntuali sulla ricchezza creata o distrutta in un intervallo temporale circoscritto, utile per diverse categorie di interessati, inclusa la direzione aziendale per la sopravvivenza e l'evoluzione dell'azienda."
+    },
+    {
+        "id": "2b3c4d5e-6f7a-8901-2345-67890abcdef0",
+        "question": "Per quale motivo il reddito totale o d'impresa è considerato principalmente a fini didattici e non ha utilità pratica immediata?",
+        "answers": [
+            "Perché la sua metodologia di calcolo è troppo complessa per essere applicata regolarmente.",
+            "Perché non riflette l'andamento economico reale dell'impresa a causa dell'inflazione.",
+            "Perché non tiene conto dei costi figurativi del capitale proprio.",
+            "Perché si riferisce all'intera esistenza dell'impresa, un arco temporale troppo esteso per avere rilevanza per le decisioni dei soggetti interessati."
+        ],
+        "correct_answer": "Perché si riferisce all'intera esistenza dell'impresa, un arco temporale troppo esteso per avere rilevanza per le decisioni dei soggetti interessati."
+    },
+    {
+        "id": "3c4d5e6f-7a8b-9012-3456-7890abcdef01",
+        "question": "Quale affermazione descrive meglio il ruolo del reddito di periodo per la proprietà dell'impresa?",
+        "answers": [
+            "Il reddito di periodo consente alla proprietà di determinare il valore di liquidazione dell'azienda in qualsiasi momento.",
+            "La proprietà utilizza il reddito di periodo per negoziare migliori condizioni di finanziamento con le banche.",
+            "Il reddito di periodo aiuta la proprietà a calcolare la remunerazione del capitale di credito.",
+            "Il reddito di periodo serve alla proprietà per valutare i manager e stabilire la massima ricchezza prelevabile senza compromettere la futura gestione."
+        ],
+        "correct_answer": "Il reddito di periodo serve alla proprietà per valutare i manager e stabilire la massima ricchezza prelevabile senza compromettere la futura gestione."
+    },
+    {
+        "id": "4d5e6f7a-8b9c-0123-4567-890abcdef012",
+        "question": "Secondo il più comune pensiero, quali sono le due principali cause del rischio aziendale?",
+        "answers": [
+            "La volatilità della domanda di mercato e la rigidità della struttura dei costi aziendali.",
+            "La concorrenza aggressiva e l'assenza di valori di mercato affidabili.",
+            "L'eccessivo indebitamento e la scarsa liquidità.",
+            "La complessità del futuro e la limitata capacità previsionale dell'uomo."
+        ],
+        "correct_answer": "La complessità del futuro e la limitata capacità previsionale dell'uomo."
+    },
+    {
+        "id": "5e6f7a8b-9c0d-1234-5678-90abcdef0123",
+        "question": "Quale dei seguenti elementi *non* è considerato dal testo un carattere che contribuisce a configurare la cosiddetta 'entità del rischio'?",
+        "answers": [
+            "L'entità del danno potenziale.",
+            "La probabilità di manifestazione dell'evento rischioso.",
+            "La durata delle manifestazioni del rischio.",
+            "Il momento di manifestazione del rischio."
+        ],
+        "correct_answer": "Il momento di manifestazione del rischio."
+    },
+    {
+        "id": "6f7a8b9c-0d1e-2345-6789-0abcdef01234",
+        "question": "In quale categoria più ampia di rischi si colloca il rischio strategico, e come è influenzata la conoscenza del rischio aziendale?",
+        "answers": [
+            "Rientra nei rischi operativi; la conoscenza è influenzata solo dalla variabilità dell'ambiente.",
+            "È un rischio primario; la conoscenza è influenzata esclusivamente da fattori interni all'azienda.",
+            "È un rischio puramente finanziario; la conoscenza è sempre oggettiva grazie ai dati di mercato.",
+            "Appartiene ai rischi particolari, manifestazioni del rischio economico-generale; la sua conoscenza è influenzata sia dalla variabilità dell'ambiente sia dall'imperfetta conoscenza degli uomini che governano le aziende."
+        ],
+        "correct_answer": "Appartiene ai rischi particolari, manifestazioni del rischio economico-generale; la sua conoscenza è influenzata sia dalla variabilità dell'ambiente sia dall'imperfetta conoscenza degli uomini che governano le aziende."
+    },
+    {
+        "id": "7a8b9c0d-1e2f-3456-7890-abcdef012345",
+        "question": "Come viene definito il 'reddito totale o d'impresa' e quali sono le condizioni essenziali per la sua determinazione con relativa oggettività?",
+        "answers": [
+            "È il flusso di ricchezza prodotto in un periodo circoscritto, a condizione che tutti i cicli produttivi siano conclusi.",
+            "È la differenza tra attività e passività al termine di ogni esercizio, presupponendo la piena liquidità aziendale.",
+            "Rappresenta l'utile netto d'esercizio al lordo delle imposte, calcolato in presenza di rischi operativi.",
+            "Si identifica con la ricchezza creata o distrutta dall’impresa nel corso della sua intera esistenza, richiedendo il completo utilizzo o cessione dei fattori produttivi e la completa vendita dei beni, l'assenza di finanziamenti e di crediti/debiti da regolare, e l'assenza di rischi in corso."
+        ],
+        "correct_answer": "Si identifica con la ricchezza creata o distrutta dall’impresa nel corso della sua intera esistenza, richiedendo il completo utilizzo o cessione dei fattori produttivi e la completa vendita dei beni, l'assenza di finanziamenti e di crediti/debiti da regolare, e l'assenza di rischi in corso."
+    },
+    {
+        "id": "8b9c0d1e-2f3a-4567-8901-abcdef012346",
+        "question": "Quali sono le tre diverse metodologie attraverso le quali è possibile determinare il reddito totale o d'impresa?",
+        "answers": [
+            "Metodologia analitica, sintetica e prospettica.",
+            "Metodologia del costo, del valore di realizzo e del fair value.",
+            "Metodologia contabile, fiscale e gestionale.",
+            "Metodologia reddituale, finanziaria e patrimoniale."
+        ],
+        "correct_answer": "Metodologia reddituale, finanziaria e patrimoniale."
+    },
+    {
+        "id": "9c0d1e2f-3a4b-5678-9012-abcdef012347",
+        "question": "Secondo la metodologia finanziaria per il calcolo del reddito totale o d'impresa, quali valori devono essere esclusi dal calcolo?",
+        "answers": [
+            "Tutti i ricavi e i costi che non hanno generato movimenti di denaro.",
+            "Esclusivamente gli interessi passivi sui finanziamenti e i dividendi distribuiti.",
+            "Il valore delle rimanenze finali di magazzino e dei crediti di funzionamento.",
+            "Le entrate dovute ai conferimenti iniziali e successivi dei soci e le uscite relative ai rimborsi di capitale e ai prelievi di reddito."
+        ],
+        "correct_answer": "Le entrate dovute ai conferimenti iniziali e successivi dei soci e le uscite relative ai rimborsi di capitale e ai prelievi di reddito."
+    },
+    {
+        "id": "a0b1c2d3-e4f5-6789-0123-456789abcdef",
+        "question": "Nel modello dei cicli conclusi, quando sono considerati 'realizzati' i ricavi e 'inerenti' i costi ai fini del calcolo del reddito di periodo per i prodotti destinati alla vendita?",
+        "answers": [
+            "I ricavi sono realizzati quando si ottiene un ordine e i costi sono inerenti quando si sostengono finanziariamente.",
+            "I ricavi sono realizzati quando il prodotto è completato e i costi sono inerenti alla produzione effettuata.",
+            "I ricavi e i costi sono realizzati e inerenti solo quando si manifestano le entrate e uscite monetarie corrispondenti.",
+            "I ricavi sono considerati realizzati al momento della cessione dei beni o della prestazione dei servizi (scambio), e i costi sono inerenti se sostenuti per la produzione dei beni o servizi scambiati in quel periodo."
+        ],
+        "correct_answer": "I ricavi sono considerati realizzati al momento della cessione dei beni o della prestazione dei servizi (scambio), e i costi sono inerenti se sostenuti per la produzione dei beni o servizi scambiati in quel periodo."
+    },
+    {
+        "id": "b1c2d3e4-f5a6-7890-1234-56789abcdef0",
+        "question": "Secondo il principio della prudenza nel modello dei cicli conclusi, quale valore deve essere attribuito alle rimanenze di prodotti finiti o merci se il loro valore di presumibile realizzo diretto o indiretto si presenta inferiore al costo?",
+        "answers": [
+            "Il valore di presumibile realizzo diretto o indiretto, ma solo se coincide con il costo.",
+            "Il costo di acquisto o di produzione, per mantenere la coerenza con i valori storici.",
+            "Il valore di mercato, anche se superiore, per una rappresentazione più realistica.",
+            "Il valore di presumibile realizzo diretto o indiretto, poiché è l'unico valore ragionevole ammissibile per non compromettere l'integrità del capitale."
+        ],
+        "correct_answer": "Il valore di presumibile realizzo diretto o indiretto, poiché è l'unico valore ragionevole ammissibile per non compromettere l'integrità del capitale."
+    },
+    {
+        "id": "c2d3e4f5-a6b7-8901-2345-6789abcdef01",
+        "question": "Qual è il motivo principale per cui, nel modello dei cicli conclusi, si applica il principio della prudenza nella valutazione delle rimanenze e, più in generale, delle attività?",
+        "answers": [
+            "Per anticipare la distribuzione degli utili ai soci in caso di gestione prospera.",
+            "Per garantire che il reddito di periodo sia sempre positivo e stabile nel tempo.",
+            "Per allineare i valori contabili ai valori di mercato, rendendo il bilancio più trasparente per gli investitori.",
+            "Per salvaguardare l'integrità del capitale aziendale, evitando la distribuzione di ricchezza non ancora effettivamente conseguita e anticipando le perdite temute."
+        ],
+        "correct_answer": "Per salvaguardare l'integrità del capitale aziendale, evitando la distribuzione di ricchezza non ancora effettivamente conseguita e anticipando le perdite temute."
+    },
+    {
+        "id": "d3e4f5a6-b7c8-9012-3456-789abcdef012",
+        "question": "Secondo il testo, cosa si intende per 'annacquamento del capitale' e quali sono le sue implicazioni principali?",
+        "answers": [
+            "Si ha quando il capitale di bilancio è inferiore a quello di funzionamento, rafforzando la dotazione di capitale proprio e posticipando il prelievo fiscale.",
+            "Si verifica quando l'azienda distribuisce ricchezza generata da riserve di utili passati, senza impatto sulla futura gestione.",
+            "È il risultato di una prudente valutazione delle attività che anticipa le perdite temute.",
+            "Si realizza quando in bilancio è rappresentata una misura del capitale superiore a quella del capitale di funzionamento, autorizzando la proprietà a distribuire ricchezza non ancora conseguita e potendo compromettere l'integrità del capitale."
+        ],
+        "correct_answer": "Si realizza quando in bilancio è rappresentata una misura del capitale superiore a quella del capitale di funzionamento, autorizzando la proprietà a distribuire ricchezza non ancora conseguita e potendo compromettere l'integrità del capitale."
+    },
+    {
+        "id": "e4f5a6b7-c8d9-0123-4567-89abcdef0123",
+        "question": "Quali sono le conseguenze per l'azienda e i suoi soci se la proprietà decide di distribuire utili basandosi su un annacquamento del capitale?",
+        "answers": [
+            "Il capitale di risparmio aumenta e i soci temporanei beneficiano di una maggiore liquidità immediata.",
+            "Il capitale di proprietà si rafforza e il rischio d'impresa si riduce nel lungo periodo.",
+            "La tassazione sul reddito viene posticipata, a beneficio di tutti i soggetti coinvolti.",
+            "Si può compromettere l'integrità del capitale, pregiudicando la continuazione dell'attività aziendale, e si danneggiano i soci futuri a vantaggio di quelli attuali."
+        ],
+        "correct_answer": "Si può compromettere l'integrità del capitale, pregiudicando la continuazione dell'attività aziendale, e si danneggiano i soci futuri a vantaggio di quelli attuali."
+    },
+    {
+        "id": "f5a6b7c8-d9e0-1234-5678-9abcdef01234",
+        "question": "In quale scenario il reddito di periodo e il capitale netto di funzionamento possono risultare incrementati artificialmente, autorizzando la distribuzione di ricchezza non ancora conseguita?",
+        "answers": [
+            "Quando le attività sono valutate al costo di acquisto e le passività al valore originario, in ottemperanza al principio della prudenza.",
+            "In presenza di riserve occulte, che rappresentano utili non distribuiti e rafforzano il capitale.",
+            "Nell'applicazione del modello dei cicli conclusi, che ritarda il riconoscimento degli utili.",
+            "Quando l'operatore impiega valori irragionevoli (superiori al presumibile realizzo per le attività) o assegna valori inferiori a quelli di presumibile estinzione per le passività."
+        ],
+        "correct_answer": "Quando l'operatore impiega valori irragionevoli (superiori al presumibile realizzo per le attività) o assegna valori inferiori a quelli di presumibile estinzione per le passività."
+    },
+    {
+        "id": "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
+        "question": "Cosa definisce i 'beni economici' in relazione alle esigenze degli individui?",
+        "answers": [
+            "Sono beni disponibili in quantità illimitata e facilmente acquisibili, soddisfando senza limitazioni i bisogni.",
+            "Sono beni che non presuppongono la carenza dei mezzi che potrebbero soddisfarli.",
+            "Sono unicamente beni materiali, come auto o biscotti, e non includono servizi.",
+            "Sono scarsi rispetto alle esigenze degli individui, non possono essere facilmente acquisiti e inducono a continue scelte e sforzi per soddisfare i bisogni."
+        ],
+        "correct_answer": "Sono scarsi rispetto alle esigenze degli individui, non possono essere facilmente acquisiti e inducono a continue scelte e sforzi per soddisfare i bisogni."
+    },
+    {
+        "id": "b2c3d4e5-f6a7-8901-2345-6789abcdef01",
+        "question": "Quando, secondo il testo, un'attività umana viene qualificata come 'attività economica'?",
+        "answers": [
+            "Quando si limita alla produzione di risorse immateriali e intangibili.",
+            "Quando è dettata esclusivamente dal calcolo economico e dalla razionalità.",
+            "Quando implica solo scambi di mercato con contropartita in denaro.",
+            "Quando l'uomo si adopera per soddisfare un bisogno o desiderio, agendo per ottenere i beni o risorse indispensabili allo scopo, e include momenti tipici come consumo, produzione e trasferimento."
+        ],
+        "correct_answer": "Quando l'uomo si adopera per soddisfare un bisogno o desiderio, agendo per ottenere i beni o risorse indispensabili allo scopo, e include momenti tipici come consumo, produzione e trasferimento."
+    },
+    {
+        "id": "c3d4e5f6-a7b8-9012-3456-789abcdef012",
+        "question": "Qual è l'obiettivo costante delle 'scelte economiche' e come si relaziona alla scarsità dei mezzi disponibili?",
+        "answers": [
+            "Massimizzare il profitto indipendentemente dalla disponibilità di risorse.",
+            "Acquisire beni in quantità illimitata, senza considerare la loro facile acquisizione.",
+            "Sviluppare sistemi contabili complessi per la misurazione della ricchezza.",
+            "Risolvere la tensione e l'esigenza di scegliere tra mezzi scarsi e bisogni da soddisfare, secondo un dato ordine gerarchico."
+        ],
+        "correct_answer": "Risolvere la tensione e l'esigenza di scegliere tra mezzi scarsi e bisogni da soddisfare, secondo un dato ordine gerarchico."
+    }
 ]
