@@ -223,3 +223,13 @@ Mostra i bottoni con i quiz presenti per decidere quale scaricare in formato PDF
     /choose_subject
 ```
 Mostra i bottoni con i quiz presenti per iniziare con lo studio
+
+
+## TO DO
+
+- [ ] fix gestione visualizzazione errori (bisogna prima salvare quelli appena fatti e poi riprenderli)
+- [ ] fix quando vengono mostrati bottoni errori
+- [ ] fix come riprendere descrizione esami presente
+- [ ] add metodo per inserire test
+- [ ] add metodo per fare discrimine fra solo inedite e tutte
+- [ ] ingegneria del software aggiungi inedite da examsync

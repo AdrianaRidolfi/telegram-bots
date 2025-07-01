@@ -3287,5 +3287,82 @@
             "Risolvere la tensione e l'esigenza di scegliere tra mezzi scarsi e bisogni da soddisfare, secondo un dato ordine gerarchico."
         ],
         "correct_answer": "Risolvere la tensione e l'esigenza di scegliere tra mezzi scarsi e bisogni da soddisfare, secondo un dato ordine gerarchico."
+    },
+    {
+        "id": "99e1b2b5-8a47-4a09-9c83-8d2cf23e8c4d",
+        "question": "L'adozione di valori oggettivi e verificabili nella valutazione delle rimanenze attive e passive ha come obiettivo principale:",
+        "answers": [
+            "Aumentare la flessibilità gestionale nella redazione del bilancio",
+            "Favorire politiche espansive di magazzino",
+            "Allineare le valutazioni contabili al valore corrente di mercato",
+            "Ridurre gli spazi di manovra per gli operatori e limitare le politiche di gestione degli utili"
+        ],
+        "correct_answer": "Ridurre gli spazi di manovra per gli operatori e limitare le politiche di gestione degli utili"
+    },
+    {
+        "id": "bdcf558f-f246-4218-8233-f17e2d71dd0c",
+        "question": "Il coordinamento temporale delle operazioni di approvvigionamento, trasformazione e scambio implica:",
+        "answers": [
+            "Che le operazioni siano svolte simultaneamente per massimizzare l’efficienza",
+            "Che la fase di scambio avvenga prima dell’approvvigionamento",
+            "Che si possa saltare la trasformazione se non necessaria",
+            "Che ogni fase deve essere completata in sequenza per garantire la continuità del processo produttivo"
+        ],
+        "correct_answer": "Che ogni fase deve essere completata in sequenza per garantire la continuità del processo produttivo"
+    },
+    {
+        "id": "92b15e2b-d5f4-437f-9f6f-5a0be0c3e024",
+        "question": "Il rischio strategico è legato a:",
+        "answers": [
+            "Variazioni nei costi delle materie prime",
+            "Errori nei conteggi di magazzino",
+            "Fluttuazioni nei tassi di interesse",
+            "Errori nella formulazione o implementazione delle strategie"
+        ],
+        "correct_answer": "Errori nella formulazione o implementazione delle strategie"
+    },
+    {
+        "id": "b6f91d1d-e2ae-46a3-a0c8-8b1e77cb9c84",
+        "question": "Nel primo scenario del diagramma relativo alla valutazione degli elementi attivi del capitale aziendale:",
+        "answers": [
+            "Il valore contabile è calcolato al netto dell’IVA",
+            "Si utilizza il fair value come parametro principale",
+            "Il valore di mercato prevale sul costo storico",
+            "Il costo coincide con il valore di presumibile realizzo"
+        ],
+        "correct_answer": "Il costo coincide con il valore di presumibile realizzo"
+    },
+    {
+        "id": "03f07ec3-5af0-4b0a-b915-07b2d2bcefa2",
+        "question": "Il capitale proprio è costituito da:",
+        "answers": [
+            "Prestiti obbligazionari e mutui a lungo termine",
+            "Debiti verso fornitori a lungo termine",
+            "Capitale sociale sottoscritto ma non versato",
+            "Apporti dei soci e utili non distribuiti"
+        ],
+        "correct_answer": "Apporti dei soci e utili non distribuiti"
+    },
+    {
+        "id": "213ef6ef-16c4-44a4-9d75-7b3fc03c39df",
+        "question": "Il reddito di periodo, rispetto al reddito totale, fornisce informazioni cruciali per:",
+        "answers": [
+            "La definizione del piano industriale decennale",
+            "La riclassificazione delle immobilizzazioni immateriali",
+            "La valutazione delle poste straordinarie",
+            "Prendere decisioni economiche strategiche"
+        ],
+        "correct_answer": "Prendere decisioni economiche strategiche"
+    },
+    {
+        "id": "de515dbe-e0b9-4308-bb90-7ea5bb1655b4",
+        "question": "Il valore di presumibile realizzo diretto si applica:",
+        "answers": [
+            "Alla valutazione dei beni strumentali al netto degli ammortamenti",
+            "Alla valorizzazione del capitale immateriale in sede di impairment",
+            "Alla determinazione del valore assicurabile delle scorte tecniche",
+            "Alla valutazione di fattori e prodotti destinati alla vendita, come merci e prodotti finiti"
+        ],
+        "correct_answer": "Alla valutazione di fattori e prodotti destinati alla vendita, come merci e prodotti finiti"
     }
 ]
