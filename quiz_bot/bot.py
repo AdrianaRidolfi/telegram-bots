@@ -80,6 +80,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         "Vuoi contribuire? Clicca su GitHub e segui la guida!\n\n"
 
         "*📚 Quiz disponibili:*\n"
+        "• *Ingegneria del software* - _inedite_ - `03/07`\n"
         "• *Corporate planning* - _paniere + inedite + 78 da AI_ - `01/07`\n"
         "• *Programmazione 2* - _inedite_ - `23/06`\n"
         "• *Tecnologie web* - _esamsync + inedite_ - `15/06`\n"
@@ -87,7 +88,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         "• *Diritto per le aziende digitali* - _inedite_ - `11/06`\n"
         "• *Strategia, organizzazione e marketing* - _paniere + inedite_ - `08/06`\n"
         "• *Comunicazione digitale* - _inedite_ - `28/05`\n"
-        "• *Ingegneria del software* - _inedite_ - `28/05`\n"
         "• *Reti di calcolatori e cybersecurity* - _paniere_ - `28/05`\n"
     )
 
