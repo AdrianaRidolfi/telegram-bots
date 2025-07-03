@@ -713,5 +713,1457 @@
     ],
     "correct_answer": "Per terminare il blocco del case",
     "id": "810b5089-9a86-4bc8-910c-b027bd3b95ea"
+  },
+    {
+    "question": "In un diagramma Gantt, cosa rappresentano le barre orizzontali?",
+    "answers": [
+      "task completato",
+      "tempo necessario",
+      "risultato stimato",
+      "deliverable"
+    ],
+    "correct_answer": "deliverable",
+    "id": "c7aba9b2-8fe9-4920-a389-050db3ca477f"
+  },
+  {
+    "question": "UML definisce:",
+    "answers": [
+      "12 categorie di entità",
+      "3 livelli di dettaglio",
+      "8 principali componenti UML",
+      "5 principali tipologie di diagrammi"
+    ],
+    "correct_answer": "5 principali tipologie di diagrammi",
+    "id": "c035a8d5-93f4-404f-95c3-722ba08d9d94"
+  },
+  {
+    "question": "In Java gli identificatori",
+    "answers": [
+      "devono iniziare con una lettera maiuscola",
+      "devono avere massimo 255 caratteri",
+      "non hanno un limite massimo di caratteri",
+      "sono limitati a 64 caratteri"
+    ],
+    "correct_answer": "non hanno un limite massimo di caratteri",
+    "id": "42f79602-f3d6-4557-abc8-28c0397ad82b"
+  },
+  {
+    "question": "Qual è lo scopo principale dell'ereditarietà in Java?",
+    "answers": [
+      "Riutilizzo del codice",
+      "Esecuzione parallela",
+      "Definizione di costanti",
+      "Gestione della memoria"
+    ],
+    "correct_answer": "Riutilizzo del codice",
+    "id": "11dba7ea-51e9-4cbe-9734-fa9cf5507354"
+  },
+  {
+    "question": "I principi dell'ingegneria del software possono essere definiti come",
+    "answers": [
+      "Simulazione e modellazione",
+      "Flessibilità e adattabilità",
+      "Precisione sintattica e semantica",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità"
+    ],
+    "correct_answer": "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+    "id": "37cb35a9-9373-4ced-819b-011ff1d8309b"
+  },
+  {
+    "question": "Qual è la parola chiave usata per dichiarare un'interfaccia in Java?",
+    "answers": [
+      "Implements",
+      "Abstract",
+      "Interface",
+      "ImplementsInterface"
+    ],
+    "correct_answer": "Interface",
+    "id": "1979b2e5-1cc8-46de-85cd-f879e38bc7c0"
+  },
+  {
+    "question": "Una vista in UML:",
+    "answers": [
+      "mostra alcuni aspetti selezionati di un modello",
+      "rappresenta tutti gli oggetti",
+      "espone solo i metodi pubblici",
+      "mostra la gerarchia delle classi"
+    ],
+    "correct_answer": "mostra alcuni aspetti selezionati di un modello",
+    "id": "1c072b66-b3b2-4007-8aec-d32eee032a3e"
+  },
+  {
+    "question": "Nell'ambito della Ingegneria del Software, quale è il significato dell'acronimo CASE:",
+    "answers": [
+      "Computer-Aided Software Engineering",
+      "Collaborative Approach to Software Engineering",
+      "Common Architecture Software Environment",
+      "Computation Algorithm Simulation Environment"
+    ],
+    "correct_answer": "Computer-Aided Software Engineering",
+    "id": "79593c34-eb40-47cd-9e7b-05abdc46e558"
+  },
+  {
+    "question": "Nei diagrammi di attività, i nodi segnale temporali si rappresentano con:",
+    "answers": [
+      "una clessidra stilizzata",
+      "un cerchio con una freccia",
+      "un triangolo rovesciato",
+      "una freccia spezzata"
+    ],
+    "correct_answer": "una clessidra stilizzata",
+    "id": "57456d9b-dbbd-4684-9c29-7e414e56c7ca"
+  },
+  {
+    "question": "Nel diagramma di sequenza, Nel caso di messaggio asincrono:",
+    "answers": [
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "richiede conferma di ricezione",
+      "è rappresentato con una linea tratteggiata",
+      "l'oggetto che invia il messaggio attende una risposta prima di proseguire"
+    ],
+    "correct_answer": "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+    "id": "8e2f7597-2e45-4978-8ea9-9e4baf05a7b7"
+  },
+  {
+    "question": "Quale di questi tipi di comunicazione in un progetto software non può definirsi asincrona:",
+    "answers": [
+      "deliverable",
+      "mostra alcuni aspetti selezionati di un modello",
+      "una clessidra stilizzata",
+      "Videoconferenza"
+    ],
+    "correct_answer": "Videoconferenza",
+    "id": "a53ca716-c317-4550-8c16-bb6c55f9703f"
+  },
+  {
+    "question": "Il flusso di controllo:",
+    "answers": [
+      "passa da un'azione alla successiva dopo aver terminato l'esecuzione dell'azione seguendo il token",
+      "5 principali tipologie di diagrammi",
+      "deliverable",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità"
+    ],
+    "correct_answer": "passa da un'azione alla successiva dopo aver terminato l'esecuzione dell'azione seguendo il token",
+    "id": "2202eeb6-89c5-4214-ba01-f1d1e245b637"
+  },
+  {
+    "question": "In Java il blocco di codice che definisce un metodo è delimitato da",
+    "answers": [
+      "non hanno un limite massimo di caratteri",
+      "5 principali tipologie di diagrammi",
+      "parentesi graffe",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità"
+    ],
+    "correct_answer": "parentesi graffe",
+    "id": "6b18c5ab-ff8f-4382-a157-f143966da6de"
+  },
+  {
+    "question": "Il ciclo di vita del software è:",
+    "answers": [
+      "Computer-Aided Software Engineering",
+      "Riutilizzo del codice",
+      "5 principali tipologie di diagrammi",
+      "il periodo di tempo che ha inizio quando un prodotto software è concepito e termina quando il prodotto non è più utilizzato."
+    ],
+    "correct_answer": "il periodo di tempo che ha inizio quando un prodotto software è concepito e termina quando il prodotto non è più utilizzato.",
+    "id": "9b0ab504-b1bf-44c0-8a89-d093152a999a"
+  },
+  {
+    "question": "Qual è la differenza tra una classe e un oggetto in Java?",
+    "answers": [
+      "Interface",
+      "Computer-Aided Software Engineering",
+      "Una classe è un modello per creare oggetti, mentre un oggetto è un'istanza di una classe.",
+      "una clessidra stilizzata"
+    ],
+    "correct_answer": "Una classe è un modello per creare oggetti, mentre un oggetto è un'istanza di una classe.",
+    "id": "1dde8a35-247e-4a9e-9337-fc592fbd6b84"
+  },
+  {
+    "question": "Nei diagrammi di attività, una entità o un oggetto passato da una attività all'altra si rappresenta con:",
+    "answers": [
+      "mostra alcuni aspetti selezionati di un modello",
+      "Un rettangolo",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "5 principali tipologie di diagrammi"
+    ],
+    "correct_answer": "Un rettangolo",
+    "id": "546724ff-32c3-40c7-81f3-4314bc2e7f36"
+  },
+  {
+    "question": "Quale tra i seguenti eventi di comunicazione ha l'obiettivo di migliorare la qualità di un sottosistema?",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "walkthrough",
+      "una clessidra stilizzata"
+    ],
+    "correct_answer": "walkthrough",
+    "id": "79481744-c3ba-41fb-9162-9d0a9bc7e49b"
+  },
+  {
+    "question": "Quali delle seguenti affermazioni riguardo ai diagrammi di sequenza non è accettabile:",
+    "answers": [
+      "Computer-Aided Software Engineering",
+      "5 principali tipologie di diagrammi",
+      "il diagramma di sequenza mostra la struttura dei messaggi che gli oggetti coinvolti si scambiano al fine di realizzare un comportamento.",
+      "una clessidra stilizzata"
+    ],
+    "correct_answer": "il diagramma di sequenza mostra la struttura dei messaggi che gli oggetti coinvolti si scambiano al fine di realizzare un comportamento.",
+    "id": "5dbcf5a4-9366-42c7-85ad-c3c3f4c012b9"
+  },
+  {
+    "question": "Quale sarà l'output di questo codice?     if(false){        System.out.println(\"True\");    } else {        System.out.println(\"False\");    }",
+    "answers": [
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "5 principali tipologie di diagrammi",
+      "Interface",
+      "False"
+    ],
+    "correct_answer": "False",
+    "id": "698d8fc0-d49a-4230-be89-3ef9600f3caa"
+  },
+  {
+    "question": "I diversi tipi di visibilità per le operazioni nel diagramma delle classi sono:",
+    "answers": [
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "pubblico, protetto, privato",
+      "deliverable",
+      "non hanno un limite massimo di caratteri"
+    ],
+    "correct_answer": "pubblico, protetto, privato",
+    "id": "9df519f7-9838-4dc7-b0aa-58b5731c25b8"
+  },
+  {
+    "question": "La pianificazione, quale settore del modello a spirale prevede",
+    "answers": [
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "non hanno un limite massimo di caratteri",
+      "la revisione e la pianificazione del prossimo giro della spirale"
+    ],
+    "correct_answer": "la revisione e la pianificazione del prossimo giro della spirale",
+    "id": "e2405c8c-56ce-4a2a-97fe-98b6b4ba813d"
+  },
+  {
+    "question": "Un modello è definito come:",
+    "answers": [
+      "una clessidra stilizzata",
+      "non hanno un limite massimo di caratteri",
+      "Un'astrazione che descrive un sistema o un sottosistema",
+      "5 principali tipologie di diagrammi"
+    ],
+    "correct_answer": "Un'astrazione che descrive un sistema o un sottosistema",
+    "id": "0267b74c-03ee-4a79-b9a4-5da499ba4d5c"
+  },
+  {
+    "question": "Secondo le convenzioni di Java gli identficatori dei metodi",
+    "answers": [
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "devono iniziare per lettera minuscola",
+      "non hanno un limite massimo di caratteri",
+      "una clessidra stilizzata"
+    ],
+    "correct_answer": "devono iniziare per lettera minuscola",
+    "id": "4bf71107-f2c1-432b-aaee-4d1cb4e7199a"
+  },
+  {
+    "question": "In Java è possibile dichiarare un metodo al di fuori del blocco  di codice che definisce una classe?",
+    "answers": [
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "mostra alcuni aspetti selezionati di un modello",
+      "no, mai",
+      "una clessidra stilizzata"
+    ],
+    "correct_answer": "no, mai",
+    "id": "c883bcad-380e-49dd-a692-ddc399ae7a17"
+  },
+  {
+    "question": "In object-oriented, astrazione signfica:",
+    "answers": [
+      "trascurare elementi non essenziali nella modellazione di un concetto per la risoluzione di un problema",
+      "deliverable",
+      "Interface",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità"
+    ],
+    "correct_answer": "trascurare elementi non essenziali nella modellazione di un concetto per la risoluzione di un problema",
+    "id": "dbe2d677-bd0f-47e8-8f5f-38f310381ed3"
+  },
+  {
+    "question": "In quale delle seguenti situazioni non è adatto l'uso del pattern State?",
+    "answers": [
+      "Quando si ha un elevato numero di stati e transizioni complessi",
+      "Riutilizzo del codice",
+      "Computer-Aided Software Engineering",
+      "Interface"
+    ],
+    "correct_answer": "Quando si ha un elevato numero di stati e transizioni complessi",
+    "id": "40d9f45a-9452-494e-b2e1-7a0644d01cd0"
+  },
+  {
+    "question": "Qual è la differenza tra i cicli while e do-while in Java?",
+    "answers": [
+      "Il ciclo do-while viene eseguito almeno una volta",
+      "Interface",
+      "mostra alcuni aspetti selezionati di un modello",
+      "5 principali tipologie di diagrammi"
+    ],
+    "correct_answer": "Il ciclo do-while viene eseguito almeno una volta",
+    "id": "dcef8253-bcfe-48f3-9bc0-f4eaa6dfbda7"
+  },
+  {
+    "question": "Qual è il ruolo del \"time keeper\" durante un meeting?",
+    "answers": [
+      "gestire la durata dell'incontro",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "una clessidra stilizzata",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea."
+    ],
+    "correct_answer": "gestire la durata dell'incontro",
+    "id": "384ad27c-6ce6-421b-81c1-8e4d8fcadcb6"
+  },
+  {
+    "question": "Individua l'errore:     int counter = 0;    while(counter < 5) {        counter++;    }    System.out.println(\"Contatore: \" + counter);",
+    "answers": [
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "Riutilizzo del codice",
+      "Nessun errore",
+      "non hanno un limite massimo di caratteri"
+    ],
+    "correct_answer": "Nessun errore",
+    "id": "c8e3253e-f9cd-4a59-935f-e8846732bb8a"
+  },
+  {
+    "question": "Qual è la differenza tra variabili statiche e di istanza in Java?",
+    "answers": [
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "Computer-Aided Software Engineering",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "Tutte le risposte"
+    ],
+    "correct_answer": "Tutte le risposte",
+    "id": "25bcdcbb-1c4d-4ec1-a536-4afb157d603e"
+  },
+  {
+    "question": "Qual è lo scopo della parola chiave \"this\" in Java?",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "non hanno un limite massimo di caratteri",
+      "Riutilizzo del codice",
+      "Fare riferimento all'oggetto corrente"
+    ],
+    "correct_answer": "Fare riferimento all'oggetto corrente",
+    "id": "e014d7f5-5bd1-47ab-9c95-91d15d6886a7"
+  },
+  {
+    "question": "In object-oriented incapsulamento isignfica:",
+    "answers": [
+      "non hanno un limite massimo di caratteri",
+      "accesso ai dati regolato da apposita interfaccia",
+      "mostra alcuni aspetti selezionati di un modello",
+      "Computer-Aided Software Engineering"
+    ],
+    "correct_answer": "accesso ai dati regolato da apposita interfaccia",
+    "id": "3d49eca4-e92e-473f-9171-5ee43a1c20ca"
+  },
+  {
+    "question": "Per identificare le classi in fase di analisi si parte",
+    "answers": [
+      "deliverable",
+      "una clessidra stilizzata",
+      "dal testo dei requisiti forniti dal committente del sistema software",
+      "Computer-Aided Software Engineering"
+    ],
+    "correct_answer": "dal testo dei requisiti forniti dal committente del sistema software",
+    "id": "7192c10f-263c-48b5-aff4-96722f1c88ad"
+  },
+  {
+    "question": "Quali informazioni sarebbe opportuno associare a ogni caso d' uso (oltre al nome, scenario principale e estensioni):",
+    "answers": [
+      "Computer-Aided Software Engineering",
+      "una clessidra stilizzata",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "precondizioni, garanzia e trigger"
+    ],
+    "correct_answer": "precondizioni, garanzia e trigger",
+    "id": "4f402bce-066f-41e4-9266-4f1988d326f5"
+  },
+  {
+    "question": "Un' associazione riflessiva si applica:",
+    "answers": [
+      "Interface",
+      "deliverable",
+      "tra istanze della stessa classe",
+      "Computer-Aided Software Engineering"
+    ],
+    "correct_answer": "tra istanze della stessa classe",
+    "id": "80961a31-4499-4940-8215-83d79426cca8"
+  },
+  {
+    "question": "Un sistema software è affidabile",
+    "answers": [
+      "non hanno un limite massimo di caratteri",
+      "se non si manifestano malfunzionamenti",
+      "Riutilizzo del codice",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea."
+    ],
+    "correct_answer": "se non si manifestano malfunzionamenti",
+    "id": "972d5d93-273b-4395-b21c-a41d92bec8ec"
+  },
+  {
+    "question": "In quale scenario è più utile il pattern State?",
+    "answers": [
+      "non hanno un limite massimo di caratteri",
+      "deliverable",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "Quando un oggetto necessita di un comportamento diverso a seconda del suo stato attuale"
+    ],
+    "correct_answer": "Quando un oggetto necessita di un comportamento diverso a seconda del suo stato attuale",
+    "id": "a0c7cdf9-1b35-4e44-b57b-a184763879fb"
+  },
+  {
+    "question": "L' acronimo UML sta per:",
+    "answers": [
+      "deliverable",
+      "Computer-Aided Software Engineering",
+      "Unified Modeling Language",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea."
+    ],
+    "correct_answer": "Unified Modeling Language",
+    "id": "74da3815-f435-4ecd-8c3f-b17faf4fc58f"
+  },
+  {
+    "question": "E' opportuno definire un diagramma di attività con partizioni quando si ha bisogno di:",
+    "answers": [
+      "rappresentare in modo esplicito chi svolge quale attività",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "deliverable",
+      "non hanno un limite massimo di caratteri"
+    ],
+    "correct_answer": "rappresentare in modo esplicito chi svolge quale attività",
+    "id": "e1cfacfc-7e79-489b-b3c6-44ef3892a4b1"
+  },
+  {
+    "question": "Dire se la seguente affermazione è vera o falsa: \"Eseguire una auto-transizione significa sempre eseguire solo l' attività ad essa associata\":",
+    "answers": [
+      "non è detto sia vero, se lo stato definisce attività di ingresso e uscita queste sarebbe eseguite",
+      "Riutilizzo del codice",
+      "Interface",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea."
+    ],
+    "correct_answer": "non è detto sia vero, se lo stato definisce attività di ingresso e uscita queste sarebbe eseguite",
+    "id": "047e410f-b99c-47cf-9c24-f4aebcb5825a"
+  },
+  {
+    "question": "Lo pseudo stato finale server per:",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "non hanno un limite massimo di caratteri",
+      "definire il completamento dell' esecuzione della macchina a stati, ma solitamente non è un \u001c vero\u001d  stato",
+      "Computer-Aided Software Engineering"
+    ],
+    "correct_answer": "definire il completamento dell' esecuzione della macchina a stati, ma solitamente non è un \u001c vero\u001d  stato",
+    "id": "f68b4d3f-fdfe-44c6-afd6-06c1e6f0e27b"
+  },
+  {
+    "question": "Se occorre inserire una classe e nella gerarchia non esiste una classe di cui essa è una specializzazione:",
+    "answers": [
+      "non hanno un limite massimo di caratteri",
+      "si definisce una classe da zero e non si usa l'ereditarietà lasciando la gerarchia inalterata",
+      "una clessidra stilizzata",
+      "5 principali tipologie di diagrammi"
+    ],
+    "correct_answer": "si definisce una classe da zero e non si usa l'ereditarietà lasciando la gerarchia inalterata",
+    "id": "03ac38fe-ebef-40bd-ae8c-b4b35c32d0d5"
+  },
+  {
+    "question": "In object-oriented, il polimorfismo",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "insieme al binding dinamico permette di chiamare l'operazione sulla sottoclasse effettivamente istanziata",
+      "mostra alcuni aspetti selezionati di un modello",
+      "deliverable"
+    ],
+    "correct_answer": "insieme al binding dinamico permette di chiamare l'operazione sulla sottoclasse effettivamente istanziata",
+    "id": "5f45ca90-ee87-476e-8ca3-c6255bdc170f"
+  },
+  {
+    "question": "Le tipologie di prototipi usa e getta si definiscono",
+    "answers": [
+      "Riutilizzo del codice",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "mostra alcuni aspetti selezionati di un modello",
+      "Mock-ups e breadboards"
+    ],
+    "correct_answer": "Mock-ups e breadboards",
+    "id": "a2e6cb34-da0d-4f62-8703-980932e712dc"
+  },
+  {
+    "question": "Quale delle seguenti affermazioni è vera riguardo al pattern Composite?",
+    "answers": [
+      "Interface",
+      "mostra alcuni aspetti selezionati di un modello",
+      "una clessidra stilizzata",
+      "Permette la creazione di strutture gerarchiche di oggetti"
+    ],
+    "correct_answer": "Permette la creazione di strutture gerarchiche di oggetti",
+    "id": "06bd7b75-6c9f-4af3-8300-cf006b53c30c"
+  },
+  {
+    "question": "Qual è il principale vantaggio della comunicazione sincrona faccia-a-faccia?",
+    "answers": [
+      "deliverable",
+      "economicità e rapidità",
+      "mostra alcuni aspetti selezionati di un modello",
+      "5 principali tipologie di diagrammi"
+    ],
+    "correct_answer": "economicità e rapidità",
+    "id": "9b9fa2d1-159c-4597-bb61-59924769bed9"
+  },
+  {
+    "question": "Cosa stamperà questo ciclo?     for(int i = 0; i < 3; i++) {        System.out.println(i);    }",
+    "answers": [
+      "0 1 2",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "Riutilizzo del codice",
+      "Interface"
+    ],
+    "correct_answer": "0 1 2",
+    "id": "4add7c46-d325-4f1e-8477-033fdc104feb"
+  },
+  {
+    "question": "Che cos'è l'ereditarietà in Java?",
+    "answers": [
+      "Il processo di riutilizzare il codice da classi esistenti",
+      "Computer-Aided Software Engineering",
+      "deliverable",
+      "una clessidra stilizzata"
+    ],
+    "correct_answer": "Il processo di riutilizzare il codice da classi esistenti",
+    "id": "755864f5-2579-4854-a6af-2a4fd55a480b"
+  },
+  {
+    "question": "Quale ruolo ha la classe \"foglia\" nel pattern Composite?",
+    "answers": [
+      "Rappresenta oggetti singoli che non contengono sotto-elementi",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "deliverable",
+      "Riutilizzo del codice"
+    ],
+    "correct_answer": "Rappresenta oggetti singoli che non contengono sotto-elementi",
+    "id": "b1f95b74-5900-4935-bb3d-cb8d1b5c78f2"
+  },
+  {
+    "question": "Quale parola chiave è usata per definire una variabile costante in Java?",
+    "answers": [
+      "deliverable",
+      "una clessidra stilizzata",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "final"
+    ],
+    "correct_answer": "final",
+    "id": "dd865024-32ee-4e59-b844-baf85fce8e7a"
+  },
+  {
+    "question": "Cosa stampa questo codice Java?     int x = 5;    int y = x++;",
+    "answers": [
+      "Computer-Aided Software Engineering",
+      "deliverable",
+      "5",
+      "Riutilizzo del codice"
+    ],
+    "correct_answer": "5",
+    "id": "0c352970-f157-454b-b725-fdaf860320dd"
+  },
+  {
+    "question": "Qual è il valore predefinito di una variabile booleana in Java?",
+    "answers": [
+      "deliverable",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "false",
+      "una clessidra stilizzata"
+    ],
+    "correct_answer": "false",
+    "id": "7da0206f-0c2f-4588-9277-8f7f51022b34"
+  },
+  {
+    "question": "Individua l'errore in questo codice:     for(int i = 0; i <= 5; i++) {        System.out.println(i);    }    System.out.println(i);",
+    "answers": [
+      "non hanno un limite massimo di caratteri",
+      "Interface",
+      "mostra alcuni aspetti selezionati di un modello",
+      "Variabile i non accessibile fuori dal ciclo"
+    ],
+    "correct_answer": "Variabile i non accessibile fuori dal ciclo",
+    "id": "9f453944-ee13-487d-b239-906ea1fe4599"
+  },
+  {
+    "question": "Determina l'output:     SET num = 8    IF num MOD 2 = 0    THEN PRINT \"Pari\"    ELSE PRINT \"Dispari\"",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "Riutilizzo del codice",
+      "Pari",
+      "Computer-Aided Software Engineering"
+    ],
+    "correct_answer": "Pari",
+    "id": "ce3f842c-3497-4d31-86dd-ab388f29565c"
+  },
+  {
+    "question": "Nei diagrammi di attività, i nodi segnale di invio si rappresentano con:",
+    "answers": [
+      "un rettangolo con una punta sul lato destro",
+      "deliverable",
+      "Computer-Aided Software Engineering",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea."
+    ],
+    "correct_answer": "un rettangolo con una punta sul lato destro",
+    "id": "bc25c9c6-cbe7-4f92-9ef5-4c09034336ae"
+  },
+  {
+    "question": "Quale tra le seguenti molteplicità di un'associazione riferita alle classi NON è lecita:",
+    "answers": [
+      "1,3",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "mostra alcuni aspetti selezionati di un modello",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea."
+    ],
+    "correct_answer": "1,3",
+    "id": "167e5b17-6125-4e70-ba79-b7847c7dcec5"
+  },
+  {
+    "question": "Secondo le convenzioni di Java gli identficatori delle variabili",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "Riutilizzo del codice",
+      "devono iniziare per lettera minuscola",
+      "mostra alcuni aspetti selezionati di un modello"
+    ],
+    "correct_answer": "devono iniziare per lettera minuscola",
+    "id": "6b068764-ffc7-41bc-b172-2c0b989ded8e"
+  },
+  {
+    "question": "Quale affermazione NON è corretta per un diagramma di caso d'uso:",
+    "answers": [
+      "Interface",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "si interessa della implementazione e dei problemi funzionali durante l'uso del sistema",
+      "non hanno un limite massimo di caratteri"
+    ],
+    "correct_answer": "si interessa della implementazione e dei problemi funzionali durante l'uso del sistema",
+    "id": "ebbbacd6-007a-4743-b4b3-1bce27d898ea"
+  },
+  {
+    "question": "Qual è l'output di questo codice?     int x = 1;    while(x < 4) {        System.out.println(x);        x++;    }",
+    "answers": [
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "non hanno un limite massimo di caratteri",
+      "deliverable",
+      "1 2 3"
+    ],
+    "correct_answer": "1 2 3",
+    "id": "040adad3-d832-4a36-94d7-b3550125f27c"
+  },
+  {
+    "question": "Che cos'è il polimorfismo in Java?",
+    "answers": [
+      "La capacità di un oggetto di assumere molte forme",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "una clessidra stilizzata",
+      "Riutilizzo del codice"
+    ],
+    "correct_answer": "La capacità di un oggetto di assumere molte forme",
+    "id": "795e5a42-fede-44fe-b048-7da11f50cd20"
+  },
+  {
+    "question": "La figura di risk manager ha il compito",
+    "answers": [
+      "Computer-Aided Software Engineering",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "una clessidra stilizzata",
+      "di individuare e minimizzare i rischi"
+    ],
+    "correct_answer": "di individuare e minimizzare i rischi",
+    "id": "8f6c61ac-b1df-4719-b18f-8135f74e2026"
+  },
+  {
+    "question": "I diversi tipi di visibilità per gli attributi nel diagramma delle classi sono:",
+    "answers": [
+      "una clessidra stilizzata",
+      "mostra alcuni aspetti selezionati di un modello",
+      "5 principali tipologie di diagrammi",
+      "pubblico, protetto, privato"
+    ],
+    "correct_answer": "pubblico, protetto, privato",
+    "id": "3a424d1e-2b30-4ea4-a7e4-f97d6fdc2902"
+  },
+  {
+    "question": "Il diagramma di attività:",
+    "answers": [
+      "una clessidra stilizzata",
+      "deliverable",
+      "non hanno un limite massimo di caratteri",
+      "modella un comportamento come una sequenza di azioni"
+    ],
+    "correct_answer": "modella un comportamento come una sequenza di azioni",
+    "id": "d22630d6-2e2d-4246-9106-76754c74e292"
+  },
+  {
+    "question": "Individua l'errore in questo codice:     int[] nums = new int[2];    nums[0] = 1;    nums[1] = 2;    nums[2] = 3;",
+    "answers": [
+      "mostra alcuni aspetti selezionati di un modello",
+      "Indice fuori dai limiti dell'array",
+      "Riutilizzo del codice",
+      "Computer-Aided Software Engineering"
+    ],
+    "correct_answer": "Indice fuori dai limiti dell'array",
+    "id": "659c29d6-4a84-458b-b7d7-614cf598b552"
+  },
+  {
+    "question": "L' acronimo OCL nel contesto UML significa:",
+    "answers": [
+      "Object Constraint Language",
+      "una clessidra stilizzata",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "Riutilizzo del codice"
+    ],
+    "correct_answer": "Object Constraint Language",
+    "id": "1b52ff49-1107-4e2b-ac98-c6037cc5fc34"
+  },
+  {
+    "question": "Nei diagrammi di macchina a stati, uno pseudostato iniziale:",
+    "answers": [
+      "Un disco pieno",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "mostra alcuni aspetti selezionati di un modello",
+      "non hanno un limite massimo di caratteri"
+    ],
+    "correct_answer": "Un disco pieno",
+    "id": "b1a99ddb-35d9-4167-acb6-5e582e806c0b"
+  },
+  {
+    "question": "Qual è il ruolo del \"minute taker\" durante un meeting?",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "non hanno un limite massimo di caratteri",
+      "una clessidra stilizzata",
+      "verbalizzare i punti discussi"
+    ],
+    "correct_answer": "verbalizzare i punti discussi",
+    "id": "d7f3c82e-ddd9-41fe-8590-95ce903c470b"
+  },
+  {
+    "question": "In Java, è possibile usare il costrutto for per i cicli infiniti",
+    "answers": [
+      "mostra alcuni aspetti selezionati di un modello",
+      "sì sempre anche se è meno chiaro e lineare",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "Computer-Aided Software Engineering"
+    ],
+    "correct_answer": "sì sempre anche se è meno chiaro e lineare",
+    "id": "22293782-879b-4ff6-b723-19cef5ba420d"
+  },
+  {
+    "question": "Nel modello a sviluppo incrementale, la parte iterativa riguarda le fasi:",
+    "answers": [
+      "Interface",
+      "non hanno un limite massimo di caratteri",
+      "dallo sviluppo dell'incremento alla convalida",
+      "Computer-Aided Software Engineering"
+    ],
+    "correct_answer": "dallo sviluppo dell'incremento alla convalida",
+    "id": "8127f763-355d-4a9e-9613-04cb91cc48cd"
+  },
+  {
+    "question": "La rappresentazione della \"linea di vita\" si trova nei:",
+    "answers": [
+      "Interface",
+      "una clessidra stilizzata",
+      "diagrammi di sequenza",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità"
+    ],
+    "correct_answer": "diagrammi di sequenza",
+    "id": "433850e4-fc86-402b-b8b7-fa41de8edd6a"
+  },
+  {
+    "question": "In Java un metodo definisce",
+    "answers": [
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "Interface",
+      "una funzionalità della classe di oggetti",
+      "Computer-Aided Software Engineering"
+    ],
+    "correct_answer": "una funzionalità della classe di oggetti",
+    "id": "447b965e-9aef-49a2-8e55-de694d73b340"
+  },
+  {
+    "question": "In Java, come dovrebbero essere scritti i nomi delle classi?",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "non hanno un limite massimo di caratteri",
+      "Riutilizzo del codice",
+      "PascalCase"
+    ],
+    "correct_answer": "PascalCase",
+    "id": "280f8a4b-1262-412c-b73e-fe26020bbc70"
+  },
+  {
+    "question": "Quale componente di Java è responsabile dell'esecuzione del bytecode Java compilato?",
+    "answers": [
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "5 principali tipologie di diagrammi",
+      "Computer-Aided Software Engineering",
+      "JVM"
+    ],
+    "correct_answer": "JVM",
+    "id": "10921183-cf90-47af-ae26-8e0ea4b49628"
+  },
+  {
+    "question": "Quale dei seguenti non è un concetto di programmazione orientata agli oggetti (OOP) in Java?",
+    "answers": [
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "5 principali tipologie di diagrammi",
+      "mostra alcuni aspetti selezionati di un modello",
+      "Compilazione"
+    ],
+    "correct_answer": "Compilazione",
+    "id": "b66f2425-a43f-4821-af9b-92e11d9e3eeb"
+  },
+  {
+    "question": "Che cos'è la sovrascrittura di metodo in Java?",
+    "answers": [
+      "Fornire un'implementazione diversa per un metodo ereditato in una sottoclasse.",
+      "una clessidra stilizzata",
+      "Riutilizzo del codice",
+      "non hanno un limite massimo di caratteri"
+    ],
+    "correct_answer": "Fornire un'implementazione diversa per un metodo ereditato in una sottoclasse.",
+    "id": "974d7c11-665d-4076-89b4-2d91ace97cc7"
+  },
+  {
+    "question": "Quando viene determinato l'overloading di metodo?",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "Interface",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "A tempo di compilazione"
+    ],
+    "correct_answer": "A tempo di compilazione",
+    "id": "de589fbe-5804-4799-9fcd-a94682b9b4ab"
+  },
+  {
+    "question": "Quale struttura di controllo viene utilizzata per eseguire un blocco di codice più volte?",
+    "answers": [
+      "deliverable",
+      "for",
+      "una clessidra stilizzata",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità"
+    ],
+    "correct_answer": "for",
+    "id": "77a0de5a-655c-4c71-a9cd-b12f89241440"
+  },
+  {
+    "question": "Quale di queste non è una caratteristica di Java?",
+    "answers": [
+      "Interface",
+      "Linguaggio interpretato",
+      "deliverable",
+      "mostra alcuni aspetti selezionati di un modello"
+    ],
+    "correct_answer": "Linguaggio interpretato",
+    "id": "9e9a4b84-c3e2-47e3-974d-694a677ff442"
+  },
+  {
+    "question": "Quale dei seguenti è un tipo di polimorfismo in Java?",
+    "answers": [
+      "Polimorfismo a tempo di compilazione",
+      "Computer-Aided Software Engineering",
+      "una clessidra stilizzata",
+      "non hanno un limite massimo di caratteri"
+    ],
+    "correct_answer": "Polimorfismo a tempo di compilazione",
+    "id": "6011be05-781f-421f-bfad-bb5b52490f25"
+  },
+  {
+    "question": "Qual è la differenza tra una classe astratta e un'interfaccia?",
+    "answers": [
+      "mostra alcuni aspetti selezionati di un modello",
+      "Una classe astratta può avere costruttori, un'interfaccia no",
+      "una clessidra stilizzata",
+      "Computer-Aided Software Engineering"
+    ],
+    "correct_answer": "Una classe astratta può avere costruttori, un'interfaccia no",
+    "id": "95216e3c-bfb9-4a6a-88ad-b650f392f992"
+  },
+  {
+    "question": "Nei diagrammi di attività:",
+    "answers": [
+      "non hanno un limite massimo di caratteri",
+      "una clessidra stilizzata",
+      "mostra alcuni aspetti selezionati di un modello",
+      "il focus è sull'attività e non su chi la svolge"
+    ],
+    "correct_answer": "il focus è sull'attività e non su chi la svolge",
+    "id": "90a8f5ce-0141-49b2-aeda-99e0471b3dff"
+  },
+  {
+    "question": "Che cos'è l'incapsulamento in Java?",
+    "answers": [
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "Interface",
+      "Riutilizzo del codice",
+      "Il processo di combinare dati e metodi in un'unica unità"
+    ],
+    "correct_answer": "Il processo di combinare dati e metodi in un'unica unità",
+    "id": "43a1a57c-8931-413c-8f95-74d141549a5b"
+  },
+  {
+    "question": "Quale dei seguenti non è un vantaggio dell'uso dell'Iterator?",
+    "answers": [
+      "Interface",
+      "Riutilizzo del codice",
+      "mostra alcuni aspetti selezionati di un modello",
+      "Permette di eseguire operazioni parallele sui dati della collezione"
+    ],
+    "correct_answer": "Permette di eseguire operazioni parallele sui dati della collezione",
+    "id": "1d856fdd-aff0-47bd-9863-ea4f663637b0"
+  },
+  {
+    "question": "Un simbolo di parallelepipedo può usarsi per:",
+    "answers": [
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "5 principali tipologie di diagrammi",
+      "una clessidra stilizzata",
+      "un diagramma di deployment"
+    ],
+    "correct_answer": "un diagramma di deployment",
+    "id": "e2d0ee17-83db-4200-b82f-8764cf6f0d3d"
+  },
+  {
+    "question": "Nell'adozione e applicazione del ciclo di vita del software detto Waterfall, quale delle seguenti controindicazioni non è pertinente:",
+    "answers": [
+      "Riutilizzo del codice",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "non è facilmente comprensibile ed applicabile",
+      "Interface"
+    ],
+    "correct_answer": "non è facilmente comprensibile ed applicabile",
+    "id": "e609685f-984a-46a0-bb9d-b16c679ad744"
+  },
+  {
+    "question": "Nel diagramma di sequenza, Nel caso di messaggio sincrono:",
+    "answers": [
+      "l'oggetto che invia il messaggio attende la risposta dall'oggetto interpellato, interrompendo la propria esecuzione. Un messaggio sincrono è rappresentato con una freccia con la punta piena.",
+      "non hanno un limite massimo di caratteri",
+      "Interface",
+      "5 principali tipologie di diagrammi"
+    ],
+    "correct_answer": "l'oggetto che invia il messaggio attende la risposta dall'oggetto interpellato, interrompendo la propria esecuzione. Un messaggio sincrono è rappresentato con una freccia con la punta piena.",
+    "id": "d69daac6-e68e-4ebd-8d46-e17a4d526df8"
+  },
+  {
+    "question": "Qual è la differenza tra sovraccarico di metodo e sovrascrittura di metodo in Java?  # RISPOSTA DIVERSA",
+    "answers": [
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "Tutte le risposte sopra.",
+      "mostra alcuni aspetti selezionati di un modello",
+      "una clessidra stilizzata"
+    ],
+    "correct_answer": "Tutte le risposte sopra.",
+    "id": "25edf946-a205-4ed9-af1e-2dab8eeb08bc"
+  },
+  {
+    "question": "Qual è lo scopo principale del pattern Iterator?",
+    "answers": [
+      "mostra alcuni aspetti selezionati di un modello",
+      "Fornire un modo per accedere agli elementi di una collezione senza esporne la struttura interna",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "Computer-Aided Software Engineering"
+    ],
+    "correct_answer": "Fornire un modo per accedere agli elementi di una collezione senza esporne la struttura interna",
+    "id": "49e03d66-8cf7-4761-b22e-e14d30dcb108"
+  },
+  {
+    "question": "Una classe astratta può avere metodi non astratti?",
+    "answers": [
+      "una clessidra stilizzata",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "Si"
+    ],
+    "correct_answer": "Si",
+    "id": "5de01af0-38fb-4b42-bf25-d8729a159dae"
+  },
+  {
+    "question": "Il diagramma delle classi:",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "Computer-Aided Software Engineering",
+      "Riutilizzo del codice",
+      "descrive il tipo degli oggetti"
+    ],
+    "correct_answer": "descrive il tipo degli oggetti",
+    "id": "735a0f81-8484-4e07-aacc-30fac9aefef1"
+  },
+  {
+    "question": "Una classe astratta è:",
+    "answers": [
+      "Riutilizzo del codice",
+      "non hanno un limite massimo di caratteri",
+      "una classe che ha una o più operazioni astratte, ovvero con sola dichiarazione e senza implementazione e quindi non può essere direttamente istanziata.",
+      "mostra alcuni aspetti selezionati di un modello"
+    ],
+    "correct_answer": "una classe che ha una o più operazioni astratte, ovvero con sola dichiarazione e senza implementazione e quindi non può essere direttamente istanziata.",
+    "id": "b21889cc-37ad-4640-8bed-2431afa662bf"
+  },
+  {
+    "question": "Qual è lo scopo della parola chiave this in Java?",
+    "answers": [
+      "Fare riferimento all'oggetto corrente",
+      "mostra alcuni aspetti selezionati di un modello",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea."
+    ],
+    "correct_answer": "Fare riferimento all'oggetto corrente",
+    "id": "8054e19d-6c9a-43b8-aa46-d774ff6fcf9e"
+  },
+  {
+    "question": "In Java, se abbiamo int i=5; int j=++i; int k=j++; int h=k--; boolean flag = ( (i != j) && ( (j",
+    "answers": [
+      "non hanno un limite massimo di caratteri",
+      "true",
+      "Computer-Aided Software Engineering",
+      "una clessidra stilizzata"
+    ],
+    "correct_answer": "true",
+    "id": "c036ac56-690a-4227-be86-261ff49b8e27"
+  },
+  {
+    "question": "Quale sarà l'output di questo codice?int a = 10;int b = 20;System.out.println(a + b);",
+    "answers": [
+      "Riutilizzo del codice",
+      "Interface",
+      "30",
+      "non hanno un limite massimo di caratteri"
+    ],
+    "correct_answer": "30",
+    "id": "d3c39237-faa2-4f71-a8af-a265bfcbc531"
+  },
+  {
+    "question": "Qual è lo scopo dell'incapsulamento in Java?",
+    "answers": [
+      "Interface",
+      "Computer-Aided Software Engineering",
+      "deliverable",
+      "Proteggere l'integrità dei dati"
+    ],
+    "correct_answer": "Proteggere l'integrità dei dati",
+    "id": "57d5cf74-b256-42ea-aca9-31000d2378cb"
+  },
+  {
+    "question": "Nei diagrammi di attività, i nodi segnale di ricezione si rappresentano con:",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "deliverable",
+      "Computer-Aided Software Engineering",
+      "un rettangolo con una punta rientrante sul lato sinistro"
+    ],
+    "correct_answer": "un rettangolo con una punta rientrante sul lato sinistro",
+    "id": "54257aa3-8ced-485a-aa5e-58b9b03a8d82"
+  },
+  {
+    "question": "In un diagramma delle classi eventuali vincoli o metodi:",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "Riutilizzo del codice",
+      "deliverable",
+      "possono comparire usando le annotazioni"
+    ],
+    "correct_answer": "possono comparire usando le annotazioni",
+    "id": "419565a8-37fd-4166-9354-029a3953fdd9"
+  },
+  {
+    "question": "Qual è lo scopo della parola chiave \"final\" in Java?",
+    "answers": [
+      "Interface",
+      "deliverable",
+      "5 principali tipologie di diagrammi",
+      "Tutte le risposte sopra"
+    ],
+    "correct_answer": "Tutte le risposte sopra",
+    "id": "a92fb73b-fba1-45b6-9340-12b6aa73caa2"
+  },
+  {
+    "question": "Per identificare le classi in fase di progettazione si considera",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "una clessidra stilizzata",
+      "il contesto del problema da risolvere per avere classi con una semantica (attributi ed operazioni) coerente ad esso",
+      "Interface"
+    ],
+    "correct_answer": "il contesto del problema da risolvere per avere classi con una semantica (attributi ed operazioni) coerente ad esso",
+    "id": "24eaf3cb-1ef4-4374-a7c1-c2f691fd34a0"
+  },
+  {
+    "question": "Definire un'attività interna di risposta a un evento significa:",
+    "answers": [
+      "voler rispondere all' evento senza definire un transizione di stato",
+      "una clessidra stilizzata",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "Computer-Aided Software Engineering"
+    ],
+    "correct_answer": "voler rispondere all' evento senza definire un transizione di stato",
+    "id": "8bdfb0c0-dc24-4e14-af80-9956dd603bbd"
+  },
+  {
+    "question": "E' possibile rappresentare solo la parte iniziale e finale di un arco per evitare di complicare eccessivamente un diagramma:",
+    "answers": [
+      "Vero, usando i connettori",
+      "mostra alcuni aspetti selezionati di un modello",
+      "non hanno un limite massimo di caratteri",
+      "deliverable"
+    ],
+    "correct_answer": "Vero, usando i connettori",
+    "id": "2d24dd5e-f493-4423-8a38-c430dbef0b38"
+  },
+  {
+    "question": "Secondo le convenzioni di Java gli identficatori della classe",
+    "answers": [
+      "devono iniziare per lettera maiuscola",
+      "una clessidra stilizzata",
+      "Riutilizzo del codice",
+      "non hanno un limite massimo di caratteri"
+    ],
+    "correct_answer": "devono iniziare per lettera maiuscola",
+    "id": "06dce590-419e-48db-a6bb-4db006dea0bd"
+  },
+  {
+    "question": "Specificare qual è la differenza tra aggregazione e composizione:",
+    "answers": [
+      "Riutilizzo del codice",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "l' aggregazione non implica che il contenuto appartenga a un solo contenitore, mentre la composizione sì",
+      "5 principali tipologie di diagrammi"
+    ],
+    "correct_answer": "l' aggregazione non implica che il contenuto appartenga a un solo contenitore, mentre la composizione sì",
+    "id": "6ef5fbe5-3d92-4817-93c9-abddc3065056"
+  },
+  {
+    "question": "In Java, quando passiamo una reference di un oggetto in input ad un metodo, siamo sicuri che terminata l'esecuzione del metodo, il reference",
+    "answers": [
+      "5 principali tipologie di diagrammi",
+      "non hanno un limite massimo di caratteri",
+      "punta allo stesso oggetto a cui puntava prima dell'esecuzione del metodo",
+      "una clessidra stilizzata"
+    ],
+    "correct_answer": "punta allo stesso oggetto a cui puntava prima dell'esecuzione del metodo",
+    "id": "769c4868-1e82-4c48-a51a-4c67871da062"
+  },
+  {
+    "question": "Una classe è una specifica di:",
+    "answers": [
+      "Riutilizzo del codice",
+      "Computer-Aided Software Engineering",
+      "mostra alcuni aspetti selezionati di un modello",
+      "di una categoria di oggetti"
+    ],
+    "correct_answer": "di una categoria di oggetti",
+    "id": "21816cc5-9c6b-4ccc-bfe5-9058ea67eb17"
+  },
+  {
+    "question": "Per definizione, l'Ingegneria del software copre i seguenti aspetti:",
+    "answers": [
+      "progetto, implementazione, collaudo e documentazione del software",
+      "mostra alcuni aspetti selezionati di un modello",
+      "5 principali tipologie di diagrammi",
+      "Interface"
+    ],
+    "correct_answer": "progetto, implementazione, collaudo e documentazione del software",
+    "id": "256d013d-a3cb-4e1e-9957-4fae50ffba16"
+  },
+  {
+    "question": "Gli eventi di comunicazione pianificati  sono",
+    "answers": [
+      "una clessidra stilizzata",
+      "Computer-Aided Software Engineering",
+      "9",
+      "Interface"
+    ],
+    "correct_answer": "9",
+    "id": "cc81e29f-daaa-407a-bb70-4b25ffcfdc69"
+  },
+  {
+    "question": "Una fork introduce un flusso di esecuzione alternativo:",
+    "answers": [
+      "no non è vero, una fork introduce flussi d'esecuzione concorrenti",
+      "Riutilizzo del codice",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea."
+    ],
+    "correct_answer": "no non è vero, una fork introduce flussi d'esecuzione concorrenti",
+    "id": "72784332-37cc-4f87-97e3-e0b2b33a2c05"
+  },
+  {
+    "question": "Analizza questo pseudocodice:     SET num = 0    WHILE num <= 5        IF num MOD 2 = 0        THEN PRINT num        END IF        INCREMENT num",
+    "answers": [
+      "una clessidra stilizzata",
+      "Riutilizzo del codice",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "0 2 4"
+    ],
+    "correct_answer": "0 2 4",
+    "id": "1368252d-5485-4077-815c-40fa344fa31d"
+  },
+  {
+    "question": "Qual è il ruolo di un costruttore in una classe Java?",
+    "answers": [
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "Computer-Aided Software Engineering",
+      "5 principali tipologie di diagrammi",
+      "Inizializzare lo stato dell'oggetto"
+    ],
+    "correct_answer": "Inizializzare lo stato dell'oggetto",
+    "id": "a225de30-b49b-4a61-8c69-e39044bfbede"
+  },
+  {
+    "question": "Nei diagrammi di macchina a stati, uno stato è rappresentato da:",
+    "answers": [
+      "non hanno un limite massimo di caratteri",
+      "5 principali tipologie di diagrammi",
+      "mostra alcuni aspetti selezionati di un modello",
+      "Un rettangolo arrotondato"
+    ],
+    "correct_answer": "Un rettangolo arrotondato",
+    "id": "2ce294ae-be66-4323-b86a-594183a1d42a"
+  },
+  {
+    "question": "Quale tipo di dato è più adatto per memorizzare l'età di una persona in Java?",
+    "answers": [
+      "Computer-Aided Software Engineering",
+      "int",
+      "Riutilizzo del codice",
+      "deliverable"
+    ],
+    "correct_answer": "int",
+    "id": "d1a2ce47-39de-408e-807f-f96f2df0d377"
+  },
+  {
+    "question": "Quale modificatore di accesso limita l'accesso a un membro della classe alla sola classe stessa?",
+    "answers": [
+      "Private",
+      "Computer-Aided Software Engineering",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "Interface"
+    ],
+    "correct_answer": "Private",
+    "id": "bec84993-3435-4043-bf8d-b8bc8917af85"
+  },
+  {
+    "question": "In UML gli stati sono rappresentati con:  # RISPOSTA DIVERSA",
+    "answers": [
+      "Rettangoli con angoli arrotondati",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "non hanno un limite massimo di caratteri",
+      "5 principali tipologie di diagrammi"
+    ],
+    "correct_answer": "Rettangoli con angoli arrotondati",
+    "id": "0499c4c5-bde2-431a-8b1f-77a8d5ba6330"
+  },
+  {
+    "question": "Cosa rappresenta il “percorso critico” in un diagramma PERT?",
+    "answers": [
+      "mostra alcuni aspetti selezionati di un modello",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "il percorso più lungo nel grafo dei task",
+      "una clessidra stilizzata"
+    ],
+    "correct_answer": "il percorso più lungo nel grafo dei task",
+    "id": "45a504a0-cc08-4d3c-93a9-d0ff6d88610a"
+  },
+  {
+    "question": "In Java una volta scritti i file con la dichiarazione delle classi di oggetti",
+    "answers": [
+      "Interface",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "una clessidra stilizzata",
+      "il programma non compila perché manca il main con il flusso di esecuzione"
+    ],
+    "correct_answer": "il programma non compila perché manca il main con il flusso di esecuzione",
+    "id": "8788b29b-4135-4975-a768-0bfccdb1becc"
+  },
+  {
+    "question": "Quale di queste interfacce è tipicamente implementata da un iteratore in Java?",
+    "answers": [
+      "Interface",
+      "5 principali tipologie di diagrammi",
+      "Iterator",
+      "non hanno un limite massimo di caratteri"
+    ],
+    "correct_answer": "Iterator",
+    "id": "9ee94207-ddaf-422c-8e9f-7b5268f4ef6b"
+  },
+  {
+    "question": "Quale parola chiave viene usata per uscire da un ciclo prematuramente in Java?",
+    "answers": [
+      "Riutilizzo del codice",
+      "una clessidra stilizzata",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "break"
+    ],
+    "correct_answer": "break",
+    "id": "f8f37a5a-8456-4a24-8673-4a23e0a399a0"
+  },
+  {
+    "question": "Quale di questi è un commento a singola linea in Java?",
+    "answers": [
+      "// commento",
+      "mostra alcuni aspetti selezionati di un modello",
+      "5 principali tipologie di diagrammi",
+      "deliverable"
+    ],
+    "correct_answer": "// commento",
+    "id": "a55f925f-6453-4822-a4d9-1b51ea29b205"
+  },
+  {
+    "question": "Valuta questo pseudocodice:     SET a = 3    SET b = 4    PRINT a * b",
+    "answers": [
+      "12",
+      "Riutilizzo del codice",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "non hanno un limite massimo di caratteri"
+    ],
+    "correct_answer": "12",
+    "id": "42c8fd3a-8432-4792-8eb3-b8f09dbaaf64"
+  },
+  {
+    "question": "Una classe astratta si definisce:",
+    "answers": [
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità",
+      "interfaccia, se è una classe senza attributi e con tutte le operazioni astratte",
+      "Interface",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea."
+    ],
+    "correct_answer": "interfaccia, se è una classe senza attributi e con tutte le operazioni astratte",
+    "id": "1fa74150-dad1-45dd-b105-6dfe66b57fa4"
+  },
+  {
+    "question": "Trova l'errore in questo codice:     int i = 0;    while(i < 10) {        i++;    }    System.out.println(i);",
+    "answers": [
+      "Nessun errore",
+      "mostra alcuni aspetti selezionati di un modello",
+      "5 principali tipologie di diagrammi",
+      "deliverable"
+    ],
+    "correct_answer": "Nessun errore",
+    "id": "0cb573ea-430d-493f-be43-8a1ac5e28953"
+  },
+  {
+    "question": "Qual è la funzione principale del liaison in una struttura di comunicazione?",
+    "answers": [
+      "non hanno un limite massimo di caratteri",
+      "5 principali tipologie di diagrammi",
+      "trasferire informazioni tra sviluppatori",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità"
+    ],
+    "correct_answer": "trasferire informazioni tra sviluppatori",
+    "id": "fbcc6af9-0f01-490c-8bc1-ffcf8ecf8065"
+  },
+  {
+    "question": "In Java nella dichiarazione di classe il modificatore specifica",
+    "answers": [
+      "non hanno un limite massimo di caratteri",
+      "Riutilizzo del codice",
+      "5 principali tipologie di diagrammi",
+      "come modificare le caratteristiche della classe"
+    ],
+    "correct_answer": "come modificare le caratteristiche della classe",
+    "id": "d6976104-e805-4419-92eb-e04a8939b3bd"
+  },
+  {
+    "question": "Qual è l'output di questo pseudocodice?     SET count = 5    DO PRINT count    COUNTDOWN count",
+    "answers": [
+      "mostra alcuni aspetti selezionati di un modello",
+      "non hanno un limite massimo di caratteri",
+      "5 4 3 2 1",
+      "Interface"
+    ],
+    "correct_answer": "5 4 3 2 1",
+    "id": "e1607795-7e70-4195-ab87-8afb818f323f"
+  },
+  {
+    "question": "Quale caratteristica di Java permette di eseguire un programma Java su diverse piattaforme?",
+    "answers": [
+      "Indipendente dalla piattaforma",
+      "mostra alcuni aspetti selezionati di un modello",
+      "Interface",
+      "non hanno un limite massimo di caratteri"
+    ],
+    "correct_answer": "Indipendente dalla piattaforma",
+    "id": "2fb494fb-9084-496a-b067-920121210d36"
+  },
+  {
+    "question": "Qual è il risultato di questa operazione in Java: (int)(7.9)?",
+    "answers": [
+      "Riutilizzo del codice",
+      "7",
+      "mostra alcuni aspetti selezionati di un modello",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità"
+    ],
+    "correct_answer": "7",
+    "id": "389f5829-f9ae-4d57-a95d-66f7254c3080"
+  },
+  {
+    "question": "Nel periodo dal 1990 ad oggi prendono piede le nuove metodologie di sviluppo del software definite:",
+    "answers": [
+      "Computer-Aided Software Engineering",
+      "5 principali tipologie di diagrammi",
+      "agili",
+      "mostra alcuni aspetti selezionati di un modello"
+    ],
+    "correct_answer": "agili",
+    "id": "077888d9-7700-418a-81e8-2ab61e6827a7"
+  },
+  {
+    "question": "Qual è un modo efficace per implementare il pattern Singleton in Java?",
+    "answers": [
+      "deliverable",
+      "Dichiarare un costruttore privato e fornire un metodo statico per ottenere l'istanza",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea.",
+      "una clessidra stilizzata"
+    ],
+    "correct_answer": "Dichiarare un costruttore privato e fornire un metodo statico per ottenere l'istanza",
+    "id": "a518eedd-aae0-452f-9766-4a770c0d95ac"
+  },
+  {
+    "question": "Qual è il concetto di occultamento dei dati in Java?",
+    "answers": [
+      "Incapsulare i dati all'interno di una classe e fornire un accesso controllato tramite metodi",
+      "Interface",
+      "non hanno un limite massimo di caratteri",
+      "l'oggetto che invia il messaggio non attende la risposta prima di continuare con altre interazioni dello scenario. Un messaggio asincrono è rappresentato con una freccia a linea."
+    ],
+    "correct_answer": "Incapsulare i dati all'interno di una classe e fornire un accesso controllato tramite metodi",
+    "id": "744769a7-ef02-4905-abf3-18ec678eabdb"
+  },
+  {
+    "question": "In Java un identificatore può iniziare per @",
+    "answers": [
+      "no, mai",
+      "Interface",
+      "Riutilizzo del codice",
+      "Rigore e formalità, modularità, astrazione, anticipazione al cambiamento, generalità, incrementalità"
+    ],
+    "correct_answer": "no, mai",
+    "id": "c3a726d2-86aa-4365-a90d-945669224ab7"
+  },
+  {
+    "question": "Quale sarà l'output di questo pseudocodice?     SET x = 10    IF x > 5    THEN PRINT \"Maggiore\"    ELSE PRINT \"Minore\"",
+    "answers": [
+      "Maggiore",
+      "Riutilizzo del codice",
+      "Interface",
+      "Computer-Aided Software Engineering"
+    ],
+    "correct_answer": "Maggiore",
+    "id": "ada19651-37c7-4db5-b254-91939721503f"
   }
 ]
