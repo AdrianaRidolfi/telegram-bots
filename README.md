@@ -53,6 +53,14 @@ pip install -r requirements.txt
 
 Il bot è attualmente deployato gratuitamente su [Render](https://render.com/). Questo significa che, se non viene utilizzato da un po' di tempo, il server può andare in modalità "sleep" per risparmiare risorse. In tal caso, la prima risposta al comando /start può richiedere più di 50 secondi. Una volta riattivato, le risposte torneranno rapide.
 
+## Deploy come immagine Docker
+
+costruisci immagine:
+```bash 
+docker build -t quiz-bot ./quiz_bot
+```
+
+
 ## Come contribuire con nuovi test
 
 Puoi contribuire aggiungendo nuovi quiz in formato `.json`.
