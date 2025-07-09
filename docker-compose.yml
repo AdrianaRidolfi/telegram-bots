@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  quiz-bot:
+    build:
+      context: ./quiz_bot
+    container_name: quiz_bot
+    env_file: .env
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
