@@ -12,3 +12,4 @@ env/
 
 # Logs
 *.log
+firebase-credentials.json

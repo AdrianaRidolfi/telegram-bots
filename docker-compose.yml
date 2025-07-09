@@ -1,11 +1,12 @@
-version: "3.8"
+version: '3.8'
 
 services:
   quiz-bot:
-    build:
-      context: ./quiz_bot
-    container_name: quiz_bot
-    env_file: .env
-    ports:
-      - "8000:8000"
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./firebase-credentials.json:/app/firebase-credentials.json
+      - ./quiz_bot/quizzes:/app/quizzes
     restart: unless-stopped
+    container_name: quiz-bot

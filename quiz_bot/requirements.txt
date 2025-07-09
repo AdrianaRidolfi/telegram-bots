@@ -1,10 +1,7 @@
 python-telegram-bot>=20.0,<21.0
-fastapi>=0.100.0
-uvicorn[standard]>=0.20.0
-python-dotenv>=1.0.0  # opzionale ma utile per caricare variabili da .env
+python-dotenv>=1.0.0       # se usi ancora .env, tienilo
 fpdf2
 firebase
 firebase-admin
 Pillow
 pymupdf>=1.23.0
-

@@ -247,7 +247,7 @@ Mostra i bottoni con i quiz presenti per iniziare con lo studio
 - [ ] aggiorna requirements
 - [ ] crea file .env
 - [ ] aggiungi .env a gitignore
-- [ ] Rimuovi endpoint webhook: Elimina o commenta @app.post("/webhook") in bot.py
+- [x] Rimuovi endpoint webhook: Elimina o commenta @app.post("/webhook") in bot.py
 - [ ] Aggiungi avvio polling in lifespan(): await application.start_polling()
 - [ ] Costruisci immagine: docker compose up --build -d
 - [ ] Controlla log: docker compose logs -f

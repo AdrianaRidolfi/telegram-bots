@@ -2,9 +2,10 @@ import os
 import re
 import json
 import random
+import signal
 import firebase_admin
 from typing import Dict
-from fastapi import FastAPI, Request, HTTPException
+import asyncio
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     ApplicationBuilder,
@@ -12,21 +13,19 @@ from telegram.ext import (
     CallbackQueryHandler,
     ContextTypes
 )
-from contextlib import asynccontextmanager
 from pdf_generator import generate_pdf
 from get_gifs import yay, yikes
 from wrong_answers import WrongAnswersManager
 from user_stats import UserStatsManager
 from firebase_admin import credentials, firestore
 
+# per far partire il bot
+bot_running = True
+
 # Carica la variabile d'ambiente
-firebase_credentials = os.environ.get("FIREBASE_CREDENTIALS_JSON")
-
-if not firebase_credentials:
-    raise ValueError("La variabile d'ambiente FIREBASE_CREDENTIALS_JSON non è stata trovata.")
-
-# Converte la stringa JSON in dizionario Python
-cred_dict = json.loads(firebase_credentials)
+firebase_credentials_file = os.getenv('FIREBASE_CREDENTIALS_FILE', 'firebase-credentials.json')
+with open(firebase_credentials_file, 'r') as f:
+    cred_dict = json.load(f)
 
 # Crea le credenziali e inizializza Firebase
 cred = credentials.Certificate(cred_dict)
@@ -665,45 +664,61 @@ async def reset_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     stats_manager.reset_stats()
     await context.bot.send_message(chat_id=user_id, text="✅ Statistiche azzerate!")
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    await application.initialize()
-    
-    # Add command handlers
+async def setup_bot():
+    print("🔧 Configurazione bot...")
+
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("stats", stats))
     application.add_handler(CommandHandler("download", download))
     application.add_handler(CommandHandler("choose_subject", choose_subject))
-    
-    # Add the generic callback handler LAST
     application.add_handler(CallbackQueryHandler(handle_callback))
-    
-    # Add error handler
     application.add_error_handler(error_handler)
-    
-    print("✅ Applicazione Telegram inizializzata con successo.")
-    yield
+
+    print("✅ Bot configurato con successo.")
 
 
-app = FastAPI(lifespan=lifespan)
+async def run_bot():
+    global bot_running
 
-@app.get("/")
-def read_root():
-    return {"status": "ok"}
-
-
-@app.post("/webhook")
-async def telegram_webhook(request: Request):
     try:
-        data = await request.json()
-        update = Update.de_json(data, application.bot)
-        await application.process_update(update)
+        print("🚀 Avvio del bot...")
+        await setup_bot()
+
+        await application.initialize()
+        await application.start()
+
+        print("📡 Bot avviato e in ascolto (polling)...")
+        bot_running = True
+
+        await application.updater.start_polling(
+            poll_interval=1.0,
+            timeout=10,
+            bootstrap_retries=-1,
+        )
+
+        while bot_running:
+            await asyncio.sleep(1)
+
     except Exception as e:
-        print(f"Errore webhook: {e}")
-        raise HTTPException(status_code=400, detail=str(e))
-    return {"ok": True}
+        print(f"❌ Errore durante l'avvio del bot: {e}")
+        raise
+
+    finally:
+        print("🛑 Arresto del bot...")
+        if application.updater and application.updater.running:
+            await application.updater.stop()
+        await application.stop()
+        await application.shutdown()
+
+
+def signal_handler(signum, frame):
+    global bot_running
+    print(f"\n🛑 Ricevuto segnale {signum}. Arresto in corso...")
+    bot_running = False
 
 
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("bot:app", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
+    signal.signal(signal.SIGINT, signal_handler)
+    signal.signal(signal.SIGTERM, signal_handler)
+
+    asyncio.run(run_bot())
