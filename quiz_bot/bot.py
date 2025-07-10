@@ -5,6 +5,7 @@ import time
 import random
 import signal
 import firebase_admin
+import base64
 from typing import Dict
 from collections import defaultdict, deque
 import asyncio
@@ -24,13 +25,22 @@ from firebase_admin import credentials, firestore
 # per far partire il bot
 bot_running = True
 
-# Carica la variabile d'ambiente
-firebase_credentials_file = os.getenv('FIREBASE_CREDENTIALS_FILE', 'firebase-credentials.json')
-with open(firebase_credentials_file, 'r') as f:
-    cred_dict = json.load(f)
+# Prendi la variabile d'ambiente con le credenziali in base64
+firebase_base64 = os.getenv("FIREBASE_CREDENTIALS_BASE64")
+
+if not firebase_base64:
+    raise RuntimeError("Variabile d'ambiente FIREBASE_CREDENTIALS_BASE64 non trovata.")
+
+# Decodifica e salva temporaneamente il file
+firebase_json = base64.b64decode(firebase_base64).decode("utf-8")
+with open("firebase-credentials.json", "w") as f:
+    f.write(firebase_json)
+
+# Carica le credenziali da file e inizializza Firebase (solo una volta)
+cred = credentials.Certificate("firebase-credentials.json")
 
 # Crea le credenziali e inizializza Firebase
-cred = credentials.Certificate(cred_dict)
+# cred = credentials.Certificate(cred_dict)
 if not firebase_admin._apps:
     firebase_admin.initialize_app(cred)
 
