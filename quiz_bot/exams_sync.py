@@ -1,8 +1,5 @@
 # exams_sync.py
-import requests
-import os
 from firebase_admin import firestore
-from typing import Optional, Dict, List
 import logging
 
 logger = logging.getLogger(__name__)

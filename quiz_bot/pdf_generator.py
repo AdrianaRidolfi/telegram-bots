@@ -239,3 +239,63 @@ async def generate_pdf(quiz_file, bot, user_id):
         if os.path.exists(pdf_path):
             os.remove(pdf_path)
 
+def break_long_words(text, max_len=50):
+    # Inserisce uno spazio ogni max_len caratteri in parole troppo lunghe
+    return ' '.join([w if len(w) <= max_len else ' '.join([w[i:i+max_len] for i in range(0, len(w), max_len)]) for w in text.split()])
+
+def generate_errors_pdf_sync(errors, subject, user_id):
+    from fpdf import FPDF
+    import os
+
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    FONTS_FOLDER = os.path.join(BASE_DIR, "quizzes", "fonts")
+    DEJAVU_TTF = os.path.join(FONTS_FOLDER, "DejaVuSans.ttf")
+    DEJAVU_BOLD_TTF = os.path.join(FONTS_FOLDER, "DejaVuSans-Bold.ttf")
+
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.add_font('DejaVu', '', DEJAVU_TTF)
+    pdf.add_font('DejaVu', 'B', DEJAVU_BOLD_TTF)
+    pdf.set_font("DejaVu", "B", 14)
+    pdf.cell(0, 10, f"Errori quiz: {subject}", ln=True, align="C")
+    pdf.set_font("DejaVu", "", 9)
+    pdf.ln(5)
+
+    def clean_text(text):
+        if not text:
+            return ""
+        replacements = {
+            '\u201c': '"', '\u201d': '"', '\u2018': "'", '\u2019': "'",
+            '\u2013': '-', '\u2014': '-', '&amp;': '&', '&lt;': '<',
+            '&gt;': '>', '&#x27;': "'", '&#39;': "'", '&quot;': '"',
+        }
+        for orig, repl in replacements.items():
+            text = text.replace(orig, repl)
+        return text
+
+    left_margin = 12
+    cell_width = pdf.w - 2 * left_margin
+
+    for item in errors:
+        times = item['times_wrong']
+        label = "volta" if times == 1 else "volte"
+        domanda = break_long_words(clean_text(item['question']))
+        risposta = break_long_words(clean_text(item['correct_answer']))
+
+        pdf.set_x(left_margin)
+        pdf.set_font("DejaVu", "B", 9)
+        pdf.multi_cell(cell_width, 7, f"Domanda: {domanda}")
+
+        pdf.set_x(left_margin)
+        pdf.set_font("DejaVu", "", 9)
+        pdf.multi_cell(cell_width, 7, f"Risposta corretta: {risposta}")
+
+        pdf.set_x(left_margin)
+        pdf.set_font("DejaVu", "", 9)
+        pdf.multi_cell(cell_width, 7, f"Sbagliata: {times} {label}")
+
+        pdf.ln(3)
+
+    pdf_path = f"errors_{subject}_{user_id}.pdf"
+    pdf.output(pdf_path)
+    return pdf_path
