@@ -16,8 +16,6 @@ COPY quiz_bot/requirements.txt .
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy firebase credentials first
-COPY firebase-credentials.json .
 
 # Copy the entire quiz_bot directory
 COPY quiz_bot/ .
