@@ -7,38 +7,40 @@ Questo repository contiene [bot Telegram](https://core.telegram.org/bots/api) pe
 ## INDICE
 
 - [Struttura del repository](#struttura-del-repository)
-- [Dipendenze e istallazione](#dipendenze-e-installazione)
-- [Deploy su render](#deploy-su-render)
+- [Dipendenze e installazione](#dipendenze-e-installazione)
+- [Configurazione ambiente (`.env`)](#configurazione-ambiente-env)
+- [Deploy con Docker Compose](#deploy-con-docker-compose)
 - [Come contribuire con nuovi test](#come-contribuire-con-nuovi-test)
-- [Conversione e preparazione dei file json](#conversione-e-preparazione-dei-file-json)
-- [Ripasso](#ripasso-degli-errori)
+- [Conversione e preparazione dei file JSON](#conversione-e-preparazione-dei-file-json)
+- [Ripasso degli errori](#ripasso-degli-errori)
 - [Comandi del bot](#comandi-del-bot)
+- [TO DO](#to-do)
 
 ## Struttura del repository
 
 ```bash
-
 telegram-bots/
-├── quiz_bot
-│   ├── bot.py                         # codice Python del bot
-│   ├── get_gifs.py
-│   ├── pdf_generator.py               # script per generare PDF
-│   ├── Procfile                       # comando per il deploy su Render o simili
-│   ├── quizzes
-│   │   ├── add_ids.py                 # utility per aggiungere gli id a un json
-│   │   ├── comunicazione_digital.json # quiz in formato JSON
-│   │   ├── convert.py                 # utility per convertire in JSON
-│   │   ├── fonts                      # cartella per i font usati nei PDF
-│   │   │   └── [file di font vari]
-│   │   ├── images                     # cartella per le immagini usate nei quiz
-│   │   │   └── [immagini .jpg]
-│   │   └── [test .json]
-│   ├── requirements.txt               # dipendenze Python
-│   ├── test_firestore.py              # script di test per Firestore
-│   ├── trova_inedite.py               # utility per trovare domande assenti nel json
-│   ├── user_stats.py                  # gestione statistiche utente
-│   └── wrong_answers.py               # gestione risposte errate
-└── README.md                          # TU SEI QUI                     
+├── quiz_bot/
+│   ├── bot.py                   # Codice principale del bot Telegram
+│   ├── get_gifs.py              # Utility per GIF di feedback
+│   ├── pdf_generator.py         # Generazione PDF dei quiz
+│   ├── requirements.txt         # Dipendenze Python
+│   ├── user_stats.py            # Gestione statistiche utente
+│   ├── wrong_answers.py         # Gestione risposte errate
+│   ├── test_firestore.py        # Script di test Firestore
+│   ├── trova_inedite.py         # Utility per domande inedite
+│   ├── quizzes/
+│   │   ├── add_ids.py           # Utility per aggiungere ID ai quiz
+│   │   ├── convert.py           # Utility per conversione quiz in JSON
+│   │   ├── [quiz].json          # File quiz in formato JSON
+│   │   ├── images/              # Immagini associate ai quiz
+│   │   └── fonts/               # Font per PDF
+│   └── Procfile                 # (Non più usato, era per Render)
+├── firebase-credentials.json    # Credenziali Firebase (NON versionato, vedi sotto)
+├── Dockerfile                   #  per build e run container
+├── docker-compose.yml           # per gestione servizi
+├── .env.example                 # Esempio di file .env
+└── README.md                    # TU SEI QUI
 ```
 
 ## Dipendenze e installazione
@@ -46,24 +48,66 @@ telegram-bots/
 Le dipendenze Python del bot sono elencate nel file [`requirements.txt`](/quiz_bot/requirements.txt). Per installarle localmente puoi usare:
 
 ```bash
-pip install -r requirements.txt
+pip install -r quiz_bot/requirements.txt
 ```
 
-## Deploy su Render
+## Configurazione ambiente `.env`
 
-Il bot è attualmente deployato gratuitamente su [Render](https://render.com/). Questo significa che, se non viene utilizzato da un po' di tempo, il server può andare in modalità "sleep" per risparmiare risorse. In tal caso, la prima risposta al comando /start può richiedere più di 50 secondi. Una volta riattivato, le risposte torneranno rapide.
+Il bot utilizza alcune variabili d'ambiente per funzionare.  
+**Non modificare direttamente il file** [`.env.example`](./.env.example): copialo e rinominalo in `.env`, poi inserisci i tuoi valori.
 
-## Deploy come immagine Docker
+```bash
+cp .env.example .env
+```
 
-costruisci immagine:
-```bash 
-docker build -t quiz-bot ./quiz_bot
+**Esempio di `.env.example`:**
+```bash
+CLIENT_SECRET=client_secret_value_here
+FIREBASE_CREDENTIALS_FILE=firebase-credentials.json
+TELEGRAM_TOKEN=telegram_token_value_here
+```
+
+- `CLIENT_SECRET`: (opzionale) chiave segreta per eventuali integrazioni future.
+- `FIREBASE_CREDENTIALS_FILE`: nome del file con le credenziali Firebase (deve essere presente nella root del progetto o nella directory specificata).
+- `TELEGRAM_TOKEN`: il token del tuo bot Telegram (creato con @BotFather).
+
+---
+
+## Deploy con Docker Compose
+
+Il modo consigliato per eseguire il bot è tramite **Docker Compose**, che semplifica la gestione di variabili d’ambiente e volumi.
+
+### 1. Prepara i file necessari
+
+- `.env` (vedi sopra)
+- `firebase-credentials.json` (scaricalo da Firebase e posizionalo nella root del progetto)
+
+### 2. Avvia il bot
+
+```bash
+docker compose up --build
+```
+
+Questo comando:
+- Costruisce l’immagine Docker usando il [Dockerfile](./Dockerfile)
+- Avvia il servizio `quiz-bot` come definito in [docker-compose.yml](./docker-compose.yml)
+- Monta i volumi per quiz e credenziali, così puoi aggiornare quiz e credenziali senza rebuildare l’immagine
+
+### 3. Personalizza la tua immagine
+
+Se vuoi creare una tua versione personalizzata (ad esempio con quiz diversi):
+
+- Modifica o aggiungi i file nella cartella [`quiz_bot/quizzes/`](./quiz_bot/quizzes/)
+- Ricostruisci e riavvia con:
+
+```bash
+docker compose up --build
 ```
 
 
 ## Come contribuire con nuovi test
 
-Puoi contribuire aggiungendo nuovi quiz in formato `.json`.
+Puoi contribuire aggiungendo nuovi quiz in formato `.json` seguendo la struttura già presente nei file esistenti nella cartella [`quiz_bot/quizzes/`](./quiz_bot/quizzes/). 
 
 ### 1. Fai un fork del progetto
 
@@ -235,20 +279,20 @@ Mostra i bottoni con i quiz presenti per iniziare con lo studio
 
 ## TO DO
 
-- [ ] fix gestione visualizzazione errori (bisogna prima salvare quelli appena fatti e poi riprenderli)
-- [ ] fix quando vengono mostrati bottoni errori
+- [x] fix gestione visualizzazione errori (bisogna prima salvare quelli appena fatti e poi riprenderli)
+- [x] fix quando vengono mostrati bottoni errori
 - [ ] fix come riprendere descrizione esami presente
 - [ ] add metodo per inserire test
 - [ ] add metodo per fare discrimine fra solo inedite e tutte
 - [ ] ingegneria del software aggiungi inedite da examsync
-- [ ] sposta su docker
-- [ ] crea docker file
-- [ ] crea docker compose
-- [ ] aggiorna requirements
-- [ ] crea file .env
-- [ ] aggiungi .env a gitignore
+- [x] sposta su docker
+- [x] crea docker file
+- [x] crea docker compose
+- [x] aggiorna requirements
+- [x] crea file .env
+- [x] aggiungi .env a gitignore
 - [x] Rimuovi endpoint webhook: Elimina o commenta @app.post("/webhook") in bot.py
-- [ ] Aggiungi avvio polling in lifespan(): await application.start_polling()
-- [ ] Costruisci immagine: docker compose up --build -d
-- [ ] Controlla log: docker compose logs -f
-- [ ] env di esempio
+- [x] Aggiungi avvio polling in lifespan(): await application.start_polling()
+- [x] Costruisci immagine: docker compose up --build -d
+- [x] Controlla log: docker compose logs -f
+- [x] env di esempio
