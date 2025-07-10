@@ -1,10 +1,12 @@
 import os
 import re
 import json
+import time
 import random
 import signal
 import firebase_admin
 from typing import Dict
+from collections import defaultdict, deque
 import asyncio
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
@@ -13,7 +15,7 @@ from telegram.ext import (
     CallbackQueryHandler,
     ContextTypes
 )
-from pdf_generator import generate_pdf
+from pdf_generator import generate_pdf, generate_errors_pdf_sync
 from get_gifs import yay, yikes
 from wrong_answers import WrongAnswersManager
 from user_stats import UserStatsManager
@@ -34,8 +36,20 @@ if not firebase_admin._apps:
 
 # Inizializza Firestore
 db = firestore.client()
-
 user_managers: Dict[int, WrongAnswersManager] = {}
+
+# --- DDOS protection: simple rate limit per utente ---
+RATE_LIMIT = 10  # max richieste
+RATE_PERIOD = 5  # secondi
+user_requests = defaultdict(lambda: deque(maxlen=RATE_LIMIT))
+
+def is_rate_limited(user_id):
+    now = time.time()
+    dq = user_requests[user_id]
+    dq.append(now)
+    if len(dq) == RATE_LIMIT and now - dq[0] < RATE_PERIOD:
+        return True
+    return False
 
 def get_manager(user_id: int) -> WrongAnswersManager:
     # Restituisce (o crea) l'istanza condivisa di WrongAnswersManager per questo user_id
@@ -165,6 +179,12 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     await query.answer()
     user_id = query.from_user.id
+
+    # --- DDOS protection ---
+    if is_rate_limited(user_id):
+        await context.bot.send_message(chat_id=user_id, text="⏳ Stai andando troppo veloce! Riprova tra qualche secondo.")
+        return
+
     filename = query.data
     quiz_path = os.path.join(QUIZ_FOLDER, filename)
 
@@ -179,7 +199,6 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
     random.shuffle(question_order)
     question_order = question_order[:30]  # Prende solo 30 domande
 
-
     user_states[user_id] = {
         "quiz": quiz_data,
         "quiz_file": filename, 
@@ -187,16 +206,20 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "index": 0,
         "score": 0,
         "total": len(question_order),
-        "subject": filename.replace(JSON, "")
+        "subject": filename.replace(JSON, ""),
+        "start_time": time.time()  # <-- TIMER QUIZ
     }
-
 
     await send_next_question(user_id, context)
 
 
 async def error_handler(update, context):
+    err = str(context.error)
+    # Gestione specifica errore query scaduta
+    if "Query is too old and response timeout expired or query id is invalid" in err:
+        print("[INFO] Query scaduta, ignorata.")
+        return
     print(f"[ERROR] Exception while handling an update: {context.error}")
-
 
 def escape_markdown(text: str) -> str:
     if not text:
@@ -315,11 +338,43 @@ async def repeat_quiz(user_id: int, context: ContextTypes.DEFAULT_TYPE):
         "index": 0,
         "score": 0,
         "total": min(30, len(quiz_data)),
-        "subject": old_state["subject"]
+        "subject": old_state["subject"],
+        "start_time": time.time()  
     }
 
     await send_next_question(user_id, context)
 
+async def generate_errors_pdf(user_id, subject, context):
+    manager = get_manager(user_id)
+    manager.commit_changes()
+    wrong_qs = manager.get_for_subject(subject)
+    base = json.load(open(os.path.join(QUIZ_FOLDER, subject + JSON), encoding="utf-8"))
+    base_by_id = {q["id"]: q for q in base}
+    wrong_answers_detailed = []
+
+    for entry in wrong_qs:
+        q_id = entry["id"]
+        counter = entry.get("counter", 1)
+        if counter < 3:
+            continue
+        if q_id in base_by_id:
+            question = base_by_id[q_id]
+            detailed_entry = {
+                "question": question.get("question"),
+                "correct_answer": question.get("correct_answer"), 
+                "times_wrong": counter // 3
+            }
+            wrong_answers_detailed.append(detailed_entry)
+
+    if not wrong_answers_detailed:
+        await context.bot.send_message(chat_id=user_id, text="Nessun errore da esportare.")
+        return
+
+    # Genera PDF tramite pdf_generator
+    pdf_path = generate_errors_pdf_sync(wrong_answers_detailed, subject, user_id)
+    with open(pdf_path, "rb") as pdf_file:
+        await context.bot.send_document(chat_id=user_id, document=pdf_file, filename=pdf_path)
+    os.remove(pdf_path)
 
 async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
@@ -359,6 +414,24 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         subject = data.split("review_subject_")[1]
         return await start_review_quiz(update, context, subject)
     
+    if data.startswith("download_errors_pdf:"):
+        subject = data.split("download_errors_pdf:")[1]
+        await generate_errors_pdf(user_id, subject, context)
+        return
+    elif data == "no_download_errors_pdf":
+        subjects = list(manager.get_all().keys())
+
+        #se c'e' una materia sola
+        if  len(subjects) == 1:
+            return await start_review_quiz(update, context, subjects[0])
+
+        keyboard = [[
+            InlineKeyboardButton(subj.replace("_", " "), callback_data=f"review_subject_{subj}")]
+            for subj in subjects
+        ]
+        keyboard.append([InlineKeyboardButton("🔙 Indietro", callback_data="change_course")])
+        return await query.edit_message_text("Scegli la materia da ripassare:", reply_markup=InlineKeyboardMarkup(keyboard))
+
     if data == "stop":
         await stop(update, context)
 
@@ -445,7 +518,8 @@ async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, 
         "score": 0,
         "total": len(selected),
         "is_review": True,
-        "subject": subject
+        "subject": subject,
+        "start_time": time.time()
     }
 
     random.shuffle(user_states[user_id]["order"])
@@ -508,21 +582,18 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def show_mistakes(user_id, subject, context: ContextTypes.DEFAULT_TYPE):
-
     manager = get_manager(user_id)
+    manager.commit_changes()
     wrong_qs = manager.get_for_subject(subject)
     base = json.load(open(os.path.join(QUIZ_FOLDER, subject + JSON), encoding="utf-8"))
     base_by_id = {q["id"]: q for q in base}
-    # Nuovo array che conterrà le domande sbagliate con contatore e risposta giusta
     wrong_answers_detailed = []
 
     for entry in wrong_qs:
         q_id = entry["id"]
         counter = entry.get("counter", 1)
-
         if counter < 3:
             continue
-    
         if q_id in base_by_id:
             question = base_by_id[q_id]
             detailed_entry = {
@@ -546,17 +617,26 @@ async def show_mistakes(user_id, subject, context: ContextTypes.DEFAULT_TYPE):
             f"🔁 *Sbagliata*: {times} {label}\n\n"
             )
 
-    # Attenzione: Telegram ha un limite di 4096 caratteri per messaggio
     if len(full_text) > 4000:
         await context.bot.send_message(chat_id=user_id, text="⚠️ Troppe domande da mostrare in un messaggio.")
+        # Chiedi se vuole scaricare il PDF
+        keyboard = [
+            [
+                InlineKeyboardButton("✅ Sì", callback_data=f"download_errors_pdf:{subject}"),
+                InlineKeyboardButton("❌ No", callback_data="no_download_errors_pdf")
+            ]
+        ]
+        await context.bot.send_message(
+            chat_id=user_id,
+            text="Vuoi scaricare un PDF con i tuoi errori?",
+            reply_markup=InlineKeyboardMarkup(keyboard)
+        )
     else:
         reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors")]])
         await context.bot.send_message(chat_id=user_id, text=full_text, parse_mode='Markdown', reply_markup=reply_markup)
 
 
-
 async def show_final_stats(user_id, context, state, from_stop=False, from_change_course=False, is_review_mode=False):
-    
     if not state:
         return
 
@@ -567,37 +647,45 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
 
     score = state["score"]
     total = state["index"]
-    
+
     if total == 0:
         await context.bot.send_message(chat_id=user_id, text="Nessuna risposta data. Quiz interrotto.")
         return
 
-
     percentage = round((score / total) * 100, 2)
-
     stats_manager = get_stats_manager(user_id)
     stats_manager.update_stats(subject, score, total)
-
     all_stats = stats_manager.get_summary()
+
+    # --- TIMER: calcola durata quiz ---
+    duration = ""
+    if "start_time" in state:
+        elapsed = int(time.time() - state["start_time"])
+        mins = elapsed // 60
+        secs = elapsed % 60
+        duration = f"\n🕒 Tempo impiegato: {mins} min {secs} sec\n"
 
     if score == 30 and total == 30:
         await context.bot.send_animation(chat_id=user_id, animation=yay())
-
     if score < 18 and total == 30:
         await context.bot.send_animation(chat_id=user_id, animation=yikes())
-    
-    summary = f"Quiz completato! Punteggio: {score} su {total} ({percentage}%)\n\n📊 Statistiche:\n"
-    
-    
+
+    summary = f"🏁Quiz completato!\nPunteggio: {score} su {total} ({percentage}%)\n"
+    summary += duration
+    summary += "\n📊 Statistiche:\n"
+
     for sub, data in all_stats.items():
         perc = round((data['correct'] / data['total']) * 100, 2)
-        summary += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
-
+        summary += f"- {sub}: {perc}% ({data['correct']} su {data['total']})\n"
 
     keyboard = []
 
+    manager = get_manager(user_id)
+    manager.commit_changes() 
+    has_errors = manager.has_wrong_answers()
+
     if from_change_course:
-        pass  # Nessun bottone “ripeti quiz” o “scegli materia”
+        pass
     elif from_stop:
         keyboard.append([
             InlineKeyboardButton("📚 Scegli materia", callback_data="change_course")
@@ -618,10 +706,12 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
             InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
         ])
 
-    manager = get_manager(user_id)
-    if manager.has_wrong_answers():
-        keyboard.append([InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors"),
-                              InlineKeyboardButton("🔍 Mostra errori", callback_data=f"show_mistakes_{subject}")])
+    # Mostra bottoni errori SOLO se ci sono errori
+    if has_errors:
+        keyboard.append([
+            InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors"),
+            InlineKeyboardButton("🔍 Mostra errori", callback_data=f"show_mistakes_{subject}")
+        ])
 
     keyboard.append([
         InlineKeyboardButton("📥 Scarica pdf", callback_data=json.dumps({"cmd": "scarica_inedite", "file": state['quiz_file']})),
