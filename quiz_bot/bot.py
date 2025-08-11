@@ -817,8 +817,30 @@ def signal_handler(signum, frame):
     bot_running = False
 
 
+from flask import Flask
+import threading
+
+# piccolo webserver per health check
+app = Flask(__name__)
+
+@app.route("/")
+def health():
+    return "OK", 200
+
+def run_health_server():
+    # Koyeb imposta una variabile PORT, usala se presente
+    port = int(os.environ.get("PORT", 8080))
+    # disabilitiamo il reloader che crea processi figli
+    app.run(host="0.0.0.0", port=port, use_reloader=False)
+
 if __name__ == "__main__":
+    # registra i signal handler (main thread)
     signal.signal(signal.SIGINT, signal_handler)
     signal.signal(signal.SIGTERM, signal_handler)
 
+    # avvia il server HTTP in un thread daemon (non blocca il main thread)
+    flask_thread = threading.Thread(target=run_health_server, daemon=True)
+    flask_thread.start()
+
+    # avvia il bot (main thread) così i signal vengono consegnati correttamente
     asyncio.run(run_bot())
