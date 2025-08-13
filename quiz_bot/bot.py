@@ -458,27 +458,35 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     user_id = query.from_user.id
     data = query.data
-    
+
     print(f"[DEBUG] handle_callback chiamata per user {user_id}, data: {data}")
 
+    # Risposta al callback query (necessaria per evitare spinner infinito su Telegram)
     try:
         await query.answer()
         print(f"[DEBUG] Query answered per user {user_id}")
     except Exception as e:
         print(f"[DEBUG] Errore nell'answer query: {e}")
 
-    try:
-        callback = json.loads(data)
+    # Tenta di interpretare il dato come JSON, ma solo se plausibile
+    callback = None
+    if data and data.strip().startswith("{") and data.strip().endswith("}"):
+        try:
+            callback = json.loads(data)
+        except json.JSONDecodeError as e:
+            print(f"[DEBUG] Errore parsing JSON: {e}")
+
+    # Se è JSON e contiene comandi speciali, gestiscili subito
+    if isinstance(callback, dict):
         if callback.get("cmd") in ("scarica_inedite", "download_pdf"):
             print(f"[DEBUG] Comando PDF per user {user_id}")
             quiz_file = callback.get("file")
-            await generate_pdf(quiz_file, context.bot, user_id)
+            if quiz_file:
+                await generate_pdf(quiz_file, context.bot, user_id)
             return
-    except Exception as e:
-        print(f"[DEBUG] Non è JSON o errore parsing: {e}")
 
     manager = get_manager(user_id)
-    
+
     if data == "review_errors":
         print(f"[DEBUG] Review errors per user {user_id}")
         subjects = list(manager.get_all().keys())
@@ -491,51 +499,46 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
             print(f"[DEBUG] Una sola materia, avvio diretto: {subjects[0]}")
             return await start_review_quiz(update, context, subjects[0])
 
-        print(f"[DEBUG] Creazione keyboard per scelta materia")
-        keyboard = [[
-            InlineKeyboardButton(subj.replace("_", " "), callback_data=f"review_subject_{subj}")]
+        keyboard = [
+            [InlineKeyboardButton(subj.replace("_", " "), callback_data=f"review_subject_{subj}")]
             for subj in subjects
         ]
         keyboard.append([InlineKeyboardButton("🔙 Indietro", callback_data="change_course")])
-        
+
         try:
             await query.edit_message_text("Scegli la materia da ripassare:", reply_markup=InlineKeyboardMarkup(keyboard))
             print(f"[DEBUG] Messaggio scelta materia inviato per user {user_id}")
         except Exception as e:
             print(f"[ERROR] Errore nell'inviare messaggio scelta materia: {e}")
-        
         return
 
     if data.startswith("review_subject_"):
         subject = data.split("review_subject_")[1]
         print(f"[DEBUG] Review subject selezionato: {subject} per user {user_id}")
         return await start_review_quiz(update, context, subject)
-    
+
     if data.startswith("download_errors_pdf:"):
         subject = data.split("download_errors_pdf:")[1]
         await generate_errors_pdf(user_id, subject, context)
         return
     elif data == "no_download_errors_pdf":
         subjects = list(manager.get_all().keys())
-
-        #se c'e' una materia sola
-        if  len(subjects) == 1:
+        if len(subjects) == 1:
             return await start_review_quiz(update, context, subjects[0])
-
-        keyboard = [[
-            InlineKeyboardButton(subj.replace("_", " "), callback_data=f"review_subject_{subj}")]
+        keyboard = [
+            [InlineKeyboardButton(subj.replace("_", " "), callback_data=f"review_subject_{subj}")]
             for subj in subjects
         ]
         keyboard.append([InlineKeyboardButton("🔙 Indietro", callback_data="change_course")])
         return await query.edit_message_text("Scegli la materia da ripassare:", reply_markup=InlineKeyboardMarkup(keyboard))
 
     if data == "stop":
-        await stop(update, context)
+        return await stop(update, context)
 
     elif data.startswith("clear_errors:"):
         subject = data.split(":")[1]
         manager.remove_subject(subject)
-        await context.bot.send_message(
+        return await context.bot.send_message(
             chat_id=user_id,
             text=f"✅ Errori per *{subject}* cancellati!",
             parse_mode="Markdown"
@@ -546,37 +549,38 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if state:
             manager.commit_changes()
             clear_manager(user_id)
-
         await show_final_stats(user_id, context, state, from_change_course=True)
-        user_states.pop(user_id, None) 
-        await choose_subject(update, context)
+        user_states.pop(user_id, None)
+        return await choose_subject(update, context)
 
-    elif data.endswith(JSON):
-        user_states.pop(user_id, None) 
-        await select_quiz(update, context)
+    elif data.endswith(JSON): 
+        user_states.pop(user_id, None)
+        return await select_quiz(update, context)
 
     elif data == "reset_stats":
         await reset_stats(update, context)
+        return await reset_stats(update, context)
 
     elif data == "_choose_subject_":
-        await choose_subject(update, context)  
+        return await choose_subject(update, context)
 
     elif data == "repeat_quiz":
-        await repeat_quiz(user_id, context)
+        return await repeat_quiz(user_id, context)
 
     elif data.startswith("answer:"):
         selected = int(data.split(":")[1])
-        await handle_answer_callback(user_id, selected, context)
+        return await handle_answer_callback(user_id, selected, context)
 
     elif data.startswith("show_mistakes_"):
         subject = data.split("show_mistakes_")[1]
-        await show_mistakes(user_id, subject, context)
+        return await show_mistakes(user_id, subject, context)
 
     elif data == "git":
-        await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots")
+        return await context.bot.send_message(
+            chat_id=user_id,
+            text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots"
+        )
 
-
-# Sostituisci queste funzioni nel tuo bot.py per avere debug dettagliato:
 
 async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, subject: str):
     user_id = update.effective_user.id
