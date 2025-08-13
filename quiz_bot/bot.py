@@ -21,6 +21,7 @@ from get_gifs import yay, yikes
 from wrong_answers import WrongAnswersManager
 from user_stats import UserStatsManager
 from firebase_admin import credentials, firestore
+from flask import Flask, request, jsonify
 
 # per far partire il bot
 bot_running = True
@@ -85,6 +86,12 @@ TOKEN = os.getenv("TELEGRAM_TOKEN")
 if not TOKEN:
     raise RuntimeError("Variabile d'ambiente TELEGRAM_TOKEN non trovata.")
 
+# URL del webhook che fornirà Koyeb (opzionale per test locali)
+WEBHOOK_URL = os.getenv("WEBHOOK_URL")
+USE_WEBHOOK = WEBHOOK_URL is not None
+
+print(f"🔧 Modalità: {'Webhook' if USE_WEBHOOK else 'Polling (locale)'}")
+
 application = ApplicationBuilder().token(TOKEN).build()
 user_states = {}
 
@@ -98,8 +105,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
 
     msg = (
         "*👋 Ciao!*\n"
-        "Questo bot ti aiuta a esercitarti con domande d’esame.\n"
-        "Accanto a ogni materia trovi la *data dell’ultimo aggiornamento del quiz*.\n"
+        "Questo bot ti aiuta a esercitarti con domande d'esame.\n"
+        "Accanto a ogni materia trovi la *data dell'ultimo aggiornamento del quiz*.\n"
         "Vuoi contribuire? Clicca su GitHub e segui la guida!\n\n"
 
         "*📚 Quiz disponibili:*\n"
@@ -311,7 +318,7 @@ async def send_next_question(user_id, context):
                     )
                 return 
             except Exception as e:
-                await context.bot.send_message(chat_id=user_id, text=f"❗ Errore nell'invio dell'immagine: {e}")
+                await context.bot.send_message(chat_id=user_id, text=f"⚠ Errore nell'invio dell'immagine: {e}")
 
     # Se non c'è immagine o qualcosa va storto, mandiamo solo il testo
     await context.bot.send_message(
@@ -624,7 +631,7 @@ async def show_mistakes(user_id, subject, context: ContextTypes.DEFAULT_TYPE):
         full_text += (
             f"❓ *Domanda*: {item['question']}\n"
             f"✅ *Risposta corretta*: {item['correct_answer']}\n"
-            f"🔁 *Sbagliata*: {times} {label}\n\n"
+            f"📊 *Sbagliata*: {times} {label}\n\n"
             )
 
     if len(full_text) > 4000:
@@ -680,7 +687,7 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
     if score < 18 and total == 30:
         await context.bot.send_animation(chat_id=user_id, animation=yikes())
 
-    summary = f"🏁Quiz completato!\nPunteggio: {score} su {total} ({percentage}%)\n"
+    summary = f"🎯Quiz completato!\nPunteggio: {score} su {total} ({percentage}%)\n"
     summary += duration
     summary += "\n📊 Statistiche:\n"
 
@@ -720,7 +727,7 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
     if has_errors:
         keyboard.append([
             InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors"),
-            InlineKeyboardButton("🔍 Mostra errori", callback_data=f"show_mistakes_{subject}")
+            InlineKeyboardButton("📝 Mostra errori", callback_data=f"show_mistakes_{subject}")
         ])
 
     keyboard.append([
@@ -777,36 +784,70 @@ async def setup_bot():
     print("✅ Bot configurato con successo.")
 
 
-async def run_bot():
-    global bot_running
+# Flask app per webhook
+app = Flask(__name__)
 
+@app.route("/", methods=['GET'])
+def health():
+    return "Bot is running!", 200
+
+@app.route(f"/{TOKEN}", methods=['POST'])
+async def webhook():
+    """Endpoint webhook per ricevere gli aggiornamenti da Telegram"""
     try:
-        print("🚀 Avvio del bot...")
-        await setup_bot()
+        json_data = request.get_json()
+        if json_data:
+            update = Update.de_json(json_data, application.bot)
+            # Processa l'update in modo asincrono
+            asyncio.create_task(application.process_update(update))
+        return jsonify({"status": "ok"}), 200
+    except Exception as e:
+        print(f"Errore nel webhook: {e}")
+        return jsonify({"error": str(e)}), 500
 
+async def set_webhook():
+    """Configura il webhook su Telegram"""
+    webhook_url = f"{WEBHOOK_URL}/{TOKEN}"
+    try:
+        await application.bot.set_webhook(url=webhook_url)
+        print(f"✅ Webhook configurato: {webhook_url}")
+        return True
+    except Exception as e:
+        print(f"❌ Errore nella configurazione del webhook: {e}")
+        return False
+
+async def run_bot():
+    """Inizializza e avvia il bot con webhook"""
+    try:
+        print("🚀 Avvio del bot con webhook...")
+        await setup_bot()
+        
+        # Inizializza l'applicazione
         await application.initialize()
         await application.start()
-
-        print("📡 Bot avviato e in ascolto (polling)...")
-        bot_running = True
-
-        await application.updater.start_polling(
-            poll_interval=1.0,
-            timeout=10,
-            bootstrap_retries=-1,
-        )
-
+        
+        # Configura il webhook
+        webhook_set = await set_webhook()
+        if not webhook_set:
+            raise Exception("Impossibile configurare il webhook")
+            
+        print("📡 Bot avviato con webhook configurato!")
+        
+        # Mantieni il bot attivo
         while bot_running:
             await asyncio.sleep(1)
 
     except Exception as e:
         print(f"❌ Errore durante l'avvio del bot: {e}")
         raise
-
     finally:
         print("🛑 Arresto del bot...")
-        if application.updater and application.updater.running:
-            await application.updater.stop()
+        # Rimuovi il webhook
+        try:
+            await application.bot.delete_webhook()
+            print("🗑️ Webhook rimosso")
+        except:
+            pass
         await application.stop()
         await application.shutdown()
 
@@ -817,30 +858,21 @@ def signal_handler(signum, frame):
     bot_running = False
 
 
-from flask import Flask
-import threading
-
-# piccolo webserver per health check
-app = Flask(__name__)
-
-@app.route("/")
-def health():
-    return "OK", 200
-
-def run_health_server():
-    # Koyeb imposta una variabile PORT, usala se presente
+def run_flask_app():
+    """Avvia il server Flask"""
     port = int(os.environ.get("PORT", 8080))
-    # disabilitiamo il reloader che crea processi figli
-    app.run(host="0.0.0.0", port=port, use_reloader=False)
+    print(f"🌐 Avvio server Flask sulla porta {port}")
+    app.run(host="0.0.0.0", port=port, use_reloader=False, debug=False)
 
 if __name__ == "__main__":
-    # registra i signal handler (main thread)
+    # Registra i signal handler
     signal.signal(signal.SIGINT, signal_handler)
     signal.signal(signal.SIGTERM, signal_handler)
 
-    # avvia il server HTTP in un thread daemon (non blocca il main thread)
-    flask_thread = threading.Thread(target=run_health_server, daemon=True)
+    # Avvia il server Flask in un thread separato
+    import threading
+    flask_thread = threading.Thread(target=run_flask_app, daemon=True)
     flask_thread.start()
-
-    # avvia il bot (main thread) così i signal vengono consegnati correttamente
+    
+    # Avvia il bot nel thread principale
     asyncio.run(run_bot())
