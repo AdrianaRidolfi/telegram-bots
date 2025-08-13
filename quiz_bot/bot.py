@@ -837,14 +837,17 @@ def signal_handler(signum, frame):
 
 
 async def main():
-    await setup_bot()  # registra handler
+    # setup bot handlers
+    await application.initialize()
+    await application.start()
     await application.run_webhook(
         listen="0.0.0.0",
-        port=8000,
+        port=int(os.environ.get("PORT", 8080)),
         url_path=TOKEN,
         webhook_url=f"{WEBHOOK_URL}/{TOKEN}"
     )
+    await application.idle()  # attende fino a shutdown
 
 if __name__ == "__main__":
-    import asyncio
-    asyncio.run(main())
+    asyncio.get_event_loop().run_until_complete(main())
+
