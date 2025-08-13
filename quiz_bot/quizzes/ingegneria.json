@@ -1629,7 +1629,6 @@
     "id": "90a8f5ce-0141-49b2-aeda-99e0471b3dff"
   }
 ,
-  [
   {
     "question": "Che cos'è l'incapsulamento in Java?",
     "answers": [
@@ -1696,7 +1695,7 @@
     "correct_answer": "Tutte le risposte sopra.",
     "id": "25edf946-a205-4ed9-af1e-2dab8eeb08bc"
   },
- [
+ 
   {
     "question": "Qual è lo scopo principale del pattern Iterator?",
     "answers": [
@@ -1807,7 +1806,7 @@
     "correct_answer": "possono comparire usando le annotazioni",
     "id": "419565a8-37fd-4166-9354-029a3953fdd9"
   }
-,[
+,
   {
     "question": "Qual è lo scopo della parola chiave \"final\" in Java?",
     "answers": [
@@ -1873,7 +1872,7 @@
     ],
     "correct_answer": "l'aggregazione non implica che il contenuto appartenga a un solo contenitore, mentre la composizione sì",
     "id": "6ef5fbe5-3d92-4817-93c9-abddc3065056"
-  },[
+  },
   {
     "question": "In Java, quando passiamo una reference di un oggetto in input ad un metodo, siamo sicuri che terminata l'esecuzione del metodo, il reference",
     "answers": [
@@ -1919,7 +1918,7 @@
     "id": "cc81e29f-daaa-407a-bb70-4b25ffcfdc69"
   }
 ,
- [
+ 
   {
     "question": "Una fork introduce un flusso di esecuzione alternativo:",
     "answers": [
@@ -2008,7 +2007,7 @@
     "correct_answer": "Il percorso più lungo nel grafo dei task",
     "id": "45a504a0-cc08-4d3c-93a9-d0ff6d88610a"
   }
-,[
+,
   {
     "question": "In Java una volta scritti i file con la dichiarazione delle classi di oggetti",
     "answers": [
@@ -2064,7 +2063,7 @@
     "correct_answer": "12",
     "id": "42c8fd3a-8432-4792-8eb3-b8f09dbaaf64"
   }
-,[
+,
   {
     "question": "Una classe astratta si definisce:",
     "answers": [
@@ -2142,7 +2141,7 @@
     "correct_answer": "7",
     "id": "389f5829-f9ae-4d57-a95d-66f7254c3080"
   }
-,[
+,
   {
     "question": "Nel periodo dal 1990 ad oggi prendono piede le nuove metodologie di sviluppo del software definite:",
     "answers": [
