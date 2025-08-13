@@ -799,7 +799,8 @@ async def webhook():
         if json_data:
             update = Update.de_json(json_data, application.bot)
             # Processa l'update in modo asincrono
-            asyncio.create_task(application.process_update(update))
+            asyncio.run_coroutine_threadsafe(application.process_update(update), bot_loop)        
+            
         return jsonify({"status": "ok"}), 200
     except Exception as e:
         print(f"Errore nel webhook: {e}")
@@ -874,5 +875,6 @@ if __name__ == "__main__":
     flask_thread = threading.Thread(target=run_flask_app, daemon=True)
     flask_thread.start()
     
+    bot_loop = asyncio.get_event_loop()
     # Avvia il bot nel thread principale
     asyncio.run(run_bot())
