@@ -783,53 +783,6 @@ async def setup_bot():
     print("✅ Bot configurato con successo.")
 
 
-async def set_webhook():
-    """Configura il webhook su Telegram"""
-    webhook_url = f"{WEBHOOK_URL}/{TOKEN}"
-    try:
-        await application.bot.set_webhook(url=webhook_url)
-        print(f"✅ Webhook configurato: {webhook_url}")
-        return True
-    except Exception as e:
-        print(f"❌ Errore nella configurazione del webhook: {e}")
-        return False
-
-async def run_bot():
-    """Inizializza e avvia il bot con webhook"""
-    try:
-        print("🚀 Avvio del bot con webhook...")
-        await setup_bot()
-        
-        # Inizializza l'applicazione
-        await application.initialize()
-        await application.start()
-        
-        # Configura il webhook
-        webhook_set = await set_webhook()
-        if not webhook_set:
-            raise Exception("Impossibile configurare il webhook")
-            
-        print("📡 Bot avviato con webhook configurato!")
-        
-        # Mantieni il bot attivo
-        while bot_running:
-            await asyncio.sleep(1)
-
-    except Exception as e:
-        print(f"❌ Errore durante l'avvio del bot: {e}")
-        raise
-    finally:
-        print("🛑 Arresto del bot...")
-        # Rimuovi il webhook
-        try:
-            await application.bot.delete_webhook()
-            print("🗑️ Webhook rimosso")
-        except:
-            pass
-        await application.stop()
-        await application.shutdown()
-
-
 def signal_handler(signum, frame):
     global bot_running
     print(f"\n🛑 Ricevuto segnale {signum}. Arresto in corso...")
@@ -837,17 +790,62 @@ def signal_handler(signum, frame):
 
 
 async def main():
-    # setup bot handlers
-    await application.initialize()
-    await application.start()
-    await application.run_webhook(
-        listen="0.0.0.0",
-        port=int(os.environ.get("PORT", 8080)),
-        url_path=TOKEN,
-        webhook_url=f"{WEBHOOK_URL}/{TOKEN}"
-    )
-    await application.idle()  # attende fino a shutdown
+    """Funzione principale per avviare il bot"""
+    try:
+        print("🚀 Avvio del bot...")
+        
+        # Setup dei handler
+        await setup_bot()
+        
+        if USE_WEBHOOK:
+            print("🔗 Modalità webhook attivata")
+            
+            # Inizializza l'applicazione
+            await application.initialize()
+            await application.start()
+            
+            # Configura il webhook
+            webhook_url = f"{WEBHOOK_URL}/{TOKEN}"
+            await application.bot.set_webhook(url=webhook_url)
+            print(f"✅ Webhook configurato: {webhook_url}")
+            
+            # Avvia il server webhook
+            await application.run_webhook(
+                listen="0.0.0.0",
+                port=int(os.environ.get("PORT", 8080)),
+                url_path=TOKEN,
+                webhook_url=webhook_url
+            )
+        else:
+            print("🔄 Modalità polling attivata")
+            # Per testing locale
+            await application.run_polling()
+            
+    except Exception as e:
+        print(f"❌ Errore durante l'avvio del bot: {e}")
+        raise
+    finally:
+        print("🛑 Arresto del bot...")
+        # Cleanup
+        try:
+            if USE_WEBHOOK:
+                await application.bot.delete_webhook()
+                print("🗑️ Webhook rimosso")
+        except Exception as e:
+            print(f"⚠️ Errore durante la rimozione del webhook: {e}")
+
 
 if __name__ == "__main__":
-    asyncio.get_event_loop().run_until_complete(main())
-
+    # Registra il signal handler per shutdown graceful
+    signal.signal(signal.SIGTERM, signal_handler)
+    signal.signal(signal.SIGINT, signal_handler)
+    
+    try:
+        # Usa asyncio.run() invece di get_event_loop().run_until_complete()
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print("\n🛑 Bot interrotto dall'utente")
+    except Exception as e:
+        print(f"❌ Errore critico: {e}")
+    finally:
+        print("👋 Bot terminato")
