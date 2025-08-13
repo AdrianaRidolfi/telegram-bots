@@ -21,6 +21,8 @@ from get_gifs import yay, yikes
 from wrong_answers import WrongAnswersManager
 from user_stats import UserStatsManager
 from firebase_admin import credentials, firestore
+from aiohttp import web, web_runner
+import logging
 
 # per far partire il bot
 bot_running = True
@@ -770,6 +772,7 @@ async def reset_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     stats_manager.reset_stats()
     await context.bot.send_message(chat_id=user_id, text="✅ Statistiche azzerate!")
 
+
 async def setup_bot():
     print("🔧 Configurazione bot...")
 
@@ -789,37 +792,89 @@ def signal_handler(signum, frame):
     bot_running = False
 
 
+async def webhook_handler(request):
+    """Gestisce le richieste webhook da Telegram"""
+    try:
+        # Ottieni i dati JSON dalla richiesta
+        data = await request.json()
+        
+        # Crea un oggetto Update da Telegram
+        update = Update.de_json(data, application.bot)
+        
+        # Processa l'update
+        await application.process_update(update)
+        
+        return web.Response(status=200)
+    except Exception as e:
+        print(f"❌ Errore nel processare webhook: {e}")
+        return web.Response(status=500)
+
+
+async def health_check(request):
+    """Health check endpoint per Koyeb"""
+    return web.Response(text="OK", status=200)
+
+
+async def setup_webhook_server():
+    """Configura il server web per i webhook"""
+    app = web.Application()
+    
+    # Endpoint per i webhook di Telegram
+    app.router.add_post(f"/{TOKEN}", webhook_handler)
+    
+    # Health check endpoint
+    app.router.add_get("/health", health_check)
+    app.router.add_get("/", health_check)  # Root endpoint
+    
+    return app
+
+
 async def main():
     """Funzione principale per avviare il bot"""
+    global bot_running
+    
     try:
         print("🚀 Avvio del bot...")
         
         # Setup dei handler
         await setup_bot()
         
+        # Inizializza l'applicazione Telegram
+        await application.initialize()
+        await application.start()
+        
         if USE_WEBHOOK:
             print("🔗 Modalità webhook attivata")
             
-            # Inizializza l'applicazione
-            await application.initialize()
-            await application.start()
-            
-            # Configura il webhook
+            # Configura il webhook su Telegram
             webhook_url = f"{WEBHOOK_URL}/{TOKEN}"
             await application.bot.set_webhook(url=webhook_url)
             print(f"✅ Webhook configurato: {webhook_url}")
             
-            # Avvia il server webhook
-            await application.run_webhook(
-                listen="0.0.0.0",
-                port=int(os.environ.get("PORT", 8080)),
-                url_path=TOKEN,
-                webhook_url=webhook_url
-            )
+            # Setup del server web
+            app = await setup_webhook_server()
+            
+            # Avvia il server
+            runner = web_runner.AppRunner(app)
+            await runner.setup()
+            
+            port = int(os.environ.get("PORT", 8080))
+            site = web_runner.TCPSite(runner, "0.0.0.0", port)
+            await site.start()
+            
+            print(f"🌐 Server webhook avviato sulla porta {port}")
+            
+            # Mantieni il bot attivo
+            while bot_running:
+                await asyncio.sleep(1)
+            
+            # Cleanup del server
+            await runner.cleanup()
+            
         else:
             print("🔄 Modalità polling attivata")
             # Per testing locale
-            await application.run_polling()
+            await application.run_polling(stop_signals=None)
             
     except Exception as e:
         print(f"❌ Errore durante l'avvio del bot: {e}")
@@ -833,6 +888,12 @@ async def main():
                 print("🗑️ Webhook rimosso")
         except Exception as e:
             print(f"⚠️ Errore durante la rimozione del webhook: {e}")
+        
+        try:
+            await application.stop()
+            await application.shutdown()
+        except Exception as e:
+            print(f"⚠️ Errore durante lo shutdown: {e}")
 
 
 if __name__ == "__main__":
@@ -841,7 +902,7 @@ if __name__ == "__main__":
     signal.signal(signal.SIGINT, signal_handler)
     
     try:
-        # Usa asyncio.run() invece di get_event_loop().run_until_complete()
+        # Usa asyncio.run() per avviare l'applicazione
         asyncio.run(main())
     except KeyboardInterrupt:
         print("\n🛑 Bot interrotto dall'utente")
