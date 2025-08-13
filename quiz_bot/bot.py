@@ -21,7 +21,6 @@ from get_gifs import yay, yikes
 from wrong_answers import WrongAnswersManager
 from user_stats import UserStatsManager
 from firebase_admin import credentials, firestore
-from flask import Flask, request, jsonify
 
 # per far partire il bot
 bot_running = True
@@ -784,28 +783,6 @@ async def setup_bot():
     print("✅ Bot configurato con successo.")
 
 
-# Flask app per webhook
-app = Flask(__name__)
-
-@app.route("/", methods=['GET'])
-def health():
-    return "Bot is running!", 200
-
-@app.route(f"/{TOKEN}", methods=['POST'])
-async def webhook():
-    """Endpoint webhook per ricevere gli aggiornamenti da Telegram"""
-    try:
-        json_data = request.get_json()
-        if json_data:
-            update = Update.de_json(json_data, application.bot)
-            # Processa l'update in modo asincrono
-            asyncio.run_coroutine_threadsafe(application.process_update(update), bot_loop)        
-            
-        return jsonify({"status": "ok"}), 200
-    except Exception as e:
-        print(f"Errore nel webhook: {e}")
-        return jsonify({"error": str(e)}), 500
-
 async def set_webhook():
     """Configura il webhook su Telegram"""
     webhook_url = f"{WEBHOOK_URL}/{TOKEN}"
@@ -859,22 +836,15 @@ def signal_handler(signum, frame):
     bot_running = False
 
 
-def run_flask_app():
-    """Avvia il server Flask"""
-    port = int(os.environ.get("PORT", 8080))
-    print(f"🌐 Avvio server Flask sulla porta {port}")
-    app.run(host="0.0.0.0", port=port, use_reloader=False, debug=False)
+async def main():
+    await setup_bot()  # registra handler
+    await application.run_webhook(
+        listen="0.0.0.0",
+        port=8000,
+        url_path=TOKEN,
+        webhook_url=f"{WEBHOOK_URL}/{TOKEN}"
+    )
 
 if __name__ == "__main__":
-    # Registra i signal handler
-    signal.signal(signal.SIGINT, signal_handler)
-    signal.signal(signal.SIGTERM, signal_handler)
-
-    # Avvia il server Flask in un thread separato
-    import threading
-    flask_thread = threading.Thread(target=run_flask_app, daemon=True)
-    flask_thread.start()
-    
-    bot_loop = asyncio.get_event_loop()
-    # Avvia il bot nel thread principale
-    asyncio.run(run_bot())
+    import asyncio
+    asyncio.run(main())

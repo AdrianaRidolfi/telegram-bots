@@ -5,5 +5,4 @@ firebase
 firebase-admin
 Pillow
 pymupdf>=1.23.0
-Flask[async]>=2.3
 
