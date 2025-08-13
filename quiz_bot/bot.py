@@ -558,7 +558,6 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return await select_quiz(update, context)
 
     elif data == "reset_stats":
-        await reset_stats(update, context)
         return await reset_stats(update, context)
 
     elif data == "_choose_subject_":
