@@ -24,6 +24,13 @@ from firebase_admin import credentials, firestore
 from aiohttp import web, web_runner
 import logging
 
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
 # per far partire il bot
 bot_running = True
 
@@ -91,7 +98,10 @@ if not TOKEN:
 WEBHOOK_URL = os.getenv("WEBHOOK_URL")
 USE_WEBHOOK = WEBHOOK_URL is not None
 
+PORT = int(os.environ.get("PORT", 8000))
+
 print(f"🔧 Modalità: {'Webhook' if USE_WEBHOOK else 'Polling (locale)'}")
+print(f"🌐 Server port: {PORT}")
 
 application = ApplicationBuilder().token(TOKEN).build()
 user_states = {}
@@ -941,179 +951,240 @@ async def setup_bot():
     print("✅ Bot configurato con successo.")
 
 
-def signal_handler(signum, frame):
-    global bot_running
-    print(f"\n🛑 Ricevuto segnale {signum}. Arresto in corso...")
-    bot_running = False
-
-
 async def webhook_handler(request):
-    """Gestisce le richieste webhook da Telegram con debug dettagliato"""
+    """FIXED: Improved webhook handler with better error handling and timeout management"""
     start_time = time.time()
     user_id = "N/A"
     
     try:
-        print(f"[DEBUG] Webhook ricevuto alle {start_time}")
+        logger.info(f"Webhook received at {start_time}")
         
-        # Ottieni i dati JSON dalla richiesta
-        data = await request.json()
-        print(f"[DEBUG] Dati JSON ottenuti: {len(str(data))} caratteri")
+        # Get JSON data with timeout
+        try:
+            data = await asyncio.wait_for(request.json(), timeout=5.0)
+            logger.debug(f"JSON data received: {len(str(data))} characters")
+        except asyncio.TimeoutError:
+            logger.error("Timeout reading request JSON")
+            return web.Response(status=400, text="Request timeout")
+        except Exception as e:
+            logger.error(f"Error reading JSON: {e}")
+            return web.Response(status=400, text="Invalid JSON")
         
-        # Crea un oggetto Update da Telegram
-        update = Update.de_json(data, application.bot)
+        # Create Telegram Update object
+        try:
+            update = Update.de_json(data, application.bot)
+            if not update:
+                logger.warning("Invalid update received")
+                return web.Response(status=200, text="OK")  # Return OK to avoid retries
+        except Exception as e:
+            logger.error(f"Error creating Update object: {e}")
+            return web.Response(status=400, text="Invalid update format")
         
         if update.effective_user:
             user_id = update.effective_user.id
-            print(f"[DEBUG] Update per user {user_id}")
-        else:
-            print(f"[DEBUG] Update senza user ID")
+            logger.info(f"Processing update for user {user_id}")
         
-        # Processa l'update con timeout per evitare blocchi
-        print(f"[DEBUG] Inizio processing update per user {user_id}")
-        
+        # FIXED: Reduced timeout and better error handling
         try:
-            await asyncio.wait_for(application.process_update(update), timeout=30.0)
+            # Process update with shorter timeout to avoid Telegram webhook timeouts
+            await asyncio.wait_for(application.process_update(update), timeout=15.0)
             elapsed = time.time() - start_time
-            print(f"[DEBUG] Update processato con successo per user {user_id} in {elapsed:.2f}s")
+            logger.info(f"Update processed successfully for user {user_id} in {elapsed:.2f}s")
             
         except asyncio.TimeoutError:
             elapsed = time.time() - start_time
-            print(f"[ERROR] Timeout nel processare update per user {user_id} dopo {elapsed:.2f}s")
-            # Prova a inviare un messaggio di errore all'utente se possibile
+            logger.error(f"Timeout processing update for user {user_id} after {elapsed:.2f}s")
+            
+            # Clean up user state on timeout
             if update.effective_user:
-                try:
-                    await application.bot.send_message(
-                        chat_id=update.effective_user.id,
-                        text="⚠️ Operazione in timeout. Riprova con /start"
-                    )
-                except Exception as send_err:
-                    print(f"[ERROR] Errore nell'invio messaggio timeout: {send_err}")
+                user_states.pop(update.effective_user.id, None)
+                
+            # Return OK to avoid retries from Telegram
+            return web.Response(status=200, text="Timeout - cleaned up")
                     
         except Exception as e:
             elapsed = time.time() - start_time
-            print(f"[ERROR] Errore nel processare update per user {user_id} dopo {elapsed:.2f}s: {e}")
-            import traceback
-            traceback.print_exc()
+            logger.error(f"Error processing update for user {user_id} after {elapsed:.2f}s: {e}")
             
-            # Prova a inviare un messaggio di errore all'utente se possibile
+            # Clean up user state on error
             if update.effective_user:
-                try:
-                    # Pulisci lo stato dell'utente
-                    user_states.pop(update.effective_user.id, None)
-                    
-                    await application.bot.send_message(
-                        chat_id=update.effective_user.id,
-                        text="⚠️ Si è verificato un errore interno. Riprova con /start"
-                    )
-                except Exception as send_err:
-                    print(f"[ERROR] Errore nell'invio messaggio errore: {send_err}")
+                user_states.pop(update.effective_user.id, None)
+            
+            # Return OK to avoid infinite retries from Telegram
+            return web.Response(status=200, text="Error handled")
         
-        return web.Response(status=200)
+        return web.Response(status=200, text="OK")
         
     except Exception as e:
         elapsed = time.time() - start_time
-        print(f"[ERROR] Errore critico nel webhook handler per user {user_id} dopo {elapsed:.2f}s: {e}")
-        import traceback
-        traceback.print_exc()
-        return web.Response(status=500)
+        logger.error(f"Critical error in webhook handler for user {user_id} after {elapsed:.2f}s: {e}")
+        return web.Response(status=500, text="Internal error")
+
 
 async def health_check(request):
-    """Health check endpoint per Koyeb"""
-    return web.Response(text="OK", status=200)
+    """FIXED: Enhanced health check endpoint"""
+    try:
+        # Simple health check - just return OK
+        return web.Response(text="OK", status=200, headers={
+            'Content-Type': 'text/plain',
+            'Cache-Control': 'no-cache'
+        })
+    except Exception as e:
+        logger.error(f"Health check error: {e}")
+        return web.Response(text="Health check failed", status=500)
 
 
 async def setup_webhook_server():
-    """Configura il server web per i webhook"""
+    """FIXED: Enhanced webhook server setup"""
     app = web.Application()
     
-    # Endpoint per i webhook di Telegram
+    # FIXED: Add better middleware for request handling
+    async def add_cors_header(request, handler):
+        try:
+            response = await handler(request)
+            response.headers['Access-Control-Allow-Origin'] = '*'
+            return response
+        except Exception as e:
+            logger.error(f"Middleware error: {e}")
+            return web.Response(status=500, text="Server error")
+    
+    app.middlewares.append(add_cors_header)
+    
+    # Telegram webhook endpoint
     app.router.add_post(f"/{TOKEN}", webhook_handler)
     
-    # Health check endpoint
+    # Multiple health check endpoints for better compatibility
     app.router.add_get("/health", health_check)
-    app.router.add_get("/", health_check)  # Root endpoint
+    app.router.add_get("/", health_check)
+    app.router.add_get("/ping", health_check)
+    app.router.add_get("/status", health_check)
+    
+    # Add a simple info endpoint
+    async def info_handler(request):
+        return web.Response(
+            text=json.dumps({
+                "status": "running",
+                "service": "telegram-bot",
+                "timestamp": int(time.time())
+            }),
+            status=200,
+            content_type="application/json"
+        )
+    
+    app.router.add_get("/info", info_handler)
     
     return app
 
-
 async def main():
-    """Funzione principale per avviare il bot"""
+    """FIXED: Enhanced main function with better error handling"""
     global bot_running
     
     try:
-        print("🚀 Avvio del bot...")
+        logger.info("🚀 Starting bot...")
         
-        # Setup dei handler
+        # Setup handlers
         await setup_bot()
         
-        # Inizializza l'applicazione Telegram
+        # Initialize Telegram application
         await application.initialize()
         await application.start()
         
         if USE_WEBHOOK:
-            print("🔗 Modalità webhook attivata")
+            logger.info("🔗 Webhook mode activated")
             
-            # Configura il webhook su Telegram
-            webhook_url = f"{WEBHOOK_URL}/{TOKEN}"
-            await application.bot.set_webhook(url=webhook_url)
-            print(f"✅ Webhook configurato: {webhook_url}")
+            # FIXED: Better webhook URL construction
+            if not WEBHOOK_URL.startswith('http'):
+                webhook_url = f"https://{WEBHOOK_URL}/{TOKEN}"
+            else:
+                webhook_url = f"{WEBHOOK_URL}/{TOKEN}"
             
-            # Setup del server web
+            logger.info(f"Setting webhook URL: {webhook_url}")
+            
+            # Set webhook with better error handling
+            try:
+                await application.bot.set_webhook(
+                    url=webhook_url,
+                    drop_pending_updates=True,  # Clear pending updates on restart
+                    max_connections=40,  # Limit concurrent connections
+                    secret_token=None  # You can add a secret token for security
+                )
+                logger.info(f"✅ Webhook configured: {webhook_url}")
+            except Exception as e:
+                logger.error(f"Failed to set webhook: {e}")
+                raise
+            
+            # Setup web server
             app = await setup_webhook_server()
             
-            # Avvia il server
+            # Create and start server
             runner = web_runner.AppRunner(app)
             await runner.setup()
             
-            port = int(os.environ.get("PORT", 8080))
-            site = web_runner.TCPSite(runner, "0.0.0.0", port)
+            # FIXED: Listen on all interfaces (0.0.0.0) and use PORT from environment
+            site = web_runner.TCPSite(runner, "0.0.0.0", PORT)
             await site.start()
             
-            print(f"🌐 Server webhook avviato sulla porta {port}")
+            logger.info(f"🌐 Webhook server started on port {PORT}")
             
-            # Mantieni il bot attivo
-            while bot_running:
-                await asyncio.sleep(1)
-            
-            # Cleanup del server
-            await runner.cleanup()
+            # Keep bot running
+            try:
+                while bot_running:
+                    await asyncio.sleep(1)
+            except KeyboardInterrupt:
+                logger.info("Received keyboard interrupt")
+            finally:
+                # Cleanup
+                logger.info("Stopping server...")
+                await runner.cleanup()
             
         else:
-            print("🔄 Modalità polling attivata")
-            # Per testing locale
-            await application.run_polling(stop_signals=None)
+            logger.info("📡 Polling mode activated")
+            # Remove webhook if set
+            await application.bot.delete_webhook(drop_pending_updates=True)
+            
+            # Run polling for local development
+            await application.run_polling(
+                stop_signals=None,
+                drop_pending_updates=True
+            )
             
     except Exception as e:
-        print(f"❌ Errore durante l'avvio del bot: {e}")
+        logger.error(f"❌ Error starting bot: {e}")
         raise
     finally:
-        print("🛑 Arresto del bot...")
+        logger.info("🛑 Bot shutdown initiated...")
         # Cleanup
         try:
-            if USE_WEBHOOK:
-                await application.bot.delete_webhook()
-                print("🗑️ Webhook rimosso")
+            if USE_WEBHOOK and application.bot:
+                await application.bot.delete_webhook(drop_pending_updates=True)
+                logger.info("🗑️ Webhook removed")
         except Exception as e:
-            print(f"⚠️ Errore durante la rimozione del webhook: {e}")
+            logger.warning(f"⚠️ Error removing webhook: {e}")
         
         try:
             await application.stop()
             await application.shutdown()
+            logger.info("✅ Bot shutdown completed")
         except Exception as e:
-            print(f"⚠️ Errore durante lo shutdown: {e}")
+            logger.warning(f"⚠️ Error during shutdown: {e}")
+
+def signal_handler(signum, frame):
+    global bot_running
+    logger.info(f"🛑 Received signal {signum}. Shutting down...")
+    bot_running = False
 
 
 if __name__ == "__main__":
-    # Registra il signal handler per shutdown graceful
+    # Register signal handlers for graceful shutdown
     signal.signal(signal.SIGTERM, signal_handler)
     signal.signal(signal.SIGINT, signal_handler)
     
     try:
-        # Usa asyncio.run() per avviare l'applicazione
+        # Start the application
         asyncio.run(main())
     except KeyboardInterrupt:
-        print("\n🛑 Bot interrotto dall'utente")
+        logger.info("\n🛑 Bot interrupted by user")
     except Exception as e:
-        print(f"❌ Errore critico: {e}")
+        logger.error(f"❌ Critical error: {e}")
     finally:
-        print("👋 Bot terminato")
+        logger.info("👋 Bot terminated")
