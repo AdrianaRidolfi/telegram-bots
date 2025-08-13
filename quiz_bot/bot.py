@@ -445,41 +445,60 @@ async def generate_errors_pdf(user_id, subject, context):
     os.remove(pdf_path)
 
 async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    
     query = update.callback_query
-    await query.answer()
     user_id = query.from_user.id
     data = query.data
+    
+    print(f"[DEBUG] handle_callback chiamata per user {user_id}, data: {data}")
+
+    try:
+        await query.answer()
+        print(f"[DEBUG] Query answered per user {user_id}")
+    except Exception as e:
+        print(f"[DEBUG] Errore nell'answer query: {e}")
 
     try:
         callback = json.loads(data)
         if callback.get("cmd") in ("scarica_inedite", "download_pdf"):
+            print(f"[DEBUG] Comando PDF per user {user_id}")
             quiz_file = callback.get("file")
             await generate_pdf(quiz_file, context.bot, user_id)
             return
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"[DEBUG] Non è JSON o errore parsing: {e}")
 
     manager = get_manager(user_id)
+    
     if data == "review_errors":
+        print(f"[DEBUG] Review errors per user {user_id}")
         subjects = list(manager.get_all().keys())
+        print(f"[DEBUG] Materie disponibili: {subjects}")
 
-        #se non ci sono materie
         if not subjects:
+            print(f"[DEBUG] Nessuna materia trovata per user {user_id}")
             return await query.answer("Non ci sono errori da ripassare!", show_alert=True)
-        #se c'e' una materia sola
-        elif  len(subjects) == 1:
+        elif len(subjects) == 1:
+            print(f"[DEBUG] Una sola materia, avvio diretto: {subjects[0]}")
             return await start_review_quiz(update, context, subjects[0])
 
+        print(f"[DEBUG] Creazione keyboard per scelta materia")
         keyboard = [[
             InlineKeyboardButton(subj.replace("_", " "), callback_data=f"review_subject_{subj}")]
             for subj in subjects
         ]
         keyboard.append([InlineKeyboardButton("🔙 Indietro", callback_data="change_course")])
-        return await query.edit_message_text("Scegli la materia da ripassare:", reply_markup=InlineKeyboardMarkup(keyboard))
+        
+        try:
+            await query.edit_message_text("Scegli la materia da ripassare:", reply_markup=InlineKeyboardMarkup(keyboard))
+            print(f"[DEBUG] Messaggio scelta materia inviato per user {user_id}")
+        except Exception as e:
+            print(f"[ERROR] Errore nell'inviare messaggio scelta materia: {e}")
+        
+        return
 
     if data.startswith("review_subject_"):
         subject = data.split("review_subject_")[1]
+        print(f"[DEBUG] Review subject selezionato: {subject} per user {user_id}")
         return await start_review_quiz(update, context, subject)
     
     if data.startswith("download_errors_pdf:"):
@@ -547,53 +566,140 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await context.bot.send_message(chat_id=user_id, text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots")
 
 
+# Sostituisci queste funzioni nel tuo bot.py per avere debug dettagliato:
+
 async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, subject: str):
-    
     user_id = update.effective_user.id
-    manager = get_manager(user_id)
-    wrong_qs = manager.get_for_subject(subject)
+    print(f"[DEBUG] start_review_quiz chiamata per user {user_id}, subject: {subject}")
+    
+    try:
+        manager = get_manager(user_id)
+        print(f"[DEBUG] Manager ottenuto per user {user_id}")
+        
+        wrong_qs = manager.get_for_subject(subject)
+        print(f"[DEBUG] Domande sbagliate trovate: {len(wrong_qs)} per subject {subject}")
 
-    # Carica domande di base
-    base = json.load(open(os.path.join(QUIZ_FOLDER, subject + JSON), encoding="utf-8"))
-    base_by_id = {q["id"]: q for q in base}
+        # Verifica che il file del quiz esista
+        quiz_path = os.path.join(QUIZ_FOLDER, subject + JSON)
+        print(f"[DEBUG] Percorso quiz: {quiz_path}")
+        
+        if not os.path.exists(quiz_path):
+            print(f"[DEBUG] File non trovato: {quiz_path}")
+            await context.bot.send_message(
+                chat_id=user_id, 
+                text=f"❌ File quiz non trovato per {subject}. Riprova con /start"
+            )
+            return
 
-    weighted = []
-    for entry in wrong_qs:
-        q_id = entry["id"]
-        counter = entry.get("counter", 1)
-        if q_id in base_by_id:
-            # Inserisci la domanda (counter + 1) // 2 volte, max 5
-            repeat_times = min((counter + 1) // 2, 5)
-            weighted += [base_by_id[q_id]] * repeat_times
+        # Carica domande di base con gestione errori
+        try:
+            print(f"[DEBUG] Caricamento file: {quiz_path}")
+            with open(quiz_path, encoding="utf-8") as f:
+                base = json.load(f)
+            print(f"[DEBUG] File caricato, {len(base)} domande trovate")
+        except Exception as e:
+            print(f"[DEBUG] Errore caricamento file: {e}")
+            await context.bot.send_message(
+                chat_id=user_id,
+                text=f"❌ Errore nel caricamento del quiz: {e}. Riprova con /start"
+            )
+            return
 
-    selected = []
-    if weighted:
-        selected = random.sample(weighted, min(len(weighted), 30))
+        if not base:
+            print(f"[DEBUG] Quiz vuoto")
+            await context.bot.send_message(
+                chat_id=user_id,
+                text="❌ Quiz vuoto. Riprova con /start"
+            )
+            return
 
-    # Aggiunta di domande extra se < 30
-    if len(selected) < 30:
-        used_ids = {q["id"] for q in selected}
-        extras = [q for q in base if q["id"] not in used_ids]
-        needed = 30 - len(selected)
-        selected += random.sample(extras, min(len(extras), needed))
+        print(f"[DEBUG] Creazione dizionario base_by_id...")
+        base_by_id = {}
+        for i, q in enumerate(base):
+            q_id = q.get("id")
+            if q_id is not None:
+                base_by_id[q_id] = q
+            else:
+                print(f"[DEBUG] Domanda {i} senza ID: {q.get('question', 'N/A')[:50]}...")
+        
+        print(f"[DEBUG] base_by_id creato con {len(base_by_id)} domande")
 
-    # Salva quiz in stato utente
-    user_states[user_id] = {
-        "quiz": selected,
-        "quiz_file": subject + JSON,
-        "order": list(range(len(selected))),
-        "index": 0,
-        "score": 0,
-        "total": len(selected),
-        "is_review": True,
-        "subject": subject,
-        "start_time": time.time()
-    }
+        print(f"[DEBUG] Creazione lista weighted...")
+        weighted = []
+        for entry in wrong_qs:
+            q_id = entry.get("id")
+            if not q_id:
+                print(f"[DEBUG] Entry senza ID: {entry}")
+                continue
+                
+            counter = entry.get("counter", 1)
+            if q_id in base_by_id:
+                repeat_times = min((counter + 1) // 2, 5)
+                weighted += [base_by_id[q_id]] * repeat_times
+                print(f"[DEBUG] Aggiunta domanda ID {q_id}, {repeat_times} volte")
+            else:
+                print(f"[DEBUG] ID {q_id} non trovato in base_by_id")
 
-    random.shuffle(user_states[user_id]["order"])
-    await send_next_question(user_id, context)
+        print(f"[DEBUG] Lista weighted creata con {len(weighted)} elementi")
 
+        selected = []
+        if weighted:
+            to_select = min(len(weighted), 30)
+            print(f"[DEBUG] Selezione di {to_select} domande da {len(weighted)}")
+            selected = random.sample(weighted, to_select)
 
+        # Aggiunta di domande extra se < 30
+        if len(selected) < 30:
+            print(f"[DEBUG] Aggiunta domande extra, attuali: {len(selected)}")
+            used_ids = {q.get("id") for q in selected if q.get("id")}
+            extras = [q for q in base if q.get("id") and q.get("id") not in used_ids]
+            needed = 30 - len(selected)
+            print(f"[DEBUG] Domande extra disponibili: {len(extras)}, necessarie: {needed}")
+            if extras:
+                to_add = min(len(extras), needed)
+                selected += random.sample(extras, to_add)
+                print(f"[DEBUG] Aggiunte {to_add} domande extra")
+
+        if not selected:
+            print(f"[DEBUG] Nessuna domanda selezionata")
+            await context.bot.send_message(
+                chat_id=user_id,
+                text="❌ Nessuna domanda disponibile per il ripasso. Riprova con /start"
+            )
+            return
+
+        print(f"[DEBUG] Creazione stato utente con {len(selected)} domande")
+        # Salva quiz in stato utente
+        user_states[user_id] = {
+            "quiz": selected,
+            "quiz_file": subject + JSON,
+            "order": list(range(len(selected))),
+            "index": 0,
+            "score": 0,
+            "total": len(selected),
+            "is_review": True,
+            "subject": subject,
+            "start_time": time.time()
+        }
+
+        random.shuffle(user_states[user_id]["order"])
+        print(f"[DEBUG] Stato utente creato, chiamata send_next_question")
+        
+        await send_next_question(user_id, context)
+        print(f"[DEBUG] send_next_question completata")
+        
+    except Exception as e:
+        print(f"[ERROR] Errore in start_review_quiz per user {user_id}: {e}")
+        import traceback
+        traceback.print_exc()
+        await context.bot.send_message(
+            chat_id=user_id,
+            text="❌ Si è verificato un errore. Riprova con /start"
+        )
+        # Pulisci lo stato dell'utente in caso di errore
+        user_states.pop(user_id, None)
+
+    
 
 async def handle_answer_callback(user_id: int, answer_index: int, context: ContextTypes.DEFAULT_TYPE):
     state = user_states.get(user_id)
@@ -842,45 +948,74 @@ def signal_handler(signum, frame):
 
 
 async def webhook_handler(request):
-    """Gestisce le richieste webhook da Telegram"""
+    """Gestisce le richieste webhook da Telegram con debug dettagliato"""
+    start_time = time.time()
+    user_id = "N/A"
+    
     try:
+        print(f"[DEBUG] Webhook ricevuto alle {start_time}")
+        
         # Ottieni i dati JSON dalla richiesta
         data = await request.json()
+        print(f"[DEBUG] Dati JSON ottenuti: {len(str(data))} caratteri")
         
         # Crea un oggetto Update da Telegram
         update = Update.de_json(data, application.bot)
         
+        if update.effective_user:
+            user_id = update.effective_user.id
+            print(f"[DEBUG] Update per user {user_id}")
+        else:
+            print(f"[DEBUG] Update senza user ID")
+        
         # Processa l'update con timeout per evitare blocchi
+        print(f"[DEBUG] Inizio processing update per user {user_id}")
+        
         try:
             await asyncio.wait_for(application.process_update(update), timeout=30.0)
+            elapsed = time.time() - start_time
+            print(f"[DEBUG] Update processato con successo per user {user_id} in {elapsed:.2f}s")
+            
         except asyncio.TimeoutError:
-            print(f"⏰ Timeout nel processare update per user {update.effective_user.id if update.effective_user else 'N/A'}")
+            elapsed = time.time() - start_time
+            print(f"[ERROR] Timeout nel processare update per user {user_id} dopo {elapsed:.2f}s")
             # Prova a inviare un messaggio di errore all'utente se possibile
             if update.effective_user:
                 try:
                     await application.bot.send_message(
                         chat_id=update.effective_user.id,
-                        text="⚠️ Si è verificato un errore. Riprova con /start"
+                        text="⚠️ Operazione in timeout. Riprova con /start"
                     )
-                except:
-                    pass
+                except Exception as send_err:
+                    print(f"[ERROR] Errore nell'invio messaggio timeout: {send_err}")
+                    
         except Exception as e:
-            print(f"❌ Errore nel processare update: {e}")
+            elapsed = time.time() - start_time
+            print(f"[ERROR] Errore nel processare update per user {user_id} dopo {elapsed:.2f}s: {e}")
+            import traceback
+            traceback.print_exc()
+            
             # Prova a inviare un messaggio di errore all'utente se possibile
             if update.effective_user:
                 try:
+                    # Pulisci lo stato dell'utente
+                    user_states.pop(update.effective_user.id, None)
+                    
                     await application.bot.send_message(
                         chat_id=update.effective_user.id,
                         text="⚠️ Si è verificato un errore interno. Riprova con /start"
                     )
-                except:
-                    pass
+                except Exception as send_err:
+                    print(f"[ERROR] Errore nell'invio messaggio errore: {send_err}")
         
         return web.Response(status=200)
+        
     except Exception as e:
-        print(f"❌ Errore critico nel webhook handler: {e}")
+        elapsed = time.time() - start_time
+        print(f"[ERROR] Errore critico nel webhook handler per user {user_id} dopo {elapsed:.2f}s: {e}")
+        import traceback
+        traceback.print_exc()
         return web.Response(status=500)
-
 
 async def health_check(request):
     """Health check endpoint per Koyeb"""
