@@ -246,88 +246,138 @@ def escape_markdown(text: str) -> str:
     return re.sub(rf"([{re.escape(escape_chars)}])", r"\\\1", text)
 
 async def send_next_question(user_id, context):
-    state = user_states.get(user_id)
-    if not state:
-        await context.bot.send_message(chat_id=user_id, text="Sessione non trovata. Scrivi /start per iniziare.")
-        return
+    try:
+        state = user_states.get(user_id)
+        if not state:
+            await context.bot.send_message(chat_id=user_id, text="Sessione non trovata. Scrivi /start per iniziare.")
+            return
 
-    if state["index"] >= state["total"]:
-        await show_final_stats(user_id, context, state, is_review_mode=state.get("is_review", False))
-        manager = get_manager(user_id)
-        manager.commit_changes()
-        return
+        if state["index"] >= state["total"]:
+            await show_final_stats(user_id, context, state, is_review_mode=state.get("is_review", False))
+            manager = get_manager(user_id)
+            manager.commit_changes()
+            return
 
+        q_index = state["order"][state["index"]]
+        
+        # Verifica che l'indice sia valido
+        if q_index >= len(state["quiz"]):
+            await context.bot.send_message(chat_id=user_id, text="❌ Errore nell'indice della domanda. Riprova con /start")
+            user_states.pop(user_id, None)
+            return
+            
+        question_data = state["quiz"][q_index]
+        
+        # Verifica che la domanda abbia i campi necessari
+        if not question_data.get("question") or not question_data.get("answers"):
+            print(f"❌ Domanda malformata per user {user_id}: {question_data}")
+            state["index"] += 1  # Salta questa domanda
+            return await send_next_question(user_id, context)
 
-    q_index = state["order"][state["index"]]
-    question_data = state["quiz"][q_index]
+        original_answers = question_data.get("answers", [])
+        if len(original_answers) < 2:
+            print(f"❌ Domanda senza risposte sufficienti per user {user_id}")
+            state["index"] += 1  # Salta questa domanda
+            return await send_next_question(user_id, context)
+            
+        correct_index = question_data.get("correct_answer_index")
 
-    original_answers = question_data.get("answers", [])
-    correct_index = question_data.get("correct_answer_index")
-
-    if correct_index is None:
-        try:
-            correct_answer = question_data.get("correct_answer")
-            correct_index = original_answers.index(correct_answer)
-        except Exception:
-            correct_index = -1
-
-    shuffled = list(enumerate(original_answers))
-    random.shuffle(shuffled)
-    new_answers = [ans for _, ans in shuffled]
-    new_correct_index = next((i for i, (orig_i, _) in enumerate(shuffled) if orig_i == correct_index), -1)
-
-    state["quiz"][q_index]["_shuffled_answers"] = new_answers
-    state["quiz"][q_index]["_correct_index"] = new_correct_index
-
-    question_index = f"{state['index'] + 1}."
-    question_raw = question_data.get('question', 'Domanda mancante')
-    escaped_question = escape_markdown(question_raw)
-
-    if '*' in question_raw:
-    # niente grassetto se c'è un asterisco
-        question_text = f"{question_index} {escaped_question}\n\n"
-    else:
-        question_text = f"*{question_index} {escaped_question}*\n\n"
-
-    for i, opt in enumerate(new_answers):
-        question_text += f"*{chr(65+i)}.* {escape_markdown(opt)}\n"
-
-
-
-    keyboard = [
-        [InlineKeyboardButton(chr(65 + i), callback_data=f"answer:{i}") for i in range(len(new_answers))]
-    ]
-    keyboard.append([
-        InlineKeyboardButton("🛑 Stop", callback_data="stop"),
-        InlineKeyboardButton("🔄 Cambia corso", callback_data="change_course")
-    ])
-    reply_markup = InlineKeyboardMarkup(keyboard)
-
-    # Se c'è un'immagine, la inviamo prima del messaggio
-    image_filename = question_data.get("image")
-    if image_filename:
-        image_path = os.path.join(QUIZ_FOLDER, "images", image_filename)
-        if os.path.isfile(image_path):
+        if correct_index is None:
             try:
-                with open(image_path, "rb") as image_file:
-                    await context.bot.send_photo(
-                        chat_id=user_id,
-                        photo=image_file,
-                        caption=question_text,
-                        reply_markup=reply_markup,
-                        parse_mode='Markdown'
-                    )
-                return 
+                correct_answer = question_data.get("correct_answer")
+                if correct_answer and correct_answer in original_answers:
+                    correct_index = original_answers.index(correct_answer)
+                else:
+                    print(f"❌ Risposta corretta non trovata per user {user_id}: {correct_answer}")
+                    state["index"] += 1  # Salta questa domanda
+                    return await send_next_question(user_id, context)
             except Exception as e:
-                await context.bot.send_message(chat_id=user_id, text=f"⚠ Errore nell'invio dell'immagine: {e}")
+                print(f"❌ Errore nel trovare risposta corretta per user {user_id}: {e}")
+                state["index"] += 1  # Salta questa domanda
+                return await send_next_question(user_id, context)
 
-    # Se non c'è immagine o qualcosa va storto, mandiamo solo il testo
-    await context.bot.send_message(
-        chat_id=user_id,
-        text=question_text,
-        reply_markup=reply_markup,
-        parse_mode='Markdown'
-    )
+        # Continua con il resto della logica originale...
+        shuffled = list(enumerate(original_answers))
+        random.shuffle(shuffled)
+        new_answers = [ans for _, ans in shuffled]
+        new_correct_index = next((i for i, (orig_i, _) in enumerate(shuffled) if orig_i == correct_index), -1)
+
+        state["quiz"][q_index]["_shuffled_answers"] = new_answers
+        state["quiz"][q_index]["_correct_index"] = new_correct_index
+
+        question_index = f"{state['index'] + 1}."
+        question_raw = question_data.get('question', 'Domanda mancante')
+        escaped_question = escape_markdown(question_raw)
+
+        if '*' in question_raw:
+            question_text = f"{question_index} {escaped_question}\n\n"
+        else:
+            question_text = f"*{question_index} {escaped_question}*\n\n"
+
+        for i, opt in enumerate(new_answers):
+            question_text += f"*{chr(65+i)}.* {escape_markdown(opt)}\n"
+
+        keyboard = [
+            [InlineKeyboardButton(chr(65 + i), callback_data=f"answer:{i}") for i in range(len(new_answers))]
+        ]
+        keyboard.append([
+            InlineKeyboardButton("🛑 Stop", callback_data="stop"),
+            InlineKeyboardButton("🔄 Cambia corso", callback_data="change_course")
+        ])
+        reply_markup = InlineKeyboardMarkup(keyboard)
+
+        # Gestione immagini con timeout
+        image_filename = question_data.get("image")
+        if image_filename:
+            image_path = os.path.join(QUIZ_FOLDER, "images", image_filename)
+            if os.path.isfile(image_path):
+                try:
+                    with open(image_path, "rb") as image_file:
+                        await asyncio.wait_for(
+                            context.bot.send_photo(
+                                chat_id=user_id,
+                                photo=image_file,
+                                caption=question_text,
+                                reply_markup=reply_markup,
+                                parse_mode='Markdown'
+                            ),
+                            timeout=10.0
+                        )
+                    return 
+                except asyncio.TimeoutError:
+                    print(f"⏰ Timeout nell'invio immagine per user {user_id}")
+                except Exception as e:
+                    print(f"❌ Errore nell'invio dell'immagine per user {user_id}: {e}")
+
+        # Se non c'è immagine o qualcosa va storto, manda solo il testo
+        try:
+            await asyncio.wait_for(
+                context.bot.send_message(
+                    chat_id=user_id,
+                    text=question_text,
+                    reply_markup=reply_markup,
+                    parse_mode='Markdown'
+                ),
+                timeout=10.0
+            )
+        except asyncio.TimeoutError:
+            print(f"⏰ Timeout nell'invio messaggio per user {user_id}")
+            raise
+        except Exception as e:
+            print(f"❌ Errore nell'invio messaggio per user {user_id}: {e}")
+            raise
+            
+    except Exception as e:
+        print(f"❌ Errore critico in send_next_question per user {user_id}: {e}")
+        # Pulisci lo stato dell'utente e invia messaggio di errore
+        user_states.pop(user_id, None)
+        try:
+            await context.bot.send_message(
+                chat_id=user_id,
+                text="❌ Si è verificato un errore. Riprova con /start"
+            )
+        except:
+            pass
 
 
 async def repeat_quiz(user_id: int, context: ContextTypes.DEFAULT_TYPE):
@@ -772,7 +822,6 @@ async def reset_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     stats_manager.reset_stats()
     await context.bot.send_message(chat_id=user_id, text="✅ Statistiche azzerate!")
 
-
 async def setup_bot():
     print("🔧 Configurazione bot...")
 
@@ -801,12 +850,35 @@ async def webhook_handler(request):
         # Crea un oggetto Update da Telegram
         update = Update.de_json(data, application.bot)
         
-        # Processa l'update
-        await application.process_update(update)
+        # Processa l'update con timeout per evitare blocchi
+        try:
+            await asyncio.wait_for(application.process_update(update), timeout=30.0)
+        except asyncio.TimeoutError:
+            print(f"⏰ Timeout nel processare update per user {update.effective_user.id if update.effective_user else 'N/A'}")
+            # Prova a inviare un messaggio di errore all'utente se possibile
+            if update.effective_user:
+                try:
+                    await application.bot.send_message(
+                        chat_id=update.effective_user.id,
+                        text="⚠️ Si è verificato un errore. Riprova con /start"
+                    )
+                except:
+                    pass
+        except Exception as e:
+            print(f"❌ Errore nel processare update: {e}")
+            # Prova a inviare un messaggio di errore all'utente se possibile
+            if update.effective_user:
+                try:
+                    await application.bot.send_message(
+                        chat_id=update.effective_user.id,
+                        text="⚠️ Si è verificato un errore interno. Riprova con /start"
+                    )
+                except:
+                    pass
         
         return web.Response(status=200)
     except Exception as e:
-        print(f"❌ Errore nel processare webhook: {e}")
+        print(f"❌ Errore critico nel webhook handler: {e}")
         return web.Response(status=500)
 
 
