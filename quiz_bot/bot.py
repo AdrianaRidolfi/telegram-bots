@@ -1087,7 +1087,7 @@ async def setup_webhook_server():
     return app
 
 async def main():
-    """FIXED: Enhanced main function with better error handling"""
+    """Enhanced main function with better error handling"""
     global bot_running
     
     try:
@@ -1103,81 +1103,74 @@ async def main():
         if USE_WEBHOOK:
             logger.info("🔗 Webhook mode activated")
             
-            # FIXED: Better webhook URL construction
-            if not WEBHOOK_URL.startswith('http'):
-                webhook_url = f"https://{WEBHOOK_URL}/{TOKEN}"
-            else:
+            # Construct webhook URL
+            if WEBHOOK_URL.startswith('http'):
                 webhook_url = f"{WEBHOOK_URL}/{TOKEN}"
+            else:
+                webhook_url = f"https://{WEBHOOK_URL}/{TOKEN}"
             
-            logger.info(f"Setting webhook URL: {webhook_url}")
+            logger.info(f"🎯 Setting webhook URL: {webhook_url}")
             
-            # Set webhook with better error handling
+            # Set webhook
             try:
-                await application.bot.set_webhook(
+                result = await application.bot.set_webhook(
                     url=webhook_url,
-                    drop_pending_updates=True,  # Clear pending updates on restart
-                    max_connections=40,  # Limit concurrent connections
-                    secret_token=None  # You can add a secret token for security
+                    drop_pending_updates=True,
+                    max_connections=40
                 )
-                logger.info(f"✅ Webhook configured: {webhook_url}")
+                logger.info(f"✅ Webhook set successfully: {result}")
+                
+                # Verify webhook
+                webhook_info = await application.bot.get_webhook_info()
+                logger.info(f"📋 Webhook info: {webhook_info}")
+                
             except Exception as e:
-                logger.error(f"Failed to set webhook: {e}")
+                logger.error(f"❌ Failed to set webhook: {e}")
                 raise
             
-            # Setup web server
-            app = await setup_webhook_server()
-            
-            # Create and start server
-            runner = web_runner.AppRunner(app)
-            await runner.setup()
-            
-            # FIXED: Listen on all interfaces (0.0.0.0) and use PORT from environment
-            site = web_runner.TCPSite(runner, "0.0.0.0", PORT)
-            await site.start()
-            
-            logger.info(f"🌐 Webhook server started on port {PORT}")
-            
-            # Keep bot running
+            # Setup and start web server
             try:
+                app = await setup_webhook_server()
+                runner = web_runner.AppRunner(app)
+                await runner.setup()
+                
+                site = web_runner.TCPSite(runner, "0.0.0.0", PORT)
+                await site.start()
+                
+                logger.info(f"🌐 Webhook server started on 0.0.0.0:{PORT}")
+                logger.info(f"🔍 Test endpoints:")
+                logger.info(f"   https://{WEBHOOK_URL}/test")
+                logger.info(f"   https://{WEBHOOK_URL}/health")
+                logger.info(f"   https://{WEBHOOK_URL}/webhook-info")
+                
+                # Keep running
                 while bot_running:
                     await asyncio.sleep(1)
-            except KeyboardInterrupt:
-                logger.info("Received keyboard interrupt")
+                    
+            except Exception as e:
+                logger.error(f"❌ Server setup error: {e}")
+                raise
             finally:
-                # Cleanup
-                logger.info("Stopping server...")
-                await runner.cleanup()
+                try:
+                    await runner.cleanup()
+                except:
+                    pass
             
         else:
             logger.info("📡 Polling mode activated")
-            # Remove webhook if set
             await application.bot.delete_webhook(drop_pending_updates=True)
-            
-            # Run polling for local development
-            await application.run_polling(
-                stop_signals=None,
-                drop_pending_updates=True
-            )
+            await application.run_polling(drop_pending_updates=True)
             
     except Exception as e:
-        logger.error(f"❌ Error starting bot: {e}")
+        logger.error(f"❌ Critical error in main: {e}")
         raise
     finally:
-        logger.info("🛑 Bot shutdown initiated...")
-        # Cleanup
-        try:
-            if USE_WEBHOOK and application.bot:
-                await application.bot.delete_webhook(drop_pending_updates=True)
-                logger.info("🗑️ Webhook removed")
-        except Exception as e:
-            logger.warning(f"⚠️ Error removing webhook: {e}")
-        
+        logger.info("🛑 Shutting down...")
         try:
             await application.stop()
             await application.shutdown()
-            logger.info("✅ Bot shutdown completed")
-        except Exception as e:
-            logger.warning(f"⚠️ Error during shutdown: {e}")
+        except:
+            pass
 
 def signal_handler(signum, frame):
     global bot_running
