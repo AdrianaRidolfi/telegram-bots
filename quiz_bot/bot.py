@@ -950,16 +950,15 @@ async def setup_bot():
 
     print("✅ Bot configurato con successo.")
 
-
 async def webhook_handler(request):
-    """FIXED: Improved webhook handler with better error handling and timeout management"""
+    """Fixed webhook handler"""
     start_time = time.time()
     user_id = "N/A"
     
     try:
         logger.info(f"Webhook received at {start_time}")
         
-        # Get JSON data with timeout
+        # Get JSON data from request
         try:
             data = await asyncio.wait_for(request.json(), timeout=5.0)
             logger.debug(f"JSON data received: {len(str(data))} characters")
@@ -975,7 +974,7 @@ async def webhook_handler(request):
             update = Update.de_json(data, application.bot)
             if not update:
                 logger.warning("Invalid update received")
-                return web.Response(status=200, text="OK")  # Return OK to avoid retries
+                return web.Response(status=200, text="OK")
         except Exception as e:
             logger.error(f"Error creating Update object: {e}")
             return web.Response(status=400, text="Invalid update format")
@@ -984,9 +983,8 @@ async def webhook_handler(request):
             user_id = update.effective_user.id
             logger.info(f"Processing update for user {user_id}")
         
-        # FIXED: Reduced timeout and better error handling
+        # Process update with timeout
         try:
-            # Process update with shorter timeout to avoid Telegram webhook timeouts
             await asyncio.wait_for(application.process_update(update), timeout=15.0)
             elapsed = time.time() - start_time
             logger.info(f"Update processed successfully for user {user_id} in {elapsed:.2f}s")
@@ -995,22 +993,18 @@ async def webhook_handler(request):
             elapsed = time.time() - start_time
             logger.error(f"Timeout processing update for user {user_id} after {elapsed:.2f}s")
             
-            # Clean up user state on timeout
             if update.effective_user:
                 user_states.pop(update.effective_user.id, None)
                 
-            # Return OK to avoid retries from Telegram
             return web.Response(status=200, text="Timeout - cleaned up")
                     
         except Exception as e:
             elapsed = time.time() - start_time
             logger.error(f"Error processing update for user {user_id} after {elapsed:.2f}s: {e}")
             
-            # Clean up user state on error
             if update.effective_user:
                 user_states.pop(update.effective_user.id, None)
             
-            # Return OK to avoid infinite retries from Telegram
             return web.Response(status=200, text="Error handled")
         
         return web.Response(status=200, text="OK")
@@ -1021,10 +1015,10 @@ async def webhook_handler(request):
         return web.Response(status=500, text="Internal error")
 
 
+
 async def health_check(request):
-    """FIXED: Enhanced health check endpoint"""
+    """Simple health check endpoint"""
     try:
-        # Simple health check - just return OK
         return web.Response(text="OK", status=200, headers={
             'Content-Type': 'text/plain',
             'Cache-Control': 'no-cache'
@@ -1034,33 +1028,21 @@ async def health_check(request):
         return web.Response(text="Health check failed", status=500)
 
 
-async def setup_webhook_server():
-    """FIXED: Enhanced webhook server setup"""
-    app = web.Application()
-    
-    # FIXED: Add better middleware for request handling
-    async def add_cors_header(request, handler):
-        try:
-            response = await handler(request)
-            response.headers['Access-Control-Allow-Origin'] = '*'
-            return response
-        except Exception as e:
-            logger.error(f"Middleware error: {e}")
-            return web.Response(status=500, text="Server error")
-    
-    app.middlewares.append(add_cors_header)
-    
-    # Telegram webhook endpoint
-    app.router.add_post(f"/{TOKEN}", webhook_handler)
-    
-    # Multiple health check endpoints for better compatibility
-    app.router.add_get("/health", health_check)
-    app.router.add_get("/", health_check)
-    app.router.add_get("/ping", health_check)
-    app.router.add_get("/status", health_check)
-    
-    # Add a simple info endpoint
-    async def info_handler(request):
+async def health_check(request):
+    """Simple health check endpoint"""
+    try:
+        return web.Response(text="OK", status=200, headers={
+            'Content-Type': 'text/plain',
+            'Cache-Control': 'no-cache'
+        })
+    except Exception as e:
+        logger.error(f"Health check error: {e}")
+        return web.Response(text="Health check failed", status=500)
+
+
+async def info_handler(request):
+    """Info endpoint"""
+    try:
         return web.Response(
             text=json.dumps({
                 "status": "running",
@@ -1070,8 +1052,37 @@ async def setup_webhook_server():
             status=200,
             content_type="application/json"
         )
+    except Exception as e:
+        logger.error(f"Info handler error: {e}")
+        return web.Response(text="Info handler failed", status=500)
+
+
+async def setup_webhook_server():
+    """FIXED: Simplified webhook server setup WITHOUT problematic middleware"""
+    app = web.Application()
     
+    # REMOVED the problematic middleware entirely
+    # If you need CORS, add it directly to response headers in each handler
+    
+    # Telegram webhook endpoint - TOKEN is defined globally
+    app.router.add_post(f"/{TOKEN}", webhook_handler)
+    
+    # Health check endpoints
+    app.router.add_get("/health", health_check)
+    app.router.add_get("/", health_check)
+    app.router.add_get("/ping", health_check)
+    app.router.add_get("/status", health_check)
+    
+    # Info endpoint
     app.router.add_get("/info", info_handler)
+    
+    logger.info(f"✅ Webhook server configured with routes:")
+    logger.info(f"  POST /{TOKEN} -> webhook_handler")
+    logger.info(f"  GET /health -> health_check")
+    logger.info(f"  GET / -> health_check")
+    logger.info(f"  GET /ping -> health_check")
+    logger.info(f"  GET /status -> health_check")
+    logger.info(f"  GET /info -> info_handler")
     
     return app
 
