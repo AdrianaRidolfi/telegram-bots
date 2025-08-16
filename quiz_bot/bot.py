@@ -1182,13 +1182,17 @@ def signal_handler(signum, frame):
 
 
 if __name__ == "__main__":
-    # Register signal handlers for graceful shutdown
+    # Register signal handlers
     signal.signal(signal.SIGTERM, signal_handler)
     signal.signal(signal.SIGINT, signal_handler)
-    
+
     try:
-        # Start the application
-        asyncio.run(main())
+        if os.environ.get("USE_WEBHOOK", "false").lower() == "true":
+            # 🚀 Modalità webhook
+            asyncio.run(main())   # qui dentro fai solo webhook
+        else:
+            # 📡 Modalità polling
+            application.run_polling(drop_pending_updates=True)
     except KeyboardInterrupt:
         logger.info("\n🛑 Bot interrupted by user")
     except Exception as e:
