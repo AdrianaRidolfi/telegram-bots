@@ -1,8 +1,24 @@
+# Core Telegram bot
 python-telegram-bot>=20.0,<21.0
-python-dotenv>=1.0.0       # se usi ancora .env, tienilo
-fpdf2
-firebase
-firebase-admin
-Pillow
+
+# Web server for webhook
+aiohttp>=3.8.0,<4.0.0
+
+# Firebase
+firebase-admin>=6.0.0
+
+# PDF generation
+fpdf2>=2.7.0
 pymupdf>=1.23.0
-Flask
+
+# Image handling
+Pillow>=9.0.0
+
+# Environment handling (if you want to use .env files)
+python-dotenv>=1.0.0
+
+# Optional: Better performance on Unix systems
+uvloop>=0.19.0; sys_platform != "win32"
+
+# Optional: Better JSON handling
+orjson>=3.8.0
