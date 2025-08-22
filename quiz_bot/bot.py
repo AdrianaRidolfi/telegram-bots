@@ -244,10 +244,30 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def error_handler(update, context):
     err = str(context.error)
+    
+    # Gestione specifica per callback invalidi
+    if "Button_data_invalid" in err:
+        print(f"[INFO] Button data invalid per update: {update}")
+        if update and update.effective_user:
+            try:
+                await context.bot.send_message(
+                    chat_id=update.effective_user.id,
+                    text="⚠️ Pulsante scaduto. Usa /start per ricominciare"
+                )
+            except Exception as send_error:
+                print(f"[ERROR] Impossibile inviare messaggio errore: {send_error}")
+        return
+    
     # Gestione specifica errore query scaduta
     if "Query is too old and response timeout expired or query id is invalid" in err:
         print("[INFO] Query scaduta, ignorata.")
         return
+        
+    # Altri errori di callback
+    if "CallbackQuery" in err and ("invalid" in err.lower() or "expired" in err.lower()):
+        print(f"[INFO] Callback error ignorato: {err}")
+        return
+    
     print(f"[ERROR] Exception while handling an update: {context.error}")
 
 def escape_markdown(text: str) -> str:
@@ -460,14 +480,45 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = query.from_user.id
     data = query.data
 
+    # Validazione preventiva del callback data
+    if not data or len(data) > 64:
+        try:
+            await query.answer("Pulsante non valido", show_alert=True)
+        except:
+            pass
+        return
+
     print(f"[DEBUG] handle_callback chiamata per user {user_id}, data: {data}")
 
-    # Risposta al callback query (necessaria per evitare spinner infinito su Telegram)
+    # Risposta al callback query con gestione errori robusta
     try:
         await query.answer()
         print(f"[DEBUG] Query answered per user {user_id}")
     except Exception as e:
+        error_msg = str(e).lower()
         print(f"[DEBUG] Errore nell'answer query: {e}")
+        
+        # Se il callback è invalido/scaduto, non continuare
+        if any(keyword in error_msg for keyword in ["invalid", "expired", "too old"]):
+            try:
+                await context.bot.send_message(
+                    chat_id=user_id,
+                    text="⚠️ Pulsante scaduto. Usa /start per ricominciare"
+                )
+            except:
+                pass
+            return
+
+    # Rate limiting per callback
+    if is_rate_limited(user_id):
+        try:
+            await context.bot.send_message(
+                chat_id=user_id, 
+                text="⏳ Stai andando troppo veloce! Riprova tra qualche secondo."
+            )
+        except:
+            pass
+        return
 
     # Tenta di interpretare il dato come JSON, ma solo se plausibile
     callback = None
@@ -483,102 +534,146 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
             print(f"[DEBUG] Comando PDF per user {user_id}")
             quiz_file = callback.get("file")
             if quiz_file:
-                await generate_pdf(quiz_file, context.bot, user_id)
+                try:
+                    await generate_pdf(quiz_file, context.bot, user_id)
+                except Exception as e:
+                    print(f"[ERROR] Errore generazione PDF: {e}")
+                    await context.bot.send_message(
+                        chat_id=user_id,
+                        text="❌ Errore nella generazione del PDF"
+                    )
             return
 
     manager = get_manager(user_id)
 
-    if data == "review_errors":
-        print(f"[DEBUG] Review errors per user {user_id}")
-        subjects = list(manager.get_all().keys())
-        print(f"[DEBUG] Materie disponibili: {subjects}")
+    # Gestione dei vari callback con try-catch per ogni sezione
+    try:
+        if data == "review_errors":
+            print(f"[DEBUG] Review errors per user {user_id}")
+            subjects = list(manager.get_all().keys())
+            print(f"[DEBUG] Materie disponibili: {subjects}")
 
-        if not subjects:
-            print(f"[DEBUG] Nessuna materia trovata per user {user_id}")
-            return await query.answer("Non ci sono errori da ripassare!", show_alert=True)
-        elif len(subjects) == 1:
-            print(f"[DEBUG] Una sola materia, avvio diretto: {subjects[0]}")
-            return await start_review_quiz(update, context, subjects[0])
+            if not subjects:
+                print(f"[DEBUG] Nessuna materia trovata per user {user_id}")
+                await context.bot.send_message(
+                    chat_id=user_id,
+                    text="Non ci sono errori da ripassare!"
+                )
+                return
+            elif len(subjects) == 1:
+                print(f"[DEBUG] Una sola materia, avvio diretto: {subjects[0]}")
+                return await start_review_quiz(update, context, subjects[0])
 
-        keyboard = [
-            [InlineKeyboardButton(subj.replace("_", " "), callback_data=f"review_subject_{subj}")]
-            for subj in subjects
-        ]
-        keyboard.append([InlineKeyboardButton("🔙 Indietro", callback_data="change_course")])
+            keyboard = [
+                [InlineKeyboardButton(subj.replace("_", " "), callback_data=f"review_subject_{subj}")]
+                for subj in subjects
+            ]
+            keyboard.append([InlineKeyboardButton("🔙 Indietro", callback_data="change_course")])
 
-        try:
-            await query.edit_message_text("Scegli la materia da ripassare:", reply_markup=InlineKeyboardMarkup(keyboard))
-            print(f"[DEBUG] Messaggio scelta materia inviato per user {user_id}")
-        except Exception as e:
-            print(f"[ERROR] Errore nell'inviare messaggio scelta materia: {e}")
-        return
+            try:
+                await query.edit_message_text("Scegli la materia da ripassare:", reply_markup=InlineKeyboardMarkup(keyboard))
+                print(f"[DEBUG] Messaggio scelta materia inviato per user {user_id}")
+            except Exception as e:
+                print(f"[ERROR] Errore nell'inviare messaggio scelta materia: {e}")
+                # Fallback: invia nuovo messaggio invece di edit
+                await context.bot.send_message(
+                    chat_id=user_id,
+                    text="Scegli la materia da ripassare:",
+                    reply_markup=InlineKeyboardMarkup(keyboard)
+                )
+            return
 
-    if data.startswith("review_subject_"):
-        subject = data.split("review_subject_")[1]
-        print(f"[DEBUG] Review subject selezionato: {subject} per user {user_id}")
-        return await start_review_quiz(update, context, subject)
+        elif data.startswith("review_subject_"):
+            subject = data.split("review_subject_")[1]
+            print(f"[DEBUG] Review subject selezionato: {subject} per user {user_id}")
+            return await start_review_quiz(update, context, subject)
 
-    if data.startswith("download_errors_pdf:"):
-        subject = data.split("download_errors_pdf:")[1]
-        await generate_errors_pdf(user_id, subject, context)
-        return
-    elif data == "no_download_errors_pdf":
-        subjects = list(manager.get_all().keys())
-        if len(subjects) == 1:
-            return await start_review_quiz(update, context, subjects[0])
-        keyboard = [
-            [InlineKeyboardButton(subj.replace("_", " "), callback_data=f"review_subject_{subj}")]
-            for subj in subjects
-        ]
-        keyboard.append([InlineKeyboardButton("🔙 Indietro", callback_data="change_course")])
-        return await query.edit_message_text("Scegli la materia da ripassare:", reply_markup=InlineKeyboardMarkup(keyboard))
+        elif data.startswith("download_errors_pdf:"):
+            subject = data.split("download_errors_pdf:")[1]
+            await generate_errors_pdf(user_id, subject, context)
+            return
+            
+        elif data == "no_download_errors_pdf":
+            subjects = list(manager.get_all().keys())
+            if len(subjects) == 1:
+                return await start_review_quiz(update, context, subjects[0])
+            keyboard = [
+                [InlineKeyboardButton(subj.replace("_", " "), callback_data=f"review_subject_{subj}")]
+                for subj in subjects
+            ]
+            keyboard.append([InlineKeyboardButton("🔙 Indietro", callback_data="change_course")])
+            try:
+                await query.edit_message_text("Scegli la materia da ripassare:", reply_markup=InlineKeyboardMarkup(keyboard))
+            except:
+                await context.bot.send_message(
+                    chat_id=user_id,
+                    text="Scegli la materia da ripassare:",
+                    reply_markup=InlineKeyboardMarkup(keyboard)
+                )
+            return
 
-    if data == "stop":
-        return await stop(update, context)
+        elif data == "stop":
+            return await stop(update, context)
 
-    elif data.startswith("clear_errors:"):
-        subject = data.split(":")[1]
-        manager.remove_subject(subject)
-        return await context.bot.send_message(
+        elif data.startswith("clear_errors:"):
+            subject = data.split(":")[1]
+            manager.remove_subject(subject)
+            await context.bot.send_message(
+                chat_id=user_id,
+                text=f"✅ Errori per *{subject}* cancellati!",
+                parse_mode="Markdown"
+            )
+            return
+
+        elif data == "change_course":
+            state = user_states.get(user_id)
+            if state:
+                manager.commit_changes()
+                clear_manager(user_id)
+            await show_final_stats(user_id, context, state, from_change_course=True)
+            user_states.pop(user_id, None)
+            return await choose_subject(update, context)
+
+        elif data.endswith(JSON): 
+            user_states.pop(user_id, None)
+            return await select_quiz(update, context)
+
+        elif data == "reset_stats":
+            return await reset_stats(update, context)
+
+        elif data == "_choose_subject_":
+            return await choose_subject(update, context)
+
+        elif data == "repeat_quiz":
+            return await repeat_quiz(user_id, context)
+
+        elif data.startswith("answer:"):
+            selected = int(data.split(":")[1])
+            return await handle_answer_callback(user_id, selected, context)
+
+        elif data.startswith("show_mistakes_"):
+            subject = data.split("show_mistakes_")[1]
+            return await show_mistakes(user_id, subject, context)
+
+        elif data == "git":
+            await context.bot.send_message(
+                chat_id=user_id,
+                text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots"
+            )
+            return
+
+        else:
+            print(f"[DEBUG] Callback data non riconosciuto: {data}")
+            await context.bot.send_message(
+                chat_id=user_id,
+                text="⚠️ Azione non riconosciuta. Usa /start per ricominciare"
+            )
+            
+    except Exception as e:
+        print(f"[ERROR] Errore in handle_callback per user {user_id}: {e}")
+        await context.bot.send_message(
             chat_id=user_id,
-            text=f"✅ Errori per *{subject}* cancellati!",
-            parse_mode="Markdown"
-        )
-
-    elif data == "change_course":
-        state = user_states.get(user_id)
-        if state:
-            manager.commit_changes()
-            clear_manager(user_id)
-        await show_final_stats(user_id, context, state, from_change_course=True)
-        user_states.pop(user_id, None)
-        return await choose_subject(update, context)
-
-    elif data.endswith(JSON): 
-        user_states.pop(user_id, None)
-        return await select_quiz(update, context)
-
-    elif data == "reset_stats":
-        return await reset_stats(update, context)
-
-    elif data == "_choose_subject_":
-        return await choose_subject(update, context)
-
-    elif data == "repeat_quiz":
-        return await repeat_quiz(user_id, context)
-
-    elif data.startswith("answer:"):
-        selected = int(data.split(":")[1])
-        return await handle_answer_callback(user_id, selected, context)
-
-    elif data.startswith("show_mistakes_"):
-        subject = data.split("show_mistakes_")[1]
-        return await show_mistakes(user_id, subject, context)
-
-    elif data == "git":
-        return await context.bot.send_message(
-            chat_id=user_id,
-            text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots"
+            text="❌ Si è verificato un errore. Usa /start per ricominciare"
         )
 
 
@@ -947,6 +1042,7 @@ async def setup_bot():
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("stats", stats))
+    application.add_handler(CommandHandler("stop", stop))
     application.add_handler(CommandHandler("download", download))
     application.add_handler(CommandHandler("choose_subject", choose_subject))
     application.add_handler(CallbackQueryHandler(handle_callback))
