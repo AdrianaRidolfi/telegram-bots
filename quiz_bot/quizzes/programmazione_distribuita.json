@@ -1,0 +1,1036 @@
+[
+  {
+    "question": "La manutenibilità  di un sistema è:",
+    "id": "9d074add-380c-4faa-8d55-8c15f7c6949d",
+    "answers": [
+      "La capacità del sistema di evitare completamente i guasti durante il funzionamento",
+      "La velocità con cui un sistema può elaborare richieste simultanee",
+      "L'efficienza energetica del sistema durante il funzionamento continuo",
+      "La facilità  con cui un sistema può essere riparato se si verifica un guasto"
+    ],
+    "correct_answer": "La facilità  con cui un sistema può essere riparato se si verifica un guasto"
+  },
+  {
+    "question": "Lo scopo degli stub client e server in un'applicazione basata su RPC è:",
+    "id": "38e6d541-82f6-4b94-9e2f-9610f9af123a",
+    "answers": [
+      "Gestire direttamente la comunicazione fisica tra server e client",
+      "Sostituire completamente il middleware nella gestione delle richieste",
+      "Implementare l'interfaccia dell'applicazione",
+      "Effettuare il bilanciamento del carico tra più server RPC"
+    ],
+    "correct_answer": "Implementare l'interfaccia dell'applicazione"
+  },
+  {
+    "question": "E' difficile selezionare un nodo casuale da una rete di grandi dimensioni perché:",
+    "id": "7594d93e-fc0e-43ec-abd2-cef5a780f0af",
+    "answers": [
+      "E' difficile avere una piena comprensione della rete",
+      "I nodi tendono a rifiutare le richieste di selezione casuale",
+      "La rete utilizza esclusivamente protocolli di comunicazione sincrona",
+      "I nodi si trovano sempre in sottoreti isolate senza connessione"
+    ],
+    "correct_answer": "E' difficile avere una piena comprensione della rete"
+  },
+  {
+    "question": "La differenza tra disponibilità  e affidabilità  è:",
+    "id": "7f981daf-71da-4ab0-9179-280c656e0c7f",
+    "answers": [
+      "La disponibilità indica quanto rapidamente un sistema recupera dopo un guasto, mentre l'affidabilità è la frequenza dei guasti nel tempo",
+      "La disponibilità riguarda solo i sistemi hardware, mentre l'affidabilità è riferita ai sistemi software",
+      "La disponibilità misura la tolleranza ai guasti, mentre l'affidabilità è legata alla sicurezza dei dati",
+      "La disponibilità  si riferisce alla probabilità  che un sistema funzioni correttamente in qualsiasi momento, mentre l'affidabilità è la capacità  di un sistema di funzionare continuamente senza guasti"
+    ],
+    "correct_answer": "La disponibilità  si riferisce alla probabilità  che un sistema funzioni correttamente in qualsiasi momento, mentre l'affidabilità è la capacità  di un sistema di funzionare continuamente senza guasti"
+  },
+  {
+    "question": "Una tecnica per garantire la corretta ricezione di messaggi tra nodi in una MANET è:",
+    "id": "9715ed77-b175-4faa-8530-7135cd0a2232",
+    "answers": [
+      "Token passing",
+      "Checkpointing",
+      "Heartbeat monitoring",
+      "Flooding"
+    ],
+    "correct_answer": "Flooding"
+  },
+  {
+    "question": "In un overlay non strutturato ogni nodo:",
+    "id": "3e381954-2241-4969-9ccc-3a674edfa1b3",
+    "answers": [
+      "Comunica solo con nodi adiacenti gerarchicamente",
+      "Comunica esclusivamente con un server centrale",
+      "Comunica con nodi scelti a caso",
+      "Comunica con tutti i nodi della rete simultaneamente"
+    ],
+    "correct_answer": "Comunica con nodi scelti a caso"
+  },
+  {
+    "question": "La principale causa del problema di scalabilità  nei sistemi peer-to-peer è:",
+    "id": "03425022-448b-493d-8a97-5a4d8b259e41",
+    "answers": [
+      "L'assenza di un server centrale per gestire le connessioni",
+      "La replicazione eccessiva dei dati tra tutti i nodi",
+      "L'utilizzo di un broker per raccogliere informazioni sull'utilizzo delle risorse",
+      "La limitata larghezza di banda disponibile per ogni nodo"
+    ],
+    "correct_answer": "L'utilizzo di un broker per raccogliere informazioni sull'utilizzo delle risorse"
+  },
+  {
+    "question": "Per ridondanza fisica si intende:",
+    "id": "5e9252a6-1bfe-4b54-a350-73622a2e1bf2",
+    "answers": [
+      "Aggiungere apparecchiature o processi aggiuntivi",
+      "Utilizzare esclusivamente software open source per garantire la disponibilità",
+      "Migrare tutte le risorse in un'unica macchina virtuale per facilitarne la gestione",
+      "Eseguire backup giornalieri dei dati su storage remoto"
+    ],
+    "correct_answer": "Aggiungere apparecchiature o processi aggiuntivi"
+  },
+  {
+    "question": "Un contesto di processo è:",
+    "id": "2f1db9d1-20de-452b-bcc2-bee268fba032",
+    "answers": [
+      "Un programma eseguibile caricato in memoria pronto per l'esecuzione",
+      "Un insieme di voci che contengono informazioni sui valori del registro CPU,le mappe di memoria,le informazioni sui file aperti,le informazioni di contabilità,i privilegi e altri dati rilevanti per il",
+      "L'insieme delle istruzioni che un processo deve eseguire",
+      "La quantità di memoria fisica allocata a un processo"
+    ],
+    "correct_answer": "Un insieme di voci che contengono informazioni sui valori del registro CPU,le mappe di memoria,le informazioni sui file aperti,le informazioni di contabilità,i privilegi e altri dati rilevanti per il"
+  },
+  {
+    "question": "Un esempio di utilizzo della ridondanza temporale è:",
+    "id": "f301b7fc-89e1-49ac-8b00-eddb2bc3110f",
+    "answers": [
+      "Utilizzo di protocolli di consenso per garantire la coerenza tra repliche",
+      "Reinvio di una richiesta a un server",
+      "Distribuzione dei dati su più nodi geograficamente separati",
+      "Implementazione di copie multiple di un servizio su diversi container"
+    ],
+    "correct_answer": "Reinvio di una richiesta a un server"
+  },
+  {
+    "question": "Il numero di livelli su cui tipicamente si valuta la scalabilità  dei sistemi distribuiti è:",
+    "id": "e879d922-374f-498f-9a16-dceddd7fe8db",
+    "answers": [
+      "2",
+      "5",
+      "4",
+      "3"
+    ],
+    "correct_answer": "3"
+  },
+  {
+    "question": "Se un macchina A ha un livello di stratum inferiore a una macchina B, allora:",
+    "id": "dfccaf59-5715-4b5b-a4ce-ea107d8750e5",
+    "answers": [
+      "Se un macchina A ha un livello di stratum inferiore a una macchina B, allora:",
+      "???",
+      "???",
+      "???"
+    ],
+    "correct_answer": "Se un macchina A ha un livello di stratum inferiore a una macchina B, allora:"
+  },
+  {
+    "question": "Nelle soluzioni basate su token per l'esclusione reciproca, un token è:",
+    "id": "d7f2af8f-d3d6-45bd-be65-979db5f55367",
+    "answers": [
+      "Un messaggio speciale passato tra i processi per accedere alla risorsa condivisa",
+      "Un processo che monitora l'accesso concorrente alla risorsa",
+      "Un timestamp usato per ordinare le richieste di accesso",
+      "Un registro centrale che assegna permessi ai processi"
+    ],
+    "correct_answer": "Un messaggio speciale passato tra i processi per accedere alla risorsa condivisa"
+  },
+  {
+    "question": "I middleware possono facilitare la riduzione del numero di wrapper necessari in un sistema distribuito:",
+    "id": "61411812-5e28-4870-83be-90377a77a5d5",
+    "answers": [
+      "Implementando un sistema di backup centralizzato per tutti i componenti",
+      "Gestendo esclusivamente la sicurezza a livello hardware",
+      "Offrendo un'interfaccia standard per l'accesso alle funzionalità  dei componenti",
+      "Fornendo strumenti per la crittografia dei dati in transito"
+    ],
+    "correct_answer": "Offrendo un'interfaccia standard per l'accesso alle funzionalità  dei componenti"
+  },
+  {
+    "question": "L'obiettivo principale del server NFS?",
+    "id": "2afbcb2c-f68d-440c-a170-32e2725e2213",
+    "answers": [
+      "Gestire la sicurezza e l’autenticazione degli utenti a livello di rete",
+      "Eseguire il bilanciamento del carico tra client diversi",
+      "Monitorare e ottimizzare le prestazioni hardware del server",
+      "Fornire un’interfaccia a un filesystem analoga a quella di un filesystem locale"
+    ],
+    "correct_answer": "Fornire un’interfaccia a un filesystem analoga a quella di un filesystem locale"
+  },
+  {
+    "question": "Il coordinamento si verifica quando c'è un disaccoppiamento temporale e accoppiamento referenziale tra due processi è:",
+    "id": "12b30175-198b-45ac-8a98-3d30158ff338",
+    "answers": [
+      "Synchronous messaging",
+      "Direct procedure call",
+      "Shared memory communication",
+      "Mailbox coordination"
+    ],
+    "correct_answer": "Mailbox coordination"
+  },
+  {
+    "question": "Lo scopo dello strato superiore nella tecnica a due strati è:",
+    "id": "a3e3daab-08d0-45ed-b5bc-bcbb11ec9aa7",
+    "answers": [
+      "Controllare la topologia della rete",
+      "Compilare un elenco dei vicini più vicini",
+      "Scambiare elementi da viste parziali",
+      "Fornire un servizio di peer sampling"
+    ],
+    "correct_answer": "Compilare un elenco dei vicini più vicini"
+  },
+  {
+    "question": "Uno svantaggio dell'approccio con un server del gruppo è:",
+    "id": "aa447cb0-ae53-49a3-b3a9-0b1a739ad084",
+    "answers": [
+      "Garantisce la completa assenza di ritardi nella comunicazione tra i membri",
+      "Richiede che tutti i processi siano attivi contemporaneamente senza eccezioni",
+      "Efficace ma con un singolo punto di errore",
+      "Elimina la necessità di sincronizzazione tra i processi del gruppo"
+    ],
+    "correct_answer": "Efficace ma con un singolo punto di errore"
+  },
+  {
+    "question": "Si verifica un errore di omissione di ricezione quando:",
+    "id": "3d6dd54a-251c-4771-82b8-f66f2b17a584",
+    "answers": [
+      "Il server riceve la richiesta ma non risponde entro il timeout previsto",
+      "Il client invia la richiesta più volte per assicurarsi che arrivi",
+      "Il server non ha mai ricevuto la richiesta",
+      "La rete rallenta causando un ritardo nella trasmissione della richiesta"
+    ],
+    "correct_answer": "Il server non ha mai ricevuto la richiesta"
+  },
+  {
+    "question": "La principale differenza tra ZeroMQ e l'approccio classico di Berkeley alla comunicazione basata su socket è:",
+    "id": "395c64a1-d1a5-4dee-9d5a-acbb92f437b2",
+    "answers": [
+      "ZeroMQ utilizza esclusivamente protocolli proprietari mentre Berkeley usa solo TCP/IP",
+      "ZeroMQ gestisce l'istituzione e la manutenzione della connessione dietro le quinte mentre Berkeley richiede che lo sviluppatore dell'applicazione se ne occupi",
+      "Berkeley supporta la comunicazione asincrona mentre ZeroMQ no",
+      "Berkeley offre nativamente meccanismi di bilanciamento del carico, ZeroMQ no"
+    ],
+    "correct_answer": "ZeroMQ gestisce l'istituzione e la manutenzione della connessione dietro le quinte mentre Berkeley richiede che lo sviluppatore dell'applicazione se ne occupi"
+  },
+  {
+    "question": "La funzione di classificazione utilizzata per ordinare un gruppo di nodi in una rete peer-to-peer è:",
+    "id": "6b962d84-65a5-4191-b0a2-c5e3499ec77f",
+    "answers": [
+      "Ordinare i nodi in base al nome host",
+      "Ordinare i nodi diminuendo la loro distanza da un nodo specifico",
+      "Ordinare i nodi aumentando la loro distanza da un nodo specifico",
+      "Ordinare i nodi in base al loro indirizzo IP"
+    ],
+    "correct_answer": "Ordinare i nodi aumentando la loro distanza da un nodo specifico"
+  },
+  {
+    "question": "Il modo più efficiente per rappresentare una storia causale in un sistema distribuito è:",
+    "id": "7d35ac0d-90c3-4964-89d7-c87780f04a4f",
+    "answers": [
+      "Salvando ogni evento in un registro centrale unico",
+      "Trasmettendo una copia completa della storia a tutti i nodi ad ogni evento",
+      "Utilizzando orologi fisici sincronizzati tramite NTP",
+      "Registrando solo l'evento più recente di ogni processo"
+    ],
+    "correct_answer": "Registrando solo l'evento più recente di ogni processo"
+  },
+  {
+    "question": "La dimensione standard di un blocco di dati in BitTorrent è:",
+    "id": "fdaa064e-6864-46f3-85ca-49687b69d1f4",
+    "answers": [
+      "4 Mb",
+      "16 Kb",
+      "512 byte",
+      "1 Gb"
+    ],
+    "correct_answer": "16 Kb"
+  },
+  {
+    "question": "Non sono possibili linee guida generali per allentare la rigidità  della consistenza perché:",
+    "id": "1b1d3545-fd66-4e9b-b159-e5bcf3faeb9b",
+    "answers": [
+      "Applicazioni diverse hanno tolleranze diverse per le inconsistenze",
+      "I sistemi distribuiti sono sempre progettati per garantire consistenza forte",
+      "La rete garantisce già l’ordine globale dei messaggi scambiati",
+      "Tutti i modelli di consistenza debole impongono gli stessi vincoli temporali"
+    ],
+    "correct_answer": "Applicazioni diverse hanno tolleranze diverse per le inconsistenze"
+  },
+  {
+    "question": "La differenza principale tra un object server e un server tradizionale è:",
+    "id": "b92e5d36-aa3b-4823-bd28-ee1f3574dd3a",
+    "answers": [
+      "Gli object server ospitano gli oggetti che implementano particolari servizi, mentre i server tradizionali forniscono un servizio specifico da soli",
+      "I server tradizionali sono progettati esclusivamente per gestire database, mentre gli object server non lo sono",
+      "Gli object server non supportano la comunicazione remota, a differenza dei server tradizionali",
+      "I server tradizionali sono sempre decentralizzati, mentre gli object server sono sempre centralizzati"
+    ],
+    "correct_answer": "Gli object server ospitano gli oggetti che implementano particolari servizi, mentre i server tradizionali forniscono un servizio specifico da soli"
+  },
+  {
+    "question": "L'obiettivo di bloccare gli oggetti durante una chiamata è:",
+    "id": "139bbbcf-2404-4a30-b8b4-499bc2e3bcc5",
+    "answers": [
+      "Ridurre il numero di repliche necessarie in un sistema distribuito",
+      "Serializzare l'accesso e mantenere la coerenza degli oggetti",
+      "Consentire l'accesso concorrente per migliorare le prestazioni",
+      "Ottimizzare l'utilizzo della larghezza di banda durante la comunicazione remota"
+    ],
+    "correct_answer": "Serializzare l'accesso e mantenere la coerenza degli oggetti"
+  },
+  {
+    "question": "Lo svantaggio di creare una rete di overlay per gruppo di multicast è:",
+    "id": "aa95bdf9-40c9-443c-ba23-d80f76b36e43",
+    "answers": [
+      "Riduce significativamente la latenza della trasmissione dei dati",
+      "Minimizza l'uso della larghezza di banda complessiva della rete",
+      "Elimina la necessità di protocolli di routing interni",
+      "Un nodo appartenente a più gruppi dovrà mantenere un elenco separato dei vicini per ogni gruppo"
+    ],
+    "correct_answer": "Un nodo appartenente a più gruppi dovrà mantenere un elenco separato dei vicini per ogni gruppo"
+  },
+  {
+    "question": "Quando il coordinatore concede l'autorizzazione a un processo di richiesta:",
+    "id": "b27e9aaa-4cab-477a-b8aa-599dcbea9094",
+    "answers": [
+      "Il processo di richiesta deve attendere fino al completamento di tutte le operazioni in coda",
+      "Al processo di richiesta è concesso l'accesso esclusivo alla risorsa",
+      "Il coordinatore notifica a tutti gli altri processi di sospendere le richieste",
+      "L’accesso alla risorsa viene condiviso con tutti i processi in modalità concorrente"
+    ],
+    "correct_answer": "Al processo di richiesta è concesso l'accesso esclusivo alla risorsa"
+  },
+  {
+    "question": "L'operazione socket nelle operazioni di socket TCP per i server:",
+    "id": "9e9d8ed1-604b-47a9-9e17-86c2980657a5",
+    "answers": [
+      "Chiude la connessione esistente con il client",
+      "Accetta una connessione in arrivo da un client",
+      "Invia dati al client attraverso la connessione stabilita",
+      "Crea un nuovo socket per la connessione"
+    ],
+    "correct_answer": "Crea un nuovo socket per la connessione"
+  },
+  {
+    "question": "Una soluzione per ottenere la somiglianza in un sistema di messaggistica con applicazioni estremamente eterogenee è:",
+    "id": "d4ac25c8-bf61-4b6e-9e42-be86645afcea",
+    "answers": [
+      "Utilizzare messaggi XML che aumentano il livello di astrazione",
+      "Applicare compressione dati senza standardizzazione del formato",
+      "Usare solo protocolli proprietari per garantire sicurezza",
+      "Limitare la comunicazione a reti locali con hardware identico"
+    ],
+    "correct_answer": "Utilizzare messaggi XML che aumentano il livello di astrazione"
+  },
+  {
+    "question": "Lo svantaggio dell'invio di dati pixel grezzi invece di protocolli di alto livello come X è che:",
+    "id": "db0b5cd4-69d6-41df-802d-348d4bfac5ef",
+    "answers": [
+      "Aumenta la latenza della rete",
+      "Riduce la compatibilità tra diversi sistemi operativi",
+      "Manca dei semantici dell'applicazione",
+      "Compromette la sicurezza dei dati trasmessi"
+    ],
+    "correct_answer": "Manca dei semantici dell'applicazione"
+  },
+  {
+    "question": "Uno svantaggio del gruppo gerarchico è:",
+    "id": "1afcd045-7c5e-40cd-8793-23fe03deb3c0",
+    "answers": [
+      "Tutti i messaggi devono essere cifrati punto a punto per motivi di sicurezza",
+      "Perdita del coordinatore porta l'intero gruppo a una brusca battuta d'arresto",
+      "I membri non possono comunicare tra loro senza utilizzare multicast IP",
+      "Il modello non consente alcuna forma di bilanciamento del carico"
+    ],
+    "correct_answer": "Perdita del coordinatore porta l'intero gruppo a una brusca battuta d'arresto"
+  },
+  {
+    "question": "Il protocollo di gossiping nel metodo di posizionamento geometrico dello spazio:",
+    "id": "e7ebf464-dc42-43d7-9cfd-1e90cb26a80b",
+    "answers": [
+      "Calcola la distanza tra nodi usando triangolazione GPS",
+      "Propaga la forza di un token in tutta la rete",
+      "Utilizza tabelle di routing statiche per determinare la posizione dei nodi",
+      "Si basa su un nodo centrale che coordina lo scambio di coordinate spaziali"
+    ],
+    "correct_answer": "Propaga la forza di un token in tutta la rete"
+  },
+  {
+    "question": "I problemi di scalabilità in un sistema di messaggistica possono essere affrontati:",
+    "id": "a64fa50f-98ec-4d1c-8367-1bdeda6f889a",
+    "answers": [
+      "Limitando il numero di messaggi inviati da ogni client senza bilanciamento del carico",
+      "Memorizzando tutti i messaggi su un singolo server senza replica",
+      "Utilizzando esclusivamente connessioni punto a punto senza intermediari",
+      "Utilizzando router per inoltrare messaggi tra gestori di code"
+    ],
+    "correct_answer": "Utilizzando router per inoltrare messaggi tra gestori di code"
+  },
+  {
+    "question": "La regola semplice seguita da un nodo in BitTorrent per aiutare gli altri nodi è:",
+    "id": "18d03a16-f0fe-4bc4-8f49-3496add19615",
+    "answers": [
+      "Se il nodo P nota che il nodo Q invia più dati di quanti ne riceve, il nodo P blocca completamente la connessione",
+      "Se il nodo P osserva che il nodo Q sta scaricando più dati di quanti ne stia caricando, allora il nodo P ha la possibilità  di rallentare la velocità  con cui invia i dati al nodo Q",
+      "Il nodo P sempre invia dati alla massima velocità possibile indipendentemente dal comportamento del nodo Q",
+      "Il nodo P rimuove il nodo Q dalla lista dei peer se scarica dati troppo lentamente"
+    ],
+    "correct_answer": "Se il nodo P osserva che il nodo Q sta scaricando più dati di quanti ne stia caricando, allora il nodo P ha la possibilità  di rallentare la velocità  con cui invia i dati al nodo Q"
+  },
+  {
+    "question": "Qual è il ruolo del coordinatore in un sistema di mutua esclusione?",
+    "id": "3981abdd-8e31-4fc1-bb49-4e42dfef697b",
+    "answers": [
+      "Gestire le richieste di accesso alle risorse",
+      "Creare copie ridondanti delle risorse per migliorare l’affidabilità",
+      "Monitorare le performance di rete tra i processi",
+      "Distribuire i carichi di lavoro tra più server"
+    ],
+    "correct_answer": "Gestire le richieste di accesso alle risorse"
+  },
+  {
+    "question": "Lo scopo del messaggio COORDINATOR è:",
+    "id": "9f095b0f-a081-46e1-9957-548b5ee4fb70",
+    "answers": [
+      "Richiedere una nuova elezione a causa di un malfunzionamento del coordinatore attuale",
+      "Sincronizzare l’orologio di sistema tra tutti i processi partecipanti",
+      "Iniziare una procedura di backup distribuito per prevenire perdite di dati",
+      "Informare tutti i processi che è stato selezionato un nuovo coordinatore"
+    ],
+    "correct_answer": "Informare tutti i processi che è stato selezionato un nuovo coordinatore"
+  },
+  {
+    "question": "In un'applicazione stratificata, il livello che opera su database o file system è:",
+    "id": "01273ace-ab8a-49e5-b2dc-07b9d8ed250b",
+    "answers": [
+      "Livello di presentazione",
+      "Livello di rete",
+      "Livello di applicazione",
+      "Livello dei dati"
+    ],
+    "correct_answer": "Livello dei dati"
+  },
+  {
+    "question": "La frammentazione verticale nel contesto dei database relazionali distribuiti è:",
+    "id": "8e591409-2916-41f4-8ed3-baf838d4578f",
+    "answers": [
+      "La suddivisione delle tabelle in righe e distribuzione su più nodi",
+      "La duplicazione completa di una tabella su più server per ridondanza",
+      "Il processo di suddivisione delle tabelle per colonne e distribuzione su più computer",
+      "La compressione delle tabelle per ottimizzare lo spazio su disco"
+    ],
+    "correct_answer": "Il processo di suddivisione delle tabelle per colonne e distribuzione su più computer"
+  },
+  {
+    "question": "La funzione del client NFS nel sistema NFS è?",
+    "id": "f91d1c38-3c57-4d87-b8bf-09cdc1352b1b",
+    "answers": [
+      "Archiviare i file localmente per il backup automatico",
+      "Coordinare le transazioni tra server multipli",
+      "Gestire l'accesso ai file archiviati su un server remoto",
+      "Monitorare la rete per rilevare guasti hardware"
+    ],
+    "correct_answer": "Gestire l'accesso ai file archiviati su un server remoto"
+  },
+  {
+    "question": "Se un processo che contiene il token si arresta in modo anomalo nelle soluzioni basate su token:",
+    "id": "40cc54f8-25b1-44a8-8621-a210a7d96e30",
+    "answers": [
+      "Il sistema continua senza alcuna modifica, aspettando che il processo si riavvii",
+      "Il token viene automaticamente trasferito al processo successivo senza intervento",
+      "Viene avviata una complessa procedura distribuita per generare un nuovo token",
+      "Tutti i processi si bloccano fino a quando il token viene manualmente reinserito"
+    ],
+    "correct_answer": "Viene avviata una complessa procedura distribuita per generare un nuovo token"
+  },
+  {
+    "question": "Un esempio di approccio home-based è:",
+    "id": "27a2b6b6-00a2-4b96-b85d-99ae6fe4fcb3",
+    "answers": [
+      "DNS dinamico",
+      "Mobile IP",
+      "Routing basato su flood",
+      "Modello client-server"
+    ],
+    "correct_answer": "Mobile IP"
+  },
+  {
+    "question": "Nel grid computing il livello che include servizi per l'identificazione delle risorse, l'allocazione e la programmazione delle attività è detto:",
+    "id": "d3e402ba-4f48-4243-9dcb-76eaa54e2118",
+    "answers": [
+      "Fabric Layer",
+      "Collective Layer",
+      "Resource Layer",
+      "Application Layer"
+    ],
+    "correct_answer": "Collective Layer"
+  },
+  {
+    "question": "Data una macchina p in un sistema e un tempo UTC t, l'accuratezza del clock di p è governata da:",
+    "id": "2a71711e-fcd9-4187-ae23-0ede6fbf0387",
+    "answers": [
+      "∀t,∀p,q: C_p (t) > t + π",
+      "∀t,∀p,q: | C_p (t)-t|≤π",
+      "∀t,∀p,q: C_p (t) < t - π",
+      "∀t,∀p,q: | C_p (t) + t| ≥ π"
+    ],
+    "correct_answer": "∀t,∀p,q: | C_p (t)-t|≤π"
+  },
+  {
+    "question": "Un intervallo di consistenza continua è:",
+    "id": "a4275d31-4704-4db7-84a2-9b75c5cdd36d",
+    "answers": [
+      "La gamma di soluzioni di backup utilizzate per la replica dei dati",
+      "L'intervallo di deviazioni numeriche tra le repliche",
+      "La gamma di deviazioni di obsolescenza tra le repliche",
+      "L'intervallo di deviazioni della dimensione dei file tra le repliche"
+    ],
+    "correct_answer": "L'intervallo di deviazioni numeriche tra le repliche"
+  },
+  {
+    "question": "La proprietà  per cui le modifiche apportate da una transazione sono irreversibili una volta che la transazione è stata portata a termine è detta:",
+    "id": "c4fbc8b9-73d1-4cbe-aa92-34a1034ddd1e",
+    "answers": [
+      "Atomica",
+      "Isolata",
+      "Consistente",
+      "Durevole"
+    ],
+    "correct_answer": "Durevole"
+  },
+  {
+    "question": "Il progetto Bayou è:",
+    "id": "ba6e74d9-ee77-41d4-af71-4b5c3c2223f7",
+    "answers": [
+      "Un linguaggio di programmazione distribuito per applicazioni real-time",
+      "Un framework di orchestrazione per container basato su Kubernetes",
+      "Un sistema di database progettato per il mobile computing",
+      "Un protocollo crittografico per la sicurezza nei sistemi peer-to-peer"
+    ],
+    "correct_answer": "Un sistema di database progettato per il mobile computing"
+  },
+  {
+    "question": "La funzione della posizione di casa nella strategia comune per supportare gli enti mobili in reti di grandi dimensioni è:",
+    "id": "88557d87-1194-4a8f-84b3-995b99c5b82f",
+    "answers": [
+      "Gestire la sincronizzazione dell’orologio tra entità mobili",
+      "Tenere traccia della posizione attuale di un entità",
+      "Allocare dinamicamente le risorse di rete ai nodi fissi",
+      "Coordinare la comunicazione multicast tra i nodi mobili"
+    ],
+    "correct_answer": "Tenere traccia della posizione attuale di un entità"
+  },
+  {
+    "question": "Il demone ntpd una volta ottenute le informazioni ottenute da altre macchine in Berkeley Unix:",
+    "id": "21d09575-63ff-44a3-8871-a2133bf7b3a9",
+    "answers": [
+      "Spegne automaticamente i nodi che hanno un clock fuori sincronizzazione",
+      "Trasmette un segnale di reset a tutti i processi in esecuzione",
+      "Disabilita temporaneamente la rete per evitare collisioni durante la sincronizzazione",
+      "Calcola la media e istruisce ogni macchina come regolare il clock"
+    ],
+    "correct_answer": "Calcola la media e istruisce ogni macchina come regolare il clock"
+  },
+  {
+    "question": "Un sistema è tollerante a k guasti significa che:",
+    "id": "ca85c8ae-00b2-47c4-abe6-401ff87357b4",
+    "answers": [
+      "Può tollerare solo guasti sequenziali senza perdere dati",
+      "Può resistere a k guasti e soddisfare comunque i suoi requisiti",
+      "Garantisce la sicurezza dei dati solo in presenza di meno di k/2 guasti",
+      "Richiede almeno k processi attivi per funzionare correttamente"
+    ],
+    "correct_answer": "Può resistere a k guasti e soddisfare comunque i suoi requisiti"
+  },
+  {
+    "question": "I provider di servizi Internet (ISP) possono essere considerati situati ai margini di Internet:",
+    "id": "bef27dfd-ba3f-470b-b9d4-9da516fb2316",
+    "answers": [
+      "Quando gli utenti finali si connettono a Internet tramite il loro ISP",
+      "Quando gestiscono esclusivamente i data center centrali di Internet",
+      "Quando operano solo all’interno di reti private aziendali",
+      "Quando si occupano unicamente del routing tra backbone di Internet"
+    ],
+    "correct_answer": "Quando gli utenti finali si connettono a Internet tramite il loro ISP"
+  },
+  {
+    "question": "Quando un processo acquisisce il token e non ha bisogno di accedere alla risorsa condivisa:",
+    "id": "4880966e-ae43-4208-9687-d2b664944945",
+    "answers": [
+      "Passa il token al processo successivo",
+      "Mantiene il token fino a quando ne ha bisogno anche se non accede alla risorsa",
+      "Distrugge il token per evitare conflitti",
+      "Invoca una nuova elezione per ridistribuire il token"
+    ],
+    "correct_answer": "Passa il token al processo successivo"
+  },
+  {
+    "question": "RDF sta per:",
+    "id": "a5ec52c6-0d59-4d3f-8d86-ff30002ca43d",
+    "answers": [
+      "Resource Description Framework",
+      "Remote Data Format",
+      "Recursive Data Flow",
+      "Real-time Data Framework"
+    ],
+    "correct_answer": "Resource Description Framework"
+  },
+  {
+    "question": "Le reti geografiche che consentono di collegare da decine di migliaia a centinaia di milioni di dispositivi in tutto il mondo sono dette:",
+    "id": "630e16b9-beb7-4fe6-9943-ca4e14d4fc75",
+    "answers": [
+      "LAN",
+      "PAN",
+      "MAN",
+      "WAN"
+    ],
+    "correct_answer": "WAN"
+  },
+  {
+    "question": "Il vantaggio principale della replica attiva è:",
+    "id": "f5e5a539-98a4-4212-9b6a-8c0b7eacbbcc",
+    "answers": [
+      "Richiede meno risorse computazionali rispetto alla replica passiva",
+      "Garantisce l’ordine dei messaggi solo se si utilizza un protocollo di polling",
+      "Supporta la complessità arbitraria delle operazioni",
+      "Funziona solo in presenza di un coordinatore centralizzato che gestisce le repliche"
+    ],
+    "correct_answer": "Supporta la complessità arbitraria delle operazioni"
+  },
+  {
+    "question": "L'errore di transizione di stato avviene quando:",
+    "id": "047c1f5e-2b94-4369-b2f4-19f109bb2ef8",
+    "answers": [
+      "Quando un server riceve un messaggio non riconosciuto e non è stato adottato un modo per gestirlo",
+      "Quando un client invia due richieste identiche in rapida successione",
+      "Quando il sistema rileva un conflitto tra due clock logici",
+      "Quando un processo viene terminato e riavviato automaticamente dal middleware"
+    ],
+    "correct_answer": "Quando un server riceve un messaggio non riconosciuto e non è stato adottato un modo per gestirlo"
+  },
+  {
+    "question": "Nell'algoritmo di mutua esclusione distribuito deve essere chiaro per qualsiasi coppia di eventi nell'algoritmo:",
+    "id": "2cad4699-2aff-4962-8381-dbc6e8e905ce",
+    "answers": [
+      "Quale evento è stato generato da un nodo con identificatore più alto",
+      "Quale evento ha consumato meno risorse di rete",
+      "Quale si è verificato per primo",
+      "Quale evento ha richiesto più tempo di elaborazione"
+    ],
+    "correct_answer": "Quale si è verificato per primo"
+  },
+  {
+    "question": "Secondo l'algoritmo centralizzato di mutua esclusione, un processo richiede l'accesso a una risorsa condivisa:",
+    "id": "44a16961-c688-4d1e-9223-2fbb2edb26ca",
+    "answers": [
+      "Inviando un messaggio a tutti gli altri processi per notificare la richiesta",
+      "Attivando direttamente il lock sulla risorsa senza comunicazione",
+      "Aspettando che il coordinatore assegni automaticamente la risorsa senza richiesta",
+      "Inviando un messaggio al coordinatore specificando la risorsa e richiedendo l'autorizzazione"
+    ],
+    "correct_answer": "Inviando un messaggio al coordinatore specificando la risorsa e richiedendo l'autorizzazione"
+  },
+  {
+    "question": "X Window System è noto anche come:",
+    "id": "c135f76e-10de-4908-a612-2605a74818b0",
+    "answers": [
+      "Wayland",
+      "DirectX",
+      "Quartz",
+      "X11"
+    ],
+    "correct_answer": "X11"
+  },
+  {
+    "question": "La scalabilità  geografica:",
+    "id": "29df249f-0392-4b85-90ff-be6152b06fdc",
+    "answers": [
+      "Mira a ridurre i ritardi di comunicazione tra luoghi distanti del pianeta",
+      "Si concentra sull'aumento del numero di utenti in una singola città",
+      "Consiste nell'ottimizzare l'uso della CPU all'interno di un singolo server",
+      "Mira esclusivamente a migliorare la sicurezza dei dati in rete"
+    ],
+    "correct_answer": "Mira a ridurre i ritardi di comunicazione tra luoghi distanti del pianeta"
+  },
+  {
+    "question": "Lo scopo principale dell'operazione get in un sistema message-queuing è:",
+    "id": "77d10441-0426-49de-a2c6-e78f1c08342e",
+    "answers": [
+      "Recuperare il messaggio pendente più lungo dalla coda specificata",
+      "Inviare un messaggio a tutti i nodi della rete",
+      "Creare una nuova coda per i messaggi in arrivo",
+      "Monitorare lo stato di consegna dei messaggi"
+    ],
+    "correct_answer": "Recuperare il messaggio pendente più lungo dalla coda specificata"
+  },
+  {
+    "question": "La scalabilità  amministrativa:",
+    "id": "27f4e0ad-cead-4cf7-abb6-0e119131f45a",
+    "answers": [
+      "Si concentra sull'aumento delle risorse hardware di un singolo nodo",
+      "Riguarda esclusivamente la velocità di trasmissione dati tra nodi",
+      "Mira a scalare un sistema su più domini",
+      "Si occupa solo della scalabilità verticale"
+    ],
+    "correct_answer": "Mira a scalare un sistema su più domini"
+  },
+  {
+    "question": "L'operazione utilizzata per controllare l'accesso di un client a un file nella versione 4 di NFS è:",
+    "id": "96332714-72e3-4510-a3a0-5eea6fb308f8",
+    "answers": [
+      "Lock",
+      "Open",
+      "Access",
+      "Authenticate"
+    ],
+    "correct_answer": "Access"
+  },
+  {
+    "question": "La coerenza writes-follows-reads è importante in situazioni in cui i dati vengono aggiornati in tempo reale perché:",
+    "id": "98c722de-3329-4bc4-bafa-ca1fda73ad1f",
+    "answers": [
+      "Consente di replicare i dati solo su nodi secondari per ridurre il carico di rete",
+      "Impedisce la perdita di dati durante il failover di un nodo master",
+      "Riduce automaticamente la latenza delle operazioni di scrittura nei sistemi distribuiti",
+      "Garantisce che gli utenti vedano la versione più recente e accurata degli elementi di dati"
+    ],
+    "correct_answer": "Garantisce che gli utenti vedano la versione più recente e accurata degli elementi di dati"
+  },
+  {
+    "question": "Un sistema peer-to-peer non strutturato può determinare che uno dei suoi vicini non è più attivo:",
+    "id": "c17144f5-6f7b-4fe1-872c-02893948dadd",
+    "answers": [
+      "Eseguendo una scansione completa di tutta la rete ogni minuto",
+      "Modificando il contenuto della sua lista locale",
+      "Inviando una richiesta di ping a tutti i nodi nella rete contemporaneamente",
+      "Delegando la verifica allo scheduler del sistema operativo"
+    ],
+    "correct_answer": "Modificando il contenuto della sua lista locale"
+  },
+  {
+    "question": "Il problema principale della migrazione in tempo reale di un sistema operativo virtualizzato è:",
+    "id": "35b89f7c-597b-4c55-993d-0d061341f614",
+    "answers": [
+      "Sincronizzazione degli orologi tra host e guest virtuali",
+      "Migrazione dell'intera immagine di memoria e migrazione delle associazioni alle risorse locali",
+      "Scalabilità verticale del server durante la migrazione",
+      "Limitazioni nel bilanciamento del carico tra macchine fisiche"
+    ],
+    "correct_answer": "Migrazione dell'intera immagine di memoria e migrazione delle associazioni alle risorse locali"
+  },
+  {
+    "question": "Le combinazioni più comuni di persistenza e sincronizzazione nei servizi di comunicazione middleware sono:",
+    "id": "7a7bd5ad-8024-45c6-bcd0-45f4b735f976",
+    "answers": [
+      "Comunicazione persistente con sincronizzazione alla ricezione e comunicazione transitoria con sincronizzazione al salvataggio su disco",
+      "Persistenza con sincronizzazione solo lato client e comunicazione transitoria con buffering asincrono",
+      "Comunicazione transitoria con sincronizzazione differita e persistenza con gestione basata su eventi ciclici",
+      "Persistenza associata alla sincronizzazione all'invio della richiesta e comunicazione transitoria con sincronizzazione al completamento del processing dei dati"
+    ],
+    "correct_answer": "Persistenza associata alla sincronizzazione all'invio della richiesta e comunicazione transitoria con sincronizzazione al completamento del processing dei dati"
+  },
+  {
+    "question": "La funzione dell'hardware sottostante nella separazione dei processi è:",
+    "id": "8ed66f66-178c-4275-816e-2ec450bd20f7",
+    "answers": [
+      "Eseguire direttamente tutte le applicazioni senza bisogno del sistema operativo",
+      "Fornire il supporto al sistema operativo per applicare la separazione dei processi",
+      "Memorizzare esclusivamente dati temporanei senza influire sui processi",
+      "Gestire solo la comunicazione di rete tra processi"
+    ],
+    "correct_answer": "Fornire il supporto al sistema operativo per applicare la separazione dei processi"
+  },
+  {
+    "question": "Una replica avviata dal client è comunemente denominata:",
+    "id": "d5854e8e-7dc3-4395-911c-d1d14a3c3a76",
+    "answers": [
+      "Backup remoto",
+      "Replica passiva",
+      "Cache",
+      "Cluster"
+    ],
+    "correct_answer": "Cache"
+  },
+  {
+    "question": "Quando i clock di macchine appartenenti ad un sistema inizialmente sincronizzati iniziano a registrare orari diversi, si parla di:",
+    "id": "62e58535-c911-4c1a-a33a-c27e029006ec",
+    "answers": [
+      "Clock skew",
+      "Clock offset",
+      "Clock jitter",
+      "Clock drift"
+    ],
+    "correct_answer": "Clock drift"
+  },
+  {
+    "question": "I modelli di consistenza sono generalmente considerati più difficili da utilizzare nella pratica sono:",
+    "id": "40573048-75a6-499e-8daa-c8cdb8977ea2",
+    "answers": [
+      "Quelli basati su comunicazione asincrona tra i nodi",
+      "Quelli che consentono aggiornamenti locali prima della propagazione globale",
+      "Quelli che non impongono alcun ordine nelle operazioni di scrittura",
+      "Quelli con maggiori restrizioni sui valori restituiti delle operazioni di lettura"
+    ],
+    "correct_answer": "Quelli con maggiori restrizioni sui valori restituiti delle operazioni di lettura"
+  },
+  {
+    "question": "Il motivo per cui gli intercettori possono richiedere uno sforzo significativo per l'implementazione è:",
+    "id": "a7c6846c-7b99-4fd3-9519-031c08377cbb",
+    "answers": [
+      "Richiedono hardware specializzato per il loro funzionamento",
+      "Possono operare solo su sistemi operativi proprietari",
+      "Devono essere estremamente generici per poter essere utilizzati in qualsiasi applicazione",
+      "Necessitano di aggiornamenti manuali frequenti da parte degli utenti"
+    ],
+    "correct_answer": "Devono essere estremamente generici per poter essere utilizzati in qualsiasi applicazione"
+  },
+  {
+    "question": "Un processo quando riceve un messaggio di richiesta da un altro processo nell'algoritmo distribuito di mutua esclusione:",
+    "id": "8325306f-ac4e-4db7-af4d-1583b9c8160c",
+    "answers": [
+      "Invia un messaggio OK al mittente",
+      "Blocca la risorsa fino a ricevere un messaggio di rilascio",
+      "Ignora la richiesta se è già in possesso del token",
+      "Riavvia il processo mittente in caso di conflitto"
+    ],
+    "correct_answer": "Invia un messaggio OK al mittente"
+  },
+  {
+    "question": "Quando un processo avvia un'elezione, invia un messaggio ELECTION a:",
+    "id": "a419776a-4191-42de-bb02-38516776540b",
+    "answers": [
+      "Tutti i processi presenti nel sistema, indipendentemente dal loro identificatore",
+      "Il processo con l’identificatore più basso attualmente attivo",
+      "Tutti i processi con identificatori più elevati",
+      "Solo ai processi che si trovano sullo stesso nodo fisico"
+    ],
+    "correct_answer": "Tutti i processi con identificatori più elevati"
+  },
+  {
+    "question": "Le slice in PlanetLab:",
+    "id": "5f8b9022-951b-44fc-9811-70582bd92907",
+    "answers": [
+      "Costituiscono un cluster di server virtuali costituito da una raccolta di macchine virtuali",
+      "Sono singole istanze di database distribuiti",
+      "Rappresentano protocolli di routing per reti wireless",
+      "Sono moduli software per la sicurezza delle reti"
+    ],
+    "correct_answer": "Costituiscono un cluster di server virtuali costituito da una raccolta di macchine virtuali"
+  },
+  {
+    "question": "Il livello OSI che specifica come i dati vengono rappresentati indipendentemente dai host su cui le applicazioni in comunicazione sono in esecuzione:",
+    "id": "250497c7-e80e-44cc-9292-247f24e704b1",
+    "answers": [
+      "Di presentazione",
+      "Fisico",
+      "Rete",
+      "Collegamento dati"
+    ],
+    "correct_answer": "Di presentazione"
+  },
+  {
+    "question": "Può essere necessario migrare porzioni del server sul client per migliorare le prestazioni:",
+    "id": "0a5c9f1f-e2bc-4411-b534-19fc7f32d430",
+    "answers": [
+      "In sistemi embedded dove il client non ha capacità computazionali",
+      "In servizi batch offline in cui tutte le operazioni sono pianificate lato server",
+      "In applicazioni di database interattive in cui i client compilano moduli",
+      "In ambienti cloud ad alta latenza dove la comunicazione client-server è evitata"
+    ],
+    "correct_answer": "In applicazioni di database interattive in cui i client compilano moduli"
+  },
+  {
+    "question": "La funzione principale di un server stub in una RPC è:",
+    "id": "c4170d93-859d-4430-adb1-c5345c5294b1",
+    "answers": [
+      "Inviare la richiesta al client dopo averla codificata",
+      "Gestire la comunicazione diretta tra client e server senza intermediari",
+      "Ricevere la richiesta dal server e trasformarla in una chiamata di procedura locale",
+      "Allocare risorse di rete per la connessione RPC"
+    ],
+    "correct_answer": "Ricevere la richiesta dal server e trasformarla in una chiamata di procedura locale"
+  },
+  {
+    "question": "Una strategia pull-based è efficace quando:",
+    "id": "3c29e43f-7948-4432-b05d-b9ad965c53d6",
+    "answers": [
+      "I dati memorizzati nella cache vengono raramente condivisi",
+      "È necessario notificare immediatamente tutti i client in caso di aggiornamento",
+      "I dati cambiano frequentemente e in maniera imprevedibile",
+      "Si utilizza una rete a bassa latenza con connessioni sempre attive"
+    ],
+    "correct_answer": "I dati memorizzati nella cache vengono raramente condivisi"
+  },
+  {
+    "question": "Una replica avviata dal server è:",
+    "id": "16961eae-3312-470c-ab82-d8f248edaeae",
+    "answers": [
+      "Una copia temporanea generata automaticamente da un client per uso locale",
+      "Un backup cifrato generato da un servizio di terze parti indipendente",
+      "Una partizione distribuita del database divisa tra più client per bilanciare il carico",
+      "Una copia di un archivio dati creata dal proprietario dell'archivio dati per migliorare le prestazioni"
+    ],
+    "correct_answer": "Una copia di un archivio dati creata dal proprietario dell'archivio dati per migliorare le prestazioni"
+  },
+  {
+    "question": "Il client non è a conoscenza della posizione fisica dei file nel:",
+    "id": "9f6a1eb6-340c-499a-9fbd-20f2f1416587",
+    "answers": [
+      "Modello di accesso diretto al disco",
+      "Modello di un servizio file remoto",
+      "Modello di condivisione di file locale",
+      "Modello di rete peer-to-peer senza server"
+    ],
+    "correct_answer": "Modello di un servizio file remoto"
+  },
+  {
+    "question": "Tra gli stili architettonici dei sistemi distribuiti non troviamo:",
+    "id": "c837c56e-56ed-4505-aa94-b5fbc14fccf9",
+    "answers": [
+      "Architetture a oggetti",
+      "Architetture basate su protocolli",
+      "Architetture a eventi",
+      "Architetture client-server"
+    ],
+    "correct_answer": "Architetture basate su protocolli"
+  },
+  {
+    "question": "E' utile installare repliche temporanee nelle aree di origine delle richieste quando:",
+    "id": "1f211992-836b-44c9-b8bd-609e3ca6c4c2",
+    "answers": [
+      "Il traffico di rete è stabile e non si prevedono picchi di carico",
+      "Tutti i client si trovano nella stessa rete locale del server",
+      "Arriva un improvviso afflusso di richieste da una posizione lontana dal server",
+      "Le richieste sono gestite esclusivamente da un singolo nodo master"
+    ],
+    "correct_answer": "Arriva un improvviso afflusso di richieste da una posizione lontana dal server"
+  },
+  {
+    "question": "Le due categorie di servizi di comunicazione nel modello OSI sono:",
+    "id": "be50308e-4da2-4ec1-8c14-a1bc3be10ea4",
+    "answers": [
+      "Sincroni e asincroni",
+      "Con connessione e senza connessione",
+      "Full-duplex e half-duplex",
+      "Rete locale e rete geografica"
+    ],
+    "correct_answer": "Con connessione e senza connessione"
+  },
+  {
+    "question": "Le due distinte operazioni di ricerca in LDAP sono:",
+    "id": "8ea05dcf-3e8c-43dd-8783-1ae63867e768",
+    "answers": [
+      "Search e modify",
+      "Bind e unbind",
+      "Read e list",
+      "Connect e disconnect"
+    ],
+    "correct_answer": "Read e list"
+  },
+  {
+    "question": "I nodi che detengono token nel metodo di posizionamento dello spazio geometrico sanno quando spostare i loro token:",
+    "id": "76896795-5359-4698-afac-e419c0de7e63",
+    "answers": [
+      "Quando le forze totali che agiscono su di essi superano una soglia predeterminata",
+      "Quando ricevono un comando diretto dal nodo centrale del sistema",
+      "Ogni volta che ricevono un numero pari di messaggi consecutivi",
+      "Dopo che tutti gli altri nodi hanno completato un ciclo completo di comunicazione"
+    ],
+    "correct_answer": "Quando le forze totali che agiscono su di essi superano una soglia predeterminata"
+  },
+  {
+    "question": "Si può ottenere scalabilità verticale:",
+    "id": "640007bd-f911-420d-a4c2-a7e3d7840862",
+    "answers": [
+      "Sostituendo i moduli di rete",
+      "Aggiungendo più server identici in parallelo",
+      "Distribuendo il carico di lavoro tra più macchine",
+      "Implementando un bilanciamento del carico a livello applicativo"
+    ],
+    "correct_answer": "Sostituendo i moduli di rete"
+  },
+  {
+    "question": "Quando il messaggio ELECTION raggiunge il processo di avvio:",
+    "id": "891b2c88-10e7-4d4a-958b-4ebaba40e4e3",
+    "answers": [
+      "Diventa un messaggio del COORDINATOR e viene diffuso per informare tutti del nuovo coordinatore e dei membri dell'anello",
+      "Viene ignorato e il processo di avvio rilancia immediatamente una nuova elezione",
+      "Il processo di avvio risponde con un messaggio ELECTION solo ai processi con ID più basso",
+      "Il messaggio viene convertito in un messaggio di sincronizzazione per aggiornare gli stati dei processi"
+    ],
+    "correct_answer": "Diventa un messaggio del COORDINATOR e viene diffuso per informare tutti del nuovo coordinatore e dei membri dell'anello"
+  },
+  {
+    "question": "La soluzione per il passaggio di tipi di dati complessi nelle chiamate di procedura remota è:",
+    "id": "d2f5577f-2367-49b1-91a5-c7fd64dba122",
+    "answers": [
+      "Limitarsi all’uso di tipi di dati primitivi come interi e stringhe",
+      "Trasformare sempre i dati complessi in formato testo non strutturato",
+      "Utilizzare il supporto del linguaggio di programmazione per le classi definite dall'utente",
+      "Evitare del tutto il passaggio di dati complessi nelle chiamate remote"
+    ],
+    "correct_answer": "Utilizzare il supporto del linguaggio di programmazione per le classi definite dall'utente"
+  },
+  {
+    "question": "Tipicamente i nomi dei percorsi nei file system sono rappresentati:",
+    "id": "34821cbd-96ac-436e-bc2b-59975b50413b",
+    "answers": [
+      "Come una lista di directory e file separati da virgole",
+      "Come stringa singola con etichette separate da un carattere speciale",
+      "Come una sequenza di directory e file separati da punti e virgola",
+      "Come una struttura JSON con chiavi per ogni livello del percorso"
+    ],
+    "correct_answer": "Come stringa singola con etichette separate da un carattere speciale"
+  },
+  {
+    "question": "La progettazione basata su componenti:",
+    "id": "060a422b-73a2-423b-a266-f42bb50661b3",
+    "answers": [
+      "E' un metodo per supportare la modificabilità  attraverso la composizione",
+      "Si basa esclusivamente sull’uso di microservizi senza componenti riutilizzabili",
+      "Implica che tutte le funzionalità devono essere integrate in un singolo modulo monolitico",
+      "Esclude l’uso di interfacce per la comunicazione tra parti del sistema"
+    ],
+    "correct_answer": "E' un metodo per supportare la modificabilità  attraverso la composizione"
+  },
+  {
+    "question": "Il vantaggio principale della condivisione del codice tra gli oggetti in un object server è:",
+    "id": "ca3b9e08-1ed9-4286-9230-c08069c96cd4",
+    "answers": [
+      "L'implementazione del codice viene caricata nel server solo una volta, rendendo più efficiente la gestione degli oggetti",
+      "Ogni oggetto deve avere una copia separata del codice per garantire isolamento completo",
+      "Il codice viene duplicato su ogni client per ridurre il carico sul server",
+      "La condivisione del codice impedisce la scalabilità del server"
+    ],
+    "correct_answer": "L'implementazione del codice viene caricata nel server solo una volta, rendendo più efficiente la gestione degli oggetti"
+  },
+  {
+    "question": "Lo scopo dell'utilizzo di un identificatore di processo univoco per rompere i legami negli orologi logici di Lamport:",
+    "id": "fe20c2a7-2fc8-4f0f-8814-fdc7fd899aaf",
+    "answers": [
+      "Per accelerare la sincronizzazione tra nodi in una rete distribuita",
+      "Per crittografare i messaggi scambiati tra processi",
+      "Per ridurre la quantità di messaggi necessari per la sincronizzazione",
+      "Per garantire che non si verifichino due eventi esattamente nello stesso momento"
+    ],
+    "correct_answer": "Per garantire che non si verifichino due eventi esattamente nello stesso momento"
+  },
+  {
+    "question": "La strategia viene utilizzata quando è richiesta un'elevata coerenza per le repliche permanenti e avviate dal server è:",
+    "id": "9d76a8a1-d874-4fe2-865f-7e2b405b37bd",
+    "answers": [
+      "Strategia push-based",
+      "Strategia lazy-update",
+      "Strategia eventual-consistency",
+      "Strategia pull-on-demand"
+    ],
+    "correct_answer": "Strategia push-based"
+  }
+]
