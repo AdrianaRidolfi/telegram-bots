@@ -1,4 +1,11 @@
 import os
+import sys
+if sys.platform == "win32":
+    os.system("chcp 65001")
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 import re
 import json
 import time
@@ -14,15 +21,19 @@ from telegram.ext import (
     ApplicationBuilder,
     CommandHandler,
     CallbackQueryHandler,
-    ContextTypes
+    ContextTypes,
+    JobQueue,
+    MessageHandler, filters
 )
-from pdf_generator import generate_pdf, generate_errors_pdf_sync
+from pdf_generator import generate_errors_pdf_sync
 from get_gifs import yay, yikes
 from wrong_answers import WrongAnswersManager
 from user_stats import UserStatsManager
 from firebase_admin import credentials, firestore
 from aiohttp import web, web_runner
+import aiofiles
 import logging
+import handlers
 
 # Configure logging
 logging.basicConfig(
@@ -33,6 +44,10 @@ logger = logging.getLogger(__name__)
 
 # per far partire il bot
 bot_running = True
+
+from dotenv import load_dotenv
+load_dotenv()  # questo legge automaticamente il file .env
+
 
 # Prendi la variabile d'ambiente con le credenziali in base64
 firebase_base64 = os.getenv("FIREBASE_CREDENTIALS_BASE64")
@@ -100,16 +115,21 @@ USE_WEBHOOK = WEBHOOK_URL is not None
 
 PORT = int(os.environ.get("PORT", 8000))
 
-print(f"🔧 Modalità: {'Webhook' if USE_WEBHOOK else 'Polling (locale)'}")
-print(f"🌐 Server port: {PORT}")
+print(f"Modalità: {'Webhook' if USE_WEBHOOK else 'Polling (locale)'}")
+print(f"Server port: {PORT}")
 
 application = ApplicationBuilder().token(TOKEN).build()
+
 user_states = {}
 
-QUIZ_FOLDER = "quizzes"
+QUIZ_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "quizzes")
 JSON = ".json"
+SCEGLI_MATERIA = "📚 Scegli materia"
+RIPASSA_ERRORI = "📖 Ripassa errori"
+AZZERA_STATISTICHE = "🧹 Azzera statistiche"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_text_only=False):
+    print("[DEBUG] /start command received")
     user_id = update.effective_user.id
     # Inizializzo il manager per l'utente, pronto a raccogliere errori
     manager = get_manager(user_id)
@@ -135,11 +155,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
 
     keyboard = []
     keyboard.append([InlineKeyboardButton("🌐 GitHub", url="https://github.com/AdrianaRidolfi/telegram-bots")])
-    keyboard.append([InlineKeyboardButton(text="📚 Scegli materia", callback_data="_choose_subject_")])
+    keyboard.append([InlineKeyboardButton(text=SCEGLI_MATERIA, callback_data="_choose_subject_")])
 
     #se l'utente ha errori aggiungo il bottone
     if manager.has_wrong_answers():
-        keyboard.append([InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors")])
+        keyboard.append([InlineKeyboardButton(RIPASSA_ERRORI, callback_data="review_errors")])
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
@@ -192,7 +212,7 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     keyboard = [
         [InlineKeyboardButton(f.replace("_", " ").replace(JSON, ""),
-         callback_data=json.dumps({"cmd": "download_pdf", "file": f}))]
+         callback_data=f"download_pdf:{f}")]
         for f in files
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
@@ -204,22 +224,42 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
 
 
-async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    query = update.callback_query
-    await query.answer()
-    user_id = query.from_user.id
+async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, user_id=None, filename=None):
+    # Permetti chiamata sia da callback che diretta
+    if update and update.callback_query:
+        query = update.callback_query
+        await query.answer()
+        user_id = query.from_user.id
+        filename = query.data
+    elif hasattr(context, 'user_id') and hasattr(context, 'filename'):
+        # Se context ha user_id e filename (non standard, ma fallback)
+        user_id = context.user_id
+        filename = context.filename
+    elif hasattr(context, 'chat_data') and 'user_id' in context.chat_data and 'filename' in context.chat_data:
+        user_id = context.chat_data['user_id']
+        filename = context.chat_data['filename']
+    # Permetti anche chiamata esplicita con parametri
+    if user_id is None or filename is None:
+        # Prova a recuperare da user_states (fallback)
+        if update and update.effective_user:
+            user_id = update.effective_user.id
+        if update and hasattr(update, 'data'):
+            filename = update.data
+    if user_id is None or filename is None:
+        await context.bot.send_message(chat_id=update.effective_user.id if update and update.effective_user else None, text="Errore: dati mancanti per il quiz.")
+        return
 
     # --- DDOS protection ---
     if is_rate_limited(user_id):
         await context.bot.send_message(chat_id=user_id, text="⏳ Stai andando troppo veloce! Riprova tra qualche secondo.")
         return
 
-    filename = query.data
     quiz_path = os.path.join(QUIZ_FOLDER, filename)
 
     try:
-        with open(quiz_path, encoding="utf-8") as f:
-            quiz_data = json.load(f)
+        async with aiofiles.open(quiz_path, mode="r", encoding="utf-8") as f:
+            content = await f.read()
+            quiz_data = json.loads(content)
     except Exception as e:
         await context.bot.send_message(chat_id=user_id, text=f"Errore nel caricamento del quiz: {e}")
         return
@@ -290,125 +330,136 @@ async def send_next_question(user_id, context):
             return
 
         q_index = state["order"][state["index"]]
-        
-        # Verifica che l'indice sia valido
-        if q_index >= len(state["quiz"]):
-            await context.bot.send_message(chat_id=user_id, text="❌ Errore nell'indice della domanda. Riprova con /start")
-            user_states.pop(user_id, None)
+        question_data = await _validate_and_get_question(state, q_index, user_id, context)
+        if question_data is None:
             return
-            
-        question_data = state["quiz"][q_index]
-        
-        # Verifica che la domanda abbia i campi necessari
-        if not question_data.get("question") or not question_data.get("answers"):
-            print(f"❌ Domanda malformata per user {user_id}: {question_data}")
-            state["index"] += 1  # Salta questa domanda
-            return await send_next_question(user_id, context)
 
-        original_answers = question_data.get("answers", [])
-        if len(original_answers) < 2:
-            print(f"❌ Domanda senza risposte sufficienti per user {user_id}")
-            state["index"] += 1  # Salta questa domanda
-            return await send_next_question(user_id, context)
-            
-        correct_index = question_data.get("correct_answer_index")
-
-        if correct_index is None:
-            try:
-                correct_answer = question_data.get("correct_answer")
-                if correct_answer and correct_answer in original_answers:
-                    correct_index = original_answers.index(correct_answer)
-                else:
-                    print(f"❌ Risposta corretta non trovata per user {user_id}: {correct_answer}")
-                    state["index"] += 1  # Salta questa domanda
-                    return await send_next_question(user_id, context)
-            except Exception as e:
-                print(f"❌ Errore nel trovare risposta corretta per user {user_id}: {e}")
-                state["index"] += 1  # Salta questa domanda
-                return await send_next_question(user_id, context)
-
-        # Continua con il resto della logica originale...
-        shuffled = list(enumerate(original_answers))
-        random.shuffle(shuffled)
-        new_answers = [ans for _, ans in shuffled]
-        new_correct_index = next((i for i, (orig_i, _) in enumerate(shuffled) if orig_i == correct_index), -1)
+        correct_index, new_answers = _get_shuffled_answers_and_correct_index(question_data)
+        if correct_index is None or new_answers is None:
+            state["index"] += 1
+            await send_next_question(user_id, context)
+            return
 
         state["quiz"][q_index]["_shuffled_answers"] = new_answers
-        state["quiz"][q_index]["_correct_index"] = new_correct_index
+        state["quiz"][q_index]["_correct_index"] = correct_index
 
-        question_index = f"{state['index'] + 1}."
-        question_raw = question_data.get('question', 'Domanda mancante')
-        escaped_question = escape_markdown(question_raw)
+        question_text = _build_question_text(state, question_data, new_answers)
+        reply_markup = _build_question_keyboard(new_answers)
 
-        if '*' in question_raw:
-            question_text = f"{question_index} {escaped_question}\n\n"
-        else:
-            question_text = f"*{question_index} {escaped_question}*\n\n"
+        if await _try_send_image(question_data, user_id, context, question_text, reply_markup):
+            return
 
-        for i, opt in enumerate(new_answers):
-            question_text += f"*{chr(65+i)}.* {escape_markdown(opt)}\n"
+        await _send_question_text(user_id, context, question_text, reply_markup)
 
-        keyboard = [
-            [InlineKeyboardButton(chr(65 + i), callback_data=f"answer:{i}") for i in range(len(new_answers))]
-        ]
-        keyboard.append([
-            InlineKeyboardButton("🛑 Stop", callback_data="stop"),
-            InlineKeyboardButton("🔄 Cambia corso", callback_data="change_course")
-        ])
-        reply_markup = InlineKeyboardMarkup(keyboard)
-
-        # Gestione immagini con timeout
-        image_filename = question_data.get("image")
-        if image_filename:
-            image_path = os.path.join(QUIZ_FOLDER, "images", image_filename)
-            if os.path.isfile(image_path):
-                try:
-                    with open(image_path, "rb") as image_file:
-                        await asyncio.wait_for(
-                            context.bot.send_photo(
-                                chat_id=user_id,
-                                photo=image_file,
-                                caption=question_text,
-                                reply_markup=reply_markup,
-                                parse_mode='Markdown'
-                            ),
-                            timeout=10.0
-                        )
-                    return 
-                except asyncio.TimeoutError:
-                    print(f"⏰ Timeout nell'invio immagine per user {user_id}")
-                except Exception as e:
-                    print(f"❌ Errore nell'invio dell'immagine per user {user_id}: {e}")
-
-        # Se non c'è immagine o qualcosa va storto, manda solo il testo
-        try:
-            await asyncio.wait_for(
-                context.bot.send_message(
-                    chat_id=user_id,
-                    text=question_text,
-                    reply_markup=reply_markup,
-                    parse_mode='Markdown'
-                ),
-                timeout=10.0
-            )
-        except asyncio.TimeoutError:
-            print(f"⏰ Timeout nell'invio messaggio per user {user_id}")
-            raise
-        except Exception as e:
-            print(f"❌ Errore nell'invio messaggio per user {user_id}: {e}")
-            raise
-            
     except Exception as e:
         print(f"❌ Errore critico in send_next_question per user {user_id}: {e}")
-        # Pulisci lo stato dell'utente e invia messaggio di errore
         user_states.pop(user_id, None)
         try:
             await context.bot.send_message(
                 chat_id=user_id,
                 text="❌ Si è verificato un errore. Riprova con /start"
             )
-        except:
+        except Exception:
             pass
+
+def _get_shuffled_answers_and_correct_index(question_data):
+    original_answers = question_data.get("answers", [])
+    correct_index = question_data.get("correct_answer_index")
+    if correct_index is None:
+        correct_answer = question_data.get("correct_answer")
+        if correct_answer and correct_answer in original_answers:
+            correct_index = original_answers.index(correct_answer)
+        else:
+            return None, None
+    shuffled = list(enumerate(original_answers))
+    random.shuffle(shuffled)
+    new_answers = [ans for _, ans in shuffled]
+    new_correct_index = next((i for i, (orig_i, _) in enumerate(shuffled) if orig_i == correct_index), -1)
+    return new_correct_index, new_answers
+
+def _build_question_text(state, question_data, new_answers):
+    question_index = f"{state['index'] + 1}."
+    question_raw = question_data.get('question', 'Domanda mancante')
+    escaped_question = escape_markdown(question_raw)
+    if '*' in question_raw:
+        question_text = f"{question_index} {escaped_question}\n\n"
+    else:
+        question_text = f"*{question_index} {escaped_question}*\n\n"
+    for i, opt in enumerate(new_answers):
+        question_text += f"*{chr(65+i)}.* {escape_markdown(opt)}\n"
+    return question_text
+
+def _build_question_keyboard(new_answers):
+    keyboard = [
+        [InlineKeyboardButton(chr(65 + i), callback_data=f"answer:{i}") for i in range(len(new_answers))]
+    ]
+    keyboard.append([
+        InlineKeyboardButton("🛑 Stop", callback_data="stop"),
+        InlineKeyboardButton("🔄 Cambia corso", callback_data="change_course")
+    ])
+    return InlineKeyboardMarkup(keyboard)
+
+async def _try_send_image(question_data, user_id, context, question_text, reply_markup):
+    image_filename = question_data.get("image")
+    if image_filename:
+        image_path = os.path.join(QUIZ_FOLDER, "images", image_filename)
+        if os.path.isfile(image_path):
+            try:
+                async with aiofiles.open(image_path, "rb") as image_file:
+                    photo_bytes = await image_file.read()
+                    await asyncio.wait_for(
+                        context.bot.send_photo(
+                            chat_id=user_id,
+                            photo=photo_bytes,
+                            caption=question_text,
+                            reply_markup=reply_markup,
+                            parse_mode='Markdown'
+                        ),
+                        timeout=10.0
+                    )
+                return True
+            except asyncio.TimeoutError:
+                print(f"⏰ Timeout nell'invio immagine per user {user_id}")
+            except Exception as e:
+                print(f"❌ Errore nell'invio dell'immagine per user {user_id}: {e}")
+    return False
+
+async def _send_question_text(user_id, context, question_text, reply_markup):
+    try:
+        await asyncio.wait_for(
+            context.bot.send_message(
+                chat_id=user_id,
+                text=question_text,
+                reply_markup=reply_markup,
+                parse_mode='Markdown'
+            ),
+            timeout=10.0
+        )
+    except asyncio.TimeoutError:
+        print(f"⏰ Timeout nell'invio messaggio per user {user_id}")
+        raise
+    except Exception as e:
+        print(f"❌ Errore nell'invio messaggio per user {user_id}: {e}")
+        raise
+
+async def _validate_and_get_question(state, q_index, user_id, context):
+    if q_index >= len(state["quiz"]):
+        await context.bot.send_message(chat_id=user_id, text="❌ Errore nell'indice della domanda. Riprova con /start")
+        user_states.pop(user_id, None)
+        return None
+    question_data = state["quiz"][q_index]
+    if not question_data.get("question") or not question_data.get("answers"):
+        print(f"❌ Domanda malformata per user {user_id}: {question_data}")
+        state["index"] += 1
+        await send_next_question(user_id, context)
+        return None
+    original_answers = question_data.get("answers", [])
+    if len(original_answers) < 2:
+        print(f"❌ Domanda senza risposte sufficienti per user {user_id}")
+        state["index"] += 1
+        await send_next_question(user_id, context)
+        return None
+    return question_data
 
 
 async def repeat_quiz(user_id: int, context: ContextTypes.DEFAULT_TYPE):
@@ -421,8 +472,9 @@ async def repeat_quiz(user_id: int, context: ContextTypes.DEFAULT_TYPE):
     quiz_path = os.path.join(QUIZ_FOLDER, quiz_file)
 
     try:
-        with open(quiz_path, encoding="utf-8") as f:
-            quiz_data = json.load(f)
+        async with aiofiles.open(quiz_path, encoding="utf-8") as f:
+            content = await f.read()
+            quiz_data = json.loads(content)
     except Exception as e:
         await context.bot.send_message(chat_id=user_id, text=f"Errore nel ricaricare il quiz: {e}")
         return
@@ -447,7 +499,10 @@ async def generate_errors_pdf(user_id, subject, context):
     manager = get_manager(user_id)
     manager.commit_changes()
     wrong_qs = manager.get_for_subject(subject)
-    base = json.load(open(os.path.join(QUIZ_FOLDER, subject + JSON), encoding="utf-8"))
+    quiz_path = os.path.join(QUIZ_FOLDER, subject + JSON)
+    async with aiofiles.open(quiz_path, encoding="utf-8") as f:
+        content = await f.read()
+        base = json.loads(content)
     base_by_id = {q["id"]: q for q in base}
     wrong_answers_detailed = []
 
@@ -471,11 +526,16 @@ async def generate_errors_pdf(user_id, subject, context):
 
     # Genera PDF tramite pdf_generator
     pdf_path = generate_errors_pdf_sync(wrong_answers_detailed, subject, user_id)
-    with open(pdf_path, "rb") as pdf_file:
-        await context.bot.send_document(chat_id=user_id, document=pdf_file, filename=pdf_path)
+    async with aiofiles.open(pdf_path, "rb") as pdf_file:
+        pdf_bytes = await pdf_file.read()
+        await context.bot.send_document(chat_id=user_id, document=pdf_bytes, filename=pdf_path)
     os.remove(pdf_path)
 
 async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if not update or not update.callback_query:
+        print("[ERROR] handle_callback: update o callback_query non valido")
+        return
+
     query = update.callback_query
     user_id = query.from_user.id
     data = query.data
@@ -490,7 +550,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     print(f"[DEBUG] handle_callback chiamata per user {user_id}, data: {data}")
 
-    # Risposta al callback query con gestione errori robusta
+    # Always answer the callback query to avoid spinner
     try:
         await query.answer()
         print(f"[DEBUG] Query answered per user {user_id}")
@@ -520,7 +580,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
             pass
         return
 
-    # Tenta di interpretare il dato come JSON, ma solo se plausibile
+    # Try to parse JSON callback data
     callback = None
     if data and data.strip().startswith("{") and data.strip().endswith("}"):
         try:
@@ -528,201 +588,49 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         except json.JSONDecodeError as e:
             print(f"[DEBUG] Errore parsing JSON: {e}")
 
-    # Se è JSON e contiene comandi speciali, gestiscili subito
-    if isinstance(callback, dict):
-        if callback.get("cmd") in ("scarica_inedite", "download_pdf"):
-            print(f"[DEBUG] Comando PDF per user {user_id}")
-            quiz_file = callback.get("file")
-            if quiz_file:
-                try:
-                    await generate_pdf(quiz_file, context.bot, user_id)
-                except Exception as e:
-                    print(f"[ERROR] Errore generazione PDF: {e}")
-                    await context.bot.send_message(
-                        chat_id=user_id,
-                        text="❌ Errore nella generazione del PDF"
-                    )
-            return
-
     manager = get_manager(user_id)
 
-    # Gestione dei vari callback con try-catch per ogni sezione
-    try:
-        if data == "review_errors":
-            print(f"[DEBUG] Review errors per user {user_id}")
-            subjects = list(manager.get_all().keys())
-            print(f"[DEBUG] Materie disponibili: {subjects}")
+    # List of handler functions with their required arguments
+    handler_functions = [
+        lambda: handlers._handle_download_pdf(data, user_id, context),
+        lambda: handlers._handle_review_errors(data, manager, query, update, context, user_id),
+        lambda: handlers._handle_review_subject(data, update, context, user_id),
+        lambda: handlers._handle_download_errors_pdf(data, manager, query, context, user_id),
+        lambda: handlers._handle_stop(data, update, context),
+        lambda: handlers._handle_clear_errors(data, manager, context, user_id),
+        lambda: handlers._handle_change_course(data, manager, user_id, context),
+        lambda: handlers._handle_select_quiz(data, user_id, context),
+        lambda: handlers._handle_reset_stats(data, update, context),
+        lambda: handlers._handle_choose_subject(data, update, context),
+        lambda: handlers._handle_repeat_quiz(data, user_id, context),
+        lambda: handlers._handle_answer(data, user_id, context),
+        lambda: handlers._handle_show_mistakes(data, user_id, context),
+        lambda: handlers._handle_git(data, context, user_id),
+    ]
 
-            if not subjects:
-                print(f"[DEBUG] Nessuna materia trovata per user {user_id}")
-                await context.bot.send_message(
-                    chat_id=user_id,
-                    text="Non ci sono errori da ripassare!"
-                )
-                return
-            elif len(subjects) == 1:
-                print(f"[DEBUG] Una sola materia, avvio diretto: {subjects[0]}")
-                return await start_review_quiz(update, context, subjects[0])
-
-            keyboard = [
-                [InlineKeyboardButton(subj.replace("_", " "), callback_data=f"review_subject_{subj}")]
-                for subj in subjects
-            ]
-            keyboard.append([InlineKeyboardButton("🔙 Indietro", callback_data="change_course")])
-
-            try:
-                await query.edit_message_text("Scegli la materia da ripassare:", reply_markup=InlineKeyboardMarkup(keyboard))
-                print(f"[DEBUG] Messaggio scelta materia inviato per user {user_id}")
-            except Exception as e:
-                print(f"[ERROR] Errore nell'inviare messaggio scelta materia: {e}")
-                # Fallback: invia nuovo messaggio invece di edit
-                await context.bot.send_message(
-                    chat_id=user_id,
-                    text="Scegli la materia da ripassare:",
-                    reply_markup=InlineKeyboardMarkup(keyboard)
-                )
+    for handler in handler_functions:
+        if await handler():
             return
 
-        elif data.startswith("review_subject_"):
-            subject = data.split("review_subject_")[1]
-            print(f"[DEBUG] Review subject selezionato: {subject} per user {user_id}")
-            return await start_review_quiz(update, context, subject)
-
-        elif data.startswith("download_errors_pdf:"):
-            subject = data.split("download_errors_pdf:")[1]
-            await generate_errors_pdf(user_id, subject, context)
-            return
-            
-        elif data == "no_download_errors_pdf":
-            subjects = list(manager.get_all().keys())
-            if len(subjects) == 1:
-                return await start_review_quiz(update, context, subjects[0])
-            keyboard = [
-                [InlineKeyboardButton(subj.replace("_", " "), callback_data=f"review_subject_{subj}")]
-                for subj in subjects
-            ]
-            keyboard.append([InlineKeyboardButton("🔙 Indietro", callback_data="change_course")])
-            try:
-                await query.edit_message_text("Scegli la materia da ripassare:", reply_markup=InlineKeyboardMarkup(keyboard))
-            except:
-                await context.bot.send_message(
-                    chat_id=user_id,
-                    text="Scegli la materia da ripassare:",
-                    reply_markup=InlineKeyboardMarkup(keyboard)
-                )
-            return
-
-        elif data == "stop":
-            return await stop(update, context)
-
-        elif data.startswith("clear_errors:"):
-            subject = data.split(":")[1]
-            manager.remove_subject(subject)
-            await context.bot.send_message(
-                chat_id=user_id,
-                text=f"✅ Errori per *{subject}* cancellati!",
-                parse_mode="Markdown"
-            )
-            return
-
-        elif data == "change_course":
-            state = user_states.get(user_id)
-            if state:
-                manager.commit_changes()
-                clear_manager(user_id)
-            await show_final_stats(user_id, context, state, from_change_course=True)
-            user_states.pop(user_id, None)
-            return await choose_subject(update, context)
-
-        elif data.endswith(JSON): 
-            user_states.pop(user_id, None)
-            return await select_quiz(update, context)
-
-        elif data == "reset_stats":
-            return await reset_stats(update, context)
-
-        elif data == "_choose_subject_":
-            return await choose_subject(update, context)
-
-        elif data == "repeat_quiz":
-            return await repeat_quiz(user_id, context)
-
-        elif data.startswith("answer:"):
-            selected = int(data.split(":")[1])
-            return await handle_answer_callback(user_id, selected, context)
-
-        elif data.startswith("show_mistakes_"):
-            subject = data.split("show_mistakes_")[1]
-            return await show_mistakes(user_id, subject, context)
-
-        elif data == "git":
-            await context.bot.send_message(
-                chat_id=user_id,
-                text="📂 Puoi visualizzare il codice su GitHub:\nhttps://github.com/AdrianaRidolfi/telegram-bots"
-            )
-            return
-
-        else:
-            print(f"[DEBUG] Callback data non riconosciuto: {data}")
-            await context.bot.send_message(
-                chat_id=user_id,
-                text="⚠️ Azione non riconosciuta. Usa /start per ricominciare"
-            )
-            
-    except Exception as e:
-        print(f"[ERROR] Errore in handle_callback per user {user_id}: {e}")
-        await context.bot.send_message(
-            chat_id=user_id,
-            text="❌ Si è verificato un errore. Usa /start per ricominciare"
-        )
 
 
 async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, subject: str):
     user_id = update.effective_user.id
     print(f"[DEBUG] start_review_quiz chiamata per user {user_id}, subject: {subject}")
-    
-    try:
-        manager = get_manager(user_id)
-        print(f"[DEBUG] Manager ottenuto per user {user_id}")
-        
-        wrong_qs = manager.get_for_subject(subject)
-        print(f"[DEBUG] Domande sbagliate trovate: {len(wrong_qs)} per subject {subject}")
 
-        # Verifica che il file del quiz esista
-        quiz_path = os.path.join(QUIZ_FOLDER, subject + JSON)
-        print(f"[DEBUG] Percorso quiz: {quiz_path}")
-        
-        if not os.path.exists(quiz_path):
-            print(f"[DEBUG] File non trovato: {quiz_path}")
-            await context.bot.send_message(
-                chat_id=user_id, 
-                text=f"❌ File quiz non trovato per {subject}. Riprova con /start"
-            )
-            return
+    def send_error(msg):
+        print(f"[DEBUG] {msg}")
+        return context.bot.send_message(chat_id=user_id, text=msg)
 
-        # Carica domande di base con gestione errori
+    def load_quiz_file(path):
         try:
-            print(f"[DEBUG] Caricamento file: {quiz_path}")
-            with open(quiz_path, encoding="utf-8") as f:
-                base = json.load(f)
-            print(f"[DEBUG] File caricato, {len(base)} domande trovate")
+            with open(path, encoding="utf-8") as f:
+                return json.load(f)
         except Exception as e:
             print(f"[DEBUG] Errore caricamento file: {e}")
-            await context.bot.send_message(
-                chat_id=user_id,
-                text=f"❌ Errore nel caricamento del quiz: {e}. Riprova con /start"
-            )
-            return
+            return None
 
-        if not base:
-            print(f"[DEBUG] Quiz vuoto")
-            await context.bot.send_message(
-                chat_id=user_id,
-                text="❌ Quiz vuoto. Riprova con /start"
-            )
-            return
-
-        print(f"[DEBUG] Creazione dizionario base_by_id...")
+    def build_base_by_id(base):
         base_by_id = {}
         for i, q in enumerate(base):
             q_id = q.get("id")
@@ -730,17 +638,15 @@ async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, 
                 base_by_id[q_id] = q
             else:
                 print(f"[DEBUG] Domanda {i} senza ID: {q.get('question', 'N/A')[:50]}...")
-        
-        print(f"[DEBUG] base_by_id creato con {len(base_by_id)} domande")
+        return base_by_id
 
-        print(f"[DEBUG] Creazione lista weighted...")
+    def build_weighted_list(wrong_qs, base_by_id):
         weighted = []
         for entry in wrong_qs:
             q_id = entry.get("id")
             if not q_id:
                 print(f"[DEBUG] Entry senza ID: {entry}")
                 continue
-                
             counter = entry.get("counter", 1)
             if q_id in base_by_id:
                 repeat_times = min((counter + 1) // 2, 5)
@@ -748,37 +654,47 @@ async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, 
                 print(f"[DEBUG] Aggiunta domanda ID {q_id}, {repeat_times} volte")
             else:
                 print(f"[DEBUG] ID {q_id} non trovato in base_by_id")
+        return weighted
 
-        print(f"[DEBUG] Lista weighted creata con {len(weighted)} elementi")
+    try:
+        manager = get_manager(user_id)
+        wrong_qs = manager.get_for_subject(subject)
+        quiz_path = os.path.join(QUIZ_FOLDER, subject + JSON)
+
+        if not os.path.exists(quiz_path):
+            await send_error(f"❌ File quiz non trovato per {subject}. Riprova con /start")
+            return
+
+        base = load_quiz_file(quiz_path)
+        if base is None:
+            await send_error("❌ Errore nel caricamento del quiz. Riprova con /start")
+            return
+
+        if not base:
+            await send_error("❌ Quiz vuoto. Riprova con /start")
+            return
+
+        base_by_id = build_base_by_id(base)
+        weighted = build_weighted_list(wrong_qs, base_by_id)
 
         selected = []
         if weighted:
             to_select = min(len(weighted), 30)
-            print(f"[DEBUG] Selezione di {to_select} domande da {len(weighted)}")
             selected = random.sample(weighted, to_select)
 
-        # Aggiunta di domande extra se < 30
+        # Add extra questions if needed
         if len(selected) < 30:
-            print(f"[DEBUG] Aggiunta domande extra, attuali: {len(selected)}")
             used_ids = {q.get("id") for q in selected if q.get("id")}
             extras = [q for q in base if q.get("id") and q.get("id") not in used_ids]
             needed = 30 - len(selected)
-            print(f"[DEBUG] Domande extra disponibili: {len(extras)}, necessarie: {needed}")
             if extras:
                 to_add = min(len(extras), needed)
                 selected += random.sample(extras, to_add)
-                print(f"[DEBUG] Aggiunte {to_add} domande extra")
 
         if not selected:
-            print(f"[DEBUG] Nessuna domanda selezionata")
-            await context.bot.send_message(
-                chat_id=user_id,
-                text="❌ Nessuna domanda disponibile per il ripasso. Riprova con /start"
-            )
+            await send_error("❌ Nessuna domanda disponibile per il ripasso. Riprova con /start")
             return
 
-        print(f"[DEBUG] Creazione stato utente con {len(selected)} domande")
-        # Salva quiz in stato utente
         user_states[user_id] = {
             "quiz": selected,
             "quiz_file": subject + JSON,
@@ -792,11 +708,8 @@ async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, 
         }
 
         random.shuffle(user_states[user_id]["order"])
-        print(f"[DEBUG] Stato utente creato, chiamata send_next_question")
-        
         await send_next_question(user_id, context)
-        print(f"[DEBUG] send_next_question completata")
-        
+
     except Exception as e:
         print(f"[ERROR] Errore in start_review_quiz per user {user_id}: {e}")
         import traceback
@@ -805,7 +718,6 @@ async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, 
             chat_id=user_id,
             text="❌ Si è verificato un errore. Riprova con /start"
         )
-        # Pulisci lo stato dell'utente in caso di errore
         user_states.pop(user_id, None)
 
     
@@ -868,7 +780,10 @@ async def show_mistakes(user_id, subject, context: ContextTypes.DEFAULT_TYPE):
     manager = get_manager(user_id)
     manager.commit_changes()
     wrong_qs = manager.get_for_subject(subject)
-    base = json.load(open(os.path.join(QUIZ_FOLDER, subject + JSON), encoding="utf-8"))
+    
+    async with aiofiles.open(os.path.join(QUIZ_FOLDER, subject + JSON), encoding="utf-8") as f:
+        content = await f.read()
+        base = json.loads(content)
     base_by_id = {q["id"]: q for q in base}
     wrong_answers_detailed = []
 
@@ -915,11 +830,11 @@ async def show_mistakes(user_id, subject, context: ContextTypes.DEFAULT_TYPE):
             reply_markup=InlineKeyboardMarkup(keyboard)
         )
     else:
-        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors")]])
+        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(RIPASSA_ERRORI, callback_data="review_errors")]])
         await context.bot.send_message(chat_id=user_id, text=full_text, parse_mode='Markdown', reply_markup=reply_markup)
 
 
-async def show_final_stats(user_id, context, state, from_stop=False, from_change_course=False, is_review_mode=False):
+async def show_final_stats(user_id, context, state, from_stop=False, is_review_mode=False):
     if not state:
         return
 
@@ -931,47 +846,48 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
     score = state["score"]
     total = state["index"]
 
-    if total == 0:
-        await context.bot.send_message(chat_id=user_id, text="Nessuna risposta data. Quiz interrotto.")
-        return
-
-    percentage = round((score / total) * 100, 2)
-    stats_manager = get_stats_manager(user_id)
-    stats_manager.update_stats(subject, score, total)
-    all_stats = stats_manager.get_summary()
-
-    # --- TIMER: calcola durata quiz ---
-    duration = ""
-    if "start_time" in state:
-        elapsed = int(time.time() - state["start_time"])
-        mins = elapsed // 60
-        secs = elapsed % 60
-        duration = f"\n🕒 Tempo impiegato: {mins} min {secs} sec\n"
-
-    if score == 30 and total == 30:
-        await context.bot.send_animation(chat_id=user_id, animation=yay())
-    if score < 18 and total == 30:
-        await context.bot.send_animation(chat_id=user_id, animation=yikes())
-
-    summary = f"🎯Quiz completato!\nPunteggio: {score} su {total} ({percentage}%)\n"
-    summary += duration
-    summary += "\n📊 Statistiche:\n"
-
-    for sub, data in all_stats.items():
-        perc = round((data['correct'] / data['total']) * 100, 2)
-        summary += f"- {sub}: {perc}% ({data['correct']} su {data['total']})\n"
-
     keyboard = []
+    has_errors = False
 
-    manager = get_manager(user_id)
-    manager.commit_changes() 
-    has_errors = manager.has_wrong_answers()
+    summary = ""
 
-    if from_change_course:
-        pass
-    elif from_stop:
+    if total == 0:
+        summary = "Nessuna risposta data. Quiz interrotto dall'utente."
+    else:
+        percentage = round((score / total) * 100, 2)
+        stats_manager = get_stats_manager(user_id)
+        stats_manager.update_stats(subject, score, total)
+        all_stats = stats_manager.get_summary()
+
+        # --- TIMER: calcola durata quiz ---
+        duration = ""
+        if "start_time" in state:
+            elapsed = int(time.time() - state["start_time"])
+            mins = elapsed // 60
+            secs = elapsed % 60
+            duration = f"\n🕒 Tempo impiegato: {mins} min {secs} sec\n"
+
+        if score == 30 and total == 30:
+            await context.bot.send_animation(chat_id=user_id, animation=yay())
+        if score < 18 and total == 30:
+            await context.bot.send_animation(chat_id=user_id, animation=yikes())
+
+        summary = f"🎯Quiz completato!\nPunteggio: {score} su {total} ({percentage}%)\n"
+        summary += duration
+        summary += "\n📊 Statistiche:\n"
+
+        for sub, data in all_stats.items():
+            perc = round((data['correct'] / data['total']) * 100, 2)
+            summary += f"- {sub}: {perc}% ({data['correct']} su {data['total']})\n"
+
+
+        manager = get_manager(user_id)
+        manager.commit_changes() 
+        has_errors = manager.has_wrong_answers()
+
+    if from_stop:
         keyboard.append([
-            InlineKeyboardButton("📚 Scegli materia", callback_data="change_course")
+            InlineKeyboardButton(SCEGLI_MATERIA, callback_data="change_course")
         ])
     else:
         keyboard.append([
@@ -981,23 +897,24 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
     if is_review_mode:
         keyboard.append(
             [
-                InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats"),
+                InlineKeyboardButton(AZZERA_STATISTICHE, callback_data="reset_stats"),
                 InlineKeyboardButton("🧽 Cancella Errori", callback_data=f"clear_errors:{state['subject']}")]
         )
     else: 
         keyboard.append([
-            InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
+            InlineKeyboardButton(AZZERA_STATISTICHE, callback_data="reset_stats")
         ])
 
     # Mostra bottoni errori SOLO se ci sono errori
     if has_errors:
         keyboard.append([
-            InlineKeyboardButton("📖 Ripassa errori", callback_data="review_errors"),
+            InlineKeyboardButton(RIPASSA_ERRORI, callback_data="review_errors"),
             InlineKeyboardButton("📝 Mostra errori", callback_data=f"show_mistakes_{subject}")
         ])
 
+
     keyboard.append([
-        InlineKeyboardButton("📥 Scarica pdf", callback_data=json.dumps({"cmd": "scarica_inedite", "file": state['quiz_file']})),
+        InlineKeyboardButton("📥 Scarica pdf", callback_data=f"download_pdf:{state['quiz_file']}"),
         InlineKeyboardButton("🌐 Git", url="https://github.com/AdrianaRidolfi/telegram-bots")
     ])
 
@@ -1005,28 +922,34 @@ async def show_final_stats(user_id, context, state, from_stop=False, from_change
     await context.bot.send_message(chat_id=user_id, text=summary, reply_markup=reply_markup)
 
 
-async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_id = update.effective_user.id
-    stats_manager = get_stats_manager(user_id)
-    stats = stats_manager.get_summary()
-    if not stats:
-        await context.bot.send_message(chat_id=user_id, text="Nessuna statistica disponibile.")
-        return
+async def stats(update: Update = None, context: ContextTypes.DEFAULT_TYPE = None, user_id: int = None):
+    # Se user_id non passato, prendilo da update
+    if user_id is None:
+        if not update or not update.effective_user:
+            print("[ERROR] stats: update e user_id non validi")
+            return
+        user_id = update.effective_user.id
 
-    msg = "📊 Statistiche:\n"
-    for sub, data in stats.items():
-        perc = round((data["correct"] / data["total"]) * 100, 2)
-        msg += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
+    msg = ""
 
     keyboard = []
+    keyboard.append([InlineKeyboardButton(SCEGLI_MATERIA, callback_data="_choose_subject_")])
 
-    keyboard.append([
-        InlineKeyboardButton("📚 Scegli materia", callback_data="change_course"),
-        InlineKeyboardButton("🧹 Azzera statistiche", callback_data="reset_stats")
-        ])
-    
+    stats_manager = get_stats_manager(user_id)
+    stats_data = stats_manager.get_summary()
+    if not stats_data:
+        msg = "Nessuna statistica disponibile."
+
+    else:
+        msg = "📊 Statistiche:\n"
+        for sub, data in stats_data.items():
+            perc = round((data["correct"] / data["total"]) * 100, 2)
+            msg += f"📘 {sub}: {perc}% ({data['correct']} su {data['total']})\n"
+        
+        keyboard.append([InlineKeyboardButton(AZZERA_STATISTICHE, callback_data="reset_stats")])
+
+
     reply_markup = InlineKeyboardMarkup(keyboard)
-
     await context.bot.send_message(chat_id=user_id, text=msg, reply_markup=reply_markup)
 
 
@@ -1037,15 +960,22 @@ async def reset_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     stats_manager.reset_stats()
     await context.bot.send_message(chat_id=user_id, text="✅ Statistiche azzerate!")
 
-async def setup_bot():
-    print("🔧 Configurazione bot...")
+async def debug_message(update, context):
+    print("[DEBUG] Messaggio ricevuto:", update.message.text)
 
+
+def setup_bot():
+    print("🔧 Configurazione bot...")
+    
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("stats", stats))
     application.add_handler(CommandHandler("stop", stop))
     application.add_handler(CommandHandler("download", download))
     application.add_handler(CommandHandler("choose_subject", choose_subject))
     application.add_handler(CallbackQueryHandler(handle_callback))
+    
+    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, debug_message))
+    
     application.add_error_handler(error_handler)
 
     print("✅ Bot configurato con successo.")
@@ -1115,8 +1045,7 @@ async def webhook_handler(request):
         return web.Response(status=500, text="Internal error")
 
 
-
-async def health_check(request):
+def health_check(request):
     """Simple health check endpoint"""
     try:
         return web.Response(text="OK", status=200, headers={
@@ -1128,19 +1057,7 @@ async def health_check(request):
         return web.Response(text="Health check failed", status=500)
 
 
-async def health_check(request):
-    """Simple health check endpoint"""
-    try:
-        return web.Response(text="OK", status=200, headers={
-            'Content-Type': 'text/plain',
-            'Cache-Control': 'no-cache'
-        })
-    except Exception as e:
-        logger.error(f"Health check error: {e}")
-        return web.Response(text="Health check failed", status=500)
-
-
-async def info_handler(request):
+def info_handler(request):
     """Info endpoint"""
     try:
         return web.Response(
@@ -1157,12 +1074,9 @@ async def info_handler(request):
         return web.Response(text="Info handler failed", status=500)
 
 
-async def setup_webhook_server():
+def setup_webhook_server():
     """FIXED: Simplified webhook server setup WITHOUT problematic middleware"""
     app = web.Application()
-    
-    # REMOVED the problematic middleware entirely
-    # If you need CORS, add it directly to response headers in each handler
     
     # Telegram webhook endpoint - TOKEN is defined globally
     app.router.add_post(f"/{TOKEN}", webhook_handler)
@@ -1176,41 +1090,44 @@ async def setup_webhook_server():
     # Info endpoint
     app.router.add_get("/info", info_handler)
     
-    logger.info(f"✅ Webhook server configured with routes:")
+    logger.info("✅ Webhook server configured with routes:")
     logger.info(f"  POST /{TOKEN} -> webhook_handler")
-    logger.info(f"  GET /health -> health_check")
-    logger.info(f"  GET / -> health_check")
-    logger.info(f"  GET /ping -> health_check")
-    logger.info(f"  GET /status -> health_check")
-    logger.info(f"  GET /info -> info_handler")
+    logger.info("  GET /health -> health_check")
+    logger.info("  GET / -> health_check")
+    logger.info("  GET /ping -> health_check")
+    logger.info("  GET /status -> health_check")
+    logger.info("  GET /info -> info_handler")
     
     return app
 
 async def main():
     """Enhanced main function with better error handling"""
-    global bot_running
-    
+    global shutdown_event
+
+    shutdown_event = asyncio.Event()
+    logger.info("MAIN...")
+
     try:
-        logger.info("🚀 Starting bot...")
-        
+        logger.info("Starting bot...")
+
         # Setup handlers
-        await setup_bot()
-        
+        setup_bot()
+
         # Initialize Telegram application
         await application.initialize()
         await application.start()
-        
+
         if USE_WEBHOOK:
             logger.info("🔗 Webhook mode activated")
-            
+
             # Construct webhook URL
             if WEBHOOK_URL.startswith('http'):
                 webhook_url = f"{WEBHOOK_URL}/{TOKEN}"
             else:
                 webhook_url = f"https://{WEBHOOK_URL}/{TOKEN}"
-            
+
             logger.info(f"🎯 Setting webhook URL: {webhook_url}")
-            
+
             # Set webhook
             try:
                 result = await application.bot.set_webhook(
@@ -1219,48 +1136,47 @@ async def main():
                     max_connections=40
                 )
                 logger.info(f"✅ Webhook set successfully: {result}")
-                
+
                 # Verify webhook
                 webhook_info = await application.bot.get_webhook_info()
                 logger.info(f"📋 Webhook info: {webhook_info}")
-                
+
             except Exception as e:
                 logger.error(f"❌ Failed to set webhook: {e}")
                 raise
-            
+
             # Setup and start web server
             try:
-                app = await setup_webhook_server()
+                app = setup_webhook_server()
                 runner = web_runner.AppRunner(app)
                 await runner.setup()
-                
+
                 site = web_runner.TCPSite(runner, "0.0.0.0", PORT)
                 await site.start()
-                
+
                 logger.info(f"🌐 Webhook server started on 0.0.0.0:{PORT}")
-                logger.info(f"🔍 Test endpoints:")
+                logger.info("🔍 Test endpoints:")
                 logger.info(f"   https://{WEBHOOK_URL}/test")
                 logger.info(f"   https://{WEBHOOK_URL}/health")
                 logger.info(f"   https://{WEBHOOK_URL}/webhook-info")
-                
-                # Keep running
-                while bot_running:
-                    await asyncio.sleep(1)
-                    
+
+                # Wait for shutdown event
+                await shutdown_event.wait()
+
             except Exception as e:
                 logger.error(f"❌ Server setup error: {e}")
                 raise
             finally:
                 try:
                     await runner.cleanup()
-                except:
+                except Exception:
                     pass
-            
+
         else:
-            logger.info("📡 Polling mode activated")
+            logger.info("Polling mode activated")
             await application.bot.delete_webhook(drop_pending_updates=True)
             await application.run_polling(drop_pending_updates=True)
-            
+
     except Exception as e:
         logger.error(f"❌ Critical error in main: {e}")
         raise
@@ -1269,13 +1185,14 @@ async def main():
         try:
             await application.stop()
             await application.shutdown()
-        except:
+        except Exception:
             pass
 
 def signal_handler(signum, frame):
-    global bot_running
+    global shutdown_event
     logger.info(f"🛑 Received signal {signum}. Shutting down...")
-    bot_running = False
+    if 'shutdown_event' in globals():
+        shutdown_event.set()
 
 
 if __name__ == "__main__":
@@ -1284,11 +1201,11 @@ if __name__ == "__main__":
     signal.signal(signal.SIGINT, signal_handler)
 
     try:
-        if os.environ.get("USE_WEBHOOK", "false").lower() == "true":
-            # 🚀 Modalità webhook
-            asyncio.run(main())   # qui dentro fai solo webhook
+        if USE_WEBHOOK:
+            asyncio.run(main())
         else:
-            # 📡 Modalità polling
+            setup_bot()
+            logger.info("Polling mode activated (outside main)")
             application.run_polling(drop_pending_updates=True)
     except KeyboardInterrupt:
         logger.info("\n🛑 Bot interrupted by user")

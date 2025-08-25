@@ -5,11 +5,13 @@ import json
 from PIL import Image
 
 LINE_HEIGHT = 3.5
-QUIZ_FOLDER = "quizzes"
-IMAGES_FOLDER = "quizzes/images"
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-FONTS_FOLDER = os.path.join(BASE_DIR, "quizzes", "fonts")
-DEJAVU_TTF = os.path.join(FONTS_FOLDER, "DejaVuSans.ttf") 
+
+QUIZ_FOLDER = os.path.normpath(os.path.join(BASE_DIR, "quizzes"))
+IMAGES_FOLDER = os.path.normpath(os.path.join(QUIZ_FOLDER, "images"))
+FONTS_FOLDER = os.path.normpath(os.path.join(QUIZ_FOLDER, "fonts"))
+DEJAVU_TTF = os.path.normpath(os.path.join(FONTS_FOLDER, "DejaVuSans.ttf"))
 
 def clean_text(text):
     replacements = {
@@ -227,17 +229,36 @@ async def generate_exam_pdf(responses, subject, bot, user_id):
         if pdf_path and os.path.exists(pdf_path):
             os.remove(pdf_path)
 
+import os
+
 async def generate_pdf(quiz_file, bot, user_id):
-    quiz_path = os.path.join(QUIZ_FOLDER, quiz_file)
+    if not quiz_file or not isinstance(quiz_file, str):
+        await bot.send_message(chat_id=user_id, text="❌ Nome file non valido.")
+        return
+
+    quiz_file_clean = quiz_file.strip("\\/")  # pulizia della stringa
+    quiz_path = os.path.join(QUIZ_FOLDER, quiz_file_clean)
+
+    # Controllo se il file esiste
+    if not os.path.isfile(quiz_path):
+        await bot.send_message(chat_id=user_id, text=f"❌ File non trovato: {quiz_file_clean}")
+        return
+
+    pdf_path = None
     try:
         pdf_path = generate_pdf_sync(quiz_path)
         with open(pdf_path, "rb") as pdf_file:
-            await bot.send_document(chat_id=user_id, document=pdf_file, filename=os.path.basename(pdf_path))
+            await bot.send_document(
+                chat_id=user_id,
+                document=pdf_file,
+                filename=os.path.basename(pdf_path)
+            )
     except Exception as e:
         await bot.send_message(chat_id=user_id, text=f"❌ Errore nella generazione o invio del PDF: {e}")
     finally:
-        if os.path.exists(pdf_path):
+        if pdf_path and os.path.exists(pdf_path):
             os.remove(pdf_path)
+
 
 def break_long_words(text, max_len=50):
     # Inserisce uno spazio ogni max_len caratteri in parole troppo lunghe
