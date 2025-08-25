@@ -1658,7 +1658,7 @@
     "question": "In RSA , a quanto equivale ϕ(n):",
     "answers": [
       "P*q",
-      "(p-1)*(q-1)",
+      "(p+1)*(q+1)",
       "P*(q-1)",
       "(p-1)*(q-1)"
     ],
