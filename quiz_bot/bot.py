@@ -1095,7 +1095,7 @@ async def main():
 
             # Setup and start web server
             try:
-                app = await setup_webhook_server()
+                app = setup_webhook_server()
                 runner = web_runner.AppRunner(app)
                 await runner.setup()
 
