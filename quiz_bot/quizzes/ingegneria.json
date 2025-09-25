@@ -2196,5 +2196,743 @@
     ],
     "correct_answer": "Maggiore",
     "id": "ada19651-37c7-4db5-b254-91939721503f"
+  },
+  {
+    "question": "Cosa rappresenta un ovale nelle convenzioni UML?",
+    "answers": [
+      "Classe e istanza",
+      "Attributo o proprietà",
+      "Diagramma di deployment",
+      "Funzioni e casi d'uso"
+    ],
+    "correct_answer": "Funzioni e casi d'uso",
+    "id": "e98e4f50-379e-4c3c-83b5-31623832c3d5"
+  },
+  {
+    "question": "Qual è l'uso principale della rappresentazione esplicita degli oggetti (istanze) nei diagrammi UML?",
+    "answers": [
+      "Mostrare la sequenza dei messaggi tra le classi",
+      "Definire la struttura statica completa del sistema",
+      "Esemplificare delle situazioni particolari o tipiche",
+      "Dichiarare tutti gli attributi con i loro valori di default"
+    ],
+    "correct_answer": "Esemplificare delle situazioni particolari o tipiche",
+    "id": "b0f7112a-043e-4d64-814d-587274f8c44c"
+  },
+  {
+    "question": "Oltre al nome e agli attributi, cosa rappresenta la terza sezione standard in una classe UML?",
+    "answers": [
+      "Vincoli e precondizioni",
+      "Operazioni (o metodi)",
+      "Commenti del programmatore",
+      "Package di appartenenza"
+    ],
+    "correct_answer": "Operazioni (o metodi)",
+    "id": "03d7c390-50d4-46f9-b8ac-873b22384a34"
+  },
+  {
+    "question": "Qual è un limite principale del modello a cascata (Waterfall) legato alla raccolta dei requisiti?",
+    "answers": [
+      "Il codice finale non è mai ben documentato",
+      "I requisiti utente sono spesso imprecisi e poco flessibili",
+      "La fase di test non può iniziare prima dell'implementazione",
+      "È difficile stimare i costi e i benefici fin dall'inizio"
+    ],
+    "correct_answer": "I requisiti utente sono spesso imprecisi e poco flessibili",
+    "id": "3538411e-0870-4375-9c60-a5441589a19e"
+  },
+  {
+    "question": "Che relazione ha il principio di Rigore con la creatività nello sviluppo software, secondo i principi dell'Ingegneria del Software?",
+    "answers": [
+      "Il rigore la esclude totalmente, focalizzandosi solo sulla formalità",
+      "È un concetto che riguarda precisione e accuratezza come complemento alla creatività",
+      "La creatività deve essere usata solo nella fase di analisi, non nel rigore",
+      "Il rigore è un concetto superato dalle moderne metodologie agili"
+    ],
+    "correct_answer": "È un concetto che riguarda precisione e accuratezza come complemento alla creatività",
+    "id": "5863c0a5-f716-419b-a36c-9473b64f9f7d"
+  },
+  {
+    "question": "Per quale motivo si consiglia di minimizzare l'uso dei messaggi di ritorno (risposta) nei diagrammi di sequenza?",
+    "answers": [
+      "I messaggi di ritorno sono sempre impliciti e non necessari",
+      "Rallentano l'esecuzione del diagramma",
+      "Per evitare di ingombrare i diagrammi, poiché il valore di ritorno può essere specificato nel messaggio iniziale",
+      "Sono una notazione obsoleta in UML 2"
+    ],
+    "correct_answer": "Per evitare di ingombrare i diagrammi, poiché il valore di ritorno può essere specificato nel messaggio iniziale",
+    "id": "71391c49-0158-45a9-8354-934c9103c27e"
+  },
+  {
+    "question": "Qual è la caratteristica distintiva di un \"messaggio trovato\" (found message) in un diagramma di sequenza?",
+    "answers": [
+      "È un messaggio che un oggetto invia a se stesso",
+      "Non ha un destinatario esplicito nel diagramma",
+      "Non scaturisce da un partecipante al diagramma, ma da una fonte esterna indeterminata",
+      "È sempre rappresentato con una freccia tratteggiata"
+    ],
+    "correct_answer": "Non scaturisce da un partecipante al diagramma, ma da una fonte esterna indeterminata",
+    "id": "6d5420d9-760f-48e0-a4f6-7b4430e7164b"
+  },
+  {
+    "question": "Quale simbolo grafico viene utilizzato in un diagramma di sequenza per indicare la distruzione di un partecipante (oggetto)?",
+    "answers": [
+      "Un rombo riempito",
+      "Un cerchio vuoto sulla linea di vita",
+      "Una freccia tratteggiata verso l'esterno del diagramma",
+      "Una grande X"
+    ],
+    "correct_answer": "Una grande X",
+    "id": "527a4d3a-67a4-4740-9b48-356a1b02b53a"
+  },
+  {
+    "question": "Come è caratterizzato un nodo Decision nei diagrammi di attività?",
+    "answers": [
+      "Un rettangolo con angoli arrotondati che contiene una condizione",
+      "Un rombo con un arco in ingresso e due o più archi in uscita",
+      "Un cerchio pieno che rappresenta l'inizio del flusso",
+      "Un rettangolo semplice che rappresenta un'entità o un oggetto passato"
+    ],
+    "correct_answer": "Un rombo con un arco in ingresso e due o più archi in uscita",
+    "id": "1d8b9410-6379-4672-9721-a5d427d2c380"
+  },
+  {
+    "question": "Qual è la funzione del nodo Merge in un diagramma di attività e a quale nodo è duale?",
+    "answers": [
+      "Sincronizza flussi concorrenti ed è duale del nodo Fork",
+      "Riunisce flussi alternativi ed è duale del nodo Decision",
+      "Genera flussi paralleli ed è duale del nodo Join",
+      "Rappresenta una singola unità di lavoro atomica ed è duale del nodo Action"
+    ],
+    "correct_answer": "Riunisce flussi alternativi ed è duale del nodo Decision",
+    "id": "97e64177-3e14-4345-9774-4b53112a4505"
+  },
+  {
+    "question": "Nei diagrammi di attività, come sono spesso chiamate le partizioni semplici e monodimensionali utilizzate per raggruppare le azioni in base agli attori?",
+    "answers": [
+      "Pools",
+      "Frames di interazione",
+      "Swimlanes o Corsie di marcia",
+      "Regioni di espansione"
+    ],
+    "correct_answer": "Swimlanes o Corsie di marcia",
+    "id": "a92e104f-96a9-4626-bf10-74673322b7a9"
+  },
+  {
+    "question": "A cosa serve il simbolo del \"rastrello\" all'interno di un'azione in un diagramma di attività?",
+    "answers": [
+      "Indica una transizione condizionale verso un altro stato",
+      "Definisce l'esecuzione in parallelo di quell'azione",
+      "Indica un sottodiagramma di attività o una decomposizione dell'attività",
+      "Rappresenta un segnale inviato ad un altro oggetto"
+    ],
+    "correct_answer": "Indica un sottodiagramma di attività o una decomposizione dell'attività",
+    "id": "65163f92-564a-4394-b152-32b7147814b1"
+  },
+  {
+    "question": "Cosa non implica l'esecuzione di un'attività interna (in risposta a un evento) rispetto ad uno stato in un diagramma di macchina a stati?",
+    "answers": [
+      "L'esecuzione di azioni specifiche",
+      "L'esecuzione delle attività di entrata e uscita dallo stato",
+      "Il mantenimento dello stato corrente",
+      "La ricezione dell'evento scatenante"
+    ],
+    "correct_answer": "L'esecuzione delle attività di entrata e uscita dallo stato",
+    "id": "e0e378a3-2947-4976-96b6-3a56885c363b"
+  },
+  {
+    "question": "In un diagramma di macchina a stati, qual è la caratteristica di uno \"stato contenente un'attività\"?",
+    "answers": [
+      "L'oggetto è inerte e aspetta un evento per reagire",
+      "L'oggetto esegue una transizione in risposta a un evento",
+      "L'oggetto svolge una determinata attività in modo continuativo",
+      "Rappresenta solo l'astrazione di una condizione interna"
+    ],
+    "correct_answer": "L'oggetto svolge una determinata attività in modo continuativo",
+    "id": "673752e0-2475-4c07-bf30-58c1f01c238b"
+  },
+  {
+    "question": "Dove risiede la maggiore utilità della tecnica dei casi d'uso (Use Case)?",
+    "answers": [
+      "Nel diagramma grafico altamente dettagliato che mostra le classi",
+      "Nella sua correlazione diretta con la struttura del codice",
+      "Nelle loro descrizioni testuali che esprimono il contenuto",
+      "Nell'uso di notazioni formali come OCL"
+    ],
+    "correct_answer": "Nelle loro descrizioni testuali che esprimono il contenuto",
+    "id": "c139366e-214e-4f36-8217-09a2444634f1"
+  },
+  {
+    "question": "Quale caratteristica definisce la relazione di inclusione (<<include>>) tra casi d'uso?",
+    "answers": [
+      "È sempre opzionale, in base a una condizione di guardia",
+      "Non è opzionale ed è necessaria per la corretta esecuzione del caso d'uso base",
+      "Rappresenta l'aggiunta di comportamento in caso di errore",
+      "Può essere usata solo tra attori secondari"
+    ],
+    "correct_answer": "Non è opzionale ed è necessaria per la corretta esecuzione del caso d'uso base",
+    "id": "18f3a380-498c-4573-ac4e-2895c023d8c1"
+  },
+  {
+    "question": "Quale notazione grafica è usata per rappresentare i nodi (server o macchine) in un diagramma di deployment?",
+    "answers": [
+      "Rettangolo arrotondato",
+      "Parallelepipedo",
+      "Cerchio",
+      "Rettangolo con linguetta"
+    ],
+    "correct_answer": "Parallelepipedo",
+    "id": "f562664c-b715-460d-85f2-959c8699131a"
+  },
+  {
+    "question": "Quale di questi elementi può essere considerato un \"elaborato\" (artefatto) in esecuzione su un nodo di deployment?",
+    "answers": [
+      "Una classe astratta",
+      "Una variabile locale Java",
+      "Un attributo statico",
+      "File eseguibile, file di dati o documento HTML"
+    ],
+    "correct_answer": "File eseguibile, file di dati o documento HTML",
+    "id": "75c3413b-1886-444f-b649-8c636f1837e3"
+  },
+  {
+    "question": "Qual è lo scopo specifico dei diagrammi di temporizzazione (timing diagrams)?",
+    "answers": [
+      "Mostrare il flusso di controllo logico di un algoritmo",
+      "Espressione di vincoli temporali e cambiamenti di stato",
+      "Descrivere la struttura gerarchica dei pacchetti",
+      "Dettagliare la collaborazione tra oggetti in termini di messaggi"
+    ],
+    "correct_answer": "Espressione di vincoli temporali e cambiamenti di stato",
+    "id": "2286b208-89c0-4384-984e-f55a108a7413"
+  },
+  {
+    "question": "Qual è lo stato di una variabile locale (di stack) in Java se non viene esplicitamente inizializzata dal programmatore?",
+    "answers": [
+      "Viene inizializzata a 0 di default",
+      "Viene inizializzata a null",
+      "Viene inizializzata con un valore casuale",
+      "Non è inizializzata e il compilatore potrebbe segnalare un errore"
+    ],
+    "correct_answer": "Non è inizializzata e il compilatore potrebbe segnalare un errore",
+    "id": "312c3f15-397a-4293-80f2-51e9b27f422e"
+  },
+  {
+    "question": "Cosa definisce la \"firma\" (signature) di un metodo in Java?",
+    "answers": [
+      "Il tipo di ritorno e la visibilità",
+      "Il nome del metodo e l’eventuale lista di parametri",
+      "La lista dei parametri e il corpo del metodo",
+      "La parola chiave 'void' e il nome del metodo"
+    ],
+    "correct_answer": "Il nome del metodo e l’eventuale lista di parametri",
+    "id": "c1615a99-b1d6-4654-8e11-e64e52b2023a"
+  },
+  {
+    "question": "Quale test concettuale viene utilizzato per verificare se una relazione di ereditarietà è appropriata tra due classi?",
+    "answers": [
+      "Il test \"ha un\" (has-a test)",
+      "Il test \"è un\" (is-a test)",
+      "Il test \"usa\" (uses test)",
+      "Il test \"si implementa come\" (implemented-as test)"
+    ],
+    "correct_answer": "Il test \"è un\" (is-a test)",
+    "id": "a9d701a5-83c9-4674-884b-01d7e268969f"
+  },
+  {
+    "question": "Quale tipo di metodo può essere definito e implementato all'interno di una classe astratta in Java?",
+    "answers": [
+      "Solo metodi privati",
+      "Metodi concreti (non astratti)",
+      "Solo metodi astratti",
+      "Solo metodi statici"
+    ],
+    "correct_answer": "Metodi concreti (non astratti)",
+    "id": "936279f0-d99f-442b-b601-526279159931"
+  },
+  {
+    "question": "Secondo i principi OOP, da cosa è direttamente correlata la complessità dei problemi che siamo in grado di risolvere?",
+    "answers": [
+      "Dall'uso esclusivo del polimorfismo",
+      "Dalle specie e qualità delle astrazioni disponibili",
+      "Dal numero di righe di codice scritte",
+      "Dalla frequenza con cui si aggiorna la documentazione"
+    ],
+    "correct_answer": "Dalle specie e qualità delle astrazioni disponibili",
+    "id": "f290547b-11c7-4340-9a29-28c46f1f4575"
+  },
+  {
+    "question": "Cosa misura la Robustezza di un sistema software?",
+    "answers": [
+      "La facilità di apportare modifiche al sistema",
+      "La sua capacità di essere eseguito su piattaforme diverse",
+      "La misura in cui si comporta in modo ragionevole in situazioni impreviste",
+      "La conformità ai requisiti definiti dal cliente"
+    ],
+    "correct_answer": "La misura in cui si comporta in modo ragionevole in situazioni impreviste",
+    "id": "713f8d22-1271-464a-a7a5-926c8052d9b6"
+  },
+  {
+    "question": "Qual è uno scopo primario dell'uso di UML in fase di analisi (prospettiva concettuale)?",
+    "answers": [
+      "Fornire tutti i dettagli necessari all'implementazione del codice",
+      "Definire un vocabolario comune utile per discutere il dominio",
+      "Sviluppare i test di integrazione del sistema",
+      "Verificare la performance del sistema in esercizio"
+    ],
+    "correct_answer": "Definire un vocabolario comune utile per discutere il dominio",
+    "id": "2d8f949c-d6b7-4a7b-a567-c104e132c3f8"
+  },
+  {
+    "question": "Quando è preferibile usare una relazione di associazione in un diagramma delle classi anziché un attributo per connettere due entità?",
+    "answers": [
+      "Quando si modella un attributo di tipo primitivo (es. int, boolean)",
+      "Quando la relazione è necessariamente unidirezionale",
+      "Quando si collegano classi significative (es. Banca, Cliente) per enfasi semantica",
+      "Quando si usa il linguaggio OCL per definire i vincoli"
+    ],
+    "correct_answer": "Quando si collegano classi significative (es. Banca, Cliente) per enfasi semantica",
+    "id": "d718b9c2-777b-402a-9e11-73898144214f"
+  },
+  {
+    "question": "Qual è lo scopo della Convalida (Validation) nel modello V&V?",
+    "answers": [
+      "Stabilire la corrispondenza tra il prodotto software e la sua specifica (Verifica)",
+      "Trovare gli errori di implementazione nel codice",
+      "Stabilire l'appropriatezza del prodotto software rispetto alla sua missione operativa",
+      "Garantire che il codice sia scritto in modo efficiente"
+    ],
+    "correct_answer": "Stabilire l'appropriatezza del prodotto software rispetto alla sua missione operativa",
+    "id": "2330a6c7-740d-43c2-a9b8-d9d83d0a876a"
+  },
+  {
+    "question": "Secondo le convenzioni Java, quale elemento è consigliato includere nel nome di un metodo?",
+    "answers": [
+      "Un aggettivo (es. Alto)",
+      "Un verbo (es. calcolaStipendio)",
+      "Un numero (es. metodo1)",
+      "Il nome della classe in cui è contenuto"
+    ],
+    "correct_answer": "Un verbo (es. calcolaStipendio)",
+    "id": "d0407153-f421-4775-9922-3837e40854d9"
+  },
+  {
+    "question": "Cosa distingue la rappresentazione grafica di un oggetto (istanza) da quella di una classe in UML?",
+    "answers": [
+      "L'oggetto è sempre rappresentato da un ovale",
+      "Il nome dell'oggetto e della classe sono sottolineati",
+      "L'oggetto è rappresentato da un parallelepipedo",
+      "L'oggetto non può avere metodi specificati"
+    ],
+    "correct_answer": "Il nome dell'oggetto e della classe sono sottolineati",
+    "id": "60a8239e-4e41-4712-9844-46c55981452a"
+  },
+    {
+    "question": "Data la seguente classe, quale affermazione è vera se non viene fornito alcun costruttore esplicito? public class Prova {}",
+    "answers": [
+      "Il compilatore aggiunge implicitamente un costruttore con un parametro `void`.",
+      "Il compilatore genera un errore poiché ogni classe deve avere un costruttore esplicito.",
+      "Il compilatore fornisce implicitamente un costruttore di default senza parametri.",
+      "La classe può essere istanziata solo utilizzando un metodo factory statico."
+    ],
+    "correct_answer": "Il compilatore fornisce implicitamente un costruttore di default senza parametri.",
+    "id": "e4f8d21c-a05b-43c2-b13c-0e7d7a5b6c2f"
+  },
+  {
+    "question": "Quale visibilità garantisce l'accesso a un membro di classe (variabile o metodo) sia all'interno dello stesso package sia nelle sottoclassi, anche se si trovano in package diversi?",
+    "answers": [
+      "public",
+      "private",
+      "protected",
+      "default (package-private)"
+    ],
+    "correct_answer": "protected",
+    "id": "f5a9c0d3-3b1a-4d2f-b4a1-0a6a4c2b9d0e"
+  },
+  {
+      "question": "Qual è il risultato del seguente frammento di codice in Java, considerando la concatenazione di stringhe?  System.out.println(1 + \" risultato: \" + 2 + 3);",
+    "answers": [
+      "1 risultato: 23",
+      "3 risultato: 5",
+      "1 risultato: 5",
+      "6 risultato: "
+    ],
+    "correct_answer": "1 risultato: 23",
+    "id": "c1c5e7b2-0a1b-4d4c-a8e5-3d8b6e9c1f7a"
+  },
+  {
+    "question": "In Java, cosa succede quando si tenta di utilizzare una variabile locale (di stack) non inizializzata?",
+    "answers": [
+      "Viene inizializzata automaticamente a zero o null dal sistema.",
+      "La variabile assume un valore casuale ma l'esecuzione prosegue.",
+      "Il compilatore potrebbe segnalare un errore, poiché richiede l'inizializzazione esplicita.",
+      "Viene inizializzata al momento della creazione dell'oggetto."
+    ],
+    "correct_answer": "Il compilatore potrebbe segnalare un errore, poiché richiede l'inizializzazione esplicita.",
+    "id": "a9b8c7d6-e5f4-4a3b-b2c1-d0e9f8a7b6c5"
+  },
+  {
+    "question": "In Java, l'operatore di confronto `==` viene applicato alle reference di due oggetti. Quando restituirà `true`?",
+    "answers": [
+      "Quando i due oggetti istanziati hanno gli stessi valori degli attributi.",
+      "Quando i due reference puntano allo stesso oggetto (stessa area di memoria).",
+      "Quando i due reference sono stati inizializzati con due operazioni di `new` differenti.",
+      "Solo se i due oggetti sono di tipi primitivi."
+    ],
+    "correct_answer": "Quando i due reference puntano allo stesso oggetto (stessa area di memoria).",
+    "id": "8b7a6c5d-4e3f-2b1a-0d9c-8e7f6d5c4b3a"
+  },
+  {
+    "question": "Qual è il risultato del seguente codice in Java?   int[] numeri = new int[1]; numeri[1] = 10;System.out.println(numeri[1]);",
+    "answers": [
+      "L'output sarà 10.",
+      "Errore di compilazione perché l'array è stato dichiarato in modo scorretto.",
+      "Errore a tempo di esecuzione (Index Out Of Bounds Exception).",
+      "Il valore 10 viene assegnato e poi stampato il valore di default 0."
+    ],
+    "correct_answer": "Errore a tempo di esecuzione (Index Out Of Bounds Exception).",
+    "id": "d0e9f8a7-b6c5-4d3e-2b1a-0c9b8a7d6e5f"
+  },
+  {
+    "question": "In Java, in un array di oggetti (ad esempio un `String[]`), cosa contiene ogni elemento dell'array?",
+    "answers": [
+      "L'oggetto completo (attributi e metodi) in linea.",
+      "L'area di memoria allocata per l'oggetto.",
+      "Il riferimento (indirizzo) all'area di memoria allocata per ciascun oggetto.",
+      "Solo i metodi di ciascun oggetto."
+    ],
+    "correct_answer": "Il riferimento (indirizzo) all'area di memoria allocata per ciascun oggetto.",
+    "id": "a3b2c1d0-e9f8-4a7b-8c6d-5e4f3a2b1c0d"
+  },
+  {
+    "question": "Qual è il ruolo principale del reference `super` all'interno di un costruttore di una sottoclasse?",
+    "answers": [
+      "Creare un'istanza della superclasse.",
+      "Richiamare il costruttore della superclasse per inizializzare le variabili ereditate.",
+      "Accedere alle variabili di istanza dichiarate come `private` nella superclasse.",
+      "Riferirsi all'oggetto corrente se c'è ambiguità di nome."
+    ],
+    "correct_answer": "Richiamare il costruttore della superclasse per inizializzare le variabili ereditate.",
+    "id": "7c6b5a4d-3e2f-1c0b-9a8d-7f6e5d4c3b2a"
+  },
+  {
+    "question": "In Java, un metodo dichiarato con `static`:\n\n\npublic class Utility {\n    public static int calcola(int a, int b) { return a + b; }\n}\n\nCome viene chiamato tipicamente dalla classe `Main`?",
+    "answers": [
+      "Creando un'istanza della classe `Utility` e chiamando il metodo sull'oggetto.",
+      "Utilizzando la keyword `this.calcola(a, b);`",
+      "Direttamente sulla classe: `Utility.calcola(a, b);`",
+      "Viene chiamato automaticamente dalla JVM."
+    ],
+    "correct_answer": "Direttamente sulla classe: `Utility.calcola(a, b);`",
+    "id": "2a1b0c9d-8e7f-6a5b-4c3d-2e1f0g9h8i7j"
+  },
+  {
+    "question": "Cosa si intende per \"firma\" (signature) di un metodo in Java?",
+    "answers": [
+      "La combinazione di modificatori di accesso, tipo di ritorno e nome del metodo.",
+      "Il nome del metodo e l'eventuale lista di parametri (numero e tipo).",
+      "Il corpo del metodo racchiuso tra parentesi graffe.",
+      "Solo il tipo di ritorno e il nome del metodo."
+    ],
+    "correct_answer": "Il nome del metodo e l'eventuale lista di parametri (numero e tipo).",
+    "id": "b3c4d5e6-f7g8-9h0i-1j2k-3l4m5n6o7p8q"
+  },
+    {
+    "question": "Qual è lo scopo fondamentale di un Pattern, come definito nell'Ingegneria del Software?",
+    "answers": [
+      "Definire le regole per l'implementazione in un linguaggio specifico come Java.",
+      "Documentare una soluzione provata con successo per un problema ricorrente di progettazione.",
+      "Garantire che il codice sia sempre statico e basato su relazioni di ereditarietà.",
+      "Descrivere le relazioni tra classi che possono cambiare durante l'esecuzione (Object Pattern)."
+    ],
+    "correct_answer": "Documentare una soluzione provata con successo per un problema ricorrente di progettazione.",
+    "id": "76321f4a-8d1e-43c0-b5a1-79e56d4b3a21"
+  },
+  {
+    "question": "Quale dei seguenti elementi NON è elencato tra le componenti principali che caratterizzano la descrizione di un Design Pattern?",
+    "answers": [
+      "Il Nome significativo del pattern.",
+      "Le Conseguenze (vantaggi e svantaggi).",
+      "Il Codice completo di implementazione (in un linguaggio specifico).",
+      "Il Problema che il pattern mira a risolvere."
+    ],
+    "correct_answer": "Il Codice completo di implementazione (in un linguaggio specifico).",
+    "id": "c7a8b4c3-e2d1-4f9b-a01c-6d8e7f5a9b0c"
+  },
+  {
+    "question": "Qual è la funzione primaria dei Pattern di Creazione (Creation Patterns)?",
+    "answers": [
+      "Descrivere come comporre oggetti o classi per creare strutture complesse.",
+      "Definire le relazioni fra classi e sottoclassi basate sull'ereditarietà statica.",
+      "Astrarre il meccanismo di generazione di istanze di una classe.",
+      "Caratterizzare sistemi di controllo complessi legati agli algoritmi."
+    ],
+    "correct_answer": "Astrarre il meccanismo di generazione di istanze di una classe.",
+    "id": "b0d1e2c3-a4f5-46b7-8d9e-0c1a2b3f4d5e"
+  },
+  {
+    "question": "Il Pattern State è classificato come Pattern di Comportamento. Qual è il suo obiettivo principale, specialmente in relazione all'automa a stati?",
+    "answers": [
+      "Garantire che una classe abbia una sola istanza globale.",
+      "Permettere a un oggetto di cambiare comportamento quando cambia il suo stato interno.",
+      "Consentire la creazione di strutture gerarchiche di oggetti semplici e composti.",
+      "Fornire un modo per accedere agli elementi di un aggregato in maniera sequenziale."
+    ],
+    "correct_answer": "Permettere a un oggetto di cambiare comportamento quando cambia il suo stato interno.",
+    "id": "e9f8d7c6-b5a4-4c3d-2e1f-0a9b8c7d6e5f"
+  },
+  {
+    "question": "Secondo la descrizione del Pattern Iterator, quale affermazione è vera riguardo all'oggetto iteratore?",
+    "answers": [
+      "È responsabile di implementare la logica di transizione tra stati adiacenti.",
+      "Serve a trattare oggetti semplici e composti in modo uniforme.",
+      "Tiene traccia dell'elemento corrente e conosce quali elementi sono già stati attraversati.",
+      "Deve essere popolato da innumerevoli variabili globali per garantire la flessibilità."
+    ],
+    "correct_answer": "Tiene traccia dell'elemento corrente e conosce quali elementi sono stati attraversati.",
+    "id": "1d2c3b4a-5f6e-7d8c-9b0a-1e2f3g4h5i6j"
+  },
+    {
+    "question": "Quale vantaggio offre il Design Pattern Singleton rispetto alla programmazione procedurale, come descritto nelle fonti?",
+    "answers": [
+      "Permette l'ereditarietà delle classi di stato.",
+      "Riduce il numero di oggetti istanziati in modo significativo.",
+      "È un pattern di creazione che supporta il 'lazy loading', creando l'istanza solo quando è necessaria.",
+      "Semplifica il tracciamento delle modifiche grazie all'uso di variabili globali."
+    ],
+    "correct_answer": "È un pattern di creazione che supporta il 'lazy loading', creando l'istanza solo quando è necessaria.",
+    "id": "78c9b3e1-2d4a-4f5c-8b6d-1e2f3g4h5i6j"
+  },
+  {
+    "question": "Qual è lo scopo principale del Design Pattern Composite?",
+    "answers": [
+      "Implementare un automa a stati finiti in modo object-oriented.",
+      "Astrarre il meccanismo di generazione delle istanze di una classe.",
+      "Comporre oggetti in strutture gerarchiche che consentano di trattare elementi singoli e compositi in modo uniforme.",
+      "Definire le relazioni statiche tra classi e sottoclassi a tempo di compilazione."
+    ],
+    "correct_answer": "Comporre oggetti in strutture gerarchiche che consentano di trattare elementi singoli e compositi in modo uniforme.",
+    "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3g4h5i6k"
+  },
+  {
+    "question": "Un potenziale svantaggio del Pattern State è:",
+    "answers": [
+      "Rende il sistema troppo generico per un uso specifico.",
+      "Aumenta il numero degli oggetti rispetto all’uso di uno switch o di una catena if/else.",
+      "Complica la logica di transizione tra stati adiacenti.",
+      "Non consente di definire classi diverse per ogni stato dell'automa."
+    ],
+    "correct_answer": "Aumenta il numero degli oggetti rispetto all’uso di uno switch o di una catena if/else.",
+    "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3g4h5i6l7m"
+  },
+  {
+    "question": "Nel Pattern Iterator, qual è il ruolo della classe o interfaccia 'Aggregatore' (e.g., `java.lang.Iterable`)?",
+    "answers": [
+      "Definire l'implementazione specifica della logica di attraversamento.",
+      "Nascondere le strutture dati interne e esporre sempre gli stessi metodi di interrogazione.",
+      "Dichiarare il supporto alla funzionalità di iterazione, consentendo la creazione di un oggetto Iteratore.",
+      "Tenere traccia dell'elemento corrente e conoscere quali elementi sono già stati attraversati."
+    ],
+    "correct_answer": "Dichiarare il supporto alla funzionalità di iterazione, consentendo la creazione di un oggetto Iteratore.",
+    "id": "3c4d5e6f-7a8b-9c0d-1e2f-3g4h5i6m7n8o"
+  },
+  {
+    "question": "A quale categoria di Design Patterns appartiene il Pattern Facade?",
+    "answers": [
+      "Creazione (Creation Patterns)",
+      "Struttura (Structure Patterns)",
+      "Comportamento (Behavior Patterns)",
+      "Architetturale (Architectural Patterns)"
+    ],
+    "correct_answer": "Struttura (Structure Patterns)",
+    "id": "4d5e6f7a-8b9c-0d1e-2f3g-4h5i6j7k8l9m"
+  }
+,
+{
+    "question": "Qual è lo scopo principale del Design Pattern Facade, appartenente alla categoria dei Pattern di Struttura?",
+    "answers": [
+      "Assicurare che una classe abbia una sola istanza globale.",
+      "Fornire un'interfaccia unificata e semplificata a un insieme complesso di sottosistemi o classi.",
+      "Definire una gerarchia di classi in cui le sottoclassi implementano metodi astratti.",
+      "Consentire a un oggetto di cambiare comportamento al variare del suo stato interno."
+    ],
+    "correct_answer": "Fornire un'interfaccia unificata e semplificata a un insieme complesso di sottosistemi o classi.",
+    "id": "e7c1d0b9-5f2a-4c8e-9b3d-7a6f5e4c3b21"
+  },
+  {
+    "question": "Nei Diagrammi di Temporizzazione (Timing Diagrams), qual è l'aspetto primario messo in risalto, a differenza dei Diagrammi di Sequenza?",
+    "answers": [
+      "La struttura statica delle classi e le loro relazioni.",
+      "Il dispiegamento dei componenti software sui nodi fisici.",
+      "Gli aspetti temporali e di cambiamento di stato degli oggetti.",
+      "La logica procedurale del sistema."
+    ],
+    "correct_answer": "Gli aspetti temporali e di cambiamento di stato degli oggetti.",
+    "id": "a1b2c3d4-e5f6-7a8b-9c0d-1e2f3g4h5i7k"
+  },
+  {
+    "question": "Quale elemento grafico viene utilizzato in un Diagramma di Temporizzazione per rappresentare un'istanza (oggetto) e l'evoluzione del suo stato nel tempo?",
+    "answers": [
+      "Un rettangolo diviso in tre sezioni (come la classe)",
+      "Una linea di vita tratteggiata verticalmente.",
+      "Una linea del tempo orizzontale, divisa in regioni che indicano stati.",
+      "Un rettangolo orizzontale con angoli arrotondati."
+    ],
+    "correct_answer": "Una linea del tempo orizzontale, divisa in regioni che indicano stati.",
+    "id": "b3c4d5e6-f7g8-9h0i-1j2k-3l4m5n6o7p9r"
+  },
+  {
+    "question": "A quale categoria di professionisti sono particolarmente familiari i Diagrammi di Temporizzazione?",
+    "answers": [
+      "Ai gestori del rischio (Risk Managers)",
+      "Agli ingegneri che si occupano di hardware.",
+      "Ai modellatori di processi di business.",
+      "Ai programmatori Java che usano il polimorfismo dinamico."
+    ],
+    "correct_answer": "Agli ingegneri che si occupano di hardware.",
+    "id": "6d5c4b3a-2e1f-0d9c-8b7a-6f5e4d3c2b1a"
+  },
+  {
+    "question": "Un Pattern Facade opera tipicamente come un intermediario tra l'utente (client) e cosa?",
+    "answers": [
+      "La Java Virtual Machine (JVM).",
+      "I metodi `private` della classe.",
+      "Un sottosistema di classi interconnesse e complesse.",
+      "Un singolo oggetto che implementa un'interfaccia astratta."
+    ],
+    "correct_answer": "Un sottosistema di classi interconnesse e complesse.",
+    "id": "1e2f3g4h-5i6j-7k8l-9m0n-1p2q3r4s5t6u"
+  },
+  {
+    "question": "Nei Diagrammi di Temporizzazione, cosa viene rappresentato sulla parte verticale del grafico per l'oggetto?",
+    "answers": [
+      "La durata della vita dell'oggetto nello scenario.",
+      "I diversi stati che l'oggetto può assumere .",
+      "La barra di attivazione durante i messaggi sincroni.",
+      "Il livello di astrazione del codice sorgente."
+    ],
+    "correct_answer": "I diversi stati che l'oggetto può assumere .",
+    "id": "7f8e9d0c-1b2a-3e4f-5g6h-7i8j9k0l1m2n"
+  },
+  {
+    "question": "L'obiettivo del Pattern Facade è aumentare la coesione e diminuire l'accoppiamento. Cosa ottiene facilitando l'interazione con sottosistemi complessi?",
+    "answers": [
+      "Rende possibile l'uso di ereditarietà multipla in Java.",
+      "Permette di accedere direttamente a tutti i dati privati (violando l'incapsulamento).",
+      "Fornisce un punto di ingresso semplificato, riducendo le dipendenze del client dal sottosistema.",
+      "Garantisce che il costruttore della classe non venga mai chiamato due volte."
+    ],
+    "correct_answer": "Fornisce un punto di ingresso semplificato, riducendo le dipendenze del client dal sottosistema.",
+    "id": "3a2b1c0d-4e5f-6a7b-8c9d-0e1f2g3h4i5j"
+  },
+  {
+    "question": "In un Diagramma di Temporizzazione, come sono rappresentati gli eventi che inducono un cambiamento di stato?",
+    "answers": [
+      "Come nodi romboidali (decision node).",
+      "Tramite frecce che si intersecano con le regioni di stato (linee orizzontali).",
+      "Con un rettangolo arrotondato (azione di attività).",
+      "Con un parallelepipedo (nodo di deployment)."
+    ],
+    "correct_answer": "Tramite frecce che si intersecano con le regioni di stato (linee orizzontali).",
+    "id": "c5d6e7f8-9a0b-1c2d-3e4f-5g6h7i8j9k0l"
+  },
+  {
+    "question": "Qual è il vantaggio dell'utilizzo dei Diagrammi di Temporizzazione in un contesto multi-oggetto?",
+    "answers": [
+      "Descrivere la logica interna di un singolo metodo (come in un diagramma di sequenza).",
+      "Mettere in evidenza i vincoli temporali e le interdipendenze di stato in un gruppo di oggetti.",
+      "Sostituire la necessità di utilizzare classi astratte o interfacce.",
+      "Rappresentare il flusso di controllo in un ciclo 'while'."
+    ],
+    "correct_answer": "Mettere in evidenza i vincoli temporali e le interdipendenze di stato in un gruppo di oggetti.",
+    "id": "e1f2g3h4-i5j6-k7l8-m9n0-p1q2r3s4t5u"
+  },
+  {
+    "question": "Il Pattern Facade è spesso utilizzato per rispettare quale principio di design fondamentale?",
+    "answers": [
+      "Il principio di Non Ripetizione (DRY).",
+      "Il principio di Responsabilità Singola (SRP), incapsulando la complessità del sottosistema.",
+      "Il principio di Sostituzione di Liskov (LSP).",
+      "Il principio di Lateness (che giustifica i ritardi nel progetto)."
+    ],
+    "correct_answer": "Il principio di Responsabilità Singola (SRP), incapsulando la complessità del sottosistema.",
+    "id": "9h8i7j6k-5l4m-3n2p-1q0r-9s8t7u6v5w4x"
+  },
+   {
+    "question": "Quale elemento, pur essendo un membro della classe, NON è tipicamente consentito o è strettamente limitato (a sole costanti pubbliche) all'interno di un'interfaccia Java?",
+    "answers": [
+      "Metodi astratti",
+      "Variabili di istanza (non costanti)",
+      "Metodi statici (dopo Java 8)",
+      "Definizione di costanti pubbliche (final)"
+    ],
+    "correct_answer": "Variabili di istanza (non costanti)",
+    "id": "a5c7f8e9-b4d3-c2a1-0f1e-d9b8c7a6f5e4"
+  },
+  {
+    "question": "Qual è la caratteristica procedurale fondamentale che distingue il Modello a Spirale (Spiral Model) dagli altri modelli del ciclo di vita del software?",
+    "answers": [
+      "L'esecuzione di tutte le fasi in sequenza rigida (Waterfall)",
+      "La creazione di prototipi 'usa e getta' per la comprensione dei requisiti",
+      "La valutazione e il trattamento esplicito dei rischi in ogni fase",
+      "La consegna immediata di funzionalità complete e testate (Incremental Delivery)"
+    ],
+    "correct_answer": "La valutazione e il trattamento esplicito dei rischi in ogni fase",
+    "id": "e4d3c2b1-a0f9-8e7d-6c5b-4a3f2e1d0c9b"
+  },
+  {
+    "question": "In che modo lo Sviluppo Incrementale affronta la complessità di un grande progetto software?",
+    "answers": [
+      "Prevedendo una manutenzione continua e illimitata nel tempo",
+      "Implementando tutti i requisiti in un unico blocco di codice per poi rilasciarli in un solo momento",
+      "Raffinando continuamente un set completo di funzionalità esistenti (Iterativo)",
+      "Decomponendo il sistema in sottosistemi (incrementi) e rilasciando gradualmente nuove funzionalità"
+    ],
+    "correct_answer": "Decomponendo il sistema in sottosistemi (incrementi) e rilasciando gradualmente nuove funzionalità",
+    "id": "9b8a7f6e-5d4c-3b2a-1f0e-9d8c7b6a5f4e"
+  },
+  {
+    "question": "Secondo le convenzioni UML, qual è il requisito fondamentale per la scelta del nome di un attributo in un Diagramma delle Classi?",
+    "answers": [
+      "Deve essere univoco per l'intero diagramma e non solo per la classe",
+      "Deve essere un nome breve e costituito esclusivamente da lettere minuscole",
+      "Deve iniziare sempre con un underscore (_) per indicare la visibilità privata",
+      "Deve descrivere il significato dell'attributo stesso"
+    ],
+    "correct_answer": "Deve descrivere il significato dell'attributo stesso",
+    "id": "d0c9b8a7-f6e5-4d3c-2b1a-0f9e8d7c6b5a"
+  },
+  {
+    "question": "Qual è la regola fondamentale che il programmatore deve rispettare riguardo all'inizializzazione di una variabile locale (di stack) in Java?",
+    "answers": [
+      "Viene inizializzata automaticamente a zero o null dal compilatore se non specificato",
+      "Deve essere inizializzata esplicitamente dal programmatore, altrimenti il compilatore potrebbe segnalare un errore",
+      "Si inizializza al momento della creazione dell'oggetto in cui è contenuta",
+      "Assume sempre un valore casuale finché non le viene assegnato un valore"
+    ],
+    "correct_answer": "Deve essere inizializzata esplicitamente dal programmatore, altrimenti il compilatore potrebbe segnalare un errore",
+    "id": "7a6f5e4d-3c2b-1a0f-9e8d-7c6b5a4d3e2f"
+  },
+  {
+    "question": "Nel contesto dell'organizzazione e pianificazione di un progetto software, come viene specificamente denominato il lavoro o l'attività discreta che deve essere eseguita da un partecipante?",
+    "answers": [
+      "Work Package",
+      "Schedule",
+      "Work Product",
+      "Task"
+    ],
+    "correct_answer": "Task",
+    "id": "1b0a9c8d-7e6f-5d4c-3b2a-1f0e9d8c7b6a"
+  },
+  {
+    "question": "Qual è l'output del seguente codice Java che dimostra il comportamento 'fallthrough' del costrutto switch? int day = 6; switch (day) {    case 5: System.out.print(\"Venerdi\"); break;    case 6: System.out.print(\"Ultimo\");     default: System.out.print(\"Giorno\"); }",
+    "answers": [
+      "Ultimo",
+      "Venerdi",
+      "Errore di compilazione dovuto a break mancante",
+      "UltimoGiorno"
+    ],
+    "correct_answer": "UltimoGiorno",
+    "id": "5e4d3c2b-1a0f-9e8d-7c6b-5a4d3e2f1g0h"
   }
 ]
