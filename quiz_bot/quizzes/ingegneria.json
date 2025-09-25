@@ -966,12 +966,12 @@
 }
 ,
     {
-    "question": "Secondo le convenzioni di Java gli identficatori dei metodi",
+    "question": "Secondo le convenzioni di Java gli identificatori dei metodi",
     "answers": [
-      "devono essere descrittivi e concisi",
+      "non devono contenere verbi",
       "devono iniziare per lettera minuscola",
-      "non devono contenere spazi o caratteri speciali",
-      "non possono coincidere con parole chiave del linguaggio"
+      "devono avere tutte lettere maiuscole",
+      "possono coincidere con parole chiave del linguaggio"
     ],
     "correct_answer": "devono iniziare per lettera minuscola",
     "id": "4bf71107-f2c1-432b-aaee-4d1cb4e7199a"
@@ -1281,7 +1281,7 @@
     "id": "dd865024-32ee-4e59-b844-baf85fce8e7a"
   },
   {
-    "question": "Cosa stampa questo codice Java?     int x = 5;    int y = x++;",
+    "question": "Cosa stampa questo codice Java?     int x = 5;    int y = x++;    System.out.println(y);",
     "answers": [
       "5",
       "6",
@@ -1348,7 +1348,7 @@
     "id": "167e5b17-6125-4e70-ba79-b7847c7dcec5"
   },
   {
-    "question": "Secondo le convenzioni di Java gli identficatori delle variabili",
+    "question": "Secondo le convenzioni di Java gli identificatori delle variabili",
     "answers": [
       "devono iniziare per lettera minuscola",
       "devono iniziare per lettera maiuscola",
