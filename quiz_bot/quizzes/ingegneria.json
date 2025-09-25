@@ -407,7 +407,7 @@
     "id": "ab425b2d-0223-4d59-b9fe-9b846e991408"
   },
   {
-    "question": "Qual è l'output del seguente codice Java?\n\nint x = 0;\nSystem.out.println(x);",
+    "question": "Qual è l'output del seguente codice Java?    int x = 0;   System.out.println(x);",
     "answers": [
       "Nessun errore",
       "Stampa 0",
@@ -561,7 +561,7 @@
     "id": "d1bf3dd9-ae8d-4a1a-89cb-b8a243d79404"
   },
   {
-    "question": "Qual è l'output o l'errore del seguente codice Java?\n\nint[] arr = {1, 2, 3};\nSystem.out.println(arr[3]);",
+    "question": "Qual è l'output o l'errore del seguente codice Java?        int[] arr = {1, 2, 3};     System.out.println(arr[3]);",
     "answers": [
       "Indice fuori dai limiti dell'array",
       "Nessun errore",
@@ -638,7 +638,7 @@
     "id": "383cab63-c3ff-437e-8021-1ceb08645dff"
   },
   {
-    "question": "Quale sarà l'output del seguente codice Java?\n\nint x = 10;\nif (x > 5) {\n    System.out.println(\"Maggiore\");\n} else {\n    System.out.println(\"Minore\");\n}",
+    "question": "Quale sarà l'output del seguente codice Java?     int x = 10;  if (x > 5) {    System.out.println(\"Maggiore\");} else {    System.out.println(\"Minore\");}",
     "answers": [
       "Maggiore",
       "Minore",
