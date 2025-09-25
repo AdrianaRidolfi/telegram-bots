@@ -141,9 +141,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         "Vuoi contribuire? Clicca su GitHub e segui la guida!\n\n"
 
         "*📚 Quiz disponibili:*\n"
+        "• *Ingegneria del software* - _inedite + 60 da AI_- `25/09`\n"
         "• *Programmazione distribuita e cloud computing* - _inedite_ - `22/08`\n"
         "• *Diritto per le aziende digitali* - _inedite_ - `18/07`\n"
-        "• *Ingegneria del software* - _inedite_ - `03/07`\n"
         "• *Corporate planning* - _paniere + inedite + 78 da AI_ - `01/07`\n"
         "• *Programmazione 2* - _inedite_ - `23/06`\n"
         "• *Tecnologie web* - _esamsync + inedite_ - `15/06`\n"
