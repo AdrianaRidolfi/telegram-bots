@@ -1752,7 +1752,7 @@
     "id": "8054e19d-6c9a-43b8-aa46-d774ff6fcf9e"
   },
   {
-    "question": "In Java, se abbiamo int i=5; int j=++i; int k=j++; int h=k--; boolean flag = ((i != j) && ((j ...",
+    "question": "Cosa stampa il codice java in figura?",
     "answers": [
       "true",
       "false",
@@ -1760,7 +1760,8 @@
       "Dipende dal compilatore"
     ],
     "correct_answer": "true",
-    "id": "c036ac56-690a-4227-be86-261ff49b8e27"
+    "id": "c036ac56-690a-4227-be86-261ff49b8e27",
+    "image": "ing1.jpg"
   },
   {
     "question": "Quale sarà l'output di questo codice? int a = 10; int b = 20; System.out.println(a + b);",
