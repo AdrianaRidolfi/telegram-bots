@@ -638,7 +638,7 @@
     "id": "383cab63-c3ff-437e-8021-1ceb08645dff"
   },
   {
-    "question": "Quale sarà l'output del seguente codice Java?     int x = 10;  if (x > 5) {    System.out.println(\"Maggiore\");} else {    System.out.println(\"Minore\");}",
+    "question": "Quale sarà l'output del seguente codice Java?",
     "answers": [
       "Maggiore",
       "Minore",
@@ -646,7 +646,8 @@
       "Nessun output"
     ],
     "correct_answer": "Maggiore",
-    "id": "57fc1a7f-3d8b-4049-b7b7-cb5bcc45b694"
+    "id": "57fc1a7f-3d8b-4049-b7b7-cb5bcc45b694",
+    "image":"ing2.jpg"
   },
   {
     "question": "Qual è il vantaggio principale dello stream parallelo in Java?",
@@ -920,7 +921,7 @@
 }
 ,
  {
-  "question": "Quale sarà l'output di questo codice?     if(false){        System.out.println(\"True\");    } else {        System.out.println(\"False\");    }",
+  "question": "Quale sarà l'output di questo codice? ",
   "answers": [
     "True",
     "true",
@@ -928,7 +929,8 @@
     "False"
   ],
   "correct_answer": "False",
-  "id": "698d8fc0-d49a-4230-be89-3ef9600f3caa"
+  "id": "698d8fc0-d49a-4230-be89-3ef9600f3caa",
+   "image":"ing3.jpg"
 }
 ,{
   "question": "I diversi tipi di visibilità per le operazioni nel diagramma delle classi sono:",
@@ -2551,7 +2553,7 @@
     "id": "f5a9c0d3-3b1a-4d2f-b4a1-0a6a4c2b9d0e"
   },
   {
-      "question": "Qual è il risultato del seguente frammento di codice in Java, considerando la concatenazione di stringhe?  System.out.println(1 + \" risultato: \" + 2 + 3);",
+      "question": "Qual è il risultato del seguente frammento di codice in Java, considerando la concatenazione di stringhe?",
     "answers": [
       "1 risultato: 23",
       "3 risultato: 5",
@@ -2559,7 +2561,8 @@
       "6 risultato: "
     ],
     "correct_answer": "1 risultato: 23",
-    "id": "c1c5e7b2-0a1b-4d4c-a8e5-3d8b6e9c1f7a"
+    "id": "c1c5e7b2-0a1b-4d4c-a8e5-3d8b6e9c1f7a",
+    "image":"ing4.jpg"
   },
   {
     "question": "In Java, cosa succede quando si tenta di utilizzare una variabile locale (di stack) non inizializzata?",
@@ -2617,7 +2620,7 @@
     "id": "7c6b5a4d-3e2f-1c0b-9a8d-7f6e5d4c3b2a"
   },
   {
-    "question": "In Java, un metodo dichiarato con `static`:\n\n\npublic class Utility {\n    public static int calcola(int a, int b) { return a + b; }\n}\n\nCome viene chiamato tipicamente dalla classe `Main`?",
+    "question": "In Java, un metodo dichiarato con `static`: public class Utility {    public static int calcola(int a, int b) { return a + b; }  Come viene chiamato tipicamente dalla classe `Main`?",
     "answers": [
       "Creando un'istanza della classe `Utility` e chiamando il metodo sull'oggetto.",
       "Utilizzando la keyword `this.calcola(a, b);`",
@@ -2926,7 +2929,7 @@
     "id": "1b0a9c8d-7e6f-5d4c-3b2a-1f0e9d8c7b6a"
   },
   {
-    "question": "Qual è l'output del seguente codice Java che dimostra il comportamento 'fallthrough' del costrutto switch? int day = 6; switch (day) {    case 5: System.out.print(\"Venerdi\"); break;    case 6: System.out.print(\"Ultimo\");     default: System.out.print(\"Giorno\"); }",
+    "question": "Qual è l'output del seguente codice Java che dimostra il comportamento 'fallthrough' del costrutto switch?",
     "answers": [
       "Ultimo",
       "Venerdi",
@@ -2934,6 +2937,7 @@
       "UltimoGiorno"
     ],
     "correct_answer": "UltimoGiorno",
-    "id": "5e4d3c2b-1a0f-9e8d-7c6b-5a4d3e2f1g0h"
+    "id": "5e4d3c2b-1a0f-9e8d-7c6b-5a4d3e2f1g0h",
+    "image":"ing5.jpg"
   }
 ]
