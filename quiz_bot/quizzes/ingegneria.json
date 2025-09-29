@@ -407,11 +407,11 @@
     "id": "ab425b2d-0223-4d59-b9fe-9b846e991408"
   },
   {
-    "question": "Qual è l'output del seguente codice Java?    int x = 0;   System.out.println(x);",
+    "question": "Il seguente codice Java genera errori di compilazione o di esecuzione?   int x = 0;   System.out.println(x);",
     "answers": [
       "Nessun errore",
-      "Stampa 0",
-      "Stampa 1",
+      "Errore a runtime",
+      "Stampa x",
       "Errore di compilazione"
     ],
     "correct_answer": "Nessun errore",
@@ -1174,12 +1174,12 @@
   {
     "question": "Lo pseudo stato finale server per:",
     "answers": [
-      "definire il completamento dell' esecuzione della macchina a stati, ma solitamente non è un \u001c vero\u001d  stato",
+      "definire il completamento dell' esecuzione della macchina a stati, ma solitamente non è un \"vero\"  stato",
       "rappresentare l'inizio di una macchina a stati",
       "indicare un errore nello stato corrente",
       "definire una transizione condizionale"
     ],
-    "correct_answer": "definire il completamento dell' esecuzione della macchina a stati, ma solitamente non è un \u001c vero\u001d  stato",
+    "correct_answer": "definire il completamento dell' esecuzione della macchina a stati, ma solitamente non è un \"vero\" stato",
     "id": "f68b4d3f-fdfe-44c6-afd6-06c1e6f0e27b"
   },
   {
@@ -2068,14 +2068,14 @@
   }
 ,
   {
-    "question": "Una classe astratta si definisce:",
+    "question": "Quale tra le seguenti affermazioni descrive correttamente un'interfaccia?",
     "answers": [
-      "Interfaccia, se è una classe senza attributi e con tutte le operazioni astratte",
-      "Classe che non può essere istanziata direttamente",
-      "Classe con almeno un metodo astratto",
-      "Classe che può avere metodi concreti e astratti"
+      "È una struttura senza attributi di stato e con sole operazioni astratte",
+      "È una classe che non può essere istanziata direttamente",
+      "È una classe con almeno un metodo astratto",
+      "È una classe che può contenere sia metodi concreti sia astratti"
     ],
-    "correct_answer": "Interfaccia, se è una classe senza attributi e con tutte le operazioni astratte",
+    "correct_answer": "È una struttura senza attributi di stato e con sole operazioni astratte",
     "id": "1fa74150-dad1-45dd-b105-6dfe66b57fa4"
   },
   {
@@ -2443,7 +2443,7 @@
     "id": "a9d701a5-83c9-4674-884b-01d7e268969f"
   },
   {
-    "question": "Quale tipo di metodo può essere definito e implementato all'interno di una classe astratta in Java?",
+    "question": "Oltre ai metodi astratti, quale altro tipo di metodo può essere definito in una classe astratta in Java?",
     "answers": [
       "Solo metodi privati",
       "Metodi concreti (non astratti)",
