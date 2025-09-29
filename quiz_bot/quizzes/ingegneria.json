@@ -840,9 +840,9 @@
   "question": "Il flusso di controllo:",
   "answers": [
     "passa da un'azione alla successiva dopo aver terminato l'esecuzione dell'azione seguendo il token",
-    "indica la sequenza logica di esecuzione delle attività in un processo",
-    "rappresenta un documento di pianificazione del progetto",
-    "è un principio che guida la struttura e l'organizzazione del codice"
+    "si inserisce dall'esterno per effetto di un attore che usa il sistema",
+    "passa da un'azione alla successiva ad intervalli regolari",
+    "passa da un'azione alla successiva con il cambiamento di stato del sistema rappresentato dal token"
   ],
   "correct_answer": "passa da un'azione alla successiva dopo aver terminato l'esecuzione dell'azione seguendo il token",
   "id": "2202eeb6-89c5-4214-ba01-f1d1e245b637"
@@ -1070,7 +1070,7 @@
     "id": "e014d7f5-5bd1-47ab-9c95-91d15d6886a7"
   },
   {
-    "question": "In object-oriented incapsulamento isignfica:",
+    "question": "In object-oriented incapsulamento significa:",
     "answers": [
       "accesso ai dati regolato da apposita interfaccia",
       "nascondere i dati privati senza permettere alcun accesso dall’esterno",
@@ -2012,12 +2012,12 @@
   }
 ,
   {
-    "question": "In Java una volta scritti i file con la dichiarazione delle classi di oggetti",
+    "question": "In Java una volta scritti i file con la dichiarazione delle classi di oggetti (NB: è nel paniere così ma le risposte sono in realtà tutte sbagliate)",
     "answers": [
       "Il programma non compila perché manca il main con il flusso di esecuzione",
-      "I file devono essere compilati con il compilatore Java",
-      "Le classi possono essere utilizzate in altri programmi tramite import",
-      "Ogni classe deve avere almeno un costruttore"
+      "Il programma è pronto per essere compilato ed eseguito",
+      "Il programma non compila perché tutte le classi devono essere dichiarate in un solo file",
+      "Il programma compila ma non può essere eseguito perché ci vogliono almeno due oggetti"
     ],
     "correct_answer": "Il programma non compila perché manca il main con il flusso di esecuzione",
     "id": "8788b29b-4135-4975-a768-0bfccdb1becc"
@@ -2104,9 +2104,9 @@
     "question": "In Java nella dichiarazione di classe il modificatore specifica",
     "answers": [
       "Come modificare le caratteristiche della classe",
-      "Il livello di accesso ai membri della classe",
-      "Se la classe può essere ereditata",
-      "Se la classe è astratta o finale"
+      "L'ambito di operatività dei metodi della classe",
+      "L'ambito di attività degli attributi della classe",
+      "Come aggiungere attributi alla classe dopo che è stata istanziata"
     ],
     "correct_answer": "Come modificare le caratteristiche della classe",
     "id": "d6976104-e805-4419-92eb-e04a8939b3bd"
