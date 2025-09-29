@@ -1073,7 +1073,7 @@
     "question": "In object-oriented incapsulamento isignfica:",
     "answers": [
       "accesso ai dati regolato da apposita interfaccia",
-      "nascondere i dati privati e proteggerli dall'accesso diretto",
+      "nascondere i dati privati senza permettere alcun accesso dall’esterno",
       "permesso di accesso illimitato ai dati",
       "forzare la visibilità pubblica di tutte le proprietà"
     ],
