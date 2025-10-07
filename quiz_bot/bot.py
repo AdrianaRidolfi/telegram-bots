@@ -854,14 +854,16 @@ async def show_final_stats(user_id, context, state, from_stop=False, is_review_m
         return
 
     score = state["score"]
-    total = state["index"]
+    total = state["total"]
+    answered = state["index"]
+    skipped = total - answered
 
     keyboard = []
     has_errors = False
 
     summary = ""
 
-    if total == 0:
+    if answered == 0:
         summary = "Nessuna risposta data. Quiz interrotto dall'utente."
     else:
         percentage = round((score / total) * 100, 2)
@@ -884,12 +886,13 @@ async def show_final_stats(user_id, context, state, from_stop=False, is_review_m
 
         summary = f"🎯Quiz completato!\nPunteggio: {score} su {total} ({percentage}%)\n"
         summary += duration
+        if skipped > 0:
+            summary += f"\n⚠️ {skipped} domande sono state saltate per problemi di dati.\n"
         summary += "\n📊 Statistiche:\n"
 
         for sub, data in all_stats.items():
             perc = round((data['correct'] / data['total']) * 100, 2)
             summary += f"- {sub}: {perc}% ({data['correct']} su {data['total']})\n"
-
 
         manager = get_manager(user_id)
         manager.commit_changes() 
@@ -922,7 +925,6 @@ async def show_final_stats(user_id, context, state, from_stop=False, is_review_m
             InlineKeyboardButton("📝 Mostra errori", callback_data=f"show_mistakes_{subject}")
         ])
 
-
     keyboard.append([
         InlineKeyboardButton("📥 Scarica pdf", callback_data=f"download_pdf:{state['quiz_file']}"),
         InlineKeyboardButton("🌐 Git", url="https://github.com/AdrianaRidolfi/telegram-bots")
@@ -930,7 +932,6 @@ async def show_final_stats(user_id, context, state, from_stop=False, is_review_m
 
     reply_markup = InlineKeyboardMarkup(keyboard)
     await context.bot.send_message(chat_id=user_id, text=summary, reply_markup=reply_markup)
-
 
 async def stats(update: Update = None, context: ContextTypes.DEFAULT_TYPE = None, user_id: int = None):
     # Se user_id non passato, prendilo da update
