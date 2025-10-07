@@ -245,9 +245,13 @@ async def select_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, user_i
             user_id = update.effective_user.id
         if update and hasattr(update, 'data'):
             filename = update.data
-    if user_id is None or filename is None:
         await context.bot.send_message(chat_id=update.effective_user.id if update and update.effective_user else None, text="Errore: dati mancanti per il quiz.")
         return
+    
+    # PULIZIA MANAGER ERRORI 
+    manager = get_manager(user_id)
+    manager.commit_changes()
+    clear_manager(user_id)
 
     # --- DDOS protection ---
     if is_rate_limited(user_id):
@@ -463,6 +467,12 @@ async def _validate_and_get_question(state, q_index, user_id, context):
 
 
 async def repeat_quiz(user_id: int, context: ContextTypes.DEFAULT_TYPE):
+    
+    # PULIZIA MANAGER ERRORI 
+    manager = get_manager(user_id)
+    manager.commit_changes()
+    clear_manager(user_id)
+
     old_state = user_states.get(user_id)
     if not old_state or "quiz_file" not in old_state:
         await context.bot.send_message(chat_id=user_id, text="Sessione non valida. Scrivi /start per iniziare.")
