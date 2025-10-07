@@ -341,7 +341,7 @@
     "id": "ae368d74-b044-4c89-bae7-99615561d838"
   },
   {
-    "question": "Quale tra questi termini è associato al pattern Singleton?",
+    "question": "Quale tra questi termini è associato al pattern Singleton? NB: la risposta considerata corretta dal sistema (e sul paniere) non è quella corretta nella realtà",
     "answers": [
       "final",
       "const",
