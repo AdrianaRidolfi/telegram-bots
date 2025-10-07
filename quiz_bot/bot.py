@@ -887,8 +887,7 @@ async def show_final_stats(user_id, context, state, from_stop=False, is_review_m
 
         summary = f"🎯Quiz completato!\nPunteggio: {score} su {answered} ({percentage}%)\n"
         summary += duration
-        if skipped > 0:
-            summary += f"\n⚠️ {skipped} domande sono state saltate per problemi di dati.\n"
+      
         summary += "\n📊 Statistiche:\n"
 
         for sub, data in all_stats.items():
