@@ -765,6 +765,7 @@ async def handle_answer_callback(user_id: int, answer_index: int, context: Conte
         )
         manager.queue_wrong_answer(subject, question_data)
 
+    print(f"[DEBUG] Risposta data: user={user_id}, domanda={q_index}, score={state['score']}, index={state['index']}, total={state['total']}")
     state["index"] += 1
     await send_next_question(user_id, context)
 
@@ -866,7 +867,7 @@ async def show_final_stats(user_id, context, state, from_stop=False, is_review_m
     if answered == 0:
         summary = "Nessuna risposta data. Quiz interrotto dall'utente."
     else:
-        percentage = round((score / total) * 100, 2)
+        percentage = round((score / answered) * 100, 2) if answered else 0
         stats_manager = get_stats_manager(user_id)
         stats_manager.update_stats(subject, score, total)
         all_stats = stats_manager.get_summary()
@@ -884,7 +885,7 @@ async def show_final_stats(user_id, context, state, from_stop=False, is_review_m
         if score < 18 and total == 30:
             await context.bot.send_animation(chat_id=user_id, animation=yikes())
 
-        summary = f"🎯Quiz completato!\nPunteggio: {score} su {total} ({percentage}%)\n"
+        summary = f"🎯Quiz completato!\nPunteggio: {score} su {answered} ({percentage}%)\n"
         summary += duration
         if skipped > 0:
             summary += f"\n⚠️ {skipped} domande sono state saltate per problemi di dati.\n"
