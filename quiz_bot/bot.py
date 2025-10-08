@@ -17,6 +17,7 @@ from typing import Dict
 from collections import defaultdict, deque
 import asyncio
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+import copy
 from telegram.ext import (
     ApplicationBuilder,
     CommandHandler,
@@ -651,6 +652,10 @@ async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, 
         return base_by_id
 
     def build_weighted_list(wrong_qs, base_by_id):
+        """Restituisce una lista con domande duplicate (feature voluta) ma ogni occorrenza è una copia
+        indipendente, così da non sovrascrivere _shuffled_answers / _correct_index tra ripetizioni.
+        Il numero di ripetizioni dipende dal counter (peso) come prima.
+        """
         weighted = []
         for entry in wrong_qs:
             q_id = entry.get("id")
@@ -660,8 +665,10 @@ async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, 
             counter = entry.get("counter", 1)
             if q_id in base_by_id:
                 repeat_times = min((counter + 1) // 2, 5)
-                weighted += [base_by_id[q_id]] * repeat_times
-                print(f"[DEBUG] Aggiunta domanda ID {q_id}, {repeat_times} volte")
+                for _ in range(repeat_times):
+                    # copia profonda per evitare side-effects tra occorrenze ripetute
+                    weighted.append(copy.deepcopy(base_by_id[q_id]))
+                print(f"[DEBUG] Aggiunta domanda ID {q_id}, {repeat_times} copie indipendenti")
             else:
                 print(f"[DEBUG] ID {q_id} non trovato in base_by_id")
         return weighted
@@ -880,10 +887,12 @@ async def show_final_stats(user_id, context, state, from_stop=False, is_review_m
             secs = elapsed % 60
             duration = f"\n🕒 Tempo impiegato: {mins} min {secs} sec\n"
 
-        if score == 30 and total == 30:
-            await context.bot.send_animation(chat_id=user_id, animation=yay())
-        if score < 18 and total == 30:
-            await context.bot.send_animation(chat_id=user_id, animation=yikes())
+        # GIF solo se quiz completato (tutte le domande risposte) e total == 30
+        if answered == total == 30:
+            if score == 30:
+                await context.bot.send_animation(chat_id=user_id, animation=yay())
+            elif score < 18:
+                await context.bot.send_animation(chat_id=user_id, animation=yikes())
 
         summary = f"🎯Quiz completato!\nPunteggio: {score} su {answered} ({percentage}%)\n"
         summary += duration
