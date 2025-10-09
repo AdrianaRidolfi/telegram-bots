@@ -454,14 +454,16 @@ async def _validate_and_get_question(state, q_index, user_id, context):
         return None
     question_data = state["quiz"][q_index]
     if not question_data.get("question") or not question_data.get("answers"):
-        print(f"❌ Domanda malformata per user {user_id}: {question_data}")
+        print(f"Domanda malformata per user {user_id}: {question_data}")
         state["index"] += 1
+        state["total"] -= 1 
         await send_next_question(user_id, context)
         return None
     original_answers = question_data.get("answers", [])
     if len(original_answers) < 2:
-        print(f"❌ Domanda senza risposte sufficienti per user {user_id}")
+        print(f"Domanda senza risposte sufficienti per user {user_id}")
         state["index"] += 1
+        state["total"] -= 1 
         await send_next_question(user_id, context)
         return None
     return question_data
@@ -864,7 +866,6 @@ async def show_final_stats(user_id, context, state, from_stop=False, is_review_m
     score = state["score"]
     total = state["total"]
     answered = state["index"]
-    skipped = total - answered
 
     keyboard = []
     has_errors = False
