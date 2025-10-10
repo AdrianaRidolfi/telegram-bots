@@ -165,7 +165,7 @@
     "id": "b5f56149-2f77-48a3-971f-0d5a6a9f377f"
   },
   {
-    "question": "Qual è lo scopo della parola chiave “super” in Java?",
+    "question": "Qual è lo scopo della parola chiave super in Java?",
     "answers": [
       "Fare riferimento all'oggetto corrente",
       "Accedere ai membri della superclasse",
@@ -275,7 +275,7 @@
     "id": "74b01c8f-e5d1-4c06-a02b-6b7257c0e81b"
   },
   {
-    "question": "Qual è lo scopo della parola chiave 'abstract' in Java?",
+    "question": "Qual è lo scopo della parola chiave abstract in Java?",
     "answers": [
       "Dichiarare una classe o un metodo astratto",
       "Dichiarare solo una classe",
@@ -297,7 +297,7 @@
     "id": "66188d36-11c0-4e16-99fe-31efc4494e50"
   },
   {
-    "question": "Cosa significa 'override' in programmazione orientata agli oggetti?",
+    "question": "Cosa significa override in programmazione orientata agli oggetti?",
     "answers": [
       "Fornire un'implementazione diversa per un metodo ereditato in una sottoclasse.",
       "Non fornire nulla",
@@ -330,7 +330,7 @@
     "id": "fb4fe56e-07ef-4b2d-a083-882d623e6212"
   },
   {
-    "question": "Qual è il ruolo del 'Time keeper' in una riunione?",
+    "question": "Qual è il ruolo del Time keeper in una riunione?",
     "answers": [
       "gestire la durata dell'incontro",
       "gestire solo la prima parte dell'incontro",
@@ -352,7 +352,7 @@
     "id": "0af6aaee-36f1-4bda-845c-fd623cb1bacb"
   },
   {
-    "question": "Qual è il compito principale del 'Minute taker' (segretario) durante una riunione?",
+    "question": "Qual è il compito principale del Minute taker (segretario) durante una riunione?",
     "answers": [
       "verbalizzare i punti discussi",
       "scrivere l'ordine del giorno",
@@ -561,7 +561,7 @@
     "id": "d1bf3dd9-ae8d-4a1a-89cb-b8a243d79404"
   },
   {
-    "question": "Qual è l'output o l'errore del seguente codice Java?        int[] arr = {1, 2, 3};     System.out.println(arr[3]);",
+    "question": "Qual è l'output o l'errore del seguente codice Java?  int[] arr = {1, 2, 3};  System.out.println(arr[3]);",
     "answers": [
       "Indice fuori dai limiti dell'array",
       "Nessun errore",
