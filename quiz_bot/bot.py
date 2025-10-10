@@ -441,10 +441,10 @@ async def _send_question_text(user_id, context, question_text, reply_markup):
             timeout=10.0
         )
     except asyncio.TimeoutError:
-        print(f"⏰ Timeout nell'invio messaggio per user {user_id}")
+        print(f"[ERROR] Timeout nell'invio messaggio per user {user_id}")
         raise
     except Exception as e:
-        print(f"❌ Errore nell'invio messaggio per user {user_id}: {e}")
+        print(f"[ERROR] Errore nell'invio messaggio per user {user_id}: {e}")
         raise
 
 async def _validate_and_get_question(state, q_index, user_id, context):
@@ -453,15 +453,16 @@ async def _validate_and_get_question(state, q_index, user_id, context):
         user_states.pop(user_id, None)
         return None
     question_data = state["quiz"][q_index]
+    question_id = question_data.get("id")
     if not question_data.get("question") or not question_data.get("answers"):
-        print(f"Domanda malformata per user {user_id}: {question_data}")
+        print(f"[ERROR] Domanda malformata per user {user_id}: {question_id}")
         state["index"] += 1
         state["total"] -= 1 
         await send_next_question(user_id, context)
         return None
     original_answers = question_data.get("answers", [])
     if len(original_answers) < 2:
-        print(f"Domanda senza risposte sufficienti per user {user_id}")
+        print(f"[ERROR] Domanda senza risposte sufficienti per user {user_id}: {question_id}")
         state["index"] += 1
         state["total"] -= 1 
         await send_next_question(user_id, context)
