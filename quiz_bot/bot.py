@@ -424,9 +424,9 @@ async def _try_send_image(question_data, user_id, context, question_text, reply_
                     )
                 return True
             except asyncio.TimeoutError:
-                print(f"⏰ Timeout nell'invio immagine per user {user_id}")
+                print(f"[ERROR] Timeout nell'invio immagine per user {user_id}")
             except Exception as e:
-                print(f"❌ Errore nell'invio dell'immagine per user {user_id}: {e}")
+                print(f"[ERROR] Errore nell'invio dell'immagine per user {user_id}: {e}")
     return False
 
 async def _send_question_text(user_id, context, question_text, reply_markup):
@@ -467,6 +467,7 @@ async def _validate_and_get_question(state, q_index, user_id, context):
         state["total"] -= 1 
         await send_next_question(user_id, context)
         return None
+    print(f"[DEBUG] Domanda formattata correttamente, viene inviata all'utente {user_id}: {question_id}")
     return question_data
 
 
