@@ -35,6 +35,8 @@ from aiohttp import web, web_runner
 import aiofiles
 import logging
 import handlers
+import asyncio
+from typing import Dict
 
 # Configure logging
 logging.basicConfig(
@@ -46,9 +48,20 @@ logger = logging.getLogger(__name__)
 # per far partire il bot
 bot_running = True
 
+user_locks: Dict[int, asyncio.Lock] = {}
+
+def get_user_lock(user_id: int) -> asyncio.Lock:
+    """Restituisce o crea un lock per l'utente specifico"""
+    if user_id not in user_locks:
+        user_locks[user_id] = asyncio.Lock()
+    return user_locks[user_id]
+
+def clear_user_lock(user_id: int):
+    """Rimuove il lock quando l'utente completa il quiz"""
+    user_locks.pop(user_id, None)
+
 from dotenv import load_dotenv
 load_dotenv()  # questo legge automaticamente il file .env
-
 
 # Prendi la variabile d'ambiente con le credenziali in base64
 firebase_base64 = os.getenv("FIREBASE_CREDENTIALS_BASE64")
@@ -322,50 +335,77 @@ def escape_markdown(text: str) -> str:
     return re.sub(rf"([{re.escape(escape_chars)}])", r"\\\1", text)
 
 async def send_next_question(user_id, context):
-    try:
-        state = user_states.get(user_id)
-        if not state:
-            await context.bot.send_message(chat_id=user_id, text="Sessione non trovata. Scrivi /start per iniziare.")
-            return
-
-        if state["index"] >= state["total"]:
-            await show_final_stats(user_id, context, state, is_review_mode=state.get("is_review", False))
-            manager = get_manager(user_id)
-            manager.commit_changes()
-            return
-
-        q_index = state["order"][state["index"]]
-        question_data = await _validate_and_get_question(state, q_index, user_id, context)
-        if question_data is None:
-            return
-
-        correct_index, new_answers = _get_shuffled_answers_and_correct_index(question_data)
-        if correct_index is None or new_answers is None:
-            state["index"] += 1
-            await send_next_question(user_id, context)
-            return
-
-        state["quiz"][q_index]["_shuffled_answers"] = new_answers
-        state["quiz"][q_index]["_correct_index"] = correct_index
-
-        question_text = _build_question_text(state, question_data, new_answers)
-        reply_markup = _build_question_keyboard(new_answers)
-
-        if await _try_send_image(question_data, user_id, context, question_text, reply_markup):
-            return
-
-        await _send_question_text(user_id, context, question_text, reply_markup)
-
-    except Exception as e:
-        print(f"❌ Errore critico in send_next_question per user {user_id}: {e}")
-        user_states.pop(user_id, None)
+    # Acquisisce il lock per questo utente
+    lock = get_user_lock(user_id)
+    
+    async with lock:
+        print(f"[TRACE] send_next_question LOCKED per user {user_id}")
+        
         try:
-            await context.bot.send_message(
-                chat_id=user_id,
-                text="❌ Si è verificato un errore. Riprova con /start"
-            )
-        except Exception:
-            pass
+            state = user_states.get(user_id)
+            if not state:
+                print(f"[TRACE] Sessione non trovata per user {user_id}")
+                await context.bot.send_message(chat_id=user_id, text="Sessione non trovata. Scrivi /start per iniziare.")
+                return
+
+            current_index = state["index"]
+            total = state["total"]
+            
+            print(f"[TRACE] user {user_id} - index={current_index}, total={total}")
+
+            # Verifica se il quiz è completato
+            if current_index >= total:
+                print(f"[TRACE] Quiz completato per user {user_id}")
+                await show_final_stats(user_id, context, state, is_review_mode=state.get("is_review", False))
+                manager = get_manager(user_id)
+                manager.commit_changes()
+                clear_user_lock(user_id)  # Rimuove il lock
+                return
+
+            q_index = state["order"][current_index]
+            print(f"[TRACE] user {user_id} - caricamento domanda q_index={q_index}")
+            
+            question_data = await _validate_and_get_question(state, q_index, user_id, context)
+            if question_data is None:
+                print(f"[TRACE] user {user_id} - domanda {q_index} non valida, incremento index")
+                # IMPORTANTE: qui NON richiamiamo send_next_question ricorsivamente
+                # incrementiamo solo l'index e riproveremo nel prossimo ciclo
+                return
+
+            correct_index, new_answers = _get_shuffled_answers_and_correct_index(question_data)
+            if correct_index is None or new_answers is None:
+                print(f"[TRACE] user {user_id} - risposte non valide per domanda {q_index}, skip")
+                state["index"] += 1
+                state["total"] -= 1  # Decrementa il totale
+                return
+
+            state["quiz"][q_index]["_shuffled_answers"] = new_answers
+            state["quiz"][q_index]["_correct_index"] = correct_index
+
+            question_text = _build_question_text(state, question_data, new_answers)
+            reply_markup = _build_question_keyboard(new_answers)
+
+            if await _try_send_image(question_data, user_id, context, question_text, reply_markup):
+                print(f"[TRACE] user {user_id} - domanda {q_index} inviata con immagine")
+                return
+
+            await _send_question_text(user_id, context, question_text, reply_markup)
+            print(f"[TRACE] user {user_id} - domanda {q_index} inviata come testo")
+
+        except Exception as e:
+            print(f"❌ Errore critico in send_next_question per user {user_id}: {e}")
+            import traceback
+            traceback.print_exc()
+            user_states.pop(user_id, None)
+            clear_user_lock(user_id)
+            try:
+                await context.bot.send_message(
+                    chat_id=user_id,
+                    text="❌ Si è verificato un errore. Riprova con /start"
+                )
+            except Exception:
+                pass
+
 
 def _get_shuffled_answers_and_correct_index(question_data):
     original_answers = question_data.get("answers", [])
@@ -448,25 +488,44 @@ async def _send_question_text(user_id, context, question_text, reply_markup):
         raise
 
 async def _validate_and_get_question(state, q_index, user_id, context):
-    if q_index >= len(state["quiz"]):
-        await context.bot.send_message(chat_id=user_id, text="❌ Errore nell'indice della domanda. Riprova con /start")
-        user_states.pop(user_id, None)
+    question_id = None
+    try:
+        if q_index >= len(state["quiz"]):
+            print(f"[ERROR] q_index {q_index} fuori range per user {user_id}")
+            await context.bot.send_message(chat_id=user_id, text="❌ Errore nell'indice della domanda. Riprova con /start")
+            user_states.pop(user_id, None)
+            clear_user_lock(user_id)
+            return None
+            
+        question_data = state["quiz"][q_index]
+        question_id = question_data.get("id")
+        
+        print(f"[TRACE] Validazione domanda ID: {question_id} per user {user_id}")
+        
+        if not question_data.get("question") or not question_data.get("answers"):
+            print(f"[ERROR] Domanda malformata per user {user_id}: {question_id}")
+            state["index"] += 1
+            state["total"] -= 1  # Decrementa il totale quando skippiamo
+            # NON richiamare send_next_question qui!
+            return None
+            
+        original_answers = question_data.get("answers", [])
+        if len(original_answers) < 2:
+            print(f"[ERROR] Domanda senza risposte sufficienti per user {user_id}: {question_id}")
+            state["index"] += 1
+            state["total"] -= 1  # Decrementa il totale quando skippiamo
+            # NON richiamare send_next_question qui!
+            return None
+            
+        print(f"[TRACE] Domanda validata correttamente per user {user_id}: {question_id}")
+        return question_data
+        
+    except Exception as e:
+        print(f"[ERROR] Eccezione in _validate_and_get_question per user {user_id}, question_id={question_id}: {e}")
+        import traceback
+        traceback.print_exc()
         return None
-    question_data = state["quiz"][q_index]
-    if not question_data.get("question") or not question_data.get("answers"):
-        print(f"Domanda malformata per user {user_id}: {question_data}")
-        state["index"] += 1
-        state["total"] -= 1 
-        await send_next_question(user_id, context)
-        return None
-    original_answers = question_data.get("answers", [])
-    if len(original_answers) < 2:
-        print(f"Domanda senza risposte sufficienti per user {user_id}")
-        state["index"] += 1
-        state["total"] -= 1 
-        await send_next_question(user_id, context)
-        return None
-    return question_data
+
 
 
 async def repeat_quiz(user_id: int, context: ContextTypes.DEFAULT_TYPE):
@@ -742,14 +801,20 @@ async def start_review_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE, 
     
 
 async def handle_answer_callback(user_id: int, answer_index: int, context: ContextTypes.DEFAULT_TYPE):
+    print(f"[TRACE] handle_answer_callback per user {user_id}, risposta {answer_index}")
+    
     state = user_states.get(user_id)
-
     if not state:
+        print(f"[TRACE] Sessione scaduta per user {user_id}")
         await context.bot.send_message(chat_id=user_id, text="Sessione scaduta. Riavvia il quiz con /start.")
         return
 
     subject = state.get("subject", "")
-    q_index = state["order"][state["index"]]
+    current_index = state["index"]
+    q_index = state["order"][current_index]
+    
+    print(f"[TRACE] user {user_id} - risponde alla domanda index={current_index}, q_index={q_index}")
+    
     question_data = state["quiz"][q_index]
 
     correct_index = question_data.get("_correct_index")
@@ -774,10 +839,12 @@ async def handle_answer_callback(user_id: int, answer_index: int, context: Conte
         )
         manager.queue_wrong_answer(subject, question_data)
 
-    print(f"[DEBUG] Risposta data: user={user_id}, domanda={q_index}, score={state['score']}, index={state['index']}, total={state['total']}")
+    # Incrementa l'index PRIMA di chiamare send_next_question
     state["index"] += 1
+    print(f"[TRACE] user {user_id} - incremento index a {state['index']}, score={state['score']}, total={state['total']}")
+    
+    # Ora chiama send_next_question che userà l'index aggiornato
     await send_next_question(user_id, context)
-
 
 
 async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -791,6 +858,7 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE):
     manager = get_manager(user_id)
     manager.commit_changes()
     clear_manager(user_id)
+    clear_user_lock(user_id)  # Pulisce anche il lock
    
     await show_final_stats(user_id, context, state, from_stop=True)
     user_states.pop(user_id, None)
