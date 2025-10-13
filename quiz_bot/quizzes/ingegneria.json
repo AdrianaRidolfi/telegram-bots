@@ -1,4 +1,2391 @@
 [
+   {
+    "id": "33e5263d-108c-4675-9613-29caefd41083",
+    "question": "L'Ingegneria del software riguarda:",
+    "answers": [
+      "teorie, metodi e tecniche nello sviluppo amatoriale del software",
+      "teorie e tecniche nello sviluppo industriale del software",
+      "teorie, metodi e tecniche nello sviluppo industriale del software",
+      "tecniche nello sviluppo industriale del software"
+    ],
+    "correct_answer": "teorie, metodi e tecniche nello sviluppo industriale del software"
+  },
+  {
+    "id": "5fae87ca-a5f6-4fa2-8f07-d97b08205344",
+    "question": "Per definizione, l'Ingegneria del software copre i seguenti aspetti:",
+    "answers": [
+      "progetto, implementazione, collaudo e documentazione del software",
+      "progetto e implementazione del software",
+      "implementazione e collaudo del software",
+      "collaudo e manutenzione del software"
+    ],
+    "correct_answer": "progetto, implementazione, collaudo e documentazione del software"
+  },
+  {
+    "id": "22843259-b15c-43e5-9e4f-405bcab97484",
+    "question": "Aspetto fondamentale dell'Ingegneria del software è:",
+    "answers": [
+      "l'empiricità",
+      "la semplicità",
+      "la replicabilità",
+      "la sistematicità"
+    ],
+    "correct_answer": "la sistematicità"
+  },
+  {
+    "id": "6a63a05f-dcdb-487c-98ae-a0b3753e77fd",
+    "question": "La nascita dell'Ingegneria del software è dovuta:",
+    "answers": [
+      "alla evoluzione del software",
+      "alla nascita del software",
+      "allo sviuluppo di troppi programmi software",
+      "alla \"crisi del software\""
+    ],
+    "correct_answer": "alla \"crisi del software\""
+  },
+  {
+    "id": "e897a624-d198-4b87-8da0-bf271e97d4d0",
+    "question": "Il software nel periodo 1950-1965:",
+    "answers": [
+      "È sviluppato principalmente per singoli clienti; è di tipo batch e deve risolvere problemi semplici",
+      "È sviluppato principalmente per singoli clienti; è di tipo batch e deve risolvere problemi spesso molto complessi",
+      "È sviluppato  per più clienti; è di tipo batch e deve risolvere problemi spesso molto complessi",
+      "È sviluppato principalmente per singoli clienti; è di tipo real time e deve risolvere problemi spesso molto complessi"
+    ],
+    "correct_answer": "È sviluppato principalmente per singoli clienti; è di tipo batch e deve risolvere problemi spesso molto complessi"
+  },
+  {
+    "id": "57697bf1-d5fe-47e9-b148-19d09a31c199",
+    "question": "Nel periodo dal 1990 ad oggi prendono piede le nuove metodologie di sviluppo del software definite:",
+    "answers": [
+      "scrum",
+      "agili",
+      "waterfall",
+      "distribuite"
+    ],
+    "correct_answer": "agili"
+  },
+  {
+    "id": "1ba7e6d9-aeef-4371-a3d5-1a3560e632bc",
+    "question": "L'Ingegneria del software asserisce che, dal punto di vista del Management:",
+    "answers": [
+      "se il progetto è in ritardo si può recuperare aumentando il numero di calcolatori",
+      "se il progetto è in ritardo per recuperare non basta aumentare il numero di programmatori",
+      "se il progetto è in ritardo si può recuperare aumentando il numero di programmatori",
+      "se il progetto è in ritardo per recuperare basta aumentare il numero di programmatori sopra le 10 unità"
+    ],
+    "correct_answer": "se il progetto è in ritardo per recuperare non basta aumentare il numero di programmatori"
+  },
+  {
+    "id": "6a1bbabc-6424-40c3-800e-517bb028ae37",
+    "question": "Il punto di vista di un cliente rispetto ai requisiti del software è che:",
+    "answers": [
+      "i mutamenti dei requisiti del software si gestiscono meglio grazie alla flessibilità del software",
+      "i mutamenti dei requisiti del software si gestiscono agevolmente grazie alla flessibilità dell'hardware",
+      "i mutamenti dei requisiti del software non si gestiscono agevolmente grazie alla flessibilità del software",
+      "i mutamenti dei requisiti del software si gestiscono agevolmente grazie alla flessibilità del software"
+    ],
+    "correct_answer": "i mutamenti dei requisiti del software si gestiscono agevolmente grazie alla flessibilità del software"
+  },
+  {
+    "id": "682ccc13-06e5-4584-9a4c-752a9b985dab",
+    "question": "L'Ingegneria del software asserisce che, dal punto di vista del Programmatore:",
+    "answers": [
+      "il prodotto di un progetto sono il programma funzionante, la documentazione e la guida alla manutenzione",
+      "il prodotto di un progetto è il programma funzionante",
+      "il prodotto di un progetto sono il programma funzionante, e la guida alla manutenzione",
+      "il prodotto di un progetto sono il programma funzionante, e la guida alla documentazione"
+    ],
+    "correct_answer": "il prodotto di un progetto sono il programma funzionante, la documentazione e la guida alla manutenzione"
+  },
+  {
+    "id": "38176f22-35ab-4c6e-b814-87049e0476d1",
+    "question": "Un prodotto software:",
+    "answers": [
+      "È sempre usato da chi lo sviluppa",
+      "In genere viene usato da persone diverse da quelle che lo hanno sviluppato",
+      "Ha le stesse dimensioni di un programma",
+      "È in genere più piccolo di un programma"
+    ],
+    "correct_answer": "In genere viene usato da persone diverse da quelle che lo hanno sviluppato"
+  },
+  {
+    "id": "b6de3388-3f63-471c-b7f8-851c5e3887b6",
+    "question": "Un prodotto software include:",
+    "answers": [
+      "Prodotti generici per utenti ben definiti",
+      "Prodotti specifici per un mercato di massa",
+      "Prodotti generici e prodotti specifici",
+      "Solo prodotti specifici sviluppati per utenti ben definiti"
+    ],
+    "correct_answer": "Prodotti generici e prodotti specifici"
+  },
+  {
+    "id": "9e031492-02da-48c2-83cf-f1aa54845b80",
+    "question": "L'ingegneria del software:",
+    "answers": [
+      "È una disciplina che definisce le regole per il processo di produzione del software",
+      "È una disciplina che definisce le regole per il processo di produzione dell'hardware di un sistema",
+      "È una disciplina che definisce le regole per il processo di produzione dell'hardware e del software",
+      "È una disciplina che definisce le regole per il processo di organizzazione aziendale per un'azienda che produce \ncomputer"
+    ],
+    "correct_answer": "È una disciplina che definisce le regole per il processo di produzione del software"
+  },
+  {
+    "id": "0d978c9c-9a05-4a64-8e8e-edf17059647c",
+    "question": "Ingegneria del software differisce dall'informatica perché:",
+    "answers": [
+      "Ha a che fare con aspetti più teorici",
+      "Ha a che fare con concetti ed aspetti più pratici",
+      "Riguarda i linguaggi, gli algoritmi, ecc.",
+      "È completamente indipendente dai concetti informatici"
+    ],
+    "correct_answer": "Ha a che fare con concetti ed aspetti più pratici"
+  },
+  {
+    "id": "8bb51381-7267-4819-8b60-e9a2a2f7addd",
+    "question": "Il principio di rigore dell'ingegneria del software:",
+    "answers": [
+      "È un concetto che non lascia spazio alla creatività dello sviluppo",
+      "È un concetto che riguarda solo l'accuratezza",
+      "È un concetto che riguarda solo la precisione",
+      "È un concetto che riguarda precisione e accuratezza"
+    ],
+    "correct_answer": "È un concetto che riguarda precisione e accuratezza"
+  },
+  {
+    "id": "b6cfbf9f-3542-4b4c-a919-37e21780bf76",
+    "question": "Quale di queste non è una attività richiesta nel processo di sviluppo software:",
+    "answers": [
+      "Progettazione",
+      "Implementazione",
+      "Ristrutturazione",
+      "Validazione"
+    ],
+    "correct_answer": "Ristrutturazione"
+  },
+  {
+    "id": "28152d95-7b5c-465f-839a-dc7c53683d12",
+    "question": "Quale è il significato dell'acronimo C.A.S.E.:",
+    "answers": [
+      "Computer Automated Software Enterprise",
+      "Computer Aided Software Engineering",
+      "Computed Aided Software Enterprise",
+      "Computed Automated Software Engineering"
+    ],
+    "correct_answer": "Computer Aided Software Engineering"
+  },
+  {
+    "id": "4ffc0eb3-ed54-48c0-8d45-c5a968c4d9eb",
+    "question": "La qualità di un prodotto software si misura in termini di:",
+    "answers": [
+      "Numero di requisiti",
+      "Numero di funzionalità",
+      "Complessità del codice",
+      "Conformità dei requisiti"
+    ],
+    "correct_answer": "Conformità dei requisiti"
+  },
+  {
+    "id": "5d596ce3-8973-4f73-b9d3-dbba10fd7e17",
+    "question": "Un sistema software è affidabile:",
+    "answers": [
+      "Se risponde alle esigenze del cliente",
+      "Se non si manifestano malfunzionamenti",
+      "Se contiene controllo degli accessi",
+      "Se il suo codice sorgente è nascosto"
+    ],
+    "correct_answer": "Se non si manifestano malfunzionamenti"
+  },
+  {
+    "id": "881ac72a-190d-48f2-9c86-53534d76ae3c",
+    "question": "Tra le fasi del ciclo di vita del sofware non sempre troviamo:",
+    "answers": [
+      "Comprensione",
+      "Ritiro",
+      "Operatività",
+      "Installazione e collaudo"
+    ],
+    "correct_answer": "Ritiro"
+  },
+  {
+    "id": "261a64f1-c6dd-46ed-b3d9-37d367bf633c",
+    "question": "Il ciclo di sviluppo del sofwtare include:",
+    "answers": [
+      "Analisi, progettazione e installazion",
+      "Analisi, collaudo e ritiro",
+      "Analisi, progettazione, implementazione, test, installazione e collaudo",
+      "Comprensione,  analisi, progettazione, test e collaudo"
+    ],
+    "correct_answer": "Analisi, progettazione, implementazione, test, installazione e collaudo"
+  },
+  {
+    "id": "0a9b2ce5-014d-441e-9c3c-95c942914d7e",
+    "question": "Per modello del ciclo di vita del software si intende:",
+    "answers": [
+      "Una caratterizzazione descrittiva o prescrittiva di come un sistema dovrebbe essere sviluppato",
+      "Una caratterizzazione descrittiva o prescrittiva di come un sistema dovrebbe essere immesso sul mercato",
+      "Una caratterizzazione descrittiva o prescrittiva di come un sistema dovrebbe essere presentato al cliente",
+      "Una caratterizzazione descrittiva o prescrittiva di come un sistema dovrebbe essere ritirato dal mercato"
+    ],
+    "correct_answer": "Una caratterizzazione descrittiva o prescrittiva di come un sistema dovrebbe essere sviluppato"
+  },
+  {
+    "id": "01cc5dff-2780-4f4c-b1f7-02cd7c43c088",
+    "question": "Le tipologie di ciclo di vita del sofwtare propste di recente sono:",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_answer": "4"
+  },
+  {
+    "id": "df7ec18a-e064-4c38-a795-5a1c0f62fb06",
+    "question": "Il modello Waterfall:",
+    "answers": [
+      "E' un modello incrementale",
+      "È un modello sequenziale",
+      "È un modello a prototipo",
+      "È un modello con ricicli"
+    ],
+    "correct_answer": "È un modello sequenziale"
+  },
+  {
+    "id": "4247d5f7-9027-4255-9e4f-7900c990cae8",
+    "question": "Il modello a Cascata -Waterfall \n \n7. La progettazione, quale fase del modello a cascata:",
+    "answers": [
+      "È la fase in cui sono accuratamente definite tutti i moduli  e le componenti",
+      "È la fase in cui ogni modulo viene codificato",
+      "È la fase in cui vengono verificati i moduli",
+      "È la fase in cui viene distribuito il sistema"
+    ],
+    "correct_answer": "È la fase in cui sono accuratamente definite tutti i moduli  e le componenti"
+  },
+  {
+    "id": "338d6e97-28e7-4c57-b319-411611dd42bc",
+    "question": "Il modello a Cascata -Waterfall \n \n8. Quali di questi non è una variante del modello waterfall:",
+    "answers": [
+      "Modello transformazionale",
+      "Modello con prototipo",
+      "Modello basato sul riuso",
+      "Modello sequenziale"
+    ],
+    "correct_answer": "Modello sequenziale"
+  },
+  {
+    "id": "337c5aa3-bdcb-4c8e-8dcf-6ae594da0c50",
+    "question": "Il modello V&V indica:",
+    "answers": [
+      "Un modello con una doppia fase di verifica",
+      "Un modello che prevede una fase di verifica e di convalida",
+      "Un modello che prevede una doppia fase di convalida",
+      "Un modello che prevede una doppia fase di verifica e di convalida"
+    ],
+    "correct_answer": "Un modello che prevede una fase di verifica e di convalida"
+  },
+  {
+    "id": "b2018f91-32cc-4786-afa3-c4989a1fa323",
+    "question": "Nel modello a V:",
+    "answers": [
+      "La fase centrale è rappresentata dal testing",
+      "La fase centrale è rappresentata dalla progettazione",
+      "La fase centrale è rappresentata dalla codifica",
+      "La fase centrale è rappresentata dall'analisi dei requisiti"
+    ],
+    "correct_answer": "La fase centrale è rappresentata dalla codifica"
+  },
+  {
+    "id": "4aaabe9f-31a2-4e62-934e-8bf80f91857a",
+    "question": "Le tipologie di prototipi usa e getta si definiscono:",
+    "answers": [
+      "Mock-ups e breadboards",
+      "Breadboards e skins",
+      "Skins e mock-ups",
+      "Mock-ups e interfaces"
+    ],
+    "correct_answer": "Mock-ups e breadboards"
+  },
+  {
+    "id": "a06cfe84-5772-4435-b4a9-28b74ef4a772",
+    "question": "La prototipazione \"throw-away\":",
+    "answers": [
+      "Rende più macchinosa la comprensione dei requisiti ma migliora lo sviluppo del codice",
+      "Rende più comprensibili i requisiti e facilita la realizzazione del software",
+      "Facilita la realizzazione del software perché prevede lo sviluppo dei requisiti meglio compresi",
+      "Differisce dalla prototipazione esplorativa in quanto prevede lo sviluppo dei requisiti meglio compresi"
+    ],
+    "correct_answer": "Rende più comprensibili i requisiti e facilita la realizzazione del software"
+  },
+  {
+    "id": "9d837ee0-3229-4b95-b126-a61d4e25bdd9",
+    "question": "La fase iniziale dello sviluppo incrementale è:",
+    "answers": [
+      "La convalida dell'incremento",
+      "La definizione del progetto architetturale",
+      "L'integrazione dell'incremento",
+      "L'individuazione preliminare dei requisiti"
+    ],
+    "correct_answer": "L'individuazione preliminare dei requisiti"
+  },
+  {
+    "id": "00494c63-3535-4fdb-8bce-de7aa0508006",
+    "question": "Le fasi dello sviluppo incrementale che devono o possono essere ripetute sono:",
+    "answers": [
+      "3 - Sviluppo dell'incremento, integrazione dell'incremento, convalida",
+      "5 - Individuazione preliminare dei requisiti, sviluppo dell'incremento, convalida dell'incremento, integrazione \ndell'incremento, convalida",
+      "4 - Sviluppo dell'incremento, convalida dell'incremento, integrazione dell'incremento, convalida",
+      "3 - Sviluppo dell'incremento, convalida"
+    ],
+    "correct_answer": "4 - Sviluppo dell'incremento, convalida dell'incremento, integrazione dell'incremento, convalida"
+  },
+  {
+    "id": "c319882d-3b6d-4cd5-9776-6a9396f53c7e",
+    "question": "Nello sviluppo iterativo il software viene realizzato:",
+    "answers": [
+      "Attraverso una serie di mini progetti brevi chiamati iterazioni",
+      "Attraverso la codifica di grossi moduli e grossi incrementi",
+      "Attraverso la prototipazione e il riuso dei prototipi",
+      "Attraverso lo sviluppo e il rilascio del sistema one shot"
+    ],
+    "correct_answer": "Attraverso una serie di mini progetti brevi chiamati iterazioni"
+  },
+  {
+    "id": "fec0244a-6eae-41e4-96e4-d6c4aa717813",
+    "question": "I settori del modello a spirale sono:",
+    "answers": [
+      "Determinazione degli obiettivi, determinazione dei vincoli, valutazione del rischio e pianificazione",
+      "Determinazione degli obiettivi, determinazione dei vincoli, svulippo e convalida e pianificazione",
+      "Determinazione degli obiettivi, determinazione dei vincoli, valutazione del rischio e sviluppo e convalida",
+      "Determinazione degli obiettivi, valutazione del rischio, sviluppo e convalida e pianificazione"
+    ],
+    "correct_answer": "Determinazione degli obiettivi, valutazione del rischio, sviluppo e convalida e pianificazione"
+  },
+  {
+    "id": "0ffbdbaf-f1fa-4f58-bafd-86209448c6c8",
+    "question": "Il settore più importante del modello a spirale è:",
+    "answers": [
+      "La determinazione degli obiettivi",
+      "La valutazione dei rischi",
+      "Lo sviluppo",
+      "Sono tutti equamente importanti"
+    ],
+    "correct_answer": "Sono tutti equamente importanti"
+  },
+  {
+    "id": "2cb98a0e-4fbe-40be-8dc5-f6f45e0505a0",
+    "question": "La pianificazione, quale settore del modello a spirale prevede:",
+    "answers": [
+      "Una pianificazione dei rischi di progetto",
+      "La pianificazione dello sviluppo dei requisiti",
+      "La revisione e la pianificazione del prossimo giro della spirale",
+      "La scelta del modello di sviluppo"
+    ],
+    "correct_answer": "La revisione e la pianificazione del prossimo giro della spirale"
+  },
+  {
+    "id": "6792d2ff-226c-4b65-b315-e469a30cceb6",
+    "question": "La figura di risk manager ha il compito:",
+    "answers": [
+      "Di individuare e minimizzare i rischi",
+      "Di comunicare i rischi al committente",
+      "Di individuare i rischi e comunicarli al manager di progetto",
+      "Di introdurre rischi per migliorare l'affidabilità del progetto"
+    ],
+    "correct_answer": "Di individuare e minimizzare i rischi"
+  },
+  {
+    "id": "3e94110e-bae4-47ec-86b7-644bd0b05aa4",
+    "question": "Le principali componenti di un progetto sono:",
+    "answers": [
+      "Work products, schedule, team, participant e task",
+      "Work products, work packages, team participant e task",
+      "Work products, work packages, schedule, participant e task",
+      "Work products, work packages, schedule, team  e task"
+    ],
+    "correct_answer": "Work products, work packages, schedule, participant e task"
+  },
+  {
+    "id": "1164ca39-65f9-40b8-8c3a-83e13d20a00b",
+    "question": "La componente detta anche \"deliverable\" è:",
+    "answers": [
+      "Work product",
+      "Work package",
+      "Participant",
+      "Task"
+    ],
+    "correct_answer": "Work package"
+  },
+  {
+    "id": "7ada0da5-314f-4176-b014-ad5fe9998abf",
+    "question": "Il \"reporting\" è un meccanismo di interazione utilizzato:",
+    "answers": [
+      "Per scambiarsi informazioni circa lo stato del progetto.",
+      "Per scambiarsi informazioni circa l'organizzazione dei team del progetto.",
+      "Per scambiarsi informazioni circa i requisiti del progetto richiesti dal committente",
+      "Per scambiare informazioni con il committente e gli utenti finali"
+    ],
+    "correct_answer": "Per scambiarsi informazioni circa lo stato del progetto."
+  },
+  {
+    "id": "4d890162-280c-4158-971d-694971ab92e4",
+    "question": "Le principali metodologie di interazione in in progetto software sono:",
+    "answers": [
+      "Reporting, decisione e phone calling",
+      "Decisione, talking e comunicazione",
+      "Reporting, decisione e meetings",
+      "Reporting, decisione e comunicazione"
+    ],
+    "correct_answer": "Reporting, decisione e comunicazione"
+  },
+  {
+    "id": "33d1526b-d34c-44ab-9f52-e34c71ba2481",
+    "question": "Gli eventi di comunizaione possono essere di due tipi:",
+    "answers": [
+      "Schedulati e pianificati",
+      "Staordinari e e sincroni",
+      "Pianificati e straordinari",
+      "Pianificati e sincroni"
+    ],
+    "correct_answer": "Pianificati e straordinari"
+  },
+  {
+    "id": "6d53e09d-c24b-4d52-9644-fea16a64f5b8",
+    "question": "L'ispezione è una procedura che ha l'obiettivo di:",
+    "answers": [
+      "Individuare deviazioni dallo schedule e correggerle",
+      "Individuare e valutare  un gran numero di soluzioni per un determinato problema",
+      "Consolidare i risultati di ciascuna attività di sviluppo software",
+      "Verificare la conformità dei requisiti"
+    ],
+    "correct_answer": "Verificare la conformità dei requisiti"
+  },
+  {
+    "id": "43a2f7cf-7355-4904-a983-e598410f1ab7",
+    "question": "Per tipologia di evento di comunicazione straordinaria \"issue resolution\" si intende:",
+    "answers": [
+      "Selezione di una singola soluzione ad un problema per il quale sono state proposte più soluzioni",
+      "Selezione di un insieme di possibili soluzioni ad un problema per il quale sono state proposte poche soluzioni",
+      "Selezione di  una unica soluzione ad un problema per il quale non sono state ancora individuate soluzioni",
+      "Selezione di molteplici soluzioni ad un problema per il quale non sono state ancora individuate soluzioni"
+    ],
+    "correct_answer": "Selezione di una singola soluzione ad un problema per il quale sono state proposte più soluzioni"
+  },
+  {
+    "id": "0d0aab29-6f04-48f1-b29e-aa7e47c4ce53",
+    "question": "Tra le tecniche di comunicazione sincrona non troviamo:",
+    "answers": [
+      "Comunicazione in corridoio",
+      "Meetings",
+      "Email",
+      "Videoconferenza"
+    ],
+    "correct_answer": "Email"
+  },
+  {
+    "id": "672663d5-5f1a-471c-bc99-0102aa104416",
+    "question": "Nei meetings il ruolo del segretario spetta:",
+    "answers": [
+      "Al Project Manager",
+      "Al Minute Taker",
+      "Al Time Keeper",
+      "Al Primary Facilitator"
+    ],
+    "correct_answer": "Al Minute Taker"
+  },
+  {
+    "id": "2dfbdd52-b5b8-4a51-956e-306447f92f7c",
+    "question": "Un modello è definito come:",
+    "answers": [
+      "Una vista che mostra alcuni aspetti di un contesto",
+      "Un'astrazione che descrive un sistema o un sottosistema",
+      "Un insieme di regole grafiche o testuali",
+      "Un'astrazione che descrive aspetti e regole grafiche per rappresentare viste"
+    ],
+    "correct_answer": "Un'astrazione che descrive un sistema o un sottosistema"
+  },
+  {
+    "id": "320a3c24-95b8-453d-bd6c-e7b626e0e016",
+    "question": "Un concetto descrive:",
+    "answers": [
+      "Le proprietà comuni dei fenomeni",
+      "Un oggetto dell'universo di dominio così come lo percepiamo",
+      "Un insieme di aspetti selezionati di un modello",
+      "Una classificazione di fenomeni in concetti"
+    ],
+    "correct_answer": "Le proprietà comuni dei fenomeni"
+  },
+  {
+    "id": "cfe8cf12-f194-4e48-a966-fa3c7c748e3e",
+    "question": "Una Classe nel contesto della modellazione:",
+    "answers": [
+      "E' composta solo da attributi che ne indicano il comportamento",
+      "E' composta solo da metodi che ne indicano il comportamento",
+      "E' composta da attributi che ne indicano il comportamento e metodi che ne indicano lo stato",
+      "E' composta da attributi che ne indicano lo stato e metodi che ne indicano il comportamento"
+    ],
+    "correct_answer": "E' composta da attributi che ne indicano lo stato e metodi che ne indicano il comportamento"
+  },
+  {
+    "id": "fde0a565-2f16-497c-87ae-4b14a44c3be0",
+    "question": "Per tipo di una variabile si intende:",
+    "answers": [
+      "Una istanza di un oggetto",
+      "Un membro di una istanza",
+      "La rappresentazione di tutte le possibili istanze di una variabile",
+      "Un oggetto formato da diverse istanze"
+    ],
+    "correct_answer": "La rappresentazione di tutte le possibili istanze di una variabile"
+  },
+  {
+    "id": "19ac964e-53b6-44c0-a48d-6f10b55abfac",
+    "question": "La modellazione orientata agli oggetti:",
+    "answers": [
+      "E' un approccio alla modellazione di un sistema software utilizzato all'inizio del ciclo di vita del software",
+      "E' un approccio alla modellazione di un sistema software utilizzato alla fine del ciclo di vita del software",
+      "E' un approccio alla modellazione di un sistema  utilizzato durante il ciclo di vita del software",
+      "Non è un approccio ma un insieme di buone prassi per la comprensione del sistema software"
+    ],
+    "correct_answer": "E' un approccio alla modellazione di un sistema software utilizzato all'inizio del ciclo di vita del software"
+  },
+  {
+    "id": "a988a509-5abb-421a-baee-b85db0a31e91",
+    "question": "UML definisce:",
+    "answers": [
+      "3 principali tipologie di diagrammi",
+      "5 principali tipologie di diagrammi",
+      "7 principali tipologie di diagrammi",
+      "9 principali tipologie di diagrammi"
+    ],
+    "correct_answer": "5 principali tipologie di diagrammi"
+  },
+  {
+    "id": "d3ae14b9-6ef8-41fd-91c9-7cb14095dd1b",
+    "question": "I rettangoli nelle convenzioni UML rappresentano:",
+    "answers": [
+      "Classi",
+      "Istanze",
+      "Classi e Istanze",
+      "Attributi"
+    ],
+    "correct_answer": "Classi e Istanze"
+  },
+  {
+    "id": "6d788b59-8958-45b6-b8b9-0d0e2c6b195d",
+    "question": "Per Activity Diagram si intende:",
+    "answers": [
+      "Una rappresentazione del comportamento dinamico del sistema",
+      "Una rappresentazione del comportamento dinamico di un singolo oggetto",
+      "Una rappresentazione del comportamento dinamico tra gli attori ed il sistema",
+      "Una rappresentazione del comportamento dinamico tra gli oggetti ed il sistema"
+    ],
+    "correct_answer": "Una rappresentazione del comportamento dinamico del sistema"
+  },
+  {
+    "id": "3960c63b-3475-4fd6-8ce1-42648ace7e85",
+    "question": "Per Statechart Diagram si intende:",
+    "answers": [
+      "Una rappresentazione del comportamento dinamico tra gli attori ed il sistema",
+      "Una rappresentazione del comportamento dinamico del sistema",
+      "Una rappresentazione del comportamento dinamico tra gli oggetti ed il sistema",
+      "Una rappresentazione del comportamento dinamico di un singolo oggetto come una macchina a stati finiti"
+    ],
+    "correct_answer": "Una rappresentazione del comportamento dinamico di un singolo oggetto come una macchina a stati finiti"
+  },
+  {
+    "id": "bfb69fcb-5e60-4220-8dc2-773d9eab8894",
+    "question": "Cosa rappresenta il diagramma di caso d'uso:",
+    "answers": [
+      "la descrizione completa del comportamento interno di un intero sistema",
+      "la descrizione completa di un comportamento di un sistema osservato dall'esterno",
+      "la descrizione di un algoritmo particolare nel sistema",
+      "le attività svolte da un componente del sistema per fornire una funzionalità"
+    ],
+    "correct_answer": "la descrizione completa di un comportamento di un sistema osservato dall'esterno"
+  },
+  {
+    "id": "dad71a06-3e41-4c47-b7a4-fdf70367b089",
+    "question": "Cosa rappresenta un caso d'uso:",
+    "answers": [
+      "un componente del sistema",
+      "l'insieme di possibili utilizzi del sistema da parte di utenti (attori)",
+      "una specifica modalità di utilizzo del sistema da parte di uno o più utenti",
+      "una singola interazione di un utente (attore) con il sistema"
+    ],
+    "correct_answer": "una specifica modalità di utilizzo del sistema da parte di uno o più utenti"
+  },
+  {
+    "id": "3e4d8add-97f1-4a0c-8e75-053ae8250dd7",
+    "question": "A cosa corrisponde un attore:",
+    "answers": [
+      "un utente particolare del sistema",
+      "un ruolo interpretato da un utente sul sistema",
+      "una componente fondamentale del sistema da realizzare",
+      "una funzionalità usata da un utente"
+    ],
+    "correct_answer": "un ruolo interpretato da un utente sul sistema"
+  },
+  {
+    "id": "888300c6-b291-4835-92df-c81b4e06f1f7",
+    "question": "Un attore primario rappresenta:",
+    "answers": [
+      "un sistema esterno con partecipazione attiva ad un caso d'uso esprimendo un interesse diretto nella sua buona \nriuscita",
+      "un sistema di supporto al sistema che stiamo modellando o a un suo caso d'uso",
+      "una funzionalità strutturale del sistema usata da un utente",
+      "una entità esterna che interagisce con il sistema nell'ambito del caso d'uso senza perseguire un suo interesse diretto"
+    ],
+    "correct_answer": "un sistema esterno con partecipazione attiva ad un caso d'uso esprimendo un interesse diretto nella sua buona \nriuscita"
+  },
+  {
+    "id": "111fc5ae-5b12-4537-a980-66cc3f8bf97a",
+    "question": "Un attore secondario rappresenta:",
+    "answers": [
+      "un utente per cui è pensato principalmente il sistema",
+      "una entità esterna con un interesse diretto ad usare le funzionalità offerte dal sistema per perseguire un \ndeterminato obiettivo",
+      "una entità esterna che interagisce con il sistema nell'ambito del caso d'uso senza perseguire un suo interesse diretto",
+      "una funzionalità di supporto del sistema usata da un utente"
+    ],
+    "correct_answer": "una entità esterna che interagisce con il sistema nell'ambito del caso d'uso senza perseguire un suo interesse diretto"
+  },
+  {
+    "id": "1dff5ac0-9b3e-4613-8b97-d400b4a26ce2",
+    "question": "Cosa rappresenta una generalizzazione nell'ambito di un diagramma di caso d'uso:",
+    "answers": [
+      "un modo di definire nuovi casi d'uso specializzando altri casi d'uso",
+      "un insieme di casi d'uso accomunati dal uno stesso attore",
+      "un collegamento tra gli attori e tutti i casi d'uso di un diagramma",
+      "un incremento di comportamento di un caso d'uso"
+    ],
+    "correct_answer": "un modo di definire nuovi casi d'uso specializzando altri casi d'uso"
+  },
+  {
+    "id": "97f96525-ffa8-465a-b225-9a43d08ede47",
+    "question": "A cosa serve la relazione di estensione in un diagramma di casi d'uso:",
+    "answers": [
+      "ad allargare il comportamento di un caso d'uso",
+      "ad inglobare una sequenza di interazioni raggruppate in un altro use case",
+      "a definire nuovi casi d'uso sfruttando la specifica di un altro use case",
+      "ad aggiungere un attore ad un caso d'uso"
+    ],
+    "correct_answer": "ad allargare il comportamento di un caso d'uso"
+  },
+  {
+    "id": "5c02db28-c340-4c9f-9d10-5195827508c7",
+    "question": "Cosa serve la relazione di inclusione in un diagramma di casi d'uso:",
+    "answers": [
+      "ad inglobare in uno use una sequenza di interazioni definite a parte",
+      "ad allargare  il comportamento di un caso d'uso",
+      "ad aggiungere una nuova interazione ad un caso d'uso",
+      "a definire nuovi casi d'uso sfruttando la specifica di un altro use case"
+    ],
+    "correct_answer": "ad inglobare in uno use una sequenza di interazioni definite a parte"
+  },
+  {
+    "id": "d4b33996-5a87-4d58-b819-b71a718c360d",
+    "question": "In quale fase di lavoro su un sistema software vengono prodotti i diagrammi di casi d'uso:",
+    "answers": [
+      "definizione dei requisiti del sistema",
+      "sviluppo del codice di un componente del sistema",
+      "fase di test",
+      "sviluppo del codice del sistema"
+    ],
+    "correct_answer": "definizione dei requisiti del sistema"
+  },
+  {
+    "id": "cf3a1bbb-5b86-4ce2-b2c0-740f20b662a6",
+    "question": "Cosa rappresenta uno scenario:",
+    "answers": [
+      "la descrizione completa del comportamento interno di un intero sistema",
+      "una sequenza di passi che caratterizzano un'interazione tra un utente e il sistema",
+      "la descrizione di un algoritmo particolare nel sistema",
+      "l'insieme dei requisiti delle funzionalità del sistema."
+    ],
+    "correct_answer": "una sequenza di passi che caratterizzano un'interazione tra un utente e il sistema"
+  },
+  {
+    "id": "5f531771-267c-455c-a36a-1bdf8b36824d",
+    "question": "Un caso d'uso è caratterizzato da:",
+    "answers": [
+      "un obiettivo perseguito da un utente",
+      "un utente particolare del sistema",
+      "da un solo flusso sequenziale di interazioni tra utenti e sistema",
+      "dalle sequenze alternativa di interazioni che si possono verificare"
+    ],
+    "correct_answer": "un obiettivo perseguito da un utente"
+  },
+  {
+    "id": "f7fba96d-e9af-4e67-8e4d-c461184c3322",
+    "question": "Cosa differenza uno scenario principale di successo dalle estensioni:",
+    "answers": [
+      "lo scenario principale definisce l'unico caso di interazione con successo mentre le estensioni rappresentano tutti i \ncasi di fallimento",
+      "lo scenario principale identifica il flusso principale di eventi; le estensioni caratterizzano eventuali variazioni ed \neccezioni",
+      "lo scenario principale definisce solo le interazioni che originano dall'attore coinvolto e le estensioni corrispondono \nalle risposte",
+      "lo scenario principale definisce le interazioni con richieste di servizi andati a buon fine e le estensioni corrispondono \nalle risposte"
+    ],
+    "correct_answer": "lo scenario principale identifica il flusso principale di eventi; le estensioni caratterizzano eventuali variazioni ed \neccezioni"
+  },
+  {
+    "id": "fad1350f-af5d-4edc-85b7-09abb4914a35",
+    "question": "A cosa corrisponde un passo di scenario di un caso d'uso:",
+    "answers": [
+      "a una singola interazione tra attore e sistema",
+      "all'invocazione di operazioni da parte dell'utente",
+      "alla restituzione di un risultato all'utente da parte del sistema",
+      "allo scenario principale di riferimento"
+    ],
+    "correct_answer": "a una singola interazione tra attore e sistema"
+  },
+  {
+    "id": "74ca553d-bdd4-4544-9aef-f0607a95725b",
+    "question": "Come si esprime il contenuto di un caso d'uso:",
+    "answers": [
+      "usando il linguaggio Java",
+      "usando il linguaggio naturale",
+      "usando una notazione standard",
+      "usando una sequenza di operatori"
+    ],
+    "correct_answer": "usando il linguaggio naturale"
+  },
+  {
+    "id": "a7532913-ed1c-4802-9b5d-07328501c042",
+    "question": "Quali informazioni sarebbe opportuno associare a ogni caso d'uso (oltre al nome, scenario principale e \nestensioni):",
+    "answers": [
+      "nessuna si appesantirebbe eccessivamente il caso d'uso",
+      "solo un semplice descrizione testuale",
+      "precondizioni, garanzia e trigger",
+      "solo trigger"
+    ],
+    "correct_answer": "precondizioni, garanzia e trigger"
+  },
+  {
+    "id": "4066b01e-90f1-4b01-aab1-7a98e53a10cb",
+    "question": "Dire quale di queste effermazioni è vera: \n \n:",
+    "answers": [
+      "il diagramma di caso d'uso fornisce tutti i dettagli del comportamento interno",
+      "il diagramma di caso d'uso fornisce tutti i dettagli del comportamento così come è osservabile dall'esterno",
+      "il diagramma di caso d'uso non fornisce i dettagli del comportamento del sistema",
+      "il diagramma di caso d'uso fornisce tutti I dettagli di ciascun caso d'uso"
+    ],
+    "correct_answer": "il diagramma di caso d'uso non fornisce i dettagli del comportamento del sistema"
+  },
+  {
+    "id": "4b70f757-877c-4932-b96f-d4c2a4b09f48",
+    "question": "Il contenuto di un caso d'uso racconta:",
+    "answers": [
+      "l'insieme di tutti gli scenari possibili di utilizzo del sistema da parte di un utente",
+      "lo scenario principale di utilizzo del sistema da parte di un utente",
+      "lo scenario alternativo di utilizzo del sistema legato alla gestione di una situazione particolare",
+      "l'insieme degli scenari alternativi di utilizzo del sistema legato alla gestione di situazioni particolari"
+    ],
+    "correct_answer": "l'insieme di tutti gli scenari possibili di utilizzo del sistema da parte di un utente"
+  },
+  {
+    "id": "df4132c5-cf86-49a7-85d1-18e76d1bb60d",
+    "question": "Il caso d'uso si svolge:",
+    "answers": [
+      "attraverso un flusso sequenziale di interazioni tra gli attori utenti del sistema",
+      "attraverso più flussi di interazioni possibili",
+      "attraverso un flusso sequenziale di interazioni tra l'attore e il sistema",
+      "attraverso un unico scenario di utilizzo"
+    ],
+    "correct_answer": "attraverso un flusso sequenziale di interazioni tra l'attore e il sistema"
+  },
+  {
+    "id": "081ce9f4-7aa7-4ae7-8f9d-68177a79d542",
+    "question": "Cosa riporta il campo trigger nella descrizione di un caso d'uso:",
+    "answers": [
+      "l'evento che dà origine al caso d'uso",
+      "l'evento che conclude il caso d'uso",
+      "la situazione in cui l'attore interagisce con il sistem",
+      "la situazione in cui il sistema inizia a funzionare"
+    ],
+    "correct_answer": "l'evento che dà origine al caso d'uso"
+  },
+  {
+    "id": "198426ae-dbeb-4938-89dd-e0c703e29982",
+    "question": "A cosa serve un diagramma delle classi:",
+    "answers": [
+      "A descrivere i tipi degli oggetti chef anno parte del sistema e le loro relazioni statiche",
+      "a modellare I dati usati dal sistema",
+      "a definire il comportamento dinamico del sistema",
+      "a rappresentare i messaggi che si scambiano gli oggetti delle classi"
+    ],
+    "correct_answer": "A descrivere i tipi degli oggetti chef anno parte del sistema e le loro relazioni statiche"
+  },
+  {
+    "id": "99111bcf-ddc3-43b3-ab48-966f7c1c8baa",
+    "question": "Cosa rappresentano le tre sezioni di una classe:",
+    "answers": [
+      "nome della classe, metodi e attributi",
+      "nome della classe, attributi e operazioni",
+      "nome della classe, attributi, metodi e commenti",
+      "nome della classe attributi e vincoli"
+    ],
+    "correct_answer": "nome della classe, attributi e operazioni"
+  },
+  {
+    "id": "2606f0b5-427c-4131-900f-704cc4b62f19",
+    "question": "Come si potrebbe tradurre nel codice un'associazione monodirezionale?:",
+    "answers": [
+      "con un solo attributo aggiunto alla classe puntata dalla freccia dell'associazione",
+      "con una coppia di attributi, uno per ognuna delle due classi coinvolte nell'associazione",
+      "con un solo attributo aggiunto alla classe non puntata dalla freccia dell'associazione",
+      "con una coppia di attributi aggiunta alla classe puntata dalla freccia dell'associazione"
+    ],
+    "correct_answer": "con una coppia di attributi, uno per ognuna delle due classi coinvolte nell'associazione"
+  },
+  {
+    "id": "2510d699-f91c-4f5c-affe-40bedf3dc1a3",
+    "question": "Perché la molteplicità delle associazioni sono importanti:",
+    "answers": [
+      "perché contribuiscono alla definizione di un diagramma completo",
+      "perché definiscono quanti oggetti potranno entrare a farvi parte e quindi impongono vincoli sulla implementazione",
+      "perché danno più informazioni sulle diverse classi",
+      "perché permettono di caratterizzare il comportamento dinamico delle classi"
+    ],
+    "correct_answer": "perché definiscono quanti oggetti potranno entrare a farvi parte e quindi impongono vincoli sulla implementazione"
+  },
+  {
+    "id": "08e99cad-d066-46bb-922d-f0e6e22f5b77",
+    "question": "Dire se questa affermazione è vera o falsa: \"I termini operazione e metodo sono sinonimi\":",
+    "answers": [
+      "falso, più metodi potrebbero implementare la stessa operazione",
+      "vero, sono sinonimi ma operazione è più dinamica nella specifica",
+      "falso, un metodo potrebbe corrispondere a più operazioni",
+      "vero, sono sinonimi ma metodo è più concettuale"
+    ],
+    "correct_answer": "falso, più metodi potrebbero implementare la stessa operazione"
+  },
+  {
+    "id": "b9bf39f1-7ea3-4142-b939-e30aba01106e",
+    "question": "Un attributo descrive:",
+    "answers": [
+      "una caratteristica propria di ogni istanza della classe",
+      "un'azione sullo stato di ogni istanza della classe",
+      "una caratteristica comune a tutti gli oggetti del diagramma",
+      "un'azione su una caratteristica della classe"
+    ],
+    "correct_answer": "una caratteristica propria di ogni istanza della classe"
+  },
+  {
+    "id": "e0c18b19-a383-4ebb-b70f-fbf019e4c4eb",
+    "question": "Un'operazione descrive:",
+    "answers": [
+      "un'azione che può essere eseguita sull'istanza di una classe",
+      "lo stato interno di ogni istanza della classe",
+      "un'azione che è eseguita periodicamente su una istanza",
+      "una alterazione dello stato di tutti gli oggetti istanziati"
+    ],
+    "correct_answer": "un'azione che può essere eseguita sull'istanza di una classe"
+  },
+  {
+    "id": "1bbf1a9c-0a07-4c55-a883-b38432ea0025",
+    "question": "Un'associazione riflessiva si applica:",
+    "answers": [
+      "tra attributi duali in due oggetti diversi",
+      "tra le stesse operazioni di oggetti diversi",
+      "tra istanze della stessa classe",
+      "tra attributi della stessa classe"
+    ],
+    "correct_answer": "tra istanze della stessa classe"
+  },
+  {
+    "id": "c8184401-cfdf-4d07-a8be-24e6a521abda",
+    "question": "Un'operazione di tipo \"set\" permette di:",
+    "answers": [
+      "portare all'esterno il valore di un attributo pubblico di un oggetto di una classe",
+      "portare all'esterno il valore di un attributo privato di un oggetto di una classe",
+      "modificare il valore di tutti gli attributi di un oggetto di una classe",
+      "modificare lo stato interno di un oggetto di una classe"
+    ],
+    "correct_answer": "modificare lo stato interno di un oggetto di una classe"
+  },
+  {
+    "id": "580bbb13-afc9-48aa-b803-b15fa2c58b4a",
+    "question": "Indicare se questa affermazione è vera o falsa: \"Un'interfaccia può avere operazioni private\":",
+    "answers": [
+      "vero, può avere ogni tipo di operazione",
+      "falso, può solo avere operazioni pubbliche",
+      "dipende da ciò che vuole il progettista",
+      "vero, ma solo una operazione privata"
+    ],
+    "correct_answer": "falso, può solo avere operazioni pubbliche"
+  },
+  {
+    "id": "2a25dbe2-e061-4a11-afb7-6dd779f8dbbb",
+    "question": "Specificare qual è la differenza tra aggregazione e composizione:",
+    "answers": [
+      "l'aggregazione non implica che il contenuto appartenga a un solo contenitore, mentre la composizione sì",
+      "non c'è alcuna differenza, sono due modi interscambiabili per tradurre una relazione \"è parte di\"",
+      "l'aggregazione è una relazione esclusiva, mentre la composizione non lo è",
+      "l'aggregazione esprime una forma di subordinazione strutturale rigida, la composizione il contrario"
+    ],
+    "correct_answer": "l'aggregazione non implica che il contenuto appartenga a un solo contenitore, mentre la composizione sì"
+  },
+  {
+    "id": "6c6e67ff-d6a2-481b-8b87-d4fc3cfff93b",
+    "question": "Indicare cosa differenzia una classe astratta da un'interfaccia:",
+    "answers": [
+      "nulla, nei due casi abbiamo solo dichiarazione di metodi, ma non implementazioni",
+      "una classe astratta può fornire l'implementazione di qualche suo metodo mentre un'interfaccia può fornire solo la \ndefinizione",
+      "si usano in due fasi diverse del progetto e una classe astratta diventa sempre un'interfaccia",
+      "una interfaccia può fornire l'implementazione di qualche suo metodo mentre una classe astratta solo la definizione"
+    ],
+    "correct_answer": "una classe astratta può fornire l'implementazione di qualche suo metodo mentre un'interfaccia può fornire solo la \ndefinizione"
+  },
+  {
+    "id": "c7c1ae8f-9865-4af5-9705-92894a265287",
+    "question": "La generalizzazione permette di:",
+    "answers": [
+      "definire una classe come parte di una classe più generale",
+      "rendere una classe dipendente da un'altra più generale",
+      "rendere tutte le classi con le stesse operazioni",
+      "definire una classe a partire da un'altra specializzandone alcuni aspetti"
+    ],
+    "correct_answer": "definire una classe a partire da un'altra specializzandone alcuni aspetti"
+  },
+  {
+    "id": "ca61e539-66eb-4492-a839-55262cdcdca1",
+    "question": "Una superclasse in una relazione di generalizzazione esprime:",
+    "answers": [
+      "le caratteristiche comuni delle varie sottoclassi",
+      "l'unione delle caratteristiche diverse delle sottoclassi",
+      "le caratteristiche private delle varie sottoclassi",
+      "le caratteristiche pubbliche delle varie sottoclassi"
+    ],
+    "correct_answer": "le caratteristiche comuni delle varie sottoclassi"
+  },
+  {
+    "id": "3439e360-5118-47eb-ab2a-d6e0761edde9",
+    "question": "C'è una relazione di dipendenza tra due classi se: \n \n:",
+    "answers": [
+      "una classe invoca le operazioni dell'altra",
+      "una delle due classi ha lo stesso set di attributi dell'altra classe",
+      "una delle due classi non usa mai un'altra classe per la sua implementazione",
+      "una delle due classi ha lo stesso set di operazioni dell'altra classe"
+    ],
+    "correct_answer": "una classe invoca le operazioni dell'altra"
+  },
+  {
+    "id": "7129a5e0-6752-48c8-9e5b-8c6964118d05",
+    "question": "Una relazione di aggregazione fra due classi indica:",
+    "answers": [
+      "una relazione di \"è composta da\"/\"è parte di\"",
+      "una relazione per mutuo utilizzo di operazioni",
+      "una forma di subordinazione strutturale rigida",
+      "una relazione per mutuo utilizzo di attributi"
+    ],
+    "correct_answer": "una relazione di \"è composta da\"/\"è parte di\""
+  },
+  {
+    "id": "72327cf2-647d-4492-9637-76fdb9bedb4b",
+    "question": "Una relazione di composizione fra due classi indica:",
+    "answers": [
+      "una relazione per mutuo utilizzo di operazioni",
+      "una forma di subordinazione strutturale non rigida",
+      "una relazione per mutuo utilizzo di attributo",
+      "una relazione legata all'uso di una classe in un'operazione dell'altra classe"
+    ],
+    "correct_answer": "una forma di subordinazione strutturale non rigida"
+  },
+  {
+    "id": "bd59e3f9-5df6-47b7-a958-aff58d4890e5",
+    "question": "Una relazione di generalizzazione è:",
+    "answers": [
+      "anche una relazione di specializzazione vista da una prospettiva diversa",
+      "significativa solo all'interno di una classe",
+      "necessaria per usare una classe",
+      "un modo per togliere attributi ad una classe"
+    ],
+    "correct_answer": "anche una relazione di specializzazione vista da una prospettiva diversa"
+  },
+  {
+    "id": "764ad1f3-a835-4212-b7b1-824269c105b8",
+    "question": "Cosa descrive un diagramma di sequenza:",
+    "answers": [
+      "la sequenza secondo cui possono essere chiamati i metodi di una classe",
+      "la sequenza di stati che definiscono il ciclo di vita di un oggetto",
+      "la collaborazione di un gruppo di oggetti per implementare un certo comportamento",
+      "la successione di casi d'uso durante il ciclo di vita di un sistema software"
+    ],
+    "correct_answer": "la collaborazione di un gruppo di oggetti per implementare un certo comportamento"
+  },
+  {
+    "id": "1597df45-baf2-4d2e-ac76-a1f109a028c4",
+    "question": "La linea di vita di un partecipante rappresenta:",
+    "answers": [
+      "la durata della vita del partecipante nello scenario considerato",
+      "la durata dell'intero scenario replicate per ogni partecipante",
+      "il tempo in cui il partecipante è attivo nello scenario",
+      "la durata di tempo tra l'arrivo del messaggio ad un partecipante e la relativa risposta"
+    ],
+    "correct_answer": "la durata della vita del partecipante nello scenario considerato"
+  },
+  {
+    "id": "5c1061ba-ba41-4177-b23f-6e7b6d5003b1",
+    "question": "La barra di attivazione di un partecipante rappresenta:",
+    "answers": [
+      "i momenti in cui l'oggetto è presente nello scenario",
+      "i momenti in cui l'oggetto è attivo nell'interazione",
+      "i momenti in cui l'oggetto cambia il suo stato nell'interagire con gli altri partecipanti",
+      "la durata della vita del partecipante nello scenario considerato"
+    ],
+    "correct_answer": "i momenti in cui l'oggetto è attivo nell'interazione"
+  },
+  {
+    "id": "fa35407c-526e-49c8-abe4-4765dab45e1e",
+    "question": "Una chiamata interna è:",
+    "answers": [
+      "È una qualunque invocazione parte del diagramma",
+      "È un messaggio che un oggetto invia a se stesso",
+      "È un passo particolarmente importante all'interno di un metodo",
+      "È un messaggio che arriva dall'esterno e fa cambiare di stato all'oggetto"
+    ],
+    "correct_answer": "È un messaggio che un oggetto invia a se stesso"
+  },
+  {
+    "id": "389340a0-1874-480f-8c0a-708380b7f35a",
+    "question": "Il messaggio trovato serve a:",
+    "answers": [
+      "definire l'inizio dello scenario e non deriva da nessuno dei partecipanti",
+      "identificare un particolare partecipante",
+      "rappresentare un messaggio all'interno dello scenario con caratteristiche particolari.",
+      "cambiare di stato oggetto dall'esterno"
+    ],
+    "correct_answer": "definire l'inizio dello scenario e non deriva da nessuno dei partecipanti"
+  },
+  {
+    "id": "00dcf072-da14-497e-b551-adf4942a41e4",
+    "question": "Indicare perché i frame d'interazione sono utili perché:",
+    "answers": [
+      "aggiungono costrutti di controllo e modularità",
+      "semplificano le sequenze di interazioni",
+      "correlano il comportamento e la struttura dei partecipanti",
+      "permettono di inserire un maggior numero di partecipanti"
+    ],
+    "correct_answer": "aggiungono costrutti di controllo e modularità"
+  },
+  {
+    "id": "9f4cdc9d-fa62-463b-a8f4-9f5a7b8698f9",
+    "question": "L'operatore \"alt\" usato in un frame di interazione indica che:",
+    "answers": [
+      "il frame contiene due flussi d'interazione da eseguire in alternativa",
+      "il frame contiene dei flussi di interazione da eseguire in parallelo",
+      "l'esecuzione dell'intero frame è da considerarsi in alternative a quella di un altro frame",
+      "si riferisce ad una interazione definita in un altro programma."
+    ],
+    "correct_answer": "il frame contiene due flussi d'interazione da eseguire in alternativa"
+  },
+  {
+    "id": "e45516a4-195f-4879-b5a9-1ac0809ef3dd",
+    "question": "L'operatore \"loop\" usato in un frame di interazione indica che:",
+    "answers": [
+      "il frame contiene dei flussi di interazione da eseguire in parallelo",
+      "l'esecuzione dell'intero frame è da considerarsi finché la condizione si mantiene vera",
+      "il frammento può essere eseguito più volte finché la condizione si mantiene vera",
+      "il frammento può essere eseguito 3 volte in base al contenuto del messaggio"
+    ],
+    "correct_answer": "il frammento può essere eseguito più volte finché la condizione si mantiene vera"
+  },
+  {
+    "id": "12e05273-7257-419a-a79a-6ecfce5aa084",
+    "question": "Differenza tra una chiamata sincrona e una sincrona:",
+    "answers": [
+      "una chiamata asincrona blocca il sistema in attesa di una risposta; una chiamata sincrona non richiede risposte",
+      "una chiamata sincrona ne presuppone una asincrona come risposta",
+      "una chiamata sincrona presuppone una risposta ed è bloccante; una asincrona no",
+      "una chiamata sincrona va in parallelo con altre chiamate sincrone; una asincrona no"
+    ],
+    "correct_answer": "una chiamata sincrona presuppone una risposta ed è bloccante; una asincrona no"
+  },
+  {
+    "id": "5276f914-4da2-45fb-8fad-6f047611b31b",
+    "question": "Cosa rappresenta il diagramma di macchina a stati:",
+    "answers": [
+      "la sequenza secondo cui possono essere chiamati i metodi di un oggetto",
+      "la sequenza di stati che definiscono il comportamento di un oggetto durante il suo ciclo di vita",
+      "la collaborazione di un gruppo di oggetti per implementare un certo comportamento",
+      "gli stati dei casi d'uso durante il ciclo di vita di un sistema software"
+    ],
+    "correct_answer": "la sequenza di stati che definiscono il comportamento di un oggetto durante il suo ciclo di vita"
+  },
+  {
+    "id": "d0749ea9-9595-446f-a84c-4023d455c67d",
+    "question": "L'uso a cui si prestano particolarmente i diagrammi di macchina a stati è quello di:",
+    "answers": [
+      "per rappresentare il comportamento di un oggetto per il controllo automatizzato di macchine",
+      "per rappresentare il comportamento collettivo di alcuni oggetti impegnati in un sistema distribuito",
+      "per rappresentare il flusso di attività svolte da uno o più oggetti nell'ambito dei siti web",
+      "per rappresentare l'utilizzo ottimizzato di risorse nei personal computer"
+    ],
+    "correct_answer": "per rappresentare il comportamento di un oggetto per il controllo automatizzato di macchine"
+  },
+  {
+    "id": "f4f1f3c9-3434-4a22-b87a-1da6d42003eb",
+    "question": "Lo stato in un diagramma di macchina a stati rappresenta:",
+    "answers": [
+      "un'astrazione di una condizione interna di un oggetto che determina il comportamento al verificarsi di un evento",
+      "una rappresentazione dei valori di tutti gli attributi che caratterizzano l'oggetto",
+      "il valore di un attributo determinante per far partire il comportamento rappresentato dal diagramma",
+      "il valore di un attributo booleano dell'oggetto"
+    ],
+    "correct_answer": "un'astrazione di una condizione interna di un oggetto che determina il comportamento al verificarsi di un evento"
+  },
+  {
+    "id": "cf13860f-6b90-4864-8d22-22f4aaf0dc53",
+    "question": "Un evento non può essere:",
+    "answers": [
+      "un messaggio inviato da altri oggetti",
+      "un segnale da un elemento hardware",
+      "un timer che giunge a termine corsa",
+      "una transizione di stato"
+    ],
+    "correct_answer": "una transizione di stato"
+  },
+  {
+    "id": "3bf94ae1-6848-426b-97df-348907b92658",
+    "question": "Lo pseudo stato iniziale serve per:",
+    "answers": [
+      "definire il primo stato effettivo della macchina a stati",
+      "puntare al primo stato effettivo della macchina a stati, ma solitamente non è un \"vero\" stato",
+      "fornire uno pseudo stato per memorizzare informazioni relative all'esecuzione del sistema",
+      "puntare allo stato finale della macchina a stati, ma solitamente non è un \"vero\" stato"
+    ],
+    "correct_answer": "puntare al primo stato effettivo della macchina a stati, ma solitamente non è un \"vero\" stato"
+  },
+  {
+    "id": "29a3683a-70ed-4634-b112-69b8def44cbe",
+    "question": "Le tre parti che possiamo usare per annotare una transizione sono:",
+    "answers": [
+      "azione, transizione e condizione",
+      "evento, condizione e azione",
+      "evento, condizione e stato",
+      "azione, condizione e azione"
+    ],
+    "correct_answer": "evento, condizione e azione"
+  },
+  {
+    "id": "0bc9ad82-be5b-43f3-8d86-92769a158cc1",
+    "question": "Definire un'attività interna di risposta a un evento significa:",
+    "answers": [
+      "voler rispondere all'evento senza definire un transizione di stato",
+      "usare una notazione compatta per definire una transizione di stato, ma il risultato sarebbe equivalente",
+      "definire un'attività che viene eseguita quando si raggiunge lo stato e termina appena si verifica l'evento",
+      "definire un'attività che viene eseguita quando si esce dallo stato"
+    ],
+    "correct_answer": "voler rispondere all'evento senza definire un transizione di stato"
+  },
+  {
+    "id": "5eab4ec0-29ca-4daa-9a5a-85ec981e4ca9",
+    "question": "Dire se la seguente affermazione è vera o falsa: \"Eseguire una auto-transizione significa sempre eseguire solo \nl'attività ad essa associata\":",
+    "answers": [
+      "vero, non sarebbe possibile eseguire altre attività",
+      "non è detto sia vero, se lo stato definisce attività di ingresso e uscita queste sarebbe eseguite",
+      "vero, eventuali altre attività non verrebbero comunque eseguite",
+      "dipende se ci sono altri stati definiti"
+    ],
+    "correct_answer": "non è detto sia vero, se lo stato definisce attività di ingresso e uscita queste sarebbe eseguite"
+  },
+  {
+    "id": "c54979f5-fbe2-4494-9802-f96d2e611406",
+    "question": "La differenza tra un'attività interna e una associata a uno stato di attività è:",
+    "answers": [
+      "nessuna differenza, entrambe sono eseguite in seguito ad un evento",
+      "l'esecuzione di un'attività interna è subordinate all'occorrenza di un certo evento;  l'attività associata allo stato viene \neseguita semplicemente perché si trova in quello stato",
+      "l'attività associata allo stato termina quando si esegue una transizione, quella interna finisce quando si verifica \nl'evento associato",
+      "dipende se lo stato prevede auto-transizione oppure no: se ci sono auto-transisioni allora non c'è nessuna differenza"
+    ],
+    "correct_answer": "l'esecuzione di un'attività interna è subordinate all'occorrenza di un certo evento;  l'attività associata allo stato viene \neseguita semplicemente perché si trova in quello stato"
+  },
+  {
+    "id": "eb6a8b86-ac98-4e93-b5ce-4b018ecd4595",
+    "question": "Un diagramma di attività serve a:",
+    "answers": [
+      "descrivere la logica procedurale, un processo di business o un workflow",
+      "definire l'attivià di sviluppo per la realizzazione del sistema",
+      "rappresentare in modo alternativo gli stati di un elemento",
+      "La sequenza secondo cui possono essere chiamati i metodi di un oggetto"
+    ],
+    "correct_answer": "descrivere la logica procedurale, un processo di business o un workflow"
+  },
+  {
+    "id": "2d28bb4c-90e3-4a02-965a-60dc6908e107",
+    "question": "Una fork introduce un flusso di esecuzione alternativo:",
+    "answers": [
+      "sì è vero e richiede un merge per riunire le due alternative",
+      "no non è vero, una fork introduce flussi d'esecuzione concorrenti",
+      "no non è vero, una fork introduce una sequenza di attivtà la cui esecuzione è opzionale",
+      "sì è vero, e richiede un join per riunire le due alternative"
+    ],
+    "correct_answer": "no non è vero, una fork introduce flussi d'esecuzione concorrenti"
+  },
+  {
+    "id": "2b5ebc8b-0fba-44b4-923f-3d3fafabbe8b",
+    "question": "Un'azione rappresenta:",
+    "answers": [
+      "un passo di attività che cambia lo stato in cui si trova il sistema",
+      "un'unità di lavoro atomica al livello di dettaglio di interesse per descrivere l'attività",
+      "un'unità di lavoro semplice, elementare e veloce da realizzare",
+      "una sequenza di passi dell'attività che si sta descrivendo"
+    ],
+    "correct_answer": "un'unità di lavoro atomica al livello di dettaglio di interesse per descrivere l'attività"
+  },
+  {
+    "id": "6bb1a049-2377-4da4-95f5-ec71729bcca6",
+    "question": "Un token rappresenta:",
+    "answers": [
+      "un'azione che si svolge in modalità asincrona",
+      "lo stato di esecuzione di un'azione che compone l'attività",
+      "una unità atomica di tempo",
+      "il passaggio del flusso di controllo attraverso le azioni che compongono l'attività"
+    ],
+    "correct_answer": "il passaggio del flusso di controllo attraverso le azioni che compongono l'attività"
+  },
+  {
+    "id": "6fb2e200-51a5-4835-b3f9-16eaf50268d5",
+    "question": "Un'attività è rappresentata:",
+    "answers": [
+      "tramite una successione di stati che cambiano in base ad eventi esterni",
+      "tramite la sequenza di valori di tutti gli attributi che caratterizzano gli oggetti coinvolti",
+      "tramite un grafo diretto di nodi azioni, archi e nodi di controllo",
+      "tramite i casi d'uso che si alternano durante il ciclo di vita del sistema software"
+    ],
+    "correct_answer": "tramite un grafo diretto di nodi azioni, archi e nodi di controllo"
+  },
+  {
+    "id": "7435784a-9068-4ba5-aad9-483a7eb70c2b",
+    "question": "Si usa il simbolo del rastrello per annotare un'attività quando si vuole:",
+    "answers": [
+      "indicare che l'esecuzione dell'attività è opzionale",
+      "indicare un sottodiagramma di attività, ovvero una decomposizione dell'attività annotata",
+      "indicare che l'attività non può essere decomposta ulteriormente",
+      "indicare che l'esecuzione dell'attività cambia lo stato del sistema"
+    ],
+    "correct_answer": "indicare un sottodiagramma di attività, ovvero una decomposizione dell'attività annotata"
+  },
+  {
+    "id": "a3fb4085-957f-4265-8746-50afbf54189a",
+    "question": "E' opportuno definire un diagramma di attività con partizioni quando si ha bisogno di:",
+    "answers": [
+      "rappresentare in modo esplicito chi svolge quale attività",
+      "modellare in modo esplicito gli input richiesti e gli output prodotti da ogni attività",
+      "evidenziare il legame con gli stati identificati per il sistema",
+      "rappresentare anche i casi d'uso associati all'attività"
+    ],
+    "correct_answer": "rappresentare in modo esplicito chi svolge quale attività"
+  },
+  {
+    "id": "58c68832-4c9a-4446-a645-a7d872a15f83",
+    "question": "I diagrammi di attività:",
+    "answers": [
+      "rappresentano una sequenza di azioni che definiscono un'attività",
+      "rappresentano lo stato di un sistema mentre interagisce con gli attori",
+      "si focalizzano su come gli attori usano il sistema",
+      "rappresentano lo scambio di messaggi tra un'azione è un'altra"
+    ],
+    "correct_answer": "rappresentano una sequenza di azioni che definiscono un'attività"
+  },
+  {
+    "id": "a2a45517-9d29-433c-b43e-3a216abc7966",
+    "question": "Il flusso di controllo:",
+    "answers": [
+      "si inserisce dall'esterno per effetto di un attore che usa il sistema",
+      "passa da un'azione alla successiva ad intervalli regolari",
+      "passa da un'azione alla successiva dopo aver terminato l'esecuzione dell'azione seguendo il token",
+      "passa da un'azione alla successiva con il cambiamento di stato del sistema rappresentato dal token"
+    ],
+    "correct_answer": "passa da un'azione alla successiva dopo aver terminato l'esecuzione dell'azione seguendo il token"
+  },
+  {
+    "id": "86a99037-bff6-497b-91c3-f01885484bec",
+    "question": "La notazione di un nodo segnale di tipo temporale consiste in:",
+    "answers": [
+      "una normale attività (l'unica avvertenza è l'uso di un nome che richiama gli elementi temporali)",
+      "un semplice orologio",
+      "una clessidra stilizzata",
+      "una normale azione con il nome scritto in corsivo"
+    ],
+    "correct_answer": "una clessidra stilizzata"
+  },
+  {
+    "id": "a30ba6ef-7818-4cd1-8046-fa8ed4821430",
+    "question": "Un nodo segnale di tipo temporale rappresenta:",
+    "answers": [
+      "un cambiamento del valore dei dati immagazzinati negli oggetti",
+      "l'invio di un segnale che deve essere effettuato all'arrivo del token",
+      "un evento che deve verificarsi al fine di eseguire le attività a valle",
+      "un vincolo temporale da rispettare per l'esecuzione dell'attività a valle"
+    ],
+    "correct_answer": "un vincolo temporale da rispettare per l'esecuzione dell'attività a valle"
+  },
+  {
+    "id": "b3686b10-1d9f-4622-b72b-544a8f2bc547",
+    "question": "La notazione di un nodo segnale di accettazione di un  evento consiste in:",
+    "answers": [
+      "un semplice rettangolo come un'azione",
+      "rettangolo con la punta rientrante sul lato sinistro",
+      "una pergamena stilizzata",
+      "da un rettangolo appuntito sul lato destro"
+    ],
+    "correct_answer": "rettangolo con la punta rientrante sul lato sinistro"
+  },
+  {
+    "id": "1fae9194-0a1c-4ac0-bb8f-8d25edb45149",
+    "question": "Un nodo segnale di accettazione di un  evento rappresenta:",
+    "answers": [
+      "l'invio di un segnale che deve essere effettuato all'arrivo del token; dopodiché l'attività si blocca",
+      "un evento che deve verificarsi al fine di inviare segnali all'esterno per altre attività",
+      "un evento che deve verificarsi al fine di proseguire l'esecuzione delle azioni a valle",
+      "un vincolo temporale da rispettare per l'esecuzione dell'attività a valle"
+    ],
+    "correct_answer": "un evento che deve verificarsi al fine di proseguire l'esecuzione delle azioni a valle"
+  },
+  {
+    "id": "fbaf0b3c-a146-4217-aea9-864b2afa119a",
+    "question": "La notazione di un nodo di invio segnale consiste in:",
+    "answers": [
+      "da una freccia appoggiata sul nodo in alto e orientata verso la parte esterna del diagramma di attività",
+      "da un rettangolo appuntito sul lato destro",
+      "rettangolo con la punta rientrante sul lato sinistro",
+      "una normale azione con il nome scritto in grassetto"
+    ],
+    "correct_answer": "da un rettangolo appuntito sul lato destro"
+  },
+  {
+    "id": "6ee3d3fb-7bf9-48a2-b4fe-a4dfe25c590e",
+    "question": "E' possibile rappresentare solo la parte iniziale e finale di un arco per evitare di complicare eccessivamente un \ndiagramma:",
+    "answers": [
+      "Vero, associando commenti opportuni per gli spezzoni correlati",
+      "Vero, usando i connettori",
+      "Vero, utilizzando i pin e indicando i nomi degli oggetti in corsivo",
+      "Falso, è vietato dallo standard"
+    ],
+    "correct_answer": "Vero, usando i connettori"
+  },
+  {
+    "id": "cd43dcd7-6dd8-47ce-bb0f-e70e784b5fcb",
+    "question": "E' possibile rappresentare invocazioni multiple di una o più azioni:",
+    "answers": [
+      "Falso, sono ammesse solo invocazioni singole delle azioni di un'attività",
+      "Vero, ma è possibile definire il numero di invocazioni solo con un commento",
+      "Vero, le regioni di espansioni consentono di rappresentare invocazioni multiple ma solo di un'azione alla volta",
+      "Vero, le regioni di espansioni consentono di rappresentare invocazioni multiple di azioni per una collezioni di oggetti"
+    ],
+    "correct_answer": "Vero, le regioni di espansioni consentono di rappresentare invocazioni multiple di azioni per una collezioni di oggetti"
+  },
+  {
+    "id": "23584eaa-b429-4937-af41-8d254f03e217",
+    "question": "La fine di un particolare flusso in una regione di espansione si rappresenta:",
+    "answers": [
+      "con la notazione di un pin con dentro una X",
+      "attraverso un nodo di controllo particolare rappresentata da un cerchio con una X nel mezzo",
+      "non è possibile rappresentare la terminazione esplicita di un flusso in casi particolare",
+      "attraverso un'azione con il nome \"fine\""
+    ],
+    "correct_answer": "attraverso un nodo di controllo particolare rappresentata da un cerchio con una X nel mezzo"
+  },
+  {
+    "id": "3f4930e8-7f20-4419-a8a7-2a9568c20471",
+    "question": "Un nodo segnale si attiva:",
+    "answers": [
+      "all'arrivo del token su tutti gli archi in ingresso; dopodiché i nodi di attesa aspettano il segnale temporale o l'evento \ndall'esterno per propagare il token",
+      "all'arrivo del primo token su uno dei possibili archi in ingresso",
+      "non si attiva mai",
+      "all'arrivo del token su tutti gli archi in ingresso; dopodiché il nodo di invio segnale aspetta un certo evento \ndall'esterno per propagare il token"
+    ],
+    "correct_answer": "all'arrivo del token su tutti gli archi in ingresso; dopodiché i nodi di attesa aspettano il segnale temporale o l'evento \ndall'esterno per propagare il token"
+  },
+  {
+    "id": "8b10485c-f433-4db3-8ccc-0929668e94a0",
+    "question": "Conviene usare i diagrammi delle classi per:",
+    "answers": [
+      "per ogni possibile funzionalità del sistema software",
+      "per descrivere il comportamento delle funzionalità di interfaccia",
+      "per gli aspetti più importanti e cruciali del sistema software da realizzare",
+      "per descrivere le classi software con tutti gli attributi in fase di analisi"
+    ],
+    "correct_answer": "per gli aspetti più importanti e cruciali del sistema software da realizzare"
+  },
+  {
+    "id": "1d798bda-a8a1-4607-af35-9d7cbb5ebe73",
+    "question": "Per sfruttare al meglio i diagrammi di sequenza occorre:",
+    "answers": [
+      "usarli per documentare il comportamento di un singolo oggetto",
+      "aggiungere tutti i dettagli degli oggetti ai quali si riferisce e tutti i messaggi scambiati",
+      "aggiungere le informazioni sulle interfacce di ciascun oggetto coinvolto",
+      "tenere aggiornati i diagrammi in linea con le interfacce e l'architettura sofware"
+    ],
+    "correct_answer": "tenere aggiornati i diagrammi in linea con le interfacce e l'architettura sofware"
+  },
+  {
+    "id": "6a73d710-310e-4fc8-b87f-12107b319ae2",
+    "question": "Conviene usare i diagrammi di macchina a stati:",
+    "answers": [
+      "per ogni classe del sistema sofware riportando tutti gli attributi",
+      "per gli oggetti che hanno un comportamento reattivo come componenti delle interfacce grafiche",
+      "per mostrare la collaborazione fra gli oggetti",
+      "sempre e in ogni situazione  di progetto di sistemi software"
+    ],
+    "correct_answer": "per gli oggetti che hanno un comportamento reattivo come componenti delle interfacce grafiche"
+  },
+  {
+    "id": "f7681456-9a43-44cd-b248-f01889d0333c",
+    "question": "Conviene usare i diagrammi di attivitò quando:",
+    "answers": [
+      "il focus è mettere in ordine un insieme di azioni da fare da una o più entità anche in parallelo",
+      "il focus è mostrare l'evoluzione di un'entità in risposta ad eventi",
+      "il focus è mettere in ordine un insieme di azioni da fare da una o più entità ma non in parallelo",
+      "È noto che le azioni sono solo svolte in modo sequenziale"
+    ],
+    "correct_answer": "il focus è mettere in ordine un insieme di azioni da fare da una o più entità anche in parallelo"
+  },
+  {
+    "id": "4f54d795-dc1a-43be-88a3-3b7877b57a92",
+    "question": "Nei diagrammi di casi d'uso:",
+    "answers": [
+      "È meglio avere tutti i dettagli possibile",
+      "È meglio focalizzarsi sulle descrizioni testuali di casi d'uso",
+      "È meglio ignorare gli attori",
+      "È meglio evitare le descrizioni testuali di casi d'uso"
+    ],
+    "correct_answer": "È meglio focalizzarsi sulle descrizioni testuali di casi d'uso"
+  },
+  {
+    "id": "88513321-6a9a-4338-8dd8-02857be8fe3a",
+    "question": "UML è usato al meglio se:",
+    "answers": [
+      "si modula la rappresentazione dei dettagli in base alla situazione",
+      "si modellano tutte le parti del sistema in ogni sua sfaccettatura",
+      "il formalismo è seguito in modo stretto e pedissequo",
+      "usato solo da colui che implementa il codice"
+    ],
+    "correct_answer": "si modula la rappresentazione dei dettagli in base alla situazione"
+  },
+  {
+    "id": "9803d155-2119-4430-a06d-2abd7bf078be",
+    "question": "UML nella prospettiva concettuale è usato:",
+    "answers": [
+      "in fase di implementazione del codice per aggiungere attributi alle classi",
+      "in fase di progettazione per comunicare un diagramma completo per la sua implementazione",
+      "in fase di analisi a supporto della discussione tra diverse idee su come progettare il software",
+      "in fase di analisi per descrivere il progetto nel dettaglio"
+    ],
+    "correct_answer": "in fase di analisi a supporto della discussione tra diverse idee su come progettare il software"
+  },
+  {
+    "id": "533f639c-5a92-442c-99e4-2b15aaa6555e",
+    "question": "Il diagramma degli oggetti mostra:",
+    "answers": [
+      "le istanze di un progetto software e la loro evoluzione mentre gira nelle macchine dal cliente",
+      "le istanze degli oggetti del sistema software in un dato momento",
+      "le specifiche delle istanze degli oggetti del sistema software in un dato momento",
+      "come evolvono le specifiche delle istanze mentre il sistema gira nelle macchine del cliente"
+    ],
+    "correct_answer": "le istanze degli oggetti del sistema software in un dato momento"
+  },
+  {
+    "id": "f6b243da-e8e2-40c0-b24a-65c724727265",
+    "question": "Il diagramma di deployment mostra:",
+    "answers": [
+      "il dispiegamento in esercizio del sistema software fra i vari nodi (server)",
+      "come deve essere implementato il sistema software in un dato momento",
+      "gli orari di utilizzo del sistema software",
+      "il luogo fisico in cui si trova il server usato per far girare il sistema software"
+    ],
+    "correct_answer": "il dispiegamento in esercizio del sistema software fra i vari nodi (server)"
+  },
+  {
+    "id": "4b4f26fc-0670-4634-b07e-68f48b820dda",
+    "question": "La programmazione orientata agli oggetti:",
+    "answers": [
+      "coinvolge oggetti del mondo reale, dati e comportamenti ad essa associati per portare soluzioni ai problemi",
+      "presenta la procedura come unità elementare",
+      "si basa sul concetto di procedura che può essere cambiata in base al contesto del programma",
+      "richiede di definire solo i dati (attributi) che compongono gli oggetti"
+    ],
+    "correct_answer": "coinvolge oggetti del mondo reale, dati e comportamenti ad essa associati per portare soluzioni ai problemi"
+  },
+  {
+    "id": "f54da180-a833-4246-a574-61d916b4b919",
+    "question": "La programmazione non strutturata:",
+    "answers": [
+      "presenta la procedura come unità elementare",
+      "non fa uso di variabili globali che sono visibili in ogni parte del programma",
+      "fa uso di tutte variabili locali ovvero visibili solo all'interno della procedura",
+      "il codice è un unico blocco in cui si manipolano dati in modo sequenziale"
+    ],
+    "correct_answer": "il codice è un unico blocco in cui si manipolano dati in modo sequenziale"
+  },
+  {
+    "id": "4497a418-daeb-4ea7-98f0-411d0bcb2532",
+    "question": "La programmazione procedurale:",
+    "answers": [
+      "il codice è un unico blocco in cui si manipolano dati in modo sequenziale",
+      "fa uso solo di variabili globali che sono visibili in ogni parte del programma",
+      "fa uso solo di variabili locali ovvero visibili solo all'interno della procedura",
+      "presenta la procedura come unità elementare la quale svolge una precisa funzione che può essere richiamata anche \npiù volte"
+    ],
+    "correct_answer": "presenta la procedura come unità elementare la quale svolge una precisa funzione che può essere richiamata anche \npiù volte"
+  },
+  {
+    "id": "a4ba84e0-75dc-4094-bdf6-976b3904cc6a",
+    "question": "Un oggetto è un'entità:",
+    "answers": [
+      "che astrae i dati (attributi) e le procedure su tali dati (operazioni)",
+      "che astrae i dati (attributi) e il loro valore (stato)",
+      "globale richiama le procedure del programma",
+      "che viene manipolata attraverso i dati che espone all'esterno"
+    ],
+    "correct_answer": "che astrae i dati (attributi) e le procedure su tali dati (operazioni)"
+  },
+  {
+    "id": "73cd2137-f010-40dd-9844-44208d33cc2f",
+    "question": "Un oggetto non può:",
+    "answers": [
+      "definire operazioni di altri oggetti",
+      "interagire con gli altri oggetti",
+      "riportare all'esterno il proprio stato",
+      "svolgere operazioni sui propri dati"
+    ],
+    "correct_answer": "definire operazioni di altri oggetti"
+  },
+  {
+    "id": "206573c5-6663-4757-8473-e583a259af50",
+    "question": "Le operazioni di una classe:",
+    "answers": [
+      "specificano lo stato di un oggetto",
+      "sono attributi che possono cambiare valore",
+      "non possono essere mai invocate da altri oggetti",
+      "agiscono sui dati dell'oggetto"
+    ],
+    "correct_answer": "sono attributi che possono cambiare valore"
+  },
+  {
+    "id": "b0d98bcc-ca05-4e83-80c4-1b7f3b39be02",
+    "question": "Un'applicazione basata su approccio orientato agli oggetti è frutto di:",
+    "answers": [
+      "una invocazinoe sequenziale di procedure",
+      "invocazioni reciproche di operazioni fra oggetti",
+      "di invocazioni random di operazioni degli oggetti",
+      "un accordo sull'ordine con cui gli oggetti invocano operazioni esterne"
+    ],
+    "correct_answer": "un accordo sull'ordine con cui gli oggetti invocano operazioni esterne"
+  },
+  {
+    "id": "521fa872-aa6b-4464-bce9-7eb2efb435b4",
+    "question": "Le istanze di una classe:",
+    "answers": [
+      "condividono gli stessi attributi ed operazioni",
+      "si riferiscono a specifiche di classi differenti",
+      "hanno operazioni differenti e quindi si comportano diversamente",
+      "condividono solo le operazioni"
+    ],
+    "correct_answer": "si riferiscono a specifiche di classi differenti"
+  },
+  {
+    "id": "4cd94c00-3fc4-4e76-aa17-001cee6668c6",
+    "question": "La specifica di una classe:",
+    "answers": [
+      "può cambiare da oggetto a oggetto",
+      "È generale e fornisce un modello per creare oggetti simili",
+      "È particolare e si riferisce ad uno specifico oggetto",
+      "È generale e fornisce un modello per numeri interi"
+    ],
+    "correct_answer": "può cambiare da oggetto a oggetto"
+  },
+  {
+    "id": "e4ebf1a3-4063-464e-a7c7-ad6c1b7636c1",
+    "question": "In object-oriented, un attributo di un oggetto è:",
+    "answers": [
+      "una proprietà che intrinsiamente distingue l'oggetto da tutti gli altri della stessa classe",
+      "una proprietà statica dell'oggetto il cui valore cambia da istanza ad istanza",
+      "una proprietà dinamica che dipende dal contesto in cui l'oggetto è istanziato",
+      "una proprietà statica dell'oggetto il cui valore è fisso"
+    ],
+    "correct_answer": "una proprietà che intrinsiamente distingue l'oggetto da tutti gli altri della stessa classe"
+  },
+  {
+    "id": "c302c5ca-d4f5-4aac-a354-5cf6e240140f",
+    "question": "In object-oriented un'operazione in un oggetto indica:",
+    "answers": [
+      "È un'azione che un oggetto esegue in modo alternativo ad altri oggetti",
+      "È un'azione che un oggetto esegue su invocazione di un suo metodo",
+      "È un'azione eseguita in modo diverso a seconda dell'istanza",
+      "È un'azione che è definita ma non viene mai eseguita"
+    ],
+    "correct_answer": "È un'azione che un oggetto esegue su invocazione di un suo metodo"
+  },
+  {
+    "id": "29dd4ecf-dc1d-4c4b-b2fa-d6ccad097feb",
+    "question": "In object-oriented l'identità di un oggetto:",
+    "answers": [
+      "una proprietà statica dell'oggetto il cui valore è fisso ed uguale a tutti gli altri oggetti della stessa classe",
+      "una proprietà che intrinsiamente distingue l'oggetto da tutti gli altri della stessa classe",
+      "una proprietà dinamica che dipende dall'applicazione in cui l'oggetto è istanziato",
+      "una proprietà statica dell'oggetto il cui valore cambia da istanza ad istanza"
+    ],
+    "correct_answer": "una proprietà che intrinsiamente distingue l'oggetto da tutti gli altri della stessa classe"
+  },
+  {
+    "id": "2d6898d0-15d9-4ec4-994c-b75b645e3e6a",
+    "question": "In object-oriented, un attributo fra gli oggetti di una stessa classe:",
+    "answers": [
+      "deve avere sempre valori diversi",
+      "deve avere sempre valori uguali",
+      "può avere lo stesso valore",
+      "ha un nome e una semantica differente"
+    ],
+    "correct_answer": "può avere lo stesso valore"
+  },
+  {
+    "id": "0fbf7e3d-4dc3-4682-b0a4-8c2d36e2a724",
+    "question": "In object-oriented incapsulamento isignfica:",
+    "answers": [
+      "accesso ai dati regolato da apposita interfaccia",
+      "trascurare elementi non essenziali nella modellazione di un oggetto",
+      "accesso diretto e libero a tutti i dati dell'oggetto",
+      "accesso  negato a tutti a ciascun dato dell'oggetto"
+    ],
+    "correct_answer": "accesso ai dati regolato da apposita interfaccia"
+  },
+  {
+    "id": "ae1a2419-5c62-4485-a353-97f09d0a4a2b",
+    "question": "Una di queste affermazioni è vera:",
+    "answers": [
+      "per ogni entità esiste un'unica astrazione possibile",
+      "per ogni entità più astrazioni sono possibili",
+      "l'astrazione di un'entità dipende dai valori degli attributi",
+      "l'astrazione complica la soluzione del problema"
+    ],
+    "correct_answer": "per ogni entità più astrazioni sono possibili"
+  },
+  {
+    "id": "b5aac505-763c-4d30-8ad5-b14e7fb184f4",
+    "question": "In object-oriented, l'ereditarietà:",
+    "answers": [
+      "permette di definire nuovi attributi in un oggetto già definito",
+      "permette di definire nuove operazioni in un oggetto già definito",
+      "permette di aggiungere un nuovo stato ad un oggetto già definito",
+      "permette di definire una nuova classe per specializzazione di una classe già definita"
+    ],
+    "correct_answer": "permette di definire una nuova classe per specializzazione di una classe già definita"
+  },
+  {
+    "id": "2b5619ed-e894-46e4-b156-a5548fb692af",
+    "question": "Una di queste affermazioni è falsa:",
+    "answers": [
+      "l'ereditarietà permette di cambiare lo stato di un oggetto tramite una nuova classe",
+      "permette di definire una nuova classe per specializzazione di una classe già definita",
+      "permette di esprimere generalizzazione tra classi che hanno una parte di comportamento comune",
+      "porta a definire gerarchie di classi con maggiore chiarezza sui concetti modellati"
+    ],
+    "correct_answer": "l'ereditarietà permette di cambiare lo stato di un oggetto tramite una nuova classe"
+  },
+  {
+    "id": "bfd0f4db-e037-4fa9-9972-c04480e04618",
+    "question": "In object-oriented, il polimorfismo:",
+    "answers": [
+      "permette di aggiungere un nuovo stato ad un oggetto già definito",
+      "insieme all'incapsulamento permette di chiamare sempre l'operazione sulla superclasse",
+      "permette di definire nuovi attributi in un oggetto già definito",
+      "insieme al binding dinamico permette di chiamare l'operazione sulla sottoclasse effettivamente istanziata"
+    ],
+    "correct_answer": "insieme al binding dinamico permette di chiamare l'operazione sulla sottoclasse effettivamente istanziata"
+  },
+  {
+    "id": "57c7461c-a524-465b-a97f-c688e060b905",
+    "question": "L'approccio orientato agli oggetti:",
+    "answers": [
+      "un nuovo modo di cambiare il valore degli attributi degli oggetti in fase di istanziazione",
+      "È un nuovo modo di ragionare quando si risolvono problemi con sistemi software",
+      "È un nuovo modo di cambiare attributi degli oggetti del mondo reale",
+      "un nuovo modo di sviluppare il codice con una tecniche che è incentrata sulle procedure sui dati"
+    ],
+    "correct_answer": "È un nuovo modo di ragionare quando si risolvono problemi con sistemi software"
+  },
+  {
+    "id": "d077919a-aa50-4eb9-bc1e-ce90bb644740",
+    "question": "Nell'approccio orientato agli oggetti per la produzione del software si:",
+    "answers": [
+      "prende decisioni dettagliate di progetto sul software mentre si ragiona e si comprende il  problema da risolvere",
+      "considera i dettagli dell'implmentazione già in fase di progettazione così da non farsi scappare nessun caso",
+      "prende decisioni sugli oggetti a seconda della qualità richiesta dal committente",
+      "prende decisioni dettagliate solo in fase di implementazione del codice"
+    ],
+    "correct_answer": "prende decisioni dettagliate solo in fase di implementazione del codice"
+  },
+  {
+    "id": "9ee8f18f-3896-4a01-85ea-c1d32e9451fd",
+    "question": "L'approccio orientato agli oggetti  dovrebbe coinvolgere:",
+    "answers": [
+      "solo la fase di implementazione del codice",
+      "la fase di analisi, progettazione e implementazione",
+      "solo la fase di raccolta dei requisiti",
+      "la fase di implementazione e talvolta la fase di analisi"
+    ],
+    "correct_answer": "la fase di analisi, progettazione e implementazione"
+  },
+  {
+    "id": "428e518b-9234-4469-bea5-b56f19248c93",
+    "question": "Un oggetto nel dominio dell'applicazione:",
+    "answers": [
+      "opportuna espressione di un concetto concreto o astratto significativo per la risoluzione del problema",
+      "entità del sistema software definita con attributi ed operazioni",
+      "entità del sistema software con tutti i dettagli per l'implementazione",
+      "entità concettuale astratta definita dal committente del sistema sofware"
+    ],
+    "correct_answer": "opportuna espressione di un concetto concreto o astratto significativo per la risoluzione del problema"
+  },
+  {
+    "id": "b722e02e-7b4b-4a49-906c-3d30e9943742",
+    "question": "Un oggetto nel dominio del problema:",
+    "answers": [
+      "entità concettuale astratta definita dal committente del sistema sofware",
+      "opportuna espressione di un concetto concreto o astratto significativo per la risoluzione del problema",
+      "entità del sistema software definita con attributi ed operazioni",
+      "entità concettuale astratta definita per capire le relazioni con gli altri oggetti"
+    ],
+    "correct_answer": "entità del sistema software definita con attributi ed operazioni"
+  },
+  {
+    "id": "6d3a3c11-3cbc-4e90-bff3-abfa9aa26e39",
+    "question": "Per identificare le classi in fase di progettazione si considera:",
+    "answers": [
+      "il testo dei requisiti forniti dal committente del sistema software",
+      "il linguaggio usato per l'implementazione",
+      "il contesto del problema da risolvere per avere classi con una semantica (attributi ed operazioni) coerente ad esso",
+      "nessun criterio: l'importante è che istanziare correttamente gli oggetti"
+    ],
+    "correct_answer": "il contesto del problema da risolvere per avere classi con una semantica (attributi ed operazioni) coerente ad esso"
+  },
+  {
+    "id": "2cb0a427-d340-4032-a49f-0747e80d1a24",
+    "question": "Se occorre inserire una classe e nella gerarchia esiste una classe di cui essa è una specializzazione:",
+    "answers": [
+      "si può inserire nella gerarchia come sottoclasse di quella esistente completando con attributi e operazioni mancanti",
+      "si può inserire nella gerarchia in qualunque punto purché sia specificata senza errori",
+      "si può inserire nella gerarchia come superclasse di quella esistente completando con attributi e operazioni mancanti",
+      "non si può inserire nella gerarchia"
+    ],
+    "correct_answer": "si può inserire nella gerarchia come sottoclasse di quella esistente completando con attributi e operazioni mancanti"
+  },
+  {
+    "id": "5843d359-0143-4ca0-95a7-854dd3b9fbb1",
+    "question": "Se occorre inserire una classe e nella gerarchia non esiste una classe di cui essa è una specializzazione:",
+    "answers": [
+      "si definisce una classe da zero e non si usa l'ereditarietà lasciando la gerarchia inalterata",
+      "si elimina la classe e non si inserisce più nel progetto",
+      "non si usa l'astrazione così la classe può essere inserita nella gerarchia esistente",
+      "si definisce la classe da zero e si usa l'ereditarietà sulla gerarchia esistente"
+    ],
+    "correct_answer": "si definisce una classe da zero e non si usa l'ereditarietà lasciando la gerarchia inalterata"
+  },
+  {
+    "id": "4185c4cd-5288-441e-a459-a84ec016d6cc",
+    "question": "Per inserire una nuova classe in un progetto software occorre:",
+    "answers": [
+      "sfruttare al massimo classi già definite usando l'ereditarietà per evitare di riscrivere attributi e/o operazioni",
+      "semplicemente definirla e poi inserirla come sottoclasse di una classe esistente",
+      "definirla con tutti i dettagli prima di inserirla nel diagramma delle classi",
+      "che la classe abbia un significato semantico in linea con il problema"
+    ],
+    "correct_answer": "che la classe abbia un significato semantico in linea con il problema"
+  },
+  {
+    "id": "a74c194a-4743-49b0-aead-c7ea02318614",
+    "question": "Quale di queste affermazione sulla Java Virtual Machine è falsa:",
+    "answers": [
+      "supervisiona il software scritto in Java",
+      "interpreta il bytecode",
+      "gestisce la memoria automaticamente mediante la Garbage Collection",
+      "esegue il codice macchina del programma"
+    ],
+    "correct_answer": "esegue il codice macchina del programma"
+  },
+  {
+    "id": "f7b55ca8-3b88-43e6-803e-a4bf73c19322",
+    "question": "Quali fra le seguenti affermazioni sul metodo main in Java è scorretta?:",
+    "answers": [
+      "deve essere definito in ogni applicazione Java",
+      "deve essere sempre definito in ciascuna classe del programma",
+      "deve essere sempre definito in una classe definita per il programma",
+      "rappresenta il punto di partenza dell'esecuzione di ogni programma"
+    ],
+    "correct_answer": "deve essere sempre definito in ciascuna classe del programma"
+  },
+  {
+    "id": "7daa551e-85fe-4681-aa40-5a82085b4dd1",
+    "question": "Quali fra le seguenti dichiarazioni di classe in Java è corretta?:",
+    "answers": [
+      "public class {...}",
+      "public Class Auto {...}",
+      "public class Auto {...}",
+      "nessuna è corretta"
+    ],
+    "correct_answer": "public class Auto {...}"
+  },
+  {
+    "id": "14a56130-5deb-4eb6-9659-5c16d73228da",
+    "question": "In Java il blocco di codice che definisce un metodo è delimitato da:",
+    "answers": [
+      "parentesi graffe",
+      "parentesi tonde",
+      "parentesi quadre",
+      "nessun elemento delimitatore"
+    ],
+    "correct_answer": "parentesi graffe"
+  },
+  {
+    "id": "bc8eda98-eee6-4909-b79e-ffea606f27d7",
+    "question": "In Java è possibile dichiarare un metodo al di fuori del blocco  di codice che definisce una classe?:",
+    "answers": [
+      "sì, sempre",
+      "no, mai",
+      "dipende dal metodo",
+      "dipende dalla classe"
+    ],
+    "correct_answer": "no, mai"
+  },
+  {
+    "id": "21667d72-80a3-46db-aead-8e67caf55686",
+    "question": "In Java quale delle seguenti affermazioni sul byte code è falsa?:",
+    "answers": [
+      "È contenuto in un file con suffisso .class",
+      "contiene il codice sorgente che girerà sulla Java Virtual Machine",
+      "consente l'indipendenza dalla piattaforma",
+      "È interpretato dalla Java Virtual Machine"
+    ],
+    "correct_answer": "contiene il codice sorgente che girerà sulla Java Virtual Machine"
+  },
+  {
+    "id": "76470b58-fe79-4ca3-9d21-7e465760baa1",
+    "question": "Lo sviluppo Java consiste nel:",
+    "answers": [
+      "scrivere il programma, salvarlo, compilarlo (con il comando javac) e infine mandarlo in esecuzione (con il comando \njava)",
+      "scrivere il programma, salvarlo e infine mandarlo in esecuzione (con il comando java)",
+      "scrivere il programma, copiarlo nella directory della JVM e infine mandarlo in esecuzione (con il comando java)",
+      "scrivere il programma, salvarlo, invocare il compilatore (con il comando java) e eseguirlo nella JVM (con il comando \njavac)"
+    ],
+    "correct_answer": "scrivere il programma, salvarlo, compilarlo (con il comando javac) e infine mandarlo in esecuzione (con il comando \njava)"
+  },
+  {
+    "id": "294c7473-3dc2-4700-a3da-fe9469a8bb1e",
+    "question": "Per mandare in esecuzione il programma pippo. Java:",
+    "answers": [
+      "occorre eseguire il comando java pippo.java",
+      "occorre eseguire il comando java pippo.class",
+      "occorre eseguire il comando java pippo",
+      "occorre eseguire il comando javac pippo.class"
+    ],
+    "correct_answer": "occorre eseguire il comando java pippo"
+  },
+  {
+    "id": "8128aede-74d6-4ec4-8e89-2144cfa7108a",
+    "question": "Quale delle seguenti affermazioni sul linguaggio Java è falsa:",
+    "answers": [
+      "È un linguaggio orientato agli oggetti",
+      "permette di svincolarsi dalla piattaforma",
+      "ha una sintassi simile a C/C++",
+      "funziona anche senza Java Virtual Machine"
+    ],
+    "correct_answer": "funziona anche senza Java Virtual Machine"
+  },
+  {
+    "id": "f52a4817-6cdc-4c82-b194-f073d73d1296",
+    "question": "L'ambito di attività del compilatore mentre si sviluppa un'applicazione Java si riferisce a:",
+    "answers": [
+      "alla fase di codifica delle classi e di definizine del flusso di esecuzione",
+      "alla sola fase di codifica",
+      "alla sola fase di definizione del flusso di esecuzione",
+      "alla fase di definizione del flusso con sui si istanziano le classi e si invocano i metodi della classi"
+    ],
+    "correct_answer": "alla sola fase di codifica"
+  },
+  {
+    "id": "81d7fe8e-b888-4543-9cfc-c14d74473c58",
+    "question": "L'ambito di attività della Java Virtual Machine mentre si sviluppa un'applicazione Java si riferisce a:",
+    "answers": [
+      "alla fase di codifica delle classi e di definizine del flusso di esecuzione",
+      "alla sola fase di codifica",
+      "alla sola fase di definizione del flusso di esecuzione",
+      "alla fase di codifica delle dichiarazioni delle classi"
+    ],
+    "correct_answer": "alla sola fase di definizione del flusso di esecuzione"
+  },
+  {
+    "id": "bd138846-c1b0-4dd5-be2e-792ec05e4eee",
+    "question": "In Java nella dichiarazione di classe il modificatore specifica:",
+    "answers": [
+      "l'ambito di operatività dei metodi della classe",
+      "l'ambito di attività degli attributi della classe",
+      "come modificare le caratteristiche della classe",
+      "come aggiungere attributi alla classe dopo che è stata istanziata"
+    ],
+    "correct_answer": "come modificare le caratteristiche della classe"
+  },
+  {
+    "id": "38409201-79df-4053-8a70-060699d1f107",
+    "question": "In Java una volta scritti i file con la dichiarazione delle classi di oggetti:",
+    "answers": [
+      "il programma è pronto per essere compilato ed eseguito",
+      "il programma non compila perché manca il main con il flusso di esecuzione",
+      "il programma non compila perché tutte le classi devono essere dichiarate in un solo file",
+      "il programma compila ma non può essere eseguito perché ci vogliono almeno due oggetti"
+    ],
+    "correct_answer": "il programma non compila perché manca il main con il flusso di esecuzione"
+  },
+  {
+    "id": "e80c7393-fe9f-413f-8126-f8a429b9de3f",
+    "question": "In Java le dichiarazioni delle classi fanno parte dell'ambito compilativo:",
+    "answers": [
+      "TRUE",
+      "FALSE",
+      "dipende, se le classi sono dichiarate public oppure no",
+      "mai, perché le classi di oggetti interagiscono tra di loro"
+    ],
+    "correct_answer": "TRUE"
+  },
+  {
+    "id": "f75e5e85-3406-467d-bcd9-f2d14e5774cc",
+    "question": "In Java un metodo definisce:",
+    "answers": [
+      "come stampare a video gli attributi della classe di oggetti",
+      "una funzionalità della classe di oggetti",
+      "una serie di azioni eseguite dal main",
+      "una funzionalità della variabile"
+    ],
+    "correct_answer": "una funzionalità della classe di oggetti"
+  },
+  {
+    "id": "af9a62fe-b895-4799-825a-c245abdc9922",
+    "question": "In Java il seguente metodo è dichiarato nel modo corretto:",
+    "answers": [
+      "public void metodo (){return a;}",
+      "public void metodo (){return 5;}",
+      "public int metodo (){System.out.println(\"Ciao!\");}",
+      "public void metodo (){System.out.println(\"Ciao!\");}"
+    ],
+    "correct_answer": "public void metodo (){System.out.println(\"Ciao!\");}"
+  },
+  {
+    "id": "e2ff10f6-71e7-4236-821a-d4ca40e820d5",
+    "question": "In Java una variabile deve essere dichiarata:",
+    "answers": [
+      "una sola volta e prima di essere usata la prima volta",
+      "ogni volta che viene usata",
+      "due volte, una volta per specificarla, la seconda volta per usarla",
+      "una volta nel main"
+    ],
+    "correct_answer": "una sola volta e prima di essere usata la prima volta"
+  },
+  {
+    "id": "612613ef-d0f8-4d74-b951-4fe11500d1c0",
+    "question": "In Java la seguente variabile è dichiarata nel modo scorretto:",
+    "answers": [
+      "int a;;",
+      "int a;",
+      "int a=0;",
+      "final int a=5;"
+    ],
+    "correct_answer": "int a;;"
+  },
+  {
+    "id": "d0d7918a-e8aa-45cf-9965-bf626d2977f1",
+    "question": "In Java una variabile di istanza:",
+    "answers": [
+      "deve essere per forza inizializzata dal programmatore altrimento il compilatore segnala un errore",
+      "si inizializza al momento della creazione  dell'oggetto con valori predefiniti",
+      "si inizializza al momento in cui si invoca il primo metodo della classe dopo la creazione con valori predefiniti \ndipendenti dal metodo",
+      "si inizializza sempre a 0 indipendentemente dal tipo di dato"
+    ],
+    "correct_answer": "si inizializza al momento della creazione  dell'oggetto con valori predefiniti"
+  },
+  {
+    "id": "8c2193ae-5692-4549-aa3e-28133e0fef6f",
+    "question": "In Java una variabile locale:",
+    "answers": [
+      "deve essere per forza inizializzata dal programmatore altrimento il compilatore segnala un errore",
+      "si inizializza al momento della creazione  dell'oggetto con valori predefiniti dipendenti dal tipo di dato",
+      "si inizializza al momento in cui si invoca il metodo con valori predefiniti dipendenti dal metodo",
+      "si inizializza sempre a 0 indipendentemente dal tipo di dato"
+    ],
+    "correct_answer": "deve essere per forza inizializzata dal programmatore altrimento il compilatore segnala un errore"
+  },
+  {
+    "id": "26d16fb1-5073-44d2-a0b8-44f958638f79",
+    "question": "In Java il cilco di vita di una variabile locale:",
+    "answers": [
+      "coincide con il ciclo di vita dell'oggetto in cui è definita: smette di esistere quanto l'oggetto viene deallocato.",
+      "coincide con il ciclo di vita del costruttore dell'oggetto in cui è definita: smette di esistere quando il costruttore ha \nterminato le operazioni",
+      "coincide con il ciclo di vita del metodo in cui è dichiarata: smette di esistere quando il metodo ha terminato la sua \nesecuzione",
+      "coincide con il ciclo di vita del programma: smette di esistere quando il programma ha terminato la sua esecuzione"
+    ],
+    "correct_answer": "coincide con il ciclo di vita del metodo in cui è dichiarata: smette di esistere quando il metodo ha terminato la sua \nesecuzione"
+  },
+  {
+    "id": "0b4f6579-2711-4b3f-bb09-2ef3ec1e638b",
+    "question": "In Java una variabile di istanza appartiene alla classe in cui è dichiarata:",
+    "answers": [
+      "falso, appartiene ad un oggetto istanziata dalla classe in cui è dichiarata",
+      "vero, appartiene alla categoria di oggetti rappresentata dalla classe",
+      "dipende dalla dichiarazione della classe",
+      "dipende dalla dichiarazione della variabile di istanza"
+    ],
+    "correct_answer": "falso, appartiene ad un oggetto istanziata dalla classe in cui è dichiarata"
+  },
+  {
+    "id": "5e8dcc2c-1426-4aec-b1aa-45a79f828283",
+    "question": "In Java i parametri formali:",
+    "answers": [
+      "sono dichiarati con la  dichiarazione di un metodo come specifica di variabili da passare al metodo",
+      "hanno un ciclo di vita che coincide con l'oggetto della classe in cui sono dichiarati",
+      "sono sempre dichiarati dentro il metodo in cui sono usati",
+      "sono dichiarati nel costruttore dell'oggetto al momento della creazione"
+    ],
+    "correct_answer": "sono dichiarati con la  dichiarazione di un metodo come specifica di variabili da passare al metodo"
+  },
+  {
+    "id": "72200651-5718-4edb-b96e-74aace8ebce8",
+    "question": "In Java il costruttore è un metodo che:",
+    "answers": [
+      "non restituisce mai niente, infatti ha come tipo di ritorno void",
+      "non restituisce mai niente, infatti non ha tipo di ritorno",
+      "restituisce sempre un valore intero, con un codice numerico sul successo o meno della creazione dell'oggetto",
+      "È un metodo che restituisce una stringa con il nome dell'oggetto appena creato"
+    ],
+    "correct_answer": "non restituisce mai niente, infatti non ha tipo di ritorno"
+  },
+  {
+    "id": "0c11a77c-2ddd-4c84-9999-835ca3d29ec6",
+    "question": "In Java il costruttore è un metodo che:",
+    "answers": [
+      "viene eseguito ogni qualvolta viene invocato sull'istanza",
+      "viene eseguito due volte, al momento della creazione e distruttore dell'oggetto",
+      "viene eseguito una e una sola volta al momento in cui si istanzia un oggetto",
+      "viene eseguito una sola volta quando viene viene compilata la classe in cui è dichiarato"
+    ],
+    "correct_answer": "viene eseguito una e una sola volta al momento in cui si istanzia un oggetto"
+  },
+  {
+    "id": "97b4533f-3033-48d0-abd7-ae1f039a6269",
+    "question": "In Java il costruttore di default è:",
+    "answers": [
+      "inserito nella dichiarazione della classe dal programmatore senza parametri",
+      "inserito dal compilatore se nessun altro costruttore è dichiarato nella classe",
+      "inserito dal compilatore se il programmatore non ha inserito un costruttore senza parametri",
+      "inserito dal compilatore sempre"
+    ],
+    "correct_answer": "inserito dal compilatore se nessun altro costruttore è dichiarato nella classe"
+  },
+  {
+    "id": "e5ade2b5-f766-42a4-a0e1-709af426eea5",
+    "question": "In Java un package è:",
+    "answers": [
+      "È un progetto che raggruppa i file con tutte le classi  in modo automatico",
+      "una cartella che contiene i file con tutte le classi del progetto",
+      "una cartella che contiene file con le classi le quali hanno dichiarato di far parte del package attraverso comando \nimport",
+      "una cartella che contiene file con le classi le quali hanno dichiarato di far parte del package attraverso comando \npackage"
+    ],
+    "correct_answer": "una cartella che contiene file con le classi le quali hanno dichiarato di far parte del package attraverso comando \npackage"
+  },
+  {
+    "id": "a778452f-a030-4c2f-808d-84b57bf74576",
+    "question": "In Java un identificatore può iniziare per @:",
+    "answers": [
+      "no, mai",
+      "sì, nessun problema",
+      "no, ma per gli attributi nessun problema",
+      "sì, solo per le classi"
+    ],
+    "correct_answer": "no, mai"
+  },
+  {
+    "id": "b8c954c7-2951-4296-8987-618a109cfcb1",
+    "question": "In Java gli identificatori:",
+    "answers": [
+      "hanno un limite massimo di caratteri",
+      "non hanno un limite massimo di caratteri",
+      "È meglio che siano più slegati il più possibile dai dettagli dei concetti del mondo reale che rappresentano",
+      "più corti sono meglio è"
+    ],
+    "correct_answer": "non hanno un limite massimo di caratteri"
+  },
+  {
+    "id": "0ef91a9c-4755-4b96-aec4-9f4664e650ad",
+    "question": "Secondo le convenzioni di Java gli identficatori della classe:",
+    "answers": [
+      "devono iniziare per @",
+      "devono iniziare con un numero",
+      "devono iniziare per lettera minuscola",
+      "devono iniziare per lettera maiuscola"
+    ],
+    "correct_answer": "devono iniziare per lettera maiuscola"
+  },
+  {
+    "id": "ce1f9073-817b-434e-9412-f3db690830ab",
+    "question": "Secondo le convenzioni di Java gli identficatori delle variabili:",
+    "answers": [
+      "devono finire sempre con _",
+      "devono iniziare con un numero",
+      "devono iniziare per lettera minuscola",
+      "devono iniziare per lettera maiuscola"
+    ],
+    "correct_answer": "devono iniziare per lettera minuscola"
+  },
+  {
+    "id": "d505ecd1-6c67-4ad8-92e0-8cfb9fdf885a",
+    "question": "Secondo le convenzioni di Java gli identficatori delle costanti:",
+    "answers": [
+      "devono avere tutte lettere maiuscole",
+      "devono iniziare con un numero",
+      "devono avere tutte lettere minuscole",
+      "devono finire sempre con _"
+    ],
+    "correct_answer": "devono avere tutte lettere maiuscole"
+  },
+  {
+    "id": "970db64b-ffc5-453e-abf5-26550ff22806",
+    "question": "In Java, un tipo di dato intero long è memorizzato in:",
+    "answers": [
+      "8 byte",
+      "6 byte",
+      "4 byte",
+      "16 byte"
+    ],
+    "correct_answer": "8 byte"
+  },
+  {
+    "id": "d77154ef-baec-43fc-b566-3ec9e94019a2",
+    "question": "In Java, quando passiamo una reference di un oggetto in input ad un metodo, siamo sicuri che terminata \nl'esecuzione del metodo, il reference:",
+    "answers": [
+      "punta allo stesso oggetto a cui puntava prima dell'esecuzione del metodo",
+      "punta ad un altro oggetto della stessa classe rispetto a quello a cui puntava prima dell'esecuzione del metodo",
+      "punta ad un'altra area di memoria che contiene un altro oggetto della stessa classe istanziato dentro il metodo",
+      "punta ad un altro oggetto di una classe diversa rispetto a quella dell'oggetto a cui puntava prima dell'esecuzione del \nmetodo"
+    ],
+    "correct_answer": "punta allo stesso oggetto a cui puntava prima dell'esecuzione del metodo"
+  },
+  {
+    "id": "511282cf-3ac3-4c20-99e4-a1409b5cba12",
+    "question": "In Java, al momento della dichiarazione di un oggetto:",
+    "answers": [
+      "si definisce una reference all'oggetto (che vale null) che identifica l'oggetto",
+      "si alloca un'area di memoria per l'oggetto inizializzata a valori nulli",
+      "si libera un'area di memoria puntata dalla reference dell'oggetto",
+      "si definisce una reference che punta all'oggetto inizializzato a valori di default tramite il  costruttore"
+    ],
+    "correct_answer": "si definisce una reference all'oggetto (che vale null) che identifica l'oggetto"
+  },
+  {
+    "id": "90be47f8-3c61-4f51-9531-1980391dfcc7",
+    "question": "In Java, quando passiamo una reference di un oggetto in input ad un metodo, il parametro locale:",
+    "answers": [
+      "È una copia della reference dell'oggetto",
+      "È esattamente la reference dell'oggetto passato in input",
+      "non può essere usato per modificare i valori delle variabili di istanza",
+      "punta ad un'istanza di oggetto differente"
+    ],
+    "correct_answer": "È una copia della reference dell'oggetto"
+  },
+  {
+    "id": "a0719747-7a43-4c79-8cfa-9d67d0ac383a",
+    "question": "In Java quale delle seguenti affermazioni è vera:",
+    "answers": [
+      "Un array è un collezione di tipi primitivi",
+      "Un array è un oggetto e quindi puà essere dichiarato, istanziato e inizializzato",
+      "Un array è una collezione di tipi di dati che si può ridimensionare",
+      "Un array è eterogeneo di default"
+    ],
+    "correct_answer": "Un array è un oggetto e quindi puà essere dichiarato, istanziato e inizializzato"
+  },
+  {
+    "id": "28748c18-30a4-41ef-aef2-716e424690df",
+    "question": "In Java e nell'utilizzo degli array, cosa rappresenta length?:",
+    "answers": [
+      "un metodo che restituisce il numero di elementi di un array",
+      "la somma degli elementi contenuti nell'array",
+      "un attributo che fornisce il numero di elementi di un array",
+      "un valore della collezione di dati di un array dedicato a contenere il numero degli elementi di quell'array"
+    ],
+    "correct_answer": "un attributo che fornisce il numero di elementi di un array"
+  },
+  {
+    "id": "76e8136a-56e3-4418-950c-f010b9d518d9",
+    "question": "In Java, un array di stringhe è un array bidimensionale:",
+    "answers": [
+      "TRUE",
+      "vero ma solo dopo inizializzazione delle stringhe",
+      "FALSO, le stringhe non sono array di caratteri",
+      "FALSO, le stringhe sono tipi di dati primitivi"
+    ],
+    "correct_answer": "FALSO, le stringhe non sono array di caratteri"
+  },
+  {
+    "id": "907609d6-2c56-49e7-9374-44faf33e1436",
+    "question": "In Java, un array di oggetti contiene in ciascun elemento:",
+    "answers": [
+      "l'area di memoria allocata a ciascun oggetto",
+      "l'area di memoria allocata agli attributi di ciascun oggetto",
+      "l'area di memoria allocata agli attributi e ai metodi di ciascun oggetto",
+      "i riferimenti (indirizzi) all'area di memoria allocata per ciascun oggetto"
+    ],
+    "correct_answer": "i riferimenti (indirizzi) all'area di memoria allocata per ciascun oggetto"
+  },
+  {
+    "id": "d990314d-e099-41dc-894d-7e9ae63b1301",
+    "question": "In Java, le istruzioni i++ e ++i con i una variabile int danno per i lo stesso risultato:",
+    "answers": [
+      "sì, sempre",
+      "no,mai",
+      "dipende dalle priorità degli operatori di incremento rispetto all'operatore di assegnazione",
+      "dipende se gli operatori di incremento sono presenti nello stesso statement dove è presente un'assegnazione."
+    ],
+    "correct_answer": "sì, sempre"
+  },
+  {
+    "id": "b83274ad-102b-4288-b115-885428b1feb6",
+    "question": "In Java, l'istruzione System.out.println(1+2+\"3\"); stamperà:",
+    "answers": [
+      "123",
+      "33",
+      "6",
+      "15"
+    ],
+    "correct_answer": "33"
+  },
+  {
+    "id": "09538c2a-c70a-498b-895e-bb72fb23823c",
+    "question": "In Java, l'operatore di confronto == \"uguale a\" si applica a:",
+    "answers": [
+      "tutti i tipi",
+      "solo i tipi numerici",
+      "solo agli array",
+      "solo ai tipi primitivi"
+    ],
+    "correct_answer": "tutti i tipi"
+  },
+  {
+    "id": "eb735b01-de23-4268-91ca-a72fc3eeef15",
+    "question": "In Java, se abbiamo int i=5; int j=++i; int k=j++; int h=k--; boolean flag = ( (i != j) && ( (j",
+    "answers": [
+      "true",
+      "false",
+      "0",
+      "1"
+    ],
+    "correct_answer": "true"
+  },
+  {
+    "id": "b61373af-d96e-49d7-b388-f526c32a52a5",
+    "question": "In Java, se confrontiamo due reference con l'operatore == il risultato sarà true se:",
+    "answers": [
+      "i due reference sono stati inizializzati con due operazioni di new differenti, una di seguito all'altra",
+      "i due reference puntano allo stesso oggetto",
+      "i due reference puntano ad oggetti differenti",
+      "i due reference puntano ad oggetti differenti e tali oggetti hanno gli stessi valori degli attributi"
+    ],
+    "correct_answer": "i due reference puntano allo stesso oggetto"
+  },
+  {
+    "id": "bbf39036-d4ea-4db2-886d-fa38d0e87a05",
+    "question": "In Java, il costrutto switch può sostituire in ogni caso il costrutto if:",
+    "answers": [
+      "sì, è vero lo può sostituire sempre",
+      "falso, solo in caso di if annidati e con test su variabili booleane",
+      "falso, solo in caso di if concatenati e con test su alcuni tipi di variabili (es. interi)",
+      "dipende da quanti casi di confronto sono da considerare"
+    ],
+    "correct_answer": "falso, solo in caso di if concatenati e con test su alcuni tipi di variabili (es. interi)"
+  },
+  {
+    "id": "7f7b9934-147e-4fe3-96d7-00f503cac800",
+    "question": "In Java, il costrutto for può in ogni caso sostituire il costrutto while:",
+    "answers": [
+      "falso, solo in caso di while annidati",
+      "sì, è vero lo può sostituire sempre",
+      "dipende dalla condizione del ciclo while",
+      "falso, non lo può mai sostituire"
+    ],
+    "correct_answer": "sì, è vero lo può sostituire sempre"
+  },
+  {
+    "id": "9f2cc41d-543b-42b5-8d9e-94a6db22545a",
+    "question": "Il costrutto switch può in ogni caso sostituire il costrutti while:",
+    "answers": [
+      "falso, non può mai sostituirlo: la switch è una condizione non un ciclo",
+      "falso, lo switch è un ciclo non una condizione",
+      "sì, è vero lo può sostituire sempre",
+      "dipende da quanti casi di confronto sono da considerare"
+    ],
+    "correct_answer": "falso, lo switch è un ciclo non una condizione"
+  },
+  {
+    "id": "188c1c48-4bbb-4be4-ae32-cbd9dfbcfb61",
+    "question": "In Java, il costrutto if permette di:",
+    "answers": [
+      "di ripetere più flussi di esecuzione un certo numero di volte",
+      "di scegliere un flusso di esecuzione a seconda che si verifichi una certa condizione",
+      "di scegliere due flussi di esecuzione a seconda che si verifichi una certa condizione",
+      "di ripetere un flusso di esecuzione un certo numero di volte"
+    ],
+    "correct_answer": "di scegliere un flusso di esecuzione a seconda che si verifichi una certa condizione"
+  },
+  {
+    "id": "cca9b787-33c5-4592-b6a6-b09c24c6909f",
+    "question": "In Java, il costrutto for permette di:",
+    "answers": [
+      "di ripetere più flussi di esecuzione un certo numero di volte",
+      "di scegliere un flusso di esecuzione a seconda che si verifichi una certa condizione",
+      "di scegliere due flussi di esecuzione a seconda che si verifichi una certa condizione",
+      "di ripetere un flusso di esecuzione un certo numero di volte"
+    ],
+    "correct_answer": "di ripetere un flusso di esecuzione un certo numero di volte"
+  },
+  {
+    "id": "d4a76382-f83b-4f42-b78d-8dc63af077fa",
+    "question": "In Java, è possibile usare il costrutto for per i cicli infiniti:",
+    "answers": [
+      "sì sempre ed è più chiaro e lineare",
+      "sì sempre anche se è meno chiaro e lineare",
+      "solo se la condizione diventa vera dopo 100 cicli",
+      "no mai"
+    ],
+    "correct_answer": "sì sempre anche se è meno chiaro e lineare"
+  },
+  {
+    "id": "988356bc-fb3f-4f1d-b218-53416e653af7",
+    "question": "In Java, il costrutto while è preferito al costrutto for per essere usato in caso di:",
+    "answers": [
+      "numero di cicli not a priori",
+      "condizioni espresse sullo stato",
+      "condizioni espresse indici di array",
+      "condizioni sempre false"
+    ],
+    "correct_answer": "condizioni espresse sullo stato"
+  },
+  {
+    "id": "68bd3427-0103-443c-bff8-ab44944aae6a",
+    "question": "In Java, nella sintassi del costrutto switch:",
+    "answers": [
+      "il blocco di codice è obbligatorio ad ogni case",
+      "il break è opzionale",
+      "l'istruzione può essere solo unica ad ogni case",
+      "la clausola default è obbligatoria"
+    ],
+    "correct_answer": "il break è opzionale"
+  },
+  {
+    "id": "79a68f19-37be-4951-a4c2-9f8495462893",
+    "question": "In Java, nella sintassi del costrutto switch è consigliabile:",
+    "answers": [
+      "mettere i case in ordine alfabetico",
+      "mettere i casi in ordine crescente di valore",
+      "usare sempre la clausola default anche se non sembra strettamente necessario",
+      "non usare mai il break nella clausola default"
+    ],
+    "correct_answer": "usare sempre la clausola default anche se non sembra strettamente necessario"
+  },
   {
     "question": "Quale di questi elementi è parte di un diagramma dei casi d'uso?",
     "answers": [
