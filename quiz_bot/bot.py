@@ -923,6 +923,16 @@ async def show_mistakes(user_id, subject, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def show_final_stats(user_id, context, state, from_stop=False, is_review_mode=False):
+    """
+    Mostra le statistiche finali del quiz all'utente.
+    
+    Args:
+        user_id: ID dell'utente Telegram
+        context: Context di Telegram
+        state: Stato corrente del quiz
+        from_stop: True se chiamato da comando /stop
+        is_review_mode: True se in modalità ripasso errori
+    """
     if not state:
         return
 
@@ -933,22 +943,27 @@ async def show_final_stats(user_id, context, state, from_stop=False, is_review_m
 
     score = state["score"]
     total = state["total"]
-    answered = state["index"]
+    answered = state["index"]  # Numero di domande effettivamente risposte
 
     keyboard = []
     has_errors = False
-
     summary = ""
 
+    # Caso 1: Quiz interrotto senza rispondere a nessuna domanda
     if answered == 0:
-        summary = "Nessuna risposta data. Quiz interrotto dall'utente."
+        summary = "❌ Nessuna risposta data. Quiz interrotto dall'utente.\n"
+    
+    # Caso 2: L'utente ha risposto ad almeno una domanda
     else:
-        percentage = round((score / answered) * 100, 2) if answered else 0
+        # Calcola percentuale sulle domande effettivamente risposte
+        percentage = round((score / answered) * 100, 2) if answered > 0 else 0
+        
+        # Aggiorna statistiche con il numero corretto di domande risposte
         stats_manager = get_stats_manager(user_id)
-        stats_manager.update_stats(subject, score, total)
+        stats_manager.update_stats(subject, score, answered)  # FIX: usa 'answered' non 'total'
         all_stats = stats_manager.get_summary()
 
-        # --- TIMER: calcola durata quiz ---
+        # Calcola durata quiz
         duration = ""
         if "start_time" in state:
             elapsed = int(time.time() - state["start_time"])
@@ -956,60 +971,80 @@ async def show_final_stats(user_id, context, state, from_stop=False, is_review_m
             secs = elapsed % 60
             duration = f"\n🕒 Tempo impiegato: {mins} min {secs} sec\n"
 
-        # GIF solo se quiz completato (tutte le domande risposte) e total == 30
+        # Invia GIF solo se quiz completato (tutte le 30 domande) e non interrotto
         if answered == total == 30:
             if score == 30:
                 await context.bot.send_animation(chat_id=user_id, animation=yay())
             elif score < 18:
                 await context.bot.send_animation(chat_id=user_id, animation=yikes())
 
-        summary = f"🎯Quiz completato!\nPunteggio: {score} su {answered} ({percentage}%)\n"
+        # Costruisci messaggio di riepilogo
+        if answered < total:
+            summary = f"⚠️ Quiz interrotto!\nHai risposto a {answered} domande su {total}\nPunteggio: {score} su {answered} ({percentage}%)\n"
+        else:
+            summary = f"🎯 Quiz completato!\nPunteggio: {score} su {answered} ({percentage}%)\n"
+        
         summary += duration
-      
-        summary += "\n📊 Statistiche:\n"
+        summary += "\n📊 Statistiche complessive:\n"
 
+        # Mostra statistiche per ogni materia
         for sub, data in all_stats.items():
-            perc = round((data['correct'] / data['total']) * 100, 2)
+            perc = round((data['correct'] / data['total']) * 100, 2) if data['total'] > 0 else 0
             summary += f"- {sub}: {perc}% ({data['correct']} su {data['total']})\n"
 
+        # Commit errori e verifica se ce ne sono
         manager = get_manager(user_id)
         manager.commit_changes() 
         has_errors = manager.has_wrong_answers()
 
+    # Costruzione tastiera inline in base al contesto
+    
+    # Riga 1: Azioni principali
     if from_stop:
+        # Se chiamato da /stop, mostra solo "Scegli materia"
         keyboard.append([
             InlineKeyboardButton(SCEGLI_MATERIA, callback_data="change_course")
         ])
     else:
+        # Se quiz completato, mostra "Ripeti" e "Cambia materia"
         keyboard.append([
             InlineKeyboardButton("🔁 Ripeti quiz", callback_data="repeat_quiz"),
             InlineKeyboardButton("📚 Cambia materia", callback_data="change_course")
         ])
+    
+    # Riga 2: Gestione statistiche ed errori
     if is_review_mode:
-        keyboard.append(
-            [
-                InlineKeyboardButton(AZZERA_STATISTICHE, callback_data="reset_stats"),
-                InlineKeyboardButton("🧽 Cancella Errori", callback_data=f"clear_errors:{state['subject']}")]
-        )
-    else: 
+        # In modalità ripasso: mostra sia reset stats che cancella errori
+        keyboard.append([
+            InlineKeyboardButton(AZZERA_STATISTICHE, callback_data="reset_stats"),
+            InlineKeyboardButton("🧽 Cancella Errori", callback_data=f"clear_errors:{subject}")
+        ])
+    else:
+        # In modalità normale: mostra solo reset stats
         keyboard.append([
             InlineKeyboardButton(AZZERA_STATISTICHE, callback_data="reset_stats")
         ])
 
-    # Mostra bottoni errori SOLO se ci sono errori
+    # Riga 3: Bottoni errori (solo se ci sono errori registrati)
     if has_errors:
         keyboard.append([
             InlineKeyboardButton(RIPASSA_ERRORI, callback_data="review_errors"),
             InlineKeyboardButton("📝 Mostra errori", callback_data=f"show_mistakes_{subject}")
         ])
 
+    # Riga 4: Utility (download e GitHub)
     keyboard.append([
         InlineKeyboardButton("📥 Scarica pdf", callback_data=f"download_pdf:{state['quiz_file']}"),
         InlineKeyboardButton("🌐 Git", url="https://github.com/AdrianaRidolfi/telegram-bots")
     ])
 
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await context.bot.send_message(chat_id=user_id, text=summary, reply_markup=reply_markup)
+    await context.bot.send_message(
+        chat_id=user_id, 
+        text=summary, 
+        reply_markup=reply_markup
+    )
+
 
 async def stats(update: Update = None, context: ContextTypes.DEFAULT_TYPE = None, user_id: int = None):
     # Se user_id non passato, prendilo da update
