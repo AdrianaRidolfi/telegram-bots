@@ -335,7 +335,6 @@ def escape_markdown(text: str) -> str:
     return re.sub(rf"([{re.escape(escape_chars)}])", r"\\\1", text)
 
 async def send_next_question(user_id, context):
-    # Acquisisce il lock per questo utente
     lock = get_user_lock(user_id)
     
     async with lock:
@@ -348,49 +347,54 @@ async def send_next_question(user_id, context):
                 await context.bot.send_message(chat_id=user_id, text="Sessione non trovata. Scrivi /start per iniziare.")
                 return
 
-            current_index = state["index"]
-            total = state["total"]
-            
-            print(f"[TRACE] user {user_id} - index={current_index}, total={total}")
+            # Loop per saltare domande invalide
+            while True:
+                current_index = state["index"]
+                total = state["total"]
+                
+                print(f"[TRACE] user {user_id} - index={current_index}, total={total}")
 
-            # Verifica se il quiz è completato
-            if current_index >= total:
-                print(f"[TRACE] Quiz completato per user {user_id}")
-                await show_final_stats(user_id, context, state, is_review_mode=state.get("is_review", False))
-                manager = get_manager(user_id)
-                manager.commit_changes()
-                clear_user_lock(user_id)  # Rimuove il lock
-                return
+                # Verifica se il quiz è completato
+                if current_index >= total:
+                    print(f"[TRACE] Quiz completato per user {user_id}")
+                    await show_final_stats(user_id, context, state, is_review_mode=state.get("is_review", False))
+                    manager = get_manager(user_id)
+                    manager.commit_changes()
+                    clear_user_lock(user_id)
+                    return
 
-            q_index = state["order"][current_index]
-            print(f"[TRACE] user {user_id} - caricamento domanda q_index={q_index}")
-            
-            question_data = await _validate_and_get_question(state, q_index, user_id, context)
-            if question_data is None:
-                print(f"[TRACE] user {user_id} - domanda {q_index} non valida, incremento index")
-                # IMPORTANTE: qui NON richiamiamo send_next_question ricorsivamente
-                # incrementiamo solo l'index e riproveremo nel prossimo ciclo
-                return
+                q_index = state["order"][current_index]
+                print(f"[TRACE] user {user_id} - caricamento domanda q_index={q_index}")
+                
+                question_data = await _validate_and_get_question(state, q_index, user_id, context)
+                if question_data is None:
+                    print(f"[TRACE] user {user_id} - domanda {q_index} non valida, skip e provo la successiva")
+                    # La domanda è già stata skippata in _validate_and_get_question
+                    # Continua il loop per provare la prossima
+                    continue
 
-            correct_index, new_answers = _get_shuffled_answers_and_correct_index(question_data)
-            if correct_index is None or new_answers is None:
-                print(f"[TRACE] user {user_id} - risposte non valide per domanda {q_index}, skip")
-                state["index"] += 1
-                state["total"] -= 1  # Decrementa il totale
-                return
+                correct_index, new_answers = _get_shuffled_answers_and_correct_index(question_data)
+                if correct_index is None or new_answers is None:
+                    print(f"[TRACE] user {user_id} - risposte non valide per domanda {q_index}, skip e provo la successiva")
+                    state["index"] += 1
+                    state["total"] -= 1
+                    # Continua il loop invece di fare return
+                    continue
 
-            state["quiz"][q_index]["_shuffled_answers"] = new_answers
-            state["quiz"][q_index]["_correct_index"] = correct_index
+                # Se arriviamo qui, abbiamo una domanda valida
+                state["quiz"][q_index]["_shuffled_answers"] = new_answers
+                state["quiz"][q_index]["_correct_index"] = correct_index
 
-            question_text = _build_question_text(state, question_data, new_answers)
-            reply_markup = _build_question_keyboard(new_answers)
+                question_text = _build_question_text(state, question_data, new_answers)
+                reply_markup = _build_question_keyboard(new_answers)
 
-            if await _try_send_image(question_data, user_id, context, question_text, reply_markup):
-                print(f"[TRACE] user {user_id} - domanda {q_index} inviata con immagine")
-                return
+                if await _try_send_image(question_data, user_id, context, question_text, reply_markup):
+                    print(f"[TRACE] user {user_id} - domanda {q_index} inviata con immagine")
+                    return
 
-            await _send_question_text(user_id, context, question_text, reply_markup)
-            print(f"[TRACE] user {user_id} - domanda {q_index} inviata come testo")
+                await _send_question_text(user_id, context, question_text, reply_markup)
+                print(f"[TRACE] user {user_id} - domanda {q_index} inviata come testo")
+                return  # Uscita normale dopo invio domanda valida
 
         except Exception as e:
             print(f"❌ Errore critico in send_next_question per user {user_id}: {e}")

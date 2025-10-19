@@ -3561,12 +3561,12 @@
   {
     "question": "Lo pseudo stato finale server per:",
     "answers": [
-      "definire il completamento dell' esecuzione della macchina a stati, ma solitamente non è un \"vero\"  stato",
+      "definire il completamento dell' esecuzione della macchina a stati, ma solitamente non è un 'vero' stato",
       "rappresentare l'inizio di una macchina a stati",
       "indicare un errore nello stato corrente",
       "definire una transizione condizionale"
     ],
-    "correct_answer": "definire il completamento dell' esecuzione della macchina a stati, ma solitamente non è un \"vero\" stato",
+    "correct_answer": "definire il completamento dell' esecuzione della macchina a stati, ma solitamente non è un 'vero' stato",
     "id": "f68b4d3f-fdfe-44c6-afd6-06c1e6f0e27b"
   },
   {
