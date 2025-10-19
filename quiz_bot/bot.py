@@ -419,6 +419,10 @@ def _get_shuffled_answers_and_correct_index(question_data):
         if correct_answer and correct_answer in original_answers:
             correct_index = original_answers.index(correct_answer)
         else:
+            print(f"[ERROR] Invalid correct answer for question ID={question_data.get('id')}")
+            print(f"        answers={original_answers}")
+            print(f"        correct_answer={correct_answer}")
+            print(f"        correct_answer_index={question_data.get('correct_answer_index')}")
             return None, None
     shuffled = list(enumerate(original_answers))
     random.shuffle(shuffled)
@@ -510,7 +514,6 @@ async def _validate_and_get_question(state, q_index, user_id, context):
             print(f"[ERROR] Domanda malformata per user {user_id}: {question_id}")
             state["index"] += 1
             state["total"] -= 1  # Decrementa il totale quando skippiamo
-            # NON richiamare send_next_question qui!
             return None
             
         original_answers = question_data.get("answers", [])
@@ -518,7 +521,6 @@ async def _validate_and_get_question(state, q_index, user_id, context):
             print(f"[ERROR] Domanda senza risposte sufficienti per user {user_id}: {question_id}")
             state["index"] += 1
             state["total"] -= 1  # Decrementa il totale quando skippiamo
-            # NON richiamare send_next_question qui!
             return None
             
         print(f"[TRACE] Domanda validata correttamente per user {user_id}: {question_id}")
