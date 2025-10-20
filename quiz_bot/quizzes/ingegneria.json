@@ -5080,7 +5080,7 @@
       "Tiene traccia dell'elemento corrente e conosce quali elementi sono già stati attraversati.",
       "Deve essere popolato da innumerevoli variabili globali per garantire la flessibilità."
     ],
-    "correct_answer": "Tiene traccia dell'elemento corrente e conosce quali elementi sono stati attraversati.",
+    "correct_answer": "Tiene traccia dell'elemento corrente e conosce quali elementi sono già stati attraversati.",
     "id": "1d2c3b4a-5f6e-7d8c-9b0a-1e2f3g4h5i6j"
   },
     {
