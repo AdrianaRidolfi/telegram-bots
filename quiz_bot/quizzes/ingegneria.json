@@ -245,7 +245,7 @@
     "id": "df7ec18a-e064-4c38-a795-5a1c0f62fb06",
     "question": "Il modello Waterfall:",
     "answers": [
-      "E' un modello incrementale",
+      "È un modello incrementale",
       "È un modello sequenziale",
       "È un modello a prototipo",
       "È un modello con ricicli"
@@ -254,18 +254,18 @@
   },
   {
     "id": "4247d5f7-9027-4255-9e4f-7900c990cae8",
-    "question": "Il modello a Cascata -Waterfall \n \n7. La progettazione, quale fase del modello a cascata:",
+    "question": "La progettazione, quale fase del modello a cascata rappresenta:",
     "answers": [
-      "È la fase in cui sono accuratamente definite tutti i moduli  e le componenti",
+      "È la fase in cui sono accuratamente definite tutti i moduli e le componenti",
       "È la fase in cui ogni modulo viene codificato",
       "È la fase in cui vengono verificati i moduli",
       "È la fase in cui viene distribuito il sistema"
     ],
-    "correct_answer": "È la fase in cui sono accuratamente definite tutti i moduli  e le componenti"
+    "correct_answer": "È la fase in cui sono accuratamente definite tutti i moduli e le componenti"
   },
   {
     "id": "338d6e97-28e7-4c57-b319-411611dd42bc",
-    "question": "Il modello a Cascata -Waterfall \n \n8. Quali di questi non è una variante del modello waterfall:",
+    "question": "Quali di questi non è una variante del modello waterfall:",
     "answers": [
       "Modello transformazionale",
       "Modello con prototipo",
