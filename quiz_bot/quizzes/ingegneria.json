@@ -3396,7 +3396,7 @@
       "quando le transizioni sono semplici e prevedibili",
       "quando è necessario cambiare comportamento dinamicamente"
     ],
-    "correct_answer": "Quando si ha un elevato numero di stati e transizioni complessi",
+    "correct_answer": "quando si ha un elevato numero di stati e transizioni complessi",
     "id": "40d9f45a-9452-494e-b2e1-7a0644d01cd0"
   },
   {
