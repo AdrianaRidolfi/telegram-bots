@@ -760,7 +760,7 @@
   },
   {
     "id": "4066b01e-90f1-4b01-aab1-7a98e53a10cb",
-    "question": "Dire quale di queste effermazioni è vera: \n \n:",
+    "question": "Dire quale di queste effermazioni è vera:",
     "answers": [
       "il diagramma di caso d'uso fornisce tutti i dettagli del comportamento interno",
       "il diagramma di caso d'uso fornisce tutti i dettagli del comportamento così come è osservabile dall'esterno",
@@ -1574,18 +1574,18 @@
   },
   {
     "id": "521fa872-aa6b-4464-bce9-7eb2efb435b4",
-    "question": "Le istanze di una classe:",
+    "question": "Le istanze di una classe: (NB ambigua nel paniere, qui contata come giusta quella che lo è effettivamente)",
     "answers": [
       "condividono gli stessi attributi ed operazioni",
       "si riferiscono a specifiche di classi differenti",
       "hanno operazioni differenti e quindi si comportano diversamente",
       "condividono solo le operazioni"
     ],
-    "correct_answer": "si riferiscono a specifiche di classi differenti"
+    "correct_answer": "condividono gli stessi attributi ed operazioni"
   },
   {
     "id": "4cd94c00-3fc4-4e76-aa17-001cee6668c6",
-    "question": "La specifica di una classe:",
+    "question": "La specifica di una classe: (NB qui giusta la stessa del paniere, opinabile)",
     "answers": [
       "può cambiare da oggetto a oggetto",
       "È generale e fornisce un modello per creare oggetti simili",
@@ -1994,7 +1994,7 @@
     "id": "d0d7918a-e8aa-45cf-9965-bf626d2977f1",
     "question": "In Java una variabile di istanza:",
     "answers": [
-      "deve essere per forza inizializzata dal programmatore altrimento il compilatore segnala un errore",
+      "deve essere per forza inizializzata dal programmatore altrimenti il compilatore segnala un errore",
       "si inizializza al momento della creazione  dell'oggetto con valori predefiniti",
       "si inizializza al momento in cui si invoca il primo metodo della classe dopo la creazione con valori predefiniti \ndipendenti dal metodo",
       "si inizializza sempre a 0 indipendentemente dal tipo di dato"
@@ -2313,12 +2313,12 @@
     "id": "9f2cc41d-543b-42b5-8d9e-94a6db22545a",
     "question": "Il costrutto switch può in ogni caso sostituire il costrutti while:",
     "answers": [
-      "falso, non può mai sostituirlo: la switch è una condizione non un ciclo",
+      "falso, non può mai sostituirlo: lo switch è una condizione non un ciclo",
       "falso, lo switch è un ciclo non una condizione",
       "sì, è vero lo può sostituire sempre",
       "dipende da quanti casi di confronto sono da considerare"
     ],
-    "correct_answer": "falso, lo switch è un ciclo non una condizione"
+    "correct_answer": "falso, non può mai sostituirlo: lo switch è una condizione non un ciclo"
   },
   {
     "id": "188c1c48-4bbb-4be4-ae32-cbd9dfbcfb61",
