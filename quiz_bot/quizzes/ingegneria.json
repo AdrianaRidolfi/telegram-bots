@@ -833,7 +833,7 @@
       "con un solo attributo aggiunto alla classe non puntata dalla freccia dell'associazione",
       "con una coppia di attributi aggiunta alla classe puntata dalla freccia dell'associazione"
     ],
-    "correct_answer": "con una coppia di attributi, uno per ognuna delle due classi coinvolte nell'associazione"
+    "correct_answer": "con un solo attributo aggiunto alla classe non puntata dalla freccia dell'associazione"
   },
   {
     "id": "2510d699-f91c-4f5c-affe-40bedf3dc1a3",
