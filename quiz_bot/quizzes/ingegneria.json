@@ -1482,7 +1482,7 @@
       "le specifiche delle istanze degli oggetti del sistema software in un dato momento",
       "come evolvono le specifiche delle istanze mentre il sistema gira nelle macchine del cliente"
     ],
-    "correct_answer": "le istanze degli oggetti del sistema software in un dato momento"
+    "correct_answer": "le specifiche delle istanze degli oggetti del sistema software in un dato momento"
   },
   {
     "id": "f6b243da-e8e2-40c0-b24a-65c724727265",
