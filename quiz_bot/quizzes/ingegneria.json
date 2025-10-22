@@ -1559,7 +1559,7 @@
       "non possono essere mai invocate da altri oggetti",
       "agiscono sui dati dell'oggetto"
     ],
-    "correct_answer": "sono attributi che possono cambiare valore"
+    "correct_answer": "agiscono sui dati dell'oggetto"
   },
   {
     "id": "b0d98bcc-ca05-4e83-80c4-1b7f3b39be02",
@@ -1570,7 +1570,7 @@
       "di invocazioni random di operazioni degli oggetti",
       "un accordo sull'ordine con cui gli oggetti invocano operazioni esterne"
     ],
-    "correct_answer": "un accordo sull'ordine con cui gli oggetti invocano operazioni esterne"
+    "correct_answer": "invocazioni reciproche di operazioni fra oggetti"
   },
   {
     "id": "521fa872-aa6b-4464-bce9-7eb2efb435b4",
@@ -2385,6 +2385,448 @@
       "non usare mai il break nella clausola default"
     ],
     "correct_answer": "usare sempre la clausola default anche se non sembra strettamente necessario"
+  },
+     {
+    "id": "7b8c6e3a-88d4-49d1-91a0-1a3348b8c21e",
+    "question": "Qual è l'obiettivo principale dell'incapsulamento in Java:",
+    "answers": [
+      "Nascondere la complessità interna di un oggetto",
+      "Consentire l'accesso diretto alle variabili di istanza di una classe",
+      "Consentire l'accesso diretto ai metodi di una classe",
+      "Consentire la modifica diretta delle variabili di istanza di una classe"
+    ],
+    "correct_answer": "Nascondere la complessità interna di un oggetto"
+  },
+  {
+    "id": "9fa7c92a-d5f4-4af6-b053-0d3a4e0d6018",
+    "question": "Quale delle seguenti affermazioni è vera riguardo all'uso dei paradigmi della programmazione ad oggetti in Java:",
+    "answers": [
+      "La programmazione ad oggetti consente di organizzare i programmi a livelli di complessità differente",
+      "La programmazione ad oggetti si può fare solo con il linguaggio Java",
+      "La programmazione ad oggetti è utile per programmi complessi in quanto consente di organizzare il codice in modo modulare e ridurre la complessità attraverso l'incapsulamento e l'astrazione.",
+      "La programmazione ad oggetti permette di scrivere programmi più rapidamente"
+    ],
+    "correct_answer": "La programmazione ad oggetti è utile per programmi complessi in quanto consente di organizzare il codice in modo modulare e ridurre la complessità attraverso l'incapsulamento e l'astrazione."
+  },
+  {
+    "id": "fcf7c17e-8450-4f67-b663-22659f22ffda",
+    "question": "Quali sono i tre principi fondamentali della programmazione ad oggetti in Java:",
+    "answers": [
+      "Incapsulamento, ereditarietà, polimorfismo",
+      "Funzionalità, modularità, efficienza",
+      "Accessibilità, usabilità e design.",
+      "Version control, testing e refactoring."
+    ],
+    "correct_answer": "Incapsulamento, ereditarietà, polimorfismo"
+  },
+  {
+    "id": "b6adcd24-59b3-4631-9cf1-8c53c9e312c3",
+    "question": "Quale delle seguenti opzioni descrive correttamente come si realizza l'incapsulamento in Java:",
+    "answers": [
+      "Si utilizza la keyword \"private\" per definire le variabili di istanza della classe e quei metodi che sono usati solo internamente.",
+      "Si utilizza la keyword \"private\" per definire tutti i metodi e le variabili di istanza della classe.",
+      "Si utilizza la keyword \"public\" per definire i metodi e le variabili di istanza della classe.",
+      "Si utilizza la keyword \"static\" per definire i metodi e le variabili di istanza della classe."
+    ],
+    "correct_answer": "Si utilizza la keyword \"private\" per definire le variabili di istanza della classe e quei metodi che sono usati solo internamente."
+  },
+  {
+    "id": "b4b012ab-1bb3-48b1-a56e-10f06fce94d5",
+    "question": "Quale delle seguenti affermazioni riguardo all'interfaccia pubblica di una classe incapsulata in Java è corretta:",
+    "answers": [
+      "L'interfaccia pubblica di una classe incapsulata non può essere modificata una volta che la classe è stata definita.",
+      "L'interfaccia pubblica di una classe incapsulata consiste solo dei suoi metodi pubblici.",
+      "L'interfaccia pubblica di una classe incapsulata deve essere definita in una classe separata.",
+      "L'interfaccia pubblica di una classe incapsulata può essere composta anche da metodi privati."
+    ],
+    "correct_answer": "L'interfaccia pubblica di una classe incapsulata consiste solo dei suoi metodi pubblici."
+  },
+  {
+    "id": "38cf9197-2668-4478-96f0-c0435a58a7a3",
+    "question": "Quale dei seguenti non è un vantaggio dell’incapsulamento in Java:",
+    "answers": [
+      "Protezione degli oggetti da accessi non autorizzati",
+      "Maggiore modularità e facilità di manutenzione del codice",
+      "Migliore organizzazione e suddivisone del lavoro all’interno del team di sviluppo",
+      "Possibilità di modificare l’implementazione interna di una classe senza influire sulle altre parti del programma"
+    ],
+    "correct_answer": "Migliore organizzazione e suddivisone del lavoro all’interno del team di sviluppo"
+  },
+  {
+    "id": "4c4cf92f-cae4-41e0-9068-b0192d0a15e4",
+    "question": "Quale delle seguenti opzioni descrive correttamente il modificatore di accesso \"protected\" in Java:",
+    "answers": [
+      "Consente l'accesso alla variabile di istanza o al metodo solo dall'interno della stessa classe.",
+      "Consente l'accesso alla variabile di istanza o al metodo solo dai componenti di una classe dello stesso package e dalle sottoclassi.",
+      "Consente l'accesso alla variabile di istanza o al metodo solo dai componenti di una classe di un qualsiasi package",
+      "Consente l'accesso al campo o al metodo da qualsiasi punto del programma."
+    ],
+    "correct_answer": "Consente l'accesso alla variabile di istanza o al metodo solo dai componenti di una classe dello stesso package e dalle sottoclassi."
+  },
+  {
+    "id": "28d524ff-f8b4-48f9-a021-5c1e978a0e24",
+    "question": "Qual è il risultato della seguente riga di codice in Java MyClass.myMethod():",
+    "answers": [
+      "Viene chiamato il metodo \"myMethod\" su un'istanza dell'oggetto \"MyClass\".",
+      "Viene chiamato il metodo \"myMethod\" sulla classe \"MyClass\" (non su un'istanza specifica dell'oggetto).",
+      "Viene restituito l'oggetto \"MyClass\".",
+      "Viene lanciata un'eccezione \"NullPointerException\""
+    ],
+    "correct_answer": "Viene chiamato il metodo \"myMethod\" sulla classe \"MyClass\" (non su un'istanza specifica dell'oggetto)."
+  },
+  {
+    "id": "849c61ee-09ea-4d09-bb2f-4e64ad9c548f",
+    "question": "Qual è l'effetto del modificatore static su un metodo di classe in Java:",
+    "answers": [
+      "Rende il metodo accessibile solo da altri metodi statici della stessa classe.",
+      "Impedisce di sovrascrivere il metodo nelle sottoclassi.",
+      "Permette di accedere alle variabili d'istanza della classe all'interno del metodo.",
+      "Consente di accedere al metodo senza creare un'istanza della classe."
+    ],
+    "correct_answer": "Consente di accedere al metodo senza creare un'istanza della classe."
+  },
+  {
+    "id": "dc3ffb43-bfb7-498b-8cf2-8b9c3ab442cf",
+    "question": "Qual è la relazione tra incapsulamento ed astrazione in Java:",
+    "answers": [
+      "L'incapsulamento si riferisce alla capacità di nascondere i dettagli di implementazione di un oggetto, mentre l'astrazione si riferisce alla rappresentazione di un concetto tramite una classe con dati e metodi che definiscono delle proprietà ritenute rilevanti",
+      "L'incapsulamento si riferisce alla capacità di definire una classe astratta, mentre l'astrazione si riferisce alla capacità di nascondere i dettagli di implementazione di un oggetto.",
+      "L'incapsulamento e l'astrazione sono concetti indipendenti in Java e non hanno relazione tra loro.",
+      "L'incapsulamento si riferisce alla capacità di manipolare oggetti di diverse classi come se fossero dello stesso tipo, mentre l'astrazione si riferisce alla capacità di dichiarare variabili di tipo generico."
+    ],
+    "correct_answer": "L'incapsulamento si riferisce alla capacità di nascondere i dettagli di implementazione di un oggetto, mentre l'astrazione si riferisce alla rappresentazione di un concetto tramite una classe con dati e metodi che definiscono delle proprietà ritenute rilevanti"
+  },
+     {
+    "id": "7b8c6e3a-88d4-49d1-91a0-1a3348b8c21e",
+    "question": "Qual è l'obiettivo principale dell'incapsulamento in Java:",
+    "answers": [
+      "Nascondere la complessità interna di un oggetto",
+      "Consentire l'accesso diretto alle variabili di istanza di una classe",
+      "Consentire l'accesso diretto ai metodi di una classe",
+      "Consentire la modifica diretta delle variabili di istanza di una classe"
+    ],
+    "correct_answer": "Nascondere la complessità interna di un oggetto"
+  },
+  {
+    "id": "9fa7c92a-d5f4-4af6-b053-0d3a4e0d6018",
+    "question": "Quale delle seguenti affermazioni è vera riguardo all'uso dei paradigmi della programmazione ad oggetti in Java:",
+    "answers": [
+      "La programmazione ad oggetti consente di organizzare i programmi a livelli di complessità differente",
+      "La programmazione ad oggetti si può fare solo con il linguaggio Java",
+      "La programmazione ad oggetti è utile per programmi complessi in quanto consente di organizzare il codice in modo modulare e ridurre la complessità attraverso l'incapsulamento e l'astrazione.",
+      "La programmazione ad oggetti permette di scrivere programmi più rapidamente"
+    ],
+    "correct_answer": "La programmazione ad oggetti è utile per programmi complessi in quanto consente di organizzare il codice in modo modulare e ridurre la complessità attraverso l'incapsulamento e l'astrazione."
+  },
+  {
+    "id": "fcf7c17e-8450-4f67-b663-22659f22ffda",
+    "question": "Quali sono i tre principi fondamentali della programmazione ad oggetti in Java:",
+    "answers": [
+      "Incapsulamento, ereditarietà, polimorfismo",
+      "Funzionalità, modularità, efficienza",
+      "Accessibilità, usabilità e design.",
+      "Version control, testing e refactoring."
+    ],
+    "correct_answer": "Incapsulamento, ereditarietà, polimorfismo"
+  },
+  {
+    "id": "b6adcd24-59b3-4631-9cf1-8c53c9e312c3",
+    "question": "Quale delle seguenti opzioni descrive correttamente come si realizza l'incapsulamento in Java:",
+    "answers": [
+      "Si utilizza la keyword \"private\" per definire le variabili di istanza della classe e quei metodi che sono usati solo internamente.",
+      "Si utilizza la keyword \"private\" per definire tutti i metodi e le variabili di istanza della classe.",
+      "Si utilizza la keyword \"public\" per definire i metodi e le variabili di istanza della classe.",
+      "Si utilizza la keyword \"static\" per definire i metodi e le variabili di istanza della classe."
+    ],
+    "correct_answer": "Si utilizza la keyword \"private\" per definire le variabili di istanza della classe e quei metodi che sono usati solo internamente."
+  },
+  {
+    "id": "b4b012ab-1bb3-48b1-a56e-10f06fce94d5",
+    "question": "Quale delle seguenti affermazioni riguardo all'interfaccia pubblica di una classe incapsulata in Java è corretta:",
+    "answers": [
+      "L'interfaccia pubblica di una classe incapsulata non può essere modificata una volta che la classe è stata definita.",
+      "L'interfaccia pubblica di una classe incapsulata consiste solo dei suoi metodi pubblici.",
+      "L'interfaccia pubblica di una classe incapsulata deve essere definita in una classe separata.",
+      "L'interfaccia pubblica di una classe incapsulata può essere composta anche da metodi privati."
+    ],
+    "correct_answer": "L'interfaccia pubblica di una classe incapsulata consiste solo dei suoi metodi pubblici."
+  },
+  {
+    "id": "38cf9197-2668-4478-96f0-c0435a58a7a3",
+    "question": "Quale dei seguenti non è un vantaggio dell’incapsulamento in Java:",
+    "answers": [
+      "Protezione degli oggetti da accessi non autorizzati",
+      "Maggiore modularità e facilità di manutenzione del codice",
+      "Migliore organizzazione e suddivisone del lavoro all’interno del team di sviluppo",
+      "Possibilità di modificare l’implementazione interna di una classe senza influire sulle altre parti del programma"
+    ],
+    "correct_answer": "Migliore organizzazione e suddivisone del lavoro all’interno del team di sviluppo"
+  },
+  {
+    "id": "4c4cf92f-cae4-41e0-9068-b0192d0a15e4",
+    "question": "Quale delle seguenti opzioni descrive correttamente il modificatore di accesso \"protected\" in Java:",
+    "answers": [
+      "Consente l'accesso alla variabile di istanza o al metodo solo dall'interno della stessa classe.",
+      "Consente l'accesso alla variabile di istanza o al metodo solo dai componenti di una classe dello stesso package e dalle sottoclassi.",
+      "Consente l'accesso alla variabile di istanza o al metodo solo dai componenti di una classe di un qualsiasi package",
+      "Consente l'accesso al campo o al metodo da qualsiasi punto del programma."
+    ],
+    "correct_answer": "Consente l'accesso alla variabile di istanza o al metodo solo dai componenti di una classe dello stesso package e dalle sottoclassi."
+  },
+  {
+    "id": "28d524ff-f8b4-48f9-a021-5c1e978a0e24",
+    "question": "Qual è il risultato della seguente riga di codice in Java MyClass.myMethod():",
+    "answers": [
+      "Viene chiamato il metodo \"myMethod\" su un'istanza dell'oggetto \"MyClass\".",
+      "Viene chiamato il metodo \"myMethod\" sulla classe \"MyClass\" (non su un'istanza specifica dell'oggetto).",
+      "Viene restituito l'oggetto \"MyClass\".",
+      "Viene lanciata un'eccezione \"NullPointerException\""
+    ],
+    "correct_answer": "Viene chiamato il metodo \"myMethod\" sulla classe \"MyClass\" (non su un'istanza specifica dell'oggetto)."
+  },
+  {
+    "id": "849c61ee-09ea-4d09-bb2f-4e64ad9c548f",
+    "question": "Qual è l'effetto del modificatore static su un metodo di classe in Java:",
+    "answers": [
+      "Rende il metodo accessibile solo da altri metodi statici della stessa classe.",
+      "Impedisce di sovrascrivere il metodo nelle sottoclassi.",
+      "Permette di accedere alle variabili d'istanza della classe all'interno del metodo.",
+      "Consente di accedere al metodo senza creare un'istanza della classe."
+    ],
+    "correct_answer": "Consente di accedere al metodo senza creare un'istanza della classe."
+  },
+  {
+    "id": "dc3ffb43-bfb7-498b-8cf2-8b9c3ab442cf",
+    "question": "Qual è la relazione tra incapsulamento ed astrazione in Java:",
+    "answers": [
+      "L'incapsulamento si riferisce alla capacità di nascondere i dettagli di implementazione di un oggetto, mentre l'astrazione si riferisce alla rappresentazione di un concetto tramite una classe con dati e metodi che definiscono delle proprietà ritenute rilevanti",
+      "L'incapsulamento si riferisce alla capacità di definire una classe astratta, mentre l'astrazione si riferisce alla capacità di nascondere i dettagli di implementazione di un oggetto.",
+      "L'incapsulamento e l'astrazione sono concetti indipendenti in Java e non hanno relazione tra loro.",
+      "L'incapsulamento si riferisce alla capacità di manipolare oggetti di diverse classi come se fossero dello stesso tipo, mentre l'astrazione si riferisce alla capacità di dichiarare variabili di tipo generico."
+    ],
+    "correct_answer": "L'incapsulamento si riferisce alla capacità di nascondere i dettagli di implementazione di un oggetto, mentre l'astrazione si riferisce alla rappresentazione di un concetto tramite una classe con dati e metodi che definiscono delle proprietà ritenute rilevanti"
+  },
+
+  {
+    "id": "1d6c6e88-46aa-4d4a-a5a3-5a8eafecfa8a",
+    "question": "In Java il reference this:",
+    "answers": [
+      "È un riferimento implicito alla superclasse",
+      "È un riferimento implicito all'oggetto corrente",
+      "È un riferimento implicito al metodo corrente",
+      "È un riferimento implicito alla variabile contenente il nome dell'oggetto"
+    ],
+    "correct_answer": "È un riferimento implicito all'oggetto corrente"
+  },
+  {
+    "id": "efb13b67-0e8c-47db-aec6-9d1e1e127573",
+    "question": "In Java il reference super:",
+    "answers": [
+      "È un riferimento implicito alla superclasse",
+      "È un riferimento implicito all'oggetto corrente",
+      "È un riferimento implicito al costruttore dell'oggetto corrente",
+      "È un riferimento implicito alla variabile contenente il nome dell'oggetto"
+    ],
+    "correct_answer": "È un riferimento implicito alla superclasse"
+  },
+  {
+    "id": "ced2f9de-b1c4-48ac-b76e-f57e0cf7e7ef",
+    "question": "In Java si usa il reference this quando:",
+    "answers": [
+      "c'è ambiguità nell'uso delle variabili di istanza dell'oggetto corrente e le variabili",
+      "si vuole accedere alle variabili locali di un metodo della classe",
+      "c'è ambiguità nell'invocazione del costruttore dell'oggetto corrente e della superclasse",
+      "si vuole accedere alla superclasse senza ambiguità"
+    ],
+    "correct_answer": "c'è ambiguità nell'uso delle variabili di istanza dell'oggetto corrente e le variabili"
+  },
+  {
+    "id": "9b91a8e8-c2f2-45f5-a04a-8d7d7d6f5469",
+    "question": "Qual è il ruolo del keyword \"this\" in Java:",
+    "answers": [
+      "Rappresenta una keyword riservata per la dichiarazione di variabili locali.",
+      "Rappresenta un riferimento all'oggetto corrente.",
+      "Rappresenta una classe che può essere specializzata da altre classi",
+      "Rappresenta una keyword utilizzata per l'import di librerie esterne."
+    ],
+    "correct_answer": "Rappresenta un riferimento all'oggetto corrente."
+  },
+  {
+    "id": "f7cbb5f9-8815-4f34-9b7c-f98935d60c7b",
+    "question": "Quale delle seguenti opzioni descrive correttamente l'ereditarietà in Java:",
+    "answers": [
+      "L'ereditarietà permette a una classe di ereditare attributi e metodi da una classe padre.",
+      "Una classe figlia può ereditare solo gli attributi e non i metodi della classe padre.",
+      "In Java non esiste l'ereditarietà tra classi.",
+      "Una classe padre può ereditare i metodi e gli attributi di una classe figlia."
+    ],
+    "correct_answer": "L'ereditarietà permette a una classe di ereditare attributi e metodi da una classe padre."
+  },
+  {
+    "id": "b63efeda-1ad1-44f2-9c1b-06b4f9e694e2",
+    "question": "Quali sono i principali motivi per utilizzare l'ereditarietà in Java:",
+    "answers": [
+      "Per ridurre la quantità di codice duplicato tra classi simili",
+      "Per definire metodi e campi che devono essere ereditati dalle sottoclassi",
+      "Per ridurre la quantità di codice duplicato tra classi simili",
+      "Tutte le altre risposte sono vere"
+    ],
+    "correct_answer": "Tutte le altre risposte sono vere"
+  },
+  {
+    "id": "eb15983e-3888-47f4-a74d-7c4c5a9c864b",
+    "question": "Quali sono i vantaggi strettamente connessi all'utilizzo combinato di ereditarietà e incapsulamento in Java:",
+    "answers": [
+      "Riuso del codice e semplificazione della gerarchia delle classi",
+      "Separazione delle responsabilità e controllo dell'accesso ai dati",
+      "Miglioramento delle performance e incremento della stabilità del software",
+      "Diminuzione delle linee di codice"
+    ],
+    "correct_answer": "Riuso del codice e semplificazione della gerarchia delle classi"
+  },
+  {
+    "id": "37a75a7f-58f0-4c6c-9918-33b35ad4d9a0",
+    "question": "In Java, quali sono le opzioni corrette riguardo l'utilizzo dei modificatori di accesso (private, public, protected) con i membri di una classe ereditata:",
+    "answers": [
+      "I membri private della classe base possono essere accessibili dalle classi derivate.",
+      "I membri protected della classe base possono essere accessibili dalle classi derivate e da qualsiasi classe nello stesso package.",
+      "I membri public della classe base possono essere resi private nelle classi derivate.",
+      "Tutte le altre opzioni sono sbagliate."
+    ],
+    "correct_answer": "I membri protected della classe base possono essere accessibili dalle classi derivate e da qualsiasi classe nello stesso package."
+  },
+  {
+    "id": "46b8a5f2-2473-4d77-b1ff-12f4daab41d2",
+    "question": "Qual è il comportamento di default del compilatore di Java quando una sottoclasse non chiama esplicitamente il costruttore della superclasse:",
+    "answers": [
+      "Il compilatore genera automaticamente un costruttore vuoto nella sottoclasse",
+      "Il compilatore genera un errore di compilazione",
+      "Il compilatore chiama automaticamente il costruttore vuoto della superclasse",
+      "Il compilatore chiama automaticamente il costruttore con argomenti della superclasse"
+    ],
+    "correct_answer": "Il compilatore chiama automaticamente il costruttore vuoto della superclasse"
+  },
+  {
+    "id": "62b1565e-bc10-4e7b-a0d8-f1d7d08e4ef5",
+    "question": "Quali delle seguenti affermazioni riguardo l'uso di \"super\" in Java sono corrette:",
+    "answers": [
+      "\"super\" può essere utilizzato per richiamare il costruttore della superclasse in una sottoclasse",
+      "\"super\" può essere utilizzato per richiamare i metodi statici della superclasse in una sottoclasse",
+      "\"super\" può essere utilizzato per accedere alle variabili di istanza private della superclasse in una sottoclasse",
+      "\"super\" può essere utilizzato per creare oggetti di una classe senza chiamare il costruttore di default della classe"
+    ],
+    "correct_answer": "\"super\" può essere utilizzato per richiamare il costruttore della superclasse in una sottoclasse"
+  },
+
+  {
+    "id": "07a3e7da-7026-4de8-a3a1-502bbd7ddfa0",
+    "question": "Quali delle seguenti affermazioni sono vere riguardo al polimorfismo in Java:",
+    "answers": [
+      "Il polimorfismo si riferisce alla capacità di un oggetto di assumere la stessa forma indipendentemente dal contesto in cui viene utilizzato.",
+      "Il polimorfismo è un concetto limitato alle interfacce e ai metodi astratti.",
+      "Il polimorfismo è un concetto limitato alle classi figlie che ereditano da una stessa classe padre.",
+      "Il polimorfismo può essere implementato sia con l'ereditarietà che con le interfacce."
+    ],
+    "correct_answer": "Il polimorfismo può essere implementato sia con l'ereditarietà che con le interfacce."
+  },
+  {
+    "id": "e2a5df26-4b18-4e06-8ed4-1d39a94f2fd1",
+    "question": "Qual è la definizione corretta di polimorfismo in Java:",
+    "answers": [
+      "L'abilità di una classe di estendere una o più interfacce",
+      "L'abilità di una classe di estendere una o più classi astratte",
+      "L'abilità di una variabile di un tipo di classe padre di riferirsi a un oggetto di una classe figlia",
+      "L'abilità di una classe di avere più di un costruttore"
+    ],
+    "correct_answer": "L'abilità di una variabile di un tipo di classe padre di riferirsi a un oggetto di una classe figlia"
+  },
+  {
+    "id": "bb93046b-252c-4ad1-b1fa-09f3314253ce",
+    "question": "Qual è il principale vantaggio dell'utilizzo di polimorfismo e ereditarietà in Java?:",
+    "answers": [
+      "Minimizza la quantità di codice scritto.",
+      "Permette l'estensibilità del codice.",
+      "Aumenta l'efficienza del programma.",
+      "Previeni la possibilità di errori durante l'esecuzione del programma."
+    ],
+    "correct_answer": "Permette l'estensibilità del codice."
+  },
+  {
+    "id": "bb2e4f60-8350-4a22-bf2e-6b38d3dcf387",
+    "question": "Quale delle seguenti affermazioni riguardo ai metodi astratti in Java è corretta:",
+    "answers": [
+      "Un metodo astratto ha un'implementazione di default",
+      "Nessuna delle altre affermazioni è esatta",
+      "Una classe con almeno un metodo astratto deve essere astratta",
+      "Un metodo astratto può essere privato"
+    ],
+    "correct_answer": "Una classe con almeno un metodo astratto deve essere astratta"
+  },
+  {
+    "id": "f23f0b30-8a11-4d35-8f7e-b0d873258872",
+    "question": "Quale delle seguenti affermazioni è vera riguardo alle classi astratte in Java:",
+    "answers": [
+      "Una classe astratta può essere istanziata come oggetto.",
+      "Una classe astratta può estendere una classe concreta.",
+      "Una classe astratta deve contenere almeno un metodo astratto.",
+      "Una classe astratta non può contenere metodi concreti."
+    ],
+    "correct_answer": "Una classe astratta può estendere una classe concreta."
+  },
+  {
+    "id": "bc5f063b-38a8-4a2b-a3a4-4ddcf36d7089",
+    "question": "Quale delle seguenti affermazioni è vera riguardo alle interfacce in Java:",
+    "answers": [
+      "Le interfacce possono implementare metodi concreti.",
+      "Una classe può implementare più di un'interfaccia allo stesso tempo.",
+      "Le interfacce possono estendere classi concreti.",
+      "Le interfacce possono avere variabili di istanza."
+    ],
+    "correct_answer": "Una classe può implementare più di un'interfaccia allo stesso tempo."
+  },
+  {
+    "id": "1f32654a-33b7-4ea2-b7b9-41327ec3c7a4",
+    "question": "Quale delle seguenti affermazioni descrive correttamente la differenza tra classi astratte e interfacce in Java:",
+    "answers": [
+      "Una classe astratta può avere metodi concreti, mentre un'interfaccia non può.",
+      "Una classe astratta può essere implementata da altre classi, mentre un'interfaccia può essere estesa da altre interfacce.",
+      "Una classe astratta può estendere una classe concreta, mentre un'interfaccia non può.",
+      "Un'interfaccia può contenere variabili di istanza, mentre una classe astratta non può."
+    ],
+    "correct_answer": "Una classe astratta può avere metodi concreti, mentre un'interfaccia non può."
+  },
+  {
+    "id": "7f0e0c14-78f2-49a2-81c8-cc20b9e7ad72",
+    "question": "Quale delle seguenti affermazioni è vera riguardo all'uso delle interfacce nella progettazione software in Java:",
+    "answers": [
+      "Le interfacce sono utilizzate per definire una implementazione comune per diverse classi.",
+      "Le interfacce sono utilizzate solo per definire metodi astratti.",
+      "Le interfacce sono utilizzate solo per definire metodi statici.",
+      "Le interfacce sono utilizzate per definire contratti che le classi devono soddisfare."
+    ],
+    "correct_answer": "Le interfacce sono utilizzate per definire contratti che le classi devono soddisfare."
+  },
+  {
+    "id": "86473b28-3a34-4dc4-9d0b-3d2689da5331",
+    "question": "Quale delle seguenti affermazioni descrive correttamente un uso pratico del polimorfismo e delle classi astratte in Java:",
+    "answers": [
+      "Le classi astratte possono essere utilizzate per definire metodi comuni tra diverse classi figlie, mentre il polimorfismo permette di utilizzare tali metodi in modo dinamico, in base al tipo dell'oggetto a cui vengono applicati.",
+      "Il polimorfismo permette di estendere le funzionalità di una classe padre in modo tale da renderle disponibili alle classi figlie, mentre le classi astratte permettono di definire nuovi metodi da utilizzare in modo statico dalle classi figlie.",
+      "Le classi astratte sono utilizzate per definire classi figlie concretizzate, mentre il polimorfismo permette di utilizzare metodi specifici di tali classi figlie in modo statico.",
+      "Il polimorfismo e le classi astratte sono utilizzati principalmente per la creazione di interfacce grafiche, in modo tale da definire elementi grafici comuni da utilizzare in diverse schermate."
+    ],
+    "correct_answer": "Le classi astratte possono essere utilizzate per definire metodi comuni tra diverse classi figlie, mentre il polimorfismo permette di utilizzare tali metodi in modo dinamico, in base al tipo dell'oggetto a cui vengono applicati."
+  },
+  {
+    "id": "153f7a56-d201-4989-bcb2-3f7d2b1abdf5",
+    "question": "Qual è l'uso principale del polimorfismo (dinamico) in Java:",
+    "answers": [
+      "Per consentire a un oggetto di riferimento di classe base di eseguire un metodo specifico di una classe derivata.",
+      "Per consentire a un oggetto di riferimento di classe derivata di eseguire un metodo specifico di una classe base.",
+      "Per consentire a un oggetto di riferimento di una classe astratta di eseguire un metodo specifico di una classe concreta che implementa l'interfaccia della classe astratta.",
+      "Per consentire a un oggetto di riferimento di una classe concreta di eseguire un metodo specifico di una classe astratta."
+    ],
+    "correct_answer": "Per consentire a un oggetto di riferimento di classe base di eseguire un metodo specifico di una classe derivata."
   },
   {
     "question": "Quale di questi elementi è parte di un diagramma dei casi d'uso?",
@@ -3803,6 +4245,17 @@
     ],
     "correct_answer": "pubblico, protetto, privato",
     "id": "3a424d1e-2b30-4ea4-a7e4-f97d6fdc2902"
+  },  
+   {
+    "question": "Come si indica la creazione di un nuovo oggetto:",
+    "answers": [
+      "con un messaggio \"new\" che termina sulla linea di vista del nuovo oggetto",
+      "con un messaggio \"create\" che termina sulla linea di vista del nuovo oggetto",
+      "con un messaggio \"new\" che termina sul lato sinistro del nuovo oggetto",
+      "con un messaggio \"create\" che termina sul lato sinistro del nuovo oggetto"
+    ],
+    "correct_answer": "con un messaggio \"new\" che termina sul lato sinistro del nuovo oggetto",
+    "id": "3a424d1e-2b30-4ea5-a7e4-f97d6fdc2902"
   },
   {
     "question": "Il diagramma di attività:",
