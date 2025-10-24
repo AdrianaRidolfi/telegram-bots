@@ -983,11 +983,11 @@
     "question": "Una relazione di composizione fra due classi indica:",
     "answers": [
       "una relazione per mutuo utilizzo di operazioni",
-      "una forma di subordinazione strutturale non rigida",
+      "una forma di subordinazione strutturale (non) rigida",
       "una relazione per mutuo utilizzo di attributo",
       "una relazione legata all'uso di una classe in un'operazione dell'altra classe"
     ],
-    "correct_answer": "una forma di subordinazione strutturale non rigida"
+    "correct_answer": "una forma di subordinazione strutturale (non) rigida"
   },
   {
     "id": "bd59e3f9-5df6-47b7-a958-aff58d4890e5",
