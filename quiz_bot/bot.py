@@ -149,6 +149,12 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
     manager = get_manager(user_id)
 
     msg = (
+        "🚨 *ATTENZIONE!* 🚨\n"
+        "Ho *finito gli esami* 🎓 e *non aggiornerò più questo bot*.\n"
+        "MA NON VOGLIO CHE MUOIA QUI!\n"
+        "Se vuoi *continuare il progetto*, sono felice di *cederlo e spiegarti tutto* passo passo 🧠💪\n"
+        "📩 Contattami qui [@Adriana_Rid](https://t.me/Adriana_Rid)\n\n"
+        
         "*👋 Ciao!*\n"
         "Questo bot ti aiuta a esercitarti con domande d'esame.\n"
         "Accanto a ogni materia trovi la *data dell'ultimo aggiornamento del quiz*.\n"
