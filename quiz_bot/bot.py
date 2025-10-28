@@ -149,6 +149,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
     manager = get_manager(user_id)
 
     msg = (
+     
         "*👋 Ciao!*\n"
         "Questo bot ti aiuta a esercitarti con domande d'esame.\n"
         "Accanto a ogni materia trovi la *data dell'ultimo aggiornamento del quiz*.\n"
@@ -164,7 +165,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         "• *Statistica* - _paniere_ - `13/06`\n"
         "• *Strategia, organizzazione e marketing* - _paniere + inedite_ - `08/06`\n"
         "• *Comunicazione digitale* - _inedite_ - `28/05`\n"
-        "• *Reti di calcolatori e cybersecurity* - _paniere_ - `28/05`\n"
+        "• *Reti di calcolatori e cybersecurity* - _paniere_ - `28/05`\n\n"
+        
+        "🚨🚨 *ATTENZIONE!* 🚨🚨\n"
+        "Ho *finito gli esami* 🎓 e *non aggiornerò più questo bot*.\n"
+        "MA NON VOGLIO CHE MUOIA QUI!\n"
+        "Se vuoi *continuare il progetto*, sono felice di *spiegarti tutto e abilitarti gli accessi* \n"
+        "Contattami qui 👉 [@Adriana_Rid](https://t.me/Adriana_Rid)\n"
+         "🚨🚨 *ATTENZIONE!* 🚨🚨\n"
     )
 
     keyboard = []
