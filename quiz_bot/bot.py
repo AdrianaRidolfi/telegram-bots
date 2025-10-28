@@ -155,7 +155,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE, show_intro_t
         "Vuoi contribuire? Clicca su GitHub e segui la guida!\n\n"
 
         "*📚 Quiz disponibili:*\n"
-        "• *Ingegneria del software* - _inedite + 60 da AI_- `25/09`\n"
+        "• *Ingegneria del software* - _inedite + 60 da AI + paniere_ - `24/10`\n"
         "• *Programmazione distribuita e cloud computing* - _inedite_ - `22/08`\n"
         "• *Diritto per le aziende digitali* - _inedite_ - `18/07`\n"
         "• *Corporate planning* - _paniere + inedite + 78 da AI_ - `01/07`\n"
@@ -335,7 +335,6 @@ def escape_markdown(text: str) -> str:
     return re.sub(rf"([{re.escape(escape_chars)}])", r"\\\1", text)
 
 async def send_next_question(user_id, context):
-    # Acquisisce il lock per questo utente
     lock = get_user_lock(user_id)
     
     async with lock:
@@ -348,49 +347,54 @@ async def send_next_question(user_id, context):
                 await context.bot.send_message(chat_id=user_id, text="Sessione non trovata. Scrivi /start per iniziare.")
                 return
 
-            current_index = state["index"]
-            total = state["total"]
-            
-            print(f"[TRACE] user {user_id} - index={current_index}, total={total}")
+            # Loop per saltare domande invalide
+            while True:
+                current_index = state["index"]
+                total = state["total"]
+                
+                print(f"[TRACE] user {user_id} - index={current_index}, total={total}")
 
-            # Verifica se il quiz è completato
-            if current_index >= total:
-                print(f"[TRACE] Quiz completato per user {user_id}")
-                await show_final_stats(user_id, context, state, is_review_mode=state.get("is_review", False))
-                manager = get_manager(user_id)
-                manager.commit_changes()
-                clear_user_lock(user_id)  # Rimuove il lock
-                return
+                # Verifica se il quiz è completato
+                if current_index >= total:
+                    print(f"[TRACE] Quiz completato per user {user_id}")
+                    await show_final_stats(user_id, context, state, is_review_mode=state.get("is_review", False))
+                    manager = get_manager(user_id)
+                    manager.commit_changes()
+                    clear_user_lock(user_id)
+                    return
 
-            q_index = state["order"][current_index]
-            print(f"[TRACE] user {user_id} - caricamento domanda q_index={q_index}")
-            
-            question_data = await _validate_and_get_question(state, q_index, user_id, context)
-            if question_data is None:
-                print(f"[TRACE] user {user_id} - domanda {q_index} non valida, incremento index")
-                # IMPORTANTE: qui NON richiamiamo send_next_question ricorsivamente
-                # incrementiamo solo l'index e riproveremo nel prossimo ciclo
-                return
+                q_index = state["order"][current_index]
+                print(f"[TRACE] user {user_id} - caricamento domanda q_index={q_index}")
+                
+                question_data = await _validate_and_get_question(state, q_index, user_id, context)
+                if question_data is None:
+                    print(f"[TRACE] user {user_id} - domanda {q_index} non valida, skip e provo la successiva")
+                    # La domanda è già stata skippata in _validate_and_get_question
+                    # Continua il loop per provare la prossima
+                    continue
 
-            correct_index, new_answers = _get_shuffled_answers_and_correct_index(question_data)
-            if correct_index is None or new_answers is None:
-                print(f"[TRACE] user {user_id} - risposte non valide per domanda {q_index}, skip")
-                state["index"] += 1
-                state["total"] -= 1  # Decrementa il totale
-                return
+                correct_index, new_answers = _get_shuffled_answers_and_correct_index(question_data)
+                if correct_index is None or new_answers is None:
+                    print(f"[TRACE] user {user_id} - risposte non valide per domanda {q_index}, skip e provo la successiva")
+                    state["index"] += 1
+                    state["total"] -= 1
+                    # Continua il loop invece di fare return
+                    continue
 
-            state["quiz"][q_index]["_shuffled_answers"] = new_answers
-            state["quiz"][q_index]["_correct_index"] = correct_index
+                # Se arriviamo qui, abbiamo una domanda valida
+                state["quiz"][q_index]["_shuffled_answers"] = new_answers
+                state["quiz"][q_index]["_correct_index"] = correct_index
 
-            question_text = _build_question_text(state, question_data, new_answers)
-            reply_markup = _build_question_keyboard(new_answers)
+                question_text = _build_question_text(state, question_data, new_answers)
+                reply_markup = _build_question_keyboard(new_answers)
 
-            if await _try_send_image(question_data, user_id, context, question_text, reply_markup):
-                print(f"[TRACE] user {user_id} - domanda {q_index} inviata con immagine")
-                return
+                if await _try_send_image(question_data, user_id, context, question_text, reply_markup):
+                    print(f"[TRACE] user {user_id} - domanda {q_index} inviata con immagine")
+                    return
 
-            await _send_question_text(user_id, context, question_text, reply_markup)
-            print(f"[TRACE] user {user_id} - domanda {q_index} inviata come testo")
+                await _send_question_text(user_id, context, question_text, reply_markup)
+                print(f"[TRACE] user {user_id} - domanda {q_index} inviata come testo")
+                return  # Uscita normale dopo invio domanda valida
 
         except Exception as e:
             print(f"❌ Errore critico in send_next_question per user {user_id}: {e}")
@@ -415,6 +419,10 @@ def _get_shuffled_answers_and_correct_index(question_data):
         if correct_answer and correct_answer in original_answers:
             correct_index = original_answers.index(correct_answer)
         else:
+            print(f"[ERROR] Invalid correct answer for question ID={question_data.get('id')}")
+            print(f"        answers={original_answers}")
+            print(f"        correct_answer={correct_answer}")
+            print(f"        correct_answer_index={question_data.get('correct_answer_index')}")
             return None, None
     shuffled = list(enumerate(original_answers))
     random.shuffle(shuffled)
@@ -506,7 +514,6 @@ async def _validate_and_get_question(state, q_index, user_id, context):
             print(f"[ERROR] Domanda malformata per user {user_id}: {question_id}")
             state["index"] += 1
             state["total"] -= 1  # Decrementa il totale quando skippiamo
-            # NON richiamare send_next_question qui!
             return None
             
         original_answers = question_data.get("answers", [])
@@ -514,7 +521,6 @@ async def _validate_and_get_question(state, q_index, user_id, context):
             print(f"[ERROR] Domanda senza risposte sufficienti per user {user_id}: {question_id}")
             state["index"] += 1
             state["total"] -= 1  # Decrementa il totale quando skippiamo
-            # NON richiamare send_next_question qui!
             return None
             
         print(f"[TRACE] Domanda validata correttamente per user {user_id}: {question_id}")
@@ -923,6 +929,16 @@ async def show_mistakes(user_id, subject, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def show_final_stats(user_id, context, state, from_stop=False, is_review_mode=False):
+    """
+    Mostra le statistiche finali del quiz all'utente.
+    
+    Args:
+        user_id: ID dell'utente Telegram
+        context: Context di Telegram
+        state: Stato corrente del quiz
+        from_stop: True se chiamato da comando /stop
+        is_review_mode: True se in modalità ripasso errori
+    """
     if not state:
         return
 
@@ -933,22 +949,27 @@ async def show_final_stats(user_id, context, state, from_stop=False, is_review_m
 
     score = state["score"]
     total = state["total"]
-    answered = state["index"]
+    answered = state["index"]  # Numero di domande effettivamente risposte
 
     keyboard = []
     has_errors = False
-
     summary = ""
 
+    # Caso 1: Quiz interrotto senza rispondere a nessuna domanda
     if answered == 0:
-        summary = "Nessuna risposta data. Quiz interrotto dall'utente."
+        summary = "❌ Nessuna risposta data. Quiz interrotto dall'utente.\n"
+    
+    # Caso 2: L'utente ha risposto ad almeno una domanda
     else:
-        percentage = round((score / answered) * 100, 2) if answered else 0
+        # Calcola percentuale sulle domande effettivamente risposte
+        percentage = round((score / answered) * 100, 2) if answered > 0 else 0
+        
+        # Aggiorna statistiche con il numero corretto di domande risposte
         stats_manager = get_stats_manager(user_id)
-        stats_manager.update_stats(subject, score, total)
+        stats_manager.update_stats(subject, score, answered)  # FIX: usa 'answered' non 'total'
         all_stats = stats_manager.get_summary()
 
-        # --- TIMER: calcola durata quiz ---
+        # Calcola durata quiz
         duration = ""
         if "start_time" in state:
             elapsed = int(time.time() - state["start_time"])
@@ -956,60 +977,80 @@ async def show_final_stats(user_id, context, state, from_stop=False, is_review_m
             secs = elapsed % 60
             duration = f"\n🕒 Tempo impiegato: {mins} min {secs} sec\n"
 
-        # GIF solo se quiz completato (tutte le domande risposte) e total == 30
+        # Invia GIF solo se quiz completato (tutte le 30 domande) e non interrotto
         if answered == total == 30:
             if score == 30:
                 await context.bot.send_animation(chat_id=user_id, animation=yay())
             elif score < 18:
                 await context.bot.send_animation(chat_id=user_id, animation=yikes())
 
-        summary = f"🎯Quiz completato!\nPunteggio: {score} su {answered} ({percentage}%)\n"
+        # Costruisci messaggio di riepilogo
+        if answered < total:
+            summary = f"⚠️ Quiz interrotto!\nHai risposto a {answered} domande su {total}\nPunteggio: {score} su {answered} ({percentage}%)\n"
+        else:
+            summary = f"🎯 Quiz completato!\nPunteggio: {score} su {answered} ({percentage}%)\n"
+        
         summary += duration
-      
-        summary += "\n📊 Statistiche:\n"
+        summary += "\n📊 Statistiche complessive:\n"
 
+        # Mostra statistiche per ogni materia
         for sub, data in all_stats.items():
-            perc = round((data['correct'] / data['total']) * 100, 2)
+            perc = round((data['correct'] / data['total']) * 100, 2) if data['total'] > 0 else 0
             summary += f"- {sub}: {perc}% ({data['correct']} su {data['total']})\n"
 
+        # Commit errori e verifica se ce ne sono
         manager = get_manager(user_id)
         manager.commit_changes() 
         has_errors = manager.has_wrong_answers()
 
+    # Costruzione tastiera inline in base al contesto
+    
+    # Riga 1: Azioni principali
     if from_stop:
+        # Se chiamato da /stop, mostra solo "Scegli materia"
         keyboard.append([
             InlineKeyboardButton(SCEGLI_MATERIA, callback_data="change_course")
         ])
     else:
+        # Se quiz completato, mostra "Ripeti" e "Cambia materia"
         keyboard.append([
             InlineKeyboardButton("🔁 Ripeti quiz", callback_data="repeat_quiz"),
             InlineKeyboardButton("📚 Cambia materia", callback_data="change_course")
         ])
+    
+    # Riga 2: Gestione statistiche ed errori
     if is_review_mode:
-        keyboard.append(
-            [
-                InlineKeyboardButton(AZZERA_STATISTICHE, callback_data="reset_stats"),
-                InlineKeyboardButton("🧽 Cancella Errori", callback_data=f"clear_errors:{state['subject']}")]
-        )
-    else: 
+        # In modalità ripasso: mostra sia reset stats che cancella errori
+        keyboard.append([
+            InlineKeyboardButton(AZZERA_STATISTICHE, callback_data="reset_stats"),
+            InlineKeyboardButton("🧽 Cancella Errori", callback_data=f"clear_errors:{subject}")
+        ])
+    else:
+        # In modalità normale: mostra solo reset stats
         keyboard.append([
             InlineKeyboardButton(AZZERA_STATISTICHE, callback_data="reset_stats")
         ])
 
-    # Mostra bottoni errori SOLO se ci sono errori
+    # Riga 3: Bottoni errori (solo se ci sono errori registrati)
     if has_errors:
         keyboard.append([
             InlineKeyboardButton(RIPASSA_ERRORI, callback_data="review_errors"),
             InlineKeyboardButton("📝 Mostra errori", callback_data=f"show_mistakes_{subject}")
         ])
 
+    # Riga 4: Utility (download e GitHub)
     keyboard.append([
         InlineKeyboardButton("📥 Scarica pdf", callback_data=f"download_pdf:{state['quiz_file']}"),
         InlineKeyboardButton("🌐 Git", url="https://github.com/AdrianaRidolfi/telegram-bots")
     ])
 
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await context.bot.send_message(chat_id=user_id, text=summary, reply_markup=reply_markup)
+    await context.bot.send_message(
+        chat_id=user_id, 
+        text=summary, 
+        reply_markup=reply_markup
+    )
+
 
 async def stats(update: Update = None, context: ContextTypes.DEFAULT_TYPE = None, user_id: int = None):
     # Se user_id non passato, prendilo da update
